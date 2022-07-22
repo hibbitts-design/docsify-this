@@ -33,3 +33,31 @@ body .markdown-section {
     font-size: 14px;
 }
 */
+
+/* DOCSIFY THIS */
+
+form .myfield {
+    width: 500px;
+}
+
+.myfield {
+    overflow: hidden;
+    width: 100%;
+    background-color : #f2f8ff;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+span .myfield {
+    display: block;
+    overflow: hidden;
+}
+
+span .button {
+    margin-bottom: 10px;
+}
+
+.mybutton {
+    white-space: normal;
+    text-align: left;
+}
