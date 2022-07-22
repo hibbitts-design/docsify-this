@@ -1,0 +1,35 @@
+/*
+===============================================================================================================================
+Put your custom CSS in this file.
+===============================================================================================================================
+*/
+
+/* CSS to better visually match Docsify pages within Canvas LMS (uncomment to use) */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body .markdown-section {
+    font-family: "Lato","Helvetica Neue",Arial,sans-serif;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.markdown-section a:link, .markdown-section a:visited, .markdown-section a:active {
+    text-decoration: none;
+}
+
+.markdown-section a:hover {
+    text-decoration: underline;
+}
+*/
+
+/* CSS to better visually match Docsify pages within Sakai LMS (uncomment to use) */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body .markdown-section {
+    font-family: "Open Sans",sans-serif;
+    line-height: 1.3;
+    font-size: 14px;
+}
+*/
