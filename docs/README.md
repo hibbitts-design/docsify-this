@@ -43,7 +43,7 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 
 ## Looking for more Customization and Control?
 
-Docsify-this.net is intended as a quick way to display a remotely located Markdown file. If you want to further customize and control the presentation of your Markdown content you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted Web app is based on) and either store Markdown files within that site or with additional configuration render files located remotely. You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
+Docsify-This is intended as a quick way to display a remotely located Markdown file. If you want to further customize and control the presentation of your Markdown content you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted Web app is based on) and either store Markdown files within that site or with additional configuration render files located remotely. You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
 
 ## Troubleshooting
 
