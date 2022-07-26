@@ -61,3 +61,16 @@ span .button {
     white-space: normal;
     text-align: left;
 }
+
+.markdown-section .secondarybutton {
+  cursor: pointer;
+  color: white;
+  height: auto;
+  display: inline-block;
+  margin-top: 4px;
+  padding: 10px;
+  line-height: 1.2rem;
+  background-color: #6c757d;
+  text-decoration: none;
+  border-radius: .25rem;
+}
