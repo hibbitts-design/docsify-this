@@ -48,7 +48,7 @@ _Updated Markdown file not displayed in the Browser._
 Docsify is likely displaying the last cached version. To ensure the most recent version of a file is loaded, do a [hard refresh of your Browser cache](https://www.makeuseof.com/hard-refresh-browser/).
 
 _Embedded image not displayed as expected._  
-The most likely cause for embedded images not being displayed as expected is the use of HTML (i.e. `<img src="images/filename.jpg" alt="Alt Text">`). Use Markdown for embedded images if possible (i.e. `![Alt Text](images/filename.jpg)`) to better support remote rendering.
+The most likely cause for embedded images not being displayed as expected is the use of HTML (i.e. `<img src="images/filename.jpg" alt="Alt Text">`). Use Markdown for embedded images if possible (i.e. `![Alt Text](images/filename.jpg)`) to better support remote rendering. Alternatively, use absolute URLs for HTML image sources.
 
 _Embedded iFrame not displayed as expected._   
 Due to iframe cross-domain issues embedded content may not be able to be displayed. Use the included rich media embed service [embed.ly](https://embed.ly/) as a workaround.  
