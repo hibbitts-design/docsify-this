@@ -213,8 +213,7 @@
       // Set last option for loadSidebar and loadNavbar to true for Remote Docsify
       loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
       loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
-      // Set externalLinkTarget to '_self' for Remote Docsify
-      externalLinkTarget: '_self',
+      externalLinkTarget: (getURLParameterByName(['standalone','embedded','basePath'],'_top','_blank','_self')),
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
