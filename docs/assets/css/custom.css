@@ -46,6 +46,7 @@ form .myfield {
     background-color : #f2f8ff;
     margin-bottom: 5px;
     padding: 10px;
+    font-size:20px;
 }
 
 span .myfield {
@@ -63,14 +64,27 @@ span .button {
 }
 
 .markdown-section .secondarybutton {
-  cursor: pointer;
-  color: white;
-  height: auto;
-  display: inline-block;
-  margin-top: 4px;
-  padding: 10px;
-  line-height: 1.2rem;
-  background-color: #6c757d;
-  text-decoration: none;
-  border-radius: .25rem;
+    cursor: pointer;
+    color: white;
+    height: auto;
+    display: inline-block;
+    margin-top: 4px;
+    padding: 10px;
+    line-height: 1.2rem;
+    background-color: #6c6c6c;
+    text-decoration: none;
+    border-radius: .25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .myfield {
+      color: white;
+  }
+
+  .markdown-section .secondarybutton {
+      color: black;
+      background-color: #A6A6A6;
+  }
+
 }
