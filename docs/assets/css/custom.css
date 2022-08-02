@@ -43,9 +43,11 @@ form .myfield {
 .myfield {
     overflow: hidden;
     width: 100%;
-    background-color : #f2f8ff;
+    background-color : #white;
+    margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
+    color: black;
 }
 
 span .myfield {
@@ -75,15 +77,28 @@ span .button {
     border-radius: .25rem;
 }
 
+.markdown-section .mybuilder {
+  overflow: visible;
+  margin: 2em 0;
+  padding: 1.25em;
+  border-width: 0;
+  background: #f1f8fe;
+}
+
 @media (prefers-color-scheme: dark) {
 
   .myfield {
+      background-color: #273338;
       color: white;
   }
 
   .markdown-section .secondarybutton {
       color: black;
-      background-color: #A6A6A6;
+      background-color: #B6B6B6;
+  }
+
+  .markdown-section .mybuilder {
+    background: #0b709f;
   }
 
 }
