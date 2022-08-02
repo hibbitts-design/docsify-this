@@ -7,13 +7,13 @@ Photo by <a href="https://unsplash.com/@lilrohit?utm_source=unsplash&utm_medium=
 
 This Web app, built using the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display Markdown files as standalone Web pages (also perfect for embedding) without needing to setup your own Docsify site. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!  
 
-<div class="mybuilder">
+<div class="docsifythisurlbuilder">
 
 ## URL Builder for Docsify-This
 
 **Markdown File URL** (GitHub or raw source URL):</br>
-<input class="myfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
-<input class="button mybutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value,false,false)"/> <input class="secondarybutton mybutton" style="border:none;" type="button" id="btn_2" value="View as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true,false)"/> <input class="secondarybutton mybutton" style="border:none;" type="button" id="btn_3" value="View as Standalone Page with Docsify Sidebar" onclick="openURLs(document.getElementById('text').value,false,true)"/></br>
+<input class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
+<input class="button docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value,false,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_2" value="View as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_3" value="View as Standalone Page with Docsify Sidebar" onclick="openURLs(document.getElementById('text').value,false,true)"/></br>
 
 Entering the URL of a Markdown file into the above URL Builder, that file will be displayed as a standalone Web page in a new Browser tab. This URL may then be copied and shared for others to view the same page. The URL Builder will also automatically transform a URL to a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
 

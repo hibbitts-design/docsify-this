@@ -36,11 +36,11 @@ body .markdown-section {
 
 /* DOCSIFY THIS */
 
-form .myfield {
+form .docsifythisurlfield{
     width: 500px;
 }
 
-.myfield {
+.docsifythisurlfield{
     overflow: hidden;
     width: 100%;
     background-color : #white;
@@ -50,21 +50,17 @@ form .myfield {
     color: black;
 }
 
-span .myfield {
+span .docsifythisurlfield{
     display: block;
     overflow: hidden;
 }
 
-span .button {
-    margin-bottom: 10px;
-}
-
-.mybutton {
+.docsifythisurlbuilderbutton {
     white-space: normal;
     text-align: left;
 }
 
-.markdown-section .secondarybutton {
+.markdown-section .docsifythisurlbuildersecondarybutton {
     cursor: pointer;
     color: white;
     height: auto;
@@ -77,7 +73,7 @@ span .button {
     border-radius: .25rem;
 }
 
-.markdown-section .mybuilder {
+.markdown-section .docsifythisurlbuilder {
   overflow: visible;
   margin: 2em 0;
   padding: 1.25em;
@@ -87,17 +83,17 @@ span .button {
 
 @media (prefers-color-scheme: dark) {
 
-  .myfield {
+  .docsifythisurlfield{
       background-color: #273338;
       color: white;
   }
 
-  .markdown-section .secondarybutton {
+  .markdown-section .docsifythisurlbuildersecondarybutton {
       color: black;
       background-color: #B6B6B6;
   }
 
-  .markdown-section .mybuilder {
+  .markdown-section .docsifythisurlbuilder {
     background: #0b709f;
   }
 
