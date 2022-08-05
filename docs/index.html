@@ -170,6 +170,9 @@
 
       if (url) {
 
+        docsifyurl = window.location.href
+        docsifyurl = docsifyurl.replace('/#/', '');
+
         // If not Raw source URL convert it
         if (url.includes("github.com")) {
           url = url.replace('github.com', 'raw.githubusercontent.com');
@@ -177,32 +180,32 @@
         }
 
         // Get last segment of URL
-      var lastsegment = url.split('/').pop();
-      var URLparms = "";
+        var lastsegment = url.split('/').pop();
+        var URLparms = "";
 
-      if (sidebar) {
-        var URLparms = `&sidebar=true`;
-      }
-
-      if (toc) {
-        var URLparms = `&toc=true`;
-      }
-
-      if (!lastsegment.includes(".md")) {
-        // No filename is present, so assume default README.md file
-        var baseURL = `https://docsify-this.net?basePath=${url}` + URLparms;
-      } else {
-        if (lastsegment == "README.md") {
-          // Default is README.md so homepage parm not needed
-          url = url.substring(0, url.lastIndexOf("/"));
-          var baseURL = `https://docsify-this.net?basePath=${url}` + URLparms;
-        } else {
-          url = url.substring(0, url.lastIndexOf("/"));
-          var baseURL = `https://docsify-this.net?basePath=${url}&homepage=${lastsegment}` + URLparms;
+        if (sidebar) {
+          var URLparms = `&sidebar=true`;
         }
-      }
 
-      window.open(baseURL);
+        if (toc) {
+          var URLparms = `&toc=true`;
+        }
+
+        if (!lastsegment.includes(".md")) {
+          // No filename is present, so assume default README.md file
+          var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
+        } else {
+          if (lastsegment == "README.md") {
+            // Default is README.md so homepage parm not needed
+            url = url.substring(0, url.lastIndexOf("/"));
+            var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
+          } else {
+            url = url.substring(0, url.lastIndexOf("/"));
+            var baseURL = docsifyurl + `?basePath=${url}&homepage=${lastsegment}` + URLparms;
+          }
+        }
+
+        window.open(baseURL);
 
       } else {
 
