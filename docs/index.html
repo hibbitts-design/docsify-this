@@ -349,40 +349,6 @@
 
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
-  <!-- Start of Rocket.Chat Livechat Script, only load when not displaying remote site -->
-	<script type="text/javascript">
-    if (window.$docsify['basePath'] === undefined) {
-    	(function(w, d, s, u) {
-    		w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
-    		var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-    		j.async = true; j.src = 'https://hibbitts.rocket.chat/livechat/rocketchat-livechat.min.js?_=201903270000';
-    		h.parentNode.insertBefore(j, h);
-    	})(window, document, 'script', 'https://hibbitts.rocket.chat/livechat');
-      RocketChat(function() {
-       this.setTheme({
-           title: "Chat with Paul Now", // default widget title when the status of service is online
-           offlineTitle: "Send Message to Paul", // default widget title when the status of service is online
-       });
-      });
-    }
-	</script>
-
-  <!-- Global site tag (gtag.js) - Google Analytics, only load when not displaying remote site -->
-  <script>
-    if (window.$docsify['basePath'] === undefined) {
-      document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19424343-37"><\/script>');
-    }
-  </script>
-  <script>
-    if (window.$docsify['basePath'] === undefined) {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-19424343-37');
-    }
-  </script>
-
   <!-- Check for Return Key in URL Builder field -->
   <script>
     if (window.$docsify['basePath'] === undefined) {
