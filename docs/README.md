@@ -9,7 +9,7 @@ This Web app, built using the magical documentation site generator [Docsify](htt
 
 <div class="docsifythisurlbuilder">
 
-## URL Builder for Docsify-This
+## URL Builder
 
 **Markdown File URL** (GitHub or raw source URL):</br>
 <input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
