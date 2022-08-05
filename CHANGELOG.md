@@ -9,6 +9,7 @@
 * Initial support for alternative ToC CSS (`toc-alt`)
 * Support for display of standard Docsify Sidebar
 * Updated Themeable and support of light/dark theme switching (OS-level)
+* Changed from static Docsify URL to dynamic (i.e. current URL)
 
 **Bugfix:**  
 * Added missing source maps
