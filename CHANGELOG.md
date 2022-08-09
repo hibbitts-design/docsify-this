@@ -11,6 +11,7 @@
 * Updated Themeable and support of light/dark theme switching (OS-level)
 * Changed from static Docsify URL to dynamic (i.e. current URL)
 * Restored CDN loading of scripts
+* Added support to retrieve values of URL parms (i.e. "Edit this Page" link)
 
 **Bugfix:**  
 * Added missing source maps
