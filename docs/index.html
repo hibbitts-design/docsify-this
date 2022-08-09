@@ -126,11 +126,13 @@
     var ToC = false;
 
     // Get value from GET-parameter in URL
-    // @param {array} name Parameter-name
-    // @param {*} isTrue Return if found
-    // @param {*} isFalse Return if not found
-    // @returns {string|null} Parameter-value
-    function getURLParameterByName(name, isTrue = null, isFalse = null, url = window.location.href) {
+    // @param {array}  name        Parameter-name
+    // @param {*}      isTrue      Returns this variable if "name" found
+    // @param {*}      isFalse     Returns this variable if "name" not found
+    // @param {string} url         A custom url to look in (defaults to current page URL)
+    // @param {bool}   returnValue Returns the URL Param if exists
+    // @returns {string|null}      Parameter-value
+    function getURLParameterByName(name, isTrue = null, isFalse = null, url = window.location.href, returnValue = false) {
 
       let exists = false;
 
@@ -144,12 +146,17 @@
 
       } else {
 
-        name = name.toLowerCase().replace(/[\[\]]/g, '\\$&');
-
         var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-        var results = regex.exec(url.toLowerCase());
+        var results = regex.exec(url);
 
         exists = (results && results[2]) ? true : false;
+
+      }
+
+      if (returnValue && exists) {
+          return results[2];
+      } else if (!exists && isFalse) {
+        return isFalse;
       }
 
       if (exists && isTrue) {
@@ -173,8 +180,11 @@
 
         // If not Raw source URL convert it
         if (url.includes("github.com")) {
+          var gitlinkPageURL = url;
           url = url.replace('github.com', 'raw.githubusercontent.com');
           url = url.replace(/\/blob/, '');
+        } else {
+          var gitlinkPageURL = "";
         }
 
         // Get last segment of URL
@@ -187,6 +197,17 @@
 
         if (toc) {
           var URLparms = `&toc=true`;
+        }
+
+        const cb = document.querySelector('#editCheck');
+        if (cb.checked) {
+          if (gitlinkPageURL) {
+            if (!lastsegment.includes(".md")) {
+            // No filename is present, so assume default README.md file
+            gitlinkPageURL = gitlinkPageURL + "README.md"
+            }
+            var URLparms = URLparms + `&editThisPageLink=` + gitlinkPageURL;
+          }
         }
 
         if (!lastsegment.includes(".md")) {
@@ -262,6 +283,9 @@
               url = vm.route.file
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
+            } else if (window.$docsify['basePath']) {
+              url  = getURLParameterByName('editThisPageLink', null, null, window.location.href, true);
+              gitLinkRepoURL = url;
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
@@ -325,7 +349,7 @@
   <!-- Run External Scripts Plugin -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
   <!-- <script src="assets/vendor/docsify/plugins/external-script.min.js"></script>  -->
-  
+
   <!-- Table of Contents Plugin -->
   <script>
     if (getURLParameterByName('toc') || ToC) {
