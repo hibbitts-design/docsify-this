@@ -278,6 +278,9 @@
 
         function(hook, vm) {
 
+          // Remove any possible front matter with the delimiters '---'
+          html = html.replace(/---(.|\n)*---/, '');
+
           hook.beforeEach(function(html) {
             if (/githubusercontent\.com/.test(vm.route.file)) {
               url = vm.route.file
