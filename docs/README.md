@@ -61,7 +61,7 @@ Docsify-This is intended as a quick way to display a remotely located Markdown f
 
 ## Troubleshooting
 
-_'404 - Not found message' is displayed._  
+_'404 - Not found' message is displayed._  
 Most often this message is a result of a Cross-Origin Resource Sharing (CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests.
 
 _Updated Markdown file not displayed in the Browser._  
