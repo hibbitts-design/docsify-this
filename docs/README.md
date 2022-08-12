@@ -61,7 +61,7 @@ Docsify-This is intended as a quick way to display a remotely located Markdown f
 
 ## Troubleshooting
 _'404 - Not found' message is displayed._  
-The provided **basePath** parameter and/or optional **homepage** parameter may not be correct. This error message may also be a result of a Cross-Origin Resource Sharing (CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests.
+The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also be a result of a Cross-Origin Resource Sharing (CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests.
 
 _Updated Markdown file not displayed in the Browser._  
 Docsify is likely displaying the last cached version. To ensure the most recent version of a file is loaded, do a [hard refresh of your Browser cache](https://www.makeuseof.com/hard-refresh-browser/).
