@@ -13,6 +13,7 @@
 * Restored CDN loading of scripts
 * Added support to retrieve values of URL parms (i.e. "Edit this Page" link)
 * Remove any possible front matter with the delimiters '---'
+* Restored Google Analytics, only loaded for local docsify-this.net pages 
 
 **Bugfix:**  
 * Added missing source maps
