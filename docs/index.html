@@ -371,6 +371,24 @@
 
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics, only loaded for local docsify-this.net pages -->
+
+  <script>
+    if ((location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
+      document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19424343-37"><\/script>');
+    }
+  </script>
+  <script>
+
+    if ((location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-19424343-37');
+    }
+  </script>
+
   <!-- Check for Return Key in URL Builder field -->
   <script>
     if (window.$docsify['basePath'] === undefined) {
