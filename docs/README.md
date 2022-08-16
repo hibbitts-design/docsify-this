@@ -59,7 +59,7 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 
 **font-family**  
 
-Set a custom font for your standalone pages, for example `&font-family=Helvetica,Arial,sans-serif`. Please note to use fonts with spaces in their names they must be encoded, for example "Courier New" would be "Courier%20New". This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
+Set a custom font for your standalone pages, for example `&font-family=Helvetica,Arial,sans-serif`. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), for example "Courier New" would be "Courier%20New". This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
 
 **toc-alt**  
 
