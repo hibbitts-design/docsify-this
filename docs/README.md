@@ -55,7 +55,17 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 _TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
 
-## Looking for more Customization and Control?
+## Additional Customization Parameters
+
+**fontFamily**  
+
+Set a custom font for your standalone pages, for example `&fontFamily=Helvetica,Arial,sans-serif`. Please note to use fonts with spaces in their names they must be encoded, for example "Open Sans" would be "Open%20Sans".
+
+**toc-alt**  
+
+Change the default breakpoint (1300) for moving the optional Page Table of Contents to the top of the screen to an alternative smaller size (800), for example `&toc-alt=true`. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint.
+
+## Looking for Even More Customization and Control?
 
 Docsify-This is intended as a quick way to display a remotely located Markdown file. If you want to further customize and control the presentation of your Markdown content you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted Web app is based on) and either store Markdown files within that site or with additional configuration render files located remotely. You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
 
@@ -97,12 +107,3 @@ This open source project is by Paul Hibbitts of [Hibbitts Design](https://hibbit
 **🙇🏻‍♂️Special Thanks**  
 [Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
 [Alan Levine](https://github.com/cogdog) for the inspiration of a consolidated ReadMe collection.
-
-<style>
-  :root {
-
-    --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-
-  }
-
-</style>
