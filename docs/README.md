@@ -59,7 +59,7 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 
 **fontFamily**  
 
-Set a custom font for your standalone pages, for example `&fontFamily=Helvetica,Arial,sans-serif`. Please note to use fonts with spaces in their names they must be encoded, for example "Open Sans" would be "Open%20Sans".
+Set a custom font for your standalone pages, for example `&fontFamily=Helvetica,Arial,sans-serif`. Please note to use fonts with spaces in their names they must be encoded, for example "Courier New" would be "Courier%20New".
 
 **toc-alt**  
 
