@@ -43,7 +43,7 @@ aside.nav.nothing {
   margin: 0px 0 0px 9px;
   padding-top: 25px;
   padding-bottom: 5px;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
 }
 .page_toc .anchor:hover:after {
@@ -56,7 +56,7 @@ aside.nav.nothing {
   padding-left: 10px;
   color: var(--base-color, black);
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2em;
 }
 
@@ -68,7 +68,7 @@ aside.nav.nothing {
 .page_toc ul a {
   color: var(--base-color, black);
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2em;
 }
 
@@ -90,7 +90,7 @@ aside.nav.nothing {
     width: 960px;
   }
   .page_toc p.title {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1.2em;
   }
   .content {

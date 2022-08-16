@@ -97,3 +97,12 @@ This open source project is by Paul Hibbitts of [Hibbitts Design](https://hibbit
 **🙇🏻‍♂️Special Thanks**  
 [Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
 [Alan Levine](https://github.com/cogdog) for the inspiration of a consolidated ReadMe collection.
+
+<style>
+  :root {
+
+    --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+
+  }
+
+</style>
