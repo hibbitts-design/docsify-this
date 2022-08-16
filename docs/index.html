@@ -30,6 +30,9 @@
 
   <style>
     :root {
+
+      --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+
       --base-line-height: 1.4;
       --base-font-size: 1.1rem;
 
@@ -365,6 +368,15 @@
   <script>
     if (window.$docsify['basePath']) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/hide-sidebar-appname.css" />');
+    }
+  </script>
+
+  <!-- Change body font if fontFamily parameter present  -->
+  <script>
+    fontfamily  = getURLParameterByName('fontFamily', null, null, window.location.href, true);
+    if (!(fontfamily === false) && !(window.$docsify['basePath'] === undefined)) {
+      fontfamily = decodeURI(fontfamily);
+      document.documentElement.style.setProperty('--base-font-family', fontfamily);
     }
   </script>
 
