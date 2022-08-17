@@ -4,7 +4,7 @@
 Photo by <a href="https://unsplash.com/@fakurian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
 Milad Fakurian</a> on <a href="https://unsplash.com/s/photos/render?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-## Display a Markdown file as a Web page in seconds🚀
+## Display a Markdown file as a Web page in seconds.
 
 This Web app, built using the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display Markdown files as standalone Web pages (also perfect for embedding) without needing to setup your own Docsify site. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!  
 
