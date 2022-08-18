@@ -1,6 +1,6 @@
 # Changelog
 
-## XX/XX/XXXX
+## [1.0.0] - XX/XX/XXXX
 
 **Improved:**  
 * Updated ReadMe
