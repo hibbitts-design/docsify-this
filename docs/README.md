@@ -60,11 +60,11 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 
 **font-family**  
 
-Set a custom font for your standalone pages with the optional URL parameter `font-family`, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New". This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
+Set a custom font for your standalone pages with the optional **font-family** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New". This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
 
 **toc-alt**  
 
-Change the default breakpoint (1300) for moving the optional Page Table of Contents to the top of the screen to an alternative smaller size (800) with the optional URL raw `toc-alt`, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-alt=true. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
+Change the default breakpoint (1300) for moving the optional Page Table of Contents to the top of the screen to an alternative smaller size (800) with the optional **toc-alt** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-alt=true. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
 ## Looking for Even More Customization and Control?
 
