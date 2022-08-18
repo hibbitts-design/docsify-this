@@ -76,6 +76,10 @@ input[type="checkbox"] ~ label {
     display:inline-block;
 }
 
+.markdown-section #editCheck {
+  accent-color: #0361cd;
+}
+
 .markdown-section .docsifythisurlbuilderprimarybutton {
   cursor: pointer;
   color: white;
