@@ -76,6 +76,19 @@ input[type="checkbox"] ~ label {
     display:inline-block;
 }
 
+.markdown-section .docsifythisurlbuilderprimarybutton {
+  cursor: pointer;
+  color: white;
+  height: auto;
+  display: inline-block;
+  margin-top: 4px;
+  padding: 10px;
+  line-height: 1.2rem;
+  background-color: #0361cd;
+  text-decoration: none;
+  border-radius: .25rem;
+}
+
 .markdown-section .docsifythisurlbuildersecondarybutton {
     cursor: pointer;
     color: white;
@@ -84,7 +97,7 @@ input[type="checkbox"] ~ label {
     margin-top: 4px;
     padding: 10px;
     line-height: 1.2rem;
-    background-color: #6c6c6c;
+    background-color: #0b97ef;
     text-decoration: none;
     border-radius: .25rem;
 }
@@ -94,7 +107,7 @@ input[type="checkbox"] ~ label {
   margin: 2em 0;
   padding: 1.25em;
   border-width: 0;
-  background: #f1f8fe;
+  background: #eefbff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -104,13 +117,18 @@ input[type="checkbox"] ~ label {
       color: white;
   }
 
+  .markdown-section .docsifythisurlbuilderprimarybutton {
+      color: black;
+      background-color: #4bc3f4;
+  }
+
   .markdown-section .docsifythisurlbuildersecondarybutton {
       color: black;
-      background-color: #B6B6B6;
+      background-color: #a2e8fc;
   }
 
   .markdown-section .docsifythisurlbuilder {
-    background: #0d5b82;
+    background: #074d94;
   }
 
 }
