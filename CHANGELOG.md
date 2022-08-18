@@ -15,6 +15,7 @@
 * Remove any possible front matter with the delimiters '---'
 * Restored Google Analytics, only loaded for local docsify-this.net pages
 * Support of optional fontFamily parameter (`font-family`)
+* Changed header image and updated visual styling of URL Builder
 
 **Bugfix:**  
 * Added missing source maps
