@@ -19,6 +19,7 @@
 
 **Bugfix:**  
 * Added missing source maps
+* Scoped front matter check to only be at start of file
 
 ## 07/22/2022
 
