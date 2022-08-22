@@ -186,12 +186,12 @@
           url = url.replace('github.com', 'raw.githubusercontent.com');
           url = url.replace(/\/blob/, '');
         } else {
-          var gitlinkPageURL = "";
+          var gitlinkPageURL = '';
         }
 
         // Get last segment of URL
         var lastsegment = url.split('/').pop();
-        var URLparms = "";
+        var URLparms = '';
 
         if (sidebar) {
           var URLparms = `&sidebar=true`;
