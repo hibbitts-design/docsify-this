@@ -30,6 +30,7 @@ Entering the URL of a Markdown file into the above URL Builder, that file will b
 
 Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the format `https://docsify-this.net?basePath=URLpath&homepage=filename.md`. The **basePath** parameter is the directory containing the raw source Markdown file to render. If the file is named the expected default **README.md** then no other parameter are required, otherwise the **homepage** parameter must also be included set to the name of the file to render. To render a file stored on GitHub you need to use the raw source URL of a file (i.e. raw.githubusercontent.com), tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file) to get this URL when not using the above URL Builder.  
 
+**Single Page Examples**  
 For example, to render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page the URL would be:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
 
@@ -53,6 +54,17 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 To render the Markdown file **[introduction.md](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/docs/introduction.md)** as a standalone page with the Docsify Sidebar, the URL would be:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true
+
+**Multiple Page Examples**  
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website, the URL for the would be: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master
+
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with each page having it's own table of contents, the URL for the site would be: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true
+
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with each page having it's own table of contents and an "Edit this Page" link, the URL for the site would be: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&editThisPageLink=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
+
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with each page having it's own table of contents, the URL for the site would be: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true
+
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with each page having it's own Docsify Sidebar, the URL would be for the site's homepage: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true
 
 _TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
 
