@@ -16,6 +16,7 @@
 * Restored Google Analytics, only loaded for local docsify-this.net pages
 * Support of optional fontFamily parameter (`font-family`)
 * Changed header image and updated visual styling of URL Builder
+* Support for multiple page Markdown file sites on GitHub
 
 **Bugfix:**  
 * Added missing source maps
