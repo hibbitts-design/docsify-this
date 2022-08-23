@@ -301,6 +301,7 @@
 
               // Carry any existing URL parms in links
               var URLparms = '';
+              var editThisPageLinkURLparm = ''
 
               if (getURLParameterByName('sidebar')) {
                 URLparms = `&sidebar=true`;
@@ -333,7 +334,6 @@
                   if (lastsegment.startsWith("?id")===false) {
                     if (getURLParameterByName('editThisPageLink')) {
                       // Calculate existing editThisPageLink URL parm in link
-                      var editThisPageLinkURLparm = ''
                       var editThisPageLink = '';
                       editThisPageLink = currentBasePath;
                       editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
