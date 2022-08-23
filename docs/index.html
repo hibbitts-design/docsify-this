@@ -280,6 +280,78 @@
 
         function(hook, vm) {
 
+          hook.afterEach(function(html, next) {
+            // Invoked each time after the Markdown file is parsed.
+            // beforeEach and afterEach support asynchronous。
+            // ...
+            // call `next(html)` when task is done.
+            next(html);
+
+            if (window.$docsify['basePath']) {
+
+              // Scan for links to local Markdown files and adjust URLs to work correctly
+
+              // Get current Docsify URL without any parmarmeters
+              var url = '';
+              url = window.location.href
+              url = url.replace(/[?].*/, ''); // Strips anything after ?
+
+              var currentBasePath = '';
+              currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
+
+              // Carry any existing URL parms in links
+              var URLparms = '';
+
+              if (getURLParameterByName('sidebar')) {
+                URLparms = `&sidebar=true`;
+              }
+
+              if (getURLParameterByName('toc')) {
+                URLparms = `&toc=true`;
+              }
+
+              if (getURLParameterByName('toc-alt')) {
+                URLparms = `&toc-alt=true`;
+              }
+
+              if (getURLParameterByName('font-family')) {
+                fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
+                URLparms = URLparms + `&font-family=` + fontfamily;
+              }
+
+              const links = Array.from(document.querySelectorAll('a'))
+
+              for (const link of links) {
+                // Find any local Markdown file links
+                if (link.getAttribute('href')?.match(/^#/)) {
+                  // Modify each Markdown file link to work with Remote Docsify
+                  var lastsegment = '';
+                  lastsegment = link.getAttribute('href');
+                  lastsegment = lastsegment.replace('#/', '');
+                  lastsegment = lastsegment.replace('./', '');
+                  // Check to make sure link is not Docsify id anchor link
+                  if (lastsegment.startsWith("?id")===false) {
+                    if (getURLParameterByName('editThisPageLink')) {
+                      // Calculate existing editThisPageLink URL parm in link
+                      var editThisPageLinkURLparm = ''
+                      var editThisPageLink = '';
+                      editThisPageLink = currentBasePath;
+                      editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
+                      editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
+                      editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
+                      editThisPageLink = editThisPageLink + '/' + lastsegment + '.md'
+                      editThisPageLinkURLparm =  `&editThisPageLink=` + editThisPageLink;
+                    }
+                    // Update Markdown file link
+                    var newURL = ''
+                    newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md` + URLparms + editThisPageLinkURLparm;
+                    link.setAttribute('href', newURL);
+                  }
+                }
+              }
+            }
+          });
+
           hook.beforeEach(function(html) {
 
             // Remove any possible front matter with the delimiters '---'
