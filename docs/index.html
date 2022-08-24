@@ -365,7 +365,11 @@
                 .replace(/\/master/, '/blob/master')
             } else if (window.$docsify['basePath']) {
               url  = getURLParameterByName('editThisPageLink', null, null, window.location.href, true);
-              gitLinkRepoURL = url;
+              if (url) {
+                if (url.includes("github.com")) {
+                  gitLinkRepoURL = url;
+                }
+              }
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
