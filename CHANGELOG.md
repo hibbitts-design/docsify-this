@@ -17,6 +17,7 @@
 * Support of optional fontFamily parameter (`font-family`)
 * Changed header image and updated visual styling of URL Builder
 * Support for multiple page Markdown file sites on GitHub
+* Check for use of GitHub for remote Docsify "Edit this Page" links
 
 **Bugfix:**  
 * Added missing source maps
