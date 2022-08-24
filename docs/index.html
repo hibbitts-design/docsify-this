@@ -334,13 +334,16 @@
                   if (lastsegment.startsWith("?id")===false) {
                     if (getURLParameterByName('editThisPageLink')) {
                       // Calculate existing editThisPageLink URL parm in link
-                      var editThisPageLink = '';
-                      editThisPageLink = currentBasePath;
-                      editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
-                      editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
-                      editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
-                      editThisPageLink = editThisPageLink + '/' + lastsegment + '.md'
-                      editThisPageLinkURLparm =  `&editThisPageLink=` + editThisPageLink;
+                      var editThisPageLinkURLparm = '';
+                      if (currentBasePath.includes("githubusercontent.com")) {
+                        var editThisPageLink = '';
+                        editThisPageLink = currentBasePath;
+                        editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
+                        editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
+                        editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
+                        editThisPageLink = editThisPageLink + '/' + lastsegment + '.md'
+                        editThisPageLinkURLparm =  `&editThisPageLink=` + editThisPageLink;
+                      }
                     }
                     // Update Markdown file link
                     var newURL = ''
@@ -365,11 +368,7 @@
                 .replace(/\/master/, '/blob/master')
             } else if (window.$docsify['basePath']) {
               url  = getURLParameterByName('editThisPageLink', null, null, window.location.href, true);
-              if (url) {
-                if (url.includes("github.com")) {
-                  gitLinkRepoURL = url;
-                }
-              }
+              gitLinkRepoURL = url;
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
