@@ -23,6 +23,7 @@
 * Added missing source maps
 * Scoped front matter check to only be at start of file
 * Fixed embedded code blocks overflow issues
+* Initial fix for setting '_top' as external link targets
 
 ## 07/22/2022
 
