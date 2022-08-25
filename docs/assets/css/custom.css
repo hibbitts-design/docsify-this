@@ -136,3 +136,11 @@ input[type="checkbox"] ~ label {
   }
 
 }
+
+.markdown-section code {
+  white-space: pre-wrap!important;
+}
+
+.markdown-section pre code {
+  word-break: break-all!important;
+}
