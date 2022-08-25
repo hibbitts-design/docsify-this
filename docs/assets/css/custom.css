@@ -114,6 +114,8 @@ input[type="checkbox"] ~ label {
   background: #eefbff;
 }
 
+/*
+
 @media (prefers-color-scheme: dark) {
 
   .docsifythisurlfield{
@@ -136,6 +138,8 @@ input[type="checkbox"] ~ label {
   }
 
 }
+
+*/
 
 .markdown-section code {
   white-space: pre-wrap!important;
