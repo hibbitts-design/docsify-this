@@ -18,6 +18,7 @@
 * Changed header image and updated visual styling of URL Builder
 * Support for multiple page Markdown file sites on GitHub
 * Check for use of GitHub for remote Docsify "Edit this Page" links
+* Support of optional hideCredits parameter (`hide-credits`)
 
 **Bugfix:**  
 * Added missing source maps
