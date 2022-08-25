@@ -379,14 +379,22 @@
             var creditHtml = '\n\n' + 'This page is displayed using <a href="https://github.com/hibbitts-design/docsify-this" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
 
             if ( !(getURLParameterByName(['standalone','embedded'])) && !(getURLParameterByName('hidegitlink'))  && (!!gitLinkRepoURL)) {
-            return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
+            if ( !(getURLParameterByName('hideCredits'))) {
+              return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
+            } else {
+              return editHtml + '\n' + html
+            }
 
             } else if ( getURLParameterByName(['standalone','embedded']) && !(getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
               return editHtml + '\n' + html
 
             } else if ( !(getURLParameterByName(['standalone','embedded']))) {
-              return html + '<br />' + '\n\n' + '<hr>' + creditHtml
-
+              if ( !(getURLParameterByName('hideCredits'))) {
+                return html + '<br />' + '\n\n' + '<hr>' + creditHtml
+              } else {
+                return html
+              }
+              
             } else {
               return html
             }
