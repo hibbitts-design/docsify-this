@@ -369,11 +369,11 @@
             if ( !(getURLParameterByName('hide-credits'))) {
               return html + '<br /><br />' + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
             } else {
-              return  html + '<br /><br />' + '\n\n' + editHtml
+              return  html + '<br />' + '\n\n' + editHtml
             }
 
             } else if ( getURLParameterByName(['standalone','embedded']) && !(getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
-              return html + '<br /><br />' + '\n\n' + editHtml
+              return html + '<br />' + '\n\n' + editHtml
 
             } else if ( !(getURLParameterByName(['standalone','embedded']))) {
               if ( !(getURLParameterByName('hide-credits'))) {
