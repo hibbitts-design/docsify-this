@@ -232,6 +232,14 @@
   }
 }
 
+.markdown-section code {
+  white-space: pre-wrap!important;
+}
+
+.markdown-section pre code {
+  word-break: break-all!important;
+}
+
 .markdown-section .fa-fw {
   text-align: left;
 }
