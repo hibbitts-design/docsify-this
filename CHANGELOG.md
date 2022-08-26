@@ -18,6 +18,7 @@
 * Support for multiple page Markdown file sites on GitHub
 * Check for use of GitHub for remote Docsify "Edit this Page" links
 * Support of optional hideCredits parameter (`hide-credits`)
+* Reposition 'Edit this Page' link to bottom of pages
 
 **Bugfix:**  
 * Added missing source maps
