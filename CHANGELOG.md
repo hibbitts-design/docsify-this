@@ -18,7 +18,6 @@
 * Support for multiple page Markdown file sites on GitHub
 * Check for use of GitHub for remote Docsify "Edit this Page" links
 * Support of optional hideCredits parameter (`hide-credits`)
-* Updated Themeable and support of light/dark theme switching (OS-level) on Docsify-This page
 
 **Bugfix:**  
 * Added missing source maps
