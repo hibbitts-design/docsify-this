@@ -1,0 +1,22 @@
+@media (prefers-color-scheme: dark) {
+
+  .docsifythisurlfield{
+      background-color: #273338;
+      color: white;
+  }
+
+  .markdown-section .docsifythisurlbuilderprimarybutton {
+      color: black;
+      background-color: #4bc3f4;
+  }
+
+  .markdown-section .docsifythisurlbuildersecondarybutton {
+      color: black;
+      background-color: #a2e8fc;
+  }
+
+  .markdown-section .docsifythisurlbuilder {
+    background: #074d94;
+  }
+
+}
