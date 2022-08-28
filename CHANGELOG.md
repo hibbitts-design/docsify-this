@@ -19,6 +19,7 @@
 * Check for use of GitHub for remote Docsify "Edit this Page" links
 * Support of optional hideCredits parameter (`hide-credits`)
 * Reposition 'Edit this Page' link to bottom of pages
+* Renamed 'toc-alt' URL parameter to 'toc-narrow'
 
 **Bugfix:**  
 * Added missing source maps
