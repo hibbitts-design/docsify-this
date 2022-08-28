@@ -298,7 +298,7 @@
                 URLparms = `&toc=true`;
               }
 
-              if (getURLParameterByName('toc-alt')) {
+              if (getURLParameterByName(['toc-alt','toc-narrow'])) {
                 URLparms = `&toc-alt=true`;
               }
 
@@ -436,7 +436,7 @@
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
-    if (getURLParameterByName('toc-alt')) {
+    if (getURLParameterByName(['toc-alt','toc-narrow'])) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-alt.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }

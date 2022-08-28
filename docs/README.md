@@ -80,8 +80,8 @@ Set a custom font for your standalone pages with the optional **font-family** pa
 **hide-credits**  
 Hide the credits usually shown at the bottom of every rendered Docsify-This page, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
 
-**toc-alt**  
-Change the default breakpoint (1300) for moving the optional Page Table of Contents to the top of the screen to an alternative smaller size (800) with the optional **toc-alt** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-alt=true. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
+**toc-narrow**  
+Change the default breakpoint (1300) for moving the optional Page Table of Contents to the top of the screen to an alternative smaller size (800) with the optional **toc-narrow** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
 ## Looking for Even More Customization and Control?
 
