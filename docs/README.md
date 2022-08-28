@@ -40,7 +40,7 @@ To render the Markdown file **[README.md](https://github.com/hibbitts-design/doc
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true
 
 To render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page with a table of contents and an "Edit this Page" link the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&editThisPageLink=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-this-page-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
 
 To render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page with the Docsify Sidebar the URL would be:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true
@@ -52,7 +52,7 @@ To render the Markdown file **[introduction.md](https://github.com/hibbitts-desi
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true
 
 To render the Markdown file **[introduction.md](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/docs/introduction.md)** as a standalone page with a table of contents and an "Edit this Page" link, the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&editThisPageLink=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&edit-this-page-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
 
 To render the Markdown file **[introduction.md](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/docs/introduction.md)** as a standalone page with the Docsify Sidebar, the URL would be:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true
@@ -65,7 +65,7 @@ To render a set of Markdown files (located in the same GitHub repository) as a s
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true
 
 To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with the initial page being the README.md file and each page having it's own table of contents and an "Edit this Page" link, the URL for the site would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&editThisPageLink=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&edit-this-page-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
 
 To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with the initial page being the README.md file and each page having it's own Docsify Sidebar, the URL would be:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true
