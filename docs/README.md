@@ -17,7 +17,7 @@ This Web app, built using the magical documentation site generator [Docsify](htt
 <input class="docsifythisurlbuilderprimarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value,false,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_2" value="View as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_3" value="View as Standalone Page with Docsify Sidebar" onclick="openURLs(document.getElementById('text').value,false,true)"/></br>
 <input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' Link (requires GitHub Markdown file)</label></br>
 
-Entering the URL of a Markdown file into the above URL Builder, that file will be displayed as a standalone Web page in a new Browser tab. This URL may then be copied and shared for others to view the same page. The URL Builder will also automatically transform a URL to a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
+Entering the URL of a Markdown file into the above URL Builder, that file will be displayed as a standalone Web page in a new Browser tab. This URL may then be copied and shared for others to view the same page. The URL Builder will also automatically transform a URL of a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
 
 </div>
 
