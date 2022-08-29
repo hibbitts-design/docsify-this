@@ -307,6 +307,11 @@
                 URLparms = URLparms + `&font-family=` + fontfamily;
               }
 
+              if (getURLParameterByName('link-color')) {
+                linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
+                URLparms = URLparms + `&link-color=` + linkcolor;
+              }
+
               const links = Array.from(document.querySelectorAll('a'))
 
               for (const link of links) {
@@ -458,6 +463,22 @@
     }
   </script>
 
+  <!-- Change link colour if link-color parameter present  -->
+  <script>
+    linkcolor  = getURLParameterByName('link-color', null, null, window.location.href, true);
+    linkcolor = '#' + linkcolor
+    console.log(linkcolor)
+    if (!(linkcolor === false) && !(window.$docsify['basePath'] === undefined)) {
+      document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
+      document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
+      document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
+      document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
+      document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
+      document.documentElement.style.setProperty('--link-color', linkcolor);
+      document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
+    }
+  </script>
+  
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for local docsify-this.net pages -->
