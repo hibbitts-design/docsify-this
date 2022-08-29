@@ -13,7 +13,7 @@
 * Added support to retrieve values of URL parms (i.e. "Edit this Page" link)
 * Remove any possible front matter with the delimiters '---'
 * Restored Google Analytics, only loaded for local docsify-this.net pages
-* Support of optional fontFamily parameter (`font-family`)
+* Support of optional font-family parameter (`font-family`)
 * Changed header image and updated visual styling of URL Builder
 * Support for multiple page Markdown file sites on GitHub
 * Check for use of GitHub for remote Docsify "Edit this Page" links
@@ -21,6 +21,7 @@
 * Reposition 'Edit this Page' link to bottom of pages
 * Renamed 'toc-alt' URL parameter to 'toc-narrow'
 * Renamed 'editThisPageLink' URL parameter to 'edit-link'
+* Support of optional link-color parameter (`link-color`)
 
 **Bugfix:**  
 * Added missing source maps
