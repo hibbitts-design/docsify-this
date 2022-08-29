@@ -312,6 +312,10 @@
                 URLparms = URLparms + `&link-color=` + linkcolor;
               }
 
+              if (getURLParameterByName('edit-link-top')) {
+                URLparms = URLparms + `&edit-link-top=true`;
+              }
+
               const links = Array.from(document.querySelectorAll('a'))
 
               for (const link of links) {
