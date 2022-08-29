@@ -75,7 +75,7 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 ## Additional Customization Parameters
 
 **edit-link-top**  
-Change the default position of the optional "Edit this Page" link on the bottom of pages to be the top of pages, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
+Change the default position of the optional "Edit this Page" link from the bottom of pages to be the top of pages, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
 
 **font-family**  
 Set a custom font for your standalone pages with the optional **font-family** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New". This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
