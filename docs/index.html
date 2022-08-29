@@ -107,7 +107,7 @@
     var gitLinkRepoURL = '';
 
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
-    var editThisPageLinkText = 'Edit this Page';
+    var editLinkText = 'Edit this Page';
 
     // Set standalone to true to permanently hide the Sidebar and Navbar
     var standalone = !(getURLParameterByName('sidebar'));
@@ -196,7 +196,7 @@
             // No filename is present, so assume default README.md file
             gitlinkPageURL = gitlinkPageURL + "README.md"
             }
-            var URLparms = URLparms + `&edit-this-page-link=` + gitlinkPageURL;
+            var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
           }
         }
 
@@ -319,8 +319,8 @@
                   lastsegment = lastsegment.replace('./', '');
                   // Check to make sure link is not Docsify id anchor link
                   if (lastsegment.startsWith("?id")===false) {
-                    if (getURLParameterByName('edit-this-page-link')) {
-                      // Calculate existing edit-this-page-link URL parm in link
+                    if (getURLParameterByName('edit-link')) {
+                      // Calculate existing edit-link URL parm in link
                       var editThisPageLinkURLparm = '';
                       if (currentBasePath.includes("githubusercontent.com")) {
                         var editThisPageLink = '';
@@ -329,7 +329,7 @@
                         editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
                         editThisPageLink = editThisPageLink + '/' + lastsegment + '.md'
-                        editThisPageLinkURLparm =  `&edit-this-page-link=` + editThisPageLink;
+                        editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
                       }
                     }
                     // Update Markdown file link
@@ -357,12 +357,12 @@
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else if (window.$docsify['basePath']) {
-              url  = getURLParameterByName('edit-this-page-link', null, null, window.location.href, true);
+              url  = getURLParameterByName('edit-link', null, null, window.location.href, true);
               gitLinkRepoURL = url;
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
-            var editHtml = '[:memo: ' + editThisPageLinkText + '](' + url + ')\n'
+            var editHtml = '[:memo: ' + editLinkText + '](' + url + ')\n'
 
             var creditHtml = '\n\n' + 'This page is displayed using <a href="https://github.com/hibbitts-design/docsify-this" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
 
