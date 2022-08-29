@@ -466,9 +466,9 @@
   <!-- Change link colour if link-color parameter present  -->
   <script>
     linkcolor  = getURLParameterByName('link-color', null, null, window.location.href, true);
-    linkcolor = '#' + linkcolor
     console.log(linkcolor)
     if (!(linkcolor === false) && !(window.$docsify['basePath'] === undefined)) {
+      linkcolor = '#' + linkcolor
       document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
       document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
       document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
@@ -478,7 +478,7 @@
       document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
     }
   </script>
-  
+
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for local docsify-this.net pages -->
