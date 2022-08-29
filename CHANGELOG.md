@@ -22,6 +22,7 @@
 * Renamed 'toc-alt' URL parameter to 'toc-narrow'
 * Renamed 'editThisPageLink' URL parameter to 'edit-link'
 * Support of optional link-color parameter (`link-color`)
+* Support of optional edit-link-top parameter (`edit-link-top`)
 
 **Bugfix:**  
 * Added missing source maps
