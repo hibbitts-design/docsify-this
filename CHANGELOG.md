@@ -20,7 +20,7 @@
 * Support of optional hideCredits parameter (`hide-credits`)
 * Reposition 'Edit this Page' link to bottom of pages
 * Renamed 'toc-alt' URL parameter to 'toc-narrow'
-* Renamed 'editThisPageLink'  URL parameter to 'edit-this-page-link'
+* Renamed 'editThisPageLink' URL parameter to 'edit-link'
 
 **Bugfix:**  
 * Added missing source maps
