@@ -372,24 +372,26 @@
             var creditHtml = '\n\n' + 'This page is displayed using <a href="https://github.com/hibbitts-design/docsify-this" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
 
             if ( !(getURLParameterByName(['standalone','embedded'])) && !(getURLParameterByName('hidegitlink'))  && (!!gitLinkRepoURL)) {
-            if ( !(getURLParameterByName('hide-credits'))) {
-              // return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
-              return html + '<br /><br />' + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
-            } else {
-              // return editHtml + '\n' + html
-              return  html + '<br />' + '\n\n' + editHtml
-            }
+              if ( !(getURLParameterByName('hide-credits'))) {
+                if (getURLParameterByName('edit-link-top')) {
+                  return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
+                } else {
+                  return html + '<br /><br />' + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
+                }
+              } else {
+                  if (getURLParameterByName('edit-link-top')) {
+                    return editHtml + '\n' + html
+                  } else {
+                    return  html + '<br />' + '\n\n' + editHtml
+                  }
+              }
 
             } else if ( getURLParameterByName(['standalone','embedded']) && !(getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
-              // return editHtml + '\n' + html
-              return html + '<br />' + '\n\n' + editHtml
-
-            } else if ( !(getURLParameterByName(['standalone','embedded']))) {
-              if ( !(getURLParameterByName('hide-credits'))) {
-                return html + '<br />' + '\n\n' + '<hr>' + creditHtml
-              } else {
-                return html
-              }
+                if (getURLParameterByName('edit-link-top')) {
+                  return editHtml + '\n' + html
+                } else {
+                  return html + '<br />' + '\n\n' + editHtml
+                }
 
             } else {
               return html
