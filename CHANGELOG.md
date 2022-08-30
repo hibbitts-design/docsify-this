@@ -23,7 +23,7 @@
 * Renamed 'editThisPageLink' URL parameter to 'edit-link'
 * Support of optional link-color parameter (`link-color`)
 * Support of optional edit-link-top parameter (`edit-link-top`)
-* Support possible Docsify loadNavBar parameter (`loadNavBar=_navbar.md`)
+* Support possible Docsify loadNavbar parameter (`loadNavbar=_navbar.md`)
 
 **Bugfix:**  
 * Added missing source maps
