@@ -109,7 +109,7 @@
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
     var editLinkText = 'Edit this Page';
 
-    // Set standalone to true to permanently hide the Sidebar and Navbar
+    // Set standalone to true to permanently hide the Sidebar
     var standalone = !(getURLParameterByName('sidebar'));
 
     // Set ToC to true to permanently show page Table of Contents (Sidebar must also be hidden)
@@ -240,9 +240,8 @@
       // Rename homepage to README.md and set homepage to README.md to default to README file for Remote Docsify
       homepage          : 'README.md',
       // coverpage      : 'coverpage.md',
-      // Set last option for loadSidebar and loadNavbar to true for Remote Docsify
+      // Set last option for loadSidebar to true for Remote Docsify
       loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
-      loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
@@ -314,6 +313,11 @@
 
               if (getURLParameterByName('edit-link-top')) {
                 URLparms = URLparms + `&edit-link-top=true`;
+              }
+
+              if (getURLParameterByName('loadNavbar')) {
+                loadnavbar = getURLParameterByName('loadNavbar', null, null, window.location.href, true);
+                URLparms = URLparms + `&loadNavbar=` + loadnavbar;
               }
 
               const links = Array.from(document.querySelectorAll('a'))
