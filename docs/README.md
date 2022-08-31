@@ -121,7 +121,7 @@ Would be changed to:
 ## Support this Project
 
 - Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this)
-- 🐦 [tweet out your thoughts](https://twitter.com/intent/tweet?text=Check+out+the+Docsify-This+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,remote,markdown,file,webpage)
+- 🐦 [tweet out your thoughts](https://twitter.com/intent/tweet?text=I+am+checking+out+the+Docsify-This.net+project+that+displays+Markdown+files+as+web+pages+in+seconds.+You+can+learn+about+the+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,remote,markdown,file,webpage)
 - Follow [@hibbittsdesign](https://twitter.com/hibbittsdesign) for updates
 
 ---
