@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.1] - XX/XX/2022
+
+**Improved:**  
+* Removed default ToC title and adjusted layout
+
 ## [1.0.0] - 09/01/2022
 
 **Improved:**  
