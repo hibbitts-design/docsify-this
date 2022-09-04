@@ -5,6 +5,9 @@
 **Improved:**  
 * Removed default ToC title and adjusted layout
 
+**Bugfix:**  
+* Properly handle spaces and commas when passing font-family URL parameter
+
 ## [1.0.0] - 09/01/2022
 
 **Improved:**  
