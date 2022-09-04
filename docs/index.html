@@ -468,8 +468,8 @@
   <script>
     fontfamily  = getURLParameterByName('font-family', null, null, window.location.href, true);
     if (!(fontfamily === false) && !(window.$docsify['basePath'] === undefined)) {
-      fontfamily = fontfamily.replaceAll(' ',%20);
-      fontfamily = fontfamily.replaceAll(%2C,',');
+      fontfamily = fontfamily.replaceAll(' ','%20');
+      fontfamily = fontfamily.replaceAll('%2C',',');
       document.documentElement.style.setProperty('--base-font-family', fontfamily);
     }
   </script>
