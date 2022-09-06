@@ -4,6 +4,7 @@
 
 **Improved:**  
 * Removed default ToC title and adjusted layout
+* Support for scrolling of Table of Contents
 
 **Bugfix:**  
 * Properly handle spaces and commas when passing font-family URL parameter
