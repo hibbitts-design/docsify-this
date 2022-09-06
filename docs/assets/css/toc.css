@@ -1,3 +1,16 @@
+.content *::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+}
+.content *::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.content *::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-color: rgba(0,0,0,0.3);
+  background-clip: content-box;
+}
 .content {
   display: flex;
   flex-direction: row-reverse;
@@ -8,7 +21,8 @@
   margin: 0 48px;
 }
 .nav {
-  width: var(--toc-width, 400px);
+  width: var(--toc-width, 380px);
+  min-width: 240px;
 /*   align-self: flex-start;
   flex: 0 0 auto; */
 }
@@ -17,12 +31,22 @@ aside.nav.nothing {
 }
 
 .page_toc {
-  position: fixed;
   border-left-style: solid;
   border-left-width: 1px;
   border-left-color: rgba(0, 0, 0, 0.07);
   border-image-slice: 1;
   padding-left: 5px;
+  position: -webkit-sticky;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 999999;
+  align-self: flex-start;
+  max-height: 100vh;
+  top: 0;
+  bottom: auto;
+  margin-right: 10px;
+  scrollbar-width: thin !important;
+  scrollbar-color: grey transparent;
 }
 
 .page_toc a > * {
@@ -76,7 +100,7 @@ aside.nav.nothing {
   padding-top: 7px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1100px) {
   .page_toc {
     position: relative;
     top: -20px;
@@ -87,7 +111,7 @@ aside.nav.nothing {
   }
   .nav {
     margin: 0 auto;
-    width: 960px;
+    width: 1100px;
   }
   .page_toc p.title {
     font-weight: 400;
