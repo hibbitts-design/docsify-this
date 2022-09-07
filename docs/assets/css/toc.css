@@ -22,7 +22,7 @@
 }
 .nav {
   width: var(--toc-width, 380px);
-  min-width: 240px;
+  min-width: 280px;
 /*   align-self: flex-start;
   flex: 0 0 auto; */
 }
@@ -98,7 +98,7 @@ aside.nav.nothing {
   padding-top: 7px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 980px) {
   .page_toc {
     position: relative;
     top: -20px;
@@ -109,7 +109,7 @@ aside.nav.nothing {
   }
   .nav {
     margin: 0 auto;
-    width: 1100px;
+    width: 980px;
   }
   .page_toc p.title {
     font-weight: 400;
