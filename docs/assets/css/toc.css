@@ -39,8 +39,6 @@ aside.nav.nothing {
   position: -webkit-sticky;
   position: fixed;
   overflow-y: scroll;
-  z-index: 999999;
-  align-self: flex-start;
   max-height: 100vh;
   top: 0;
   bottom: auto;
