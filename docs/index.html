@@ -126,6 +126,8 @@
 
       let exists = false;
 
+      url = decodeURIComponent(url) ;
+
       if (Array.isArray(name)) {
 
         name.forEach(element => {
@@ -337,7 +339,7 @@
                       var editThisPageLinkURLparm = '';
                       if (currentBasePath.includes("githubusercontent.com")) {
                         var editThisPageLink = '';
-                        editThisPageLink = currentBasePath;
+                        editThisPageLink = decodeURIComponent(currentBasePath);
                         editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
                         editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
