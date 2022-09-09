@@ -403,6 +403,13 @@
                   return html + '<br />' + '\n\n' + editHtml
                 }
 
+            } else if ( !(getURLParameterByName(['standalone','embedded']))) {
+              if ( !(getURLParameterByName('hide-credits'))) {
+                return html + '<br />' + '\n\n' + '<hr>' + creditHtml
+              } else {
+                return html
+              }
+
             } else {
               return html
             }
