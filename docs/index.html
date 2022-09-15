@@ -175,6 +175,11 @@
           var gitlinkPageURL = url;
           url = url.replace('github.com', 'raw.githubusercontent.com');
           url = url.replace(/\/blob/, '');
+        } else if (url.includes("githubusercontent")) {
+          var gitlinkPageURL = url;
+          gitlinkPageURL = gitlinkPageURL.replace('raw.githubusercontent.com', 'github.com');
+          gitlinkPageURL = gitlinkPageURL.replace(/\/main/, '/blob/main');
+          gitlinkPageURL = gitlinkPageURL.replace(/\/master/, '/blob/master');
         } else {
           var gitlinkPageURL = '';
         }
