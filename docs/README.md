@@ -87,7 +87,7 @@ Hide the credits usually shown at the bottom of every rendered Docsify-This page
 Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_, for example, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
 
 **toc-narrow**  
-Change the default breakpoint (1300) for the optional Page Table of Contents to an alternative smaller size (800) with the optional **toc-narrow** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
+Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
 ## Looking for Even More Customization and Control?
 
