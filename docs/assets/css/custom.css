@@ -114,6 +114,10 @@ input[type="checkbox"] ~ label {
   background: #eefbff;
 }
 
+.markdown-section code {
+    word-break: break-all!important;
+}
+
 /*
 
 @media (prefers-color-scheme: dark) {
