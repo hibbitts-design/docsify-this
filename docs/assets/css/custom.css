@@ -144,7 +144,3 @@ input[type="checkbox"] ~ label {
 }
 
 */
-
-.markdown-section code {
-  word-break: break-all!important;
-}
