@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.1.0] - XX/XX/2022
+## [1.1.0] - 09/20/2022
 
 **New:**  
 * Added additional URL customization options to URL Builder
