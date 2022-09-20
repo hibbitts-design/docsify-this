@@ -555,6 +555,15 @@
     }
   </script>
 
+  <!-- Change body font size if fontSize parameter present  -->
+  <script>
+    fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
+    if (!(fontsize === false) && !(window.$docsify['basePath'] === undefined)) {
+      fontsize = fontsize + "rem"
+      document.documentElement.style.setProperty('--base-font-size', fontsize);
+    }
+  </script>
+  
   <!-- Change link color if link-color parameter present  -->
   <script>
     linkcolor  = getURLParameterByName('link-color', null, null, window.location.href, true);
