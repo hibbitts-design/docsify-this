@@ -1,10 +1,14 @@
 # Changelog
 
-## [1.0.1] - XX/XX/2022
+## [1.1.0] - XX/XX/2022
+
+**New:**  
+* Added additional URL customization options to URL Builder
 
 **Improved:**  
 * Removed default ToC title and adjusted layout
 * Support for scrolling of Table of Contents
+* Updated ReadMe
 
 **Bugfix:**  
 * Properly handle spaces and commas when passing font-family URL parameter
