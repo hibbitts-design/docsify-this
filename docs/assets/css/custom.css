@@ -68,29 +68,62 @@ span .docsifythisurlfield{
     margin-left: 2px;
 }
 
-input[type="checkbox"] {
+.docsifythisurlbuildershowhidelink{
+    margin-top: 2px;
+}
+
+.docsifythisurlbuilderoptionsline{
+    margin-top: 6px;
+    vertical-align: middle;
+}
+
+.docsifythisurlbuilderrestoredefaultsbutton {
+    font-family: inherit;
+    font-size: inherit;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.docsifythisurlbuilder input[type="checkbox"] {
     position: absolute;
 }
-input[type="checkbox"] ~ label {
+
+.docsifythisurlbuilder input[type="checkbox"] ~ label {
     padding-left:1.2em;
     display:inline-block;
 }
 
-.markdown-section #editCheck {
-  accent-color: #0361cd;
+.docsifythisurlbuilder select{
+  	border:1px solid #ffffff;
+  	height:30px;
+  	font-size:1.1rem;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+.docsifythisurlbuilder select {
+    height: 30px;
+    line-height: 30px;
+    -webkit-appearance: menulist-button;
+    -moz-appearance:none;
+}
+
+.markdown-section #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #hideCredits  {
+    accent-color: #0361cd;
 }
 
 .markdown-section .docsifythisurlbuilderprimarybutton {
-  cursor: pointer;
-  color: white;
-  height: auto;
-  display: inline-block;
-  margin-top: 4px;
-  padding: 10px;
-  line-height: 1.2rem;
-  background-color: #0361cd;
-  text-decoration: none;
-  border-radius: .25rem;
+    cursor: pointer;
+    color: white;
+    height: auto;
+    display: inline-block;
+    margin-top: 4px;
+    padding: 10px;
+    line-height: 1.2rem;
+    background-color: #0361cd;
+    text-decoration: none;
+    border-radius: .25rem;
 }
 
 .markdown-section .docsifythisurlbuildersecondarybutton {
@@ -107,11 +140,11 @@ input[type="checkbox"] ~ label {
 }
 
 .markdown-section .docsifythisurlbuilder {
-  overflow: visible;
-  margin: 2em 0;
-  padding: 1.25em;
-  border-width: 0;
-  background: #eefbff;
+    overflow: visible;
+    margin: 2em 0;
+    padding: 1.25em;
+    border-width: 0;
+    background: #eefbff;
 }
 
 .markdown-section code {

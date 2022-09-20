@@ -12,12 +12,50 @@ This web app, built using the magical documentation site generator [Docsify](htt
 
 ## URL Builder
 
+Enter the URL of a Markdown file into the URL Builder and view that file as a standalone web page in a new Browser tab. The resulting URL can also be copied and shared for others to view the same web page.
+
 **Markdown File URL** (GitHub or raw source URL):</br>
 <input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
 <input class="docsifythisurlbuilderprimarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value,false,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_2" value="View as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_3" value="View as Standalone Page with Docsify Sidebar" onclick="openURLs(document.getElementById('text').value,false,true)"/></br>
-<input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link at bottom of page (requires GitHub Markdown file)</label></br>
 
-Entering the URL of a Markdown file into the above URL Builder, that file will be displayed as a standalone web page in a new Browser tab. This URL may then be copied and shared for others to view the same page. The URL Builder will also automatically transform a URL of a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link with GitHub files (default location is bottom of page)</label></div>
+
+<div class="docsifythisurlbuildershowhidelink"><a name="toggleDivlink" href="#" onclick="toggleDiv(this); return false;">Show More Options &raquo;</a></div>
+
+<div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
+
+<div class="docsifythisurlbuilderoptionsline"><label for="fontfamily">Set the page font family and size to:</label><br>
+<select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
+  <option value="default">Source Sans Pro</option>
+  <option disabled="disabled">----</option>
+  <option value="Arial,sans-serif">Arial, sans-serif</option>
+  <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
+  <option value="Verdana">Verdana, sans-serif</option>
+  <option value="Tahoma">Tahoma, sans-serif</option>
+  <option value="Times%20New%20Roman, serif">Times New Roman, serif</option>
+  <option value="Georgia,serif">Georgia, serif</option>
+  <option value="Courier,monospace">Courier, monospace</option>
+</select>
+<select class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
+  <option value="1.125">18px (1.125rem)</option>
+  <option disabled="disabled">----</option>
+  <option value=".875">14px (.875rem)</option>
+  <option value="1">16px (1rem)</option>
+  <option value="1.25">20px (1.25rem)</option>
+</select>
+</div>
+
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
+
+<div class="docsifythisurlbuilderrestoredefaultsbutton"><input type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
+
+</div>
 
 </div>
 
@@ -79,6 +117,9 @@ Change the default position of the optional "Edit this Page" link from the botto
 
 **font-family**  
 Set a custom font for your standalone pages with the optional **font-family** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New".  
+
+**font-size**  
+Set a custom font size for your standalone pages with the optional **font-size** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
 
 **hide-credits**  
 Hide the credits usually shown at the bottom of every rendered Docsify-This page, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.

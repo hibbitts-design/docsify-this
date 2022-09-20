@@ -35,7 +35,7 @@
       --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 
       --base-line-height: 1.4;
-      --base-font-size: 1.1rem;
+      --base-font-size: 1.125rem;
 
       --cover-max-width: 45em;
 
@@ -196,8 +196,8 @@
           var URLparms = `&toc=true`;
         }
 
-        const cb = document.querySelector('#editCheck');
-        if (cb.checked) {
+        const cb1 = document.querySelector('#editCheck');
+        if (cb1.checked) {
           if (gitlinkPageURL) {
             if (!lastsegment.includes(".md")) {
             // No filename is present, so assume default README.md file
@@ -205,6 +205,42 @@
             }
             var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
           }
+        }
+
+        const cb2 = document.querySelector('#editLinkTopCheck');
+        if (cb1.checked && cb2.checked) {
+          if (gitlinkPageURL) {
+            var URLparms = URLparms + `&edit-link-top=true`;
+          }
+        }
+
+        const cb3 = document.querySelector('#hideCredits');
+        if (cb3.checked) {
+          var URLparms = URLparms + `&hide-credits=true`;
+        }
+
+        const cb4 = document.querySelector('#narrowToC');
+        if (cb4.checked) {
+          if (URLparms.includes("&toc=true")) {
+            var URLparms = URLparms.replace("&toc=true", "");
+            URLparms = URLparms + `&toc-narrow=true`;
+          }
+        }
+
+        var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
+        if (!(getFontFamily == "default")) {
+            var URLparms = URLparms + `&font-family=` + getFontFamily;
+        }
+
+        var getFontSize = document.getElementById('fontsize').value;
+        if (!(getFontSize == "1.125")) {
+            var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
+        }
+
+        var getColor = document.getElementById("linkcolor");
+        var hexcode = getColor.value.substring(1);
+        if (!(hexcode == "374B5")) {
+          URLparms = URLparms + `&link-color=` + hexcode;
         }
 
         if (!lastsegment.includes(".md")) {
@@ -236,6 +272,32 @@
       const input = document.getElementById('text');
       input.focus();
       input.select();
+    }
+
+    function toggleDiv(link) {
+      var x = document.getElementById("docsifythisurlbuilderoptionsDiv");
+      if (x.style.display === "none") {
+        link.text = 'Show Fewer Options \«';
+        x.style.display = "block";
+      } else {
+        link.text = 'Show More Options \»';
+        x.style.display = "none";
+      }
+    }
+
+    function restoreAllDefaults() {
+      let element1 = document.getElementById("fontfamily");
+      element1.value = 'default';
+      let element2 = document.getElementById("fontsize");
+      element2.value = '1.125';
+      let element3 = document.getElementById("linkcolor");
+      element3.value = '0374B5';
+      let element4 = document.getElementById("editLinkTopCheck");
+      element4.checked = false;
+      let element5 = document.getElementById("narrowToC");
+      element5.checked = false;
+      let element6 = document.getElementById("hideCredits");
+      element6.checked = false;
     }
 
     // Docsify
@@ -311,6 +373,11 @@
               if (getURLParameterByName('font-family')) {
                 fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
                 URLparms = URLparms + `&font-family=` + fontfamily;
+              }
+
+              if (getURLParameterByName('font-size')) {
+                fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
+                URLparms = URLparms + `&font-size=` + fontsize + `rem`;
               }
 
               if (getURLParameterByName('link-color')) {
