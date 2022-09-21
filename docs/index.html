@@ -563,7 +563,7 @@
       document.documentElement.style.setProperty('--base-font-size', fontsize);
     }
   </script>
-
+  
   <!-- Change link color if link-color parameter present  -->
   <script>
     linkcolor  = getURLParameterByName('link-color', null, null, window.location.href, true);
@@ -580,19 +580,6 @@
   </script>
 
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-
-  <!-- Start of Rocket.Chat Livechat Script, only loaded for local docsify-this.net pages -->
-
-	<script type="text/javascript">
-	if ((location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
-      (function(w, d, s, u) {
-  		w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
-  		var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-  		j.async = true; j.src = 'https://hibbitts.rocket.chat/livechat/rocketchat-livechat.min.js?_=201903270000';
-  		h.parentNode.insertBefore(j, h);
-  	 })(window, document, 'script', 'https://hibbitts.rocket.chat/livechat');
-    }
-	</script>
 
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for local docsify-this.net pages -->
 
