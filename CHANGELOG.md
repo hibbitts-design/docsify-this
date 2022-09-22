@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.1.1] - XX/XX/2022
+## [1.1.1] - 09/22/2022
 
 **New:**  
 * Support of optional toc-headings parameter (`toc-headings`)
