@@ -70,8 +70,8 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
 
 ## Additional Demos
 
-* [GitHub Training Manual Working Locally with Git file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed as a [Standalone Page with a Table of Contents](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true#/)
-* [Single Page Docsify Open Course Starter Kit](https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md), displayed as a [Standalone Page with a Table of Contents](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&toc=true&toc-headings=h2#/)
+* [GitHub Training Manual Working Locally with Git file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed as a [Standalone Page with a Table of Contents](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true) or as a [Standalone Page with a Docsify Sidebar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&sidebar=true)
+* [Single Page Docsify Open Course Starter Kit](https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md), displayed as a [Standalone Page with a Table of Contents](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&toc=true&toc-headings=h2) or as a [Standalone Page with a Docsify Sidebar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&sidebar=true&maxLevel=2)
 
 ## Technical Details
 
@@ -141,6 +141,8 @@ Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table
 
 **toc-narrow**  
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
+
+Please note that standard [Docsify configuration settings](https://docsify.js.org/#/configuration) can also be used as URL parameters, for example when displaying the Docsify sidebar the parameter **maxLevel** can be used to set the maximum header level.
 
 ## Looking for Even More Customization and Control?
 
