@@ -109,8 +109,12 @@ span .docsifythisurlfield{
     -moz-appearance:none;
 }
 
-.markdown-section #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #hideCredits  {
+.markdown-section #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits  {
     accent-color: #0361cd;
+}
+
+.markdown-section hr  {
+    border: 1px solid #bbd4ea;
 }
 
 .markdown-section .docsifythisurlbuilderprimarybutton {
