@@ -201,7 +201,7 @@
           if (gitlinkPageURL) {
             if (!lastsegment.includes(".md")) {
             // No filename is present, so assume default README.md file
-            gitlinkPageURL = gitlinkPageURL + "README.md"
+            gitlinkPageURL = gitlinkPageURL + "README.md";
             }
             var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
           }
@@ -224,6 +224,39 @@
           if (URLparms.includes("&toc=true")) {
             var URLparms = URLparms.replace("&toc=true", "");
             URLparms = URLparms + `&toc-narrow=true`;
+          }
+        }
+
+        const cb5 = document.querySelector('#toch1');
+        const cb6 = document.querySelector('#toch2');
+        const cb7 = document.querySelector('#toch3');
+
+        if (URLparms.includes("&toc=true") || URLparms.includes("&toc-narrow=true")) {
+          if ( ((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false)) ) {
+            alert ("At least one page Heading level for the Table of Contents must be selected.");
+            return;
+          } else if ( !(!(cb5.checked) && (cb6.checked) && (cb7.checked)) ) {
+            if (URLparms.includes("&toc=true")) {
+              var tocheadings = "";
+                if (cb5.checked) {
+                  tocheadings = "h1";
+                }
+                if (cb6.checked) {
+                  if (tocheadings) {
+                    tocheadings = tocheadings + ",h2";
+                  } else {
+                    tocheadings = "h2";
+                  }
+                }
+                if (cb7.checked) {
+                  if (tocheadings) {
+                    tocheadings = tocheadings + ",h3";
+                  } else {
+                    tocheadings = "h3";
+                  }
+                }
+              URLparms = URLparms + `&toc-headings=` + tocheadings;
+            }
           }
         }
 
@@ -296,8 +329,14 @@
       element4.checked = false;
       let element5 = document.getElementById("narrowToC");
       element5.checked = false;
-      let element6 = document.getElementById("hideCredits");
+      let element6 = document.getElementById("toch1");
       element6.checked = false;
+      let element7 = document.getElementById("toch2");
+      element7.checked = true;
+      let element8 = document.getElementById("toch3");
+      element8.checked = true;
+      let element9 = document.getElementById("hideCredits");
+      element9.checked = false;
     }
 
     // Docsify
@@ -368,6 +407,11 @@
 
               if (getURLParameterByName(['toc-alt','toc-narrow'])) {
                 URLparms = `&toc-narrow=true`;
+              }
+
+              if (getURLParameterByName('toc-headings')) {
+                tocheadings = getURLParameterByName('toc-headings', null, null, window.location.href, true);
+                URLparms = URLparms + `&toc-headings=` + tocheadings;
               }
 
               if (getURLParameterByName('font-family')) {
@@ -593,7 +637,7 @@
   	})(window, document, 'script', 'https://hibbitts.rocket.chat/livechat');
   }
 	</script>
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for local docsify-this.net pages -->
 
   <script>
