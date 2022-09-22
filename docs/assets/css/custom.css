@@ -113,7 +113,7 @@ span .docsifythisurlfield{
     accent-color: #0361cd;
 }
 
-.markdown-section hr  {
+.markdown-section .docsifythisurlbuilder hr  {
     border: 1px solid #bbd4ea;
 }
 
