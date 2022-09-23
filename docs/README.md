@@ -10,9 +10,9 @@ This web app, built using the magical documentation site generator [Docsify](htt
 
 <div class="docsifythisurlbuilder">
 
-## URL Builder
+## Web Page Builder
 
-Enter the URL of a Markdown file into the URL Builder and view that file as a standalone web page in a new Browser tab. The resulting URL can also be copied and shared for others to view the same web page.
+Enter the URL of a Markdown file into the Web Page Builder and view that file as a standalone web page in a new Browser tab. The resulting page URL can be copied and shared as a standalone page or used for embedding into other systems.
 
 **Markdown File URL** (GitHub or raw source URL):</br>
 <input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
@@ -20,7 +20,7 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link with GitHub files (default location is bottom of page)</label></div>
 
-<div class="docsifythisurlbuildershowhidelink"><a name="toggleDivlink" href="#" onclick="toggleDiv(this); return false;">Show More Options &raquo;</a></div>
+<div class="docsifythisurlbuildershowhidelink"><a name="toggleDivlink" href="#" onclick="toggleDiv(this); return false;">Show More Page Options &raquo;</a></div>
 
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
@@ -75,7 +75,7 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
 
 ## Technical Details
 
-Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the format `https://docsify-this.net?basePath=URLpath&homepage=filename.md`. The **basePath** parameter is the directory containing the raw source Markdown file to render. If the file is named the expected default **README.md** then no other parameter are required, otherwise the **homepage** parameter must also be included set to the name of the file to render. To render a file stored on GitHub you need to use the raw source URL of a file (i.e. raw.githubusercontent.com), tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file) to get this URL when not using the above URL Builder.  
+Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the format `https://docsify-this.net?basePath=URLpath&homepage=filename.md`. The **basePath** parameter is the directory containing the raw source Markdown file to render. If the file is named the expected default **README.md** then no other parameter are required, otherwise the **homepage** parameter must also be included set to the name of the file to render. To render a file stored on GitHub you need to use the raw source URL of a file (i.e. raw.githubusercontent.com) - tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file) to get this URL when not using the above Web Page Builder, which does this automatically.  
 
 ## Examples of Usage
 
