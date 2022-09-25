@@ -126,19 +126,24 @@ Display a "Edit this Page" link (default location is bottom of page) with the op
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
 
 **edit-link-top**  
-Change the default position of the optional "Edit this Page" link from the bottom of pages to be the top of pages, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
+Change the default position of the optional "Edit this Page" link from the bottom of pages to be the top of pages, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
 
 **font-family**  
-Set a custom font for your standalone pages with the optional **font-family** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New".  
+Set a custom font for your standalone pages with the optional **font-family** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New".  
 
 **font-size**  
-Set a custom font size for your standalone pages with the optional **font-size** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
+Set a custom font size for your standalone pages with the optional **font-size** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
 
 **hide-credits**  
-Hide the credits usually shown at the bottom of every displayed Docsify-This page, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
+Hide the credits usually shown at the bottom of every displayed Docsify-This page, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
 
 **link-color**  
-Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_, for example, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
+Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
 
 **sidebar**  
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
@@ -149,10 +154,12 @@ Display a page table of contents with the optional **toc** parameter, for exampl
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true
 
 **toc-headings**  
-Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc=true&toc-headings=h1,h2.
+Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc=true&toc-headings=h1,h2.
 
 **toc-narrow**  
-Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
+Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
 Please note that standard [Docsify configuration settings](https://docsify.js.org/#/configuration) can also be used as URL parameters, for example when displaying the Docsify sidebar the parameter **maxLevel** can be used to set the maximum header level.
 
