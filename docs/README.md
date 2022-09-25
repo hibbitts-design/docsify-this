@@ -108,18 +108,22 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file, the URL for the would be:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master
 
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own table of contents, the URL for the site would be:  
+To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having its own table of contents, the URL for the site would be:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true
 
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own table of contents and an "Edit this Page" link, the URL for the site would be:  
+To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having its own table of contents and an "Edit this Page" link, the URL for the site would be:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
 
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own Docsify Sidebar, the URL would be:  
+To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having its own Docsify Sidebar, the URL would be:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true
 
 _TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
 
-## Additional Customization Parameters
+## All Customization Parameters
+
+**edit-link**  
+Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
 
 **edit-link-top**  
 Change the default position of the optional "Edit this Page" link from the bottom of pages to be the top of pages, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
@@ -135,6 +139,14 @@ Hide the credits usually shown at the bottom of every rendered Docsify-This page
 
 **link-color**  
 Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_, for example, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
+
+**sidebar**  
+Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true
+
+**toc**  
+Display a page table of contents with the optional **toc** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true
 
 **toc-headings**  
 Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc=true&toc-headings=h1,h2.
