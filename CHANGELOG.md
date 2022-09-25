@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.1.2] - XX/XX/2022
+
+**Improved:**  
+* Updated ReadMe
+
 ## [1.1.1] - 09/22/2022
 
 **New:**  
