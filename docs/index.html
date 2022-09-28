@@ -281,8 +281,13 @@
         }
 
         if (!lastsegment.includes(".md")) {
-          // No filename is present, so assume default README.md file
-          var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
+          // No filename is present, so assume default README.md file if full path provided
+          if (url.includes("blob") ) {
+            var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
+          } else {
+            alert("Please include the full URL of the Markdown file (i.e. 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md').");
+            selectText();
+          }    
         } else {
           if (lastsegment == "README.md") {
             // Default is README.md so homepage parm not needed
