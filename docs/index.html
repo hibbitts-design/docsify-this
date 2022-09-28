@@ -271,7 +271,11 @@
         }
 
         var getColor = document.getElementById("linkcolor");
-        var hexcode = getColor.value.substring(1);
+        var hexcode = getColor.value;
+        if (hexcode.charAt(0) ==  "#") {
+          hexcode = hexcode.substring(1);
+          getColor.value = hexcode;
+        }
         if (!(hexcode == "374B5")) {
           URLparms = URLparms + `&link-color=` + hexcode;
         }
