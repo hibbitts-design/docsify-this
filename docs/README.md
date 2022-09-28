@@ -68,7 +68,7 @@ Enter the URL of a Markdown file into the Web Page Builder and view that file as
 
 </div>
 
-## More Examples of Usage
+## Examples of Usage
 
 [GitHub Training Manual Working Locally with Git](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md) Markdown file, displayed by Docsify-This as a:  
 * [Standalone Page](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md)  
