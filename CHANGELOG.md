@@ -6,7 +6,7 @@
 * Updated ReadMe
 
 **Bugfix:**  
-* Fixed handling of '#' character in link color field
+* Fixed handling of possible '#' character in link color field
 
 ## [1.1.1] - 09/22/2022
 
