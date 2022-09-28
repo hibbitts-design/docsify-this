@@ -6,6 +6,7 @@
 * Updated ReadMe
 
 **Bugfix:**  
+* Improved check for invalid full path to Markdown file
 * Fixed handling of possible '#' character in link color field
 
 ## [1.1.1] - 09/22/2022
