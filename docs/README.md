@@ -80,10 +80,10 @@ Enter the URL of a Markdown file into the Web Page Builder and view that file as
 * [Standalone Page with Table of Contents](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&toc=true&toc-headings=h1,h2 "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
 * [Standalone Page with Docsify Sidebar](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&sidebar=true&maxLevel=2 "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
-[Easy Markdown to Github Pages](https://github.com/nicolas-van/easy-markdown-to-github-pages) linked set of Markdown files, displayed by Docsify-This as a:   
-* [Standalone Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master "Easy Markdown to Github Pages - Standalone Page")  
-* [Standalone Page with Table of Contents](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true "Easy Markdown to Github Pages - Standalone Page with Table of Contents")  
-* [Standalone Page with Docsify Sidebar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true "Easy Markdown to Github Pages - Standalone Page with Docsify Sidebar")
+[Easy Markdown to Github Pages](https://github.com/nicolas-van/easy-markdown-to-github-pages) linked set of Markdown files, displayed by Docsify-This as:   
+* [Standalone Pages](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master "Easy Markdown to Github Pages - Standalone Page")  
+* [Standalone Pages with Table of Contents](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true "Easy Markdown to Github Pages - Standalone Page with Table of Contents")  
+* [Standalone Pages with Docsify Sidebar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true "Easy Markdown to Github Pages - Standalone Page with Docsify Sidebar")
 
 ## How it Works
 
