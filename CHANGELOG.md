@@ -4,6 +4,7 @@
 
 **Improved:**  
 * Updated ReadMe
+* Support of optional edit-link-text parameter (`edit-link-text`)
 
 **Bugfix:**  
 * Improved check for invalid full path to Markdown file
