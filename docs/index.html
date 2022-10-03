@@ -207,6 +207,13 @@
           }
         }
 
+        var getEditThisPage = document.getElementById("editLinkText");
+        var editlinktext = getEditThisPage.value;
+        if (!(editlinktext == "Edit this Page")) {
+          editlinktext = editlinktext.replace(/ /g, '%20');
+          URLparms = URLparms + `&edit-link-text=` + editlinktext;
+        }
+
         const cb2 = document.querySelector('#editLinkTopCheck');
         if (cb1.checked && cb2.checked) {
           if (gitlinkPageURL) {
@@ -335,18 +342,20 @@
       element2.value = '1.125';
       let element3 = document.getElementById("linkcolor");
       element3.value = '0374B5';
-      let element4 = document.getElementById("editLinkTopCheck");
-      element4.checked = false;
-      let element5 = document.getElementById("narrowToC");
+      let element4 = document.getElementById("editLinkText");
+      element4.value = 'Edit this Page';
+      let element5 = document.getElementById("editLinkTopCheck");
       element5.checked = false;
-      let element6 = document.getElementById("toch1");
+      let element6 = document.getElementById("narrowToC");
       element6.checked = false;
-      let element7 = document.getElementById("toch2");
-      element7.checked = true;
-      let element8 = document.getElementById("toch3");
+      let element7 = document.getElementById("toch1");
+      element7.checked = false;
+      let element8 = document.getElementById("toch2");
       element8.checked = true;
-      let element9 = document.getElementById("hideCredits");
-      element9.checked = false;
+      let element9 = document.getElementById("toch3");
+      element9.checked = true;
+      let element10 = document.getElementById("hideCredits");
+      element10.checked = false;
     }
 
     // Docsify
@@ -439,6 +448,11 @@
                 URLparms = URLparms + `&link-color=` + linkcolor;
               }
 
+              if (getURLParameterByName('edit-link-text')) {
+                editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
+                URLparms = URLparms + `&edit-link-text=` + editlinktextparm;
+              }
+
               if (getURLParameterByName('edit-link-top')) {
                 URLparms = URLparms + `&edit-link-top=true`;
               }
@@ -503,6 +517,13 @@
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
+  
+            editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
+            if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
+              editlinktextparm = editlinktextparm.replaceAll('%20',' ');
+              editLinkText = editlinktextparm;
+            }
+
             var editHtml = '[:memo: ' + editLinkText + '](' + url + ')\n'
 
             var creditHtml = '\n\n' + 'This page is displayed using <a href="https://github.com/hibbitts-design/docsify-this" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
