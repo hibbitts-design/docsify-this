@@ -155,6 +155,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <div class="video-container-16by9"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRnnRFelgw1ksq_p8Eryg3dnyLCRRLPf5fBgdwdv9p-tCIwcxqWvzDGrGbjxGHL7HqEJVpmV26ntk3a/embed?start=false&loop=false&delayms=3000" frameborder="0" width=780" height="585" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
 ```
 
+🌐 Using MAMP to View Docsify Sites Locally
+---
+
+An alternative to installing Docsify locally (as described following this section) is to install MAMP to view your Docsify sites locally on your own computer.
+
+1. Download [MAMP](https://www.mamp.info/)
+2. Move your local Docsify site to the **htdocs** folder of MAMP
+3. Turn MAMP on, tap **WebStart** and then tap **My Website**
+4. Tap on the folder containing your local Docsify site and then tap on the **docs** folder
+
 📼 Video Walkthrough of Local Docsify Install/Config
 ---
 [![Generating Documentation Sites with GitHub and Docsify - Alysson Alvaran](youtube.png)](https://www.youtube.com/watch?v=TV88lp7egMw)  
