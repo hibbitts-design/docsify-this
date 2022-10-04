@@ -517,7 +517,7 @@
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
             }
-  
+
             editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
             if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
               editlinktextparm = editlinktextparm.replaceAll('%20',' ');
@@ -620,37 +620,36 @@
     }
   </script>
 
-  <!-- Change body font if fontFamily parameter present  -->
+  <!-- Check for fontfamily, fontsize and linkcolor parameters  -->
   <script>
-    fontfamily  = getURLParameterByName('font-family', null, null, window.location.href, true);
-    if (!(fontfamily === false) && !(window.$docsify['basePath'] === undefined)) {
-      fontfamily = fontfamily.replaceAll(' ','%20');
-      fontfamily = fontfamily.replaceAll('%2C',',');
-      document.documentElement.style.setProperty('--base-font-family', fontfamily);
-    }
-  </script>
+    if (!(window.$docsify['basePath'] === undefined)) {
+      // Change body font if fontFamily parameter present
+      fontfamily  = getURLParameterByName('font-family', null, null, window.location.href, true);
+      if (!(fontfamily === false)) {
+        fontfamily = fontfamily.replaceAll(' ','%20');
+        fontfamily = fontfamily.replaceAll('%2C',',');
+        document.documentElement.style.setProperty('--base-font-family', fontfamily);
+      }
 
-  <!-- Change body font size if fontSize parameter present  -->
-  <script>
-    fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
-    if (!(fontsize === false) && !(window.$docsify['basePath'] === undefined)) {
-      fontsize = fontsize + "rem"
-      document.documentElement.style.setProperty('--base-font-size', fontsize);
-    }
-  </script>
+      // Change body font size if fontSize parameter present
+      fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
+      if (!(fontsize === false)) {
+        fontsize = fontsize + "rem"
+        document.documentElement.style.setProperty('--base-font-size', fontsize);
+      }
 
-  <!-- Change link color if link-color parameter present  -->
-  <script>
-    linkcolor  = getURLParameterByName('link-color', null, null, window.location.href, true);
-    if (!(linkcolor === false) && !(window.$docsify['basePath'] === undefined)) {
-      linkcolor = '#' + linkcolor
-      document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
-      document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
-      document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
-      document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
-      document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
-      document.documentElement.style.setProperty('--link-color', linkcolor);
-      document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
+      // Change link color if link-color parameter present
+      linkcolor  = getURLParameterByName('link-color', null, null, window.location.href, true);
+      if (!(linkcolor === false)) {
+        linkcolor = '#' + linkcolor
+        document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
+        document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
+        document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
+        document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
+        document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
+        document.documentElement.style.setProperty('--link-color', linkcolor);
+        document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
+      }
     }
   </script>
 
