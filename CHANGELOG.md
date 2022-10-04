@@ -5,6 +5,7 @@
 **Improved:**  
 * Updated ReadMe
 * Support of optional edit-link-text parameter (`edit-link-text`)
+* Refactor handling of fontfamily, fontsize and linkcolor parameters
 
 **Bugfix:**  
 * Improved check for invalid full path to Markdown file
