@@ -565,6 +565,16 @@
       window.$docsify[key] = value;
     });
 
+    // Check for Return Key for Web Page Builder
+    if (window.$docsify['basePath'] === undefined) {
+      function checkKey(e){
+       var key=e.keyCode || e.which;
+        if (key==13){
+           document.getElementById("btn_1").click();
+        }
+      }
+    }
+    
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
@@ -673,18 +683,6 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-19424343-37');
-    }
-  </script>
-
-  <!-- Check for Return Key in URL Builder field -->
-  <script>
-    if (window.$docsify['basePath'] === undefined) {
-      function checkKey(e){
-       var key=e.keyCode || e.which;
-        if (key==13){
-           document.getElementById("btn_1").click();
-        }
-      }
     }
   </script>
 
