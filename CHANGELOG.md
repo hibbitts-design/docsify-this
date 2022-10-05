@@ -7,6 +7,7 @@
 * Support of optional edit-link-text parameter (`edit-link-text`)
 * Refactor handling of fontfamily, fontsize and linkcolor parameters
 * Refactor reset of Web Page Builder defaults
+* Move check for Return Key with Web Page Builder
 
 **Bugfix:**  
 * Improved check for invalid full path to Markdown file
