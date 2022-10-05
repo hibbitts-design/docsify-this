@@ -185,25 +185,25 @@
         }
 
         // Get last segment of URL
-        var lastsegment = url.split('/').pop();
-        var URLparms = '';
+        var lastSegment = url.split('/').pop();
+        var urlParms = '';
 
         if (sidebar) {
-          var URLparms = `&sidebar=true`;
+          var urlParms = `&sidebar=true`;
         }
 
         if (toc) {
-          var URLparms = `&toc=true`;
+          var urlParms = `&toc=true`;
         }
 
         const cb1 = document.querySelector('#editCheck');
         if (cb1.checked) {
           if (gitlinkPageURL) {
-            if (!lastsegment.includes(".md")) {
+            if (!lastSegment.includes(".md")) {
             // No filename is present, so assume default README.md file
             gitlinkPageURL = gitlinkPageURL + "README.md";
             }
-            var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
+            var urlParms = urlParms + `&edit-link=` + gitlinkPageURL;
           }
         }
 
@@ -211,26 +211,26 @@
         var editlinktext = getEditThisPage.value;
         if (!(editlinktext == "Edit this Page")) {
           editlinktext = editlinktext.replace(/ /g, '%20');
-          URLparms = URLparms + `&edit-link-text=` + editlinktext;
+          urlParms = urlParms + `&edit-link-text=` + editlinktext;
         }
 
         const cb2 = document.querySelector('#editLinkTopCheck');
         if (cb1.checked && cb2.checked) {
           if (gitlinkPageURL) {
-            var URLparms = URLparms + `&edit-link-top=true`;
+            var urlParms = urlParms + `&edit-link-top=true`;
           }
         }
 
         const cb3 = document.querySelector('#hideCredits');
         if (cb3.checked) {
-          var URLparms = URLparms + `&hide-credits=true`;
+          var urlParms = urlParms + `&hide-credits=true`;
         }
 
         const cb4 = document.querySelector('#narrowToC');
         if (cb4.checked) {
-          if (URLparms.includes("&toc=true")) {
-            var URLparms = URLparms.replace("&toc=true", "");
-            URLparms = URLparms + `&toc-narrow=true`;
+          if (urlParms.includes("&toc=true")) {
+            var urlParms = urlParms.replace("&toc=true", "");
+            urlParms = urlParms + `&toc-narrow=true`;
           }
         }
 
@@ -238,72 +238,72 @@
         const cb6 = document.querySelector('#toch2');
         const cb7 = document.querySelector('#toch3');
 
-        if (URLparms.includes("&toc=true") || URLparms.includes("&toc-narrow=true")) {
+        if (urlParms.includes("&toc=true") || urlParms.includes("&toc-narrow=true")) {
           if ( ((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false)) ) {
             alert ("At least one page Heading level for the Table of Contents must be selected.");
             return;
           } else if ( !(!(cb5.checked) && (cb6.checked) && (cb7.checked)) ) {
-            if (URLparms.includes("&toc=true")) {
-              var tocheadings = "";
+            if (urlParms.includes("&toc=true")) {
+              var ToCHeadings = "";
                 if (cb5.checked) {
-                  tocheadings = "h1";
+                  ToCHeadings = "h1";
                 }
                 if (cb6.checked) {
-                  if (tocheadings) {
-                    tocheadings = tocheadings + ",h2";
+                  if (ToCHeadings) {
+                    ToCHeadings = ToCHeadings + ",h2";
                   } else {
-                    tocheadings = "h2";
+                    ToCHeadings = "h2";
                   }
                 }
                 if (cb7.checked) {
-                  if (tocheadings) {
-                    tocheadings = tocheadings + ",h3";
+                  if (ToCHeadings) {
+                    ToCHeadings = ToCHeadings + ",h3";
                   } else {
-                    tocheadings = "h3";
+                    ToCHeadings = "h3";
                   }
                 }
-              URLparms = URLparms + `&toc-headings=` + tocheadings;
+              urlParms = urlParms + `&toc-headings=` + ToCHeadings;
             }
           }
         }
 
         var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
         if (!(getFontFamily == "default")) {
-            var URLparms = URLparms + `&font-family=` + getFontFamily;
+            var urlParms = urlParms + `&font-family=` + getFontFamily;
         }
 
         var getFontSize = document.getElementById('fontsize').value;
         if (!(getFontSize == "1.125")) {
-            var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
+            var urlParms = urlParms + `&font-size=` + getFontSize; + `rem`
         }
 
         var getColor = document.getElementById("linkcolor");
-        var hexcode = getColor.value;
-        if (hexcode.charAt(0) ==  "#") {
-          hexcode = hexcode.substring(1);
-          getColor.value = hexcode;
+        var hexCode = getColor.value;
+        if (hexCode.charAt(0) ==  "#") {
+          hexCode = hexCode.substring(1);
+          getColor.value = hexCode;
         }
-        if (!(hexcode == "0374B5")) {
-          URLparms = URLparms + `&link-color=` + hexcode;
+        if (!(hexCode == "0374B5")) {
+          urlParms = urlParms + `&link-color=` + hexCode;
         }
 
-        if (!lastsegment.includes(".md")) {
+        if (!lastSegment.includes(".md")) {
           // No filename is present, so assume default README.md file if full path provided
           if (url.includes("blob") ) {
-            var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
+            var baseURL = docsifyurl + `?basePath=${url}` + urlParms;
           } else {
             alert("Please include the full path and filename in the Markdown file URL (e.g. 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md').");
             selectText();
             return;
           }    
         } else {
-          if (lastsegment == "README.md") {
+          if (lastSegment == "README.md") {
             // Default is README.md so homepage parm not needed
             url = url.substring(0, url.lastIndexOf("/"));
-            var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
+            var baseURL = docsifyurl + `?basePath=${url}` + urlParms;
           } else {
             url = url.substring(0, url.lastIndexOf("/"));
-            var baseURL = docsifyurl + `?basePath=${url}&homepage=${lastsegment}` + URLparms;
+            var baseURL = docsifyurl + `?basePath=${url}&homepage=${lastSegment}` + urlParms;
           }
         }
 
@@ -403,53 +403,53 @@
               currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
 
               // Carry any existing URL parms in links
-              var URLparms = '';
+              var urlParms = '';
               var editThisPageLinkURLparm = ''
 
               if (getURLParameterByName('sidebar')) {
-                URLparms = `&sidebar=true`;
+                urlParms = `&sidebar=true`;
               }
 
               if (getURLParameterByName('toc')) {
-                URLparms = `&toc=true`;
+                urlParms = `&toc=true`;
               }
 
               if (getURLParameterByName(['toc-alt','toc-narrow'])) {
-                URLparms = `&toc-narrow=true`;
+                urlParms = `&toc-narrow=true`;
               }
 
               if (getURLParameterByName('toc-headings')) {
-                tocheadings = getURLParameterByName('toc-headings', null, null, window.location.href, true);
-                URLparms = URLparms + `&toc-headings=` + tocheadings;
+                ToCHeadings = getURLParameterByName('toc-headings', null, null, window.location.href, true);
+                urlParms = urlParms + `&toc-headings=` + ToCHeadings;
               }
 
               if (getURLParameterByName('font-family')) {
                 fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
-                URLparms = URLparms + `&font-family=` + fontfamily;
+                urlParms = urlParms + `&font-family=` + fontfamily;
               }
 
               if (getURLParameterByName('font-size')) {
                 fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
-                URLparms = URLparms + `&font-size=` + fontsize + `rem`;
+                urlParms = urlParms + `&font-size=` + fontsize + `rem`;
               }
 
               if (getURLParameterByName('link-color')) {
                 linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
-                URLparms = URLparms + `&link-color=` + linkcolor;
+                urlParms = urlParms + `&link-color=` + linkcolor;
               }
 
               if (getURLParameterByName('edit-link-text')) {
                 editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
-                URLparms = URLparms + `&edit-link-text=` + editlinktextparm;
+                urlParms = urlParms + `&edit-link-text=` + editlinktextparm;
               }
 
               if (getURLParameterByName('edit-link-top')) {
-                URLparms = URLparms + `&edit-link-top=true`;
+                urlParms = urlParms + `&edit-link-top=true`;
               }
 
               if (getURLParameterByName('loadNavbar')) {
                 loadnavbar = getURLParameterByName('loadNavbar', null, null, window.location.href, true);
-                URLparms = URLparms + `&loadNavbar=` + loadnavbar;
+                urlParms = urlParms + `&loadNavbar=` + loadnavbar;
               }
 
               const links = Array.from(document.querySelectorAll('a'))
@@ -458,12 +458,12 @@
                 // Find any local Markdown file links
                 if (link.getAttribute('href')?.match(/^#/)) {
                   // Modify each Markdown file link to work with Remote Docsify
-                  var lastsegment = '';
-                  lastsegment = link.getAttribute('href');
-                  lastsegment = lastsegment.replace('#/', '');
-                  lastsegment = lastsegment.replace('./', '');
+                  var lastSegment = '';
+                  lastSegment = link.getAttribute('href');
+                  lastSegment = lastSegment.replace('#/', '');
+                  lastSegment = lastSegment.replace('./', '');
                   // Check to make sure link is not Docsify id anchor link
-                  if (lastsegment.startsWith("?id")===false) {
+                  if (lastSegment.startsWith("?id")===false) {
                     if (getURLParameterByName('edit-link')) {
                       // Calculate existing edit-link URL parm in link
                       var editThisPageLinkURLparm = '';
@@ -473,13 +473,13 @@
                         editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
                         editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
-                        editThisPageLink = editThisPageLink + '/' + lastsegment + '.md'
+                        editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
                         editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
                       }
                     }
                     // Update Markdown file link
                     var newURL = ''
-                    newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md` + URLparms + editThisPageLinkURLparm;
+                    newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + urlParms + editThisPageLinkURLparm;
                     link.setAttribute('href', newURL);
                   }
                 } else {
