@@ -336,26 +336,16 @@
     }
 
     function restoreAllDefaults() {
-      let element1 = document.getElementById("fontfamily");
-      element1.value = 'default';
-      let element2 = document.getElementById("fontsize");
-      element2.value = '1.125';
-      let element3 = document.getElementById("linkcolor");
-      element3.value = '0374B5';
-      let element4 = document.getElementById("editLinkText");
-      element4.value = 'Edit this Page';
-      let element5 = document.getElementById("editLinkTopCheck");
-      element5.checked = false;
-      let element6 = document.getElementById("narrowToC");
-      element6.checked = false;
-      let element7 = document.getElementById("toch1");
-      element7.checked = false;
-      let element8 = document.getElementById("toch2");
-      element8.checked = true;
-      let element9 = document.getElementById("toch3");
-      element9.checked = true;
-      let element10 = document.getElementById("hideCredits");
-      element10.checked = false;
+      document.getElementById("fontfamily").value = 'default';
+      document.getElementById("fontsize").value = '1.125';
+      document.getElementById("linkcolor").value = '0374B5';
+      document.getElementById("editLinkText").value = 'Edit this Page';
+      document.getElementById("editLinkTopCheck").checked = false;
+      document.getElementById("narrowToC").checked = false;
+      document.getElementById("toch1").checked = false;
+      document.getElementById("toch2").checked = true;
+      document.getElementById("toch3").checked = true;
+      document.getElementById("hideCredits").checked = false;
     }
 
     // Docsify
