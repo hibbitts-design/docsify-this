@@ -325,13 +325,13 @@
     }
 
     function toggleDiv(link) {
-      var x = document.getElementById("docsifythisurlbuilderoptionsDiv");
-      if (x.style.display === "none") {
+      var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+      if (theDiv.style.display === "none") {
         link.text = 'Show Fewer Page Appearance Options \«';
-        x.style.display = "block";
+        theDiv.style.display = "block";
       } else {
         link.text = 'Show More Page Appearance Options \»';
-        x.style.display = "none";
+        theDiv.style.display = "none";
       }
     }
 
