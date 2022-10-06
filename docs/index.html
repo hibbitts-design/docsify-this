@@ -167,8 +167,8 @@
 
       if (url) {
 
-        docsifyurl = window.location.href
-        docsifyurl = docsifyurl.replace('/#/', '');
+        docsifyURL = window.location.href
+        docsifyURL = docsifyURL.replace('/#/', '');
 
         // If not Raw source URL convert it
         if (url.includes("github.com")) {
@@ -290,7 +290,7 @@
         if (!lastSegment.includes(".md")) {
           // No filename is present, so assume default README.md file if full path provided
           if (url.includes("blob") ) {
-            var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
+            var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
           } else {
             alert("Please include the full path and filename in the Markdown file URL (e.g. 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md').");
             selectText();
@@ -300,10 +300,10 @@
           if (lastSegment == "README.md") {
             // Default is README.md so homepage parm not needed
             url = url.substring(0, url.lastIndexOf("/"));
-            var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
+            var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
           } else {
             url = url.substring(0, url.lastIndexOf("/"));
-            var baseURL = docsifyurl + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
+            var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
           }
         }
 
