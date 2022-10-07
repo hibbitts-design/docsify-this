@@ -115,6 +115,8 @@ span .docsifythisurlfield{
 
 .markdown-section .docsifythisurlbuilder hr  {
     border: 1px solid #bbd4ea;
+    margin-top: .6em;
+    margin-bottom: .6em;
 }
 
 .markdown-section .docsifythisurlbuilderprimarybutton {
