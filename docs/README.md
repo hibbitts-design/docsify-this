@@ -23,7 +23,7 @@ Page layout:
 <div style="display: flex; margin-top: -3px;">
 
 <label>
-  <input type="radio" name="pagestyle" id="stylecontentonly"  checked>
+  <input type="radio" name="pagestyle" id="stylecontentonly" checked>
   <img src="images/contentonly.png" alt="Page Content Only" title="Page Content Only" >
   <figcaption id="caption">Content Only</figcaption>
 </label>
