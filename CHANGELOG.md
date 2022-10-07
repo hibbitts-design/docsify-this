@@ -4,6 +4,7 @@
 
 **New:**  
 * Added visual previews for page layout
+* Added color preview area next to link color input field
 
 **Improved:**  
 * Refactor handling of fontfamily, fontsize and linkcolor parameters
