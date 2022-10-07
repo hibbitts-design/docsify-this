@@ -2,6 +2,9 @@
 
 ## [1.1.3] - XX/XX/2022
 
+**New:**  
+* Added visual previews for page layout
+
 **Improved:**  
 * Refactor handling of fontfamily, fontsize and linkcolor parameters
 * Refactor reset of Web Page Builder defaults
