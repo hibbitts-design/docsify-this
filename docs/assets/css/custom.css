@@ -173,6 +173,15 @@ span .docsifythisurlfield{
 .markdown-section .docsifythisurlbuilder figcaption {
     margin-top: -3px;
 }
+
+.docsifythisurlbuilder .colorpreview {
+    width: 30px;
+    border: solid 3px #0374B5;
+    background-color: #0374B5;
+    border-radius: 3px 3px 3px 3px; 
+    margin-left: 3px;
+}
+
 /*
 
 @media (prefers-color-scheme: dark) {

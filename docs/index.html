@@ -349,6 +349,18 @@
       document.getElementById("toch2").checked = true;
       document.getElementById("toch3").checked = true;
       document.getElementById("hideCredits").checked = false;
+      document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
+      document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+    }
+
+    function updatecolorpreview() {
+      var getColor = document.getElementById("linkcolor");
+      var hexCode = getColor.value;
+      if (!(hexCode.charAt(0) ==  "#")) {
+        hexCode = '#' + hexCode;
+      }
+      document.getElementById("linkcolorpreview").style.borderColor = hexCode;
+      document.getElementById("linkcolorpreview").style.backgroundColor = hexCode;
     }
 
     // Docsify
@@ -577,7 +589,7 @@
         }
       }
     }
-    
+
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
