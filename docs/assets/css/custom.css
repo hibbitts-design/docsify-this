@@ -162,7 +162,7 @@ span .docsifythisurlfield{
 
 .docsifythisurlbuilder [type=radio]+img {
     cursor: pointer;
-    margin-right: 0.75rem;
+    margin-right: 0.5rem;
 }
 
 .docsifythisurlbuilder  [type=radio]:checked + img {
