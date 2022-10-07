@@ -24,19 +24,19 @@ Page layout:
 
 <label>
   <input type="radio" name="pagestyle" id="stylecontentonly" checked>
-  <img src="images/contentonly.png" alt="Page Content Only" title="Page Content Only" >
+  <img style="padding: 2px;" src="images/contentonly.png" alt="Page Content Only" title="Page Content Only" >
   <figcaption id="caption">Content Only</figcaption>
 </label>
 
 <label>
   <input type="radio" name="pagestyle" id="styletoc">
-  <img src="images/toc.png" alt="Page with Table of Contents" title="Page with Table of Contents">
+  <img style="padding: 2px;" src="images/toc.png" alt="Page with Table of Contents" title="Page with Table of Contents">
   <figcaption id="caption">Table of Contents</figcaption>
 </label>
 
 <label>
   <input type="radio" name="pagestyle" id="stylesidebar" >
-  <img src="images/sidebar.png" alt="Page with Docsify Sidebar (collapsible)" title="Page with Docsify Sidebar (collapsible)">
+  <img style="padding: 2px;" src="images/sidebar.png" alt="Page with Docsify Sidebar (collapsible)" title="Page with Docsify Sidebar (collapsible)">
   <figcaption id="caption">Docsify Sidebar</figcaption>
 </label>
 
