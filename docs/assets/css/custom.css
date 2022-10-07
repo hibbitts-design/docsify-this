@@ -155,6 +155,24 @@ span .docsifythisurlfield{
     word-break: break-all!important;
 }
 
+.docsifythisurlbuilder [type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.docsifythisurlbuilder [type=radio]+img {
+    cursor: pointer;
+    margin-right: 0.75rem;
+}
+
+.docsifythisurlbuilder  [type=radio]:checked + img {
+    outline: 4px solid #0261cd;
+    position: relative;
+}
+
+.markdown-section .docsifythisurlbuilder figcaption {
+    margin-top: -3px;
+}
 /*
 
 @media (prefers-color-scheme: dark) {
