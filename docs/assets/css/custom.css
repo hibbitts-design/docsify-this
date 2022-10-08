@@ -173,6 +173,7 @@ span .docsifythisurlfield{
 }
 
 .markdown-section .docsifythisurlbuilder figcaption {
+    cursor: pointer;
     margin-top: -3px;
 }
 
