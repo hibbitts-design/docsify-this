@@ -61,64 +61,6 @@ span .docsifythisurlfield{
     text-align: left;
 }
 
-.docsifythisurlbuildercheckbox{
-    position: absolute;
-    transform: scale(1.2);
-    margin-top: 6px;
-    margin-left: 2px;
-}
-
-.docsifythisurlbuildershowhidelink{
-    margin-top: 2px;
-}
-
-.docsifythisurlbuilderoptionsline{
-    margin-top: 6px;
-    vertical-align: middle;
-}
-
-.docsifythisurlbuilderrestoredefaultsbutton {
-    font-family: inherit;
-    font-size: inherit;
-    margin-top: 10px;
-    text-align: right;
-}
-
-.docsifythisurlbuilder input[type="checkbox"] {
-    position: absolute;
-}
-
-.docsifythisurlbuilder input[type="checkbox"] ~ label {
-    padding-left:1.2em;
-    display:inline-block;
-}
-
-.docsifythisurlbuilder select{
-  	border:1px solid #ffffff;
-  	height:30px;
-  	font-size:1.1rem;
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    text-overflow: '';
-}
-
-.docsifythisurlbuilder select {
-    height: 30px;
-    line-height: 30px;
-    -webkit-appearance: menulist-button;
-    -moz-appearance:none;
-}
-
-.markdown-section #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits  {
-    accent-color: #0361cd;
-}
-
-.markdown-section .docsifythisurlbuilder hr  {
-    border: 1px solid #bbd4ea;
-    margin-top: .6em;
-    margin-bottom: .6em;
-}
-
 .markdown-section .docsifythisurlbuilderprimarybutton {
     cursor: pointer;
     color: white;
@@ -145,18 +87,6 @@ span .docsifythisurlfield{
     border-radius: .25rem;
 }
 
-.markdown-section .docsifythisurlbuilder {
-    overflow: visible;
-    margin: 2em 0;
-    padding: 1.25em;
-    border-width: 0;
-    background: #eefbff;
-}
-
-.markdown-section code {
-    word-break: break-all!important;
-}
-
 .docsifythisurlbuilder [type=radio] {
     position: absolute;
     opacity: 0;
@@ -177,12 +107,73 @@ span .docsifythisurlfield{
     margin-top: -3px;
 }
 
+.markdown-section .docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits  {
+    accent-color: #0361cd;
+}
+
+.docsifythisurlbuildercheckbox{
+    position: absolute;
+    transform: scale(1.2);
+    margin-top: 6px;
+    margin-left: 2px;
+}
+
+.docsifythisurlbuilder input[type="checkbox"] {
+    position: absolute;
+}
+
+.docsifythisurlbuilder input[type="checkbox"] ~ label {
+    padding-left:1.2em;
+    display:inline-block;
+}
+
+.docsifythisurlbuildershowhidelink{
+    margin-top: 2px;
+}
+
+.docsifythisurlbuilderoptionsline{
+    margin-top: 6px;
+    vertical-align: middle;
+}
+
+.docsifythisurlbuilder select {
+  	border:1px solid #757575;
+  	height:30px;
+    line-height: 30px;
+    -webkit-appearance: menulist-button;
+}
+
+.markdown-section .docsifythisurlbuilder hr  {
+    border: 1px solid #bbd4ea;
+    margin-top: .6em;
+    margin-bottom: .6em;
+}
+
+.markdown-section .docsifythisurlbuilder {
+    overflow: visible;
+    margin: 2em 0;
+    padding: 1.25em;
+    border-width: 0;
+    background: #eefbff;
+}
+
 .docsifythisurlbuilder .colorpreview {
     width: 30px;
     border: solid 3px #0374B5;
     background-color: #0374B5;
     border-radius: 3px 3px 3px 3px; 
     margin-left: 3px;
+}
+
+.docsifythisurlbuilderrestoredefaultsbutton {
+    font-family: inherit;
+    font-size: inherit;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.markdown-section docsifythisurlbuilder code {
+    word-break: break-all!important;
 }
 
 /*
