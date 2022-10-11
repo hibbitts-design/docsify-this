@@ -11,6 +11,7 @@
 * Refactor reset of Web Page Builder defaults
 * Move check for Return Key with Web Page Builder
 * Miscellaneous script cleanup
+* CSS cleanup
 
 ## [1.1.2] - 10/03/2022
 
