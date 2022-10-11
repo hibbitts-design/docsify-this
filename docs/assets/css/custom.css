@@ -44,14 +44,17 @@ body .markdown-section {
     background: #eefbff;
 }
 
-.docsifythisurlfield {
+.docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
     overflow: hidden;
-    width: 100%;
     background-color : #white;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding: 10px;
-    color: black;
+    padding: 6px;
+    border: 1px solid #323232
+}
+
+.docsifythisurlfield {
+    width: 100%;
 }
 
 span .docsifythisurlfield {
@@ -155,10 +158,10 @@ span .docsifythisurlfield {
 
 .docsifythisurlbuilder .colorpreview {
     width: 30px;
-    border: solid 3px #0374B5;
+    border: solid 4px #0374B5;
     background-color: #0374B5;
     border-radius: 3px 3px 3px 3px; 
-    margin-left: 3px;
+    margin-left: 4px;
 }
 
 .docsifythisurlbuilderrestoredefaultsbutton {
