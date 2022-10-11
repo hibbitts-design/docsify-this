@@ -44,11 +44,7 @@ body .markdown-section {
     background: #eefbff;
 }
 
-form .docsifythisurlfield{
-    width: 500px;
-}
-
-.docsifythisurlfield{
+.docsifythisurlfield {
     overflow: hidden;
     width: 100%;
     background-color : #white;
