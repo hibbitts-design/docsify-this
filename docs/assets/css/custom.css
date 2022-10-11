@@ -58,7 +58,7 @@ form .docsifythisurlfield{
     color: black;
 }
 
-span .docsifythisurlfield{
+span .docsifythisurlfield {
     display: block;
     overflow: hidden;
 }
@@ -95,7 +95,7 @@ span .docsifythisurlfield{
     border-radius: .25rem;
 }
 
-.docsifythisurlbuilderoptionsline{
+.docsifythisurlbuilderoptionsline {
     margin-top: 6px;
     vertical-align: middle;
 }
