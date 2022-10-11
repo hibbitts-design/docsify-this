@@ -144,9 +144,9 @@ span .docsifythisurlfield {
 }
 
 .docsifythisurlbuilder select {
-  	border:1px solid #757575;
-  	height:30px;
-    line-height: 30px;
+    border: 1px solid #757575;
+    height: 2rem;
+    line-height: 2rem;
     -webkit-appearance: menulist-button;
 }
 
