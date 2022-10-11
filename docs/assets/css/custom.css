@@ -176,24 +176,33 @@ span .docsifythisurlfield{
 
 @media (prefers-color-scheme: dark) {
 
-  .docsifythisurlfield{
-      background-color: #273338;
-      color: white;
-  }
+    .docsifythisurlbuilder {
+        background: #074d94;
+    }
 
-  .markdown-section .docsifythisurlbuilderprimarybutton {
-      color: black;
-      background-color: #4bc3f4;
-  }
+    .docsifythisurlfield{
+        background-color: #273338;
+        color: white;
+    }
 
-  .markdown-section .docsifythisurlbuildersecondarybutton {
-      color: black;
-      background-color: #a2e8fc;
-  }
+    .docsifythisurlbuilderprimarybutton {
+        color: black;
+        background-color: #4bc3f4;
+    }
 
-  .markdown-section .docsifythisurlbuilder {
-    background: #074d94;
-  }
+    .docsifythisurlbuildersecondarybutton {
+        color: black;
+        background-color: #a2e8fc;
+    }
+
+    .docsifythisurlbuilder [type=radio]:checked + img {
+        outline: 3px solid #4bc3f4;
+        position: relative;
+    }
+
+    .docsifythisurlbuildershowhidelink a:link, .docsifythisurlbuildershowhidelink a:visited, .docsifythisurlbuildershowhidelink a:hover, .docsifythisurlbuildershowhidelink a:active {
+        color: #4bc3f4;
+    }
 
 }
 
