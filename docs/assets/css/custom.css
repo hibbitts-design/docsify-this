@@ -36,6 +36,14 @@ body .markdown-section {
 
 /* DOCSIFY THIS */
 
+.docsifythisurlbuilder {
+    overflow: visible;
+    margin: 2em 0;
+    padding: 1.25em;
+    border-width: 0;
+    background: #eefbff;
+}
+
 form .docsifythisurlfield{
     width: 500px;
 }
@@ -61,7 +69,7 @@ span .docsifythisurlfield{
     text-align: left;
 }
 
-.markdown-section .docsifythisurlbuilderprimarybutton {
+.docsifythisurlbuilderprimarybutton {
     cursor: pointer;
     color: white;
     height: auto;
@@ -74,7 +82,7 @@ span .docsifythisurlfield{
     border-radius: .25rem;
 }
 
-.markdown-section .docsifythisurlbuildersecondarybutton {
+.docsifythisurlbuildersecondarybutton {
     cursor: pointer;
     color: white;
     height: auto;
@@ -85,6 +93,11 @@ span .docsifythisurlfield{
     background-color: #0b97ef;
     text-decoration: none;
     border-radius: .25rem;
+}
+
+.docsifythisurlbuilderoptionsline{
+    margin-top: 6px;
+    vertical-align: middle;
 }
 
 .docsifythisurlbuilder [type=radio] {
@@ -102,12 +115,12 @@ span .docsifythisurlfield{
     position: relative;
 }
 
-.markdown-section .docsifythisurlbuilder figcaption {
+.docsifythisurlbuilder figcaption {
     cursor: pointer;
     margin-top: -3px;
 }
 
-.markdown-section .docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits  {
+.docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits  {
     accent-color: #0361cd;
 }
 
@@ -131,11 +144,6 @@ span .docsifythisurlfield{
     margin-top: 2px;
 }
 
-.docsifythisurlbuilderoptionsline{
-    margin-top: 6px;
-    vertical-align: middle;
-}
-
 .docsifythisurlbuilder select {
   	border:1px solid #757575;
   	height:30px;
@@ -143,18 +151,10 @@ span .docsifythisurlfield{
     -webkit-appearance: menulist-button;
 }
 
-.markdown-section .docsifythisurlbuilder hr  {
+.docsifythisurlbuilder hr  {
     border: 1px solid #bbd4ea;
     margin-top: .6em;
     margin-bottom: .6em;
-}
-
-.markdown-section .docsifythisurlbuilder {
-    overflow: visible;
-    margin: 2em 0;
-    padding: 1.25em;
-    border-width: 0;
-    background: #eefbff;
 }
 
 .docsifythisurlbuilder .colorpreview {
@@ -170,10 +170,6 @@ span .docsifythisurlfield{
     font-size: inherit;
     margin-top: 10px;
     text-align: right;
-}
-
-.markdown-section docsifythisurlbuilder code {
-    word-break: break-all!important;
 }
 
 /*
