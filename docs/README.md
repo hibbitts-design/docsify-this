@@ -88,8 +88,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
 
-<div id="docsifythisurlbuilderrestoredefaultsbutton"><input type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
-
+<div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 </div>
 
 </div>
