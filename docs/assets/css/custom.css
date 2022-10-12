@@ -36,7 +36,7 @@ body .markdown-section {
 
 /* DOCSIFY THIS */
 
-.docsifythisurlbuilder {
+#docsifythisurlbuilder {
     overflow: visible;
     margin: 2em 0;
     padding: 1.25em;
@@ -44,28 +44,22 @@ body .markdown-section {
     background: #eefbff;
 }
 
-.docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
+#docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
     overflow: hidden;
-    background-color : #white;
+    background-color: #white;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 6px;
     border: 1px solid #323232
 }
 
-.docsifythisurlfield {
+#docsifythisurlfield {
     width: 100%;
 }
 
-span .docsifythisurlfield {
+span #docsifythisurlfield {
     display: block;
     overflow: hidden;
-}
-
-.docsifythisurlbuilderbutton {
-    -webkit-appearance: none;
-    white-space: normal;
-    text-align: left;
 }
 
 .docsifythisurlbuilderprimarybutton {
@@ -99,72 +93,72 @@ span .docsifythisurlfield {
     vertical-align: middle;
 }
 
-.docsifythisurlbuilder [type=radio] {
+#docsifythisurlbuilder [type=radio] {
     position: absolute;
     opacity: 0;
 }
 
-.docsifythisurlbuilder [type=radio]+img {
+#docsifythisurlbuilder [type=radio]+img {
     cursor: pointer;
     margin-right: 0.5rem;
 }
 
-.docsifythisurlbuilder  [type=radio]:checked + img {
+#docsifythisurlbuilder [type=radio]:checked+img {
     outline: 3px solid #0261cd;
     position: relative;
 }
 
-.docsifythisurlbuilder figcaption {
+#docsifythisurlbuilder figcaption {
     cursor: pointer;
     margin-top: -3px;
 }
 
-.docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits  {
+#docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits  {
     accent-color: #0361cd;
 }
 
-.docsifythisurlbuildercheckbox{
+.docsifythisurlbuildercheckbox {
     position: absolute;
     transform: scale(1.2);
     margin-top: 6px;
     margin-left: 2px;
 }
 
-.docsifythisurlbuilder input[type="checkbox"] {
+#docsifythisurlbuilder input[type="checkbox"] {
     position: absolute;
 }
 
-.docsifythisurlbuilder input[type="checkbox"] ~ label {
-    padding-left:1.2em;
-    display:inline-block;
+#docsifythisurlbuilder input[type="checkbox"]~label {
+    padding-left: 1.2em;
+    display: inline-block;
 }
 
-.docsifythisurlbuildershowhidelink{
+#docsifythisurlbuildershowhidelink {
     margin-top: 2px;
 }
 
-.docsifythisurlbuilder select {
+#docsifythisurlbuilder select {
     border: 1px solid #757575;
     height: 2rem;
     line-height: 2rem;
     -webkit-appearance: menulist-button;
 }
 
-.docsifythisurlbuilder hr  {
+#docsifythisurlbuilder hr {
     border: 1px solid #bbd4ea;
     margin-top: .6em;
     margin-bottom: .6em;
 }
 
-.docsifythisurlbuilder .colorpreview {
+#docsifythisurlbuilder #linkcolorpreview {
     width: 30px;
     border: solid 4px #0374B5;
     background-color: #0374B5;
-    border-radius: 3px 3px 3px 3px; 
+    border-radius: 3px 3px 3px 3px;
     margin-left: 4px;
 }
 
-.docsifythisurlbuilderrestoredefaultsbutton {
+#docsifythisurlbuilderrestoredefaultsbutton {
     font-family: inherit;
     font-size: inherit;
     margin-top: 10px;
@@ -175,11 +169,11 @@ span .docsifythisurlfield {
 
 @media (prefers-color-scheme: dark) {
 
-    .docsifythisurlbuilder {
+    #docsifythisurlbuilder {
         background: #074d94;
     }
 
-    .docsifythisurlfield{
+    #docsifythisurlfield{
         background-color: #273338;
         color: white;
     }
@@ -194,12 +188,12 @@ span .docsifythisurlfield {
         background-color: #a2e8fc;
     }
 
-    .docsifythisurlbuilder [type=radio]:checked + img {
+    #docsifythisurlbuilder [type=radio]:checked + img {
         outline: 3px solid #4bc3f4;
         position: relative;
     }
 
-    .docsifythisurlbuildershowhidelink a:link, .docsifythisurlbuildershowhidelink a:visited, .docsifythisurlbuildershowhidelink a:hover, .docsifythisurlbuildershowhidelink a:active {
+    #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
         color: #4bc3f4;
     }
 

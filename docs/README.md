@@ -8,15 +8,15 @@ Milad Fakurian</a> on <a href="https://unsplash.com/s/photos/render?utm_source=u
 
 This web app, built using the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display Markdown files as standalone web pages (also perfect for embedding) without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!  
 
-<div class="docsifythisurlbuilder">
+<div id="docsifythisurlbuilder">
 
 ## Web Page Builder
 
 Enter the URL of a Markdown file into the Web Page Builder and view that file as a standalone web page in a new Browser tab. The resulting page URL can be copied and shared as a standalone page or used for embedding into other systems.
 
 **Markdown File URL** (GitHub or raw source URL):</br>
-<input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" />
-<input class="docsifythisurlbuilderprimarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value)"/></br>
+<input name="markdownFileURL" aria-label="markdown file url" id="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" />
+<input class="docsifythisurlbuilderprimarybutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
 
 Page layout:
 
@@ -44,7 +44,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link with GitHub files (default location is bottom of page)</label></div>
 
-<div class="docsifythisurlbuildershowhidelink"><a name="toggleDivlink" href="#" onclick="toggleDiv(this); return false;">Show More Page Appearance Options &raquo;</a></div>
+<div id="docsifythisurlbuildershowhidelink"><a name="toggleDivlink" href="#" onclick="toggleDiv(this); return false;">Show More Page Appearance Options &raquo;</a></div>
 
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
@@ -71,7 +71,7 @@ Page layout:
 </select>
 </div>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" oninput="updatecolorpreview()"/><span class="colorpreview" id="linkcolorpreview""></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" oninput="updatecolorpreview()"/><span id="linkcolorpreview""></span></div>
 
 <div class="docsifythisurlbuilderoptionsline"><label>Set the text of the 'Edit this Page' link to:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 
@@ -88,7 +88,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
 
-<div class="docsifythisurlbuilderrestoredefaultsbutton"><input type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
+<div id="docsifythisurlbuilderrestoredefaultsbutton"><input type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 
 </div>
 
