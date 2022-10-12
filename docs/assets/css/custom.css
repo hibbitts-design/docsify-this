@@ -93,6 +93,10 @@ span #docsifythisurlfield {
     vertical-align: middle;
 }
 
+.docsifythisurlbuilderoptionsindentedline {
+    margin-left: 22px;
+}
+
 #docsifythisurlbuilder [type=radio] {
     position: absolute;
     opacity: 0;

@@ -81,10 +81,10 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label for="tocheadings">Headings to include in Table of Contents (at least one required):</label><br>
-&nbsp;&nbsp;&nbsp;<input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch1" unchecked><label for="toch1">Heading 1 (h1)</label>&nbsp;&nbsp;<br>
-&nbsp;&nbsp;&nbsp;<input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch2" checked><label for="toch2">Heading 2 (h2)</label>&nbsp;&nbsp;<br>
-&nbsp;&nbsp;&nbsp;<input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch3" checked><label for="toch3">Heading 3 (h3)</label></div>
+<div class="docsifythisurlbuilderoptionsline"><label for="tocheadings">Headings to include in Table of Contents (at least one required):</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch1"  unchecked><label for="toch1">Heading 1 (h1)</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch2" checked><label for="toch2">Heading 2 (h2)</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch3" checked><label for="toch3">Heading 3 (h3)</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
 
