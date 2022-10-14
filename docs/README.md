@@ -16,7 +16,7 @@ Enter the URL of a Markdown file into the Web Page Builder and view that file as
 
 **Markdown File URL** (GitHub or raw source URL):</br>
 <input name="markdownFileURL" aria-label="markdown file url" id="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" />
-<input class="docsifythisurlbuilderprimarybutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
+<input class="docsifythisurlbuilderprimarybutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
 
 Page layout:
 
