@@ -349,6 +349,7 @@
       document.getElementById("toch2").checked = true;
       document.getElementById("toch3").checked = true;
       document.getElementById("hideCredits").checked = false;
+      document.getElementById("linkcolorpreview").style.visibility = "visible";
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
     }
@@ -361,11 +362,25 @@
         // Last character entered was not a valid hexidecimal number, so supress it
         document.getElementById("linkcolor").value = hexCode.slice(0, -1);
       }
+      if (ishexadecimal(hexCode)) {
+        document.getElementById("linkcolorpreview").style.visibility = "visible";
+      } else {
+        document.getElementById("linkcolorpreview").style.visibility = "hidden";
+      }
       if (!(hexCode.charAt(0) ==  "#")) {
         hexCode = '#' + hexCode;
       }
       document.getElementById("linkcolorpreview").style.borderColor = hexCode;
       document.getElementById("linkcolorpreview").style.backgroundColor = hexCode;
+    }
+
+    function ishexadecimal(str) {
+      regexp = /[0-9A-Fa-f]{3}|[0-9A-Fa-f]{6}/g;
+      if (regexp.test(str)) {
+          return true;
+      } else {
+          return false;
+        }
     }
 
     // Docsify
