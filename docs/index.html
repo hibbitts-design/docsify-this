@@ -375,7 +375,7 @@
     }
 
     function ishexadecimal(str) {
-      regexp = /[0-9A-Fa-f]{3}|[0-9A-Fa-f]{6}/g;
+      regexp = /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i
       if (regexp.test(str)) {
           return true;
       } else {
