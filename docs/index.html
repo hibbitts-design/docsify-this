@@ -356,6 +356,11 @@
     function updatecolorpreview() {
       var getColor = document.getElementById("linkcolor");
       var hexCode = getColor.value;
+      var regExp = /[0-9A-Fa-f]{1}/g;
+      if (!(regExp. test(hexCode.slice(-1)))) {
+        // Last character entered was not a valid hexidecimal number, so supress it
+        document.getElementById("linkcolor").value = hexCode.slice(0, -1);
+      }
       if (!(hexCode.charAt(0) ==  "#")) {
         hexCode = '#' + hexCode;
       }
