@@ -365,7 +365,11 @@
       if (isHexadecimalColor(hexCode)) {
         document.getElementById("linkcolorpreview").style.visibility = "visible";
       } else {
-        document.getElementById("linkcolorpreview").style.visibility = "hidden";
+        if (isHexadecimalColor(document.getElementById("linkcolor").value)) {
+            document.getElementById("linkcolorpreview").style.visibility = "visible";
+          } else {
+            document.getElementById("linkcolorpreview").style.visibility = "hidden";
+        }
       }
       if (!(hexCode.charAt(0) ==  "#")) {
         hexCode = '#' + hexCode;
