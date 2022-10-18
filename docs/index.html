@@ -354,7 +354,7 @@
       document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
     }
 
-    function updatecolorpreview() {
+    function validateColorAndUpdatePreview() {
       var getColor = document.getElementById("linkcolor");
       var hexCode = getColor.value;
       var regExp = /[0-9A-Fa-f]{1}/g;
@@ -362,7 +362,7 @@
         // Last character entered was not a valid hexidecimal number, so supress it
         document.getElementById("linkcolor").value = hexCode.slice(0, -1);
       }
-      if (ishexadecimal(hexCode)) {
+      if (isHexadecimalColor(hexCode)) {
         document.getElementById("linkcolorpreview").style.visibility = "visible";
       } else {
         document.getElementById("linkcolorpreview").style.visibility = "hidden";
@@ -374,9 +374,9 @@
       document.getElementById("linkcolorpreview").style.backgroundColor = hexCode;
     }
 
-    function ishexadecimal(str) {
-      regexp = /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i
-      if (regexp.test(str)) {
+    function isHexadecimalColor(str) {
+      regExp = /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i
+      if (regExp.test(str)) {
           return true;
       } else {
           return false;

@@ -71,7 +71,7 @@ Page layout:
 </select>
 </div>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" oninput="updatecolorpreview()"/><span id="linkcolorpreview""></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" oninput="validateColorAndUpdatePreview()"/><span id="linkcolorpreview""></span></div>
 
 <div class="docsifythisurlbuilderoptionsline"><label>Set the text of the 'Edit this Page' link to:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 
