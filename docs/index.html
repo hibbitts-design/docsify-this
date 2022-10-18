@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="assets/favicon/favicon.png">
+
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hibbittsdesign" />
   <meta name="twitter:title" content="Docsify-This" />
@@ -335,25 +336,6 @@
       }
     }
 
-    function restoreAllDefaults() {
-      document.getElementById("stylecontentonly").checked = true;
-      document.getElementById("styletoc").checked = false;
-      document.getElementById("stylesidebar").checked = false;
-      document.getElementById("fontfamily").value = 'default';
-      document.getElementById("fontsize").value = '1.125';
-      document.getElementById("linkcolor").value = '0374B5';
-      document.getElementById("editLinkText").value = 'Edit this Page';
-      document.getElementById("editLinkTopCheck").checked = false;
-      document.getElementById("narrowToC").checked = false;
-      document.getElementById("toch1").checked = false;
-      document.getElementById("toch2").checked = true;
-      document.getElementById("toch3").checked = true;
-      document.getElementById("hideCredits").checked = false;
-      document.getElementById("linkcolorpreview").style.visibility = "visible";
-      document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
-      document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
-    }
-
     function validateColorAndUpdatePreview() {
       var getColor = document.getElementById("linkcolor");
       var hexCode = getColor.value;
@@ -385,6 +367,25 @@
       } else {
           return false;
         }
+    }
+
+    function restoreAllDefaults() {
+      document.getElementById("stylecontentonly").checked = true;
+      document.getElementById("styletoc").checked = false;
+      document.getElementById("stylesidebar").checked = false;
+      document.getElementById("fontfamily").value = 'default';
+      document.getElementById("fontsize").value = '1.125';
+      document.getElementById("linkcolor").value = '0374B5';
+      document.getElementById("editLinkText").value = 'Edit this Page';
+      document.getElementById("editLinkTopCheck").checked = false;
+      document.getElementById("narrowToC").checked = false;
+      document.getElementById("toch1").checked = false;
+      document.getElementById("toch2").checked = true;
+      document.getElementById("toch3").checked = true;
+      document.getElementById("hideCredits").checked = false;
+      document.getElementById("linkcolorpreview").style.visibility = "visible";
+      document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
+      document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
     }
 
     // Docsify
