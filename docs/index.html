@@ -361,12 +361,7 @@
     }
 
     function isHexadecimalColor(str) {
-      var regExp = /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i
-      if (regExp.test(str)) {
-          return true;
-      } else {
-          return false;
-        }
+      return /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i.test(str);
     }
 
     function restoreAllDefaults() {
