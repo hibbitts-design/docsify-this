@@ -1,8 +1,9 @@
-<h1> Docsify-This </h1>
-
-![3D render](images/milad-fakurian-CN2FEPXERRI-unsplash.jpg  ':class=banner-image')  
-Photo by <a href="https://unsplash.com/@fakurian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-Milad Fakurian</a> on <a href="https://unsplash.com/s/photos/render?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+<div class="docsifythisimagebanner">
+  <img  class="background-image" src="images/milad-fakurian-CN2FEPXERRI-unsplash.jpg"  alt="Milad Fakurian on Unsplash">
+  <div class="overlay">
+    <h1><b>Docsify-This</b></h1>
+  </div>
+</div>
 
 ## Display a Markdown file as a simple web page in seconds.
 
@@ -71,7 +72,7 @@ Page layout:
 </select>
 </div>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" oninput="validateColorAndUpdatePreview()"/><span id="linkcolorpreview""></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview()"/><span id="linkcolorpreview""></span></div>
 
 <div class="docsifythisurlbuilderoptionsline"><label>Set the text of the 'Edit this Page' link to:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 

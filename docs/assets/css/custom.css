@@ -36,10 +36,37 @@ body .markdown-section {
 
 /* DOCSIFY THIS */
 
+.docsifythisimagebanner img {
+    width: 100%;
+    height: calc( 110px + (160 - 110) * (100vw - 400px) / (800 - 400) );
+    object-fit: cover;
+    position: relative;
+    filter: brightness(95%);
+  }
+  
+.docsifythisimagebanner h1 {
+    color: #FFFFFF;
+    font-size: calc( 22px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+}
+
+.docsifythisimagebanner .overlay {
+    position: absolute;
+    top: calc( 24px + (30 - 24) * (100vw - 400px) / (800 - 400) );
+    left: calc( 20px + (26 - 20) * (100vw - 400px) / (800 - 400) );
+    color: #a800ba;
+    text-shadow: 1px 1px #323232;
+    font-weight: bold;
+    text-align: right;
+    font-size: 3vw;
+}
+
 #docsifythisurlbuilder {
     overflow: visible;
     margin: 2em 0;
-    padding: 1.25em;
+    padding-top: calc( 8px + (16 - 12) * (100vw - 400px) / (800 - 400) );
+    padding-left: calc( 10px + (16 - 10) * (100vw - 400px) / (800 - 400) );
+    padding-bottom: calc( 8px + (16 - 12) * (100vw - 400px) / (800 - 400) );
+    padding-right: calc( 10px + (16 - 10) * (100vw - 400px) / (800 - 400) );
     border-width: 0;
     background: #eefbff;
 }
