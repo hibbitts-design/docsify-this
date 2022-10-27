@@ -13,6 +13,7 @@
 * Miscellaneous script cleanup
 * CSS cleanup
 * Error checking for invalid hexadecimal codes (incl. hide/show color preview)
+* Updated to use Docsify v4.13 (removed deprecated emoji plugin)
 
 ## [1.1.2] - 10/03/2022
 
