@@ -171,6 +171,11 @@
       if (url) {
 
         docsifyURL = window.location.href
+
+        var params = new URLSearchParams(docsifyURL.search);
+        params.delete('url-field');
+        docsifyURL =  docsifyURL.split("?")[0]; //url;
+
         docsifyURL = docsifyURL.replace('/#/', '');
 
         // If not Raw source URL convert it
@@ -599,6 +604,16 @@
 
             } else {
               return html
+            }
+          });
+
+          hook.ready(function () {
+            if (!(window.$docsify['basePath'])) {
+              if (getURLParameterByName('url-field')) {
+                var markdownFileURL = '';
+                markdownFileURL = getURLParameterByName('url-field', null, null, window.location.href, true);
+                document.getElementById('docsifythisurlfield').value = markdownFileURL;
+              }
             }
           });
 
