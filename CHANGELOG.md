@@ -14,6 +14,8 @@
 * CSS cleanup
 * Error checking for invalid hexadecimal codes (incl. hide/show color preview)
 * Updated to use Docsify v4.13 (removed deprecated emoji plugin)
+* Leverage Docsify page-to-page cache if no dynamic URL parameters (i.e. `edit-link`)
+* Support remote passing of initial URL value for Docsify-This Web Page Builder
 
 ## [1.1.2] - 10/03/2022
 
