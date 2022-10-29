@@ -502,10 +502,10 @@
                   lastSegment = lastSegment.replace('#/', '');
                   lastSegment = lastSegment.replace('./', '');
                   // Check to make sure link is not Docsify id anchor link
+                  var editThisPageLinkURLparm = '';
                   if (lastSegment.startsWith("?id")===false) {
                     if (getURLParameterByName('edit-link')) {
                       // Calculate existing edit-link URL parm in link
-                      var editThisPageLinkURLparm = '';
                       if (currentBasePath.includes("githubusercontent.com")) {
                         var editThisPageLink = '';
                         editThisPageLink = decodeURIComponent(currentBasePath);
@@ -514,11 +514,19 @@
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
                         editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
                         editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
+                        console.log(editThisPageLinkURLparm);
                       }
                     }
                     // Update Markdown file link
                     var newURL = ''
-                    newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
+                    // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link)
+                    if (editThisPageLinkURLparm === "") { 
+                      newURL = '#/' + lastSegment
+                      console.log("Changed:");
+                     } else {
+                      newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
+                    }
+                    console.log(newURL);
                     link.setAttribute('href', newURL);
                   }
                 } else {
