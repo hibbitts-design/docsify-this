@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.2.0] - XX/XX/2022
+## [1.2.0] - 10/29/2022
 
 **New:**  
 * Added visual previews for page layout
