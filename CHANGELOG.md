@@ -5,7 +5,7 @@
 **New:**  
 * Added visual previews for page layout
 * Added color preview area next to link color input field
-* Support remote passing of initial URL value for Docsify-This Web Page Builder as parameter (`url-field`))
+* Support remote passing of initial URL value for Docsify-This Web Page Builder as parameter (e.g. `https://docsify-this.net/?url-field=https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md`)
 
 **Improved:**  
 * Refactor handling of fontfamily, fontsize and linkcolor parameters
