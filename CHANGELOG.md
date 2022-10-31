@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.2.1] - XX/XX/2022
+
+**New:**  
+* Added Mermaid diagrams and Katex plugins
+
 ## [1.2.0] - 10/29/2022
 
 **New:**  
