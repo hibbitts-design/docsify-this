@@ -5,6 +5,9 @@
 **New:**  
 * Added Mermaid diagrams and Katex plugins
 
+**Bugfix:**  
+* Set missing EditCheck option for Restore all Defaults button
+
 ## [1.2.0] - 10/29/2022
 
 **New:**  
