@@ -31,6 +31,10 @@
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/regular.css" />
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/solid.css" />
 
+  <!-- Katex Stylesheet -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <!-- <link rel="stylesheet" href="assets/vendor/docsify/plugins/katex/katex.min.css" /> -->
+
   <style>
     :root {
 
@@ -519,7 +523,6 @@
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
                         editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
                         editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
-                        console.log(editThisPageLinkURLparm);
                       }
                     }
                     // Update Markdown file link
@@ -527,11 +530,9 @@
                     // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link)
                     if (editThisPageLinkURLparm === "") { 
                       newURL = '#/' + lastSegment
-                      console.log("Changed:");
                      } else {
                       newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
                     }
-                    console.log(newURL);
                     link.setAttribute('href', newURL);
                   }
                 } else {
@@ -673,6 +674,23 @@
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
   </script>
+
+  <!-- Mermaid Diagrams Plugin -->
+  <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>  -->
+  <script src="assets/vendor/mermaid/mermaid.min.js"></script>
+  <!-- <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script> -->
+  <script src="assets/vendor/docsify/plugins/docsify-mermaid.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true });</script>
+
+  <!-- Katex Plugin -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>  -->
+  <script src="assets/vendor/katex/katex.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
+
+  <!-- CDN files for docsify-katex -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <!-- <script src="assets/vendor/docsify/plugins/docsify-katex.js"></script> -->
 
   <!-- Hide Sidebar app title when displaying remote site  -->
   <script>
