@@ -331,7 +331,7 @@
     }
 
     function selectText() {
-      const input = document.getElementById('text');
+      const input = document.getElementById('docsifythisurlfield');
       input.focus();
       input.select();
     }
@@ -614,6 +614,9 @@
               if (getURLParameterByName('url-field')) {
                 var markdownFileURL = '';
                 markdownFileURL = getURLParameterByName('url-field', null, null, window.location.href, true);
+                if (markdownFileURL == "empty") {
+                  markdownFileURL = '';
+                }
                 document.getElementById('docsifythisurlfield').value = markdownFileURL;
               }
 
