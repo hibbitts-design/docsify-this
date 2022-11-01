@@ -1,15 +1,16 @@
 # Changelog
 
-## [1.2.1] - XX/XX/2022
+## [1.2.1] - 11/01/2022
 
 **New:**  
-* Added Mermaid diagrams and Katex plugins
+* Added Mermaid diagrams and Katex plugins (with thanks and appreciation to @Leward and @upupming for developing the respective Docsify Plugins)
 
 **Improved:**  
 * Support basic display options with remote passing of initial URL value (e.g. `http://docsify-this.net?url-field=https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md&toc=true&edit-link-checkbox=true`)
 
 **Bugfix:**  
 * Set missing EditCheck option for Restore all Defaults button
+* Use correct ID for selecting URL field after displaying empty field error message.
 
 ## [1.2.0] - 10/29/2022
 
