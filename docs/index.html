@@ -330,11 +330,17 @@
 
     }
 
-    function selectURLFieldText() {
+    function initSelectURLFieldText() {
       const input = document.getElementById('docsifythisurlfield');
       input.focus();
       input.select();
       window.scrollTo(0, 0);
+    }
+
+    function selectURLFieldText() {
+      const input = document.getElementById('docsifythisurlfield');
+      input.focus();
+      input.select();
     }
 
     function toggleDiv(link) {
