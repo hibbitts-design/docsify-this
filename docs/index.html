@@ -305,7 +305,7 @@
             var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
           } else {
             alert("Please include the full path and filename in the Markdown file URL (e.g. 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md').");
-            selectText();
+            selectURLFieldText();
             return;
           }    
         } else {
@@ -324,16 +324,17 @@
       } else {
 
         alert("Please enter a Markdown file URL.");
-        selectText();
+        selectURLFieldText();
 
       }
 
     }
 
-    function selectText() {
+    function selectURLFieldText() {
       const input = document.getElementById('docsifythisurlfield');
       input.focus();
       input.select();
+      window.scrollTo(0, 0);
     }
 
     function toggleDiv(link) {
