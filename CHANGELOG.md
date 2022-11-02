@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.2.2] - XX/XX/2022
+
+**Bugfix:**  
+* Fix unintended scrolling when URL field is auto-focused
+
 ## [1.2.1] - 11/01/2022
 
 **New:**  
@@ -10,7 +15,7 @@
 
 **Bugfix:**  
 * Set missing EditCheck option for Restore all Defaults button
-* Use correct ID for selecting URL field after displaying empty field error message.
+* Use correct ID for selecting URL field after displaying empty field error message
 
 ## [1.2.0] - 10/29/2022
 
