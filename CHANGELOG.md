@@ -4,6 +4,7 @@
 
 **Bugfix:**  
 * Fix unintended scrolling when URL field is auto-focused
+* Remove unneeded character replacements for font-family parameter
 
 ## [1.2.1] - 11/01/2022
 
