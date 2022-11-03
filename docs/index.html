@@ -644,6 +644,15 @@
               if (getURLParameterByName('edit-link-checkbox')) {
                 document.getElementById("editCheck").checked = true;
               }
+
+              if (getURLParameterByName(['show-page-options','show-more-page-appearance-options'])) {
+                console.log("show more!");
+                var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+                var link = document.getElementById("docsifythisurlbuildershowhidelink");
+                link.text = 'Show Fewer Page Appearance Options \«';
+                theDiv.style.display = "block";
+              }
+              
             }
           });
 
