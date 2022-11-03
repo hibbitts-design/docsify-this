@@ -395,6 +395,15 @@
       document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
     }
 
+    if (!getURLParameterByName('basePath')) {
+      window.onload = function() {
+        const x = window.scrollX;
+        const y = window.scrollY;
+        var input = document.getElementById("docsifythisurlfield").focus();
+        window.scrollTo(x, y);
+      }
+    }
+    
     // Docsify
     window.$docsify = {
       // GENERAL SETTINGS
