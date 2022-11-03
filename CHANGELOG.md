@@ -2,6 +2,9 @@
 
 ## [1.2.2] - XX/XX/2022
 
+**Improved:**  
+* Add ability to show all page options with remote passing of initial URL value.
+
 **Bugfix:**  
 * Fix unintended scrolling when URL field is auto-focused
 * Remove unneeded character replacements for font-family parameter
