@@ -7,7 +7,7 @@
 
 # Display a Markdown file as a simple web page in seconds.
 
-This open source web app, built with the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display Markdown files as simple web pages (also perfect for embedding) without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!  
+This open source web app, built with the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display Markdown files as simple web pages (also perfect for embedding) without needing to setup your own website. All you need is a public Markdown file on GitHub and pass that URL to https://docsify-this.net. Try it out below!  
 
 <div id="docsifythisurlbuilder">
 
