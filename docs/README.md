@@ -7,13 +7,13 @@
 
 # Display a Markdown file as a simple web page in seconds.
 
-This open source web app, built with the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display Markdown files as simple web pages (also perfect for embedding) without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!  
+This open-source web app, built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to display Markdown files as simple web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!
 
 <div id="docsifythisurlbuilder">
 
 ## Web Page Builder
 
-Enter the URL of a Markdown file into the Web Page Builder and view that file as a standalone web page in a new Browser tab. The resulting page URL can be copied and shared as a standalone page or used for embedding into other systems.
+Enter the URL of a Markdown file below and view that file as a web page in a new Browser tab. The resulting page URL can be copied and shared or used as an iFrame source URL.
 
 **Markdown File URL** (GitHub or raw source URL):</br>
 <input name="markdownFileURL" aria-label="markdown file url" id="docsifythisurlfield" type="url" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" />
@@ -95,7 +95,7 @@ Page layout:
 
 </div>
 
-## More Example Web Pages
+## Example Web Pages
 
 [GitHub Training Manual Working Locally with Git](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md) Markdown file, displayed by Docsify-This as a:  
 * [Standalone Page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md "GitHub Training Manual Working Locally with Git - Standalone Page")  
