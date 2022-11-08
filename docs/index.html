@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Docsify-This | Publish Markdown files as web pages in seconds</title>
-  <meta name="description" content="This web app provides a quick way to display Markdown files as standalone web pages (also perfect for embedding) without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net.">
+  <meta name="description"
+    content="This web app provides a quick way to display Markdown files as standalone web pages (also perfect for embedding) without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net.">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="assets/favicon/favicon.png">
@@ -12,7 +13,8 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hibbittsdesign" />
   <meta name="twitter:title" content="Docsify-This" />
-  <meta name="twitter:description" content="Display Markdown files as standalone web pages in seconds using Docsify, with no website required." />
+  <meta name="twitter:description"
+    content="Display Markdown files as standalone web pages in seconds using Docsify, with no website required." />
   <meta name="twitter:image" content="https://docsify-this.net/images/screenshot.png" />
 
   <!-- Stylesheets -->
@@ -101,7 +103,6 @@
       // --link-color: #0B1660;
       // --pagination-title-color: #0B1660;
     }
-
   </style>
 
 </head>
@@ -117,7 +118,7 @@
     var editLinkText = 'Edit this Page';
 
     // Set standalone to true to permanently hide the Sidebar
-    var standalone = ( !(getURLParameterByName('sidebar') && getURLParameterByName('basePath')));
+    var standalone = (!(getURLParameterByName('sidebar') && getURLParameterByName('basePath')));
 
     // Set ToC to true to permanently show page Table of Contents (Sidebar must also be hidden)
     var ToC = false;
@@ -133,7 +134,7 @@
 
       let exists = false;
 
-      url = decodeURIComponent(url) ;
+      url = decodeURIComponent(url);
 
       if (Array.isArray(name)) {
 
@@ -153,7 +154,7 @@
       }
 
       if (returnValue && exists) {
-          return results[2];
+        return results[2];
       } else if (!exists && isFalse) {
         return isFalse;
       }
@@ -170,7 +171,7 @@
     }
 
     // DOCSIFY THIS SCRIPTS
-    function openURLs(url){
+    function openURLs(url) {
 
       if (url) {
 
@@ -178,7 +179,7 @@
 
         var params = new URLSearchParams(docsifyURL.search);
         params.delete('url-field');
-        docsifyURL =  docsifyURL.split("?")[0]; //url;
+        docsifyURL = docsifyURL.split("?")[0]; //url;
 
         docsifyURL = docsifyURL.replace('/#/', '');
 
@@ -212,8 +213,8 @@
         if (cb1.checked) {
           if (gitlinkPageURL) {
             if (!lastSegment.includes(".md")) {
-            // No filename is present, so assume default README.md file
-            gitlinkPageURL = gitlinkPageURL + "README.md";
+              // No filename is present, so assume default README.md file
+              gitlinkPageURL = gitlinkPageURL + "README.md";
             }
             var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
           }
@@ -251,29 +252,29 @@
         const cb7 = document.querySelector('#toch3');
 
         if (URLparms.includes("&toc=true") || URLparms.includes("&toc-narrow=true")) {
-          if ( ((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false)) ) {
-            alert ("At least one page Heading level for the Table of Contents must be selected.");
+          if (((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false))) {
+            alert("At least one page Heading level for the Table of Contents must be selected.");
             return;
-          } else if ( !(!(cb5.checked) && (cb6.checked) && (cb7.checked)) ) {
+          } else if (!(!(cb5.checked) && (cb6.checked) && (cb7.checked))) {
             if (URLparms.includes("&toc=true")) {
               var ToCHeadings = "";
-                if (cb5.checked) {
-                  ToCHeadings = "h1";
+              if (cb5.checked) {
+                ToCHeadings = "h1";
+              }
+              if (cb6.checked) {
+                if (ToCHeadings) {
+                  ToCHeadings = ToCHeadings + ",h2";
+                } else {
+                  ToCHeadings = "h2";
                 }
-                if (cb6.checked) {
-                  if (ToCHeadings) {
-                    ToCHeadings = ToCHeadings + ",h2";
-                  } else {
-                    ToCHeadings = "h2";
-                  }
+              }
+              if (cb7.checked) {
+                if (ToCHeadings) {
+                  ToCHeadings = ToCHeadings + ",h3";
+                } else {
+                  ToCHeadings = "h3";
                 }
-                if (cb7.checked) {
-                  if (ToCHeadings) {
-                    ToCHeadings = ToCHeadings + ",h3";
-                  } else {
-                    ToCHeadings = "h3";
-                  }
-                }
+              }
               URLparms = URLparms + `&toc-headings=` + ToCHeadings;
             }
           }
@@ -281,17 +282,17 @@
 
         var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
         if (!(getFontFamily == "default")) {
-            var URLparms = URLparms + `&font-family=` + getFontFamily;
+          var URLparms = URLparms + `&font-family=` + getFontFamily;
         }
 
         var getFontSize = document.getElementById('fontsize').value;
         if (!(getFontSize == "1.125")) {
-            var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
+          var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
         }
 
         var getColor = document.getElementById("linkcolor");
         var hexCode = getColor.value;
-        if (hexCode.charAt(0) ==  "#") {
+        if (hexCode.charAt(0) == "#") {
           hexCode = hexCode.substring(1);
           getColor.value = hexCode;
         }
@@ -301,13 +302,13 @@
 
         if (!lastSegment.includes(".md")) {
           // No filename is present, so assume default README.md file if full path provided
-          if (url.includes("blob") ) {
+          if (url.includes("blob")) {
             var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
           } else {
             alert("Please include the full path and filename in the Markdown file URL (e.g. 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md').");
             selectText();
             return;
-          }    
+          }
         } else {
           if (lastSegment == "README.md") {
             // Default is README.md so homepage parm not needed
@@ -351,7 +352,7 @@
       var getColor = document.getElementById("linkcolor");
       var hexCode = getColor.value;
       var regExp = /[0-9A-Fa-f]{1}/g;
-      if (!(regExp. test(hexCode.slice(-1)))) {
+      if (!(regExp.test(hexCode.slice(-1)))) {
         // Last character entered was not a valid hexidecimal number, so supress it
         document.getElementById("linkcolor").value = hexCode.slice(0, -1);
       }
@@ -359,12 +360,12 @@
         document.getElementById("linkcolorpreview").style.visibility = "visible";
       } else {
         if (isHexadecimalColor(document.getElementById("linkcolor").value)) {
-            document.getElementById("linkcolorpreview").style.visibility = "visible";
-          } else {
-            document.getElementById("linkcolorpreview").style.visibility = "hidden";
+          document.getElementById("linkcolorpreview").style.visibility = "visible";
+        } else {
+          document.getElementById("linkcolorpreview").style.visibility = "hidden";
         }
       }
-      if (!(hexCode.charAt(0) ==  "#")) {
+      if (!(hexCode.charAt(0) == "#")) {
         hexCode = '#' + hexCode;
       }
       document.getElementById("linkcolorpreview").style.borderColor = hexCode;
@@ -396,14 +397,14 @@
     }
 
     if (!getURLParameterByName('basePath')) {
-      window.onload = function() {
+      window.onload = function () {
         const x = window.scrollX;
         const y = window.scrollY;
         var input = document.getElementById("docsifythisurlfield").focus();
         window.scrollTo(x, y);
       }
     }
-    
+
     // Docsify
     window.$docsify = {
       // GENERAL SETTINGS
@@ -411,9 +412,9 @@
       name: 'Docsify-This',
       // repo           : 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/',
       // Rename homepage to README.md and set homepage to README.md to default to README file for Remote Docsify
-      homepage          : 'README.md',
+      homepage: 'README.md',
       // coverpage      : 'coverpage.md',
-      loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
+      loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || getURLParameterByName('basePath')),
       externalLinkTarget: '_top',
 
       // SIDEBAR NAVIGATION
@@ -422,7 +423,7 @@
       maxLevel: 3,
       // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
       subMaxLevel: 2,
-      hideSidebar: (getURLParameterByName(['standalone','embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
+      hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
 
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
@@ -437,9 +438,9 @@
       // -----------------------------------------------------------------
       plugins: [
 
-        function(hook, vm) {
+        function (hook, vm) {
 
-          hook.afterEach(function(html, next) {
+          hook.afterEach(function (html, next) {
             // Invoked each time after the Markdown file is parsed.
             // beforeEach and afterEach support asynchronous。
             // ...
@@ -455,7 +456,7 @@
               url = url.replace(/[?].*/, ''); // Strips anything after ?
 
               var currentBasePath = '';
-              currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
+              currentBasePath = getURLParameterByName('basePath', null, null, window.location.href, true);
 
               // Carry any existing URL parms in links
               var URLparms = '';
@@ -469,7 +470,7 @@
                 URLparms = `&toc=true`;
               }
 
-              if (getURLParameterByName(['toc-alt','toc-narrow'])) {
+              if (getURLParameterByName(['toc-alt', 'toc-narrow'])) {
                 URLparms = `&toc-narrow=true`;
               }
 
@@ -522,7 +523,7 @@
                   lastSegment = lastSegment.replace('./', '');
                   // Check to make sure link is not Docsify id anchor link
                   var editThisPageLinkURLparm = '';
-                  if (lastSegment.startsWith("?id")===false) {
+                  if (lastSegment.startsWith("?id") === false) {
                     if (getURLParameterByName('edit-link')) {
                       // Calculate existing edit-link URL parm in link
                       if (currentBasePath.includes("githubusercontent.com")) {
@@ -532,22 +533,22 @@
                         editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
                         editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
-                        editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
+                        editThisPageLinkURLparm = `&edit-link=` + editThisPageLink;
                       }
                     }
                     // Update Markdown file link
                     var newURL = ''
                     // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link)
-                    if (editThisPageLinkURLparm === "") { 
+                    if (editThisPageLinkURLparm === "") {
                       newURL = '#/' + lastSegment
-                     } else {
+                    } else {
                       newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
                     }
                     link.setAttribute('href', newURL);
                   }
                 } else {
-                    // Set '_top' as external link targets
-                    link.setAttribute('target', '_top');
+                  // Set '_top' as external link targets
+                  link.setAttribute('target', '_top');
                 }
               }
               next(htmlElement.innerHTML);
@@ -556,7 +557,7 @@
             }
           });
 
-          hook.beforeEach(function(html) {
+          hook.beforeEach(function (html) {
 
             // Remove any possible front matter with the delimiters '---'
             if (html.startsWith("---")) {
@@ -568,7 +569,7 @@
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else if (window.$docsify['basePath']) {
-              url  = getURLParameterByName('edit-link', null, null, window.location.href, true);
+              url = getURLParameterByName('edit-link', null, null, window.location.href, true);
               gitLinkRepoURL = url;
             } else {
               url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
@@ -576,7 +577,7 @@
 
             editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
             if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
-              editlinktextparm = editlinktextparm.replaceAll('%20',' ');
+              editlinktextparm = editlinktextparm.replaceAll('%20', ' ');
               editLinkText = editlinktextparm;
             }
 
@@ -584,30 +585,30 @@
 
             var creditHtml = '\n\n' + 'This page is displayed using <a href="https://github.com/hibbitts-design/docsify-this" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
 
-            if ( !(getURLParameterByName(['standalone','embedded'])) && !(getURLParameterByName('hidegitlink'))  && (!!gitLinkRepoURL)) {
-              if ( !(getURLParameterByName('hide-credits'))) {
+            if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
+              if (!(getURLParameterByName('hide-credits'))) {
                 if (getURLParameterByName('edit-link-top')) {
                   return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
                 } else {
                   return html + '<br /><br />' + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
                 }
               } else {
-                  if (getURLParameterByName('edit-link-top')) {
-                    return editHtml + '\n' + html
-                  } else {
-                    return  html + '<br />' + '\n\n' + editHtml
-                  }
-              }
-
-            } else if ( getURLParameterByName(['standalone','embedded']) && !(getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
                 if (getURLParameterByName('edit-link-top')) {
                   return editHtml + '\n' + html
                 } else {
                   return html + '<br />' + '\n\n' + editHtml
                 }
+              }
 
-            } else if ( !(getURLParameterByName(['standalone','embedded']))) {
-              if ( !(getURLParameterByName('hide-credits'))) {
+            } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
+              if (getURLParameterByName('edit-link-top')) {
+                return editHtml + '\n' + html
+              } else {
+                return html + '<br />' + '\n\n' + editHtml
+              }
+
+            } else if (!(getURLParameterByName(['standalone', 'embedded']))) {
+              if (!(getURLParameterByName('hide-credits'))) {
                 return html + '<br />' + '\n\n' + '<hr>' + creditHtml
               } else {
                 return html
@@ -645,14 +646,14 @@
                 document.getElementById("editCheck").checked = true;
               }
 
-              if (getURLParameterByName(['show-page-options','show-more-page-appearance-options'])) {
+              if (getURLParameterByName(['show-page-options', 'show-more-page-appearance-options'])) {
                 console.log("show more!");
                 var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
                 var link = document.getElementById("docsifythisurlbuildershowhidelink");
                 link.text = 'Show Fewer Page Appearance Options \«';
                 theDiv.style.display = "block";
               }
-              
+
             }
           });
 
@@ -661,8 +662,8 @@
       ]
     }
 
-    <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
-    <!-- To render a Markdown file named **README.md** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
+      <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
+      <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
     const params = new URLSearchParams(window.location.search);
     params.forEach((value, key) => {
       // TODO: Parse numbers?
@@ -671,10 +672,10 @@
 
     // Check for Return Key with Web Page Builder
     if (window.$docsify['basePath'] === undefined) {
-      function checkKey(e){
-       var key=e.keyCode || e.which;
-        if (key==13){
-           document.getElementById("btn_1").click();
+      function checkKey(e) {
+        var key = e.keyCode || e.which;
+        if (key == 13) {
+          document.getElementById("btn_1").click();
         }
       }
     }
@@ -686,7 +687,7 @@
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
-    if (getURLParameterByName(['standalone','embedded']) || standalone) {
+    if (getURLParameterByName(['standalone', 'embedded']) || standalone) {
       var editCSS = document.createElement('style')
       editCSS.innerHTML = ".markdown-section {padding: 1rem 10px;}";
       document.body.appendChild(editCSS);
@@ -696,18 +697,18 @@
   <!-- Customizable Theme -->
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
   <!-- <script src="assets/vendor/themeable/docsify-themeable.min.js"></script> -->
-  
+
   <!-- Font Awesome Plugin -->
   <!-- <script src="https://unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-fontawesome.min.js"></script>
 
   <!-- Table of Contents Plugin -->
   <script>
-    if (getURLParameterByName('toc') && getURLParameterByName('basePath') || ToC ) {
+    if (getURLParameterByName('toc') && getURLParameterByName('basePath') || ToC) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
-    if (getURLParameterByName(['toc-alt','toc-narrow']) && getURLParameterByName('basePath')) {
+    if (getURLParameterByName(['toc-alt', 'toc-narrow']) && getURLParameterByName('basePath')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
@@ -741,7 +742,7 @@
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
       // Change body font if fontFamily parameter present
-      fontfamily  = getURLParameterByName('font-family', null, null, window.location.href, true);
+      fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
       if (!(fontfamily === false)) {
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
       }
@@ -754,7 +755,7 @@
       }
 
       // Change link color if link-color parameter present
-      linkcolor  = getURLParameterByName('link-color', null, null, window.location.href, true);
+      linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
       if (!(linkcolor === false)) {
         linkcolor = '#' + linkcolor
         document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
@@ -781,7 +782,7 @@
   <script>
     if ((location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
 
       gtag('config', 'UA-19424343-37');
