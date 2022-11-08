@@ -116,7 +116,7 @@ Page layout:
 
 [Mermaid-Docsify Example](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md) Markdown file, displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example&edit-link=https://github.com/Leward/mermaid-docsify/blob/master/example/README.md#/).  
 
-[Embedded Docsify-This pages](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within a Canvas LMS site](https://canvas.sfu.ca/courses/69678).
+[A Collection of Docsify-This pages](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within a Canvas LMS site](https://canvas.sfu.ca/courses/69678).
 
 ## How it Works
 
