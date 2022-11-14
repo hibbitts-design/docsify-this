@@ -232,6 +232,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </div>
 ```
 
+`video-container-4by3`  
+
+```html
+<div class="video-container-4by3"><div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
+```
+
+`video-container-16by9`  
+```html
+<div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
+```
+
 ### Improving Markdown Previews in Text Editors
 
 Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
