@@ -3,7 +3,8 @@
 ## [1.2.2] - XX/XX/2022
 
 **Improved:**  
-* Add ability to show all page options with remote passing of initial URL value.
+* Add ability to show all page options with remote passing of initial URL value
+* Included H5P script for improved responsive sizing of embedded H5P content
 
 **Bugfix:**  
 * Fix unintended scrolling when URL field is auto-focused
