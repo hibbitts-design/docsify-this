@@ -280,6 +280,11 @@
           }
         }
 
+        const cb8 = document.querySelector('#hypothesis');
+        if (cb8.checked) {
+          var URLparms = URLparms + `&hypothesis=true`;
+        }
+
         var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
         if (!(getFontFamily == "default")) {
           var URLparms = URLparms + `&font-family=` + getFontFamily;
@@ -394,6 +399,7 @@
       document.getElementById("linkcolorpreview").style.visibility = "visible";
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+      document.getElementById("hypothesis").checked = false;
     }
 
     if (!getURLParameterByName('basePath')) {
@@ -730,6 +736,13 @@
   <!-- CDN files for docsify-katex -->
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   <!-- <script src="assets/vendor/docsify/plugins/docsify-katex.js"></script> -->
+
+  <!-- Optionally enable Hypothesis -->
+  <script>
+    if (getURLParameterByName('hypothesis') && getURLParameterByName('basePath')) {
+      document.write('<script async src="https://hypothes.is/embed.js"><\/script>');
+    }
+  </script>
 
   <!-- Hide Sidebar app title when displaying remote site  -->
   <script>

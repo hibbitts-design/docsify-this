@@ -89,6 +89,12 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a narrower Table of Contents area, along with a smaller screen breakpoint</label></div>
 
+<hr>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesis" unchecked><label for="hypothesis">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
+
+<input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_1" value="View as Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
+
 <div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 
 </div>
@@ -109,6 +115,8 @@ Page layout:
 ### How it Works
 
 Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the format `https://docsify-this.net?basePath=URLpath&homepage=filename.md`, which are automaticaly created by the above Web Page Builder. The **basePath** parameter is the directory containing the raw source Markdown file to render. If the file is named the expected default **README.md** then no other parameter are required, otherwise the **homepage** parameter must also be included set to the name of the file to render. To render a file stored on GitHub you need to use the raw source URL of a file (i.e. raw.githubusercontent.com) - tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file) to get this URL when not using the above Web Page Builder, which does this automatically.  
+
+In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are also included. Opionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
 
 ### Example Web Pages
 
@@ -160,6 +168,10 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 **hide-credits**  
 Hide the credits usually shown at the bottom of every displayed Docsify-This page with the optional **hide-credits** parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
+
+**hypothesis**  
+Enable page annotation with [Hypothes.is](https://hypothes.is) with the optional **hypothesiss** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hypothesis=true.
 
 **link-color**  
 Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color** parameter, for example:  
