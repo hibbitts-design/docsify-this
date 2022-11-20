@@ -2,6 +2,9 @@
 
 ## [1.2.2] - XX/XX/2022
 
+**New:**  
+* Support for page annotation with Hypothes.is, an open source web annotation tool
+
 **Improved:**  
 * Add ability to show all page options with remote passing of initial URL value
 * Included H5P script for improved responsive sizing of embedded H5P content
