@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.2.2] - XX/XX/2022
+## [1.2.2] - 11/21/2022
 
 **New:**  
 * Support for page annotation with Hypothes.is, an open source web annotation tool
