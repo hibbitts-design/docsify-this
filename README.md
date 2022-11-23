@@ -2,7 +2,7 @@
 
 ## Display a Markdown file as a simple web page in seconds.
 
-This open-source web app, built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to display Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net. [Try it out now!](https://docsify-this.net) . 
+This open-source web app, built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to display Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net. [Try it out now!](https://docsify-this.net)  
 
 ## All About Docsify-This
 
