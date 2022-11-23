@@ -204,7 +204,7 @@ Paul offers a range of services related to using the system-independent format o
 
 ---
 
-This open source project is by Paul Hibbitts of [Hibbitts Design](https://hibbittsdesign.org/).  
+This [open source project](https://github.com/hibbitts-design/docsify-this) is by Paul Hibbitts of [Hibbitts Design](https://hibbittsdesign.org/).  
 
 **🙇🏻‍♂️Special Thanks**  
 [Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
