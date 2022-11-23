@@ -1,101 +1,100 @@
-# Docsify Open Publishing Starter Kit Remote
+# Docsify This
 
-[![Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/LICENSE)
-<a href="https://discord.gg/zT8eS8ZG">
-    <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
-</a>
+## All About Docsify-This
 
-> This is a starter kit to quickly create Markdown-based article, portfolio and documentation websites with the site generator [Docsify](https://docsify.js.org). Global navigation elements can be hidden for seamlessly embedding pages into other platforms or shared as standalone pages. Includes an optional "Edit this Page" link.
+* [How it Works](#how-it-works)
+* [Example Web Pages](#example-web-pages)
+* [Page Appearance URL Parameters](#page-appearance-url-parameters)
+* [Supported Markdown CSS Classes](#supported-markdown-css-classes)
+* [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
+* [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
+* [Troubleshooting](#troubleshooting)
+* [Support this Project](#support-this-project)
 
-📸 Docsify Open Publishing Screenshots
----
-![ Docsify Open Publishing Starter Kit](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/smartmockups_l3dl0det.png)
-_Figure 1. Docsify Open Publishing Starter Kit. Explore a demo at [hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/](https://hibbitts-design.github.io/demo-docsify-open-publishing-starter-kit/#/)_
+### How it Works
 
-🚀 GitHub Pages Quickstart
----
-**Pre-flight Checklist**  
+Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the format `https://docsify-this.net?basePath=URLpath&homepage=filename.md`, which are automaticaly created by the above Web Page Builder. The **basePath** parameter is the directory containing the raw source Markdown file to render. If the file is named the expected default **README.md** then no other parameter are required, otherwise the **homepage** parameter must also be included set to the name of the file to render. To render a file stored on GitHub you need to use the raw source URL of a file (i.e. raw.githubusercontent.com) - tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file) to get this URL when not using the above Web Page Builder, which does this automatically.  
 
-1. GitHub account
+In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are also included. Opionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
 
-**Installation and Deployment**
+### Example Web Pages
 
-1. Tap **Use this template** on the source repository (upper-right green button)
-![ Docsify Open Publishing Starter Kit - Install Page 1](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-install-1.png)
+[GitHub Training Manual Working Locally with Git Markdown file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed by Docsify-This as a:  
+* [Standalone Page](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md "GitHub Training Manual Working Locally with Git - Standalone Page")  
+* [Standalone Page with Table of Contents](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true "GitHub Training Manual Working Locally with Git - Standalone Page with Table of Contents")
+* [Standalone Page with Docsify Sidebar](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&sidebar=true "GitHub Training Manual Working Locally with Git - Standalone Page with Docsify Sidebar")
 
-2. Choose the name for your new repository to contain the copied site files and then tap **Create repository from template**
-![ Docsify Open Publishing Starter Kit - Install Page 2](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-install-2.png)
+[Single Page Docsify Open Course Starter Kit Markdown file](https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md), displayed by Docsify-This as a:   
+* [Standalone Page with an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
+* [Standalone Page with Table of Contents and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&toc=true&toc-headings=h1,h2&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
+* [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&sidebar=true&maxLevel=2&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
-3. Go to **Settings** of your newly created repository, tap the **Pages** tab (on the left-hand side), choose **main branch**, then **docs folder** and finally tap the **Save** button (see more details in the [Docsify documentation](https://docsify.js.org/#/deploy?id=github-pages))
-![ Docsify Open Publishing Starter Kit - Install Page 3](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-install-3.png)
+[Easy Markdown to Github Pages linked set of Markdown files](https://github.com/nicolas-van/easy-markdown-to-github-pages), displayed by Docsify-This as:   
+* [Standalone Pages](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master "Easy Markdown to Github Pages - Standalone Page")  
+* [Standalone Pages with Table of Contents](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true "Easy Markdown to Github Pages - Standalone Page with Table of Contents")  
+* [Standalone Pages with Docsify Sidebar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true "Easy Markdown to Github Pages - Standalone Page with Docsify Sidebar")
 
-4. And you're done! (view your new site using the provided URL on the **Pages** tab - it can take up to 10 minutes for your site to be initially available)
-![ Docsify Open Publishing Starter Kit - Install Page 4](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-op-install-4.png)
+[Single Markdown file](https://github.com/paulhibbitts/one-page-course-site/blob/main/home.md), displayed by Docsify-This as a [Single Page Course Site](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/one-page-course-site/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/one-page-course-site/blob/main/home.md&toc-headings=h2).
 
-Do you use GitLab? You can also use Docsify with [GitLab Pages](https://docsify.js.org/#/deploy?id=gitlab-pages)!
+[GitHub's LaTeX Support Examples Markdown file](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with Table of Contents](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&toc=true).
 
-🛸 Docsify Remote Rendering
----
+[Mermaid-Docsify Example Markdown file](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example&edit-link=https://github.com/Leward/mermaid-docsify/blob/master/example/README.md#/).  
 
-It is possible to render remote Markdown files (for example, a Markdown file in a GitHub repository) using Docsify by passing a URL parameter.
+[A Collection of Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within a Canvas LMS site](https://canvas.sfu.ca/courses/69678).
 
-**Single Page Examples**  
-For example, to render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
+### Page Appearance URL Parameters
 
-To render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page with a table of contents the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true
+**edit-link**  
+Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
 
-To render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page with a table of contents and an "Edit this Page" link the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
+**edit-link-text**  
+Change the default text for a "Edit this Page" link with the optional **edit-link-text** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20as%20Markdown Please note to use text with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "View as Markdown" would be "View%20as%20Markdown".  
 
-To render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page with the Docsify Sidebar the URL would be:  
+**edit-link-top**  
+Change the location of the optional "Edit this Page" link from the bottom of pages to be the top of pages with the optional **edit-link-top** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
+
+**font-family**  
+Set a custom font for your standalone pages with the optional **font-family** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New".  
+
+**font-size**  
+Set a custom font size for your standalone pages with the optional **font-size** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
+
+**hide-credits**  
+Hide the credits usually shown at the bottom of every displayed Docsify-This page with the optional **hide-credits** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
+
+**hypothesis**  
+Enable page annotation with [Hypothes.is](https://hypothes.is) with the optional **hypothesiss** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hypothesis=true.
+
+**link-color**  
+Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
+
+**sidebar**  
+Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true
 
-To render the Markdown file **[introduction.md](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/docs/introduction.md)** as a standalone page, the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md
+**toc**  
+Display a page table of contents with the optional **toc** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true
 
-To render the Markdown file **[introduction.md](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/docs/introduction.md)** as a standalone page with a table of contents, the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true
+**toc-headings**  
+Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc=true&toc-headings=h1,h2.
 
-To render the Markdown file **[introduction.md](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/docs/introduction.md)** as a standalone page with a table of contents and an "Edit this Page" link, the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
+**toc-narrow**  
+Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
-To render the Markdown file **[introduction.md](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/docs/introduction.md)** as a standalone page with the Docsify Sidebar, the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true
+Please note that standard [Docsify configuration settings](https://docsify.js.org/#/configuration) can also be used as URL parameters, for example when displaying the Docsify sidebar the parameter **maxLevel** can be used to set the maximum header level.
 
-**Multiple Page Examples**  
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file, the URL for the would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master
-
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own table of contents, the URL for the site would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true
-
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own table of contents and an "Edit this Page" link, the URL for the site would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
-
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own Docsify Sidebar, the URL would be:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true
-
-_TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
-
-📚 Docsify and Markdown Resources
----
-**Docsify**  
-[Docsify Documentation](https://docsify.js.org/#/?id=docsifyg)  
-[Docsify Basics by MichaelCurrin](https://michaelcurrin.github.io/docsify-js-tutorial/#/?id=docsify-basics)  
-
-**Docsify Themable**  
-[Docsify Themeable Documentation](https://jhildenbiddle.github.io/docsify-themeable/#/introduction)  
-[Docsify Themeable GitHub](https://github.com/jhildenbiddle/docsify-themeable)  
-
-**Markdown**  
-[Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)  
-[Markdown Guide](https://www.markdownguide.org/)  
-
-🧰 Useful Markdown CSS Classes
----
+### Supported Markdown CSS Classes
 
 `badge`  
 
@@ -108,6 +107,7 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
 ```
+
 `banner-tall-image`  
 
 ```markdown
@@ -120,11 +120,10 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 [Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button')
 ```
 
+`embedly-card` (for linked article previews, embedded slides/videos, etc.) 
 
-`embedly-card`  
-
-```html
-<a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
+```markdown
+<a class="embedly-card" data-card-controls="0" data-card-align="left" data-card-width="100%" href="https://docs.google.com/presentation/d/1BLaaOTsGxDmNcAhg6pdx3hl9IvI8NErg8Oe5ceh83fw/edit?usp=sharing">Grav and Docsify Slides Placeholder</a>
 ```
 
 `row` & `column`   
@@ -155,22 +154,58 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
 
-🌐 Using MAMP to View Docsify Sites Locally
+### Improving Markdown Previews in Text Editors
+
+Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
+
+Docsify-This (based on the Docsify Open Publishing Starter Kit) CSS:  
+https://docsify-this.net/assets/css/editor.css
+
+FontAwesome CSS:  
+https://docsify-this.net/assets/vendor/fontawesome/css/all.min.css
+
+### Looking for Even More Customization and Control?
+
+Docsify-This is intended as a quick way to display one or more remotely located Markdown files. If you want to further customize and control the presentation of your Markdown content, while also substantially speeding up the rendering of multiple page Markdown file sites on GitHub, you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted web app is based on) and store Markdown files within that site. To further customize the rendering of remote files, install your own instance of [Docsify-This](https://github.com/hibbitts-design/docsify-this). You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
+
+### Troubleshooting
+_'404 - Not found' message is displayed._  
+The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also be a result of a Cross-Origin Resource Sharing (CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests.
+
+_Updated Markdown file not displayed in the Browser._  
+Docsify is likely displaying the last cached version. To ensure the most recent version of a file is loaded, do a [hard refresh of your Browser cache](https://www.makeuseof.com/hard-refresh-browser/).
+
+_Embedded image not displayed as expected._  
+The most likely cause for embedded images in Markdown not being displayed as expected is the use of relative paths (i.e. `![Alt Text](images/filename.jpg)`) - review image paths and ensure the full path to each image is used (i.e. `![Alt Text](/folder/images/filename.jpg)`). Likewise, if images in HTML are not being displayed as expected the likely cause is again the use of relative paths (i.e. `<img src="images/filename.jpg" alt="Alt Text">`) - use absolute URLs for HTML image sources (i.e. `<img src="https://raw.githubusercontent.com/user/repository/main/images/filename.jpg" alt="Alt Text">`).
+
+_Embedded iFrame not displayed as expected._   
+Due to iframe cross-domain issues embedded content may not be able to be displayed. Use the included rich media embed service [embed.ly](https://embed.ly/) as a workaround.  
+
+For example, the following iFrame HTML:  
+
+```
+<div class="video-container-16by9"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRnnRFelgw1ksq_p8Eryg3dnyLCRRLPf5fBgdwdv9p-tCIwcxqWvzDGrGbjxGHL7HqEJVpmV26ntk3a/embed?start=false&loop=false&delayms=3000" frameborder="0" width=780" height="585" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+```
+
+Would be changed to:  
+
+```
+<a class="embedly-card" data-card-controls="0" data-card-align="left" data-card-width="100%" href="https://docs.google.com/presentation/d/1BLaaOTsGxDmNcAhg6pdx3hl9IvI8NErg8Oe5ceh83fw/edit?usp=sharing">Grav and Docsify Slides Placeholder</a>
+```
+
+### Support this Project
+
+- Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this)
+- 🐦 [tweet out your thoughts](https://twitter.com/intent/tweet?text=I+am+checking+out+the+Docsify-This.net+project+that+displays+Markdown+files+as+web+pages+in+seconds.+You+can+learn+about+the+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,remote,markdown,file,webpage)
+- Share your 💬 [feedback in a brief survey](https://forms.gle/ViYu2ZdPmj6PeQ439)
+- Follow [@hibbittsdesign](https://twitter.com/hibbittsdesign) for updates
+
+Paul offers a range of services related to using the system-independent format of Markdown in a range of education and publication scenarios, especially in relation to his [Docsify](https://docsify.js.org/#/) and [Grav CMS](https://getgrav.org/) open source projects. These professional services include consulting, premium support subscriptions, workshops, and custom development. Sound of interest? Send a note to [paul@hibbittsdesign.org](mailto:paul@hibbittsdesign.org).
+
 ---
 
-An alternative to installing Docsify locally (as described following this section) is to install MAMP to view your Docsify sites locally on your own computer.
+This open source project is by Paul Hibbitts of [Hibbitts Design](https://hibbittsdesign.org/).  
 
-1. Download [MAMP](https://www.mamp.info/)
-2. Move your local Docsify site to the **htdocs** folder of MAMP
-3. Turn MAMP on, tap **WebStart** and then tap **My Website**
-4. Tap on the folder containing your local Docsify site and then tap on the **docs** folder
-
-📼 Video Walkthrough of Local Docsify Install/Config
----
-[![Generating Documentation Sites with GitHub and Docsify - Alysson Alvaran](youtube.png)](https://www.youtube.com/watch?v=TV88lp7egMw)  
-_Video 1. Generating Documentation Sites with GitHub and Docsify - Alysson Alvaran_
-
-🙇‍Credits and Special Thanks
----
-[Docsify Themeable](https://github.com/jhildenbiddle/docsify-themeable)  
+**🙇🏻‍♂️Special Thanks**  
 [Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
+[Alan Levine](https://github.com/cogdog) for the inspiration of a consolidated ReadMe collection.
