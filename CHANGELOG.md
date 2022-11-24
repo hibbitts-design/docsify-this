@@ -4,6 +4,7 @@
 
 **Improved:**  
 * Updated ReadMe
+* Increased use of locally loaded resources
 
 ## [1.2.2] - 11/21/2022
 
