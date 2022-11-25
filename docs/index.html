@@ -629,6 +629,19 @@
             }
           });
 
+          // Invoked on each page load after new HTML has been appended to the DOM
+          hook.doneEach(function () {
+            var hasEmbedly = document.getElementsByClassName('embedly-card');
+            if (hasEmbedly.length > 0) {
+                // console.log("Load Embedly");
+                // elements with class "embedly-card" exist
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://cdn.embedly.com/widgets/platform.js';    
+                document.head.appendChild(script);
+            }
+          });
+
           hook.ready(function () {
             if (!(window.$docsify['basePath'])) {
               if (getURLParameterByName('url-field')) {
@@ -787,14 +800,6 @@
         document.documentElement.style.setProperty('--link-color', linkcolor);
         document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
       }
-    }
-  </script>
-
-  <!-- Conditionally load Embed.ly -->
-  <script>
-    const element = document.querySelector("#main");
-    if (element.classList.contains("embedly-card")) {
-      document.write('<script async src="//cdn.embedly.com/widgets/platform.js"><\/script>');
     }
   </script>
 
