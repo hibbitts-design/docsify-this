@@ -8,6 +8,7 @@
 **Improved:**  
 * Updated ReadMe
 * Increased use of locally loaded resources
+* Conditionally load Embed.ly
 
 ## [1.2.2] - 11/21/2022
 
