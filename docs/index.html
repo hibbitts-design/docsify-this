@@ -741,6 +741,10 @@
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-katex.js"></script>
 
+  <!-- Docsify Footnotes Plugin -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
+  <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
+
   <!-- Optionally enable Hypothesis -->
   <script>
     if (getURLParameterByName('hypothesis') && getURLParameterByName('basePath')) {
@@ -786,7 +790,13 @@
     }
   </script>
 
-  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+  <!-- Conditionally load Embed.ly -->
+  <script>
+    const element = document.querySelector("#main");
+    if (element.classList.contains("embedly-card")) {
+      document.write('<script async src="//cdn.embedly.com/widgets/platform.js"><\/script>');
+    }
+  </script>
 
   <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
   
