@@ -10,6 +10,9 @@
 * Increased use of locally loaded resources (100% tracker-free when displaying standard Markdown files)
 * Conditionally load Embed.ly
 
+**Bugfix:**  
+* Moved script for URL field auto-focusing to ensure DOM fully loaded
+
 ## [1.2.2] - 11/21/2022
 
 **New:**  
