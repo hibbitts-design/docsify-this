@@ -9,6 +9,7 @@
 * Updated ReadMe
 * Increased use of locally loaded resources (100% tracker-free when displaying standard Markdown files)
 * Conditionally load Embed.ly
+* Moved all Docsify-This default theming CSS from custom.css to theme.css
 
 **Bugfix:**  
 * Moved script for URL field auto-focusing to ensure DOM is fully loaded
