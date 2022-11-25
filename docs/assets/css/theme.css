@@ -410,3 +410,205 @@ body .docsify-pagination-container {
   }
 
 }
+
+/* DOCSIFY THIS */
+
+.docsifythisimagebanner img {
+  width: 100%;
+  height: calc( 110px + (160 - 110) * (100vw - 400px) / (800 - 400) );
+  object-fit: cover;
+  position: relative;
+  filter: brightness(95%);
+}
+
+.docsifythisimagebanner h1 {
+  color: #FFFFFF;
+  font-size: calc( 22px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+}
+
+.docsifythisimagebanner .overlay {
+  position: absolute;
+  top: calc( 24px + (30 - 24) * (100vw - 400px) / (800 - 400) );
+  left: calc( 20px + (26 - 20) * (100vw - 400px) / (800 - 400) );
+  color: #a800ba;
+  text-shadow: 1px 1px #323232;
+  font-weight: bold;
+  text-align: right;
+  font-size: 3vw;
+}
+
+#docsifythisurlbuilder {
+  overflow: visible;
+  margin: 2em 0;
+  padding-top: calc( 8px + (16 - 12) * (100vw - 400px) / (800 - 400) );
+  padding-left: calc( 10px + (16 - 10) * (100vw - 400px) / (800 - 400) );
+  padding-bottom: calc( 8px + (16 - 12) * (100vw - 400px) / (800 - 400) );
+  padding-right: calc( 10px + (16 - 10) * (100vw - 400px) / (800 - 400) );
+  border-width: 0;
+  background: #eefbff;
+}
+
+#docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
+  overflow: hidden;
+  background-color: #white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 6px;
+  border: 1px solid #323232
+}
+
+#docsifythisurlfield {
+  width: 100%;
+}
+
+span #docsifythisurlfield {
+  display: block;
+  overflow: hidden;
+}
+
+.docsifythisurlbuilderprimarybutton {
+  cursor: pointer;
+  color: white;
+  height: auto;
+  display: inline-block;
+  margin-top: 4px;
+  padding: 10px;
+  line-height: 1.2rem;
+  background-color: #0361cd;
+  text-decoration: none;
+  border-radius: .25rem;
+  -webkit-appearance: none;
+}
+
+.docsifythisurlbuildersecondarybutton {
+  cursor: pointer;
+  color: white;
+  height: auto;
+  display: inline-block;
+  margin-top: 4px;
+  padding: 10px;
+  line-height: 1.2rem;
+  background-color: #0b97ef;
+  text-decoration: none;
+  border-radius: .25rem;
+  -webkit-appearance: none;
+}
+
+.docsifythisurlbuilderoptionsline {
+  margin-top: 6px;
+  vertical-align: middle;
+}
+
+.docsifythisurlbuilderoptionsindentedline {
+  margin-left: 22px;
+}
+
+#docsifythisurlbuilder [type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+#docsifythisurlbuilder [type=radio]+img {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+#docsifythisurlbuilder [type=radio]:checked+img {
+  outline: 3px solid #0261cd;
+  position: relative;
+}
+
+#docsifythisurlbuilder figcaption {
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+#docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits  {
+  accent-color: #0361cd;
+}
+
+.docsifythisurlbuildercheckbox {
+  position: absolute;
+  transform: scale(1.2);
+  margin-top: 6px;
+  margin-left: 2px;
+}
+
+#docsifythisurlbuilder input[type="checkbox"] {
+  position: absolute;
+}
+
+#docsifythisurlbuilder input[type="checkbox"]~label {
+  padding-left: 1.2em;
+  display: inline-block;
+}
+
+#docsifythisurlbuildershowhidelink {
+  margin-top: 2px;
+}
+
+#docsifythisurlbuilder select {
+  color: #323232;
+  border: 1px solid #757575;
+  height: 2rem;
+  line-height: 2rem;
+  -webkit-appearance: menulist-button;
+  -moz-appearance:none;
+}
+
+#docsifythisurlbuilder hr {
+  border: 1px solid #bbd4ea;
+  margin-top: .6em;
+  margin-bottom: .6em;
+}
+
+#docsifythisurlbuilder #linkcolorpreview {
+  width: 30px;
+  border: solid 4px #0374B5;
+  background-color: #0374B5;
+  border-radius: 3px 3px 3px 3px;
+  margin-left: 4px;
+}
+
+#docsifythisurlbuilderrestoredefaultsbutton {
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: 10px;
+  text-align: right;
+}
+
+/*
+
+@media (prefers-color-scheme: dark) {
+
+  #docsifythisurlbuilder {
+      background: #074d94;
+  }
+
+  #docsifythisurlfield{
+      background-color: #273338;
+      color: white;
+  }
+
+  .docsifythisurlbuilderprimarybutton {
+      color: black;
+      background-color: #4bc3f4;
+  }
+
+  .docsifythisurlbuildersecondarybutton {
+      color: black;
+      background-color: #a2e8fc;
+  }
+
+  #docsifythisurlbuilder [type=radio]:checked + img {
+      outline: 3px solid #4bc3f4;
+      position: relative;
+  }
+
+  #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
+      color: #4bc3f4;
+  }
+
+}
+
+*/
