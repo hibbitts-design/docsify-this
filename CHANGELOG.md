@@ -7,7 +7,7 @@
 
 **Improved:**  
 * Updated ReadMe
-* Increased use of locally loaded resources
+* Increased use of locally loaded resources (100% tracker-free when displaying standard Markdown files)
 * Conditionally load Embed.ly
 
 ## [1.2.2] - 11/21/2022
