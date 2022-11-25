@@ -11,7 +11,7 @@
 * Conditionally load Embed.ly
 
 **Bugfix:**  
-* Moved script for URL field auto-focusing to ensure DOM fully loaded
+* Moved script for URL field auto-focusing to ensure DOM is fully loaded
 
 ## [1.2.2] - 11/21/2022
 
