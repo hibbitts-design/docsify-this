@@ -580,6 +580,7 @@ span #docsifythisurlfield {
   text-align: right;
 }
 
+/* Dark mode colours for use with light + dark themes */
 /*
 
 @media (prefers-color-scheme: dark) {
