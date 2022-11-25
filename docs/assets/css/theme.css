@@ -399,6 +399,8 @@ body .docsify-pagination-container {
 
 }
 
+/* Dark mode colours for use with light + dark themes */
+/*
 @media (prefers-color-scheme: dark) {
 
   .markdown-section .button {
@@ -410,6 +412,7 @@ body .docsify-pagination-container {
   }
 
 }
+*/
 
 /* DOCSIFY THIS */
 
