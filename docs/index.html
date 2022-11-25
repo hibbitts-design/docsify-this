@@ -407,15 +407,6 @@
       document.getElementById("hypothesis").checked = false;
     }
 
-    if (!getURLParameterByName('basePath')) {
-      window.onload = function () {
-        const x = window.scrollX;
-        const y = window.scrollY;
-        var input = document.getElementById("docsifythisurlfield").focus();
-        window.scrollTo(x, y);
-      }
-    }
-
     // Docsify
     window.$docsify = {
       // GENERAL SETTINGS
@@ -681,6 +672,12 @@
                 theDiv.style.display = "block";
               }
 
+              window.onload = function () {
+                const x = window.scrollX;
+                const y = window.scrollY;
+                var input = document.getElementById("docsifythisurlfield").focus();
+                window.scrollTo(x, y);
+              }
             }
           });
 
