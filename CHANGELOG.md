@@ -2,6 +2,9 @@
 
 ## [1.2.3] - XX/XX/XXXX
 
+**New:**  
+* Added Docsify Footnotes plugin (with thanks and appreciation to @sy-records for developing the plugin)
+
 **Improved:**  
 * Updated ReadMe
 * Increased use of locally loaded resources
