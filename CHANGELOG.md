@@ -4,6 +4,7 @@
 
 **New:**  
 * Added Docsify Footnotes plugin (with thanks and appreciation to @sy-records for developing the plugin)
+* Added Privacy Policy Summary
 
 **Improved:**  
 * Updated ReadMe
