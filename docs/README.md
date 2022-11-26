@@ -182,7 +182,8 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true  
 
-Please note that the standard [Docsify configuration setting](https://docsify.js.org/#/configuration) of **[maxLevel](https://docsify.js.org/#/configuration?id=maxlevel)** can also be used as a URL parameter to set the maximum header level of the Docsify sidebar, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=2
+Please note that the standard [Docsify configuration setting](https://docsify.js.org/#/configuration) of **[maxLevel](https://docsify.js.org/#/configuration?id=maxlevel)** can also be used as a URL parameter to set the maximum header level of the Docsify sidebar, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=2  
 
 **toc**  
 Display a page table of contents with the optional **toc** parameter, for example:  
