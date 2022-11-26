@@ -519,11 +519,6 @@
                 URLparms = URLparms + `&maxLevel=` + maxLevel;
               }
 
-              if (getURLParameterByName('subMaxLevel')) {
-                subMaxLevel = getURLParameterByName('subMaxLevel', null, null, window.location.href, true);
-                URLparms = URLparms + `&subMaxLevel=` + subMaxLevel;
-              }
-
               var htmlElement = document.createElement('div');
               htmlElement.innerHTML = html;
 
