@@ -92,7 +92,9 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 **sidebar**  
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true  
+
+Please note that the standard [Docsify configuration setting](https://docsify.js.org/#/configuration) of **[maxLevel](https://docsify.js.org/#/configuration?id=maxlevel)** can also be used as a URL parameter to set the maximum header level of the Docsify sidebar.  
 
 **toc**  
 Display a page table of contents with the optional **toc** parameter, for example:  
@@ -105,8 +107,6 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 **toc-narrow**  
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
-
-Please note that standard [Docsify configuration settings](https://docsify.js.org/#/configuration) can also be used as URL parameters, for example when displaying the Docsify sidebar the parameter **maxLevel** can be used to set the maximum header level.
 
 ### Supported Markdown CSS Classes
 
