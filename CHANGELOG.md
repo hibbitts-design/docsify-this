@@ -5,7 +5,7 @@
 **New:**  
 * Added Docsify Footnotes plugin (with thanks and appreciation to @sy-records for developing the plugin)
 * Added Privacy Policy Summary
-* Fully support the Docsify configuration settings of 'maxLevel' and 'subMaxLevel'
+* Fully support the Docsify configuration settings of 'maxLevel' for Docsify sidebar
 
 **Improved:**  
 * Updated ReadMe
