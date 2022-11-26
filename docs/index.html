@@ -511,7 +511,17 @@
               }
 
               if (getURLParameterByName('hypothesis')) {
-                URLparms = `&hypothesis=true`;
+                URLparms = URLparms + `&hypothesis=true`;
+              }
+
+              if (getURLParameterByName('maxLevel')) {
+                maxLevel = getURLParameterByName('maxLevel', null, null, window.location.href, true);
+                URLparms = URLparms + `&maxLevel=` + maxLevel;
+              }
+
+              if (getURLParameterByName('subMaxLevel')) {
+                subMaxLevel = getURLParameterByName('subMaxLevel', null, null, window.location.href, true);
+                URLparms = URLparms + `&subMaxLevel=` + subMaxLevel;
               }
 
               var htmlElement = document.createElement('div');
