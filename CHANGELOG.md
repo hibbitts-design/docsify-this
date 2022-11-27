@@ -15,6 +15,7 @@
 
 **Bugfix:**  
 * Moved script for URL field auto-focusing to ensure DOM is fully loaded
+* Properly pass hypothesis URL parameter for multiple page Markdown files 
 
 ## [1.2.2] - 11/21/2022
 
