@@ -12,6 +12,7 @@
 * Conditionally load Embed.ly
 * Moved all Docsify-This default theming CSS from custom.css to theme.css
 * Fully support the Docsify configuration settings of 'maxLevel' for Docsify sidebar
+* Changed default page Table of Contents to just H2 headers
 
 **Bugfix:**  
 * Moved script for URL field auto-focusing to ensure DOM is fully loaded
