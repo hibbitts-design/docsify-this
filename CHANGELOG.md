@@ -5,13 +5,13 @@
 **New:**  
 * Added Docsify Footnotes plugin (with thanks and appreciation to @sy-records for developing the plugin)
 * Added Privacy Policy Summary
-* Fully support the Docsify configuration settings of 'maxLevel' for Docsify sidebar
 
 **Improved:**  
 * Updated ReadMe
 * Increased use of locally loaded resources (100% tracker-free when displaying standard Markdown files)
 * Conditionally load Embed.ly
 * Moved all Docsify-This default theming CSS from custom.css to theme.css
+* Fully support the Docsify configuration settings of 'maxLevel' for Docsify sidebar
 
 **Bugfix:**  
 * Moved script for URL field auto-focusing to ensure DOM is fully loaded
