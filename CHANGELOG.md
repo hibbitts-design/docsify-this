@@ -13,6 +13,7 @@
 * Moved all Docsify-This default theming CSS from custom.css to theme.css
 * Fully support the Docsify configuration settings of 'maxLevel' for Docsify sidebar
 * Changed default page Table of Contents to just H2 headers
+* Changed default maxLevels for Docsify Sidebar to 2
 
 **Bugfix:**  
 * Moved script for URL field auto-focusing to ensure DOM is fully loaded
