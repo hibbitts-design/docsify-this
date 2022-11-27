@@ -35,8 +35,8 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 [GitHub Training Manual Working Locally with Git Markdown file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed by Docsify-This as a:  
 * [Standalone Page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md "GitHub Training Manual Working Locally with Git - Standalone Page")  
-* [Standalone Page with Table of Contents](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true "GitHub Training Manual Working Locally with Git - Standalone Page with Table of Contents")
-* [Standalone Page with Docsify Sidebar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&sidebar=true "GitHub Training Manual Working Locally with Git - Standalone Page with Docsify Sidebar")
+* [Standalone Page with Table of Contents](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true&toc-headings=h1,h2 "GitHub Training Manual Working Locally with Git - Standalone Page with Table of Contents")
+* [Standalone Page with Docsify Sidebar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&sidebar=true&maxLevel=3 "GitHub Training Manual Working Locally with Git - Standalone Page with Docsify Sidebar")
 
 [Single Page Docsify Open Course Starter Kit Markdown file](https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md), displayed by Docsify-This as a:   
 * [Standalone Page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main "Single Page Docsify Open Course Starter Kit - Standalone Page and an 'Edit this Page' link")  
