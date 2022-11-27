@@ -260,7 +260,7 @@
           if (((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false))) {
             alert("At least one page Heading level for the Table of Contents must be selected.");
             return;
-          } else if (!(!(cb5.checked) && (cb6.checked) && (cb7.checked))) {
+          } else if (!(!(cb5.checked) && (cb6.checked) && (!(cb7.checked)))) {
             if (URLparms.includes("&toc=true")) {
               var ToCHeadings = "";
               if (cb5.checked) {
