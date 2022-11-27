@@ -285,6 +285,12 @@
           }
         }
 
+        var getMaxLevel = document.getElementById("maxLevel");
+        var maxLevel = getMaxLevel.value;
+        if (!(maxLevel == 2)) {
+          URLparms = URLparms + `&maxLevel=` + maxLevel;
+        }
+
         const cb8 = document.querySelector('#hypothesis');
         if (cb8.checked) {
           var URLparms = URLparms + `&hypothesis=true`;
@@ -400,6 +406,8 @@
       document.getElementById("toch1").checked = false;
       document.getElementById("toch2").checked = true;
       document.getElementById("toch3").checked = false;
+      document.getElementById("maxLevel").value = 2;
+      document.getElementById("linkcolor").value = '0374B5';
       document.getElementById("hideCredits").checked = false;
       document.getElementById("linkcolorpreview").style.visibility = "visible";
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';

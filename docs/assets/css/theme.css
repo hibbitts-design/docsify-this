@@ -573,6 +573,10 @@ span #docsifythisurlfield {
   margin-left: 4px;
 }
 
+#docsifythisurlbuilder input[type="number"] {
+  width: 4em;
+}
+
 #docsifythisurlbuilderrestoredefaultsbutton {
   font-family: inherit;
   font-size: inherit;
