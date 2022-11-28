@@ -108,7 +108,7 @@ Page layout:
 ## All About Docsify-This
 
 * [How it Works](/?id=how-it-works)
-* [Docsify-This Templates](/?id=docsify-this-markdown-templates)
+* [Docsify-This Markdown Templates](/?id=docsify-this-markdown-templates)
 * [More Docsify-This Examples](/?id=more-docsify-this-examples)
 * [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
