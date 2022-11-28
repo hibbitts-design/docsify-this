@@ -34,7 +34,7 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 ### Docsify-This Markdown Templates
 
-**[Docsify-This One Page Course Template (including how to use)](https://github.com/hibbitts-design/docsify-this-one-page-course)**   
+**[Docsify-This One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course)** (including how to use)  
 
 ![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course-readme.png)
 
@@ -43,7 +43,7 @@ Docsify-This One Page Course [home.md](https://github.com/hibbitts-design/docsif
 * [Standalone Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
 * [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
-**[Docsify-This One Page Article Template (including how to use)](https://github.com/hibbitts-design/docsify-this-one-page-article)**
+**[Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article)** (including how to use)  
 
 ![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.png)
 
