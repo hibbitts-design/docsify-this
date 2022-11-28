@@ -34,21 +34,23 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 ### Docsify-This Templates
 
-[Docsify-This One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course), displayed by Docsify-This as a:   
+**[Docsify-This One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course)**   
+
+![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course.png ':class=docsify-this-screenshot')
+
+Displayed by Docsify-This as a:   
 * [Standalone Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
 * [Standalone Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
 * [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
-[Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article), displayed by Docsify-This as a:   
+**[Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article)**
+
+![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article.png ':class=docsify-this-screenshot')
+
+Displayed by Docsify-This as a:  
 * [Standalone Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
 * [Standalone Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
 * [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
-
-[Docsify-This Multiple Page Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-site), displayed by Docsify-This as a:  
-* [Standalone Web Site](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/my-hack-md/main&homepage=home.md "Standalone Web Site")  
-* [Standalone Web Site and 'Edit this Page' links](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/my-hack-md/main&homepage=home.md&edit-link=https://github.com/paulhibbitts/docsify-this-multiple-page-site/blob/main/home.md "Standalone Web Site and 'Edit this Page' links")  
-* [Standalone Web Site with Docsify Navbar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/my-hack-md/main&homepage=home.md&loadNavbar=_navbar "Standalone Web Site with Docsify Navbar")
-* [Standalone Web Site with Docsify Navbar and 'GitHub Repository' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/my-hack-md/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/paulhibbitts/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Standalone Web Site with Docsify Navbar and 'View GitHub Repository' link")
 
 ### More Docsify-This Examples
 

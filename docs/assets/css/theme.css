@@ -584,6 +584,13 @@ span #docsifythisurlfield {
   text-align: right;
 }
 
+.markdown-section .docsify-this-screenshot {
+  width: 35%;
+  height: 35%;
+  border: solid .5px #999999;
+  margin-bottom: -12px;
+}
+
 /* Dark mode colours for use with light + dark themes */
 /*
 
