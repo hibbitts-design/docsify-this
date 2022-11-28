@@ -108,7 +108,7 @@ Page layout:
 ## All About Docsify-This
 
 * [How it Works](/?id=how-it-works)
-* [Docsify-This Templates](/?id=docsify-this-templates)
+* [Docsify-This Templates](/?id=docsify-this-markdown-templates)
 * [More Docsify-This Examples](/?id=more-docsify-this-examples)
 * [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
@@ -124,7 +124,7 @@ Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://githu
 
 In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are also included. Opionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
 
-### Docsify-This Templates
+### Docsify-This Markdown Templates
 
 **[Docsify-This One Page Course Template (including how to use)](https://github.com/hibbitts-design/docsify-this-one-page-course)**   
 
