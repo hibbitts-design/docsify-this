@@ -16,7 +16,8 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [How it Works](#how-it-works)
-* [Example Web Pages](#example-web-pages)
+* [Docsify-This Templates](#docsify-this-templates)
+* [More Docsify-This Examples](#more-docsify-this-examples)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
@@ -31,28 +32,33 @@ Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://githu
 
 In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are also included. Opionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
 
-### Example Web Pages
+### Docsify-This Templates
+
+[Docsify-This One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course), displayed by Docsify-This as a:   
+* [Standalone Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
+* [Standalone Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
+* [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
+
+[Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article), displayed by Docsify-This as a:   
+* [Standalone Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
+* [Standalone Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h1,h2&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
+* [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=2&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
+
+### More Docsify-This Examples
 
 [GitHub Training Manual Working Locally with Git Markdown file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed by Docsify-This as a:  
-* [Standalone Page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md "GitHub Training Manual Working Locally with Git - Standalone Page")  
-* [Standalone Page with Table of Contents](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true&toc-headings=h2,h3 "GitHub Training Manual Working Locally with Git - Standalone Page with Table of Contents")
-* [Standalone Page with Docsify Sidebar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&sidebar=true&maxLevel=3 "GitHub Training Manual Working Locally with Git - Standalone Page with Docsify Sidebar")
-
-[Single Page Docsify Open Course Starter Kit Markdown file](https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md), displayed by Docsify-This as a:   
-* [Standalone Page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main "Single Page Docsify Open Course Starter Kit - Standalone Page and an 'Edit this Page' link")  
-* [Standalone Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&toc=true&toc-headings=h1,h2&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
-* [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&sidebar=true&maxLevel=2&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
+* [Standalone Page](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md "GitHub Training Manual Working Locally with Git - Standalone Page")  
+* [Standalone Page with Table of Contents](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true&toc-headings=h2,h3 "GitHub Training Manual Working Locally with Git - Standalone Page with Table of Contents")
+* [Standalone Page with Docsify Sidebar](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&sidebar=true&maxLevel=3 "GitHub Training Manual Working Locally with Git - Standalone Page with Docsify Sidebar")
 
 [Easy Markdown to Github Pages linked set of Markdown files](https://github.com/nicolas-van/easy-markdown-to-github-pages), displayed by Docsify-This as:   
 * [Standalone Pages](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master "Easy Markdown to Github Pages - Standalone Page")  
 * [Standalone Pages with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Standalone Page with Table of Contents")  
 * [Standalone Pages with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Standalone Page with Docsify Sidebar")
 
-[Single Markdown file](https://github.com/paulhibbitts/one-page-course-site/blob/main/home.md), displayed by Docsify-This as a [Single Page Course Site](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/one-page-course-site/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/one-page-course-site/blob/main/home.md&toc-headings=h2).
+[GitHub's LaTeX Support Examples Markdown file](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with Table of Contents](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&toc=true).
 
-[GitHub's LaTeX Support Examples Markdown file](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with Table of Contents](https://docsify-this.net?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&toc=true).
-
-[Mermaid-Docsify Example Markdown file](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example&edit-link=https://github.com/Leward/mermaid-docsify/blob/master/example/README.md#/).  
+[Mermaid-Docsify Example Markdown file](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example&edit-link=https://github.com/Leward/mermaid-docsify/blob/master/example/README.md#/).  
 
 [A Collection of Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within a Canvas LMS site](https://canvas.sfu.ca/courses/69678).
 
