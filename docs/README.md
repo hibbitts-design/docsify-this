@@ -136,6 +136,12 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 * [Standalone Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
 * [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
+[Docsify-This Multiple Page Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-site), displayed by Docsify-This as a:  
+* [Standalone Web Site](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/my-hack-md/main&homepage=home.md "Standalone Web Site")  
+* [Standalone Web Site and 'Edit this Page' links](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/my-hack-md/main&homepage=home.md&edit-link=https://github.com/paulhibbitts/docsify-this-multiple-page-site/blob/main/home.md "Standalone Web Site and 'Edit this Page' links")  
+* [Standalone Web Site with Docsify Navbar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/my-hack-md/main&homepage=home.md&loadNavbar=_navbar "Standalone Web Site with Docsify Navbar")
+* [Standalone Web Site with Docsify Navbar and 'GitHub Repository' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/my-hack-md/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/paulhibbitts/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Standalone Web Site with Docsify Navbar and 'View GitHub Repository' link")
+
 ### More Docsify-This Examples
 
 [GitHub Training Manual Working Locally with Git Markdown file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed by Docsify-This as a:  
