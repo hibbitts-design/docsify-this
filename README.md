@@ -16,7 +16,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [How it Works](#how-it-works)
-* [Docsify-This Templates](#docsify-this-markdown-templates)
+* [Docsify-This Markdown Templates](#docsify-this-markdown-templates)
 * [More Docsify-This Examples](#more-docsify-this-examples)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
