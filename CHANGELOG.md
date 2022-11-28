@@ -6,7 +6,7 @@
 * Added Docsify Footnotes plugin (with thanks and appreciation to @sy-records for developing the plugin)
 * Added Privacy Policy Summary
 * Added maxLevel number field for Docsify sidebar to Web Page Builder
-* Added example Docsify-This templates (One Page Course Template, One Page Article Template and Multiple Page Site) 
+* Added example Docsify-This templates (One Page Course Template and One Page Article Template) 
 
 **Improved:**  
 * Updated ReadMe
