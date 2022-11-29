@@ -47,10 +47,10 @@ Docsify-This One Page Course [home.md](https://github.com/hibbitts-design/docsif
 
 ![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.png)
 
-Docsify-This One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md) file displayed by Docsify-This as a:    
+Docsify-This One Page Article [home.md](https://github.com/hibbitts-design/Docsify-This One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md) file displayed by Docsify-This as a:    
 * [Standalone Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
-* [Standalone Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
-* [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
+* [Standalone Page with Table of Contents including h2 and h3 Headers and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
+* [Standalone Page with Docsify Sidebar with maxLevel of 3 (H3) and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&edit-link=https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
 ### More Docsify-This Examples
 
