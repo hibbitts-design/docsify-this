@@ -126,7 +126,7 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 ### Docsify-This Markdown Templates
 
-While all you need to get going with Docsify-This is a simple GitHub Markdown file, here are some templates to show what is possible with Markdown, images, and even a bit of HTML!
+While all you need to get going with Docsify-This is a simple Markdown file, here are some templates to show what is possible with Markdown, images, and even a bit of HTML!
 
 **[Docsify-This One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course)** (including how to use)  
 
