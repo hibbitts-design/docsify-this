@@ -16,7 +16,7 @@ This open-source web app, built with the magical documentation site generator [D
 Enter the URL of a Markdown file below and view that file as a web page in a new Browser tab. The resulting page URL can be copied and shared or used as an iFrame source URL.
 
 **Markdown File URL** (GitHub or raw source URL):</br>
-<input name="markdownFileURL" aria-label="markdown file url" id="docsifythisurlfield" type="url" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" />
+<input name="markdownFileURL" aria-label="markdown file url" id="docsifythisurlfield" type="url" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" size="200px" value="https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md" />
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
 
 Page layout:
