@@ -206,7 +206,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 **maxLevel**  
 Set the maximum header level of the Docsify sidebar with the optional **maxLevel** Docsify parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=2 
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=3 
 
 **sidebar**  
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
