@@ -3,7 +3,7 @@
 ## [1.3.1] - XX/XX/2022
 
 **Improved:**   
-* Updated default example file for Web Page Builder
+* Updated default example Markdown file for Web Page Builder
 
 **Bugfix:**  
 * Docsify-This page display credits no longer displayed on Docsify-This app page
