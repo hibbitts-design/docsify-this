@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.3.0] - XX/XX/XXXX
+## [1.3.0] - 11/30/2022
 
 **New:**  
 * Added Docsify Footnotes plugin (with thanks and appreciation to @sy-records for developing the plugin)
