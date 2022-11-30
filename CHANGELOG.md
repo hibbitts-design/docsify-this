@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.1] - XX/XX/2022
+
+**Improved:**   
+* Updated default example file for Web Page Builder
+
 ## [1.3.0] - 11/30/2022
 
 **New:**  
