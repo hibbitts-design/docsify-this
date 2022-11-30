@@ -5,6 +5,9 @@
 **Improved:**   
 * Updated default example file for Web Page Builder
 
+**Bugfix:**  
+* Docsify-This page display credits no longer displayed on Docsify-This app page
+
 ## [1.3.0] - 11/30/2022
 
 **New:**  
