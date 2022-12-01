@@ -4,6 +4,7 @@
 
 **Improved:**   
 * Updated default example Markdown file for Web Page Builder
+* Updated ReadMe
 
 **Bugfix:**  
 * Docsify-This page display credits no longer displayed on Docsify-This app page
