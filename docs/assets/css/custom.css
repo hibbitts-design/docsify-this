@@ -46,10 +46,6 @@ body .markdown-section {
     z-index: -1;
 }
 
-article:has(.header-image-fade) {
-    padding-top: 175px;
-}
-
 @media screen and (max-width: 980px) {
     .markdown-section .header-image-fade {
         top: -20px;
