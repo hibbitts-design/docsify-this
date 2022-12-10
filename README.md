@@ -176,16 +176,16 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
 ```
 
-`header-image` (suggested size of 1200px to 2000px width and 400px to 600px height)  
+`banner-image` (cropped to height of 250px on large screens, 125px on small screens)  
 
 ```markdown
-![Welcome sign](images/mountain.jpg ':class=header-image')
+![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
 ```
 
-`header-image-fade`  
+`banner-tall-image` (cropped to height of 350px on large screens, 175px on small screens)  
 
 ```markdown
-![Welcome sign](images/mountain.jpg ':class=header-image-fade')
+![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
 ```
 
 `row` & `column`   
