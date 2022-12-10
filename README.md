@@ -188,6 +188,12 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
 ```
 
+`header-image-fade` (minimum expected height is 400px) 
+
+```markdown
+![Welcome sign](images/mountain.jpg ':class=header-image-fade')
+```
+
 `row` & `column`   
 
 ```html
