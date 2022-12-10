@@ -268,7 +268,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
 ```
 
-`header-image-fade`  
+`header-image-fade` (minimum expected height is 400px) 
 
 ```markdown
 ![Welcome sign](images/mountain.jpg ':class=header-image-fade')
