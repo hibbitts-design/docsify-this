@@ -3,8 +3,7 @@
 ## [1.3.1] - XX/XX/2022
 
 **New**
-* Support for background gradient header image (`header-image-fade`, with thanks to Jamie Adam for original CSS)
-* Support for header image (`header-image`)
+* Initial support for background gradient header image (`header-image-fade`, with thanks to Jamie Adam for original CSS)
 
 **Improved:**   
 * Updated default example Markdown file for Web Page Builder
