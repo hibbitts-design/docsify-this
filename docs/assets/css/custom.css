@@ -46,6 +46,10 @@ body .markdown-section {
     z-index: -1;
 }
 
+article:has(.header-image-fade) {
+    padding-top: 175px;
+}
+
 .markdown-section .header-image {
     margin-top: -2rem;
     left: 50%;
