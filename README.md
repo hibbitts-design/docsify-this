@@ -188,7 +188,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
 ```
 
-`header-image` (suggested size of 1200px to 2000px width and 400px to 600px height, and optional Table of Contents is not supported)  
+`header-image` (suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents is not available)  
 
 ```markdown
 ![Welcome sign](images/mountain.jpg ':class=header-image')
