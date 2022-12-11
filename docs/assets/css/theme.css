@@ -419,8 +419,9 @@ body .docsify-pagination-container {
 .docsifythisimagebanner img {
   margin-top: -2rem;
   width: 100%;
-  height: calc( 130px + (180 - 110) * (100vw - 300px) / (800 - 400) );
+  height: calc( 120px + (170 - 110) * (100vw - 300px) / (800 - 400) );
   object-fit: cover;
+  object-position: 50% 45%;
   position: relative;
   filter: brightness(95%);
 }
