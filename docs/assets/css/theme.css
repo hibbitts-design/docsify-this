@@ -417,8 +417,9 @@ body .docsify-pagination-container {
 /* DOCSIFY THIS */
 
 .docsifythisimagebanner img {
+  margin-top: -2rem;
   width: 100%;
-  height: calc( 110px + (160 - 110) * (100vw - 400px) / (800 - 400) );
+  height: calc( 130px + (180 - 110) * (100vw - 300px) / (800 - 400) );
   object-fit: cover;
   position: relative;
   filter: brightness(95%);
@@ -431,7 +432,7 @@ body .docsify-pagination-container {
 
 .docsifythisimagebanner .overlay {
   position: absolute;
-  top: calc( 24px + (30 - 24) * (100vw - 400px) / (800 - 400) );
+  top: calc( 14px + (32 - 24) * (100vw - 400px) / (800 - 400) );
   left: calc( 20px + (26 - 20) * (100vw - 400px) / (800 - 400) );
   color: #a800ba;
   text-shadow: 1px 1px #323232;
