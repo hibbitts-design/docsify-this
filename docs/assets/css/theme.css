@@ -312,19 +312,19 @@
 
 @media screen and (max-width: 980px) {
   .markdown-section .header-image-fade {
-      top: -20px;
+    top: -20px;
   }
 }
 
 .markdown-section .header-image-full-width {
   margin-top: -2rem;
   left: 50%;
-margin-left: -50vw;
-margin-right: -50vw;
-max-width: 100vw;
-position: relative;
-right: 50%;
-width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
 }
 
 .markdown-section .column {
