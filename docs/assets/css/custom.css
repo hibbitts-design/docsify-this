@@ -52,7 +52,7 @@ body .markdown-section {
     }
 }
 
-.markdown-section .header-image {
+.markdown-section .header-image-full-width {
     margin-top: -2rem;
     left: 50%;
 	margin-left: -50vw;

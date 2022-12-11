@@ -652,7 +652,7 @@
             }
 
             // Remove optional ToC area if full width header image is present
-            var hasImageHeader = document.getElementsByClassName('header-image');
+            var hasImageHeader = document.getElementsByClassName('header-image-full-width');
             if (hasImageHeader.length > 0) {
               const elements = document.getElementsByClassName("nav");
               while (elements.length > 0) elements[0].remove();
