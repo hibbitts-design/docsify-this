@@ -4,7 +4,7 @@
 
 **New**
 * Initial support for background gradient header image (`header-image-fade`, with thanks to Jamie Adam for original CSS)
-* Initial support for full-width header image (optional Table of Contents not available)
+* Initial support for full-width header image (`header-image-full-width`, optional Table of Contents not available)
 
 **Improved:**   
 * Updated default example Markdown file for Web Page Builder
