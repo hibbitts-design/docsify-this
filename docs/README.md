@@ -274,7 +274,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 ![Welcome sign](images/mountain.jpg ':class=header-image')
 ```
 
-`header-image-fade`  
+`header-image-fade` (suggested width of 1200px to 2000px)  
 
 ```markdown
 ![Welcome sign](images/mountain.jpg ':class=header-image-fade')
