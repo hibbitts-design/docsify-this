@@ -298,6 +298,35 @@
   }
 }
 
+.markdown-section .header-image-fade {
+  width: 100%;
+  margin: 0px auto;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  opacity: 0.5;
+  z-index: -1;
+}
+
+@media screen and (max-width: 980px) {
+  .markdown-section .header-image-fade {
+      top: -20px;
+  }
+}
+
+.markdown-section .header-image-full-width {
+  margin-top: -2rem;
+  left: 50%;
+margin-left: -50vw;
+margin-right: -50vw;
+max-width: 100vw;
+position: relative;
+right: 50%;
+width: 100vw;
+}
+
 .markdown-section .column {
   float: left;
   padding-right: 1rem;
