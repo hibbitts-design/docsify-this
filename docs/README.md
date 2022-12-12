@@ -157,8 +157,10 @@ Docsify-This One Page Article [home.md](https://github.com/hibbitts-design/docsi
 ![Docsify-This Multiple Page Site](images/docsify-this-multiple-page-site-readme.png ':class=docsify-this-screenshot')
 
 Docsify-This Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md) file displayed by Docsify-This as a:  
-* [Standalone Pages](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Standalone Pages")  
-* [Standalone Pages with Docsify Navbar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar")  
+* [Standalone Pages](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Standalone Pages")  
+* [Standalone Pages and 'Edit this Page' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Standalone Pages and 'Edit this Page' links")  
+* [Standalone Pages with Docsify Navbar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar")  
+* [Standalone Pages with Docsify Navbar and 'Edit Site Markdown Files' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md&edit-link-text=Edit%20Site%20Markdown%20Files%0A "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar")  
 
 ---
 
