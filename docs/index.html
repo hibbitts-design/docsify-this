@@ -658,6 +658,15 @@
               while (elements.length > 0) elements[0].remove();
             }
 
+            // Adjust left margin for optional ToC area if faded header image is present
+            var hasImageFade = document.getElementsByClassName('header-image-fade');
+            var hasNav = document.getElementsByClassName('nav');
+            if (hasImageFade.length > 0 && hasNav.length > 0) {
+              var editCSS = document.createElement('style')
+              editCSS.innerHTML = ".markdown-section {margin-right: 0px;}";
+              document.body.appendChild(editCSS);
+            }
+
           });
 
           hook.ready(function () {
