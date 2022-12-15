@@ -321,6 +321,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ---
 
+### Tips and Techniques
+
+**Matching Fonts with Your Destination Platform**  
+Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-familiy` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1  
+
+---
+
 ### Improving Markdown Previews in Text Editors
 
 Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
@@ -363,12 +371,6 @@ Would be changed to:
 ```
 <a class="embedly-card" data-card-controls="0" data-card-align="left" data-card-width="100%" href="https://docs.google.com/presentation/d/1BLaaOTsGxDmNcAhg6pdx3hl9IvI8NErg8Oe5ceh83fw/edit?usp=sharing">Grav and Docsify Slides Placeholder</a>
 ```
-
-### Tips and Techniques
-
-**Matching Fonts with Your Destination Platform**  
-Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then once [encoded](https://meyerweb.com/eric/tools/dencoder/) pass that font family using the `font-familiy` and `font-size` (in REM units) as URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1  
 
 ---
 
