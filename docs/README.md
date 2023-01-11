@@ -221,6 +221,10 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color** parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
 
+**loadFooter**  
+Load a Docsify footer from the Markdown file passed with the optional **loadFooter** Docsify parameter (not included in the Web Page Builder), for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadFooter=_footer.md_
+
 **loadNavbar**  
 Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter (not included in the Web Page Builder), for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md_ This advanced option is not included in the Web Page Builder.  

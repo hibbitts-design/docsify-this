@@ -125,8 +125,14 @@
     // Set standalone to true to permanently hide the Sidebar
     var standalone = (!(getURLParameterByName('sidebar') && getURLParameterByName('basePath')));
 
-    // Set ToC to true to permanently show page Table of Contents (Sidebar must also be hidden)
+    // Set ToC to true to permanently show page Table of Contents (Sidebar and Navbar must also be hidden)
     var ToC = false;
+
+    // Set navbar to true to permanently override the hiding of the Navbar when displaying as standalone
+    var navbar = false;
+ 
+    // Set footer to true to permanently show the Footer ('_footer.md)
+    var footer = false;
 
     // Get value from GET-parameter in URL
     // @param {array}  name        Parameter-name
@@ -424,7 +430,9 @@
       homepage: 'README.md',
       // coverpage      : 'coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || getURLParameterByName('basePath')),
-      externalLinkTarget: '_top',
+      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar ||false),
+      externalLinkTarget: (getURLParameterByName(['standalone', 'embedded'], '_top', '_blank')),
+      loadFooter: (getURLParameterByName('footer') || footer || false),
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
@@ -515,6 +523,11 @@
               if (getURLParameterByName('loadNavbar')) {
                 loadnavbar = getURLParameterByName('loadNavbar', null, null, window.location.href, true);
                 URLparms = URLparms + `&loadNavbar=` + loadnavbar;
+              }
+
+              if (getURLParameterByName('loadFooter')) {
+                loadfooter = getURLParameterByName('loadFooter', null, null, window.location.href, true);
+                URLparms = URLparms + `&loadFooter=` + loadfooter;
               }
 
               if (getURLParameterByName('hypothesis')) {
@@ -756,6 +769,10 @@
   <!-- <script src="https://unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-fontawesome.min.js"></script>
 
+  <!-- Footer Plugin -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script> -->
+  <script src="assets/vendor/docsify/plugins/docsify-footer.min.js"></script>
+
   <!-- Table of Contents Plugin -->
   <script>
     if (getURLParameterByName('toc') && getURLParameterByName('basePath') || ToC) {
@@ -785,10 +802,6 @@
   <!-- CDN files for docsify-katex -->
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-katex.js"></script>
-
-  <!-- Docsify Footnotes Plugin -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
 
   <!-- Optionally enable Hypothesis -->
   <script>
