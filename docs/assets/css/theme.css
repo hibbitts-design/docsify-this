@@ -622,6 +622,11 @@ span #docsifythisurlfield {
   margin-bottom: -12px;
 }
 
+html {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Dark mode colours for use with light + dark themes */
 /*
 
