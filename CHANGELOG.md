@@ -8,6 +8,7 @@
 **Improved:**   
 * Included 'navbar' setting in index.html (when using your own instance of Docsify-This.net) for Docsify Open Publishing Kit compatability
 * Updated ReadMe
+* Eliminate flash of unstyled content
 
 ## [1.3.1] - 12/15/2022
 
