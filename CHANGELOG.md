@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.3.2] - XX/XX/XXXX
+
+**New**
+* Support for displaying a footer ('_footer.md' file) using the URL parameter 'footer=true' or via the 'footer' setting in index.html (when using your own instance of Docsify-This.net)
+
+**Improved:**   
+* Included 'navbar' setting in index.html (when using your own instance of Docsify-This.net) for Docsify Open Publishing Kit compatability
+* Updated ReadMe
+
 ## [1.3.1] - 12/15/2022
 
 **New**
