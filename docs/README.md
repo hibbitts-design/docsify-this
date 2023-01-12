@@ -108,7 +108,7 @@ Page layout:
 ## All About Docsify-This
 
 * [How it Works](/?id=how-it-works)
-* [Example Docsify-This Markdown Templates](/?id=example-docsify-this-markdown-templates)
+* [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](/?id=more-docsify-this-markdown-examples)
 * [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
@@ -136,7 +136,7 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 ---
 
-### Example Docsify-This Markdown Templates
+### Ready-to-Use Docsify-This Markdown Templates
 
 While all you need to get going with Docsify-This is a basic Markdown file, here are some templates you can use that show what is possible with Markdown, images, and even a few HTML snippets!
 

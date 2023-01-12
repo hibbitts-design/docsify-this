@@ -16,7 +16,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [How it Works](#how-it-works)
-* [Example Docsify-This Markdown Templates](#example-docsify-this-markdown-templates)
+* [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](#more-docsify-this-markdown-examples)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
@@ -44,7 +44,7 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 ---
 
-### Example Docsify-This Markdown Templates
+### Ready-to-Use Docsify-This Markdown Templates
 
 While all you need to get going with Docsify-This is a basic Markdown file, here are some templates you can use that show what is possible with Markdown, images, and even a few HTML snippets!
 
