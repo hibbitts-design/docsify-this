@@ -10,6 +10,9 @@
 * Updated ReadMe
 * Eliminate flash of unstyled content
 
+**Bugfix:**  
+* Fixed JS source map errors 
+
 ## [1.3.1] - 12/15/2022
 
 **New**
@@ -146,7 +149,7 @@
 * Support possible Docsify loadNavbar parameter (`loadNavbar=_navbar.md`)
 
 **Bugfix:**  
-* Added missing source maps
+* Added missing JS source maps
 * Scoped front matter check to only be at start of file
 * Fixed embedded code blocks overflow issues
 * Initial fix for setting '_top' as external link targets
