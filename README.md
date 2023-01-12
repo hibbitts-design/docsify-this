@@ -16,8 +16,8 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [How it Works](#how-it-works)
-* [Docsify-This Markdown Templates](#docsify-this-markdown-templates)
-* [More Docsify-This Examples](#more-docsify-this-examples)
+* [Example Docsify-This Markdown Templates](#example-docsify-this-markdown-templates)
+* [More Docsify-This Markdown Examples](#more-docsify-this-markdown-examples)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
 * [Tips and Techniques](#tips-and-techniques)
@@ -44,7 +44,7 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 ---
 
-### Docsify-This Markdown Templates
+### Example Docsify-This Markdown Templates
 
 While all you need to get going with Docsify-This is a basic Markdown file, here are some templates you can use that show what is possible with Markdown, images, and even a few HTML snippets!
 
@@ -78,7 +78,7 @@ Docsify-This Multiple Page Site [home.md](https://github.com/paulhibbitts/docsif
 
 ---
 
-### More Docsify-This Examples
+### More Docsify-This Markdown Examples
 
 [GitHub Training Manual Working Locally with Git Markdown file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed by Docsify-This as a:  
 * [Standalone Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md "GitHub Training Manual Working Locally with Git - Standalone Page")  
