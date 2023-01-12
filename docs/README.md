@@ -264,13 +264,13 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
 ```
 
-`banner-image` (cropped to height of 250px on large screens, 125 px on small screens)  
+`banner-image`  
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
 ```
 
-`banner-tall-image` (cropped to height of 350px on large screens, 175 px on small screens)  
+`banner-tall-image`  
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
@@ -288,10 +288,16 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
 ```
 
-`header-image` (suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents is not available)  
+`banner-image` (cropped to height of 250px on large screens, 125px on small screens)  
 
 ```markdown
-![Photo of Mountain](images/mountain.jpg ':class=header-image')
+![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
+```
+
+`banner-tall-image` (cropped to height of 350px on large screens, 175px on small screens)  
+
+```markdown
+![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
 ```
 
 `header-image-fade` (suggested width of 1200px to 2000px)  
@@ -300,7 +306,13 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 ![Photo of Mountain](images/mountain.jpg ':class=header-image-fade')
 ```
 
-`row` & `column`   
+`header-image-full-width` (suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents is not available)  
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=header-image')
+```
+
+`row` & `column`  
 
 ```html
 <div class="row">
