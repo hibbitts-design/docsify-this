@@ -5,9 +5,9 @@
   </div>
 </div>
 
-# Display an online Markdown file as a simple web page in seconds.
+# Display an online Markdown file as a web page in seconds.
 
-This [open-source web app](https://github.com/hibbitts-design/docsify-this), built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to display Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!
+This [open-source web app](https://github.com/hibbitts-design/docsify-this), built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to display online Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!
 
 <div id="docsifythisurlbuilder">
 
