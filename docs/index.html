@@ -186,163 +186,172 @@
 
       if (url) {
 
-        docsifyURL = window.location.href
+        if (isValidHttpUrl(url)) {
 
-        var params = new URLSearchParams(docsifyURL.search);
-        params.delete('url-field');
-        docsifyURL = docsifyURL.split("?")[0]; //url;
+          docsifyURL = window.location.href
 
-        docsifyURL = docsifyURL.replace('/#/', '');
+          var params = new URLSearchParams(docsifyURL.search);
+          params.delete('url-field');
+          docsifyURL = docsifyURL.split("?")[0]; //url;
 
-        // If not Raw source URL convert it
-        if (url.includes("github.com")) {
-          var gitlinkPageURL = url;
-          url = url.replace('github.com', 'raw.githubusercontent.com');
-          url = url.replace(/\/blob/, '');
-        } else if (url.includes("githubusercontent")) {
-          var gitlinkPageURL = url;
-          gitlinkPageURL = gitlinkPageURL.replace('raw.githubusercontent.com', 'github.com');
-          gitlinkPageURL = gitlinkPageURL.replace(/\/main/, '/blob/main');
-          gitlinkPageURL = gitlinkPageURL.replace(/\/master/, '/blob/master');
-        } else {
-          var gitlinkPageURL = '';
-        }
+          docsifyURL = docsifyURL.replace('/#/', '');
 
-        // Get last segment of URL
-        var lastSegment = url.split('/').pop();
-        var URLparms = '';
+          // If not Raw source URL convert it
+          if (url.includes("github.com")) {
+            var gitlinkPageURL = url;
+            url = url.replace('github.com', 'raw.githubusercontent.com');
+            url = url.replace(/\/blob/, '');
+          } else if (url.includes("githubusercontent")) {
+            var gitlinkPageURL = url;
+            gitlinkPageURL = gitlinkPageURL.replace('raw.githubusercontent.com', 'github.com');
+            gitlinkPageURL = gitlinkPageURL.replace(/\/main/, '/blob/main');
+            gitlinkPageURL = gitlinkPageURL.replace(/\/master/, '/blob/master');
+          } else {
+            var gitlinkPageURL = '';
+          }
 
-        if (document.querySelector('#stylesidebar').checked) {
-          var URLparms = `&sidebar=true`;
-        }
+          // Get last segment of URL
+          var lastSegment = url.split('/').pop();
+          var URLparms = '';
 
-        if (document.querySelector('#styletoc').checked) {
-          var URLparms = `&toc=true`;
-        }
+          if (document.querySelector('#stylesidebar').checked) {
+            var URLparms = `&sidebar=true`;
+          }
 
-        const cb1 = document.querySelector('#editCheck');
-        if (cb1.checked) {
-          if (gitlinkPageURL) {
-            if (!lastSegment.includes(".md")) {
-              // No filename is present, so assume default README.md file
-              gitlinkPageURL = gitlinkPageURL + "README.md";
+          if (document.querySelector('#styletoc').checked) {
+            var URLparms = `&toc=true`;
+          }
+
+          const cb1 = document.querySelector('#editCheck');
+          if (cb1.checked) {
+            if (gitlinkPageURL) {
+              if (!lastSegment.includes(".md")) {
+                // No filename is present, so assume default README.md file
+                gitlinkPageURL = gitlinkPageURL + "README.md";
+              }
+              var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
             }
-            var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
           }
-        }
 
-        var getEditThisPage = document.getElementById("editLinkText");
-        var editlinktext = getEditThisPage.value;
-        if (!(editlinktext == "Edit this Page")) {
-          editlinktext = editlinktext.replace(/ /g, '%20');
-          URLparms = URLparms + `&edit-link-text=` + editlinktext;
-        }
-
-        const cb2 = document.querySelector('#editLinkTopCheck');
-        if (cb1.checked && cb2.checked) {
-          if (gitlinkPageURL) {
-            var URLparms = URLparms + `&edit-link-top=true`;
+          var getEditThisPage = document.getElementById("editLinkText");
+          var editlinktext = getEditThisPage.value;
+          if (!(editlinktext == "Edit this Page")) {
+            editlinktext = editlinktext.replace(/ /g, '%20');
+            URLparms = URLparms + `&edit-link-text=` + editlinktext;
           }
-        }
 
-        const cb3 = document.querySelector('#hideCredits');
-        if (cb3.checked) {
-          var URLparms = URLparms + `&hide-credits=true`;
-        }
-
-        const cb4 = document.querySelector('#narrowToC');
-        if (cb4.checked) {
-          if (URLparms.includes("&toc=true")) {
-            var URLparms = URLparms.replace("&toc=true", "");
-            URLparms = URLparms + `&toc-narrow=true`;
+          const cb2 = document.querySelector('#editLinkTopCheck');
+          if (cb1.checked && cb2.checked) {
+            if (gitlinkPageURL) {
+              var URLparms = URLparms + `&edit-link-top=true`;
+            }
           }
-        }
 
-        const cb5 = document.querySelector('#toch1');
-        const cb6 = document.querySelector('#toch2');
-        const cb7 = document.querySelector('#toch3');
+          const cb3 = document.querySelector('#hideCredits');
+          if (cb3.checked) {
+            var URLparms = URLparms + `&hide-credits=true`;
+          }
 
-        if (URLparms.includes("&toc=true") || URLparms.includes("&toc-narrow=true")) {
-          if (((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false))) {
-            alert("At least one page Heading level for the Table of Contents must be selected.");
-            return;
-          } else if (!(!(cb5.checked) && (cb6.checked) && (!(cb7.checked)))) {
+          const cb4 = document.querySelector('#narrowToC');
+          if (cb4.checked) {
             if (URLparms.includes("&toc=true")) {
-              var ToCHeadings = "";
-              if (cb5.checked) {
-                ToCHeadings = "h1";
-              }
-              if (cb6.checked) {
-                if (ToCHeadings) {
-                  ToCHeadings = ToCHeadings + ",h2";
-                } else {
-                  ToCHeadings = "h2";
-                }
-              }
-              if (cb7.checked) {
-                if (ToCHeadings) {
-                  ToCHeadings = ToCHeadings + ",h3";
-                } else {
-                  ToCHeadings = "h3";
-                }
-              }
-              URLparms = URLparms + `&toc-headings=` + ToCHeadings;
+              var URLparms = URLparms.replace("&toc=true", "");
+              URLparms = URLparms + `&toc-narrow=true`;
             }
           }
-        }
 
-        var getMaxLevel = document.getElementById("maxLevel");
-        var maxLevel = getMaxLevel.value;
-        if (!(maxLevel == 2)) {
-          URLparms = URLparms + `&maxLevel=` + maxLevel;
-        }
+          const cb5 = document.querySelector('#toch1');
+          const cb6 = document.querySelector('#toch2');
+          const cb7 = document.querySelector('#toch3');
 
-        const cb8 = document.querySelector('#hypothesis');
-        if (cb8.checked) {
-          var URLparms = URLparms + `&hypothesis=true`;
-        }
+          if (URLparms.includes("&toc=true") || URLparms.includes("&toc-narrow=true")) {
+            if (((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false))) {
+              alert("At least one page Heading level for the Table of Contents must be selected.");
+              return;
+            } else if (!(!(cb5.checked) && (cb6.checked) && (!(cb7.checked)))) {
+              if (URLparms.includes("&toc=true")) {
+                var ToCHeadings = "";
+                if (cb5.checked) {
+                  ToCHeadings = "h1";
+                }
+                if (cb6.checked) {
+                  if (ToCHeadings) {
+                    ToCHeadings = ToCHeadings + ",h2";
+                  } else {
+                    ToCHeadings = "h2";
+                  }
+                }
+                if (cb7.checked) {
+                  if (ToCHeadings) {
+                    ToCHeadings = ToCHeadings + ",h3";
+                  } else {
+                    ToCHeadings = "h3";
+                  }
+                }
+                URLparms = URLparms + `&toc-headings=` + ToCHeadings;
+              }
+            }
+          }
 
-        var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
-        if (!(getFontFamily == "default")) {
-          var URLparms = URLparms + `&font-family=` + getFontFamily;
-        }
+          var getMaxLevel = document.getElementById("maxLevel");
+          var maxLevel = getMaxLevel.value;
+          if (!(maxLevel == 2)) {
+            URLparms = URLparms + `&maxLevel=` + maxLevel;
+          }
 
-        var getFontSize = document.getElementById('fontsize').value;
-        if (!(getFontSize == "1.125")) {
-          var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
-        }
+          const cb8 = document.querySelector('#hypothesis');
+          if (cb8.checked) {
+            var URLparms = URLparms + `&hypothesis=true`;
+          }
 
-        var getColor = document.getElementById("linkcolor");
-        var hexCode = getColor.value;
-        if (hexCode.charAt(0) == "#") {
-          hexCode = hexCode.substring(1);
-          getColor.value = hexCode;
-        }
-        if (!(hexCode == "0374B5")) {
-          URLparms = URLparms + `&link-color=` + hexCode;
-        }
+          var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
+          if (!(getFontFamily == "default")) {
+            var URLparms = URLparms + `&font-family=` + getFontFamily;
+          }
 
-        if (!lastSegment.includes(".md")) {
-          // No filename is present, so assume default README.md file if full path provided
-          if (url.includes("blob")) {
-            var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
+          var getFontSize = document.getElementById('fontsize').value;
+          if (!(getFontSize == "1.125")) {
+            var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
+          }
+
+          var getColor = document.getElementById("linkcolor");
+          var hexCode = getColor.value;
+          if (hexCode.charAt(0) == "#") {
+            hexCode = hexCode.substring(1);
+            getColor.value = hexCode;
+          }
+          if (!(hexCode == "0374B5")) {
+            URLparms = URLparms + `&link-color=` + hexCode;
+          }
+
+          if (!lastSegment.includes(".md")) {
+            // No filename is present, so assume default README.md file if full path provided
+            if (url.includes("blob")) {
+              var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
+            } else {
+              alert("Please include the full path and filename in the Markdown file URL (e.g. 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md').");
+              selectText();
+              return;
+            }
           } else {
-            alert("Please include the full path and filename in the Markdown file URL (e.g. 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md').");
+            if (lastSegment == "README.md") {
+              // Default is README.md so homepage parm not needed
+              url = url.substring(0, url.lastIndexOf("/"));
+              var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
+                } else {
+                  url = url.substring(0, url.lastIndexOf("/"));
+                  var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
+                }
+            }
+
+            window.open(baseURL);
+
+          } else {
+
+            alert("Please enter a valid Markdown file URL.");
             selectText();
-            return;
-          }
-        } else {
-          if (lastSegment == "README.md") {
-            // Default is README.md so homepage parm not needed
-            url = url.substring(0, url.lastIndexOf("/"));
-            var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
-          } else {
-            url = url.substring(0, url.lastIndexOf("/"));
-            var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
-          }
-        }
 
-        window.open(baseURL);
+        }
 
       } else {
 
@@ -351,6 +360,16 @@
 
       }
 
+    }
+
+    function isValidHttpUrl(string) {
+      let url;
+      try {
+        url = new URL(string);
+      } catch (_) {
+        return false;
+      }
+      return url.protocol === "http:" || url.protocol === "https:";
     }
 
     function selectText() {
@@ -591,7 +610,7 @@
           hook.beforeEach(function (html) {
 
             if (!(getURLParameterByName('basePath') === false)) {
-              
+
               // Remove any possible front matter with the delimiters '---'
               if (html.startsWith("---")) {
                 html = html.replace(/---(.|\n)*?---/, '');
