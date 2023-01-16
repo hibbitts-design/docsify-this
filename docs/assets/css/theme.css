@@ -631,6 +631,7 @@ span #docsifythisurlfield {
 .markdown-section .docsifythiscolumn65 {
   float: left;
   width: 65%;
+  margin-top: -7px;
 }
 
 @media screen and (max-width:800px) {
@@ -640,6 +641,7 @@ span #docsifythisurlfield {
   }
   .markdown-section .docsifythiscolumn65 {
       width: 100%;
+      margin-top: 0px;
   }
 }
 
