@@ -33,29 +33,3 @@ body .markdown-section {
     font-size: 14px;
 }
 */
-
-.markdown-section .docsify-this-screenshot {
-    width: 85%;
-    height: 85%;
-}
-
-.markdown-section .docsifythiscolumn35 {
-    float: left;
-    width: 35%;
-    margin-right: -35px;
-}
-  
-.markdown-section .docsifythiscolumn65 {
-    float: left;
-    width: 65%;
-}
-
-@media screen and (max-width:800px) {
-    .markdown-section .docsifythiscolumn35 {
-        width: 100%;
-        margin-right: 0px;
-    }
-    .markdown-section .docsifythiscolumn65 {
-        width: 100%;
-    }
-}
