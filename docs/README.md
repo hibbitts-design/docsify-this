@@ -140,8 +140,6 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 While all you need to get going with Docsify-This is a basic Markdown file, here are some templates (with step-by-step how to use instructions) you can use that show what is possible with Markdown, images, and even a few HTML snippets!
 
-<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-one-page-course"><b>Docsify-This One Page Course Template</a></b></p>
-
 <div class="row">
 
 <div class="docsifythiscolumn35" >
@@ -152,6 +150,8 @@ While all you need to get going with Docsify-This is a basic Markdown file, here
 
 <div class="docsifythiscolumn65" >
 
+#### [Docsify-This One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course)
+
 Docsify-This One Page Course [home.md](https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md) file displayed by Docsify-This as a:   
 * [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
 * [Standalone Page with Table of Contents and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
@@ -160,8 +160,6 @@ Docsify-This One Page Course [home.md](https://github.com/paulhibbitts/docsify-t
 </div>
 
 </div>
-
-<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-one-page-article"><b>Docsify-This One Page Article Template</a></b></p>
 
 <div class="row">
 
@@ -173,6 +171,8 @@ Docsify-This One Page Course [home.md](https://github.com/paulhibbitts/docsify-t
 
 <div class="docsifythiscolumn65" >
 
+#### [Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article)
+
 Docsify-This One Page Article [home.md](https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md) file displayed by Docsify-This as a:  
 * [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
 * [Standalone Page with Table of Contents including h2 and h3 Headers and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
@@ -181,8 +181,6 @@ Docsify-This One Page Article [home.md](https://github.com/paulhibbitts/docsify-
 </div>
 </div>
 </div>
-
-<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-multiple-page-site"><b>Docsify-This Multiple Page Site Template</a></b></p>
 
 <div class="row">
 
@@ -193,6 +191,8 @@ Docsify-This One Page Article [home.md](https://github.com/paulhibbitts/docsify-
 </div>
 
 <div class="docsifythiscolumn65" >
+
+#### [Docsify-This Multiple Page Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-site)
 
 Docsify-This Multiple Page Site [home.md](https://github.com/paulhibbitts/docsify-this-multiple-page-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:  
 * [Standalone Pages](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Standalone Pages")  
