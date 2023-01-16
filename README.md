@@ -1,4 +1,4 @@
-# Docsify This
+# Docsify-This
 
 [![Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/hibbitts-design/docsify-open-multicourse-starter-kit/blob/main/LICENSE)
@@ -220,7 +220,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 ![Photo of Mountain](images/mountain.jpg ':class=header-image')
 ```
 
-`row` & `column`   
+`row` & `column`  
 
 ```html
 <div class="row">
@@ -283,6 +283,7 @@ If you want to further customize and control the presentation of your Markdown c
 ---
 
 ### Troubleshooting
+
 _'404 - Not found' message is displayed._  
 The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also be a result of a Cross-Origin Resource Sharing (CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests.
 
