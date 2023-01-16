@@ -138,9 +138,9 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 ### Ready-to-Use Docsify-This Markdown Templates
 
-While all you need to get going with Docsify-This is a basic Markdown file, here are some templates you can use that show what is possible with Markdown, images, and even a few HTML snippets!
+While all you need to get going with Docsify-This is a basic Markdown file, here are some templates (with step-by-step how to use instructions) you can use that show what is possible with Markdown, images, and even a few HTML snippets!
 
-<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-one-page-course"><b>Docsify-This One Page Course Template</a> (including how to use)</b></p>
+<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-one-page-course"><b>Docsify-This One Page Course Template</a></b></p>
 
 <div class="row">
 
@@ -161,7 +161,7 @@ Docsify-This One Page Course [home.md](https://github.com/paulhibbitts/docsify-t
 
 </div>
 
-<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-one-page-article"><b>Docsify-This One Page Article Template</a> (including how to use)</b></p>
+<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-one-page-article"><b>Docsify-This One Page Article Template</a></b></p>
 
 <div class="row">
 
@@ -182,7 +182,7 @@ Docsify-This One Page Article [home.md](https://github.com/paulhibbitts/docsify-
 </div>
 </div>
 
-<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-multiple-page-site"><b>Docsify-This Multiple Page Site Template</a> (including how to use)</b></p>
+<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-multiple-page-site"><b>Docsify-This Multiple Page Site Template</a></b></p>
 
 <div class="row">
 
