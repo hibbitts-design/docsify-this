@@ -13,7 +13,7 @@ This [open-source web app](https://github.com/hibbitts-design/docsify-this), bui
 
 ## Web Page Builder
 
-Enter the URL of a Markdown file below and view that file as a web page in a new Browser tab. The resulting page URL can be copied and shared or used as an iFrame source URL.
+Enter the URL of a Markdown file below and view that file as a web page in a new Browser tab. The resulting Docsify-This.net page URL can be copied and shared or used as an iFrame source URL.
 
 **Markdown File URL** (GitHub or raw source URL):</br>
 <input name="markdownFileURL" aria-label="markdown file url" id="docsifythisurlfield" type="url" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" size="200px" value="https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md" />
