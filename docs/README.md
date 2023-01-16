@@ -140,6 +140,27 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 While all you need to get going with Docsify-This is a basic Markdown file, here are some templates you can use that show what is possible with Markdown, images, and even a few HTML snippets!
 
+<p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-one-page-course"><b>Docsify-This One Page Course Template</a> (including how to use)</b></p>
+
+<div class="row">
+
+<div class="docsifythiscolumn35" >
+
+![Docsify-This One Page Course Template](images/docsify-this-one-page-course.png ':class=docsify-this-screenshot')
+
+</div>
+
+<div class="docsifythiscolumn65" >
+
+Docsify-This One Page Course [home.md](https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md) file displayed by Docsify-This as a:   
+* [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
+* [Standalone Page with Table of Contents and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
+* [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
+
+</div>
+
+</div>
+
 <p style="margin-bottom:-8px;"><a href="https://github.com/paulhibbitts/docsify-this-one-page-article"><b>Docsify-This One Page Article Template</a> (including how to use)</b></p>
 
 <div class="row">
