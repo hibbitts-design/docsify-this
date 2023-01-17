@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.3.2] - XX/XX/XXXX
+## [1.3.2] - 01/17/2023
 
 **New**
 * Support for displaying a footer ('_footer.md' file) using the URL parameter 'footer=true' or via the 'footer' setting in index.html (when using your own instance of Docsify-This.net)
