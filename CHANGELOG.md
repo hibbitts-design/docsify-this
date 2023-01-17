@@ -10,6 +10,7 @@
 * Updated ReadMe
 * Eliminate flash of unstyled content
 * Added check for valid URL of Markdown file (files exists check does not seem possible due to CORS)
+* Updated ReadMe
 
 **Bugfix:**  
 * Fixed JS source map errors 
