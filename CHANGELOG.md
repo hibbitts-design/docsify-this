@@ -7,7 +7,6 @@
 
 **Improved:**   
 * Included 'navbar' setting in index.html (when using your own instance of Docsify-This.net) for Docsify Open Publishing Kit compatability
-* Updated ReadMe
 * Eliminate flash of unstyled content
 * Added check for valid URL of Markdown file (files exists check does not seem possible due to CORS)
 * Updated ReadMe
