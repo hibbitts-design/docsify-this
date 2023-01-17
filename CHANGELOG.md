@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.3] - XX/XX/XXXX
+
+**Improved:**   
+* Adjust page margins when content is being embedded
+
 ## [1.3.2] - 01/17/2023
 
 **New**
