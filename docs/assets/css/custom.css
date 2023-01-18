@@ -33,3 +33,8 @@ body .markdown-section {
     font-size: 14px;
 }
 */
+
+.markdown-section .alert {
+    margin: 1em 0;
+    padding: 1em;
+}
