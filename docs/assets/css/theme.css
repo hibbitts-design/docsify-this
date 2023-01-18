@@ -97,7 +97,8 @@
 }
 
 .markdown-section blockquote {
-  margin: 1.5em 0;
+  margin: 1em 0;
+  padding: 1em;
 }
 
 .markdown-section blockquote ul {
