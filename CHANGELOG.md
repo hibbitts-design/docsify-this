@@ -4,6 +4,7 @@
 
 **Improved:**   
 * Adjust page margins when content is being embedded
+* Adjust margins and padding for alerts
 
 ## [1.3.2] - 01/17/2023
 
