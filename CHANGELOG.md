@@ -5,6 +5,7 @@
 **Improved:**   
 * Adjust page margins when content is being embedded
 * Adjust margins and padding for alerts and blockquotes
+* Increase clickable areas for Topics alphabetical index
 
 ## [1.3.2] - 01/17/2023
 
