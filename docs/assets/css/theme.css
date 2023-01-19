@@ -193,12 +193,21 @@
   text-decoration: none !important;
 }
 
+.markdown-section a[href="#/?id=a"], .markdown-section a[href="#/?id=b"], .markdown-section a[href="#/?id=c"], .markdown-section a[href="#/?id=d"], .markdown-section a[href="#/?id=e"], .markdown-section a[href="#/?id=f"], .markdown-section a[href="#/?id=g"], .markdown-section a[href="#/?id=h"], .markdown-section a[href="#/?id=i"], .markdown-section a[href="#/?id=j"], .markdown-section a[href="#/?id=k"], .markdown-section a[href="#/?id=l"], .markdown-section a[href="#/?id=m"], .markdown-section a[href="#/?id=n"], .markdown-section a[href="#/?id=o"], .markdown-section a[href="#/?id=p"], .markdown-section a[href="#/?id=q"], .markdown-section a[href="#/?id=r"], .markdown-section a[href="#/?id=s"], .markdown-section a[href="#/?id=t"], .markdown-section a[href="#/?id=u"], .markdown-section a[href="#/?id=v"], .markdown-section a[href="#/?id=w"], .markdown-section a[href="#/?id=x"], .markdown-section a[href="#/?id=y"], .markdown-section a[href="#/?id=z"] {
+  display: inline-element;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  line-height: 1.2em;
+}
+
 .markdown-section #a, .markdown-section #b, .markdown-section #c, .markdown-section #d, .markdown-section #e, .markdown-section #f, .markdown-section #g, .markdown-section #h, .markdown-section #i, .markdown-section #j, .markdown-section #k, .markdown-section #l, .markdown-section #m, .markdown-section #n, .markdown-section #o, .markdown-section #p, .markdown-section #q, .markdown-section #r, .markdown-section #s, .markdown-section #t, .markdown-section #u, .markdown-section #v, .markdown-section #w, .markdown-section #x, .markdown-section #y, .markdown-section #z {
   width: 2em;
   color: white;
   font-weight: 600;
   margin-top: 1.00rem;
-  padding-left: 0.5rem;
+  padding-left: 0.25rem;
   background: #666666;
 }
 
