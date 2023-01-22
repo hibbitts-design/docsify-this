@@ -30,7 +30,6 @@
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css"> -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/vendor/themeable/themes/theme-simple-dark.css"> -->
   <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
 
   <!-- Font Awesome Stylesheets -->
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome.css" />
@@ -783,6 +782,13 @@
   <!-- Customizable Theme -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script> -->
   <script src="assets/vendor/themeable/docsify-themeable.min.js"></script>
+
+  <!-- Load custom.css file only when displaying Markdown files -->
+  <script>
+    if (window.$docsify['basePath']) {
+      document.write('<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />');
+    }
+  </script>
 
   <!-- Font Awesome Plugin -->
   <!-- <script src="https://unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script> -->
