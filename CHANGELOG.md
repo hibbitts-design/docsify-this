@@ -2,11 +2,15 @@
 
 ## [1.3.3] - XX/XX/XXXX
 
+**New**
+* Add Lato font (default Canvas LMS font)
+
 **Improved:**   
 * Adjust page margins when content is being embedded
 * Adjust margins and padding for alerts and blockquotes
 * Increase clickable areas for Topics alphabetical index
 * Moved example CSS styles to custom.css file, which is only loaded when displaying a Markdown file
+* Updated all Google Font files
 
 ## [1.3.2] - 01/17/2023
 
