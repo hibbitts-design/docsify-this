@@ -57,6 +57,7 @@ Page layout:
   <option disabled="disabled">----</option>
   <option value="Arial,sans-serif">Arial, sans-serif</option>
   <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
+  <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
   <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif (Canvas LMS)</option>
   <option value="Verdana">Verdana, sans-serif</option>
   <option value="Tahoma">Tahoma, sans-serif</option>
