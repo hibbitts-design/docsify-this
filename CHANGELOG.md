@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.4] - XX/XX/XXXX
+
+**Improved:**   
+* Added section about embedding Docsify-This pages into other platforms
+in ReadMe
+
 ## [1.3.3] - 01/24/2023
 
 **New**
