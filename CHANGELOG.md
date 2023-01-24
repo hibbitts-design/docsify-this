@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.3.3] - XX/XX/XXXX
+## [1.3.3] - 01/24/2023
 
 **New**
 * Add Lato font (default Canvas LMS font)
