@@ -3,8 +3,9 @@
 ## [1.3.3] - 01/24/2023
 
 **New**
-* Add Lato font (default Canvas LMS font)
+* Add Lato font choice (default Canvas LMS font)
 * Added example Docsify-This template (LMS Content Pages Template) 
+* Add Helvetica Neue font choice (default Moodle LMS font)
 
 **Improved:**   
 * Adjust page margins when content is being embedded
