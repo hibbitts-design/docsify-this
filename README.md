@@ -16,6 +16,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [How it Works](#how-it-works)
+* [Example Usage Scenarios](#example-usage-scenarios)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](#more-docsify-this-markdown-examples)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
@@ -42,6 +43,15 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 To render a file stored in a public GitHub repository you need to use the raw source URL of that file (i.e. raw.githubusercontent.com) - tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file) to get this URL when not using the above Web Page Builder, which does this automatically. It is also possible to render a file stored in a private GitHub repository by activating GitHub Pages within that repository and then using the GitHub Pages URL of that file (i.e. username.github.io).  
 
 The appearance of rendered Markdown files can be customized by optional [URL parameters](#page-appearance-url-parameters) and a small set of available [CSS Classes](#supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
+
+---
+
+### Example Usage Scenarios
+
+* Quickly turn any publicly available Markdown file into a Web page
+* Share GitHub hosted Markdown files as Web pages, with an optional 'Edit this Page' link
+* Reuse Markdown software documentation in other contexts
+* Embed constraint-free Markdown/HTML content into an LMS
 
 ---
 
