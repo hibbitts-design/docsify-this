@@ -48,7 +48,7 @@ The appearance of rendered Markdown files can be customized by optional [URL par
 
 ### Example Usage Scenarios
 
-* Quickly turn any publicly available Markdown file into a Web page
+* Quickly turn publicly available Markdown files (incl. Open Educational Resources) into Web pages
 * Share GitHub hosted Markdown files as Web pages, with an optional 'Edit this Page' link
 * Reuse Markdown software documentation in other contexts
 * Embed constraint-free Markdown/HTML content into an LMS
