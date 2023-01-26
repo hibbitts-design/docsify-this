@@ -2,6 +2,9 @@
 
 ## [1.3.4] - XX/XX/XXXX
 
+**New**
+* Support for 75%, 50% and 25% scaled images (`image-75`,`image-50` and `image-25`)
+
 **Improved:**   
 * Added section about embedding Docsify-This pages into other platforms
 in ReadMe
