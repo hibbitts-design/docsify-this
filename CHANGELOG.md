@@ -5,6 +5,7 @@
 **Improved:**   
 * Added section about embedding Docsify-This pages into other platforms
 in ReadMe
+* Added section about example Docsify-This usage scenarios in ReadMe
 
 ## [1.3.3] - 01/24/2023
 
