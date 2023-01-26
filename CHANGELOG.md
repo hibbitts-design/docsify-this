@@ -7,6 +7,9 @@
 in ReadMe
 * Added section about example Docsify-This usage scenarios in ReadMe
 
+**Bugfix:**  
+* Replaced incorrect font files for Source Sans Pro Google Font
+
 ## [1.3.3] - 01/24/2023
 
 **New**
