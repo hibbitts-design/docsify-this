@@ -64,3 +64,8 @@ body .markdown-section {
     font-size: 14px;
 }
 */
+
+.sidebar-nav a, .sidebar nav a {
+    overflow: visible;
+    white-space: normal;
+}
