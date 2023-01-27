@@ -9,9 +9,11 @@
 * Added section about embedding Docsify-This pages into other platforms
 in ReadMe
 * Added section about example Docsify-This usage scenarios in ReadMe
+* Support word-wrap in Sidebar navigation links
 
 **Bugfix:**  
 * Replaced incorrect font files for Source Sans Pro Google Font
+* Fix visible Navbar conditional logic
 
 ## [1.3.3] - 01/24/2023
 
