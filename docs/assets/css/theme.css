@@ -719,6 +719,11 @@ span #docsifythisurlfield {
   }
 }
 
+.sidebar-nav a, .sidebar nav a {
+  overflow: visible;
+  white-space: normal;
+}
+
 /* Dark mode colours for use with light + dark themes */
 /*
 
