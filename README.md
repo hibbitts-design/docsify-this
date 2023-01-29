@@ -337,6 +337,25 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 If you want to include a Page Table of Contents with embedded Docsify-This content, but the destination platform screen area is not very wide, you might want to try the optional `toc-narrow` display option. For example, to use a narrower Table of Contents area that includes a smaller screen breakpoint:
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-01.md&toc-narrow=true  
 
+**Including Code Blocks**  
+Using [Prismjs](https://prismjs.com/) code blocks with syntax highlighting is supported. To embed a code block use the Markdown standard of triple backticks and start the block with the name of the language, for example to embed a block of Javascript code with syntax highlight the following would be used:
+
+<pre>
+```javascript
+function test() {
+  console.log("Hello world!");
+}
+```
+</pre>
+
+Which would then appear as:
+
+```javascript
+function test() {
+  console.log("Hello world!");
+}
+```
+
 ---
 
 ### Improving Markdown Previews in Text Editors
