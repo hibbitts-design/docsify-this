@@ -5,6 +5,7 @@
 **New**
 * Support for 75%, 50% and 25% scaled images (`image-75`,`image-50` and `image-25`)
 * Added link to new [Markdown Publishing with Docsify-This guide](https://github.com/hibbitts-design/markdown-publishing-with-docsify-this)
+* Additional languages for Prismjs (bash, go, java, kotlin, php, python and swift - base set can be viewed at https://docsify.js.org/#/language-highlight?id=language-highlighting)
 
 **Improved:**   
 * Added section about embedding Docsify-This pages into other platforms
