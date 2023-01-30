@@ -746,12 +746,27 @@
       ]
     }
 
+    // Set allowedDomain to single permitted source domain for Markdown source files
+    var allowedDomain = '';
+
     <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
     <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
     const params = new URLSearchParams(window.location.search);
     params.forEach((value, key) => {
       // TODO: Parse numbers?
-      window.$docsify[key] = value;
+
+      // console.log(value,key);
+      if (key === 'basePath' && !(allowedDomain === '')) {
+        const { hostname } = new URL(value);
+        if (!(hostname === allowedDomain)) {
+          alert('Only the domain ' + allowedDomain + ' is permitted for a Markdown source file URL.');
+          throw new Error('Only the domain ' + allowedDomain + ' is permitted for a Markdown source file URL.');
+        } else {
+          window.$docsify[key] = value;
+        }
+      } else {
+        window.$docsify[key] = value;
+      }
     });
 
     // Check for Return Key with Web Page Builder
