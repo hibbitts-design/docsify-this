@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.3.4] - XX/XX/XXXX
+## [1.4.0] - XX/XX/XXXX
 
 **New**
 * Support for 75%, 50% and 25% scaled images (`image-75`,`image-50` and `image-25`)
