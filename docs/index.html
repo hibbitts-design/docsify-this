@@ -132,6 +132,9 @@
     // Set footer to true to permanently show the Footer ('_footer.md)
     var footer = false;
 
+    // Set allowedDomains to contain single or multiple (comma separated) domain names to control which domains can be used for hosting source Markdown files.
+    var allowedDomains = '';
+
     // Get value from GET-parameter in URL
     // @param {array}  name        Parameter-name
     // @param {*}      isTrue      Returns this variable if "name" found
@@ -745,9 +748,6 @@
 
       ]
     }
-
-    // Set allowedDomains to single or multiple (comma separated) permitted source domains for Markdown source files
-    var allowedDomains = '';
 
     <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
     <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
