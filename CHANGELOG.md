@@ -1,10 +1,10 @@
 # Changelog
 
-## [1.4.0] - XX/XX/XXXX
+## [1.4.0] - 02/01/2023
 
 **New**
 * Support for 75%, 50% and 25% scaled images (`image-75`,`image-50` and `image-25`)
-* Added link to new [Markdown Publishing with Docsify-This guide](https://github.com/hibbitts-design/markdown-publishing-with-docsify-this)
+* Added link to new [Markdown Publishing with Docsify-This guide](https://github.com/hibbitts-design/markdown-publishing-with-docsify-this)🎉
 * Additional languages for Prismjs (Bash, Go, Java, Kotlin, PHP, Python and Swift in addition to the base set https://docsify.js.org/#/language-highlight?id=language-highlighting)
 * Included 'allowedDomains' setting in index.html (when using your own instance of Docsify-This.net) for limiting all Markdown file source URLs to one or more permitted domains
 
