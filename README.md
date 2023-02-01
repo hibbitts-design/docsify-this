@@ -6,9 +6,9 @@
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
 </a>
 
-## Display an online Markdown file as a web page in seconds.
+## Publish online Markdown files as web pages in seconds.
 
-This open-source web app, built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to display online Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net. [Try it out now!](https://docsify-this.net)
+This open-source web app, built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to display one or more Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net. [Try it out now!](https://docsify-this.net)
 
 ![ Docsify-This](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-this-web-page-builder.png)
 _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
