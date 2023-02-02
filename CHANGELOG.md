@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.4.1] - XX/XX/XXXX
+## [1.4.1] - XX/XX/2023
 
 **Improved:**   
 * Consolidate example custom CSS for LMSs
