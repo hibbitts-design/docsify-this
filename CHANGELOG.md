@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.1] - XX/XX/XXXX
+
+**Improved:**   
+* Consolidate example custom CSS for LMSs
+* Improve support for dark mode on custom Docsify-This instances
+
 ## [1.4.0] - 02/01/2023
 
 **New**
