@@ -594,7 +594,6 @@
                   link.setAttribute('target', '_top');
                 }
               }
-            } 
 
             /* JS to change Embedly cards to light or dark theme based on system theme (uncomment to use) */
             /*
@@ -614,6 +613,9 @@
             */
 
             next(htmlElement.innerHTML);
+            } else {
+              next(html);
+            } 
 
           });
 
