@@ -468,6 +468,9 @@
 
             if (window.$docsify['basePath']) {
 
+              var htmlElement = document.createElement('div');
+              htmlElement.innerHTML = html;
+
               // Scan for links to local Markdown files and adjust URLs to work correctly
 
               // Get current Docsify URL without any parmarmeters
@@ -542,26 +545,6 @@
                 URLparms = URLparms + `&maxLevel=` + maxLevel;
               }
 
-              var htmlElement = document.createElement('div');
-              htmlElement.innerHTML = html;
-
-              /* JS to change Embedly cards to light or dark theme based on system theme (uncomment to use) */
-              /*
-              const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
-
-              if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                  // dark mode
-                  embeds.forEach(embed => {
-                    embed.setAttribute('data-card-theme', 'dark');
-                  });
-                  } else {
-                  // light mode
-                  embeds.forEach(embed => {
-                    embed.setAttribute('data-card-theme', 'light');
-                  });
-              }
-              */
-
               const links = Array.from(htmlElement.querySelectorAll('a'))
 
               for (const link of links) {
@@ -602,10 +585,27 @@
                   link.setAttribute('target', '_top');
                 }
               }
-              next(htmlElement.innerHTML);
-            } else {
-              next(html);
+            } 
+
+            /* JS to change Embedly cards to light or dark theme based on system theme (uncomment to use) */
+            /*
+            const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
+
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // dark mode
+                embeds.forEach(embed => {
+                  embed.setAttribute('data-card-theme', 'dark');
+                });
+                } else {
+                // light mode
+                embeds.forEach(embed => {
+                  embed.setAttribute('data-card-theme', 'light');
+                });
             }
+            */
+
+            next(htmlElement.innerHTML);
+
           });
 
           hook.beforeEach(function (html) {
