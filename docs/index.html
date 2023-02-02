@@ -165,6 +165,15 @@
       return exists;
     }
 
+    /* JS to force page reload/draw when switching to or from light and dark themes (uncomment to use) */
+    /*
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+    // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
+    // console.log(e.matches);
+    location.reload();
+    });
+    */
+
     // DOCSIFY THIS SCRIPTS
     function openURLs(url) {
 
