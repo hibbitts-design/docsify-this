@@ -18,39 +18,39 @@ body .markdown-section {
 /* Link colors to match visual styling of SFU Canvas LMS (uncomment to use) */
 /*
 :root {
-    --sidebar-name-color: #A6192E;
-    --sidebar-nav-link-color--active: #A6192E;
-    --sidebar-nav-link-border-color--active: #A6192E;
-    --sidebar-name-margin: 1.5rem -.2rem;
-    --sidebar-nav-link-font-weight--active: bold;
-    --link-color: #A6192E;
-    --pagination-title-color: #A6192E;
+    --sidebar-name-color: #A6192E!important;
+    --sidebar-nav-link-color--active: #A6192E!important;
+    --sidebar-nav-link-border-color--active: #A6192E!important;
+    --sidebar-name-margin: 1.5rem -.2rem!important;
+    --sidebar-nav-link-font-weight--active: bold!important;
+    --link-color: #A6192E!important;
+    --pagination-title-color: #A6192E!important;
 }
 */
 
 /* Link colors to match visual styling of Moodle LMS (uncomment to use) */
 /*
 :root {
-    --navbar-root-color--active: #0F6CBF;
-    --blockquote-border-color: #0F6CBF;
-    --sidebar-name-color: #0F6CBF;
-    --sidebar-nav-link-color--active: #0F6CBF;
-    --sidebar-nav-link-border-color--active: #0F6CBF;
-    --link-color: #0F6CBF;
-    --pagination-title-color: #0F6CBF;
+    --navbar-root-color--active: #0F6CBF!important;
+    --blockquote-border-color: #0F6CBF!important;
+    --sidebar-name-color: #0F6CBF!important;
+    --sidebar-nav-link-color--active: #0F6CBF!important;
+    --sidebar-nav-link-border-color--active: #0F6CBF!important;
+    --link-color: #0F6CBF!important;
+    --pagination-title-color: #0F6CBF!important;
 }
 */
 
 /* Link colors to match visual styling of Sakai LMS (uncomment to use) */
 /*
 :root {
-    --navbar-root-color--active: #0B1660;
-    --blockquote-border-color: #0B1660;
-    --sidebar-name-color: #0B1660;
-    --sidebar-nav-link-color--active: #0B1660;
-    --sidebar-nav-link-border-color--active: #0B1660;
-    --link-color: #0B1660;
-    --pagination-title-color: #0B1660;
+    --navbar-root-color--active: #0B1660!important;
+    --blockquote-border-color: #0B1660!important;
+    --sidebar-name-color: #0B1660!important;
+    --sidebar-nav-link-color--active: #0B1660!important;
+    --sidebar-nav-link-border-color--active: #0B1660!important;
+    --link-color: #0B1660!important;
+    --pagination-title-color: #0B1660!important;
 }
 */
 
