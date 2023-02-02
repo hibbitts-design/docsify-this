@@ -87,7 +87,7 @@
       --link-text-decoration--hover: underline;
 
       --pagination-title-color: #0374B5;
-      
+
     }
   </style>
 
@@ -544,6 +544,23 @@
 
               var htmlElement = document.createElement('div');
               htmlElement.innerHTML = html;
+
+              /* JS to change Embedly cards to light or dark theme based on system theme (uncomment to use) */
+              /*
+              const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
+
+              if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                  // dark mode
+                  embeds.forEach(embed => {
+                    embed.setAttribute('data-card-theme', 'dark');
+                  });
+                  } else {
+                  // light mode
+                  embeds.forEach(embed => {
+                    embed.setAttribute('data-card-theme', 'light');
+                  });
+              }
+              */
 
               const links = Array.from(htmlElement.querySelectorAll('a'))
 
