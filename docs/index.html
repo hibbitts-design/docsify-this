@@ -27,9 +27,10 @@
   <link rel="stylesheet" href="assets/vendor/themeable/themes/theme-simple.css">
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css"> -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/vendor/themeable/themes/theme-simple-dark.css"> -->
+  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css">
+ <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/vendor/themeable/themes/theme-simple-dark.css">
   <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
 
   <!-- Font Awesome Stylesheets -->
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome.css" />
@@ -114,6 +115,9 @@
  
     // Set footer to true to permanently show the Footer ('_footer.md)
     var footer = false;
+
+    // Set darkmode to true to permanently enable dark mode support
+    var darkmode = false;
 
     // Set allowedDomains to contain single or multiple (comma separated) domain names to control which domains can be used for hosting source Markdown files
     var allowedDomains = '';
@@ -517,6 +521,11 @@
                 URLparms = URLparms + `&link-color=` + linkcolor;
               }
 
+              if (getURLParameterByName('link-color-dark-mode')) {
+                linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
+                URLparms = URLparms + `&link-color-dark-mode=` + linkcolordarkmode;
+              }
+
               if (getURLParameterByName('edit-link-text')) {
                 editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
                 URLparms = URLparms + `&edit-link-text=` + editlinktextparm;
@@ -543,6 +552,11 @@
               if (getURLParameterByName('maxLevel')) {
                 maxLevel = getURLParameterByName('maxLevel', null, null, window.location.href, true);
                 URLparms = URLparms + `&maxLevel=` + maxLevel;
+              }
+
+              if (getURLParameterByName('dark-mode')) {
+                enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+                URLparms = URLparms + `&dark-mode=` + enabledarkmode;
               }
 
               const links = Array.from(htmlElement.querySelectorAll('a'))
@@ -587,7 +601,6 @@
               }
 
             /* JS to change Embedly cards to light or dark theme based on system theme (uncomment to use) */
-            /*
             const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
             if (!(embeds.length === 0)) {
               if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -606,8 +619,67 @@
                 // console.log(e.matches);
                 location.reload();
               });
+
             }
-            */
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+              const newColorScheme = event.matches ? "dark" : "light";
+              if (newColorScheme === "dark") {
+                // dark mode
+                linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
+                if (!(linkcolordarkmode === false)) {
+                  linkcolordarkmode = '#' + linkcolordarkmode;
+                  document.documentElement.style.setProperty('--navbar-root-color--active', linkcolordarkmode);
+                  document.documentElement.style.setProperty('--blockquote-border-color', linkcolordarkmode);
+                  document.documentElement.style.setProperty('--sidebar-name-color', linkcolordarkmode);
+                  document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolordarkmode);
+                  document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolordarkmode);
+                  document.documentElement.style.setProperty('--link-color', linkcolordarkmode);
+                  document.documentElement.style.setProperty('--pagination-title-color', linkcolordarkmode);
+                } else {
+                  linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
+                  if (!(linkcolor === false)) {
+                    linkcolor = '#' + linkcolor;
+                    document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
+                    document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
+                    document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
+                    document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
+                    document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
+                    document.documentElement.style.setProperty('--link-color', linkcolor);
+                    document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
+                  } else {
+                    document.documentElement.style.setProperty('--navbar-root-color--active', '#1182C5');
+                    document.documentElement.style.setProperty('--blockquote-border-color', '#757b7f');
+                    document.documentElement.style.setProperty('--sidebar-name-color', '#1182C5');
+                    document.documentElement.style.setProperty('--sidebar-nav-link-color--active', '#1182C5');
+                    document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', '#1182C5');
+                    document.documentElement.style.setProperty('--link-color', '#1182C5');
+                    document.documentElement.style.setProperty('--pagination-title-color', '#1182C5');
+                  }
+                }
+              } else {
+                // light mode
+                linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
+                if (!(linkcolor === false)) {
+                  linkcolor = '#' + linkcolor;
+                  document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
+                  document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
+                  document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
+                  document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
+                  document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
+                  document.documentElement.style.setProperty('--link-color', linkcolor);
+                  document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
+                } else {
+                  document.documentElement.style.setProperty('--navbar-root-color--active', '#0374B5');
+                  document.documentElement.style.setProperty('--blockquote-border-color', '#757b7f');
+                  document.documentElement.style.setProperty('--sidebar-name-color', '#0374B5');
+                  document.documentElement.style.setProperty('--sidebar-nav-link-color--active', '#0374B5');
+                  document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', '#0374B5');
+                  document.documentElement.style.setProperty('--link-color', '#0374B5');
+                  document.documentElement.style.setProperty('--pagination-title-color', '#0374B5');
+                }
+              }
+            });
 
             next(htmlElement.innerHTML);
             } else {
@@ -868,12 +940,13 @@
     }
   </script>
 
-  <!-- Check for fontfamily, fontsize and linkcolor parameters  -->
+  <!-- Check for fontfamily, fontsize, linkcolor and darkmode parameters  -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
       // Change body font if fontFamily parameter present
       fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
       if (!(fontfamily === false)) {
+        // console.log(fontfamily);
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
       }
 
@@ -885,17 +958,63 @@
       }
 
       // Change link color if link-color parameter present
-      linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
-      if (!(linkcolor === false)) {
-        linkcolor = '#' + linkcolor
-        document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
-        document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
-        document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
-        document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
-        document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
-        document.documentElement.style.setProperty('--link-color', linkcolor);
-        document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // dark mode
+        linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
+        if (!(linkcolordarkmode === false)) {
+          linkcolordarkmode = '#' + linkcolordarkmode;
+          document.documentElement.style.setProperty('--navbar-root-color--active', linkcolordarkmode);
+          document.documentElement.style.setProperty('--blockquote-border-color', linkcolordarkmode);
+          document.documentElement.style.setProperty('--sidebar-name-color', linkcolordarkmode);
+          document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolordarkmode);
+          document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolordarkmode);
+          document.documentElement.style.setProperty('--link-color', linkcolordarkmode);
+          document.documentElement.style.setProperty('--pagination-title-color', linkcolordarkmode);
+        } else {
+          linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
+          if (!(linkcolor === false)) {
+            linkcolor = '#' + linkcolor;
+            document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
+            document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
+            document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
+            document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
+            document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
+            document.documentElement.style.setProperty('--link-color', linkcolor);
+            document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
+          } else {
+            document.documentElement.style.setProperty('--navbar-root-color--active', '#1182C5');
+            document.documentElement.style.setProperty('--blockquote-border-color', '#757b7f');
+            document.documentElement.style.setProperty('--sidebar-name-color', '#1182C5');
+            document.documentElement.style.setProperty('--sidebar-nav-link-color--active', '#1182C5');
+            document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', '#1182C5');
+            document.documentElement.style.setProperty('--link-color', '#1182C5');
+            document.documentElement.style.setProperty('--pagination-title-color', '#1182C5');
+          }
+        }
+      } else {
+          // light mode
+          linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
+          if (!(linkcolor === false)) {
+            linkcolor = '#' + linkcolor;
+            document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
+            document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
+            document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
+            document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
+            document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
+            document.documentElement.style.setProperty('--link-color', linkcolor);
+            document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
+          }
+        }
+
+      // Keep dark theme CSS files loaded if dark-mode parameter present
+      enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+      if (enabledarkmode === false && darkmode === false) {
+        var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
+        linkNode.parentNode.removeChild(linkNode);
+        var linkNode = document.querySelector('link[href*="dark.css"]');
+        linkNode.parentNode.removeChild(linkNode);
       }
+
     }
   </script>
 

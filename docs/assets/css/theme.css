@@ -353,6 +353,21 @@
   z-index: -1;
 }
 
+.markdown-section .image-75 {
+  width: 75%;
+  height: auto;
+}
+
+.markdown-section .image-50 {
+  width: 75%;
+  height: auto;
+}
+
+.markdown-section .image-25 {
+  width: 75%;
+  height: auto;
+}
+
 @media screen and (max-width: 980px) {
   .markdown-section .header-image-fade {
     top: -20px;
@@ -369,21 +384,6 @@
   position: relative;
   right: 50%;
   width: 100vw;
-}
-
-.markdown-section .image-75 {
-  width: 75%;
-  height: auto;
-}
-
-.markdown-section .image-50 {
-  width: 75%;
-  height: auto;
-}
-
-.markdown-section .image-25 {
-  width: 75%;
-  height: auto;
 }
 
 .markdown-section .column {
@@ -502,31 +502,6 @@ body .docsify-pagination-container {
    }
 
 }
-
-/* Dark mode colours for use with light + dark themes */
-/*
-@media (prefers-color-scheme: dark) {
-
-  :root {
-    --navbar-root-color--active: #1182C5!important;
-    --blockquote-border-color: #1182C5!important;
-    --sidebar-name-color: #1182C5!important;
-    --sidebar-nav-link-color--active: #1182C5!important;
-    --sidebar-nav-link-border-color--active: #1182C5!important;
-    --link-color: #1182C5!important;
-    --pagination-title-color: #1182C5!important;
-  }
-  
-  .markdown-section .button {
-    color: #222222;
-  }
-
-  .markdown-section a.button {
-    color: #222222;
-  }
-
-}
-*/
 
 /* DOCSIFY THIS */
 
@@ -729,18 +704,22 @@ span #docsifythisurlfield {
   }
 }
 
+html {
+  visibility: visible;
+  opacity: 1;
+}
+
 .sidebar-nav a, .sidebar nav a {
   overflow: visible;
-  white-space: normal;
+  white-space: break-spaces;
 }
 
 /* Dark mode colours for use with light + dark themes */
-/*
 
 @media (prefers-color-scheme: dark) {
 
   #docsifythisurlbuilder {
-      background: #074d94;
+      background: #224567;
   }
 
   #docsifythisurlfield{
@@ -768,5 +747,3 @@ span #docsifythisurlfield {
   }
 
 }
-
-*/
