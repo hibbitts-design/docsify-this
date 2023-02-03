@@ -2,6 +2,9 @@
 
 ## [1.4.1] - XX/XX/2023
 
+**New**
+* Support for light/dark theme switching via 'dark-mode' URL parameter and setting in index.html (when using your own instance of Docsify-This.net)
+
 **Improved:**   
 * Consolidate example custom CSS for LMSs
 * Improve support for dark mode on custom Docsify-This instances
