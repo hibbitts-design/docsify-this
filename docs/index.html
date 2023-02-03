@@ -618,7 +618,28 @@
                   });
               }
               window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+                // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
+                // console.log(e.matches);            
+                var scrollPos;
+                if (typeof window.pageYOffset != 'undefined') {
+                    scrollPos = window.pageYOffset;
+                }
+                else if (typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat') {
+                    scrollPos = document.documentElement.scrollTop;
+                }
+                else if (typeof document.body != 'undefined') {
+                    scrollPos = document.body.scrollTop;
+                }
+                document.cookie = "scrollTop=" + scrollPos + "URL=" + window.location.href;
                 location.reload();
+                if (document.cookie.includes(window.location.href)) {
+                    if (document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null) {
+                        var arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/);
+                        document.documentElement.scrollTop = parseInt(arr[1]);
+                        document.body.scrollTop = parseInt(arr[1]);
+                    }
+                    setCookie('scrollTop','',0) // this will delete the cookie.
+                }
               });
 
             }
