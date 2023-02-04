@@ -619,7 +619,9 @@
               window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
                 // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
                 // console.log(e.matches);            
-                document.location.reload();
+                if (enabledarkmode || darkmode) {
+                  document.location.reload();
+                }
               });
 
             }
