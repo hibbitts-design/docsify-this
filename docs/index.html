@@ -620,18 +620,7 @@
               window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
                 // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
                 // console.log(e.matches);            
-                var scrollPos;
-                if (typeof window.pageYOffset != 'undefined') {
-                    scrollPos = window.pageYOffset;
-                }
-                else if (typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat') {
-                    scrollPos = document.documentElement.scrollTop;
-                }
-                else if (typeof document.body != 'undefined') {
-                    scrollPos = document.body.scrollTop;
-                }
                 document.location.reload();
-                document.body.scrollTop = scrollPos;
               });
 
             }
