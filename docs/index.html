@@ -630,16 +630,8 @@
                 else if (typeof document.body != 'undefined') {
                     scrollPos = document.body.scrollTop;
                 }
-                document.cookie = "scrollTop=" + scrollPos + "URL=" + window.location.href;
-                location.reload();
-                if (document.cookie.includes(window.location.href)) {
-                    if (document.cookie.match(/scrollTop=([^;]+)(;|$)/) != null) {
-                        var arr = document.cookie.match(/scrollTop=([^;]+)(;|$)/);
-                        document.documentElement.scrollTop = parseInt(arr[1]);
-                        document.body.scrollTop = parseInt(arr[1]);
-                    }
-                    setCookie('scrollTop','',0) // this will delete the cookie.
-                }
+                document.location.reload();
+                document.body.scrollTop = scrollPos;
               });
 
             }
