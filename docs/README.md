@@ -85,7 +85,7 @@ Page layout:
           
   <div class='stackedlabeldropdown'>
       <label for="select3">Line height:</label>
-      <select class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight">
+      <select class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight" style="width: 60px;">
       <option value="1.4">1.4</option>
       <option disabled="disabled">----</option>
       <option value="1.2">1.2</option>
