@@ -563,8 +563,7 @@
               }
 
               if (getURLParameterByName('dark-mode')) {
-                enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
-                URLparms = URLparms + `&dark-mode=` + enabledarkmode;
+                 URLparms = URLparms + `&dark-mode=true`;
               }
 
               const links = Array.from(htmlElement.querySelectorAll('a'))
@@ -638,7 +637,7 @@
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
               const newColorScheme = event.matches ? "dark" : "light";
               enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
-              if (newColorScheme === "dark" && enabledarkmode) {
+              if (newColorScheme === "dark" && (enabledarkmode || darkmode)) {
                 // dark mode
                 linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
                 if (!(linkcolordarkmode === false)) {
@@ -980,7 +979,7 @@
       // Change link color if link-color parameter present
 
       enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
-      if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && enabledarkmode) {
+      if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && (enabledarkmode || darkmode)) {
         // dark mode
         linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
         if (!(linkcolordarkmode === false)) {
