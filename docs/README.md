@@ -53,27 +53,48 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label for="fontfamily">Set the page font family and size to:</label><br>
-<select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
-  <option value="default">Source Sans Pro</option>
-  <option disabled="disabled">----</option>
-  <option value="Arial,sans-serif">Arial, sans-serif</option>
-  <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
-  <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
-  <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
-  <option value="Verdana">Verdana, sans-serif</option>
-  <option value="Tahoma">Tahoma, sans-serif</option>
-  <option value="Times%20New%20Roman, serif">Times New Roman, serif</option>
-  <option value="Georgia,serif">Georgia, serif</option>
-  <option value="Courier,monospace">Courier, monospace</option>
-</select>
-<select class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
-  <option value="1.125">18px (1.125rem)</option>
-  <option disabled="disabled">----</option>
-  <option value=".875">14px (.875rem)</option>
-  <option value="1">16px (1rem)</option>
-  <option value="1.25">20px (1.25rem)</option>
-</select>
+<div class="docsifythisurlbuilderoptionsline">
+
+  <div class='stackedlabeldropdown'>
+      <label for="select1">Set the page font family:</label>
+      <select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
+        <option value="default">Source Sans Pro</option>
+        <option disabled="disabled">----</option>
+        <option value="Arial,sans-serif">Arial, sans-serif</option>
+        <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
+        <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
+        <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
+        <option value="Verdana">Verdana, sans-serif</option>
+        <option value="Tahoma">Tahoma, sans-serif</option>
+        <option value="Times%20New%20Roman, serif">Times New Roman, serif</option>
+        <option value="Georgia,serif">Georgia, serif</option>
+        <option value="Courier,monospace">Courier, monospace</option>
+      </select>
+  </div>
+
+  <div class='stackedlabeldropdown'>
+      <label for="select2">Font size:</label>
+      <select class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
+        <option value="1.125">18px (1.125rem)</option>
+        <option disabled="disabled">----</option>
+        <option value=".875">14px (.875rem)</option>
+        <option value="1">16px (1rem)</option>
+        <option value="1.25">20px (1.25rem)</option>
+      </select>
+  </div>
+          
+  <div class='stackedlabeldropdown'>
+      <label for="select3">Line height:</label>
+      <select class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight">
+      <option value="1.4">1.4</option>
+      <option disabled="disabled">----</option>
+      <option value="1.2">1.2</option>
+      <option value="1.3">1.3</option>
+      <option value="1.5">1.5</option>
+      <option value="1.6">1.6</option>
+    </select>
+  </div>
+
 </div>
 
 <div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview()"/><span id="linkcolorpreview""></span></div>
@@ -303,6 +324,10 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 **link-color**  
 Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color** parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
+
+**line-height**  
+Set a custom line height for your standalone pages with the optional **line-height** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&line-height=1.5. 
 
 **maxLevel**  
 Set the maximum header level of the Docsify sidebar with the optional **maxLevel** Docsify parameter, for example:  

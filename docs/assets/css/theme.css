@@ -589,6 +589,7 @@ span #docsifythisurlfield {
 }
 
 .docsifythisurlbuilderoptionsline {
+  clear: left;
   margin-top: 6px;
   vertical-align: middle;
 }
@@ -704,9 +705,13 @@ span #docsifythisurlfield {
   }
 }
 
-html {
-  visibility: visible;
-  opacity: 1;
+#docsifythisurlbuilder .stackedlabeldropdown {
+  float: left;   
+  margin: 0 10px 10px 0px;
+}
+
+#docsifythisurlbuilder .stackedlabeldropdown label {
+  display: block;   
 }
 
 .sidebar-nav a, .sidebar nav a {

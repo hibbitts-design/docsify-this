@@ -83,8 +83,6 @@
       --sidebar-nav-link-font-weight--active: bold;
 
       --link-color: #0374B5;
-      --link-text-decoration: underline;
-      --link-text-decoration--hover: underline;
 
       --pagination-title-color: #0374B5;
 
@@ -298,7 +296,12 @@
 
           var getFontSize = document.getElementById('fontsize').value;
           if (!(getFontSize == "1.125")) {
-            var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
+            var URLparms = URLparms + `&font-size=` + getFontSize;
+          }
+
+          var getLineHeight = document.getElementById('lineheight').value;
+          if (!(getLineHeight == "1.4")) {
+            var URLparms = URLparms + `&line-height=` + getLineHeight
           }
 
           var getColor = document.getElementById("linkcolor");
@@ -411,6 +414,7 @@
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '1.125';
+      document.getElementById("lineheight").value = '1.4';
       document.getElementById("linkcolor").value = '0374B5';
       document.getElementById("editLinkText").value = 'Edit this Page';
       document.getElementById("editLinkTopCheck").checked = false;
@@ -512,7 +516,12 @@
 
               if (getURLParameterByName('font-size')) {
                 fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
-                URLparms = URLparms + `&font-size=` + fontsize + `rem`;
+                URLparms = URLparms + `&font-size=` + fontsize;
+              }
+
+              if (getURLParameterByName('line-height')) {
+                lineheight = getURLParameterByName('line-height', null, null, window.location.href, true);
+                URLparms = URLparms + `&line-height=` + lineheight;
               }
 
               if (getURLParameterByName('link-color')) {
@@ -895,7 +904,7 @@
   <!-- Footnotes Plugin -->
   <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
-  
+
   <!-- Footer Plugin -->
   <!-- <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-footer.min.js"></script>
@@ -944,7 +953,7 @@
     }
   </script>
 
-  <!-- Check for fontfamily, fontsize, linkcolor and darkmode parameters  -->
+  <!-- Check for fontfamily, fontsize, lineheight, linkcolor and darkmode parameters  -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
       // Change body font if fontFamily parameter present
@@ -957,8 +966,14 @@
       // Change body font size if fontSize parameter present
       fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
       if (!(fontsize === false)) {
-        fontsize = fontsize + "rem"
+        fontsize = fontsize + 'rem';
         document.documentElement.style.setProperty('--base-font-size', fontsize);
+      }
+
+      // Change line height if lineheight parameter present
+      lineheight = getURLParameterByName('line-height', null, null, window.location.href, true);
+      if (!(lineheight === false)) {
+        document.documentElement.style.setProperty('--base-line-height', lineheight);
       }
 
       // Change link color if link-color parameter present
@@ -996,19 +1011,19 @@
           }
         }
       } else {
-          // light mode
-          linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
-          if (!(linkcolor === false)) {
-            linkcolor = '#' + linkcolor;
-            document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
-            document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
-            document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
-            document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
-            document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
-            document.documentElement.style.setProperty('--link-color', linkcolor);
-            document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
-          }
+        // light mode
+        linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
+        if (!(linkcolor === false)) {
+          linkcolor = '#' + linkcolor;
+          document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
+          document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
+          document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
+          document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
+          document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
+          document.documentElement.style.setProperty('--link-color', linkcolor);
+          document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
         }
+      }
 
       // Keep dark theme CSS files loaded if dark-mode parameter present
       enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
