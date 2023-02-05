@@ -4,6 +4,7 @@
 
 **New**
 * Support for light/dark theme switching via 'dark-mode' URL parameter and setting in index.html (when using your own instance of Docsify-This.net)
+* Support of optional lineheight parameter (`line-height`)
 
 **Improved:**   
 * Consolidate example custom CSS for LMSs
