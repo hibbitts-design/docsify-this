@@ -637,7 +637,8 @@
 
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
               const newColorScheme = event.matches ? "dark" : "light";
-              if (newColorScheme === "dark") {
+              enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+              if (newColorScheme === "dark" && enabledarkmode) {
                 // dark mode
                 linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
                 if (!(linkcolordarkmode === false)) {
@@ -661,13 +662,13 @@
                     document.documentElement.style.setProperty('--link-color', linkcolor);
                     document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
                   } else {
-                    document.documentElement.style.setProperty('--navbar-root-color--active', '#1182C5');
+                    document.documentElement.style.setProperty('--navbar-root-color--active', '#1BA1EE');
                     document.documentElement.style.setProperty('--blockquote-border-color', '#757b7f');
-                    document.documentElement.style.setProperty('--sidebar-name-color', '#1182C5');
-                    document.documentElement.style.setProperty('--sidebar-nav-link-color--active', '#1182C5');
-                    document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', '#1182C5');
-                    document.documentElement.style.setProperty('--link-color', '#1182C5');
-                    document.documentElement.style.setProperty('--pagination-title-color', '#1182C5');
+                    document.documentElement.style.setProperty('--sidebar-name-color', '#1BA1EE');
+                    document.documentElement.style.setProperty('--sidebar-nav-link-color--active', '#1BA1EE');
+                    document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', '#1BA1EE');
+                    document.documentElement.style.setProperty('--link-color', '#1BA1EE');
+                    document.documentElement.style.setProperty('--pagination-title-color', '#1BA1EE');
                   }
                 }
               } else {
@@ -977,7 +978,9 @@
       }
 
       // Change link color if link-color parameter present
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+
+      enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+      if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && enabledarkmode) {
         // dark mode
         linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
         if (!(linkcolordarkmode === false)) {
@@ -1001,13 +1004,13 @@
             document.documentElement.style.setProperty('--link-color', linkcolor);
             document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
           } else {
-            document.documentElement.style.setProperty('--navbar-root-color--active', '#1182C5');
+            document.documentElement.style.setProperty('--navbar-root-color--active', '#1BA1EE');
             document.documentElement.style.setProperty('--blockquote-border-color', '#757b7f');
-            document.documentElement.style.setProperty('--sidebar-name-color', '#1182C5');
-            document.documentElement.style.setProperty('--sidebar-nav-link-color--active', '#1182C5');
-            document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', '#1182C5');
-            document.documentElement.style.setProperty('--link-color', '#1182C5');
-            document.documentElement.style.setProperty('--pagination-title-color', '#1182C5');
+            document.documentElement.style.setProperty('--sidebar-name-color', '#1BA1EE');
+            document.documentElement.style.setProperty('--sidebar-nav-link-color--active', '#1BA1EE');
+            document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', '#1BA1EE');
+            document.documentElement.style.setProperty('--link-color', '#1BA1EE');
+            document.documentElement.style.setProperty('--pagination-title-color', '#1BA1EE');
           }
         }
       } else {
