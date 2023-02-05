@@ -7,8 +7,7 @@
 * Support of optional lineheight parameter (`line-height`)
 
 **Improved:**   
-* Consolidate example custom CSS for LMSs
-* Improve support for dark mode on custom Docsify-This instances
+* Consolidate and simplify example custom CSS for LMSs
 
 ## [1.4.0] - 02/01/2023
 
