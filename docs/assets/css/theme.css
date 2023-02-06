@@ -187,7 +187,7 @@
 
 .markdown-section .button {
   cursor: pointer;
-  color: white;
+  color: var(--base-background-color);
   height: auto;
   display: inline-block;
   margin-top: 4px;
@@ -200,7 +200,7 @@
 
 .markdown-section a.button {
   cursor: pointer;
-  color: white;
+  color: var(--base-background-color);
   text-decoration: none !important;
 }
 
