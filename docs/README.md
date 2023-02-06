@@ -217,7 +217,7 @@ One Page Article [home.md](https://github.com/paulhibbitts/docsify-this-one-page
 * [Standalone Page with Docsify Sidebar with maxLevel of 3 (H3) and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
 </div>
-</div>
+
 </div>
 
 <div class="row">
@@ -242,7 +242,7 @@ Example pages, including the use of the `font-family`, `font-size` and `hide-cre
 * [Embeddable Contact Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-lms-content-pages/main&homepage=contact.md&font-family=Lato%20Extended,%20Lato,Helvetica%20Neue,%20Helvetica,%20Arial,%20sans-serif&amp;font-size=1&amp;link-color=0374B5&amp;hide-credits=true "Embeddable Contact Page")
 
 </div>
-</div>
+
 </div>
 
 <div class="row">
@@ -264,7 +264,7 @@ Multiple Page Site [home.md](https://github.com/paulhibbitts/docsify-this-multip
 * [Standalone Pages with Docsify Navbar and 'GitHub Repository' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/paulhibbitts/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar and an 'GitHub Repository' link")  
 
 </div>
-</div>
+
 </div>
 
 ---
