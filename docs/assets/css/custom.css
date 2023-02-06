@@ -19,6 +19,7 @@ body .markdown-section {
 /*
 :root {
     --sidebar-name-color: #A6192E!important;
+    --blockquote-border-color: #A6192E!important;
     --sidebar-nav-link-color--active: #A6192E!important;
     --sidebar-nav-link-border-color--active: #A6192E!important;
     --sidebar-name-margin: 1.5rem -.2rem!important;
