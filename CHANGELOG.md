@@ -5,7 +5,7 @@
 **New**
 * Support for light/dark theme switching via 'dark-mode' URL parameter and setting in index.html (when using your own instance of Docsify-This.net)
 * Support of optional lineheight parameter (`line-height`)
-* Support for Wikilinks (as used by Obsidian)
+* Support for Wikilinks, as used by Obsidian (with thanks and appreciation to @zpengg for developing the plugin)
 
 **Improved:**   
 * Consolidate and simplify example custom CSS for LMSs
