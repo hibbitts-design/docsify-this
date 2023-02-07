@@ -576,6 +576,7 @@
                   lastSegment = link.getAttribute('href');
                   lastSegment = lastSegment.replace('#/', '');
                   lastSegment = lastSegment.replace('./', '');
+                  lastSegment = lastSegment.replace('.md', '');
                   // Check to make sure link is not Docsify id anchor link
                   var editThisPageLinkURLparm = '';
                   if (lastSegment.startsWith("?id") === false) {
