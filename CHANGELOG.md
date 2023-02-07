@@ -8,6 +8,7 @@
 
 **Improved:**   
 * Consolidate and simplify example custom CSS for LMSs
+* Updated ReadMe
 
 ## [1.4.0] - 02/01/2023
 
