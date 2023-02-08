@@ -32,7 +32,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 ### What Problem Does Docsify-This Solve?
 
-Docsify-This provides an easy on-ramp to publishing [Markdown](https://www.markdownguide.org/basic-syntax/) content, with no website setup or build process required. Collaborative authoring using GitHub is also supported.
+Docsify-This provides an easy on-ramp to publishing and sharing [Markdown](https://www.markdownguide.org/basic-syntax/) content, with no website setup or build process required. Collaborative authoring using GitHub is also supported.  
 
 With Docsify-This you can:
 
