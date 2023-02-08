@@ -15,6 +15,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 * [How it Works](#how-it-works)
 * [Example Usage Scenarios](#example-usage-scenarios)
+* [Example Workflow using GitHub Markdown Files](#example-usage-scenarios)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](#more-docsify-this-markdown-examples)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
@@ -52,6 +53,23 @@ Looking for more of an overall introduction to Docsify-This? Check out [Markdown
 * Share GitHub hosted Markdown files as Web pages, with an optional 'Edit this Page' link
 * Reuse Markdown software documentation in other contexts
 * Seamlessly embed constraint-free Markdown/HTML content into an LMS
+
+---
+
+### Example Content Workflows
+
+<div class="row">
+<div class="column">
+
+![Docsify-This.net open and collaborative workflow using GitHub Markdown files]((docs/images/images/docsify-this-gitHub.png ':class=image-border-rounded')  
+Docsify-This.net open and collaborative workflow using GitHub Markdown files
+</div>
+<div class="column">
+
+![Docsify-This.net workflow using Webserver Markdown files]((docs/images/docsify-this-webserver.png ':class=image-border-rounded')
+Docsify-This.net workflow using Webserver Markdown files
+</div>
+</div>
 
 ---
 

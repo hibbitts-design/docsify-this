@@ -134,6 +134,7 @@ Page layout:
 
 * [How it Works](/?id=how-it-works)
 * [Example Usage Scenarios](/?id=example-usage-scenarios)
+* [Example Content Workflows](/?id=example-possible-workflows)
 * [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](/?id=more-docsify-this-markdown-examples)
 * [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
@@ -171,6 +172,23 @@ Looking for more of an overall introduction to Docsify-This? Check out [Markdown
 * Share GitHub hosted Markdown files as Web pages, with an optional 'Edit this Page' link
 * Reuse Markdown software documentation in other contexts
 * Seamlessly embed constraint-free Markdown/HTML content into an LMS
+
+---
+
+### Example Content Workflows
+
+<div class="row">
+<div class="column">
+
+![Docsify-This.net open and collaborative workflow using GitHub Markdown files](images/docsify-this-gitHub.png ':class=image-border-rounded')  
+Docsify-This.net open and collaborative workflow using GitHub Markdown files
+</div>
+<div class="column">
+
+![Docsify-This.net workflow using Webserver Markdown files](images/docsify-this-webserver.png ':class=image-border-rounded')
+Docsify-This.net workflow using Webserver Markdown files
+</div>
+</div>
 
 ---
 

@@ -368,6 +368,15 @@
   height: auto;
 }
 
+.markdown-section .image-border {
+  border: 1px solid #dfdfdf;
+}
+
+.markdown-section .image-border-rounded {
+  border-radius: 0.35em;
+  border: 1px solid #dfdfdf;
+}
+
 @media screen and (max-width: 980px) {
   .markdown-section .header-image-fade {
     top: -20px;
