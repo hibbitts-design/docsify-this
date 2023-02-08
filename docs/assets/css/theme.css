@@ -368,6 +368,24 @@
   height: auto;
 }
 
+.markdown-section .image-75-border {
+  width: 75%;
+  height: auto;
+  border: 1px solid #dfdfdf;
+}
+
+.markdown-section .image-50-border {
+  width: 75%;
+  height: auto;
+  border: 1px solid #dfdfdf;
+}
+
+.markdown-section .image-25-border {
+  width: 75%;
+  height: auto;
+  border: 1px solid #dfdfdf;
+}
+
 .markdown-section .image-border {
   border: 1px solid #dfdfdf;
 }
@@ -423,6 +441,21 @@
   }
   
   .markdown-section .image-25 {
+    width: 100%;
+    height: auto;
+  }
+
+  .markdown-section .image-75-border {
+    width: 100%;
+    height: auto;
+  }
+  
+  .markdown-section .image-50-border {
+    width: 100%;
+    height: auto;
+  }
+  
+  .markdown-section .image-25-border {
     width: 100%;
     height: auto;
   }
