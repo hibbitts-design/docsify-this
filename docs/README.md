@@ -132,7 +132,7 @@ Page layout:
 
 ## All About Docsify-This
 
-* [What Problem does Docsify-This Solve?](/?id=what-problem-does-docsify-this-solve)
+* [What Problem Does Docsify-This Solve?](/?id=what-problem-does-docsify-this-solve)
 * [How Docsify-This Works](/?id=how-docsify-this-works)
 * [Example Content Workflows](/?id=example-possible-workflows)
 * [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
@@ -149,9 +149,9 @@ Page layout:
 
 ---
 
-### What Problem does Docsify-This Solve?
+### What Problem Does Docsify-This Solve?
 
-Docsify-This provides an easy on-ramp to pubishing [Markdown](https://www.markdownguide.org/basic-syntax/) content, with no website setup or build process required. Collaborative authoring using GitHub is also supported.
+Docsify-This provides an easy on-ramp to publishing [Markdown](https://www.markdownguide.org/basic-syntax/) content, with no website setup or build process required. Collaborative authoring using GitHub is also supported.
 
 With Docsify-This you can:
 
