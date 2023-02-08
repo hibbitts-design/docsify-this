@@ -36,9 +36,9 @@ Docsify-This provides an easy on-ramp to publishing [Markdown](https://www.markd
 
 With Docsify-This you can:
 
-* Turn your Markdown files into standalone web pages, with no website setup or build process required
+* Display your Markdown files as standalone web pages, with no website setup or build process required
 * Share existing GitHub-hosted Markdown files as standalone web pages, with an optional 'Edit this Page' link
-* Seamlessly embed constraint-free Markdown/HTML that you have created into other platforms (e.g. LMS or CMS)
+* Seamlessly embed constraint-free Markdown/HTML, which you have authored, into other platforms (e.g. LMS or CMS)
 * Reuse existing Markdown content by seamlessly embedding it within other platforms (e.g. LMS or CMS)
 
 ---
