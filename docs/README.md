@@ -155,10 +155,10 @@ Docsify-This provides an easy on-ramp to publishing [Markdown](https://www.markd
 
 With Docsify-This you can:
 
-* Quickly publish and share online Markdown files (incl. Open Educational Resources) as web pages
-* Share GitHub hosted Markdown files as web pages, with an optional 'Edit this Page' link automatically provided
-* Reuse Markdown software documentation in other contexts and platforms
-* Seamlessly embed constraint-free Markdown/HTML content into an LMS
+* Turn your Markdown files into standalone web pages, with no website setup or build process required
+* Share existing GitHub-hosted Markdown files as standalone web pages, with an optional 'Edit this Page' link
+* Reuse existing Markdown content by seamlessly embedding it within other platforms (e.g. LMS or CMS)
+* Seamlessly embed constraint-free Markdown/HTML that you have created into other platforms (e.g. LMS or CMS)
 
 ---
 
