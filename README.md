@@ -13,7 +13,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 ## All About Docsify-This
 
-* [What Problem does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
+* [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
 * [How Docsify-This Works](#how-docsify-this-works)
 * [Example Workflow using GitHub Markdown Files](#example-usage-scenarios)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
@@ -30,9 +30,9 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 ---
 
-### What Problem does Docsify-This Solve?
+### What Problem Does Docsify-This Solve?
 
-Docsify-This provides an easy on-ramp to pubishing [Markdown](https://www.markdownguide.org/basic-syntax/) content, with no website setup or build process required. Collaborative authoring using GitHub is also supported.
+Docsify-This provides an easy on-ramp to publishing [Markdown](https://www.markdownguide.org/basic-syntax/) content, with no website setup or build process required. Collaborative authoring using GitHub is also supported.
 
 With Docsify-This you can:
 
