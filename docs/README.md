@@ -132,8 +132,8 @@ Page layout:
 
 ## All About Docsify-This
 
-* [How it Works](/?id=how-it-works)
-* [Example Usage Scenarios](/?id=example-usage-scenarios)
+* [What Problem does Docsify-This Solve?](/?id=what-problem-does-docsify-this-solve)
+* [How Docsify-This Works](/?id=how-docsify-this-works)
 * [Example Content Workflows](/?id=example-possible-workflows)
 * [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](/?id=more-docsify-this-markdown-examples)
@@ -146,6 +146,19 @@ Page layout:
 * [Troubleshooting](/?id=troubleshooting)
 * [Privacy Policy Summary](/?id=privacy-policy-summary)
 * [Support this Project](/?id=support-this-project)
+
+---
+
+### What Problem does Docsify-This Solve?
+
+Docsify-This provides an easy on-ramp to pubishing [Markdown](https://www.markdownguide.org/basic-syntax/) content, with no website setup or build process required. Collaborative authoring using GitHub is also supported.
+
+With Docsify-This you can:
+
+* Quickly publish and share online Markdown files (incl. Open Educational Resources) as web pages
+* Share GitHub hosted Markdown files as web pages, with an optional 'Edit this Page' link automatically provided
+* Reuse Markdown software documentation in other contexts and platforms
+* Seamlessly embed constraint-free Markdown/HTML content into an LMS
 
 ---
 
@@ -163,15 +176,6 @@ To render a file stored in a public GitHub repository you need to use the raw so
 The appearance of rendered Markdown files can be customized by optional [URL parameters](/?id=page-appearance-url-parameters) and a small set of available [CSS Classes](/?id=supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
 
 Looking for more of an overall introduction to Docsify-This? Check out [Markdown Publishing with Docsify-This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/markdown-publishing-with-docsify-this/main&sidebar=true&edit-link=https://github.com/hibbitts-design/markdown-publishing-with-docsify-this/blob/main/README.md&maxLevel=4#/).
-
----
-
-### Example Usage Scenarios
-
-* Quickly turn publicly available Markdown files (incl. Open Educational Resources) into Web pages
-* Share GitHub hosted Markdown files as Web pages, with an optional 'Edit this Page' link
-* Reuse Markdown software documentation in other contexts
-* Seamlessly embed constraint-free Markdown/HTML content into an LMS
 
 ---
 
