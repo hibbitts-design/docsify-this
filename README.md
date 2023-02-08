@@ -41,7 +41,7 @@ With Docsify-This you can:
 * Share existing GitHub-hosted Markdown files as standalone web pages, with an optional 'Edit this Page' link
 * Seamlessly embed constraint-free Markdown/HTML, which you have authored, into other platforms (e.g. LMS or CMS)
 * Reuse existing Markdown content by seamlessly embedding it within other platforms (e.g. LMS or CMS)
-* Use the supported URL parameters when embedding content to better visually match each destination platform
+* Use the supported URL parameters when embedding content to match each destination platform better visually
 
 ---
 
