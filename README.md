@@ -62,12 +62,12 @@ Looking for more of an overall introduction to Docsify-This? Check out [Markdown
 <div class="column">
 
 ![Docsify-This.net open and collaborative workflow using GitHub Markdown files](docs/images/docsify-this-gitHub.png ':class=image-border-rounded')  
-Docsify-This.net open and collaborative workflow using GitHub Markdown files
+_Docsify-This.net open and collaborative workflow using GitHub Markdown files._
 </div>
 <div class="column">
 
 ![Docsify-This.net workflow using Webserver Markdown files](docs/images/docsify-this-webserver.png ':class=image-border-rounded')
-Docsify-This.net workflow using Webserver Markdown files
+_Docsify-This.net workflow using Webserver Markdown files._
 </div>
 </div>
 
