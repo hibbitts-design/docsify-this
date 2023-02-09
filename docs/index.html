@@ -220,6 +220,9 @@
 
           var getEditThisPage = document.getElementById("editLinkText");
           var editlinktext = getEditThisPage.value;
+          if (editlinktext === '') {
+            document.getElementById("editLinkText").value = 'Edit this Page';
+          }
           if (!(editlinktext == "Edit this Page")) {
             editlinktext = editlinktext.replace(/ /g, '%20');
             URLparms = URLparms + `&edit-link-text=` + editlinktext;
@@ -280,6 +283,9 @@
 
           var getMaxLevel = document.getElementById("maxLevel");
           var maxLevel = getMaxLevel.value;
+          if (maxLevel === '') {
+            document.getElementById("maxLevel").value = 2;
+          }
           if (!(maxLevel == 2)) {
             URLparms = URLparms + `&maxLevel=` + maxLevel;
           }
