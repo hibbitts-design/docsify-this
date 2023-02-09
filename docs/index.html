@@ -774,40 +774,41 @@
 
           // Invoked on each page load after new HTML has been appended to the DOM
           hook.doneEach(function () {
-            var hasEmbedly = document.getElementsByClassName('embedly-card');
-            if (hasEmbedly.length > 0) {
-                // elements with class "embedly-card" exist
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.src = 'https://cdn.embedly.com/widgets/platform.js';    
-                document.head.appendChild(script);
-            }
+            if (window.$docsify['basePath']) {
+              var hasEmbedly = document.getElementsByClassName('embedly-card');
+              if (hasEmbedly.length > 0) {
+                  // elements with class "embedly-card" exist
+                  var script = document.createElement('script');
+                  script.type = 'text/javascript';
+                  script.src = 'https://cdn.embedly.com/widgets/platform.js';    
+                  document.head.appendChild(script);
+              }
 
-            // Remove optional ToC area if full width header image is present
-            var hasImageHeader = document.getElementsByClassName('header-image-full-width');
-            if (hasImageHeader.length > 0) {
-              const elements = document.getElementsByClassName("nav");
-              while (elements.length > 0) elements[0].remove();
-            }
+              // Remove optional ToC area if full width header image is present
+              var hasImageHeader = document.getElementsByClassName('header-image-full-width');
+              if (hasImageHeader.length > 0) {
+                const elements = document.getElementsByClassName("nav");
+                while (elements.length > 0) elements[0].remove();
+              }
 
-            // Adjust left margin for optional ToC area if faded header image is present
-            var hasImageFade = document.getElementsByClassName('header-image-fade');
-            var hasNav = document.getElementsByClassName('nav');
-            if (hasImageFade.length > 0 && hasNav.length > 0) {
-              var editCSS = document.createElement('style')
-              editCSS.innerHTML = ".markdown-section {margin-right: 0px;}";
-              document.body.appendChild(editCSS);
-            }
+              // Adjust left margin for optional ToC area if faded header image is present
+              var hasImageFade = document.getElementsByClassName('header-image-fade');
+              var hasNav = document.getElementsByClassName('nav');
+              if (hasImageFade.length > 0 && hasNav.length > 0) {
+                var editCSS = document.createElement('style')
+                editCSS.innerHTML = ".markdown-section {margin-right: 0px;}";
+                document.body.appendChild(editCSS);
+              }
 
-            // Change page title if title parameter present
-            pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
-            if (!(pageTitle === false)) {
-              // console.log(pageTitle);
-              document.title = pageTitle;
-            } else {
-              document.title = 'Published by Docsify-This';
+              // Change page title if title parameter present
+              pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
+              if (!(pageTitle === false)) {
+                // console.log(pageTitle);
+                document.title = pageTitle;
+              } else {
+                document.title = 'Published by Docsify-This';
+              }
             }
-
           });
 
           hook.ready(function () {
