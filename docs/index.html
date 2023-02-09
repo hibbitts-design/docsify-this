@@ -509,6 +509,11 @@
                 URLparms = URLparms + `&toc-headings=` + ToCHeadings;
               }
 
+              if (getURLParameterByName('title')) {
+                pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
+                URLparms = URLparms + `&title=` + pageTitle;
+              }
+              
               if (getURLParameterByName('font-family')) {
                 fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
                 URLparms = URLparms + `&font-family=` + fontfamily;
@@ -954,7 +959,7 @@
     }
   </script>
 
-  <!-- Check for fontfamily, fontsize, lineheight, linkcolor and darkmode parameters  -->
+  <!-- Check for fontfamily, fontsize, lineheight, linkcolor, darkmode and title parameters  -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
       // Change body font if fontFamily parameter present
@@ -977,8 +982,7 @@
         document.documentElement.style.setProperty('--base-line-height', lineheight);
       }
 
-      // Change link color if link-color parameter present
-
+      // Update link colors based on current theme mode
       enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
       if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && (enabledarkmode || darkmode)) {
         // dark mode
@@ -1033,6 +1037,15 @@
       if (enabledarkmode === false && darkmode === false) {
         var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
         linkNode.parentNode.removeChild(linkNode);
+      }
+
+      // Change page title if title parameter present
+      pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
+      if (!(pageTitle === false)) {
+        // console.log(pageTitle);
+        document.title = pageTitle;
+      } else {
+        document.title = 'Published by Docsify-This';
       }
 
     }
