@@ -972,6 +972,16 @@
   <!-- Check for fontfamily, fontsize, lineheight, linkcolor, darkmode and title parameters  -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
+
+      // Change page title if title parameter present (duplicate to eliminate title flash)
+      pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
+      if (!(pageTitle === false)) {
+        // console.log(pageTitle);
+        document.title = pageTitle;
+      } else {
+        document.title = 'Published by Docsify-This';
+      }
+
       // Change body font if fontFamily parameter present
       fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
       if (!(fontfamily === false)) {
