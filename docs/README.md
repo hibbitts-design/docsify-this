@@ -55,10 +55,10 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">
 
-  <div class="docsifythisurlbuilderoptionsline"><label>Page title on Browser tab:</label><br><input type="text" value="Published by Docsify-This" id="pageTitle" name="pageTitle" size="100px"></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Page title on Browser tab:</label><br><input type="text" value="Published by Docsify-This" id="pageTitle" name="pageTitle" size="100px"></div>
 
   <div class='stackedlabeldropdown'>
-      <label for="select1">Set the page font family:</label>
+      <label for="select1">Page font family:</label>
       <select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
         <option value="default">Source Sans Pro</option>
         <option disabled="disabled">----</option>
@@ -99,9 +99,9 @@ Page layout:
 
 </div>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview()"/><span id="linkcolorpreview""></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Page link color:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview()"/><span id="linkcolorpreview""></span></div>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Set the text of the 'Edit this Page' link to:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Text of 'Edit this Page' link:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
@@ -118,7 +118,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Set the maximum Header level (1-6) of Docsify sidebar:</label><br><input type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Maximum Header level (1-6) of Docsify sidebar:</label><br><input type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"></div>
 
 <hr>
 
