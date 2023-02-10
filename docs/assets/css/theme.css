@@ -668,6 +668,7 @@ span #docsifythisurlfield {
   border: 1px solid #757575;
   height: 2rem;
   line-height: 2rem;
+  -webkit-appearance: menulist-button;
   -moz-appearance:none;
 }
 
