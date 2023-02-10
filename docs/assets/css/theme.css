@@ -576,6 +576,11 @@ span #docsifythisurlfield {
   overflow: hidden;
 }
 
+#pageTitle {
+  width: 50%;
+  min-width: 300px;
+}
+
 .docsifythisurlbuilderprimarybutton {
   cursor: pointer;
   color: white;
@@ -752,6 +757,11 @@ span #docsifythisurlfield {
       color: white;
   }
 
+  #pageTitle {
+    background-color: #273338;
+    color: white;
+  }
+
   .docsifythisurlbuilderprimarybutton {
       color: black;
       background-color: #4bc3f4;
@@ -769,6 +779,16 @@ span #docsifythisurlfield {
 
   #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
       color: #4bc3f4;
+  }
+
+  #linkcolor {
+    background-color: #273338;
+    color: white;
+  }
+
+  #editLinkText {
+    background-color: #273338;
+    color: white;
   }
 
 }

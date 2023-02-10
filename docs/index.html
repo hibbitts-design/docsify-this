@@ -207,6 +207,16 @@
             var URLparms = `&toc=true`;
           }
 
+          var getPageTitle = document.getElementById("pageTitle");
+          var pageTitle = getPageTitle.value;
+          if (pageTitle === '') {
+            document.getElementById("pageTitle").value = 'Published by Docsify-This';
+          }
+          if (!(pageTitle == "Published by Docsify-This")) {
+            pageTitle = encodeURI(pageTitle);
+            URLparms = URLparms + `&title=` + pageTitle;
+          }
+
           const cb1 = document.querySelector('#editCheck');
           if (cb1.checked) {
             if (gitlinkPageURL) {
@@ -417,6 +427,7 @@
       document.getElementById("stylecontentonly").checked = true;
       document.getElementById("styletoc").checked = false;
       document.getElementById("stylesidebar").checked = false;
+      document.getElementById("pageTitle").value = 'Published by Docsify-This';
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '1.125';
@@ -704,6 +715,7 @@
                   document.documentElement.style.setProperty('--pagination-title-color', '#0374B5');
                 }
               }
+
             });
 
             next(htmlElement.innerHTML);
@@ -978,15 +990,6 @@
   <!-- Check for fontfamily, fontsize, lineheight, linkcolor, darkmode and title parameters  -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
-
-      // Change page title if title parameter present (duplicate to eliminate title flash)
-      pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
-      if (!(pageTitle === false)) {
-        // console.log(pageTitle);
-        document.title = pageTitle;
-      } else {
-        document.title = 'Published by Docsify-This';
-      }
 
       // Change body font if fontFamily parameter present
       fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
