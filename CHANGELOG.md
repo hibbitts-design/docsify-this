@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.4.1] - XX/XX/2023
+## [1.4.5] - XX/XX/2023
 
 **New**
 * Support for light/dark theme switching via 'dark-mode' URL parameter and setting in index.html (when using your own instance of Docsify-This.net)
@@ -11,6 +11,7 @@
 **Improved:**   
 * Consolidate and simplify example custom CSS for LMSs
 * Updated ReadMe
+* Additional checks for default blank values in Web Page Builder
 
 ## [1.4.0] - 02/01/2023
 
