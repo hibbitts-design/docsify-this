@@ -45,7 +45,7 @@ With Docsify-This you can:
 
 ---
 
-### How it Works
+### How Docsify-This Works
 
 Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the following format:
 
