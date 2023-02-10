@@ -4,6 +4,8 @@
 
 **New**
 * Support for light/dark theme switching via 'dark-mode' URL parameter and setting in index.html (when using your own instance of Docsify-This.net)
+* Support for images with border and rounded border (`image-border`,`image-border-rounded`)
+* Support for 75%, 50% and 25% scaled images with border (`image-75-border`,`image-50-border` and `image-25-border`)
 * Support of optional lineheight parameter (`line-height`)
 * Support for Wikilinks, as used by Obsidian (with thanks and appreciation to @zpengg for developing the plugin)
 * Support of optional page title parameter (`title`)
