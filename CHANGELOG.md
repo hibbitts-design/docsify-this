@@ -13,6 +13,7 @@
 * Consolidate and simplify example custom CSS for LMSs
 * Updated ReadMe
 * Additional checks for default blank values in Web Page Builder
+* Match Docsify-This CSS with Docsify Starter Kits CSS
 
 **Bugfix:**  
 * Restore dropdown styling on Firefox
