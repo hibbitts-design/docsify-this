@@ -220,9 +220,9 @@ While all you need to get going with Docsify-This is a basic Markdown file, here
 #### [Docsify-This One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course)
 
 One Page Course [home.md](https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md) file displayed by Docsify-This as a:   
-* [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
-* [Standalone Page with Table of Contents and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
-* [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
+* [Standalone Page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
+* [Standalone Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
+* [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
 </div>
 
@@ -241,9 +241,9 @@ One Page Course [home.md](https://github.com/paulhibbitts/docsify-this-one-page-
 #### [Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article)
 
 One Page Article [home.md](https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md) file displayed by Docsify-This as a:  
-* [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
-* [Standalone Page with Table of Contents including h2 and h3 Headers and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
-* [Standalone Page with Docsify Sidebar with maxLevel of 3 (H3) and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
+* [Standalone Page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
+* [Standalone Page with Table of Contents including h2 and h3 Headers and an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
+* [Standalone Page with Docsify Sidebar with maxLevel of 3 (H3) and an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
 </div>
 
@@ -287,10 +287,10 @@ Example pages, including the use of the `font-family`, `font-size` and `hide-cre
 #### [Docsify-This Multiple Page Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-site)
 
 Multiple Page Site [home.md](https://github.com/paulhibbitts/docsify-this-multiple-page-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:  
-* [Standalone Pages](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Standalone Pages")  
-* [Standalone Pages and 'Edit this Page' links](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/paulhibbitts/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Standalone Pages")  
-* [Standalone Pages with Docsify Navbar](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar and an 'Edit this Page' link")  
-* [Standalone Pages with Docsify Navbar and 'GitHub Repository' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/paulhibbitts/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar and an 'GitHub Repository' link")  
+* [Standalone Pages](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Standalone Pages")  
+* [Standalone Pages and 'Edit this Page' links](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/paulhibbitts/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Standalone Pages")  
+* [Standalone Pages with Docsify Navbar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar and an 'Edit this Page' link")  
+* [Standalone Pages with Docsify Navbar and 'GitHub Repository' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/paulhibbitts/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar and an 'GitHub Repository' link")  
 
 </div>
 
@@ -368,7 +368,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 **title**  
 Set a custom page title for your standalone pages with the optional **title** parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 **toc**  
 Display a page table of contents with the optional **toc** parameter, for example:  
@@ -551,7 +551,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 **Matching Fonts with Your Destination Platform Content**  
 Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-familiy` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1  
 
 **Providing a Page Table of Contents within a Smaller Destination Platform Screen Area**  
 If you want to include a Page Table of Contents with embedded Docsify-This content, but the destination platform screen area is not very wide, you might want to try the optional `toc-narrow` display option. For example, to use a narrower Table of Contents area that includes a smaller screen breakpoint:
