@@ -7,6 +7,7 @@
 * Support of optional lineheight parameter (`line-height`)
 * Support for Wikilinks, as used by Obsidian (with thanks and appreciation to @zpengg for developing the plugin)
 * Support of optional page title parameter (`title`)
+* Add Open Sans font choice (default Sakai LMS font)
 
 **Improved:**   
 * Consolidate and simplify example custom CSS for LMSs
