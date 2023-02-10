@@ -323,22 +323,28 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 ![Photo of Mountain](images/mountain.jpg ':class=header-image')
 ```
 
-`image-75` (scale image to 75%)
+`image-75`, `image-50` and `image-25` (scale images to %)
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=image-75')
 ```
 
-`image-50` (scale image to 50%)
+`image-75-border`, `image-50-border` and `image-25-border` (scale images with border to %)
 
 ```markdown
-![Photo of Mountain](images/mountain.jpg ':class=image-50')
+![Photo of Mountain](images/mountain.jpg ':class=image-75-border')
 ```
 
-`image-25` (scale image to 25%)
+`image-border`
 
 ```markdown
-![Photo of Mountain](images/mountain.jpg ':class=image-25')
+![Photo of Mountain](images/mountain.jpg ':class=image-border')
+```
+
+`image-border-rounded`
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ':class=image-border-rounded')
 ```
 
 `row` & `column`  
