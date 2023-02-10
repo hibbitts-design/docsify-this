@@ -13,6 +13,9 @@
 * Updated ReadMe
 * Additional checks for default blank values in Web Page Builder
 
+**Bugfix:**  
+* Restore dropdown styling on Firefox
+
 ## [1.4.0] - 02/01/2023
 
 **New**
