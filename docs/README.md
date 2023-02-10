@@ -66,10 +66,11 @@ Page layout:
         <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
         <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
         <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
-        <option value="Verdana">Verdana, sans-serif</option>
-        <option value="Tahoma">Tahoma, sans-serif</option>
-        <option value="Times%20New%20Roman, serif">Times New Roman, serif</option>
+        <option value="Open%20Sans,sans-serif">Open Sans, sans-serif</option>
+        <option value="Tahoma,sans-serif">Tahoma, sans-serif</option>
+        <option value="Verdana,sans-serif">Verdana, sans-serif</option> 
         <option value="Georgia,serif">Georgia, serif</option>
+        <option value="Times%20New%20Roman,serif">Times New Roman, serif</option>
         <option value="Courier,monospace">Courier, monospace</option>
       </select>
   </div>
