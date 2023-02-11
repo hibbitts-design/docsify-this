@@ -55,7 +55,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">
 
-<div class="docsifythisurlbuilderoptionsline"><label>Page title on Browser tab:</label><br><input type="text" value="Published by Docsify-This" id="pageTitle" name="pageTitle" size="100px"></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Page title on Browser tab:</label><br><input type="text" value="Published by Docsify-This" id="pageTitle" name="pageTitle" size="30"></div>
 
   <div class='stackedlabeldropdown'>
       <label for="select1">Page font family:</label>
@@ -102,7 +102,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><label type="color">Page link color:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview()"/><span id="linkcolorpreview""></span></div>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Text of 'Edit this Page' link:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Text of 'Edit this Page' link:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText" size="30"></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
