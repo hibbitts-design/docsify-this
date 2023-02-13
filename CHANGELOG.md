@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.5.0] - XX/XX/2023
+## [1.5.0] - 02/13/2023
 
 **New**
 * Support for light/dark theme switching via 'dark-mode' URL parameter and setting in index.html (when using your own instance of Docsify-This.net)
