@@ -239,7 +239,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 #### Canvas LMS
 
 [Embed content in Canvas](https://www.howtocanvas.com/create-amazing-pages-in-canvas/embedding-content)  
-iFrame Code Example, including URL parameters to seamlessly match Docsify-This content to Canvas:  
+iFrame code example, including URL parameters to seamlessly match Docsify-This content to Canvas:  
 
 ```html
 <p><iframe style="overflow: hidden; border: 0px #ffffff none; background: #ffffff;" src="https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=home.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1&hide-credits=true" width="800px" height="1400px" allowfullscreen="allowfullscreen"></iframe></p>
