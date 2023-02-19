@@ -591,7 +591,9 @@ If you want to further customize and control the presentation of your Markdown c
 ### Troubleshooting
 
 _'404 - Not found' message is displayed._  
-The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also be a result of a Cross-Origin Resource Sharing (CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests.
+The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also be a result of a Cross-Origin Resource Sharing (CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests.  
+
+When displaying Codeberg Markdown files, the path is assumed to contain `/src/branch/main` and other paths will cause a 404 message.  
 
 _Updated Markdown file not displayed in the Browser._  
 Docsify is likely displaying the last cached version. To ensure the most recent version of a file is loaded, do a [hard refresh of your Browser cache](https://www.makeuseof.com/hard-refresh-browser/).
