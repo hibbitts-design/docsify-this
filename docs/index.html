@@ -181,16 +181,25 @@
 
           docsifyURL = docsifyURL.replace('/#/', '');
 
-          // If not Raw source URL convert it
+          // If not Raw source URL convert it and determine automatic gitlink page URL when possible
           if (url.includes("github.com")) {
             var gitlinkPageURL = url;
             url = url.replace('github.com', 'raw.githubusercontent.com');
             url = url.replace(/\/blob/, '');
-          } else if (url.includes("githubusercontent")) {
+          } else if (url.includes("githubusercontent.com")) {
             var gitlinkPageURL = url;
             gitlinkPageURL = gitlinkPageURL.replace('raw.githubusercontent.com', 'github.com');
             gitlinkPageURL = gitlinkPageURL.replace(/\/main/, '/blob/main');
             gitlinkPageURL = gitlinkPageURL.replace(/\/master/, '/blob/master');
+          } else if (url.includes("codeberg.org")) {
+            var gitlinkPageURL = url;
+            url = url.replace('codeberg.org', 'raw.codeberg.page');
+            url = url.replace(/\/src/, '');
+            url = url.replace(/\/branch/, '');
+            url = url.replace(/\/main/, '/');
+          } else if (url.includes("codeberg.pages")) {
+            // Automatic determination of gitLink not supported with raw.codeberg.pages URLs
+            var gitlinkPageURL = '';
           } else {
             var gitlinkPageURL = '';
           }
@@ -613,6 +622,13 @@
                         editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
                         editThisPageLinkURLparm = `&edit-link=` + editThisPageLink;
                       }
+                      if (currentBasePath.includes("codeberg.page")) {
+                        var editThisPageLink = '';
+                        editThisPageLink = decodeURIComponent(currentBasePath);
+                        editThisPageLink = editThisPageLink.replace('raw.codeberg.page', 'codeberg.org');
+                        editThisPageLink = editThisPageLink + 'src/branch/main/' + lastSegment + '.md'
+                        editThisPageLinkURLparm = `&edit-link=` + editThisPageLink;
+                      }
                     }
                     // Update Markdown file link
                     var newURL = ''
@@ -648,8 +664,6 @@
                   });
               }
               window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-                // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
-                // console.log(e.matches);            
                 if (enabledarkmode || darkmode) {
                   document.location.reload();
                 }
@@ -715,7 +729,6 @@
                   document.documentElement.style.setProperty('--pagination-title-color', '#0374B5');
                 }
               }
-
             });
 
             next(htmlElement.innerHTML);
@@ -742,7 +755,12 @@
                 url = getURLParameterByName('edit-link', null, null, window.location.href, true);
                 gitLinkRepoURL = url;
               } else {
-                url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
+                if (gitLinkRepoURL.includes("github.com")) {
+                  url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
+                }
+                if (gitLinkRepoURL.includes("codeberg.org") || gitLinkRepoURL.includes("codeberg.pages")) {
+                  url = gitLinkRepoURL + vm.route.file
+                }
               }
 
               editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
@@ -821,7 +839,6 @@
               // Change page title if title parameter present
               pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
               if (!(pageTitle === false)) {
-                // console.log(pageTitle);
                 document.title = pageTitle;
               } else {
                 document.title = 'Published by Docsify-This';
@@ -994,7 +1011,6 @@
       // Change body font if fontFamily parameter present
       fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
       if (!(fontfamily === false)) {
-        // console.log(fontfamily);
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
       }
 
