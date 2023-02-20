@@ -197,7 +197,7 @@
             url = url.replace(/\/src/, '');
             url = url.replace(/\/branch/, '');
             url = url.replace(/\/main/, '/');
-            url = url.replace(/\/master/, '/');
+            url = url.replace(/\/master/, '');
           } else if (url.includes("codeberg.page")) {
             // Automatic determination of gitLink not supported with raw.codeberg.pages URLs
             var gitlinkPageURL = '';
