@@ -193,14 +193,17 @@
             gitlinkPageURL = gitlinkPageURL.replace(/\/master/, '/blob/master');
           } else if (url.includes("codeberg.org")) {
             var gitlinkPageURL = url;
-            url = url.replace('codeberg.org', 'raw.codeberg.page');
+            gitlinkPageURL = gitlinkPageURL = gitlinkPageURL.replace(/\/raw/, '/src');
+            url = url.replace(/\/raw/, '');
             url = url.replace(/\/src/, '');
             url = url.replace(/\/branch/, '');
             url = url.replace(/\/main/, '');
             url = url.replace(/\/master/, '');
+            url = url.replace('codeberg.org', 'raw.codeberg.page');
           } else if (url.includes("codeberg.page")) {
             // Automatic determination of gitLink not supported with raw.codeberg.pages URLs
-            var gitlinkPageURL = '';
+            alert("Codeberg.page URLs not supported, please use Codeberg.org Markdown file URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/src/branch/main/home.md') or raw URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/raw/branch/main/home.md').");
+              return;
           } else {
             var gitlinkPageURL = '';
           }
@@ -627,7 +630,7 @@
                         var editThisPageLink = '';
                         editThisPageLink = decodeURIComponent(currentBasePath);
                         editThisPageLink = editThisPageLink.replace('raw.codeberg.page', 'codeberg.org');
-                        editThisPageLink = editThisPageLink + 'src/branch/main/' + lastSegment + '.md'
+                        editThisPageLink = editThisPageLink + '/src/branch/main/' + lastSegment + '.md'
                         editThisPageLinkURLparm = `&edit-link=` + editThisPageLink;
                       }
                     }
@@ -760,6 +763,7 @@
                   url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
                 }
                 if (gitLinkRepoURL.includes("codeberg.org") || gitLinkRepoURL.includes("codeberg.pages")) {
+                  gitlinkPageURL = gitlinkPageURL.replace(/\/raw/, '/src');
                   url = gitLinkRepoURL + vm.route.file
                 }
               }
