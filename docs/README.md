@@ -143,6 +143,7 @@ Page layout:
 * [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
 * [Embedding Docsify-This Pages into Other Platforms](/?id=embedding-docsify-this-pages-into-other-platforms)
 * [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
+* [Font Awesome Icons](/?id=font-awesome-icons)
 * [Tips and Techniques](/?id=tips-and-techniques)
 * [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 * [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
@@ -534,6 +535,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```html
 <div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
+
+---
+
+
+### Font Awesome Icons
+
+The display of [Font Awesome Free](https://fontawesome.com/icons) icons within Markdown content is supported with the following format:
+
+`:fas fa-home fa-fw:` (equivalent HTML markup would be `<i class="fas fa-home fa-fw"></i>`)
 
 ---
 
