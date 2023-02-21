@@ -546,6 +546,7 @@ The display of [Font Awesome Free](https://fontawesome.com/icons) icons within M
 `﹕fas fa-home fa-fw﹕`
 
 The above Markdown is equivalent to the HTML markup `<i class="fas fa-home fa-fw"></i>`.
+
 ---
 
 ### Tips and Techniques
