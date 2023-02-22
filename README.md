@@ -200,7 +200,7 @@ Display a Docsify sidebar with the optional **sidebar** parameter, for example:
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true  
 
 **title**  
-Set a custom page title for your standalone pages with the optional **title** parameter, for example:  
+Set a custom page title on Browser tab for your standalone pages with the optional **title** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 **toc**  
