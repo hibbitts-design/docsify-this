@@ -7,6 +7,7 @@
 
 **Improved:**   
 * Updated ReadMe
+* Only adjust header spacing in Blockquotes or Alerts
 
 ## [1.5.0] - 02/13/2023
 
