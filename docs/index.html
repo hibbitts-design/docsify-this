@@ -219,14 +219,14 @@
             var URLparms = `&toc=true`;
           }
 
-          var getPageTitle = document.getElementById("pageTitle");
-          var pageTitle = getPageTitle.value;
-          if (pageTitle === '') {
+          var getBrowserTabTitle = document.getElementById("browserTabTitle");
+          var browserTabTitle = getBrowserTabTitle.value;
+          if (browserTabTitle === '') {
             document.getElementById("pageTitle").value = 'Published by Docsify-This';
           }
-          if (!(pageTitle == "Published by Docsify-This")) {
-            pageTitle = encodeURI(pageTitle);
-            URLparms = URLparms + `&title=` + pageTitle;
+          if (!(browserTabTitle == "Published by Docsify-This")) {
+            browserTabTitle = encodeURI(browserTabTitle);
+            URLparms = URLparms + `&browser-tab-title=` + browserTabTitle;
           }
 
           const cb1 = document.querySelector('#editCheck');
@@ -334,6 +334,13 @@
 
           var getColor = document.getElementById("linkcolor");
           var hexCode = getColor.value;
+          if (hexCode === '') {
+            hexCode = '0374B5';
+            document.getElementById("linkcolor").value = hexCode;
+            document.getElementById("linkcolorpreview").style.visibility = "visible";
+            document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
+            document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+          }
           if (hexCode.charAt(0) == "#") {
             hexCode = hexCode.substring(1);
             getColor.value = hexCode;
@@ -439,7 +446,7 @@
       document.getElementById("stylecontentonly").checked = true;
       document.getElementById("styletoc").checked = false;
       document.getElementById("stylesidebar").checked = false;
-      document.getElementById("pageTitle").value = 'Published by Docsify-This';
+      document.getElementById("browserTabTitle").value = 'Published by Docsify-This';
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '1.125';
@@ -538,9 +545,14 @@
                 URLparms = URLparms + `&toc-headings=` + ToCHeadings;
               }
 
-              if (getURLParameterByName('title')) {
-                pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
-                URLparms = URLparms + `&title=` + pageTitle;
+              if (getURLParameterByName('browser-tab-title')) {
+                browserTabTitle = getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
+                URLparms = URLparms + `&'browser-tab-title=` + browserTabTitle;
+              }
+
+              if (getURLParameterByName('page-title')) {
+                pageTitle = getURLParameterByName('page-title', null, null, window.location.href, true);
+                URLparms = URLparms + `&'page-title=` + pageTitle;
               }
 
               if (getURLParameterByName('font-family')) {
@@ -840,12 +852,21 @@
                 document.body.appendChild(editCSS);
               }
 
-              // Change page title if title parameter present
-              pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
-              if (!(pageTitle === false)) {
-                document.title = pageTitle;
+              // Change browser title if browser tab title parameter present
+             browserTabTitle = getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
+              if (!(browserTabTitle === false)) {
+                document.title = browserTabTitle;
               } else {
                 document.title = 'Published by Docsify-This';
+              }
+
+              // Change page title if page title parameter present
+              pageTitle = getURLParameterByName('page-title', null, null, window.location.href, true);
+              if (!(pageTitle === false)) {
+                var newh1 = document.createElement("h1");
+                newh1.innerHTML = pageTitle
+                var divToMoveTo = document.getElementById("main");
+                divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);   
               }
             }
           });

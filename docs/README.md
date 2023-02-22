@@ -55,7 +55,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">
 
-<div class="docsifythisurlbuilderoptionsline"><label>Page title on Browser tab:</label><br><input type="text" maxlength="60" value="Published by Docsify-This" id="pageTitle" name="pageTitle""></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Title on Browser Tab:</label><br><input type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"></div>
 
   <div class='stackedlabeldropdown'>
       <label for="select1">Page font family:</label>
@@ -325,6 +325,10 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 ### Page Appearance URL Parameters
 
+**browser-tab-title**  
+Set a custom title on Browser tab for your standalone pages with the optional **browser-tab-title** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/blog-hibbitts-design-org/master/pages/01.posts/2022-09-01-docsify-this-v1-released&homepage=item.md&browser-tab-title=Docsify-This%20v1.0%20Released. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+
 **edit-link**  
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
@@ -365,13 +369,13 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 Set the maximum header level of the Docsify sidebar with the optional **maxLevel** Docsify parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=3 
 
+**page-title**  
+Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/blog-hibbitts-design-org/master/pages/01.posts/2022-09-01-docsify-this-v1-released&homepage=item.md&page-title=Docsify-This%20v1.0%20Released. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+
 **sidebar**  
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true  
-
-**title**  
-Set a custom page title on Browser tab for your standalone pages with the optional **title** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 **toc**  
 Display a page table of contents with the optional **toc** parameter, for example:  
@@ -404,6 +408,10 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 **loadNavbar**  
 Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md  
+
+**page-title**  
+Set a custom page title at the top of your standalone pages with the optional **page-titl** parameter, for example:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/blog-hibbitts-design-org/master/pages/01.posts/2022-09-01-docsify-this-v1-released&homepage=item.md&page-titl=Docsify-This%20v1.0%20Released. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 ---
 
@@ -537,7 +545,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
 
 ---
-
 
 ### Font Awesome Icons
 
