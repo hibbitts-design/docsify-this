@@ -7,7 +7,7 @@
 
 **Improved:**   
 * Updated ReadMe
-* Restore default header spacing except for Blockquotes and Alerts
+* Restore initial header spacing except for Blockquotes and Alerts
 
 ## [1.5.0] - 02/13/2023
 
