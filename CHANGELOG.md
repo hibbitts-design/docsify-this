@@ -4,10 +4,12 @@
 
 **New**
 * Support for Codeberg-hosted Markdown files
+* Support of optional page-title parameter (`page-title`) to add H1 header at top of page
 
 **Improved:**   
 * Updated ReadMe
 * Restore initial header spacing except for alerts
+* Page title parameter (`title`) renamed to Browser tab title (`browser-tab-title)
 
 ## [1.5.0] - 02/13/2023
 
