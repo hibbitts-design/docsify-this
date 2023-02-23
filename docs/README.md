@@ -327,7 +327,7 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 **browser-tab-title**  
 Set a custom title on Browser tab for your standalone pages with the optional **browser-tab-title** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/blog-hibbitts-design-org/master/pages/01.posts/2022-09-01-docsify-this-v1-released&homepage=item.md&browser-tab-title=Docsify-This%20v1.0%20Released. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&browser-tab-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 **edit-link**  
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
@@ -407,7 +407,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 **page-title**  
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/blog-hibbitts-design-org/master/pages/01.posts/2022-09-01-docsify-this-v1-released&homepage=item.md&page-title=Docsify-This%20v1.0%20Released. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 ---
 
