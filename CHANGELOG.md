@@ -9,7 +9,7 @@
 **Improved:**   
 * Updated ReadMe
 * Restore initial header spacing except for alerts and blockquotes
-* Page title parameter (`title`) renamed to Browser tab title (`browser-tab-title)
+* Page title parameter (`title`) renamed to Browser tab title (`browser-tab-title`)
 
 ## [1.5.0] - 02/13/2023
 
