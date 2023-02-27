@@ -11,6 +11,9 @@
 * Restore initial header spacing except for alerts and blockquotes
 * Page title parameter (`title`) renamed to Browser tab title (`browser-tab-title`)
 
+**Bugfix:**  
+* Support passing of `false` for URL parameters, in addition to removing the URL parameter to achieve the same result
+
 ## [1.5.0] - 02/13/2023
 
 **New**
