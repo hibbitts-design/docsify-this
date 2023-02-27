@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.5.1] - XX/XX/2023
+## [1.5.1] - 02/27/2023❄️
 
 **New**
 * Support for Codeberg-hosted Markdown files
