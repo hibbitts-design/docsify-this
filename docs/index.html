@@ -102,7 +102,7 @@
     var editLinkText = 'Edit this Page';
 
     // Set standalone to true to permanently hide the Sidebar
-    var standalone = (!(getURLParameterByName('sidebar') && getURLParameterByName('basePath')));
+    var standalone = (!(getURLParameterByName('sidebar', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')));
 
     // Set ToC to true to permanently show page Table of Contents (Sidebar and Navbar must also be hidden)
     var ToC = false;
@@ -529,87 +529,75 @@
               var editThisPageLinkURLparm = ''
 
               if (getURLParameterByName('sidebar')) {
-                URLparms = `&sidebar=true`;
+                URLparms = URLparms + `&sidebar=` + getURLParameterByName('sidebar', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('toc')) {
-                URLparms = `&toc=true`;
+                URLparms = URLparms + `&toc=` + getURLParameterByName('toc', null, null, window.location.href, true);
               }
 
-              if (getURLParameterByName(['toc-alt', 'toc-narrow'])) {
-                URLparms = `&toc-narrow=true`;
+              if (getURLParameterByName('toc-narrow')) {
+                URLparms = URLparms + `&toc-narrow=` + getURLParameterByName('toc-narrow', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('toc-headings')) {
-                ToCHeadings = getURLParameterByName('toc-headings', null, null, window.location.href, true);
-                URLparms = URLparms + `&toc-headings=` + ToCHeadings;
+                URLparms = URLparms + `&toc-headings=` + getURLParameterByName('toc-headings', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('browser-tab-title')) {
-                browserTabTitle = getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
-                URLparms = URLparms + `&'browser-tab-title=` + browserTabTitle;
+                URLparms = URLparms + `&'browser-tab-title=` + getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('page-title')) {
-                pageTitle = getURLParameterByName('page-title', null, null, window.location.href, true);
-                URLparms = URLparms + `&'page-title=` + pageTitle;
+                URLparms = URLparms + `&'page-title=` + getURLParameterByName('page-title', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('font-family')) {
-                fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
-                URLparms = URLparms + `&font-family=` + fontfamily;
+                URLparms = URLparms + `&font-family=` + getURLParameterByName('font-family', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('font-size')) {
-                fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
-                URLparms = URLparms + `&font-size=` + fontsize;
+                URLparms = URLparms + `&font-size=` + getURLParameterByName('font-size', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('line-height')) {
-                lineheight = getURLParameterByName('line-height', null, null, window.location.href, true);
-                URLparms = URLparms + `&line-height=` + lineheight;
+                URLparms = URLparms + `&line-height=` + getURLParameterByName('line-height', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('link-color')) {
-                linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
-                URLparms = URLparms + `&link-color=` + linkcolor;
+                URLparms = URLparms + `&link-color=` + getURLParameterByName('link-color', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('link-color-dark-mode')) {
-                linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
-                URLparms = URLparms + `&link-color-dark-mode=` + linkcolordarkmode;
+                URLparms = URLparms + `&link-color-dark-mode=` + getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('edit-link-text')) {
-                editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
-                URLparms = URLparms + `&edit-link-text=` + editlinktextparm;
+                URLparms = URLparms + `&edit-link-text=` + getURLParameterByName('edit-link-text', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('edit-link-top')) {
-                URLparms = URLparms + `&edit-link-top=true`;
+                URLparms = URLparms + `&edit-link-top=` + getURLParameterByName('edit-link-top', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('loadNavbar')) {
-                loadnavbar = getURLParameterByName('loadNavbar', null, null, window.location.href, true);
-                URLparms = URLparms + `&loadNavbar=` + loadnavbar;
+                URLparms = URLparms + `&loadNavbar=` + getURLParameterByName('loadNavbar', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('loadFooter')) {
-                loadfooter = getURLParameterByName('loadFooter', null, null, window.location.href, true);
-                URLparms = URLparms + `&loadFooter=` + loadfooter;
+                URLparms = URLparms + `&loadFooter=` + getURLParameterByName('loadFooter', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('hypothesis')) {
-                URLparms = URLparms + `&hypothesis=true`;
+                URLparms = URLparms + `&hypothesis=` + getURLParameterByName('hypothesis', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('maxLevel')) {
-                maxLevel = getURLParameterByName('maxLevel', null, null, window.location.href, true);
-                URLparms = URLparms + `&maxLevel=` + maxLevel;
+                URLparms = URLparms + `&maxLevel=` + getURLParameterByName('maxLevel', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('dark-mode')) {
-                URLparms = URLparms + `&dark-mode=true`;
+                URLparms = URLparms + `&dark-mode=` + getURLParameterByName('dark-mode', null, null, window.location.href, true);
               }
 
               const links = Array.from(htmlElement.querySelectorAll('a'))
@@ -661,12 +649,12 @@
                 }
               }
 
-            /* JS to change Embedly cards to light or dark theme based on system theme (uncomment to use) */
+            /* JS to change Embedly cards to light or dark theme based on system theme */
             const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
             if (!(embeds.length === 0)) {
                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)  {
                   // dark mode
-                  enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+                  enabledarkmode = getURLParameterByName('dark-mode', true, false, window.location.href, true) === 'true';
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
                       embed.setAttribute('data-card-theme', 'dark');
@@ -688,7 +676,7 @@
 
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
               const newColorScheme = event.matches ? "dark" : "light";
-              enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+              enabledarkmode = getURLParameterByName('dark-mode', true, false, window.location.href, true) === 'true';
               if (newColorScheme === "dark" && (enabledarkmode || darkmode)) {
                 // dark mode
                 linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
@@ -789,30 +777,30 @@
 
               var creditHtml = '\n\n' + 'This page is displayed using <a href="https://github.com/hibbitts-design/docsify-this" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
 
-              if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
-                if (!(getURLParameterByName('hide-credits'))) {
-                  if (getURLParameterByName('edit-link-top')) {
+              if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink', true, false, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
+                if (!(getURLParameterByName('hide-credits', true, false, window.location.href, true) === 'true')) {
+                  if (getURLParameterByName('edit-link-top', true, false, window.location.href, true) === 'true') {
                     return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
                   } else {
                     return html + '<br /><br />' + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
                   }
                 } else {
-                  if (getURLParameterByName('edit-link-top')) {
+                  if (getURLParameterByName('edit-link-top', true, false, window.location.href, true) === 'true') {
                     return editHtml + '\n' + html
                   } else {
                     return html + '<br />' + '\n\n' + editHtml
                   }
                 }
 
-              } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink')) && (!!gitLinkRepoURL)) {
-                if (getURLParameterByName('edit-link-top')) {
+              } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink', true, false, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
+                if (getURLParameterByName('edit-link-top', true, false, window.location.href, true) === 'true') {
                   return editHtml + '\n' + html
                 } else {
                   return html + '<br />' + '\n\n' + editHtml
                 }
 
               } else if (!(getURLParameterByName(['standalone', 'embedded']))) {
-                if (!(getURLParameterByName('hide-credits'))) {
+                if (!(getURLParameterByName('hide-credits', true, false, window.location.href, true) === 'true')) {
                   return html + '<br />' + '\n\n' + '<hr>' + creditHtml
                 } else {
                   return html
@@ -882,19 +870,19 @@
                 document.getElementById('docsifythisurlfield').value = markdownFileURL;
               }
 
-              if (getURLParameterByName('toc')) {
+              if (getURLParameterByName('toc', true, false, window.location.href, true) === 'true') {
                 document.getElementById("stylecontentonly").checked = false;
                 document.getElementById("styletoc").checked = true;
                 document.getElementById("stylesidebar").checked = false;
               }
 
-              if (getURLParameterByName('sidebar')) {
+              if (getURLParameterByName('sidebar', true, false, window.location.href, true) === 'true') {
                 document.getElementById("stylecontentonly").checked = false;
                 document.getElementById("styletoc").checked = false;
                 document.getElementById("stylesidebar").checked = true;
               }
 
-              if (getURLParameterByName('edit-link-checkbox')) {
+              if (getURLParameterByName('edit-link-checkbox', true, false, window.location.href, true) === 'true') {
                 document.getElementById("editCheck").checked = true;
               }
 
@@ -987,11 +975,11 @@
 
   <!-- Table of Contents Plugin -->
   <script>
-    if (getURLParameterByName('toc') && getURLParameterByName('basePath') || ToC) {
+    if (getURLParameterByName('toc', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath') || ToC) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
-    if (getURLParameterByName(['toc-alt', 'toc-narrow']) && getURLParameterByName('basePath')) {
+    if (getURLParameterByName('toc-narrow', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
@@ -1017,7 +1005,7 @@
 
   <!-- Optionally enable Hypothesis -->
   <script>
-    if (getURLParameterByName('hypothesis') && getURLParameterByName('basePath')) {
+    if (getURLParameterByName('hypothesis', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<script async src="https://hypothes.is/embed.js"><\/script>');
     }
   </script>
@@ -1102,8 +1090,8 @@
         }
       }
 
-      // Keep dark theme CSS files loaded if dark-mode parameter present
-      enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+      // Keep dark theme CSS files loaded if dark-mode parameter is true
+      enabledarkmode = getURLParameterByName('dark-mode', true, false, window.location.href, true) === 'true';
       if (enabledarkmode === false && darkmode === false) {
         var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
         linkNode.parentNode.removeChild(linkNode);
