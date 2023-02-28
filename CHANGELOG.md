@@ -4,6 +4,7 @@
 
 **Improved:**   
 * Updated ReadMe
+* Load 700 font weight for bold (previously used 600, semi-bold)
 
 ## [1.5.1] - 02/27/2023❄️
 
