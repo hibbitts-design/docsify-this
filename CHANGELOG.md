@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.5.2] - XX/XX/2023
+
+**Improved:**   
+* Updated ReadMe
+
 ## [1.5.1] - 02/27/2023❄️
 
 **New**
