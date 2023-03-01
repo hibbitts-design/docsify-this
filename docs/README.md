@@ -13,7 +13,7 @@ The open-source web app [Docsify-This](https://docsify-this.net), built with the
 
 <div id="docsifythisurlbuilder">
 
-<h2> Web Page Builder </h2>
+<h2>Web Page Builder</h2>
 
 Enter the URL of a Markdown file below and view that file as a web page in a new Browser tab. The resulting Docsify-This page URL can be copied and shared or used as an iFrame source URL.
 
