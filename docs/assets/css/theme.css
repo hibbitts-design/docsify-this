@@ -658,6 +658,11 @@ body .docsify-pagination-container {
   background: #eefbff;
 }
 
+#docsifythisurlbuilder h2 {
+  font-weight: bold;
+  color: #0d54a5;
+}
+
 #docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
   overflow: hidden;
   background-color: #white;
