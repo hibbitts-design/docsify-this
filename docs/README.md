@@ -7,13 +7,13 @@
   </div>
 </div>
 
-# **Publish Online Markdown Files as Web Pages in Seconds**
+<h1><strong>Publish Online Markdown Files as Web Pages in Seconds</strong></h1>
 
 The open-source web app [Docsify-This](https://docsify-this.net), built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to display one or more online Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net. Try it out below!
 
 <div id="docsifythisurlbuilder">
 
-## Web Page Builder
+<h2> Web Page Builder </h2>
 
 Enter the URL of a Markdown file below and view that file as a web page in a new Browser tab. The resulting Docsify-This page URL can be copied and shared or used as an iFrame source URL.
 
