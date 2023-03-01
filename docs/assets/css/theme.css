@@ -649,7 +649,7 @@ body .docsify-pagination-container {
 
 #docsifythisurlbuilder {
   overflow: visible;
-  margin: 2em 0;
+  margin: 1.5em 0;
   padding-top: calc( 8px + (16 - 12) * (100vw - 400px) / (800 - 400) );
   padding-left: calc( 10px + (16 - 10) * (100vw - 400px) / (800 - 400) );
   padding-bottom: calc( 8px + (16 - 12) * (100vw - 400px) / (800 - 400) );
