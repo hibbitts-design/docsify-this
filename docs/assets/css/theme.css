@@ -854,6 +854,10 @@ span #docsifythisurlfield {
 
 @media (prefers-color-scheme: dark) {
 
+  #docsifythis h2 {
+    color: #4bc3f4;
+  }
+  
   #docsifythis a {
       color: #1BA1EE;
   }
