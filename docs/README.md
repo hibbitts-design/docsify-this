@@ -155,11 +155,11 @@ Page layout:
 
 ### What Problem Does Docsify-This Solve?
 
-Docsify-This provides an easy way to publish and share [Markdown](https://www.markdownguide.org/basic-syntax/) content, with no website setup or build process required. Collaborative authoring using GitHub is also supported.  
+Docsify-This provides an easy way to display and share [Markdown](https://www.markdownguide.org/basic-syntax/) content in in various contexts, with no website setup or build process required. Collaborative authoring using GitHub is also supported.  
 
 With Docsify-This you can:
 
-* Display your Markdown files as standalone web pages, with no website setup or build process required
+* Publish your Markdown files as standalone web pages, with no website setup or build process required
 * Visually style your standalone web pages using a point-and-click Web Page Builder
 * Share existing GitHub-hosted Markdown files as standalone web pages, with an optional 'Edit this Page' link
 * Seamlessly embed constraint-free Markdown/HTML, which you have authored, into other platforms (e.g. LMS or CMS)
