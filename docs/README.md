@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<h1><strong>Publish Online Markdown Files as Web Pages in Seconds</strong></h1>
+<h1><strong>Instantly Turn a Markdown File into a Web Page</strong></h1>
 
 The open-source web app [Docsify-This](https://docsify-this.net), built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to publish one or more online Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net. Try it out below!
 
