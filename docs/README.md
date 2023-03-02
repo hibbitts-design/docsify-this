@@ -9,7 +9,7 @@
 
 <h1><strong>Publish Online Markdown Files as Web Pages in Seconds</strong></h1>
 
-The open-source web app [Docsify-This](https://docsify-this.net), built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to display one or more online Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net. Try it out below!
+The open-source web app [Docsify-This](https://docsify-this.net), built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to publish one or more online Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net. Try it out below!
 
 <div id="docsifythisurlbuilder">
 
@@ -19,7 +19,7 @@ Enter the URL of a Markdown file below and view that file as a web page in a new
 
 **Markdown File URL** (GitHub, Codeberg or raw source URL):</br>
 <input name="markdownFileURL" aria-label="markdown file url" id="docsifythisurlfield" type="url" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" size="200px" value="https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md" />
-<input class="docsifythisurlbuilderprimarybutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
+<input class="docsifythisurlbuilderprimarybutton" style="border:none;" type="button" id="btn_1" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
 
 Page layout:
 
@@ -125,7 +125,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesis" unchecked><label for="hypothesis">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
 
-<input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_1" value="View as Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
+<input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_1" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
 <div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 
