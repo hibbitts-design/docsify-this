@@ -119,7 +119,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Maximum Header level (1-6) of Docsify sidebar:</label><br><input type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Maximum Header level (1-6) of Docsify Sidebar:</label><br><input type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"></div>
 
 <hr>
 
