@@ -21,9 +21,9 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
+* [Markdown Syntax References](#markdown-syntax-references)
 * [Font Awesome Icons](#font-awesome-icons)
 * [Tips and Techniques](#tips-and-techniques)
-* [Markdown Syntax References](#markdown-syntax-references)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
 * [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
 * [Troubleshooting](#troubleshooting)
@@ -373,6 +373,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ---
 
+### Markdown Syntax References
+
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Markdown Guide](https://www.markdownguide.org/)
+
+---
+
 ### Font Awesome Icons
 
 The display of [Font Awesome Free](https://fontawesome.com/icons) icons within Markdown content is supported with the following format:
@@ -411,13 +418,6 @@ function test() {
   console.log("Hello world!");
 }
 ```
-
----
-
-### Markdown Syntax References
-
-* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Markdown Guide](https://www.markdownguide.org/)
 
 ---
 
