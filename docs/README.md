@@ -155,7 +155,7 @@ Page layout:
 
 ### What Problem Does Docsify-This Solve?
 
-Docsify-This provides an easy way to display and share [Markdown](https://www.markdownguide.org/basic-syntax/) content in various contexts, with no website setup or build process required. Collaborative authoring using GitHub is also supported.  
+Docsify-This provides an easy way to display and share [Markdown](https://www.markdownguide.org/basic-syntax/) content in various contexts, with no website setup or build process required. Collaborative authoring using GitHub is also supported.
 
 With Docsify-This you can:
 
