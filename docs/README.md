@@ -142,8 +142,8 @@ Page layout:
 * [More Docsify-This Markdown Examples](/?id=more-docsify-this-markdown-examples)
 * [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
 * [Embedding Docsify-This Pages into Other Platforms](/?id=embedding-docsify-this-pages-into-other-platforms)
-* [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
 * [Markdown Syntax References](/?id=markdown-syntax-references)
+* [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
 * [Font Awesome Icons](/?id=font-awesome-icons)
 * [Tips and Techniques](/?id=tips-and-techniques)
 * [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
@@ -445,6 +445,13 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 
 ---
 
+### Markdown Syntax References
+
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Markdown Guide](https://www.markdownguide.org/)
+
+---
+
 ### Supported Markdown CSS Classes
 
 `badge`  
@@ -540,13 +547,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```html
 <div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
-
----
-
-### Markdown Syntax References
-
-* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Markdown Guide](https://www.markdownguide.org/)
 
 ---
 
