@@ -145,6 +145,7 @@ Page layout:
 * [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
 * [Font Awesome Icons](/?id=font-awesome-icons)
 * [Tips and Techniques](/?id=tips-and-techniques)
+* [Markdown Syntax References](/?id=markdown-syntax-references)
 * [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 * [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
 * [Troubleshooting](/?id=troubleshooting)
@@ -580,6 +581,13 @@ function test() {
   console.log("Hello world!");
 }
 ```
+
+---
+
+### Markdown Syntax References
+
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Markdown Guide](https://www.markdownguide.org/)
 
 ---
 
