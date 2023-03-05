@@ -552,6 +552,10 @@
                 URLparms = URLparms + `&'page-title=` + getURLParameterByName('page-title', null, null, window.location.href, true);
               }
 
+              if (getURLParameterByName('header-weight')) {
+                URLparms = URLparms + `&header-weight=` + getURLParameterByName('header-weight', null, null, window.location.href, true);
+              }
+
               if (getURLParameterByName('font-family')) {
                 URLparms = URLparms + `&font-family=` + getURLParameterByName('font-family', null, null, window.location.href, true);
               }
@@ -1017,9 +1021,20 @@
     }
   </script>
 
-  <!-- Check for fontfamily, fontsize, lineheight, linkcolor, darkmode and title parameters  -->
+  <!-- Check for headerweight, fontfamily, fontsize, lineheight, linkcolor, darkmode and title parameters  -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
+
+      // Change header weight if headerweight parameter present
+      headerweight = getURLParameterByName('header-weight', null, null, window.location.href, true);
+      if (!(headerweight === false)) {
+        document.documentElement.style.setProperty('--heading-h1-font-weight', headerweight);
+        document.documentElement.style.setProperty('--heading-h2-font-weight', headerweight);
+        document.documentElement.style.setProperty('--heading-h3-font-weight', headerweight);
+        document.documentElement.style.setProperty('--heading-h4-font-weight', headerweight);
+        document.documentElement.style.setProperty('--heading-h5-font-weight', headerweight);
+        document.documentElement.style.setProperty('--heading-h6-font-weight', headerweight);
+      }
 
       // Change body font if fontFamily parameter present
       fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
