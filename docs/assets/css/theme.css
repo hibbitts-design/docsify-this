@@ -647,6 +647,10 @@ body .docsify-pagination-container {
 }
 */
 
+#docsifythis h1, #docsifythis h2, #docsifythis h3, #docsifythis h4, #docsifythis h5, #docsifythis h6 {
+  font-weight: 600;
+}
+
 #docsifythisurlbuilder {
   overflow: visible;
   margin: 1.5em 0;
@@ -659,7 +663,6 @@ body .docsify-pagination-container {
 }
 
 #docsifythisurlbuilder h2 {
-  font-weight: bold;
   color: #0d54a5;
 }
 
