@@ -2,6 +2,9 @@
 
 ## [1.5.2] - XX/XX/2023
 
+**New**
+* Support of optional header-weight parameter (`header-weight`) to set font weight of headers (default is 400 - regular)
+
 **Improved:**   
 * Updated ReadMe
 * Load 700 font weight for bold (previously used 600, semi-bold)
