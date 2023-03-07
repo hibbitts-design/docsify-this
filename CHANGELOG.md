@@ -9,6 +9,7 @@
 * Updated ReadMe
 * Load 700 font weight for bold (previously used 600, semi-bold)
 * Minor improvements to the appearance of the Web Page Builder
+* Do not override docsify-this.net and GitHub Docsify-This repository link targets
 
 ## [1.5.1] - 02/27/2023❄️
 
