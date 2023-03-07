@@ -222,7 +222,7 @@ The following URL parameters are available but not ot included in the Web Page B
 
 **coverpage**  
 Display a Docsify coverpage with the optional **coverpage** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&coverpage=_coverpage.md
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/markdown-publishing-with-docsify-this/main&edit-link=https://github.com/hibbitts-design/markdown-publishing-with-docsify-this/blob/main/README.md&coverpage=_coverpage.md
 
 **dark-mode**  
 Automatically switch light/dark theme based on system OS-level preference, for example:  
