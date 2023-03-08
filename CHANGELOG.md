@@ -10,6 +10,9 @@
 * Load 700 font weight for bold (previously used 600, semi-bold)
 * Minor improvements to the appearance of the Web Page Builder
 * Do not override docsify-this.net and GitHub Docsify-This repository link targets
+* Support for displaying a coverpage ('_coverpage.md' file) using the URL parameter 'coverpage=_true_' or via the 'coverpage' setting in index.html (when using your own instance of Docsify-This.net)
+* Support of optional coverpage-color parameter (`coverpage-color`) to set the background color of the coverpage
+* Support of optional coverpage-color-dark-mode parameter (`coverpage-color-daerk-mode`) to set the background color of the coverpage in dark mode
 
 ## [1.5.1] - 02/27/2023❄️
 
