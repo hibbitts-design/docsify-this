@@ -1169,7 +1169,6 @@
         }
         coverpagecolor = getURLParameterByName('coverpage-color', null, null, window.location.href, true);
         if (!(coverpagecolor === false)) {
-          coverpagecolor = '#' + coverpagecolor;
           document.documentElement.style.setProperty('--cover-background-color', coverpagecolor);
         } else {
           document.documentElement.style.setProperty('--cover-background-color', '#6c8a9a');
