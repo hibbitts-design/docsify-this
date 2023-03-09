@@ -512,6 +512,8 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 * [video-container-4by3](/?id=video-container-4by3)
 * [video-container-16by9](/?id=video-container-16by9)
 
+The following CSS classes are available when authoring your own Markdown content.  
+
 #### Badge
 
 ```html
