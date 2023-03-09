@@ -123,7 +123,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesis" unchecked><label for="hypothesis">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesisenable" unchecked><label for="hypothesisenable">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_1" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
@@ -326,105 +326,132 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 ### Page Appearance URL Parameters
 
-**browser-tab-title**  
+#### Web Page Builder
+
+* [browser-tab-title](/?id=browser-tab-title)
+* [edit-link](/?id=edit-link)
+* [edit-link-text](/?id=edit-link-text)
+* [edit-link-top](/?id=edit-link-top)
+* [font-family](/?id=font-family)
+* [font-size](/?id=font-size)
+* [hide-credits](/?id=hide-credits)
+* [hypothesis](/?id=hypothesis)
+* [line-height](/?id=line-height)
+* [maxLevel](/?id=maxLevel)
+* [sidebar](/?id=sidebar)
+* [toc](/?id=toc)
+* [toc-headings](/?id=toc-headings)
+* [toc-narrow](/?id=toc-narrow)
+
+##### browser-tab-title
 Set a custom title on Browser tab for your standalone pages with the optional **browser-tab-title** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&browser-tab-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&browser-tab-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
-**edit-link**  
+##### edit-link
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
 
-**edit-link-text**  
+##### edit-link-text
 Change the default text for a "Edit this Page" link with the optional **edit-link-text** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20as%20Markdown Please note to use text with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "View as Markdown" would be "View%20as%20Markdown".  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20as%20Markdown Please note to use text with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "View as Markdown" would be "View%20as%20Markdown".  
 
-**edit-link-top**  
-Change the location of the optional "Edit this Page" link from the bottom of pages to be the top of pages with the optional **edit-link-top** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
+##### edit-link-top
+Change the location of the "Edit this Page" link from the bottom of pages to be the top of pages with the optional **edit-link-top** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
 
-**font-family**  
+##### font-family
 Set a custom font for your standalone pages with the optional **font-family** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New".  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New".  
 
-**font-size**  
+##### font-size
 Set a custom font size for your standalone pages with the optional **font-size** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
 
-**hide-credits**  
+##### hide-credits
 Hide the credits usually shown at the bottom of every displayed Docsify-This page with the optional **hide-credits** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
 
-**hypothesis**  
+##### hypothesis
 Enable page annotation with [Hypothes.is](https://hypothes.is) with the optional **hypothesiss** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hypothesis=true.
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hypothesis=true.  
 
-**line-height**  
+##### line-height
 Set a custom line height for your standalone pages with the optional **line-height** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&line-height=1.5. 
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&line-height=1.5. 
 
-**link-color**  
+##### link-color
 Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
 
-**maxLevel**  
+##### maxLevel
 Set the maximum header level of the Docsify sidebar with the optional **maxLevel** Docsify parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=3 
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=3 
 
-**sidebar**  
+##### sidebar
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true 
 
-**toc**  
+##### toc
 Display a page table of contents with the optional **toc** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true
 
-**toc-headings**  
+##### toc-headings
 Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&toc-headings=h1,h2,h3.
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&toc-headings=h1,h2,h3.
 
-**toc-narrow**  
+##### toc-narrow
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.  
 
 #### Additional URL Parameters
 
 The following URL parameters are available but not included in the Web Page Builder.
 
-**coverpage**  
+* [coverpage](/?id=coverpage)
+* [coverpage-color](/?id=coverpage-color)
+* [coverpage-color-dark-mode](/?id=coverpage-color-dark-mode)
+* [dark-mode](/?id=dark-mode)
+* [header-weight](/?id=header-weight)
+* [link-color-dark-mode](/?id=link-color-dark-mode)
+* [loadFooter](/?id=loadFooter)
+* [loadNavbar](/?id=loadNavbar)
+* [page-title](/?id=page-title)
+
+##### coverpage
 Display a Docsify coverpage with the optional **coverpage** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md
 
-**coverpage-color**  
+##### coverpage-color
 Set a custom color for the coverpage with the optional **coverpage-color** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&coverpage-color=cc0000
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&coverpage-color=cc0000
 
-**coverpage-color-dark-mode**  
+##### coverpage-color-dark-mode
 Set a custom color for the coverpage in dark mode with the  optional **coverpage-color-dark-mode** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&dark-mode=true&coverpage-color-dark-mode=4d0000
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&dark-mode=true&coverpage-color-dark-mode=4d0000
 
-**dark-mode**  
+##### dark-mode
 Automatically switch light/dark theme based on system OS-level preference, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
 
-**header-weight**  
+##### header-weight
 Set a custom header weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600. 
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600. 
 
-**link-color-dark-mode**  
-Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000&dark-mode=true&link-color-dark-mode=FF9E9E.
+##### link-color-dark-mode
+Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter (not included in the Web Page Builder), for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000&dark-mode=true&link-color-dark-mode=FF9E9E.
 
-**loadFooter**  
+##### loadFooter
 Load a Docsify footer from the Markdown file passed with the optional **loadFooter** Docsify parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadFooter=_footer.md
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadFooter=_footer.md
 
-**loadNavbar**  
+##### loadNavbar
 Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md
 
-**page-title**  
+##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 ---
 
@@ -470,73 +497,95 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 
 ### Supported Markdown CSS Classes
 
-`badge`  
+* [badge](/?id=badge)
+* [banner-image](/?id=banner-image)
+* [banner-tall-image](/?id=banner-tall-image)
+* [button](/?id=button)
+* [embedly-card](/?id=embedly-card)
+* [header-image-fade](/?id=header-image-fade)
+* [header-image-full-width](/?id=header-image-full-width)
+* [image-75/image-50/image-25](/?id=image-75image-50image-25)
+* [image-75-border/image-50-border/image-25-border](/?id=image-75-borderimage-50-borderimage-25-border)
+* [image-border](/?id=image-border)
+* [image-border-rounded](/?id=image-border-rounded)
+* [row/column](/?id=rowcolumn)
+* [video-container-4by3](/?id=video-container-4by3)
+* [video-container-16by9](/?id=video-container-16by9)
+
+#### Badge
 
 ```html
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
 ```
 
-`banner-image` (cropped to height of 250px on large screens, 125px on small screens)  
+#### banner-image
+Cropped to height of 250px on large screens, 125px on small screens.  
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
 ```
 
-`banner-tall-image` (cropped to height of 350px on large screens, 175px on small screens)  
+#### banner-tall-image
+Cropped to height of 350px on large screens, 175px on small screens.   
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
 ```
 
-`button`  
+#### button
 
 ```markdown
 [Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button')
 ```
 
-`embedly-card` (for linked article previews, embedded slides/videos, etc.)  
+#### embedly-card
+For linked article previews, embedded slides/videos, etc.  
 
 ```markdown
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
 ```
 
-`header-image-fade` (suggested width of 1200px to 2000px)  
+#### header-image-fade
+Suggested width of 1200px to 2000px.  
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=header-image-fade')
 ```
 
-`header-image-full-width` (suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents is not available)  
+#### header-image-full-width
+Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents is not available.  
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=header-image')
 ```
 
-`image-75`, `image-50` and `image-25` (scale images to %)
+#### image-75/image-50/image-25
+Scale images to %.  
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=image-75')
 ```
 
-`image-75-border`, `image-50-border` and `image-25-border` (scale images with border to %)
+#### image-75-border/image-50-border/image-25-border
+Scale images with border to %.  
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=image-75-border')
 ```
 
-`image-border`
+#### image-border
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=image-border')
 ```
 
-`image-border-rounded`
+#### image-border-rounded
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=image-border-rounded')
 ```
 
-`row` & `column`  
+#### row/column
 
 ```html
 <div class="row">
@@ -553,13 +602,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </div>
 ```
 
-`video-container-4by3`  
+#### video-container-4by3
 
 ```html
 <div class="video-container-4by3"><div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
 
-`video-container-16by9`  
+#### video-container-16by9
 ```html
 <div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
