@@ -29,6 +29,15 @@ body .markdown-section {
 }
 */
 
+/* CSS to better visually match Docsify pages within Moodle LMS (uncomment to use) */
+/*
+body .markdown-section {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+}
+*/
+
 /* Link colors to match visual styling of Moodle LMS (uncomment to use) */
 /*
 :root {
@@ -42,6 +51,17 @@ body .markdown-section {
 }
 */
 
+/* CSS to better visually match Docsify pages within Sakai LMS (uncomment to use) */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body .markdown-section {
+    font-family: "Open Sans",sans-serif;
+    line-height: 1.3;
+    font-size: 14px;
+}
+*/
+
 /* Link colors to match visual styling of Sakai LMS (uncomment to use) */
 /*
 :root {
@@ -52,16 +72,5 @@ body .markdown-section {
     --sidebar-nav-link-border-color--active: #0B1660!important;
     --link-color: #0B1660!important;
     --pagination-title-color: #0B1660!important;
-}
-*/
-
-/* CSS to better visually match Docsify pages within Sakai LMS (uncomment to use) */
-/*
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-
-body .markdown-section {
-    font-family: "Open Sans",sans-serif;
-    line-height: 1.3;
-    font-size: 14px;
 }
 */
