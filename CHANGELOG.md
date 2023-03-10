@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.5.2] - XX/XX/2023
+## [1.5.2] - 03/10/2023
 
 **New**
 * Support of optional header-weight parameter (`header-weight`) to set font weight of headers (default is 400 - regular)
