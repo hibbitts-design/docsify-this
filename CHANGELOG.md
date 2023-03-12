@@ -4,6 +4,7 @@
 
 **Improved:**
 * Adjust header colors in dark mode
+* Updated web app banner area, including use of Docsify logo
 
 ## [1.5.2] - 03/10/2023
 
