@@ -858,14 +858,18 @@ span #docsifythisurlfield {
 
 @media (prefers-color-scheme: dark) {
 
-  #docsifythis h2 {
+  #docsifythis .docsifythisheader h1 {
+    color: #A6A6A6;
+  }
+  
+  #docsifythis #docsifythisurlbuilder h2 {
     color: #4bc3f4;
   }
   
-  #docsifythis a {
-      color: #1BA1EE;
+  #docsifythis p a, #docsifythis li a, #docsifythis h4 a {
+    color: #1BA1EE;
   }
-  
+
   #docsifythisurlbuilder {
       background: #224567;
   }
