@@ -1,8 +1,13 @@
 # Changelog
 
+## [1.5.3] - XX/XX/2023
+
+**Improved:**
+* Adjust header colors in dark mode
+
 ## [1.5.2] - 03/10/2023
 
-**New**
+**New:**
 * Support of optional header-weight parameter (`header-weight`) to set font weight of headers (default is 400 - regular)
 
 **Improved:**   
@@ -51,7 +56,7 @@
 
 ## [1.4.0] - 02/01/2023
 
-**New**
+**New:**
 * Support for 75%, 50% and 25% scaled images (`image-75`,`image-50` and `image-25`)
 * Added link to new [Markdown Publishing with Docsify-This guide](https://github.com/hibbitts-design/markdown-publishing-with-docsify-this)🎉
 * Additional languages for Prismjs (Bash, Go, Java, Kotlin, PHP, Python and Swift in addition to the base set https://docsify.js.org/#/language-highlight?id=language-highlighting)
@@ -69,7 +74,7 @@ in ReadMe
 
 ## [1.3.3] - 01/24/2023
 
-**New**
+**New:**
 * Add Lato font choice (default Canvas LMS font)
 * Added example Docsify-This template (LMS Content Pages Template) 
 * Add Helvetica Neue font choice (default Moodle LMS font)
@@ -83,7 +88,7 @@ in ReadMe
 
 ## [1.3.2] - 01/17/2023
 
-**New**
+**New:**
 * Support for displaying a footer ('_footer.md' file) using the URL parameter 'footer=true' or via the 'footer' setting in index.html (when using your own instance of Docsify-This.net)
 
 **Improved:**   
@@ -96,7 +101,7 @@ in ReadMe
 
 ## [1.3.1] - 12/15/2022
 
-**New**
+**New:**
 * Support for background gradient header image (`header-image-fade`, with thanks to Jamie Adam for original CSS)
 * Support for full-width header image (`header-image-full-width`, display of Table of Contents is not available)
 * Added example Docsify-This template (Multiple Page Site Template) 
