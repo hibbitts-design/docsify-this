@@ -595,6 +595,31 @@ body .docsify-pagination-container {
 
 /* DOCSIFY THIS */
 
+#docsifythis .docsifythisheader .logoandtext {
+  margin-bottom: 18px;
+}
+
+#docsifythis .docsifythisheader .logoandtext img {
+  float: left;
+}
+
+#docsifythis .docsifythisheader .logoandtext h1 {
+  font-size: 2.25rem;
+  margin: 0;
+  padding-left: 5px;
+  display: inline;
+  vertical-align: middle;
+  line-height: 45px;
+  color:#6a6a6a;
+}
+
+#docsifythis .docsifythisheader .logoandtext img {
+  height: 45px;
+  vertical-align:middle;
+  opacity: 0.8;
+}
+
+/*
 .docsifythisimagebanner img {
   margin-top: -2rem;
   width: 100%;
@@ -604,6 +629,7 @@ body .docsify-pagination-container {
   position: relative;
   filter: brightness(95%);
 }
+*/
 
 /*
 .docsifythisimagebanner img {
@@ -618,11 +644,14 @@ body .docsify-pagination-container {
 }
 */
 
+/*
 .docsifythisimagebanner h1 {
   color: #FFFFFF;
   font-size: calc( 22px + (24 - 16) * (100vw - 400px) / (800 - 400) );
 }
+*/
 
+/*
 .docsifythisimagebanner .overlay {
   position: absolute;
   top: calc( 6px + (26 - 22) * (100vw - 400px) / (800 - 400) );
@@ -633,6 +662,7 @@ body .docsify-pagination-container {
   text-align: right;
   font-size: 3vw;
 }
+*/
 
 /*
 .docsifythisimagebanner .overlay {
