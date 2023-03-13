@@ -884,6 +884,19 @@ span #docsifythisurlfield {
   white-space: break-spaces;
 }
 
+@media only screen and (max-width: 480px) {
+
+  #docsifythis .docsifythisheader .logoandtext h1 {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+  
+  #docsifythis .docsifythisheader .logoandtext img {
+    height: 35px;
+  }
+
+}
+
 /* Dark mode colours for use with light + dark themes */
 
 @media (prefers-color-scheme: dark) {
