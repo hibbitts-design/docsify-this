@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.5.3] - XX/XX/2023
+## [1.5.3] - 03/13/2023
 
 **Improved:**
 * Adjust header colors in dark mode
