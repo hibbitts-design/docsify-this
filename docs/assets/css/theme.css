@@ -689,7 +689,7 @@ body .docsify-pagination-container {
   padding-bottom: calc( 8px + (16 - 12) * (100vw - 400px) / (800 - 400) );
   padding-right: calc( 10px + (16 - 10) * (100vw - 400px) / (800 - 400) );
   border-width: 0;
-  background: #eefbff;
+  background: #ecf9fa;
 }
 
 #docsifythisurlbuilder h2 {
@@ -901,7 +901,7 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuilder {
-      background: #224567;
+      background: #1f4b66;
   }
 
   #docsifythisurlfield{
