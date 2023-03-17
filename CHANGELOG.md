@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.5.4] - XX/XX/2023
+
+**New:**
+* Coloris color picker (with appreciation to @mdbassit)
+
 ## [1.5.3] - 03/13/2023
 
 **Improved:**
