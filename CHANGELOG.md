@@ -5,6 +5,9 @@
 **New:**
 * Coloris color picker (with appreciation to @mdbassit)
 
+**Bugfix:**  
+* Properly format coverpage color parameter for CSS setting
+
 ## [1.5.3] - 03/13/2023
 
 **Improved:**
