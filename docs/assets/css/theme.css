@@ -242,6 +242,7 @@
   display: inline-block;
   margin-top: 4px;
   padding: 10px;
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
   line-height: 1.2rem;
   background-color: var(--link-color);
   text-decoration: none;
