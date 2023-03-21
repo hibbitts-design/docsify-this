@@ -70,6 +70,7 @@ Page layout:
         <option value="Tahoma,sans-serif">Tahoma, sans-serif</option>
         <option value="Verdana,sans-serif">Verdana, sans-serif</option>
         <option value="Georgia,serif">Georgia, serif</option>
+        <option value="Merriweather,Georgia,serif">Merriweather, serif</option>
         <option value="Times%20New%20Roman,serif">Times New Roman, serif</option>
         <option value="Courier,monospace">Courier, monospace</option>
       </select>
