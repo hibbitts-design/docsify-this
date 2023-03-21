@@ -4,6 +4,7 @@
 
 **New:**
 * Coloris color picker (with thanks and appreciation to @mdbassit)
+* Add Merriweather font choice
 
 **Improved:**
 * Updated ReadMe
@@ -155,6 +156,7 @@ in ReadMe
 **Improved:**  
 * Add ability to show all page options with remote passing of initial URL value
 * Included H5P script for improved responsive sizing of embedded H5P content
+* Set font of buttons to sans-serif
 
 **Bugfix:**  
 * Fix unintended scrolling when URL field is auto-focused
