@@ -8,6 +8,8 @@
 
 **Improved:**
 * Updated ReadMe
+* Set font of buttons to sans-serif
+* Set font of badges to sans-serif
 
 **Bugfix:**
 * Properly format coverpage color parameter for CSS setting
