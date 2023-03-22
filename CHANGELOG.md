@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.5.4] - XX/XX/2023
+## [1.6] - 03/22/2023
 
 **New:**
 * Coloris color picker (with thanks and appreciation to @mdbassit)
