@@ -14,6 +14,7 @@
 **Bugfix:**
 * Properly format coverpage color parameter for CSS setting
 * Remove duplicated code for dark mode support
+* Remove unneeded web app page CSS
 
 ## [1.5.3] - 03/13/2023
 
