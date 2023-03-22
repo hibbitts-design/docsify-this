@@ -14,8 +14,8 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
-* [How Docsify-This Works](#how-docsify-this-works)
 * [User Quotes](#user-quotes)
+* [How Docsify-This Works](#how-docsify-this-works)
 * [Example Workflow using GitHub Markdown Files](#example-usage-scenarios)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](#more-docsify-this-markdown-examples)
