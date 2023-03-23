@@ -632,7 +632,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ### Custom Markdown CSS Classes
 
-In addition to the Markdown CSS classes supported by Docisfy-This, you can also define your own custom classes within your displayed Markdown files, for example:
+In addition to the Markdown CSS classes supported by Docsify-This, you can also define your own custom classes within your displayed Markdown files, for example:
 
 CSS in Markdown file:  
 ```css
