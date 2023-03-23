@@ -146,6 +146,7 @@ Page layout:
 * [Embedding Docsify-This Pages into Other Platforms](/?id=embedding-docsify-this-pages-into-other-platforms)
 * [Markdown Syntax References](/?id=markdown-syntax-references)
 * [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
+* [Custom Markdown CSS Classes](/?id=custom-markdown-css-classes)
 * [Font Awesome Icons](/?id=font-awesome-icons)
 * [Tips and Techniques](/?id=tips-and-techniques)
 * [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
@@ -625,6 +626,40 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 #### video-container-16by9
 ```html
 <div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
+```
+
+---
+
+### Custom Markdown CSS Classes
+
+In addition to the Markdown CSS classes supported by Docisfy-This, you can also define your own custom classes within your displayed Markdown files, for example:
+
+CSS:  
+```css
+<style>
+.markdown-section .mybutton, .markdown-section .mybutton:hover {
+  cursor: pointer;
+  color: #CC0000;
+  height: auto;
+  display: inline-block;
+  border: 2px solid #CC0000;
+  border-radius: 4rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 8px;
+  line-height: 1.2rem;
+  background-color: white;
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-appearance: none;
+}
+</style>
+```
+
+Markdown:  
+```markdown
+[Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=mybutton')
 ```
 
 ---
