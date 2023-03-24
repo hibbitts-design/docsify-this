@@ -14,7 +14,6 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
-* [User Quotes](#user-quotes)
 * [How Docsify-This Works](#how-docsify-this-works)
 * [Example Workflow using GitHub Markdown Files](#example-usage-scenarios)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
@@ -46,16 +45,6 @@ With Docsify-This you can:
 * Seamlessly embed constraint-free Markdown/HTML, which you have authored, into other platforms (e.g. LMS or CMS)
 * Reuse existing Markdown content by seamlessly embedding it within other platforms (e.g. LMS or CMS)
 * Utilize the supported URL parameters when embedding content to match each destination platform better visually
-
----
-
-### User Quotes
-
-> I've been using Docsify-This for my graduate publishing production course, partly to explore new models in markdown publishing, but partly also to tame Canvas, which I find awkward and cumbersome. Keeping all my course notes as plain text files and deploying them through Github and Docsify-this is easy and makes my course development a breeze. Plus, I keep all my materials locally, and can use re-use them without being reliant on Canvas.  
-— John Maxwell (Associate Professor, Publishing Program at Simon Fraser University, Canada)
-
-> Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
-— Alan Levine aka CogDog (Independent Educational Technologist, Saskatchewan, Canada)
 
 ---
 
