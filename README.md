@@ -145,9 +145,9 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 [A Collection of GitHub Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within a Canvas LMS site](https://canvas.sfu.ca/courses/69678).
 
-[Markdown Content Demo file](https://github.com/hibbitts-design/markdown-content-demo/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/markdown-content-demo/main&edit-link=https://github.com/hibbitts-design/markdown-content-demo/blob/main/README.md#/).  
+[Markdown Content Demo file](https://github.com/hibbitts-design/docsify-this-markdown-content-demo/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main&edit-link=https://github.com/hibbitts-design/docsify-this-markdown-content-demo/blob/main/README.md#/).  
 
-[Codeberg Markdown Content Demo file](https://codeberg.org/paulhibbitts/markdown-content-demo/src/branch/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.codeberg.page/paulhibbitts/markdown-content-demo/&edit-link=https://codeberg.org/paulhibbitts/markdown-content-demo/src/branch/main/README.md#/).  
+[Codeberg Markdown Content Demo file](https://codeberg.org/paulhibbitts/docsify-this-markdown-content-demo/src/branch/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.codeberg.page/paulhibbitts/docsify-this-markdown-content-demo/&edit-link=https://codeberg.org/paulhibbitts/docsify-this-markdown-content-demo/src/branch/main/README.md#/).  
 
 [GitHub's LaTeX Support Examples Markdown file](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with Table of Contents](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&toc=true).
 
