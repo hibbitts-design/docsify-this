@@ -2,7 +2,7 @@
 
 <div class="docsifythisheader">
   <div class="logoandtext">
-    <img src='https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/icon.svg' />
+    <img src='https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/icon.svg' />
     <h1>Docsify&#8288;&#8211;&#8288;This</h1>
   </div>
 </div>
@@ -291,7 +291,7 @@ Example pages, including the use of the `font-family`, `font-size` and `hide-cre
 #### [Docsify-This Multiple Page Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-site)
 
 Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:  
-* [Standalone Pages](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Standalone Pages")  
+* [Standalone Pages](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Standalone Pages")  
 * [Standalone Pages and 'Edit this Page' links](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Standalone Pages")  
 * [Standalone Pages with Docsify Navbar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar and an 'Edit this Page' link")  
 * [Standalone Pages with Docsify Navbar and 'GitHub Repository' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar and an 'GitHub Repository' link")  
@@ -316,7 +316,7 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 [A Collection of GitHub Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within a Canvas LMS site](https://canvas.sfu.ca/courses/69678).
 
-[Markdown Content Demo file](https://github.com/paulhibbitts/markdown-content-demo/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/markdown-content-demo/main&edit-link=https://github.com/paulhibbitts/markdown-content-demo/blob/main/README.md#/).  
+[Markdown Content Demo file](https://github.com/hibbitts-design/markdown-content-demo/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/markdown-content-demo/main&edit-link=https://github.com/hibbitts-design/markdown-content-demo/blob/main/README.md#/).  
 
 [Codeberg Markdown Content Demo file](https://codeberg.org/paulhibbitts/markdown-content-demo/src/branch/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.codeberg.page/paulhibbitts/markdown-content-demo/&edit-link=https://codeberg.org/paulhibbitts/markdown-content-demo/src/branch/main/README.md#/).  
 
