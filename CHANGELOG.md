@@ -4,6 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Remove extra space between icon and text label for 'Edit this Page' link
 
 ## [1.6] - 03/22/2023
 
