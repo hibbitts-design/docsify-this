@@ -1,8 +1,9 @@
 <div id="docsifythis">
 
 <div class="docsifythisheader">
+<div style="text-align:right;"><a class="navbarpill" href="http://publishing.docsify-this.net" target="_blank"><i class="fas fa-book fa-fw"></i>Publishing with Docsify-This Guide</a><a class="navbarpill" href="https://github.com/hibbitts-design/docsify-this" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a></div>
   <div class="logoandtext">
-    <img src='https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/icon.svg' />
+    <img src='https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/icon.svg' />
     <h1>Docsify&#8288;&#8211;&#8288;This</h1>
   </div>
 </div>
