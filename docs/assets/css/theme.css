@@ -834,10 +834,10 @@ span #docsifythisurlfield {
 
 #docsifythis .navbarpill {
   cursor: pointer;
-  color: #6a6a6a;
+  color: #484c55;
   height: auto;
   display: inline-block;
-  border: 1px solid #6a6a6a;
+  border: 1px solid #484c55;
   border-radius: 4rem;
   padding: 4px 14px 4px 14px;
   margin-bottom: 2px;
