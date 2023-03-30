@@ -519,8 +519,8 @@ function test() {
 }
 ```
 
-#### Changing the Default Values of the Docisfy-This Web Page Builder
-You can change the default values of the Docisfy-This Web Page Builder via URL parameters - this is especially useful when doing online sessions or workshops on Docsify-This. The parameters available are:
+#### Changing the Default Values of the Docsify-This Web Page Builder
+You can change the default values of the Docsify-This Web Page Builder via URL parameters - this is especially useful when doing online sessions or workshops on Docsify-This. The parameters available are:
 
 ##### url-field
 ```html
