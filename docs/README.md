@@ -664,15 +664,15 @@ The above Markdown is equivalent to the HTML markup `<i class="fas fa-home fa-fw
 
 ### Tips and Techniques
 
-**Matching Fonts with Your Destination Platform Content**  
+#### Matching Fonts with Your Destination Platform Content
 Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-familiy` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1  
 
-**Providing a Page Table of Contents within a Smaller Destination Platform Screen Area**  
+#### Providing a Page Table of Contents within a Smaller Destination Platform Screen Area
 If you want to include a Page Table of Contents with embedded Docsify-This content, but the destination platform screen area is not very wide, you might want to try the optional `toc-narrow` display option. For example, to use a narrower Table of Contents area that includes a smaller screen breakpoint:
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-01.md&toc-narrow=true  
 
-**Including Code Blocks**  
+#### Including Code Blocks
 Using [Prismjs](https://prismjs.com/) code blocks with syntax highlighting is supported for the languages [included with Docsify](https://docsify.js.org/#/language-highlight?id=language-highlighting) and as well Bash, Go, Java, Kotlin, PHP, Python and Swift. To embed a code block use the Markdown standard of triple backticks and start the block with the name of the language, for example to embed a block of Javascript code with syntax highlight the following would be used:  
 
 <pre>
@@ -691,31 +691,31 @@ function test() {
 }
 ```
 
-**Changing the Default Values of the Docisfy-This Web Page Builder**  
+#### Changing the Default Values of the Docisfy-This Web Page Builder
 You can change the default values of the Docisfy-This Web Page Builder via URL parameters - this is especially useful when doing online sessions or workshops on Docsify-This. The parameters available are:
 
-#### url-field
+##### url-field
 ```html
 https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
 ```
 
-#### toc
+##### toc
 ```html
 https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&toc=true
 ```
 
-#### sidebar
+##### sidebar
 ```html
 https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&sidebar=true
 ```
 
-#### edit-link-checkbox
+##### edit-link-checkbox
 Supported with GitHub or Codeberg hosted Markdown files.
 ```html
 https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link-checkbox=true
 ```
 
-#### show-page-options
+##### show-page-options
 ```html
 https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&show-page-options=true
 ```
