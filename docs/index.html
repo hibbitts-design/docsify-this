@@ -827,9 +827,9 @@
               }
 
               if (getURLParameterByName(['show-page-options', 'show-more-page-options'])) {
+                // console.log("show more!");
                 var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
-                var link = document.getElementById("docsifythisurlbuildershowhidelink");
-                link.text = 'Show Fewer Page Options \«';
+                document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
                 theDiv.style.display = "block";
               }
 
