@@ -519,6 +519,35 @@ function test() {
 }
 ```
 
+**Changing the Default Values of the Docisfy-This Web Page Builder**  
+You can change the default values of the Docisfy-This Web Page Builder via URL parameters - this is especially useful when doing online sessions or workshops on Docsify-This. The parameters available are:
+
+#### url-field
+```html
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
+```
+
+#### toc
+```html
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&toc=true
+```
+
+#### sidebar
+```html
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&sidebar=true
+```
+
+#### edit-link-checkbox
+Supported with GitHub or Codeberg hosted Markdown files.
+```html
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link-checkbox=true
+```
+
+#### show-page-options
+```html
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&show-page-options=true
+```
+
 ---
 
 ### Improving Markdown Previews in Text Editors
