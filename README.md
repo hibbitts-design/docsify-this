@@ -545,7 +545,7 @@ https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-th
 
 ##### show-page-options
 ```html
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&show-page-options=true
+https://docsify-this.net/?show-page-options=true
 ```
 
 ---
