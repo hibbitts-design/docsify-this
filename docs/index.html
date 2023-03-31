@@ -826,7 +826,7 @@
                 document.getElementById("editCheck").checked = true;
               }
 
-              if (getURLParameterByName(['show-page-options', 'show-more-page-options'])) {
+              if (getURLParameterByName('show-page-options', true, false, window.location.href, true) === 'true') {
                 // console.log("show more!");
                 var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
                 document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
