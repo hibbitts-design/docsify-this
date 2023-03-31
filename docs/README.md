@@ -656,7 +656,7 @@ Markdown:
 
 The display of [Font Awesome Free](https://fontawesome.com/icons) icons within Markdown content is supported with the following format:
 
-`﹕fas fa-home fa-fw﹕`
+:`fas fa-home fa-fw`:
 
 The above Markdown is equivalent to the HTML markup `<i class="fas fa-home fa-fw"></i>`.
 
