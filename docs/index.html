@@ -810,13 +810,13 @@
                 document.getElementById('docsifythisurlfield').value = markdownFileURL;
               }
 
-              if (getURLParameterByName('toc', true, false, window.location.href, true) === 'true') {
+              if (getURLParameterByName('toc-layout', true, false, window.location.href, true) === 'true') {
                 document.getElementById("stylecontentonly").checked = false;
                 document.getElementById("styletoc").checked = true;
                 document.getElementById("stylesidebar").checked = false;
               }
 
-              if (getURLParameterByName('sidebar', true, false, window.location.href, true) === 'true') {
+              if (getURLParameterByName('sidebar-layout', true, false, window.location.href, true) === 'true') {
                 document.getElementById("stylecontentonly").checked = false;
                 document.getElementById("styletoc").checked = false;
                 document.getElementById("stylesidebar").checked = true;

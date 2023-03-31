@@ -534,17 +534,17 @@ https://docsify-this.net/?url-field=empty
 
 ```
 
-##### toc
+##### toc-layout
 ```html
 
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&toc=true
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&toc-layout=true
 
 ```
 
-##### sidebar
+##### sidebar-layout
 ```html
 
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&sidebar=true
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&sidebar-layout=true
 
 ```
 
