@@ -709,10 +709,10 @@ https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-th
 https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&sidebar=true
 ```
 
-##### edit-link
+##### edit-link-checkbox
 Supported with GitHub or Codeberg hosted Markdown files.
 ```html
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link=true
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link-checkbox=true
 ```
 
 ##### show-page-options
