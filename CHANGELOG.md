@@ -3,7 +3,7 @@
 ## [1.6.1] - XX/XX/2023
 
 **New:**
-* Support optional URL parameters for key Web Page Builder defaults (`url-field`,`toc`,`sidebar`,`edit-link-checkbox`, and `show-page-options`)
+* Support optional URL parameters for key Web Page Builder defaults (`url-field`,`toc-layout`,`sidebar-layout`,`edit-link-checkbox`, and `show-page-options`)
 
 **Improved:**
 * Updated ReadMe
