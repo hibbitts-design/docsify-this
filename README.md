@@ -90,7 +90,7 @@ While all you need to get going with Docsify-This is a basic Markdown file, here
 
 #### [Docsify-This One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course)
 
-![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course-readme.png)
+![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course-readme.jpg)
 
 One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md) file displayed by Docsify-This as a:
 * [Standalone Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
@@ -99,7 +99,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 #### [Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article)  
 
-![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.png)
+![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.jpg)
 
 One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md) file displayed by Docsify-This as a:    
 * [Standalone Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
@@ -108,7 +108,7 @@ One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-p
 
 #### [Docsify-This LMS Content Pages Template](https://github.com/hibbitts-design/docsify-this-lms-content-pages)
 
-![Docsify-This LMS Content Pages Template](docs/images/docsify-this-lms-content-pages-readme.png)
+![Docsify-This LMS Content Pages Template](docs/images/docsify-this-lms-content-pages-readme.jpg)
 
 Example pages, including the use of the `font-family`, `font-size` and `hide-credits` URL parameters for seamless content embedding within the Canvas LMS, as displayed by Docsify-This:  
 * [Embeddable Home Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-lms-content-pages/main&homepage=home.md&font-family=Lato%20Extended,%20Lato,Helvetica%20Neue,%20Helvetica,%20Arial,%20sans-serif&amp;font-size=1&amp;hide-credits=true "Embeddable Home Page")
@@ -121,7 +121,7 @@ Example pages, including the use of the `font-family`, `font-size` and `hide-cre
 
 #### [Docsify-This Multiple Page Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-site)
 
-![Docsify-This Multiple Page Site](docs/images/docsify-this-multiple-page-site-readme.png)
+![Docsify-This Multiple Page Site](docs/images/docsify-this-multiple-page-site-readme.jpg)
 
 Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:  
 * [Standalone Pages](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Standalone Pages")  
