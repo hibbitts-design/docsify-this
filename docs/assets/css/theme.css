@@ -789,6 +789,7 @@ span #docsifythisurlfield {
   width: 85%;
   height: 85%;
   border: solid .5px #999999;
+  border-radius: 0.35em;
 }
 
 .markdown-section .docsifythiscolumn35 {
