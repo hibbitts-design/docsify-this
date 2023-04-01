@@ -216,7 +216,7 @@ While all you need to get going with Docsify-This is a basic Markdown file, here
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This One Page Course Template](images/docsify-this-one-page-course.png ':class=docsify-this-screenshot')
+![Docsify-This One Page Course Template](images/docsify-this-one-page-course.jpg ':class=docsify-this-screenshot')
 
 </div>
 
@@ -237,7 +237,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This One Page Article Template](images/docsify-this-one-page-article.png ':class=docsify-this-screenshot')
+![Docsify-This One Page Article Template](images/docsify-this-one-page-article.jpg ':class=docsify-this-screenshot')
 
 </div>
 
@@ -258,7 +258,7 @@ One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-p
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This LMS Content Pages Template](images/docsify-this-lms-content-pages.png ':class=docsify-this-screenshot')
+![Docsify-This LMS Content Pages Template](images/docsify-this-lms-content-pages.jpg ':class=docsify-this-screenshot')
 
 </div>
 
@@ -283,7 +283,7 @@ Example pages, including the use of the `font-family`, `font-size` and `hide-cre
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This Multiple Page Site](images/docsify-this-multiple-page-site.png ':class=docsify-this-screenshot')
+![Docsify-This Multiple Page Site](images/docsify-this-multiple-page-site.jpg ':class=docsify-this-screenshot')
 
 </div>
 
