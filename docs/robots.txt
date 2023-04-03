@@ -1,3 +1,4 @@
-user-agent: *
+User-agent: * 
+Disallow: /*?*
 
 Sitemap: https://docsify-this.net/sitemap.xml
