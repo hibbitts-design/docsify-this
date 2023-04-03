@@ -1,5 +1,3 @@
 user-agent: *
-Allow: /index.html
-Disallow: /
 
 Sitemap: https://docsify-this/sitemap.xml
