@@ -1,7 +1,7 @@
 <div id="docsifythis">
 
 <div class="docsifythisheader">
-<div style="margin-bottom: 6px; text-align:right;"><a class="navbarpill" href="http://publishing.docsify-this.net" target="_blank"><i class="fas fa-book fa-fw"></i>Publishing with Docsify-This Guide</a><a class="navbarpill" href="https://github.com/hibbitts-design/docsify-this" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a></div>
+<div style="margin-bottom: 6px; text-align:right;"><a class="navbarpill" href="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&browser-tab-title=Markdown%20Publishing%20with%20Docsify-This&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=3&coverpage=_coverpage.md&dark-mode=true#/" target="_blank"><i class="fas fa-book fa-fw"></i>Publishing with Docsify-This Guide</a><a class="navbarpill" href="https://github.com/hibbitts-design/docsify-this" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a></div>
   <div class="logoandtext">
     <img src='https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/icon.svg' />
     <h1>Docsify&#8288;&#8211;&#8288;This</h1>
