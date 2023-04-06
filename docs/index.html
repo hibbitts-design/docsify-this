@@ -1002,8 +1002,6 @@
           document.documentElement.style.setProperty('--cover-link-color', linkcolordarkmode);
           document.documentElement.style.setProperty('--cover-button-primary-background', linkcolordarkmode);
           document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + linkcolordarkmode);
-          document.documentElement.style.setProperty('--cover-button-color', linkcolordarkmode);
-          document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + linkcolordarkmode);
         } else {
           linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
           if (!(linkcolor === false)) {
@@ -1018,8 +1016,6 @@
             document.documentElement.style.setProperty('--cover-link-color', linkcolor);
             document.documentElement.style.setProperty('--cover-button-primary-background', linkcolor);
             document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + linkcolor);
-            document.documentElement.style.setProperty('--cover-button-color', linkcolor);
-            document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + linkcolor);
           } else {
             document.documentElement.style.setProperty('--navbar-root-color--active', '#1BA1EE');
             document.documentElement.style.setProperty('--blockquote-border-color', '#757b7f');
@@ -1031,8 +1027,6 @@
             document.documentElement.style.setProperty('--cover-link-color', '#1BA1EE');
             document.documentElement.style.setProperty('--cover-button-primary-background', '#1BA1EE');
             document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + '#1BA1EE');
-            document.documentElement.style.setProperty('--cover-button-color', '#1BA1EE');
-            document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#1BA1EE');
           }
           coverpagecolordarkmode = getURLParameterByName('coverpage-color-dark-mode', null, null, window.location.href, true);
           if (!(coverpagecolordarkmode === false)) {
