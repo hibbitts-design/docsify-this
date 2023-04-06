@@ -8,6 +8,7 @@
 **Improved:**
 * Updated ReadMe
 * Remove extra space between icon and text label for 'Edit this Page' link
+* Use default theme colours for dark mode coverpage buttons
 
 ## [1.6] - 03/22/2023
 
