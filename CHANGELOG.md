@@ -11,7 +11,7 @@
 * Use default theme colours for dark mode coverpage buttons
 
 **Bugfix:**
-* Use function for handling theme mode link color changes
+* Fixed incorrect handling of dark mode color changes through updated function
 
 ## [1.6] - 03/22/2023
 
