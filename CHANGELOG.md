@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.6.1] - XX/XX/2023
+## [1.6.1] - 04/09/2023
 
 **New:**
 * Support optional URL parameters for key Web Page Builder defaults (`url-field`,`toc-layout`,`sidebar-layout`,`edit-link-checkbox`, and `show-page-options`)
