@@ -661,7 +661,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 In addition to the Markdown CSS classes supported by Docsify-This, you can also define your own custom classes within your displayed Markdown files, for example:
 
-[Sample Custom CSS Class Button](# ':class=mybutton')
+[Custom CSS Class Button](# ':class=mybutton')
 
 CSS in Markdown file:  
 ```css
