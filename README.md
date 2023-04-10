@@ -360,7 +360,7 @@ The following style prefixes are available with Docsify-This:
 
 The following CSS classes are available when authoring your own Markdown content.  
 
-#### Badge
+#### badge
 
 ```html
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
