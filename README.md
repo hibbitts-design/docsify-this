@@ -21,9 +21,9 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 * [Markdown Syntax References](#markdown-syntax-references)
+* [Font Awesome Icons](#font-awesome-icons)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
 * [Custom Markdown CSS Classes](#custom-markdown-css-classes)
-* [Font Awesome Icons](#font-awesome-icons)
 * [Tips and Techniques](#tips-and-techniques)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
 * [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
@@ -326,6 +326,21 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 
 ---
 
+### Font Awesome Icons
+
+The display of [Font Awesome Free](https://fontawesome.com/icons) icons within Markdown content is supported with the following format:
+
+:`fas fa-home fa-fw`:
+
+The above Markdown is equivalent to the HTML markup `<i class="fas fa-home fa-fw"></i>`.
+
+The following style prefixes are available with Docsify-This:
+
+* fas (i.e. [Solid](https://fontawesome.com/search?o=r&m=free&s=solid))
+* fab (i.e. [Brands](https://fontawesome.com/search?o=r&m=free&f=brands))
+
+---
+
 ### Supported Markdown CSS Classes
 
 * [badge](#badge)
@@ -477,16 +492,6 @@ Markdown:
 ```markdown
 [Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=mybutton')
 ```
-
----
-
-### Font Awesome Icons
-
-The display of [Font Awesome Free](https://fontawesome.com/icons) icons within Markdown content is supported with the following format:
-
-:`fas fa-home fa-fw`:
-
-The above Markdown is equivalent to the HTML markup `<i class="fas fa-home fa-fw"></i>`.
 
 ---
 
