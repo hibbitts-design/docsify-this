@@ -532,7 +532,9 @@ The following style prefixes are available with Docsify-This:
 
 The following CSS classes are available when authoring your own Markdown content.  
 
-#### Badge
+#### badge
+
+<span class='badge'> Example Badge</span>
 
 ```html
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
@@ -553,6 +555,8 @@ Cropped to height of 350px on large screens, 175px on small screens.
 ```
 
 #### button
+
+[Example Button](# ':class=button')
 
 ```markdown
 [Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button')
