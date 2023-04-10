@@ -929,4 +929,9 @@ span #docsifythisurlfield {
     color: white;
   }
 
+  .markdown-section a.button {
+    color: #283339 !important;
+    background-color: #1BA1EE !important;
+  }
+  
 }
