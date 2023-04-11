@@ -298,7 +298,7 @@ iFrame code example, including URL parameters to seamlessly match Docsify-This c
 ```
 
 [How do I add an external URL as a module item?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-add-an-external-URL-as-a-module-item/ta-p/967)  
-Module external link example:  
+Module external link example, with automatic Page Table of Contents:  
 
 ```html
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-02.md&toc-narrow=true&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1&hide-credits=true
