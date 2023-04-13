@@ -4,6 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Support HTML img tags with relative paths for GitHub Markdown files 
 
 ## [1.6.1] - 04/09/2023
 
