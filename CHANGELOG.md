@@ -6,6 +6,9 @@
 * Updated ReadMe
 * Support HTML img tags with relative paths for GitHub and Codeberg Markdown files 
 
+**Bugfix:**
+* Removed support for Wikilinks due to unresolved conflict with supporting HTML img tags with relative paths
+
 ## [1.6.1] - 04/09/2023
 
 **New:**
