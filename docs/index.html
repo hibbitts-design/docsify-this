@@ -781,6 +781,7 @@
                 let url = image.getAttribute('src');
                 if (!(url.includes('://') > 0 || url.startsWith('//'))) {
                   // URL is relative
+                  url = url.replace(/^\/+/g, '');
                   url = currentBasePath + '/' + url;
                   image.setAttribute('src', url);
                   // console.log("changed src");
