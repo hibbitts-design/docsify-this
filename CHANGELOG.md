@@ -4,7 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
-* Support HTML img tags with relative paths for GitHub and Codeberg Markdown files 
+* Increased support of HTML img tags with relative paths for GitHub and Codeberg Markdown files (use of '../' not supported)
 
 ## [1.6.1] - 04/09/2023
 
