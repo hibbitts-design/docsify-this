@@ -545,48 +545,48 @@ body .docsify-pagination-container {
 
 @media only screen and (max-width: 480px) {
 
-  .markdown-section h1 {
+  .markdown-section h1, .markdown-section .alert h1, .markdown-section blockquote h1 {
     font-size: 1.35rem;
   }
 
-  .markdown-section h2 {
+  .markdown-section h2, .markdown-section .alert h2, .markdown-section blockquote h2 {
     font-size: 1.25rem;
   }
 
-  .markdown-section h3 {
+  .markdown-section h3, .markdown-section .alert h3, .markdown-section blockquote h3{
     font-size: 1.2rem;
   }
 
-  .markdown-section h4 {
+  .markdown-section h4, .markdown-section .alert h4, .markdown-section blockquote h4 {
     font-size: 1.10rem;
   }
 
-  .markdown-section h5 {
+  .markdown-section h5, .markdown-section .alert h5, .markdown-section blockquote h5 {
     font-size: 1.05rem;
   }
 
-  .markdown-section h6 {
+  .markdown-section h6, .markdown-section .alert h6, .markdown-section blockquote h6{
     font-size: 1rem;
   }
 
   .markdown-section .alert h1, .markdown-section blockquote h1 {
-    line-height: 1.45rem;
-  }
-
-  .markdown-section .alert h2, .markdown-section blockquote h2 { 
     line-height: 1.35rem;
   }
 
+  .markdown-section .alert h2, .markdown-section blockquote h2 { 
+    line-height: 1.25rem;
+  }
+
   .markdown-section .alert h3, .markdown-section blockquote h3 {
-    line-height: 1.3rem;
+    line-height: 1.2rem;
   }
 
   .markdown-section .alert h4, .markdown-section blockquote h4 {
-    line-height: 1.15rem;
+    line-height: 1.10rem;
   }
 
   .markdown-section .alert h5, .markdown-section blockquote h5 {
-    line-height: 1.1rem;
+    line-height: 1.05rem;
   }
 
   .markdown-section .alert h6v, .markdown-section blockquote h6 {
