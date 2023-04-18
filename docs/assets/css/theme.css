@@ -496,10 +496,6 @@
   margin: 1em 0;
 }
 
-.markdown-section .alert hr, .markdown-section blockquote hr {
-  margin: 1em 0;
-}
-
 .markdown-section .alert h1, .markdown-section blockquote h1 {
   font-size: 1.55rem;
   line-height: 1.55rem;
