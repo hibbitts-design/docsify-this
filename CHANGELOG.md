@@ -5,6 +5,7 @@
 **Improved:**
 * Updated ReadMe
 * Increased support of HTML img tags with relative paths for GitHub and Codeberg Markdown files (use of '../' not supported)
+* Refined header font size and line heights
 
 ## [1.6.1] - 04/09/2023
 
