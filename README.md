@@ -298,6 +298,8 @@ iFrame code example, including URL parameters to seamlessly match Docsify-This c
 <p><iframe style="overflow: hidden; border: 0px #ffffff none; background: #ffffff;" src="https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=home.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1&hide-credits=true" width="800px" height="1400px" allowfullscreen="allowfullscreen"></iframe></p>
 ```
 
+If a scroll bar is present, you may want to re-edit your iFrame code and adjust the "height" value.  
+
 [How do I add an external URL as a module item?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-add-an-external-URL-as-a-module-item/ta-p/967)  
 Module external link example, with Page Table of Contents:  
 
