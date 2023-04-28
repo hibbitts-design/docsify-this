@@ -4,13 +4,14 @@
 
 **Improved:**
 * Updated ReadMe
+* Refined responsive header line heights
 
 ## [1.6.2] - 04/21/2023
 
 **Improved:**
 * Updated ReadMe
 * Increased support of HTML img tags with relative paths for GitHub and Codeberg Markdown files (use of '../' not supported)
-* Refined responsize header font size and line heights
+* Refined responsive header font size and line heights
 
 ## [1.6.1] - 04/09/2023
 
