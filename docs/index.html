@@ -469,102 +469,70 @@
       document.getElementById("hypothesisenable").checked = false;
     }
 
+    function setColorProperties(color) {
+      document.documentElement.style.setProperty('--navbar-root-color--active', color);
+      document.documentElement.style.setProperty('--blockquote-border-color', color);
+      document.documentElement.style.setProperty('--sidebar-name-color', color);
+      document.documentElement.style.setProperty('--sidebar-nav-link-color--active', color);
+      document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', color);
+      document.documentElement.style.setProperty('--link-color', color);
+      document.documentElement.style.setProperty('--pagination-title-color', color);
+      document.documentElement.style.setProperty('--cover-link-color', color);
+      document.documentElement.style.setProperty('--cover-button-primary-background', color);
+      document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + color);
+    }
+
     function updateThemeModeLinkColors() {
       // Update link colors based on current theme mode
-      enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
-      if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) && (enabledarkmode || darkmode)) {
+      const darkModeEnabled = getURLParameterByName('dark-mode', null, null, window.location.href, true) || darkmode;
+
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && darkModeEnabled) {
         // dark mode
-        linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
-        if (!(linkcolordarkmode === false)) {
-          linkcolordarkmode = '#' + linkcolordarkmode;
-          document.documentElement.style.setProperty('--navbar-root-color--active', linkcolordarkmode);
-          document.documentElement.style.setProperty('--blockquote-border-color', linkcolordarkmode);
-          document.documentElement.style.setProperty('--sidebar-name-color', linkcolordarkmode);
-          document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolordarkmode);
-          document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolordarkmode);
-          document.documentElement.style.setProperty('--link-color', linkcolordarkmode);
-          document.documentElement.style.setProperty('--pagination-title-color', linkcolordarkmode);
-          document.documentElement.style.setProperty('--cover-link-color', linkcolordarkmode);
-          document.documentElement.style.setProperty('--cover-button-primary-background', linkcolordarkmode);
-          document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + linkcolordarkmode);
-          document.documentElement.style.setProperty('--cover-button-color', linkcolordarkmode);
-          document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + linkcolordarkmode);
+        const linkColorDarkMode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
+
+        if (linkColorDarkMode !== false) {
+          setColorProperties('#' + linkColorDarkMode);
         } else {
-          linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
-          if (!(linkcolor === false)) {
-            linkcolor = '#' + linkcolor;
-            document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
-            document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
-            document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
-            document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
-            document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
-            document.documentElement.style.setProperty('--link-color', linkcolor);
-            document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
-            document.documentElement.style.setProperty('--cover-link-color', linkcolor);
-            document.documentElement.style.setProperty('--cover-button-primary-background', linkcolor);
-            document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + linkcolor);
+          const linkColor = getURLParameterByName('link-color', null, null, window.location.href, true);
+
+          if (linkColor !== false) {
+            setColorProperties('#' + linkColor);
             document.documentElement.style.setProperty('--cover-button-color', '#FFFFFF');
-            document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#59666D');
+            document.documentElement.style.setProperty('--cover-button-border', '1px solid #59666D');
           } else {
-            document.documentElement.style.setProperty('--navbar-root-color--active', '#1BA1EE');
-            document.documentElement.style.setProperty('--blockquote-border-color', '#757b7f');
-            document.documentElement.style.setProperty('--sidebar-name-color', '#1BA1EE');
-            document.documentElement.style.setProperty('--sidebar-nav-link-color--active', '#1BA1EE');
-            document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', '#1BA1EE');
-            document.documentElement.style.setProperty('--link-color', '#1BA1EE');
-            document.documentElement.style.setProperty('--pagination-title-color', '#1BA1EE');
-            document.documentElement.style.setProperty('--cover-link-color', '#1BA1EE');
-            document.documentElement.style.setProperty('--cover-button-primary-background', '#1BA1EE');
-            document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + '#1BA1EE');
-            // document.documentElement.style.setProperty('--cover-button-color', '#1BA1EE');
-            document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#597381');
+            setColorProperties('#1BA1EE');
+            document.documentElement.style.setProperty('--cover-button-border', '1px solid #597381');
           }
         }
-        coverpagecolordarkmode = getURLParameterByName('coverpage-color-dark-mode', null, null, window.location.href, true);
-        if (!(coverpagecolordarkmode === false)) {
-          coverpagecolordarkmode = '#' + coverpagecolordarkmode;
-          document.documentElement.style.setProperty('--cover-background-color', coverpagecolordarkmode);
+
+        const coverPageColorDarkMode = getURLParameterByName('coverpage-color-dark-mode', null, null, window.location.href, true);
+
+        if (coverPageColorDarkMode !== false) {
+          document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColorDarkMode);
         } else {
           document.documentElement.style.setProperty('--cover-background-color', '#262d30');
         }
       } else {
         // light mode
-        linkcolor = getURLParameterByName('link-color', null, null, window.location.href, true);
-        if (!(linkcolor === false)) {
-          linkcolor = '#' + linkcolor;
-          document.documentElement.style.setProperty('--navbar-root-color--active', linkcolor);
-          document.documentElement.style.setProperty('--blockquote-border-color', linkcolor);
-          document.documentElement.style.setProperty('--sidebar-name-color', linkcolor);
-          document.documentElement.style.setProperty('--sidebar-nav-link-color--active', linkcolor);
-          document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', linkcolor);
-          document.documentElement.style.setProperty('--link-color', linkcolor);
-          document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
-          document.documentElement.style.setProperty('--cover-link-color', linkcolor);
-          document.documentElement.style.setProperty('--cover-button-primary-background', linkcolor);
-          document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + linkcolor);
-          document.documentElement.style.setProperty('--cover-button-color', linkcolor);
-          document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + linkcolor);
+        const linkColor = getURLParameterByName('link-color', null, null, window.location.href, true);
+
+        if (linkColor !== false) {
+          setColorProperties('#' + linkColor);
+          document.documentElement.style.setProperty('--cover-button-color', '#' + linkColor);
+          document.documentElement.style.setProperty('--cover-button-border', '1px solid #' + linkColor);
         } else {
-          document.documentElement.style.setProperty('--navbar-root-color--active', '#0374B5');
-          document.documentElement.style.setProperty('--blockquote-border-color', '#757b7f');
-          document.documentElement.style.setProperty('--sidebar-name-color', '#0374B5');
-          document.documentElement.style.setProperty('--sidebar-nav-link-color--active', '#0374B5');
-          document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', '#0374B5');
-          document.documentElement.style.setProperty('--link-color', '#0374B5');
-          document.documentElement.style.setProperty('--pagination-title-color', '#0374B5');
-          document.documentElement.style.setProperty('--cover-link-color', '#0374B5');
-          document.documentElement.style.setProperty('--cover-button-primary-background', '#0374B5');
-          document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + '#0374B5');
-          // document.documentElement.style.setProperty('--cover-button-color', '#0374B5');
-          document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#0374B5');
+          setColorProperties('#0374B5');
+          document.documentElement.style.setProperty('--cover-button-border', '1px solid #0374B5');
         }
-        coverpagecolor = getURLParameterByName('coverpage-color', null, null, window.location.href, true);
-        if (!(coverpagecolor === false)) {
-          coverpagecolor = '#' + coverpagecolor;
-          document.documentElement.style.setProperty('--cover-background-color', coverpagecolor);
+
+        const coverPageColor = getURLParameterByName('coverpage-color', null, null, window.location.href, true);
+
+        if (coverPageColor !== false) {
+          document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColor);
         } else {
           document.documentElement.style.setProperty('--cover-background-color', '#6c8a9a');
         }
+
       }
     }
 
