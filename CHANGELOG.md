@@ -9,6 +9,7 @@
 
 **Bugfix:**
 * Removed extraneous character from index.html
+* Fix multiple page 'Edit this Page' link updating
 
 ## [1.6.3] - 05/07/2023
 
