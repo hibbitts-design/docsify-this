@@ -2,6 +2,9 @@
 
 ## [1.6.4] - XX/XX/2023
 
+**Improved:**
+* Refactored handling of light/dark theme mode switching
+
 **Bugfix:**
 * Removed extraneous character from index.html
 
