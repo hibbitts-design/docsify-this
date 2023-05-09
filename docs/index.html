@@ -585,84 +585,40 @@
               var currentBasePath = '';
               currentBasePath = getURLParameterByName('basePath', null, null, window.location.href, true);
 
+              // List of parameter names to check
+              var paramNames = [
+              'browser-tab-title',
+              'dark-mode',
+              'edit-link-text',
+              'edit-link-top',
+              'font-family',
+              'font-size',
+              'header-weight',
+              'hide-credits',
+              'hypothesis',
+              'line-height',
+              'link-color-dark-mode',
+              'link-color',
+              'loadFooter',
+              'loadNavbar',
+              'maxLevel',
+              'page-title',
+              'sidebar',
+              'toc',
+              'toc-headings',
+              'toc-narrow',
+              ];
+
               // Carry any existing URL parms in links
               var URLparms = '';
-              var editThisPageLinkURLparm = ''
 
-              if (getURLParameterByName('sidebar')) {
-                URLparms = URLparms + `&sidebar=` + getURLParameterByName('sidebar', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('toc')) {
-                URLparms = URLparms + `&toc=` + getURLParameterByName('toc', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('toc-narrow')) {
-                URLparms = URLparms + `&toc-narrow=` + getURLParameterByName('toc-narrow', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('toc-headings')) {
-                URLparms = URLparms + `&toc-headings=` + getURLParameterByName('toc-headings', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('browser-tab-title')) {
-                URLparms = URLparms + `&'browser-tab-title=` + getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('page-title')) {
-                URLparms = URLparms + `&'page-title=` + getURLParameterByName('page-title', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('header-weight')) {
-                URLparms = URLparms + `&header-weight=` + getURLParameterByName('header-weight', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('font-family')) {
-                URLparms = URLparms + `&font-family=` + getURLParameterByName('font-family', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('font-size')) {
-                URLparms = URLparms + `&font-size=` + getURLParameterByName('font-size', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('line-height')) {
-                URLparms = URLparms + `&line-height=` + getURLParameterByName('line-height', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('link-color')) {
-                URLparms = URLparms + `&link-color=` + getURLParameterByName('link-color', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('link-color-dark-mode')) {
-                URLparms = URLparms + `&link-color-dark-mode=` + getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('edit-link-text')) {
-                URLparms = URLparms + `&edit-link-text=` + getURLParameterByName('edit-link-text', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('edit-link-top')) {
-                URLparms = URLparms + `&edit-link-top=` + getURLParameterByName('edit-link-top', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('loadNavbar')) {
-                URLparms = URLparms + `&loadNavbar=` + getURLParameterByName('loadNavbar', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('loadFooter')) {
-                URLparms = URLparms + `&loadFooter=` + getURLParameterByName('loadFooter', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('hypothesis')) {
-                URLparms = URLparms + `&hypothesis=` + getURLParameterByName('hypothesis', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('maxLevel')) {
-                URLparms = URLparms + `&maxLevel=` + getURLParameterByName('maxLevel', null, null, window.location.href, true);
-              }
-
-              if (getURLParameterByName('dark-mode')) {
-                URLparms = URLparms + `&dark-mode=` + getURLParameterByName('dark-mode', null, null, window.location.href, true);
+              // Loop through the parameter names and check if they exist in the URL
+              for (var i = 0; i < paramNames.length; i++) {
+                var paramName = paramNames[i];
+                var paramValue = getURLParameterByName(paramName, null, null, window.location.href, true);
+                if (paramValue) {
+                  URLparms += '&' + paramName + '=' + encodeURIComponent(paramValue);
+                }
               }
 
               const links = Array.from(htmlElement.querySelectorAll('a'))
