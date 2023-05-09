@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.6.4] - XX/XX/2023
+
+**Bugfix:**
+* Removed extraneous character from index.html
+
 ## [1.6.3] - 05/07/2023
 
 **Improved:**
