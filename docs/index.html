@@ -621,7 +621,7 @@
                 }
               }
 
-              const links = Array.from(htmlElement.querySelectorAll('a'))
+              const links = Array.from(htmlElement.querySelectorAll('a'));
 
               for (const link of links) {
                 // Find any local Markdown file links
@@ -657,8 +657,8 @@
                     // Update Markdown file link
                     var newURL = ''
                     // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link)
-                    if ((editThisPageLinkURLparm === "" && !(getURLParameterByName('hypothesis'))) || (getURLParameterByName('loadNavbar'))) {
-                      newURL = '#/' + lastSegment
+                    if ((editThisPageLinkURLparm === "" && !(getURLParameterByName('hypothesis')))) {
+                      newURL = '#/' + lastSegment;
                     } else {
                       newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
                     }
