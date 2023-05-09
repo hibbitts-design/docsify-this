@@ -4,6 +4,7 @@
 
 **Improved:**
 * Refactored handling of light/dark theme mode switching
+* Refactored passing of existing URL parameters
 
 **Bugfix:**
 * Removed extraneous character from index.html
