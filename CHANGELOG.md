@@ -5,6 +5,7 @@
 **Improved:**
 * Refactored handling of light/dark theme mode switching
 * Refactored passing of existing URL parameters
+* Updated ReadMe
 
 **Bugfix:**
 * Removed extraneous character from index.html
