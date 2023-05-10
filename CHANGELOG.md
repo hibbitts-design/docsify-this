@@ -6,6 +6,7 @@
 * Refactored handling of light/dark theme mode switching
 * Refactored passing of existing URL parameters
 * Updated ReadMe
+* Better support for linking to a single Git repository URL
 
 **Bugfix:**
 * Removed extraneous character from index.html
