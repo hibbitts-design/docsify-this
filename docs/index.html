@@ -623,6 +623,9 @@
 
               const links = Array.from(htmlElement.querySelectorAll('a'));
 
+              var existingEditThisPageLink = '';
+              existingEditThisPageLink = getURLParameterByName('edit-link', null, null, window.location.href, true);
+
               for (const link of links) {
                 // Find any local Markdown file links
                 if (link.getAttribute('href')?.match(/^#/)) {
@@ -635,10 +638,8 @@
                   // Check to make sure link is not Docsify id anchor link
                   var editThisPageLinkURLparm = '';
                   if (lastSegment.startsWith("?id") === false) {
-                    if (getURLParameterByName('edit-link')) {
+                    if (existingEditThisPageLink) {
                       // Calculate existing edit-link URL parm in link
-                      var existingEditThisPageLink = '';
-                      existingEditThisPageLink = getURLParameterByName('edit-link', null, null, window.location.href, true);
                       if (currentBasePath.includes("githubusercontent.com") && (existingEditThisPageLink.substr(existingEditThisPageLink.length - 3) == '.md')) {
                         var editThisPageLink = '';
                         editThisPageLink = decodeURIComponent(currentBasePath);
