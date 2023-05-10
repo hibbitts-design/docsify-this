@@ -7,6 +7,7 @@
 * Refactored handling of light/dark theme mode switching
 * Refactored passing of existing URL parameters
 * Better support for linking to a single Git repository URL
+* More efficient calculation of 'Edit this Page' URLs
 
 **Bugfix:**
 * Removed extraneous character from index.html
