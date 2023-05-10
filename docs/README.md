@@ -808,6 +808,9 @@ The provided **basePath** parameter and/or optional **homepage** parameter may n
 
 When displaying GitHub Markdown files, the branch name is assumed to be `main`, and other paths will likely cause a 404 message. When displaying Codeberg Markdown files, the path is assumed to contain `/src/branch/main` and other paths will likely cause a 404 message.  
 
+_Generation of 'Edit this Page' links on multiple page Markdown sites with a Navbar not working as expected._   
+Due to not being able to update Navbar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround.  
+
 _Updated Markdown file not displayed in the Browser._  
 Docsify is likely displaying the last cached version. To ensure the most recent version of a file is loaded, do a [hard refresh of your Browser cache](https://www.makeuseof.com/hard-refresh-browser/).
 
