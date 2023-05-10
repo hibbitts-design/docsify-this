@@ -3,9 +3,9 @@
 ## [1.6.4] - XX/XX/2023
 
 **Improved:**
+* Updated ReadMe
 * Refactored handling of light/dark theme mode switching
 * Refactored passing of existing URL parameters
-* Updated ReadMe
 * Better support for linking to a single Git repository URL
 
 **Bugfix:**
