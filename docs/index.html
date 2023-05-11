@@ -661,12 +661,13 @@
                       }
                     }
                     // Update Markdown file link
-                    var newURL = ''
+                    var newURL = '';
                     // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link Markdown pages)
-                    if (!(editThisPageLinkURLparm.substr(editThisPageLinkURLparm.length - 3) == '.md' && !(getURLParameterByName('hypothesis')))) {
+                    var isDynamicLink = editThisPageLinkURLparm.substr(-3) === '.md' && !getURLParameterByName('hypothesis');
+                    if (!isDynamicLink) {
                       newURL = '#/' + lastSegment;
                     } else {
-                      newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
+                      newURL = url + '?basePath=' + currentBasePath + '&homepage=' + lastSegment + '.md' + URLparms + editThisPageLinkURLparm;
                     }
                     link.setAttribute('href', newURL);
                   }
