@@ -430,7 +430,7 @@ Set a custom color for the coverpage with the optional **coverpage-color** param
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&coverpage-color=cc0000
 
 ##### coverpage-color-dark-mode
-Set a custom color for the coverpage in dark mode with the  optional **coverpage-color-dark-mode** parameter, for example:  
+Set a custom color for the coverpage in dark mode with the optional **coverpage-color-dark-mode** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&dark-mode=true&coverpage-color-dark-mode=4d0000
 
 ##### dark-mode
