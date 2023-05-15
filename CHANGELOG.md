@@ -2,6 +2,9 @@
 
 ## [1.6.5] - XX/XX/2023
 
+**Improved:**
+* Updated ReadMe
+
 **Bugfix:**
 * Update all needed Coverpage elements when switching light/dark theme modes
 
