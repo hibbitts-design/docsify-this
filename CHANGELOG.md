@@ -4,6 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Make filename extension handling more robust and flexible
 
 **Bugfix:**
 * Update all needed Coverpage elements when switching light/dark theme modes
