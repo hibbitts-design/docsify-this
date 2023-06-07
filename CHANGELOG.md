@@ -8,6 +8,7 @@
 
 **Bugfix:**
 * Update all needed Coverpage elements when switching light/dark theme modes
+* Handle the presence of id links with 'Edit this Page' URL calculation
 
 ## [1.6.4] - 05/11/2023
 
