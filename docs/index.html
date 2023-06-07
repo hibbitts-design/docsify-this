@@ -236,7 +236,7 @@
           const cb1 = document.querySelector('#editCheck');
           if (cb1.checked) {
             if (gitlinkPageURL) {
-              if (!lastSegment.includes(".md")) {
+              if (!(isExtensionAllowed(lastSegment))) {
                 // No filename is present, so assume default README.md file
                 gitlinkPageURL = gitlinkPageURL + "README.md";
               }
@@ -352,12 +352,12 @@
             URLparms = URLparms + `&link-color=` + hexCode;
           }
 
-          if (!lastSegment.includes(".md")) {
-            // No filename is present, so assume default README.md file if full path provided
+          if (!(isExtensionAllowed(lastSegment))) {
+            // No filename with supported extension is present, so assume default README.md file if full path provided
             if (url.includes("blob")) {
               var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
             } else {
-              alert("Please include the full path and filename in the Markdown file URL (e.g. 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md').");
+              alert("Please include the full path and filename with a supported extension (" + getAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
               selectText();
               return;
             }
@@ -551,6 +551,20 @@
       return '';
     }
 
+    function getAllowedFileExtensions() {
+      // Return list of supported file extensions
+      return "md";
+    }
+
+    function isExtensionAllowed(fileURL) {
+      // Check if filename contains an allowed file extension
+      var allowedExtensions = getAllowedFileExtensions();
+      fileURL = fileURL.split('?id')[0];
+      var extension = fileURL.split(".").pop();
+
+      return allowedExtensions.includes(extension.toLowerCase());
+    }
+
     // Docsify
     window.$docsify = {
       // GENERAL SETTINGS
@@ -654,7 +668,9 @@
                   lastSegment = lastSegment.replace('#/', '');
                   lastSegment = lastSegment.replace('./', '');
                   lastSegment = lastSegment.replace(fileExt, '');
-                  lastSegment = lastSegment.substring(0, lastSegment.indexOf("?id="));
+                  if (isExtensionAllowed(lastSegment)) {
+                    lastSegment = lastSegment.substring(0, lastSegment.indexOf("?id"));
+                  }
                   // Check to make sure link is not Docsify id anchor link
                   var editThisPageLinkURLparm = '';
                   if (lastSegment.startsWith("?id") === false) {
@@ -683,7 +699,7 @@
                     // Update Markdown file link
                     var newURL = '';
                     // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link Markdown pages)
-                    var isDynamicLink = (editThisPageLinkURLparm.substr(-3) === '.md') && !getURLParameterByName('hypothesis');
+                    var isDynamicLink = (isExtensionAllowed(editThisPageLinkURLparm) && !(editThisPageLinkURLparm === "")) && !getURLParameterByName('hypothesis');
                     if (!isDynamicLink) {
                       newURL = '#/' + lastSegment;
                     } else {
