@@ -1,11 +1,12 @@
 # Changelog
 
-## [1.6.5] - 06/08/2023
+## [1.6.5] - 06/09/2023
 
 **Improved:**
 * Updated ReadMe
 * Make filename extension handling more robust and flexible
 * Improve extension checking and related error message
+* Updated to Docsify Mermaid Plugin v2, which with Mermaid v10 which only fully loads Mermaid as required when displaying remote Markdown files
 
 **Bugfix:**
 * Update all needed Coverpage elements when switching light/dark theme modes
