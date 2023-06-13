@@ -725,6 +725,9 @@ function test() {
 }
 ```
 
+#### Display of AsciiDoc files (file extension .adoc)
+The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) by passing the relevant filenames within a Docsify-This URL (not included in the Web Page Builder), for example: https://paulhibbitts.github.io/test-docsify-this-asciidoc/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc  
+
 #### Changing the Default Values of the Docsify-This Web Page Builder
 You can change the default values of the Docsify-This Web Page Builder via URL parameters - this is especially useful when doing online sessions or workshops on Docsify-This. The parameters available are:
 
