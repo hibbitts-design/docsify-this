@@ -1,9 +1,11 @@
 # Changelog
 
-## [1.6.5] - 06/09/2023
+## [1.6.6] - XX/XX/2023
 
 **New:**
 * Initial support for the display of AsciiDoc files ('.adoc' extension) via DownDoc (with thanks and appreciation to @gchiesa for developing the plugin)
+
+## [1.6.5] - 06/09/2023
 
 **Improved:**
 * Updated ReadMe
