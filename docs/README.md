@@ -455,7 +455,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### loadSidebar
 Load a Docsify custom sidebar from the Markdown file passed with the optional **loadSidebar** Docsify parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md.  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md.  
 
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
