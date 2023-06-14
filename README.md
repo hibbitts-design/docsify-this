@@ -281,6 +281,10 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md
 
+##### loadSidebar
+Load a Docsify custom sidebar from the Markdown file passed with the optional **loadSidebar** Docsify parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md.  
+
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
@@ -612,8 +616,8 @@ The provided **basePath** parameter and/or optional **homepage** parameter may n
 
 When displaying GitHub Markdown files, the branch name is assumed to be `main`, and other paths will likely cause a 404 message. When displaying Codeberg Markdown files, the path is assumed to contain `/src/branch/main` and other paths will likely cause a 404 message.  
 
-_Generation of 'Edit this Page' links on multiple page Markdown sites with a Navbar not working as expected._   
-Due to not being able to update Navbar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround, for example https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository.  
+_Generation of 'Edit this Page' links on multiple page Markdown sites with a Navbar or custmom Sidebar not working as expected._   
+Due to not being able to update Navbar or custom Sidebar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository and https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&edit-link=https://github.com/paulhibbitts/cmpt-363&edit-link-text=GitHub%20Repository#/222/home
 
 _Updated Markdown file not displayed in the Browser._  
 Docsify is likely displaying the last cached version. To ensure the most recent version of a file is loaded, do a [hard refresh of your Browser cache](https://www.makeuseof.com/hard-refresh-browser/).
