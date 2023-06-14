@@ -461,6 +461,10 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
+##### subMaxLevel
+Set the maximum header level of the Docsify sidebar with the optional **subMaxLevel** Docsify parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md&subMaxLevel=1  
+
 ---
 
 ### Embedding Docsify-This Pages into Other Platforms
