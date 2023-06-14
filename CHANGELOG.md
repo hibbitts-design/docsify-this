@@ -6,6 +6,9 @@
 * Initial support for the display of AsciiDoc files ('.adoc' extension) via DownDoc (with thanks and appreciation to @gchiesa for developing the plugin)
 * Support possible Docsify loadSidebar parameter (`loadSidebar=_sidebar.md`) to display custom sidebar
 
+**Improved:**
+* Updated ReadMe
+
 ## [1.6.5] - 06/09/2023
 
 **Improved:**
