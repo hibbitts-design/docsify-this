@@ -928,6 +928,7 @@ span #docsifythisurlfield {
 .sidebar h1 {
   pointer-events: none;
   margin-top: 0;
+  margin-left: -18px;
   font-size: 1.40rem;
   font-weight: normal;
   text-align: center;
