@@ -278,11 +278,11 @@ Load a Docsify footer from the Markdown file passed with the optional **loadFoot
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadFooter=_footer.md
 
 ##### loadNavbar
-Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter, for example:  
+Load a [Docsify custom navbar](https://docsify.js.org/#/custom-navbar?id=custom-navbar) from the Markdown file passed with the optional **loadNavbar** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md
 
 ##### loadSidebar
-Load a Docsify custom sidebar from the Markdown file passed with the optional **loadSidebar** Docsify parameter, for example:  
+Load a[Docsify custom sidebar](https://docsify.js.org/#/more-pages?id=sidebar) from the Markdown file passed with the optional **loadSidebar** Docsify parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md  
 
 ##### page-title
