@@ -9,6 +9,7 @@
 **Improved:**
 * Updated ReadMe
 * Support the use of an H1 tag as a site title when a custom sidebar is used
+* Remove unintended double thick bottom border from accordion elements
 
 ## [1.6.5] - 06/09/2023
 
