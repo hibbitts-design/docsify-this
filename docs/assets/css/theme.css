@@ -362,7 +362,9 @@
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
-  border: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  border-left: 1px solid #CCCCCC;
   border-radius: .15rem;
 }
 
