@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.6.6] - XX/XX/2023
+## [1.7] - XX/XX/2023
 
 **New:**
 * Initial support for the display of AsciiDoc files ('.adoc' extension) via DownDoc (with thanks and appreciation to @gchiesa for developing the plugin)
@@ -16,6 +16,7 @@
 
 **Bugfix:**
 * Remove unneeded javascript .map files
+* Require filename is present in Web Page Builder Markdown file URL (no longer default to README.md)
 
 ## [1.6.5] - 06/09/2023
 
