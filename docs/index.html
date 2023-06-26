@@ -353,25 +353,16 @@
             URLparms = URLparms + `&link-color=` + hexCode;
           }
 
-          if (!(isExtensionAllowed(lastSegment))) {
-            // No filename with supported extension is present, so assume default README.md file if full path provided
-            if (url.includes("blob")) {
-              var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
-            } else {
-              alert("Please include the full path and filename with a supported extension (" + getAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
-              selectText();
-              return;
-            }
+          if (!(isExtensionAllowed(lastSegment)) || lastSegment === "") {
+          // Filename without supported extension or missing filename
+            alert("Please include the full path and filename with a supported extension (" + getAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
+            selectText();
+            return;
           } else {
-            if (lastSegment == "README.md") {
-              // Default is README.md so homepage parm not needed
-              url = url.substring(0, url.lastIndexOf("/"));
-              var baseURL = docsifyURL + `?basePath=${url}` + URLparms;
-                } else {
-                  url = url.substring(0, url.lastIndexOf("/"));
-                  var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
-                }
-            }
+            // Filename with supported extension is present along with full path and filename
+            url = url.substring(0, url.lastIndexOf("/"));
+            var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
+          }
 
             window.open(baseURL);
 
