@@ -165,4 +165,3 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   };
   window.$docsify.plugins = (window.$docsify.plugins || []).concat((0, _plugin.default)(props));
   },{"./plugin":"GOVZ"}]},{},["Focm"], null)
-  //# sourceMappingURL=/docsify-mermaid2.js.map
