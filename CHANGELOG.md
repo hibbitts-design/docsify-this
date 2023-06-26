@@ -5,12 +5,17 @@
 **New:**
 * Initial support for the display of AsciiDoc files ('.adoc' extension) via DownDoc (with thanks and appreciation to @gchiesa for developing the plugin)
 * Support possible Docsify loadSidebar parameter (`loadSidebar=_sidebar.md`) to display custom sidebar
+* Support for loading a custom favicon (`loadFavicon`)
+* All iframes with source domains 'youtube.com' or 'docs.google.com' made responsive through the automatic addition of the CSS Markdown class `video-container-16by9`.  
 
 **Improved:**
 * Updated ReadMe
 * Support the use of an H1 tag as a site title when a custom sidebar is used
 * Remove unintended double thick bottom border from accordion elements
 * Updated to use Docsify v4.13.1
+
+**Bugfix:**
+* Remove unneeded javascript .map files
 
 ## [1.6.5] - 06/09/2023
 
