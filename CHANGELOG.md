@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.7] - XX/XX/2023
+## [1.7.0] - XX/XX/2023
 
 **New:**
 * Initial support for the display of AsciiDoc files ('.adoc' extension) via DownDoc (with thanks and appreciation to @gchiesa for developing the plugin)
@@ -68,7 +68,7 @@
 **Bugfix:**
 * Fixed incorrect handling of dark mode color changes through updated function
 
-## [1.6] - 03/22/2023
+## [1.6.0] - 03/22/2023
 
 **New:**
 * Coloris color picker (with thanks and appreciation to @mdbassit)
