@@ -1,12 +1,12 @@
 # Changelog
 
-## [1.7.0] - XX/XX/2023
+## [1.7.0] - 06/27/2023
 
 **New:**
-* Initial support for the display of AsciiDoc files ('.adoc' extension) via DownDoc (with thanks and appreciation to @gchiesa for developing the plugin)
+* Initial support for the display of AsciiDoc files ('.adoc' extension) via manual Docsify-This URLs through DownDoc (with thanks and appreciation to @gchiesa for developing the plugin)
 * Support possible Docsify loadSidebar parameter (`loadSidebar=_sidebar.md`) to display a custom sidebar for multiple page sites
 * Support for loading a custom favicon image file (`loadFavicon=favicon.png`)
-* All iframes with source domains 'youtube.com' or 'docs.google.com' made responsive through the automatic addition of the CSS Markdown class `video-container-16by9`
+* All iFrames with source domains 'youtube.com' or 'docs.google.com' made responsive through the automatic addition of the CSS Markdown class `video-container-16by9`
 
 **Improved:**
 * Updated ReadMe
