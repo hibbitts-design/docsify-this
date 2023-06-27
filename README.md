@@ -473,6 +473,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```
 
 #### video-container-16by9
+Automatically added to all iframes with the source domains 'youtube.com' or 'docs.google.com'.  
 ```html
 <div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
