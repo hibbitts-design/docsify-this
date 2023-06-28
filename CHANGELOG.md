@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.7.1] - XX/XX/2023
+
+**New:**
+* Support for enabling image zoom (`zoom-image=true`), where tapping on images enlarges them 
+* Added example Docsify-This template (Course Site Template) 
+
 ## [1.7.0] - 06/27/2023
 
 **New:**
