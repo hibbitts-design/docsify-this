@@ -314,7 +314,7 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 #### [Docsify-This Course Site Template](https://github.com/hibbitts-design/docsify-this-course-site)
 
-Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-this-course-site/blob/main/home.md) file displayed by Docsify-This as:   
+Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-this-course-site/blob/main/home.md) file, including the use of a custom Docsify [_sidebar.md](https://github.com/hibbitts-design/docsify-this-course-site/blob/main/_sidebar.md) file, displayed by Docsify-This as:  
 * [Standalone Site](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&hide-credits=true&loadFooter=_footer.md&browser-tab-title=CMPT-363-222 "Docsify-This Course Site")  
 * [Standalone Site and 'Propose an Edit to this Site' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&hide-credits=true&loadFooter=_footer.md&browser-tab-title=CMPT-363-222 "Docsify-This Course Site")
 </div>
