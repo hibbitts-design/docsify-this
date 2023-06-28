@@ -130,6 +130,14 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 * [Standalone Pages with Footer and an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadFooter=_footer&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Standalone Pages with Footer and an 'Edit this Page' link")
 * [Standalone Pages with Docsify Navbar and 'GitHub Repository' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Site - Standalone Pages with Docsify Navbar and an 'GitHub Repository' link")
 
+#### [Docsify-This Course Site Template](https://github.com/hibbitts-design/docsify-this-course-site)
+
+![Docsify-This Course Site Template](docs/images/docsify-this-course-site-readme.png ':class=docsify-this-screenshot')
+
+Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-this-course-site/blob/main/home.md) file displayed by Docsify-This as:   
+* [Standalone Site](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitt-design/docsify-this-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&hide-credits=true&loadFooter=_footer.md&browser-tab-title=CMPT-363-222 "Docsify-This Course Site")  
+* [Standalone Site and 'Propose an Edit to this Site' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitt-design/docsify-this-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitt-design/docsify-this-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&hide-credits=true&loadFooter=_footer.md&browser-tab-title=CMPT-363-222 "Docsify-This Course Site")
+
 ---
 
 ### More Docsify-This Markdown Examples
