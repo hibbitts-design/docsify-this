@@ -4,7 +4,7 @@
 
 **New:**
 * Support for enabling image zoom (`zoom-image=true`), where tapping on images enlarges them 
-* Added example Docsify-This template (Course Site Template) 
+* Added example Docsify-This template (Multiple Page Course Site Template) 
 
 **Improved:**
 * Updated ReadMe
