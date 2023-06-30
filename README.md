@@ -262,6 +262,7 @@ The following URL parameters are available but not included in the Web Page Buil
 * [loadFooter](#loadFooter)
 * [loadNavbar](#loadNavbar)
 * [page-title](#page-title)
+* [submaxLevel](#subMaxLevel)
 * [zoom-images](#zoom-images)
 
 ##### coverpage
