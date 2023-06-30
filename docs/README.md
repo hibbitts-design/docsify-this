@@ -441,6 +441,7 @@ The following URL parameters are available but not included in the Web Page Buil
 * [loadFooter](/?id=loadFooter)
 * [loadNavbar](/?id=loadNavbar)
 * [page-title](/?id=page-title)
+* [search](/?id=subMaxLevel)
 * [zoom-images](/?id=zoom-images)
 
 ##### coverpage
