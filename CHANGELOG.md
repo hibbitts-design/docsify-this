@@ -5,6 +5,7 @@
 **New:**
 * Support for enabling image zoom (`zoom-image=true`), where tapping on images enlarges them 
 * Added example Docsify-This template (Multiple Page Course Site Template) 
+* Updated to use Coloris v0.21.0
 
 **Improved:**
 * Updated ReadMe
