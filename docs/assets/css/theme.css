@@ -311,6 +311,31 @@
   text-decoration: none !important;
 }
 
+.markdown-section .navpill {
+  cursor: pointer;
+  color: #484c55;
+  height: auto;
+  display: inline-block;
+  border: 1px solid #484c55;
+  border-radius: 4rem;
+  padding: 4px 14px 4px 14px;
+  margin-bottom: 4px;
+  margin-right: 6px;
+  font-size: .8rem;
+  line-height: .9rem;
+  background-color: #FFFFFF;
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.markdown-section a.navpill {
+  cursor: pointer;
+  color: #484c55;
+  border: 1px solid #484c55;
+  text-decoration: none !important;
+}
+
 .markdown-section .badge {
   color: #fff;
   background-color: #6c757d;
@@ -330,7 +355,7 @@
 }
 
 .markdown-section .badge a {
-  color: white;
+  color: white!important;
   text-decoration: none !important;
 }
 
@@ -936,24 +961,6 @@ span #docsifythisurlfield {
   text-align: center;
 }
 
-#docsifythis .navbarpill {
-  cursor: pointer;
-  color: #484c55;
-  height: auto;
-  display: inline-block;
-  border: 1px solid #484c55;
-  border-radius: 4rem;
-  padding: 4px 14px 4px 14px;
-  margin-bottom: 4px;
-  margin-left: 6px;
-  font-size: .8rem;
-  line-height: .9rem;
-  background-color: #FFFFFF;
-  font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 @media only screen and (max-width: 480px) {
 
   #docsifythis .docsifythisheader .logoandtext h1 {
@@ -971,8 +978,8 @@ span #docsifythisurlfield {
 
 @media (prefers-color-scheme: dark) {
 
-  #docsifythis .navbarpill {
-    color: #FFFFFF;
+  #docsifythis .navpill, .markdown-section .navpill {
+    color: #FFFFFF!important;
     border: 1px solid #6a6a6a;
     background-color: #6a6a6a;
   }
