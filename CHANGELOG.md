@@ -5,6 +5,7 @@
 **New:**
 * Support for enabling image zoom (`zoom-image=true`), where tapping on images enlarges them 
 * Added example Docsify-This template (Multiple Page Course Site Template) 
+* Support for nav pill (`navpill`) Markdown CSS class 
 
 **Improved:**
 * Updated ReadMe
