@@ -593,6 +593,7 @@
       externalLinkTarget: (getURLParameterByName(['standalone', 'embedded'], '_top', '_blank')),
       loadFooter: (getURLParameterByName('footer') || footer || false),
       ext: getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true)),
+      executeScript: true,
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
