@@ -12,6 +12,9 @@
 * Updated ReadMe
 * Updated to use Coloris v0.21.0
 
+**Bugfix:**
+* Support for the use of hyphens within footnote names (and passed along to Docsify Plugin author @sy-records)
+
 ## [1.7.0] - 06/27/2023
 
 **New:**
