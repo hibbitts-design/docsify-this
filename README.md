@@ -650,7 +650,7 @@ Docsify-This is intended as a quick way to display one or more remotely located 
 
 If you want to run Docsify-This on your own Websever, create a destination folder on your server and then copy the files within the Docsify-This folder `/docs` to your newly created server folder.  
 
-You can also run Docsify-This on LMSs that support file libraries such as Canvas and Moodle. For example, here is a [Docsify-This instance on Canvas](https://canvas.instructure.com/courses/6321275/files/folder/docsify-this/docs?preview=212476355).
+You can even run Docsify-This on LMSs that support file libraries such as Canvas and Moodle. For example, here is a [Docsify-This instance on Canvas](https://canvas.instructure.com/courses/6321275/files/folder/docsify-this/docs?preview=212476355).
 
 To host a Docsify-This instance on your LMS, do the following:  
 1. Tap **Download** on the [Docsify-This repository page](https://github.com/hibbitts-design/docsify-this)
