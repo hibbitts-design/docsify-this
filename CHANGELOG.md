@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.7.1] - XX/XX/2023
+## [1.7.1] - 07/27/2023
 
 **New:**
 * Support for enabling image zoom (`zoom-image=true`), where tapping on images enlarges them 
