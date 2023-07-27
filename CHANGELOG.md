@@ -14,6 +14,7 @@
 
 **Bugfix:**
 * Support for the use of hyphens within footnote names (and passed along to Docsify Plugin author @sy-records)
+* Restored loading of custom.css file
 
 ## [1.7.0] - 06/27/2023
 
