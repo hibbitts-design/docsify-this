@@ -753,7 +753,7 @@ body .docsify-pagination-container {
   padding-right: calc( 10px + (16 - 10) * (100vw - 400px) / (800 - 400) );
   border-width: 0;
   border-radius: 16px;
-  background: #e5f6fe;
+  background: #e5f1fe;
 }
 
 #docsifythisurlbuilder h2 {
