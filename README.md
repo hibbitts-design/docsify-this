@@ -565,7 +565,7 @@ If you want to include a Page Table of Contents with embedded Docsify-This conte
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-01.md&toc-narrow=true  
 
 #### Displaying a Site Title in a Custom Sidebar
-To display a site title in a custom sidebar you can add a H1 header level (including a tag to not include it with Docsify generated header navigation) above the page list in the Sidebar Markdown file (i.e. `_sidebar.md`), for example:  
+To display a site title in a custom Sidebar you can add a H1 header level (including a tag to not include it with Docsify generated header navigation) above the page list in the Sidebar Markdown file (i.e. `_sidebar.md`), for example:  
 
 ```markdown
 # Your Site Title Here <!-- {docsify-ignore} -->
@@ -574,6 +574,8 @@ To display a site title in a custom sidebar you can add a H1 header level (inclu
 - [Page Two](page-two)
 - [Page Three](page-three)
 ```
+
+If you want to include a link to the site homepage it is recommended that page is included as either the first item in the page list in the Sidebar file or is included as the first item in a Docsify custom Navbar file (i.e.`_navbar.md`).
 
 #### Including Code Blocks
 Using [Prismjs](https://prismjs.com/) code blocks with syntax highlighting is supported for the languages [included with Docsify](https://docsify.js.org/#/language-highlight?id=language-highlighting) and as well Bash, Go, Java, Kotlin, PHP, Python and Swift. To embed a code block use the Markdown standard of triple backticks and start the block with the name of the language, for example to embed a block of Javascript code with syntax highlight the following would be used:  
