@@ -5,7 +5,7 @@
 **Improved:**
 * Added 'youtube-nocookie.com' to domains made responsive through the automatic addition of the CSS Markdown class `video-container-16by9`
 * Updated ReadMe
-* Improve accessibility of app logo and Web Page Builder
+* Improve accessibility of app logo, Web Page Builder and documentation
 
 ## [1.7.1] - 07/27/2023
 
