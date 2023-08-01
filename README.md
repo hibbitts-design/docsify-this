@@ -564,7 +564,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 If you want to include a Page Table of Contents with embedded Docsify-This content, but the destination platform screen area is not very wide, you might want to try the optional `toc-narrow` display option. For example, to use a narrower Table of Contents area that includes a smaller screen breakpoint:
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-01.md&toc-narrow=true  
 
-#### Display a Site Title in a Custom Sidebar
+#### Displaying a Site Title in a Custom Sidebar
 To display a site title in a custom sidebar you can add a H1 header level (including a tag to not include it with Docsify generated header navigation) above the page list in the Sidebar Markdown file (i.e. `_sidebar.md`), for example:  
 
 ```
