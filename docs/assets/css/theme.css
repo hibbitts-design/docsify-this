@@ -753,11 +753,11 @@ body .docsify-pagination-container {
   padding-right: calc( 10px + (16 - 10) * (100vw - 400px) / (800 - 400) );
   border-width: 0;
   border-radius: 16px;
-  background: #ecf4fe;
+  background: #f2f4fD; /* Original color #ecf4fe */
 }
 
 #docsifythisurlbuilder h2 {
-  color: #2462ae;
+  color: #2442ae; /* Original color #2462ae */
 }
 
 #docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
@@ -796,7 +796,7 @@ span #docsifythisurlfield {
   margin-top: 4px;
   padding: 10px 20px 10px 20px;
   line-height: 1.2rem;
-  background-color: #0361cd;
+  background-color: #0224cd; /* Original color #0361cd */
   text-decoration: none;
   font-weight: 600; 
   border-radius: .25rem;
@@ -839,7 +839,7 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder [type=radio]:checked+img {
-  outline: 3px solid #0261cd;
+  outline: 3px solid #0224cd; /* Original color #0261cd */
   position: relative;
 }
 
@@ -848,8 +848,8 @@ span #docsifythisurlfield {
   margin-top: -3px;
 }
 
-#docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits  {
-  accent-color: #0361cd;
+#docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable {
+  accent-color: #0224cd; /* Original color #0361cd */
 }
 
 .docsifythisurlbuildercheckbox {
@@ -990,7 +990,7 @@ span #docsifythisurlfield {
   }
   
   #docsifythis #docsifythisurlbuilder h2 {
-    color: #4bc3f4;
+    color: #8798ee; /* Original color #4bc3f4 */
   }
   
   #docsifythis p a, #docsifythis li a, #docsifythis h4 a {
@@ -998,7 +998,7 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuilder {
-      background: #1f4b66;
+      background: #36416d; /* Original color #1f4b66 */
   }
 
   #docsifythisurlfield{
@@ -1013,7 +1013,7 @@ span #docsifythisurlfield {
 
   .docsifythisurlbuilderprimarybutton {
       color: black;
-      background-color: #4bc3f4;
+      background-color: #817eed; /* Original color #4bc3f4 */
   }
 
   .docsifythisurlbuildersecondarybutton {
@@ -1022,8 +1022,12 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuilder [type=radio]:checked + img {
-      outline: 3px solid #4bc3f4;
+      outline: 3px solid #817eed; /* Original color #4bc3f4 */
       position: relative;
+  }
+
+  #docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable {
+    accent-color: #817eed;
   }
 
   #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
