@@ -481,10 +481,12 @@ Scale images with border to %.
 
 #### navpill
 
-[Example Navpill](# ':class=navpill')
-
 ```markdown
 [GitHub](https://github.com/hibbitts-design/docsify-this ':class=navpill')
+```
+
+```markdown
+[﹕fab fa-github fa-fw﹕GitHub](https://github.com/hibbitts-design/docsify-this ':class=navpill')
 ```
 
 ```html
