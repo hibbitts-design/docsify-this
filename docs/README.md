@@ -674,6 +674,10 @@ Scale images with border to %.
 
 <a class="navpill" href="https://github.com" target="_blank"><i class="fab fa-github fa-fw"></i>Example Navpill with Font Awesome Icon</a>
 
+```markdown
+[﹕fab fa-github fa-fw﹕GitHub](https://github.com/hibbitts-design/docsify-this ':class=navpill')
+```
+
 ```html
 <a class="navpill" href="https://github.com" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
 ```
