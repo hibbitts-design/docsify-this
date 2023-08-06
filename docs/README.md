@@ -442,6 +442,7 @@ The following URL parameters are available but not included in the Web Page Buil
 * [loadFavicon](/?id=loadFavicon)
 * [loadFooter](/?id=loadFooter)
 * [loadNavbar](/?id=loadNavbar)
+* [loadSidebar](/?id=loadSidebar)
 * [page-title](/?id=page-title)
 * [search](/?id=subMaxLevel)
 * [zoom-images](/?id=zoom-images)
