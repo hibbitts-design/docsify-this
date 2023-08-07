@@ -618,6 +618,16 @@ Cropped to height of 350px on large screens, 175px on small screens.
 [Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button')
 ```
 
+<a class="button" href="#" target="_blank"><i class="fa fa-download fa-fw"></i>Example Button with Font Awesome Icon</a>
+
+```markdown
+[﹕fa fa-download fa-fw﹕Download](https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip ':class=button')
+```
+
+```html
+<a class="button" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
+```
+
 #### embedly-card
 For linked article previews, embedded slides/videos, etc.  
 
