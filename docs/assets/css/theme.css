@@ -1030,6 +1030,10 @@ span #docsifythisurlfield {
     accent-color: #817eed;
   }
 
+  #docsifythisurlbuilder hr {
+    border: 1px solid #5161a4;
+  }
+
   #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
       color: #4bc3f4;
   }
