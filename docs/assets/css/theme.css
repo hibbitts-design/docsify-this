@@ -313,17 +313,17 @@
 
 .markdown-section .navpill {
   cursor: pointer;
-  color: #484c55;
+  color: var(--base-color);
   height: auto;
   display: inline-block;
-  border: 1px solid #484c55;
+  border: 1px solid var(--base-color);
   border-radius: 4rem;
   padding: 4px 14px 4px 14px;
   margin-bottom: 4px;
   margin-right: 6px;
   font-size: .8rem;
   line-height: .9rem;
-  background-color: #FFFFFF;
+  background-color: --base-background-color;
   font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -331,8 +331,8 @@
 
 .markdown-section a.navpill {
   cursor: pointer;
-  color: #484c55;
-  border: 1px solid #484c55;
+  color: var(--base-color);
+  border: 1px solid var(--base-color);
   text-decoration: none !important;
 }
 
