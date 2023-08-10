@@ -585,8 +585,6 @@ The following CSS classes are available when authoring your own Markdown content
 
 #### accordion
 
-#### accordion
-
 <div class="accordion">
 
 <details>
