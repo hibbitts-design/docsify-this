@@ -748,9 +748,9 @@ body .docsify-pagination-container {
   overflow: visible;
   margin: 1.5em 0;
   padding-top: calc( 14px + (16 - 12) * (100vw - 400px) / (800 - 400) );
-  padding-left: calc( 12px + (16 - 10) * (100vw - 400px) / (800 - 400) );
+  padding-left: calc( 16px + (16 - 12) * (100vw - 400px) / (800 - 400) );
   padding-bottom: calc( 14px + (16 - 12) * (100vw - 400px) / (800 - 400) );
-  padding-right: calc( 12px + (16 - 10) * (100vw - 400px) / (800 - 400) );
+  padding-right: calc( 16px + (16 - 12) * (100vw - 400px) / (800 - 400) );
   border-width: 0;
   border-radius: 16px;
   background: #f2f4fD; /* Original color #ecf4fe */
