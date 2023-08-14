@@ -125,7 +125,7 @@ Page layout:
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_1" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
-<div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232; margin-top:28px;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
+<div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232; margin-top:12px;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 
 </div>
 
