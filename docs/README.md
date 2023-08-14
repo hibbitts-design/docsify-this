@@ -16,7 +16,7 @@ This open-source web app, built with the magical documentation site generator [D
 
 <h2>Web Page Builder</h2>
 
-<p style="margin-bottom:-10px;">Enter the URL of a Markdown file and view that file as a web page in a new Browser tab. The resulting Docsify-This page URL can be copied and shared or used as an iFrame source URL.</p>
+<p style="margin-bottom:-8px;">Enter the URL of a Markdown file and view that file as a web page in a new Browser tab. The resulting Docsify-This page URL can be copied and shared or used as an iFrame source URL.</p>
 
 <label for="docsifythisurlfield">**Markdown File URL** (GitHub, Codeberg or raw source URL):</label>
 <input name="markdownFileURL" aria-label="markdown file url" id="docsifythisurlfield" type="url" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" size="200px" value="https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md" />
