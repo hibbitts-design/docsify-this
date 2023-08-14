@@ -54,52 +54,48 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline">
-
 <div class="docsifythisurlbuilderoptionsline"><label>Title on Browser Tab:</label><br><input type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"></div>
 
-  <div class='stackedlabeldropdown'>
-      <label for="select1">Page font family:</label>
-      <select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
-        <option value="default">Source Sans Pro</option>
-        <option disabled="disabled">----</option>
-        <option value="Arial,sans-serif">Arial, sans-serif</option>
-        <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
-        <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
-        <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
-        <option value="Open%20Sans,sans-serif">Open Sans, sans-serif</option>
-        <option value="Tahoma,sans-serif">Tahoma, sans-serif</option>
-        <option value="Verdana,sans-serif">Verdana, sans-serif</option>
-        <option value="Georgia,serif">Georgia, serif</option>
-        <option value="Merriweather,Georgia,serif">Merriweather, serif</option>
-        <option value="Times%20New%20Roman,serif">Times New Roman, serif</option>
-        <option value="Courier,monospace">Courier, monospace</option>
-      </select>
-  </div>
-
-  <div class='stackedlabeldropdown'>
-      <label for="select2">Font size:</label>
-      <select class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
-        <option value="1.125">18px (1.125rem)</option>
-        <option disabled="disabled">----</option>
-        <option value=".875">14px (.875rem)</option>
-        <option value="1">16px (1rem)</option>
-        <option value="1.25">20px (1.25rem)</option>
-      </select>
-  </div>
-          
-  <div class='stackedlabeldropdown'>
-      <label for="select3">Line height:</label>
-      <select class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight" style="width: 60px;">
-      <option value="1.4">1.4</option>
+<div class='stackedlabeldropdown'>
+    <label for="select1">Page font family:</label>
+    <select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
+      <option value="default">Source Sans Pro</option>
       <option disabled="disabled">----</option>
-      <option value="1.2">1.2</option>
-      <option value="1.3">1.3</option>
-      <option value="1.5">1.5</option>
-      <option value="1.6">1.6</option>
+      <option value="Arial,sans-serif">Arial, sans-serif</option>
+      <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
+      <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
+      <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
+      <option value="Open%20Sans,sans-serif">Open Sans, sans-serif</option>
+      <option value="Tahoma,sans-serif">Tahoma, sans-serif</option>
+      <option value="Verdana,sans-serif">Verdana, sans-serif</option>
+      <option value="Georgia,serif">Georgia, serif</option>
+      <option value="Merriweather,Georgia,serif">Merriweather, serif</option>
+      <option value="Times%20New%20Roman,serif">Times New Roman, serif</option>
+      <option value="Courier,monospace">Courier, monospace</option>
     </select>
-  </div>
+</div>
 
+<div class='stackedlabeldropdown'>
+    <label for="select2">Font size:</label>
+    <select class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
+      <option value="1.125">18px (1.125rem)</option>
+      <option disabled="disabled">----</option>
+      <option value=".875">14px (.875rem)</option>
+      <option value="1">16px (1rem)</option>
+      <option value="1.25">20px (1.25rem)</option>
+    </select>
+</div>
+        
+<div class='stackedlabeldropdown'>
+    <label for="select3">Line height:</label>
+    <select class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight" style="width: 60px;">
+    <option value="1.4">1.4</option>
+    <option disabled="disabled">----</option>
+    <option value="1.2">1.2</option>
+    <option value="1.3">1.3</option>
+    <option value="1.5">1.5</option>
+    <option value="1.6">1.6</option>
+  </select>
 </div>
 
 <div class="docsifythisurlbuilderoptionsline"><label type="color">Page link color:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview()" data-coloris><span id="linkcolorpreview"></span></div>

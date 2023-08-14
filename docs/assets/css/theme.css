@@ -794,6 +794,7 @@ span #docsifythisurlfield {
   height: auto;
   display: inline-block;
   margin-top: 4px;
+  margin-bottom: -8px;
   padding: 10px 20px 10px 20px;
   line-height: 1.2rem;
   background-color: #0224cd; /* Original color #0361cd */
@@ -809,6 +810,7 @@ span #docsifythisurlfield {
   height: auto;
   display: inline-block;
   margin-top: 4px;
+  margin-bottom: -8px;
   padding: 10px 20px 10px 20px;
   line-height: 1.2rem;
   background-color: #0b97ef;
@@ -941,7 +943,8 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder .stackedlabeldropdown label {
-  display: block;   
+  display: block;
+  margin-top: 4px;
 }
 
 .sidebar-nav a, .sidebar nav a {
