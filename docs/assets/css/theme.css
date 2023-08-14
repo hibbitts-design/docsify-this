@@ -871,6 +871,12 @@ span #docsifythisurlfield {
   display: inline-block;
 }
 
+#docsifythisurlbuilder input[type=number] {
+  border: 1px solid #000;
+  height: 2rem;
+  padding-left: .3rem;
+}
+
 #docsifythisurlbuildershowhidelink {
   margin-top: 2px;
 }
