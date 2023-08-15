@@ -848,7 +848,8 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuilder figcaption {
   cursor: pointer;
-  margin-top: -4px;
+  margin-top: -1px;
+  line-height: 1.2rem;
 }
 
 #docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable {
