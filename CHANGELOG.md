@@ -9,7 +9,7 @@
 * Improved accessibility of app logo and text of Publishing with Docsify-This Guide
 * Web Page Builder colour scheme changed
 * Support light/dark theme display for navpills
-* Minor Web Page Builder spacing improvements
+* Minor Web Page Builder spacing and style improvements
 
 ## [1.7.1] - 07/27/2023
 
