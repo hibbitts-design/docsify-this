@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.7.2] - XX/XX/2023
+## [1.7.2] - 08/15/2023
 
 **Improved:**
 * Added 'youtube-nocookie.com' to domains made responsive through the automatic addition of the CSS Markdown class `video-container-16by9`
