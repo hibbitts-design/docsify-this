@@ -5,6 +5,7 @@
 **Improved:**
 * Updated ReadMe
 * Use light/dark theme display for navpills on Docsify-This app page
+* Use light/dark theme display for topic indexes
 
 **Bugfix:**
 * Update Sidebar chevron with custom link colour
