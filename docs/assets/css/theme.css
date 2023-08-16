@@ -337,8 +337,8 @@
 }
 
 .markdown-section .badge {
-  color: #fff;
-  background-color: #6c757d;
+  color: --base-background-color;
+  background-color: --base-color;
   display: inline-block;
   padding: .25em .4em .25em .4em;
   font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
@@ -355,7 +355,7 @@
 }
 
 .markdown-section .badge a {
-  color: white!important;
+  color: --base-background-color!important;
   text-decoration: none !important;
 }
 
@@ -991,12 +991,6 @@ span #docsifythisurlfield {
 /* Dark mode colours for use with light + dark themes */
 
 @media (prefers-color-scheme: dark) {
-
-  #docsifythis .navpill {
-    color: #FFFFFF!important;
-    border: 1px solid #6a6a6a;
-    background-color: #6a6a6a;
-  }
 
   #docsifythis .docsifythisheader .logoandtext  h1 {
     color: #A6A6A6;
