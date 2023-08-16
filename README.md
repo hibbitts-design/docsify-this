@@ -183,6 +183,7 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 * [hide-credits](#hide-credits)
 * [hypothesis](#hypothesis)
 * [line-height](#line-height)
+* [link-color](#link-color)
 * [maxLevel](#maxLevel)
 * [sidebar](/#sidebar)
 * [toc](#toc)
