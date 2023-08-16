@@ -337,8 +337,8 @@
 }
 
 .markdown-section .badge {
-  color: --base-background-color;
-  background-color: --base-color;
+  color: var(--base-background-color);
+  background-color: color-mix(in srgb, var(--base-color) 70%, transparent);
   display: inline-block;
   padding: .25em .4em .25em .4em;
   font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
@@ -355,7 +355,7 @@
 }
 
 .markdown-section .badge a {
-  color: --base-background-color!important;
+  color: var(--base-background-color)!important;
   text-decoration: none !important;
 }
 
