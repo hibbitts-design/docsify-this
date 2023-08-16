@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.3] - XX/XX/2023
+
+**Improved:**
+* Updated ReadMe
+
+**Bugfix:**
+* Update Sidebar chevron with custom link colour
+
 ## [1.7.2] - 08/15/2023
 
 **Improved:**
