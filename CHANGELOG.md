@@ -9,6 +9,7 @@
 
 **Bugfix:**
 * Update Sidebar chevron with custom link colour
+* Remove Coloris opacity selector
 
 ## [1.7.2] - 08/15/2023
 
