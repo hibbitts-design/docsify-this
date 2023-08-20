@@ -988,6 +988,10 @@ span #docsifythisurlfield {
 
 }
 
+#docsifythisurlbuilder .clr-picker .clr-alpha {
+  display: none;
+}
+
 /* Dark mode colours for use with light + dark themes */
 
 @media (prefers-color-scheme: dark) {
