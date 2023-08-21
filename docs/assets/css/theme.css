@@ -760,6 +760,11 @@ body .docsify-pagination-container {
   color: #2442ae; /* Original color #2462ae */
 }
 
+#docsifythisurlbuilder h3 {
+  margin-top: 14px;
+  color: #2442ae; /* Original color #2462ae */
+}
+
 #docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
   overflow: hidden;
   background-color: #white;
@@ -784,6 +789,11 @@ span #docsifythisurlfield {
 }
 
 #editLinkText {
+  width: 100%;
+  max-width: 370px;
+}
+
+#pageTitle {
   width: 100%;
   max-width: 370px;
 }
@@ -846,13 +856,21 @@ span #docsifythisurlfield {
   position: relative;
 }
 
+#docsifythisurlbuilder input[type=number] {
+  border: 1px solid #000;
+  height: 2rem;
+  padding-left: .3rem;
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
 #docsifythisurlbuilder figcaption {
   cursor: pointer;
   margin-top: -2px;
   line-height: 1.2rem;
 }
 
-#docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable {
+#docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #loadfavicon, .markdown-section #loadcoverpage, .markdown-section #loadcustomsidebar, .markdown-section #loadcustomnavbar, .markdown-section #loadcustomfooter, .markdown-section #enableSidebarsearch, .markdown-section #zoomimages, .markdown-section #enableDarkmode {
   accent-color: #0324cd; /* Original color #0361cd */
 }
 
@@ -902,6 +920,30 @@ span #docsifythisurlfield {
   width: 30px;
   border: solid 4px #0374B5;
   background-color: #0374B5;
+  border-radius: 3px 3px 3px 3px;
+  margin-left: 4px;
+}
+
+#docsifythisurlbuilder #coverpagecolorpreview {
+  width: 30px;
+  border: solid 4px #6C8A9A;
+  background-color: #6C8A9A;
+  border-radius: 3px 3px 3px 3px;
+  margin-left: 4px;
+}
+
+#docsifythisurlbuilder #linkcolordarkmodepreview {
+  width: 30px;
+  border: solid 4px #0374B5;
+  background-color: #0374B5;
+  border-radius: 3px 3px 3px 3px;
+  margin-left: 4px;
+}
+
+#docsifythisurlbuilder #coverpagecolordarkmodepreview {
+  width: 30px;
+  border: solid 4px #262D30;
+  background-color: #262D30;
   border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
@@ -957,6 +999,12 @@ span #docsifythisurlfield {
   margin-top: 4px;
 }
 
+#docsifythisurlbuilder .clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+ }
+
 .sidebar-nav a, .sidebar nav a {
   overflow: visible;
   white-space: break-spaces;
@@ -1000,7 +1048,7 @@ span #docsifythisurlfield {
     color: #A6A6A6;
   }
   
-  #docsifythis #docsifythisurlbuilder h2 {
+  #docsifythis #docsifythisurlbuilder h2, #docsifythis #docsifythisurlbuilder h3 {
     color: #8798ee; /* Original color #4bc3f4 */
   }
   
@@ -1037,7 +1085,7 @@ span #docsifythisurlfield {
       position: relative;
   }
 
-  #docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable {
+  #docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #loadfavicon, .markdown-section #loadcoverpage, .markdown-section #loadcustomsidebar, .markdown-section #loadcustomnavbar, .markdown-section #loadcustomfooter, .markdown-section #enableSidebarsearch, .markdown-section #zoomimages, .markdown-section #enableDarkmode {
     accent-color: #817eed;
   }
 
@@ -1045,7 +1093,7 @@ span #docsifythisurlfield {
     border: 1px solid #5161a4;
   }
 
-  #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
+  #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active,   #docsifythisurlbuildershowhidelink2 a:link, #docsifythisurlbuildershowhidelink2 a:visited, #docsifythisurlbuildershowhidelink2 a:hover, #docsifythisurlbuildershowhidelink2 a:active {
       color: #4bc3f4;
   }
 
@@ -1054,7 +1102,27 @@ span #docsifythisurlfield {
     color: white;
   }
 
+  #browserTabTitle {
+    background-color: #273338;
+    color: white;
+  }
+
   #editLinkText {
+    background-color: #273338;
+    color: white;
+  }
+
+  #coverpagecolor {
+    background-color: #273338;
+    color: white;
+  }
+
+  #linkcolordarkmode {
+    background-color: #273338;
+    color: white;
+  }
+
+  #coverpagecolordarkmode {
     background-color: #273338;
     color: white;
   }
