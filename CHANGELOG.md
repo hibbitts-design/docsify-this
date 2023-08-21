@@ -2,6 +2,9 @@
 
 ## [1.7.3] - XX/XX/2023
 
+**New:**
+* Initial support of Web Page Builder advanced mode (`https://docsify-this.net/?advanced=true`)
+
 **Improved:**
 * Updated ReadMe
 * Use light/dark theme display for navpills on Docsify-This app page
