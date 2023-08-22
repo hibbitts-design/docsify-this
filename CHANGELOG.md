@@ -4,6 +4,7 @@
 
 **New:**
 * Initial support of Web Page Builder advanced mode (`https://docsify-this.net/?advanced=true`)
+* Support of all options with remote passing of initial URL parameter values
 
 **Improved:**
 * Updated ReadMe
@@ -15,6 +16,7 @@
 * Remove Coloris opacity selector
 * Add missing zoom-image URL parameter passing
 * Fix handling of empty Title on Browser Tab field
+
 
 ## [1.7.2] - 08/15/2023
 
