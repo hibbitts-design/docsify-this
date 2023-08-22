@@ -918,47 +918,32 @@ function test() {
 The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) by passing the relevant filenames within a Docsify-This URL (not included in the Web Page Builder), for example: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc  
 
 #### Changing the Default Values of the Docsify-This Web Page Builder
-You can change the default values of the Docsify-This Web Page Builder via URL parameters - this is especially useful when doing online sessions or workshops on Docsify-This. The parameters available are:
+You can change the default values of the Docsify-This Web Page Builder via URL parameters - this is especially useful when doing online sessions or workshops on Docsify-This. In addition to Docsify-This URL parameters, the following Web Page Builder URL parameters are available:
 
 ##### url-field
 ```html
 
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
+https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
 
 ```
 
 ```html
 
-https://docsify-this.net/?url-field=empty
-
-```
-
-##### toc-layout
-```html
-
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&toc-layout=true
-
-```
-
-##### sidebar-layout
-```html
-
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&sidebar-layout=true
-
-```
-
-##### edit-link-checkbox
-Supported with GitHub or Codeberg hosted Markdown files.
-```html
-
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link-checkbox=true
+https://paulhibbitts.github.io/test-docsify-this?url-field=empty
 
 ```
 
 ##### show-page-options
 ```html
 
-https://docsify-this.net/?show-page-options=true
+https://paulhibbitts.github.io/test-docsify-this?show-page-options=true
+
+```
+
+##### advanced
+```html
+
+https://paulhibbitts.github.io/test-docsify-this?advanced=true
 
 ```
 

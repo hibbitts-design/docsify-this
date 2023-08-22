@@ -368,7 +368,6 @@
 
           const cb11 = document.querySelector('#loadcustomsidebar');
           if (cb11.checked) {
-
             if (!(URLparms.includes("&sidebar=true"))) {
               var URLparms = URLparms + `&sidebar=true`; 
               document.getElementById("stylecontentonly").checked = false;
@@ -1075,56 +1074,201 @@
           });
 
           hook.ready(function () {
-            if (!(window.$docsify['basePath'])) {
-              if (getURLParameterByName('url-field')) {
-                var markdownFileURL = '';
-                markdownFileURL = getURLParameterByName('url-field', null, null, window.location.href, true);
-                if (markdownFileURL == "empty") {
-                  markdownFileURL = '';
-                }
-                document.getElementById('docsifythisurlfield').value = markdownFileURL;
-              }
-
-              if (getURLParameterByName('toc-layout', true, false, window.location.href, true) === 'true') {
-                document.getElementById("stylecontentonly").checked = false;
-                document.getElementById("styletoc").checked = true;
-                document.getElementById("stylesidebar").checked = false;
-              }
-
-              if (getURLParameterByName('sidebar-layout', true, false, window.location.href, true) === 'true') {
-                document.getElementById("stylecontentonly").checked = false;
-                document.getElementById("styletoc").checked = false;
-                document.getElementById("stylesidebar").checked = true;
-              }
-
-              if (getURLParameterByName('edit-link-checkbox', true, false, window.location.href, true) === 'true') {
-                document.getElementById("editCheck").checked = true;
-              }
-
-              if (getURLParameterByName('show-page-options', true, false, window.location.href, true) === 'true') {
-                // console.log("show more!");
-                var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
-                document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
-                document.getElementById("pageappearanceoptionsheader").style.display = "none";
-                theDiv.style.display = "block";
-              }
-
-              if (getURLParameterByName('advanced', true, false, window.location.href, true) === 'true') {
-                // console.log("show advanced options!");
-                document.getElementById("btn_2").style.display = "none";
-                var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
-                document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
-                theDiv.style.display = "block";
-                var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
-                theDiv2.style.display = "block";
-              }
-
-              const x = window.scrollX;
-              const y = window.scrollY;
-              selectText();
-              window.scrollTo(x, y);
-
+            if (window.$docsify['basePath']) {
+              return; // Exit if basePath is present
             }
+
+            function getURLParameter(parameterName) {
+              const urlParams = new URLSearchParams(window.location.search);
+              return urlParams.get(parameterName);
+            }
+
+            if (getURLParameter('url-field')) {
+              // console.log(getURLParameterByName('url-field'));
+              var markdownFileURL = '';
+              markdownFileURL = getURLParameterByName('url-field', null, null, window.location.href, true);
+              if (markdownFileURL == "empty") {
+                markdownFileURL = '';
+              }
+              document.getElementById('docsifythisurlfield').value = markdownFileURL;
+            }
+
+            if (getURLParameter('show-page-options') === 'true') {
+              // console.log("show more!");
+              var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+              document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
+              document.getElementById("pageappearanceoptionsheader").style.display = "none";
+              theDiv.style.display = "block";
+            }
+
+            if (getURLParameter('advanced') === 'true') {
+              // console.log("show advanced options!");
+              document.getElementById("btn_2").style.display = "none";
+              var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+              document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
+              theDiv.style.display = "block";
+              var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
+              theDiv2.style.display = "block";
+            }
+
+            if (getURLParameter('toc') === 'true') {
+              document.getElementById("stylecontentonly").checked = false;
+              document.getElementById("styletoc").checked = true;
+              document.getElementById("stylesidebar").checked = false;
+            }
+
+            if (getURLParameter('sidebar') === 'true') {
+              document.getElementById("stylecontentonly").checked = false;
+              document.getElementById("styletoc").checked = false;
+              document.getElementById("stylesidebar").checked = true;
+            }
+
+            if (getURLParameter('edit-link-checkbox') === 'true') {
+              document.getElementById("editCheck").checked = true;
+            }
+
+            browserTabTitle = getURLParameter('browser-tab-title');
+            if (browserTabTitle) {
+              document.getElementById('browserTabTitle').value = decodeURI(browserTabTitle);
+            }
+
+            fontfamily = getURLParameter('font-family');
+            if (fontfamily) {
+              document.getElementById('fontfamily').value = encodeURI(fontfamily);
+            }
+
+            fontsize = getURLParameter('font-size');
+            if (fontsize) {
+              document.getElementById('fontsize').value = fontsize;
+            }
+
+            lineheight = getURLParameter('line-height');
+            if (lineheight) {
+              document.getElementById('lineheight').value = lineheight;
+            }
+
+            linkcolor = getURLParameter('link-color');
+            if (linkcolor) {
+              linkcolor = '#' + linkcolor;
+              document.getElementById('linkcolor').value = linkcolor;
+              document.getElementById("linkcolorpreview").style.visibility = "visible";
+              document.getElementById("linkcolorpreview").style.borderColor = linkcolor;
+              document.getElementById("linkcolorpreview").style.backgroundColor = linkcolor;
+            }
+
+            editLinkText = getURLParameter('edit-link-text');
+            if (editLinkText) {
+              document.getElementById('editLinkText').value = decodeURI(editLinkText);
+            }
+
+            if (getURLParameter('edit-link-top') === 'true') {
+              document.getElementById("editLinkTopCheck").checked = true;
+            }
+
+            if (getURLParameter('hide-credits') === 'true') {
+              document.getElementById("hideCredits").checked = true;
+            }
+
+            tocheadings = getURLParameter('toc-headings');
+            if (tocheadings) {
+              if (tocheadings.includes("h1")) {
+                document.getElementById("toch1").checked = true;
+              }
+              if (tocheadings.includes("h2")) {
+                document.getElementById("toch2").checked = true;
+              }
+              if (tocheadings.includes("h3")) {
+                document.getElementById("toch3").checked = true;
+              }
+            }
+
+            if (getURLParameter('toc-narrow') === 'true') {
+              document.getElementById("narrowToC").checked = true;
+            }
+
+            maxLevel = getURLParameter('maxLevel', null, null, window.location.href, true);
+            if (maxLevel) {
+              document.getElementById('maxLevel').value = maxLevel;
+            }
+
+            if (getURLParameter('hypothesis') === 'true') {
+              document.getElementById("hypothesisenable").checked = true;
+            }
+
+            pageTitle = getURLParameter('page-title');
+            if (pageTitle) {
+              document.getElementById('pageTitle').value = decodeURI(pageTitle);
+            }
+
+            headerweight = getURLParameter('header-weight');
+            if (headerweight) {
+              document.getElementById('headerweight').value = headerweight;
+            }
+
+            if (getURLParameter('zoom-images') === 'true') {
+              document.getElementById("zoomimages").checked = true;
+            }
+            
+            if (getURLParameter('loadFavicon')) {
+              document.getElementById("loadfavicon").checked = true;
+            }
+
+            if (getURLParameter('coverpage')) {
+              document.getElementById("loadcoverpage").checked = true;
+            }
+
+            if (getURLParameter('loadSidebar')) {
+              document.getElementById("loadcustomsidebar").checked = true;
+            }
+
+            if (getURLParameter('loadNavbar')) {
+              document.getElementById("loadcustomnavbar").checked = true;
+            }
+
+            if (getURLParameter('loadFooter')) {
+              document.getElementById("loadcustomfooter").checked = true;
+            }
+
+            if (getURLParameter('search') === 'true') {
+              document.getElementById("enableSidebarsearch").checked = true;
+            }
+
+            coverpagecolor = getURLParameter('coverpage-color');
+            if (coverpagecolor) {
+              coverpagecolor = '#' + coverpagecolor;
+              document.getElementById('coverpagecolor').value = coverpagecolor;
+              document.getElementById("coverpagecolorpreview").style.visibility = "visible";
+              document.getElementById("coverpagecolorpreview").style.borderColor = coverpagecolor;
+              document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
+            }
+
+            if (getURLParameter('dark-mode') === 'true') {
+              document.getElementById("enableDarkmode").checked = true;
+            }
+
+            linkcolordarkmode = getURLParameter('link-color-dark-mode');
+            if (linkcolordarkmode) {
+              linkcolordarkmode = '#' + linkcolordarkmode;
+              document.getElementById('linkcolordarkmode').value = linkcolordarkmode;
+              document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
+              document.getElementById("linkcolordarkmodepreview").style.borderColor = linkcolordarkmode;
+              document.getElementById("linkcolordarkmodepreview").style.backgroundColor = linkcolordarkmode;
+            }
+
+            coverpagecolordarkmode = getURLParameter('coverpage-color-dark-mode');
+            if (coverpagecolordarkmode) {
+              coverpagecolordarkmode = '#' + getURLParameterByName('coverpage-color-dark-mode', null, null, window.location.href, true);
+              document.getElementById('coverpagecolordarkmode').value = coverpagecolordarkmode;
+              document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
+              document.getElementById("coverpagecolordarkmodepreview").style.borderColor = coverpagecolordarkmode;
+              document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = coverpagecolordarkmode;
+            }
+
+            const x = window.scrollX;
+            const y = window.scrollY;
+            selectText();
+            window.scrollTo(x, y);
+
           });
 
         }
@@ -1134,23 +1278,25 @@
 
     <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
     <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
-    const params = new URLSearchParams(window.location.search);
-    params.forEach((value, key) => {
-      // TODO: Parse numbers?
+    if (getURLParameterByName('basePath')) {
+      const params = new URLSearchParams(window.location.search);
+      params.forEach((value, key) => {
+        // TODO: Parse numbers?
 
-      // console.log(value,key);
-      if (key === 'basePath' && !(allowedDomains === '')) {
-        const { hostname } = new URL(value);
-        if (!(allowedDomains.includes(hostname))) {
-          alert('Only the domain(s) ' + allowedDomains + ' permitted for a Markdown source file URL.');
-          throw new Error('Only the domain ' + allowedDomains + ' permitted for a Markdown source file URL.');
+        // console.log(value,key);
+        if (!(allowedDomains === '')) {
+          const { hostname } = new URL(value);
+          if (!(allowedDomains.includes(hostname))) {
+            alert('Only the domain(s) ' + allowedDomains + ' permitted for a Markdown source file URL.');
+            throw new Error('Only the domain ' + allowedDomains + ' permitted for a Markdown source file URL.');
+          } else {
+            window.$docsify[key] = value;
+          }
         } else {
           window.$docsify[key] = value;
         }
-      } else {
-        window.$docsify[key] = value;
-      }
-    });
+      });
+    }
 
     // If switch of light/dark theme mode
     window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
@@ -1336,8 +1482,10 @@
 
   <!-- Zoom Image Plugin -->
   <script>
-    if (getURLParameterByName('zoom-images', true, false, window.location.href, true) === 'true') {
+    if (!(window.$docsify['basePath'] === undefined)) {
+      if (getURLParameterByName('zoom-images', true, false, window.location.href, true) === 'true') {
       document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
+      }
     }
   </script>
 
