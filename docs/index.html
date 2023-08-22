@@ -226,6 +226,9 @@
                 // No filename is present, so assume default README.md file
                 gitlinkPageURL = gitlinkPageURL + "README.md";
               }
+              if (document.querySelector('#stylesidebar').checked || document.querySelector('#loadcustomnavbar').checked) {
+                gitlinkPageURL = gitlinkPageURL.substring(0, gitlinkPageURL.lastIndexOf("/"));
+              }
               var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
             }
           }
