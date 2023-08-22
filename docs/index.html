@@ -219,12 +219,23 @@
           var lastSegment = url.split('/').pop();
           var URLparms = '';
 
+          const cb1 = document.querySelector('#editCheck');
+          if (cb1.checked) {
+            if (gitlinkPageURL) {
+              if (!(isExtensionAllowed(lastSegment))) {
+                // No filename is present, so assume default README.md file
+                gitlinkPageURL = gitlinkPageURL + "README.md";
+              }
+              var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
+            }
+          }
+
           if (document.querySelector('#stylesidebar').checked) {
-            var URLparms = `&sidebar=true`;
+            var URLparms = URLparms + `&sidebar=true`;
           }
 
           if (document.querySelector('#styletoc').checked) {
-            var URLparms = `&toc=true`;
+            var URLparms = URLparms + `&toc=true`;
           }
 
           var getBrowserTabTitle = document.getElementById("browserTabTitle");
@@ -235,17 +246,6 @@
           if (!(browserTabTitle == "Published by Docsify-This")) {
             browserTabTitle = encodeURI(browserTabTitle);
             URLparms = URLparms + `&browser-tab-title=` + browserTabTitle;
-          }
-
-          const cb1 = document.querySelector('#editCheck');
-          if (cb1.checked) {
-            if (gitlinkPageURL) {
-              if (!(isExtensionAllowed(lastSegment))) {
-                // No filename is present, so assume default README.md file
-                gitlinkPageURL = gitlinkPageURL + "README.md";
-              }
-              var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
-            }
           }
 
           var getEditThisPage = document.getElementById("editLinkText");
