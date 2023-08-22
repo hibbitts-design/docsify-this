@@ -1093,16 +1093,14 @@
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
             }
 
-            if (getURLParameter('show-page-options') === 'true') {
-              // console.log("show more!");
+            if (getURLParameter('show-page-options') === 'true' || getURLParameterByName(['browser-tab-title','font-family', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis'])) {
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
               document.getElementById("pageappearanceoptionsheader").style.display = "none";
               theDiv.style.display = "block";
             }
 
-            if (getURLParameter('advanced') === 'true') {
-              // console.log("show advanced options!");
+            if (getURLParameter('advanced') === 'true' || getURLParameterByName(['page-title','header-weight','zoom-images','loadFavicon','coverpage','loadSidebar','loadNavbar','loadFooter','search','coverpage-color','dark-mode','link-color-dark-mode','coverpage-color-dark-mode'])) {
               document.getElementById("btn_2").style.display = "none";
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
