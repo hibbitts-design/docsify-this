@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.7.3] - XX/XX/2023
+## [1.7.3] - 08/23/2023🌒
 
 **New:**
 * Initial support of Web Page Builder advanced mode (`https://docsify-this.net/?advanced=true`)
