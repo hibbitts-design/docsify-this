@@ -851,7 +851,11 @@
                       if (currentBasePath.includes("githubusercontent.com") && (existingEditThisPageLink.substr(existingEditThisPageLink.length - fileExt.length) == fileExt)) {
                         var editThisPageLink = '';
                         editThisPageLink = decodeURIComponent(currentBasePath);
-                        editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
+                        if (existingEditThisPageLink.includes('github.dev')) {
+                          editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.dev');
+                        } else {
+                          editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
+                        }
                         editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
                         editThisPageLink = editThisPageLink + '/' + lastSegment + fileExt;
