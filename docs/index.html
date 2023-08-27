@@ -194,6 +194,10 @@
             var gitlinkPageURL = url;
             url = url.replace('github.com', 'raw.githubusercontent.com');
             url = url.replace(/\/blob/, '');
+          } else if (url.includes("github.dev")) {
+            var gitlinkPageURL = url;
+            url = url.replace('github.dev', 'raw.githubusercontent.com');
+            url = url.replace(/\/blob/, '');
           } else if (url.includes("githubusercontent.com")) {
             var gitlinkPageURL = url;
             gitlinkPageURL = gitlinkPageURL.replace('raw.githubusercontent.com', 'github.com');
@@ -228,6 +232,10 @@
               }
               if (document.querySelector('#stylesidebar').checked || document.querySelector('#loadcustomnavbar').checked) {
                 gitlinkPageURL = gitlinkPageURL.substring(0, gitlinkPageURL.lastIndexOf("/"));
+              }
+              const cb17 = document.querySelector('#usegithubdotdev');
+              if (cb17.checked) {
+                gitlinkPageURL = gitlinkPageURL.replace('github.com', 'github.dev');
               }
               var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
             }
@@ -597,6 +605,7 @@
       document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
       document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
       document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
+      document.getElementById("usegithubdotdev").checked = false;
     }
 
     function setColorProperties(color) {
