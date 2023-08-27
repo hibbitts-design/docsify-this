@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.7.4] - XX/XX/2023
+
+**New:**
+* Support for Edit Page links with github.dev (web editor) URLs
+
 ## [1.7.3] - 08/23/2023🌒
 
 **New:**
