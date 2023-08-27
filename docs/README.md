@@ -181,7 +181,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="usegithubdotdev" unchecked><label for="usegithubdotdev">Use the GitHub.dev web-based editor (Beta) for files hosted on GitHub.com</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="usegithubdotdev" unchecked><label for="usegithubdotdev">Use the GitHub.dev web-based editor (Beta) for 'Edit this Page' links with GitHub.com files</label></div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
