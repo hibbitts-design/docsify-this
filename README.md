@@ -673,13 +673,13 @@ To use the new GitHub.dev Web editor (currently in Beta) for 'Edit this Page' li
 
 ### Improving Markdown Previews in Text Editors
 
-Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
+Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/) (including the online [GitHub.dev Web editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
 
 Docsify-This (based on the Docsify Open Publishing Starter Kit) CSS:  
 https://docsify-this.net/assets/css/editor.css
 
 FontAwesome CSS:  
-https://docsify-this.net/assets/vendor/fontawesome/css/all.min.css
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
 ---
 
