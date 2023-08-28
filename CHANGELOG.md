@@ -6,6 +6,9 @@
 * Support for Edit Page links with github.dev (web editor) URLs
 * Advanced Web Page Builder option for using the GitHub.dev web-based editor (Beta)
 
+**Improved:**
+* Remove selection of file URL upon click
+
 ## [1.7.3] - 08/23/2023🌒
 
 **New:**
