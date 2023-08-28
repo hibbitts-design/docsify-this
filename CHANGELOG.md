@@ -7,6 +7,7 @@
 
 **Improved:**
 * Remove selection of file URL upon click
+* Updated ReadMe
 
 ## [1.7.3] - 08/23/2023🌒
 
