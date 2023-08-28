@@ -3,8 +3,7 @@
 ## [1.7.4] - XX/XX/2023
 
 **New:**
-* Support for Edit Page links with github.dev (web editor) URLs
-* Advanced Web Page Builder option for using the GitHub.dev web-based editor (Beta)
+* Support for 'Edit this Page' links with github.dev (web editor) via Markdown File URL field in Web Page Builder and URL parameter
 
 **Improved:**
 * Remove selection of file URL upon click
