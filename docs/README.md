@@ -947,8 +947,8 @@ https://paulhibbitts.github.io/test-docsify-this?advanced=true
 
 ```
 
-#### Use of New Web Editor GitHub.dev (Beta)
-Once a published Docsify-This URL is created with an Edit this Page link using GitHub.com content, the URL for the `edit-link` can be changed from `github.com` to `github.dev` to use the GitHub.dev web-based editor currently in Beta. This feature is also supported with multiple page sites.
+#### Use of New Web Editor GitHub.dev
+To use the new GitHub.dev Web editor (currently in Beta) for 'Edit this Page' links, change `github.com` to `github.dev` for GitHub.com files entered into the Web Page Builder Markdown File URL field.
 
 ---
 
