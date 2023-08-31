@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.7.4] - XX/XX/2023
+## [1.7.4] - 08/31/2023
 
 **New:**
 * Support for 'Edit this Page' links with Beta github.dev (web editor) via Markdown File URL field in Web Page Builder and URL parameter
