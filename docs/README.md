@@ -205,7 +205,7 @@ Page layout:
 * [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
 * [Troubleshooting](/?id=troubleshooting)
 * [Privacy Policy Summary](/?id=privacy-policy-summary)
-* [Support this Project](/?id=support-this-project)
+* [Contact and Support](/?id=contact-and-support)
 
 ---
 
@@ -1036,7 +1036,7 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 
 ---
 
-### Support this Project
+### Contact and Support
 
 - Follow [@hibbittsdesign@mastodon.social](https://mastodon.social/@hibbittsdesign) on Mastodon for updates, or subscribe via [RSS feed](https://mastodon.social/@hibbittsdesign.rss)
 - 👩🏻‍💻🧑🏻‍💻 Join the [Docsify Discord](https://discord.gg/docsify) and visit the **#Docsify-This** Channel
