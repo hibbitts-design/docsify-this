@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.7.5] - XX/XX/2023
+
+**Improved:**
+* Updated ReadMe
+
 ## [1.7.4] - 08/31/2023
 
 **New:**
