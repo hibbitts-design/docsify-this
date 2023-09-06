@@ -399,6 +399,16 @@
             var URLparms = URLparms + `&search=true`;
           }
 
+
+          var getSubMaxLevel = document.getElementById("subMaxLevel");
+          var subMaxLevel = getSubMaxLevel.value;
+          if (subMaxLevel === '') {
+            document.getElementById("subMaxLevel").value = 2;
+          }
+          if (!(subMaxLevel == 2)) {
+            URLparms = URLparms + `&subMaxLevel=` + subMaxLevel;
+          }
+
           var getpageTitle = document.getElementById("pageTitle");
           var pageTitle = getpageTitle.value;
           if (!(pageTitle == "")) {
@@ -585,6 +595,7 @@
       document.getElementById("loadcustomnavbar").checked = false;
       document.getElementById("loadcustomfooter").checked = false;
       document.getElementById("enableSidebarsearch").checked = false;
+      document.getElementById("subMaxLevel").value = 2;
       document.getElementById("pageTitle").value = '';
       document.getElementById("headerweight").value = '400';
       document.getElementById("zoomimages").checked = false;

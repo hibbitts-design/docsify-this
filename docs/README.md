@@ -163,7 +163,13 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomnavbar" unchecked><label for="loadcustomnavbar">Navbar (<code>_navbar.md</code>)<Sidebar/label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomfooter" unchecked><label for="loadcustomfooter">Footer (<code>_footer.md</code>)</label></div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable Docsify Search plugin in custom Sidebar</label></div>
+<h3>Custom Docsify Sidebar Options</h3>
+
+<hr>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable Docsify Search plugin in custom Docsify Sidebar</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><label>Automatic Page Table of Contents header levels in custom Docsify Sidebar (0 for none):</label><br><input type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"></div>
 
 <h3>Coverpage and Dark Theme Colors</h3>
 
