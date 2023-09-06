@@ -2,6 +2,9 @@
 
 ## [1.7.5] - XX/XX/2023
 
+**New:**
+* Support for custom Docsify Sidebar automatic page table of contents (`subMaxLevel`) in Advanced Web Page Builder 
+
 **Improved:**
 * Updated ReadMe
 
