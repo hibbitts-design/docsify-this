@@ -3,7 +3,8 @@
 ## [1.7.5] - XX/XX/2023
 
 **New:**
-* Support for custom Docsify Sidebar automatic page table of contents (`subMaxLevel`) in Advanced Web Page Builder 
+* Support for custom Docsify Sidebar automatic page table of contents (`subMaxLevel`) in Advanced Web Page Builder
+* Support for 'Edit this Page' links with raw Gist file URLs (thanks to Wolfu for bringing the possibility of using Gists with Docsify-This) 
 
 **Improved:**
 * Updated ReadMe
