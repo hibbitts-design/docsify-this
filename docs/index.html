@@ -198,11 +198,15 @@
             var gitlinkPageURL = url;
             url = url.replace('github.dev', 'raw.githubusercontent.com');
             url = url.replace(/\/blob/, '');
-          } else if (url.includes("githubusercontent.com")) {
+          } else if (url.includes("raw.githubusercontent.com")) {
             var gitlinkPageURL = url;
             gitlinkPageURL = gitlinkPageURL.replace('raw.githubusercontent.com', 'github.com');
             gitlinkPageURL = gitlinkPageURL.replace(/\/main/, '/blob/main');
             gitlinkPageURL = gitlinkPageURL.replace(/\/master/, '/blob/master');
+          } else if (url.includes("gist.githubusercontent.com")) {
+            var gitlinkPageURL = url;
+            gitlinkPageURL = gitlinkPageURL.replace('gist.githubusercontent.com', 'gist.github.com');
+            gitlinkPageURL = gitlinkPageURL.split("/raw")[0];
           } else if (url.includes("codeberg.org")) {
             var gitlinkPageURL = url;
             url = url.replace(/\/raw/, '');
