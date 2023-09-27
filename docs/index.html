@@ -494,7 +494,8 @@
             var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
           }
 
-            window.open(baseURL);
+            var a = window.open(baseURL, "Docsify-This Standalone Web Page");
+            a.focus();
 
           } else {
 
