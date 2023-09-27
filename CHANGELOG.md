@@ -5,7 +5,6 @@
 **New:**
 * Support for custom Docsify Sidebar automatic page table of contents (`subMaxLevel`) in Advanced Web Page Builder
 * Support for 'Edit this Page' links with raw Gist file URLs (thanks to wolflu for sharing the possibility of using Gists with Docsify-This) 
-* If Docsify-This Standalone Web Page window already exists refresh it rather than open a new window
 
 **Improved:**
 * Updated ReadMe
