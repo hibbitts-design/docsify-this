@@ -366,6 +366,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 
 ### Markdown Syntax References
 
+* [What Is Markdown, and How Do You Use It?](https://www.howtogeek.com/448323/what-is-markdown-and-how-do-you-use-it/)
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Markdown Guide](https://www.markdownguide.org/)
 
