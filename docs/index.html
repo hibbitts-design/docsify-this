@@ -1320,10 +1320,10 @@
             alert('Only the domain(s) ' + allowedDomains + ' permitted for a Markdown source file URL.');
             throw new Error('Only the domain ' + allowedDomains + ' permitted for a Markdown source file URL.');
           } else {
-            window.$docsify[key] = value;
+            window.$docsify[key] = convertToBoolean(value);
           }
         } else {
-          window.$docsify[key] = value;
+          window.$docsify[key] = convertToBoolean(value);
         }
       });
     }
