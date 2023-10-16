@@ -1328,6 +1328,17 @@
       });
     }
 
+    // Convert to Boolean if true or false, otherwise return original value
+    function convertToBoolean(value) {
+      if (value === 'true') {
+        return true;
+      } else if (value === 'false') {
+        return false;
+      } else {
+        return value;
+      }
+    }
+
     // If switch of light/dark theme mode
     window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
       // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
