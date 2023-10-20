@@ -798,6 +798,11 @@ span #docsifythisurlfield {
   max-width: 370px;
 }
 
+#siteName {
+  width: 100%;
+  max-width: 370px;
+}
+
 .docsifythisurlbuilderprimarybutton {
   cursor: pointer;
   color: white;
@@ -1012,15 +1017,6 @@ span #docsifythisurlfield {
 
 .sidebar .app-name {
   display: none;
-}
-
-.sidebar h1 {
-  pointer-events: none;
-  margin-top: 0;
-  margin-left: -18px;
-  font-size: 1.40rem;
-  font-weight: normal;
-  text-align: center;
 }
 
 @media only screen and (max-width: 480px) {

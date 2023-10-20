@@ -398,6 +398,13 @@
             var URLparms = URLparms + `&loadFooter=_footer.md`;
           }
 
+          var getSiteName = document.getElementById("siteName");
+          var siteName = getSiteName.value;
+          if (!(siteName == "")) {
+            siteName = siteName.replace(/ /g, '%20');
+            URLparms = URLparms + `&name=` + siteName;
+          }
+
           const cb14 = document.querySelector('#enableSidebarsearch');
           if (cb14.checked) {
             var URLparms = URLparms + `&search=true`;
@@ -599,6 +606,7 @@
       document.getElementById("loadcustomsidebar").checked = false;
       document.getElementById("loadcustomnavbar").checked = false;
       document.getElementById("loadcustomfooter").checked = false;
+      document.getElementById("siteName").value = '';
       document.getElementById("enableSidebarsearch").checked = false;
       document.getElementById("subMaxLevel").value = 2;
       document.getElementById("pageTitle").value = '';
@@ -824,6 +832,7 @@
               'loadNavbar',
               'loadSidebar',
               'maxLevel',
+              'name',
               'page-title',
               'search',
               'sidebar',
@@ -1040,6 +1049,15 @@
                   script.type = 'text/javascript';
                   script.src = 'https://cdn.embedly.com/widgets/platform.js';    
                   document.head.appendChild(script);
+              }
+
+              // Set link for displayed site name
+              if (getURLParameterByName('name', null, null, window.location.href, true)) {
+                const appNameLink = document.querySelector('a.app-name-link');
+                appNameLink.setAttribute('href', '#/');
+                var editCSS = document.createElement('style')
+                editCSS.innerHTML = ".sidebar .app-name {display: block;}";
+                document.body.appendChild(editCSS);
               }
 
               // Remove optional ToC area if full width header image is present
