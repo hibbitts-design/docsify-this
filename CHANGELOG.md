@@ -4,11 +4,11 @@
 
 **New:**
 * Support for display of site name in custom Docsify Sidebar
-* Support passing of Boolean values in URL parameters
 * Support display of pagination buttons in page content area
 
 **Improved:**
 * Updated ReadMe
+* Support passing of Boolean values in URL parameters
 
 ## [1.7.5] - 09/28/2023⚛️
 
