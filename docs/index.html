@@ -495,7 +495,12 @@
             URLparms = URLparms + `&coverpage-color-dark-mode=` + hexCode;
           }
 
-          if (!(isExtensionAllowed(lastSegment)) || lastSegment === "") {
+          if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && url.includes("gist.raw.githubusercontent.com")) {
+          // Filename without supported extension or missing filename
+            alert("Please use the raw source URL and a filename that includes the '.md' extension in the file URL when using a Gist. To get this URL, tap on the filename of your Gist (i.e. 'Yourfile.md') and then tap the 'Raw' button.");
+            selectText();
+            return;
+          } else if (!(isExtensionAllowed(lastSegment)) || lastSegment === "") {
           // Filename without supported extension or missing filename
             alert("Please include the full path and filename with a supported extension (" + getAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
             selectText();
