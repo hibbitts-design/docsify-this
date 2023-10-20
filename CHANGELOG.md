@@ -2,6 +2,9 @@
 
 ## [1.7.6] - XX/XX/2023
 
+**New:**
+* Support for display of site name in custom Docsify Sidebar
+
 **Improved:**
 * Updated ReadMe
 * Support passing of Boolean values in URL parameters
