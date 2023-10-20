@@ -1030,6 +1030,9 @@ Would be changed to:
 _Docsify Sidebar or custom Sidebar is not displaying individual page header levels as expected._  
 When displaying a Docsify Sidebar or custom Sidebar, it is expected that page header levels start with a H1 level header.  
 
+_Search results do not seem to return all expected matches._  
+When the search field is enabled in a custom Docsify Sidebar, only pages listed and linked in the Sidebar will be indexed for the search. Any pages linked in an optional Navbar will not be included in searches.  
+
 _Multiple embedded scripts are not working as expected._  
 Docsify-This (as with Docsify itself) will only execute the first script included in a Markdown page, as described in the [Docsify documentation](https://docsify.js.org/#/configuration?id=executescript).
 
