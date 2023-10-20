@@ -269,6 +269,7 @@ The following URL parameters are available for use in Docsify-This URLs, and are
 * [loadSidebar](#loadSidebar)
 * [name](#name)
 * [page-title](#page-title)
+* [pagination](#pagination)
 * [submaxLevel](#subMaxLevel)
 * [zoom-images](#zoom-images)
 
@@ -319,6 +320,10 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+
+##### pagination
+Display Pagination buttons in page content area (custom Docsify Sidebar required) with the optional **pagination** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&pagination=true  
 
 ##### search
 Enable the Docsify Search plugin (which currently includes matches for text and markup) on multiple page sites including a custom Sidebar with the optional **search** Docsify parameter, for example:  

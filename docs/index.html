@@ -427,6 +427,11 @@
             URLparms = URLparms + `&page-title=` + pageTitle;
           }
 
+          const cb17 = document.querySelector('#pagination');
+          if (cb17.checked) {
+            var URLparms = URLparms + `&pagination=true`;
+          }
+
           var getheaderweight = document.getElementById('headerweight').value;
           if (!(getheaderweight == "400")) {
             var URLparms = URLparms + `&header-weight=` + getheaderweight
@@ -609,6 +614,7 @@
       document.getElementById("siteName").value = '';
       document.getElementById("enableSidebarsearch").checked = false;
       document.getElementById("subMaxLevel").value = 2;
+      document.getElementById("pagination").checked = false;
       document.getElementById("pageTitle").value = '';
       document.getElementById("headerweight").value = '400';
       document.getElementById("zoomimages").checked = false;
@@ -834,6 +840,7 @@
               'maxLevel',
               'name',
               'page-title',
+              'pagination',
               'search',
               'sidebar',
               'subMaxLevel',
@@ -1430,6 +1437,13 @@
   <!-- Footnotes Plugin -->
   <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
+
+  <!--Pagination Plugin -->
+  <script>
+    if (getURLParameterByName('pagination', true, false, window.location.href, true) === 'true') {
+      document.write('<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>');
+    }
+  </script>
 
   <!-- Footer Plugin -->
   <!-- <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script> -->
