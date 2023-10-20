@@ -169,11 +169,11 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><label>Website name:</label><br><input type="text" maxlength="80" value="" id="siteName" name="siteName"></div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable Docsify Search plugin in custom Docsify Sidebar</label></div>
-
 <div class="docsifythisurlbuilderoptionsline"><label>Maximum header level of custom Docsify Sidebar automatic table of contents (0 for none):</label><br><input type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"></div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination" unchecked><label for="pagination">Enable Pagination buttons in page content area (custom Docsify Sidebar required)  </label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable search field in custom Docsify Sidebar</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination" unchecked><label for="pagination">Enable pagination buttons in page content area (custom Docsify Sidebar required)  </label></div>
 
 <h3>Coverpage and Dark Theme Colors</h3>
 
