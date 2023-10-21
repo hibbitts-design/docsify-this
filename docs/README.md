@@ -438,7 +438,7 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 
 ##### browser-tab-title
 Set a custom title on Browser tab for your standalone pages with the optional **browser-tab-title** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&browser-tab-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page". If a Docsify custom Sidebar is used and a site **name** parameter is provided this will automatically be used as the Browser tab title as well.  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&browser-tab-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 ##### edit-link
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
@@ -559,7 +559,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 
 ##### name
 Display the name of the Website in a custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **name** Docsify parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&name=CPT-363  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&name=CPT-363  When this parameter is provided it will be automatically used as the Browser tab title as well.  
 
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
