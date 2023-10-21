@@ -1088,10 +1088,14 @@
                 document.body.appendChild(editCSS);
               }
 
-              // Change browser title if browser tab title parameter present
-             browserTabTitle = getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
+              // Change browser title if browser tab title or name parameter present
+              browserTabTitle = getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
+             name = getURLParameterByName('name', null, null, window.location.href, true);
               if (!(browserTabTitle === false)) {
+                // console.log(browserTabTitle);
                 document.title = browserTabTitle;
+              } else if (!(name === false)) {
+                document.title = name;
               } else {
                 document.title = 'Published by Docsify-This';
               }
