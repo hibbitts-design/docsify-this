@@ -9,6 +9,7 @@
 **Improved:**
 * Updated ReadMe
 * Support passing of Boolean values in URL parameters
+* Automatically set Browser tab title to the value of 'name' parameter
 
 ## [1.7.5] - 09/28/2023⚛️
 
