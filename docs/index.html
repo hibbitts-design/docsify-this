@@ -1090,9 +1090,7 @@
 
               // Change browser title if browser tab title or name parameter present
               browserTabTitle = getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
-             siteName = getURLParameterByName('name', null, null, window.location.href, true);
-             console.log(browserTabTitle);
-              console.log(name);
+              siteName = getURLParameterByName('name', null, null, window.location.href, true);
               if (!(browserTabTitle === false)) {
                 // console.log(browserTabTitle);
                 document.title = browserTabTitle;
