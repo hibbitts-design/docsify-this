@@ -197,7 +197,7 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 
 ##### browser-tab-title
 Set a custom title on Browser tab for your standalone pages with the optional **browser-tab-title** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&browser-tab-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&browser-tab-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page". If a Docsify custom Sidebar is used and a site **name** parameter is provided this will automatically be used as the Browser tab title as well.  
 
 ##### edit-link
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
