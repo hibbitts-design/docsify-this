@@ -5,7 +5,7 @@
 **New:**
 * Support for display of site name in custom Docsify Sidebar
 * Support display of pagination buttons in page content area
-* Initial support for the display of HedgeDoc files via manual Docsify-This URLs using the slug '\download' (with thanks to @TaylorJadin for discovering this ability)
+* Initial support for the display of HedgeDoc files via manual Docsify-This URLs using 'download' as the `homepage` URL parameter (with thanks to @TaylorJadin for discovering this ability)
 
 **Improved:**
 * Updated ReadMe
