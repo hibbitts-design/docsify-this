@@ -724,12 +724,12 @@
     }
 
     function getAllowedFileExtensions() {
-      // Return list of supported file extensions
+      // Return list of supported file extensions and supported slugs (e.g. 'download')
       return ".md";
     }
 
     function isExtensionAllowed(fileURL) {
-      // Check if filename contains an allowed file extension
+      // Check if filename contains an allowed file extension or supported slug
       var allowedExtensions = getAllowedFileExtensions();
       fileURL = fileURL.split('?id')[0];
       var extension = fileURL.split(".").pop();
