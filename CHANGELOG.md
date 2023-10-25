@@ -8,7 +8,6 @@
 * Added documentation for the display of HedgeDoc files via manual Docsify-This URLs using 'download' as the `homepage` URL parameter (with thanks to @TaylorJadin for discovering this ability)
 * Included 'hedgedocInstances' setting in index.html (when using your own instance of Docsify-This.net) for supporting HedgeDoc URLs in the Web Page Builder
 
-
 **Improved:**
 * Updated ReadMe
 * Support passing of Boolean values in URL parameters
