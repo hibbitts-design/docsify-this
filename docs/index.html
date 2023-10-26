@@ -192,6 +192,8 @@
 
           docsifyURL = docsifyURL.replace('/#/', '');
 
+          const urlhostname = new URL(url).hostname
+
           // If not Raw source URL convert it and determine automatic gitlink page URL when possible
           if (url.includes("github.com")) {
             var gitlinkPageURL = url;
@@ -218,6 +220,11 @@
             url = url.replace(/\/main/, '');
             url = url.replace(/\/master/, '');
             url = url.replace('codeberg.org', 'raw.codeberg.page');
+          } else if (hedgedocInstances.includes(urlhostname)) {
+            var gitlinkPageURL = url;
+            if (gitlinkPageURL.includes('/download')) {
+              gitlinkPageURL = gitlinkPageURL.split("/download")[0];
+            }
           } else if (url.includes("codeberg.page")) {
             // Automatic determination of gitLink not supported with raw.codeberg.pages URLs
             alert("Codeberg.page URLs not supported, please use Codeberg.org Markdown file URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/src/branch/main/home.md') or raw URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/raw/branch/main/home.md').");
@@ -240,8 +247,8 @@
           const cb1 = document.querySelector('#editCheck');
           if (cb1.checked) {
             if (gitlinkPageURL) {
-              if (!(isExtensionAllowed(lastSegment))) {
-                // No filename is present, so assume default README.md file
+              if (!(isExtensionAllowed(lastSegment)) && !(hedgedocInstances.includes(hostname)) ) {
+                // No filename is present and not a HedgeDoc instance, so assume default README.md file
                 gitlinkPageURL = gitlinkPageURL + "README.md";
               }
               if (document.querySelector('#stylesidebar').checked || document.querySelector('#loadcustomnavbar').checked) {
@@ -733,7 +740,7 @@
     }
 
     function getAllowedFileExtensions() {
-      // Return list of supported file extensions and supported slugs (e.g. 'download')
+      // Return list of supported file extensions
       return ".md";
     }
 
