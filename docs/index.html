@@ -238,6 +238,7 @@
           var lastSegment = url.split('/').pop();
           if (hedgedocInstances.includes(hostname)) {
             // Support for HedgeDoc instances in the Web Page Builder
+            lastSegment = lastSegment.replace(/#/g, '');
             if (!url.includes('/download')) {
               lastSegment = lastSegment + '/download';
             }
