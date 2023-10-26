@@ -7,6 +7,7 @@
 * Support display of pagination buttons in page content area
 * Added documentation for the display of HedgeDoc files via manual Docsify-This URLs using 'download' as the `homepage` URL parameter (with thanks to @TaylorJadin for discovering this ability)
 * Included 'hedgedocInstances' setting in index.html (when using your own instance of Docsify-This.net) for supporting HedgeDoc URLs in the Web Page Builder
+* Support for 'Edit this Page' link in Web Page Builder for HedgeDoc URLs (when using your own instance of Docsify-This.net)
 
 **Improved:**
 * Updated ReadMe
