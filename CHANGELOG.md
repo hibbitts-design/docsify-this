@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.7.6] - 10/26/2023
+## [1.8.0] - 10/26/2023
 
 **New:**
 * Support for display of site name in custom Docsify Sidebar
