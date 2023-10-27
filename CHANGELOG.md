@@ -6,7 +6,7 @@
 * Updated ReadMe
 
 **Bugfix:**
-* Use full HedgeDoc URL file for 'Edit this Page' when Sidebar is present
+* Use correct full HedgeDoc URL files for 'Edit this Page' when Sidebar is present
 
 ## [1.8.0] - 10/26/2023
 
