@@ -5,6 +5,9 @@
 **Improved:**
 * Updated ReadMe
 
+**Bugfix:**
+* Use full HedgeDoc URL file for 'Edit this Page' when Sidebar is present
+
 ## [1.8.0] - 10/26/2023
 
 **New:**
