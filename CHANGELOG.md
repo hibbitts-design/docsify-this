@@ -4,6 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Support for Website name ('name') and pagination buttons in Web Page Builder defaults
 
 **Bugfix:**
 * Use correct full HedgeDoc URL files for 'Edit this Page' when Sidebar is present
