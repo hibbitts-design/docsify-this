@@ -1319,7 +1319,8 @@
               document.getElementById("enableSidebarsearch").checked = true;
             }
 
-            document.getElementById("pagination").checked = true;
+            if (getURLParameter('pagination') === 'true') {
+              document.getElementById("pagination").checked = true;
             }
 
             coverpagecolor = getURLParameter('coverpage-color');
