@@ -1305,13 +1305,21 @@
               document.getElementById("loadcustomfooter").checked = true;
             }
 
-            if (getURLParameter('search') === 'true') {
-              document.getElementById("enableSidebarsearch").checked = true;
+            siteName = getURLParameter('name', null, null, window.location.href, true);
+            if (siteName) {
+              document.getElementById("siteName").value = siteName;
             }
 
             subMaxLevel = getURLParameter('subMaxLevel', null, null, window.location.href, true);
             if (subMaxLevel) {
               document.getElementById('subMaxLevel').value = subMaxLevel;
+            }
+
+            if (getURLParameter('search') === 'true') {
+              document.getElementById("enableSidebarsearch").checked = true;
+            }
+
+            document.getElementById("pagination").checked = true;
             }
 
             coverpagecolor = getURLParameter('coverpage-color');
