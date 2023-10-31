@@ -955,6 +955,13 @@ https://docsify-this.net/?url-field=empty
 
 ```
 
+##### edit-link-checkbox
+```html
+
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link-checkbox=true
+
+```
+
 ##### show-page-options
 ```html
 
