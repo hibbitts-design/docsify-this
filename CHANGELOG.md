@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.8.1] - XX/XX/2023
+## [1.8.1] - 10/31/2023🎃
 
 **Improved:**
 * Updated ReadMe
