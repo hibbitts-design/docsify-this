@@ -8,7 +8,7 @@
 
 **Bugfix:**
 * Use correct full HedgeDoc URL files for 'Edit this Page' when Sidebar is present
-* Added relevant element IDs to '<label for>' attributes
+* Added relevant element IDs to 'label for' attributes
 
 ## [1.8.0] - 10/26/2023
 
