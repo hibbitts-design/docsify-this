@@ -56,10 +56,10 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Title on Browser Tab:</label><br><input type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"></div>
+<div class="docsifythisurlbuilderoptionsline"><label for "browserTabTitle">Title on Browser Tab:</label><br><input type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"></div>
 
 <div class='stackedlabeldropdown'>
-  <label for="select1">Page font family:</label>
+  <label for="fontfamily">Page font family:</label>
   <select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
     <option value="default">Source Sans Pro</option>
     <option disabled="disabled">----</option>
@@ -78,7 +78,7 @@ Page layout:
 </div>
 
 <div class='stackedlabeldropdown'>
-  <label for="select2">Font size:</label>
+  <label for="fontsize">Font size:</label>
   <select class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
     <option value="1.125">18px (1.125rem)</option>
     <option disabled="disabled">----</option>
@@ -89,7 +89,7 @@ Page layout:
 </div>
         
 <div class='stackedlabeldropdown'>
-  <label for="select3">Line height:</label>
+  <label for="lineheight">Line height:</label>
   <select class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight" style="width: 60px;">
     <option value="1.4">1.4</option>
     <option disabled="disabled">----</option>
@@ -100,9 +100,9 @@ Page layout:
   </select>
 </div>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Page link color:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label for "linkcolorpreview" type="color">Page link color:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Text of 'Edit this Page' link:</label><br><input type="text" maxlength="60" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
+<div class="docsifythisurlbuilderoptionsline"><label for "editLinkText">Text of 'Edit this Page' link:</label><br><input type="text" maxlength="60" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
@@ -110,7 +110,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label for="tocheadings">Headings to include in table of contents (at least one required):</label></div>
+<div class="docsifythisurlbuilderoptionsline">Headings to include in table of contents (at least one required):</div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch1"  unchecked><label for="toch1">Heading 1 (h1)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch2" checked><label for="toch2">Heading 2 (h2)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch3" unchecked><label for="toch3">Heading 3 (h3)</label></div>
@@ -119,7 +119,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Maximum Header level (1-6) of Docsify Sidebar:</label><br><input type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"></div>
+<div class="docsifythisurlbuilderoptionsline"><label for "maxLevel">Maximum Header level (1-6) of Docsify Sidebar:</label><br><input type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"></div>
 
 <hr>
 
@@ -133,11 +133,11 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Page title (append to top of page):</label><br><input type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
+<div class="docsifythisurlbuilderoptionsline"><label for "pageTitle">Page title (append to top of page):</label><br><input type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
 <div class='clearfix'>
   <div class='stackedlabeldropdown' style='margin-bottom:4px;'>
-    <label for="select3">Page headers font weight:</label>
+    <label for="headerweight">Page headers font weight:</label>
     <select class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
       <option value="400">Normal (400)</option>
       <option value="600">Semi Bold (600)</option>
@@ -156,7 +156,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label for="customdocsifyfilesheadings">Load and display additional Docsify custom files (must be located at root level of remote files):</label></div>
+<div class="docsifythisurlbuilderoptionsline">Load and display additional Docsify custom files (must be located at root level of remote files):</div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadfavicon"  unchecked><label for="loadfavicon">Favicon (<code>favicon.png</code>)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcoverpage" unchecked><label for="loadcoverpage">Coverpage (<code>_coverpage.md</code>)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomsidebar"  unchecked><label for="loadcustomsidebar">Sidebar (<code>_sidebar.md</code>)</label></div>
@@ -167,9 +167,9 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Website name displayed in Sidebar:</label><br><input type="text" maxlength="80" value="" id="siteName" name="siteName"></div>
+<div class="docsifythisurlbuilderoptionsline"><label for "siteName">Website name displayed in Sidebar:</label><br><input type="text" maxlength="80" value="" id="siteName" name="siteName"></div>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Maximum header level of Sidebar automatic table of contents (0 for none):</label><br><input type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"></div>
+<div class="docsifythisurlbuilderoptionsline"><label for "subMaxLevel">Maximum header level of Sidebar automatic table of contents (0 for none):</label><br><input type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable search field in Sidebar</label></div>
 
@@ -179,13 +179,13 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Coverpage color:</label><br><input type="text" maxlength="7" size="7" value="#6C8A9A" id="coverpagecolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolor', 'coverpagecolorpreview');" data-coloris><span id="coverpagecolorpreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label for "coverpagecolorpreview" type="color">Coverpage color:</label><br><input type="text" maxlength="7" size="7" value="#6C8A9A" id="coverpagecolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolor', 'coverpagecolorpreview');" data-coloris><span id="coverpagecolorpreview"></span></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableDarkmode" unchecked><label for="enableDarkmode">Enable automatic switching of light/dark theme based on system OS-level preference</label></div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Page link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label for "linkcolordarkmodepreview" type="color">Page link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolordarkmode', 'coverpagecolordarkmodepreview');" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label for "coverpagecolordarkmodepreview" type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolordarkmode', 'coverpagecolordarkmodepreview');" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
