@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.8.2] - XX/XX/2023
+
+**Bugfix:**
+* Ensure custom Docsify Sidebar is present when setting site name
+
 ## [1.8.1] - 10/31/2023🎃
 
 **Improved:**
