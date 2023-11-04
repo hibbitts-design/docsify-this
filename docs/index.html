@@ -1081,7 +1081,7 @@
               }
 
               // Set link for displayed site name
-              if (getURLParameterByName('name', null, null, window.location.href, true)) {
+              if (getURLParameterByName('name', null, null, window.location.href, true) && getURLParameterByName('loadSidebar')) {
                 const appNameLink = document.querySelector('a.app-name-link');
                 appNameLink.setAttribute('href', '#/');
                 var editCSS = document.createElement('style')
