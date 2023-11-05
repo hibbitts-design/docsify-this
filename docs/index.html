@@ -1154,13 +1154,13 @@
               theDiv2.style.display = "block";
             }
 
-            if (getURLParameterByName('toc') === 'true') {
+            if (getURLParameterByName('toc') === true) {
               document.getElementById("stylecontentonly").checked = false;
               document.getElementById("styletoc").checked = true;
               document.getElementById("stylesidebar").checked = false;
             }
 
-            if (getURLParameterByName('sidebar') === 'true') {
+            if (getURLParameterByName('sidebar') === true) {
               document.getElementById("stylecontentonly").checked = false;
               document.getElementById("styletoc").checked = false;
               document.getElementById("stylesidebar").checked = true;
