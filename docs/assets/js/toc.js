@@ -167,9 +167,12 @@ function plugin(hook, vm) {
 }
 
 // Docsify plugin options
+// console.log(defaultOptions);
 var myOptions = defaultOptions ;
-if (getURLParameterByName('toc-headings')) {
-  tocheadings = getURLParameterByName('toc-headings', null, null, window.location.href, true);
+tocheadings = getURLParameterByName(['toc-headings','tocHeadings'], null, null, window.location.href, true);
+if (tocheadings) {
+  // console.log(tocheadings);
+  // console.log(defaultOptions.headings);
   defaultOptions.headings = tocheadings;
 }
 window.$docsify['toc'] = Object.assign(myOptions, window.$docsify['toc']);
