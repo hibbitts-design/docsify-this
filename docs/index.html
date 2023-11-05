@@ -130,7 +130,7 @@
     // Set hedgedocInstances to contain domain names of HedgeDoc instances to enable automatic creation of needed Docsify-This URL with Web Page Builder
     var hedgedocInstances = '';
 
-    // Get value from GET-parameter in URL
+     // Get value from GET-parameter in URL
     // @param {array}  name        Parameter-name
     // @param {*}      isTrue      Returns this variable if "name" found
     // @param {*}      isFalse     Returns this variable if "name" not found
@@ -140,28 +140,30 @@
     function getURLParameterByName(name, isTrue = null, isFalse = null, url = window.location.href, returnValue = false) {
 
       let exists = false;
+      let paramValue = null;
 
       url = decodeURIComponent(url);
 
       if (Array.isArray(name)) {
-
         name.forEach(element => {
-          if (getURLParameterByName(element)) {
+          var value = getURLParameterByName(element, null, null, url, true);
+          if (value === 'true' || value === 'false') {
             exists = true;
+            paramValue = value;
+          } else if (!exists && value) {
+            exists = true;
+            paramValue = value;
           }
         });
-
       } else {
-
         var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
         var results = regex.exec(url);
-
-        exists = (results && results[2]) ? true : false;
-
+        exists = (results && results[2] !== undefined) ? true : false;
+        paramValue = results && results[2] ? results[2] : null;
       }
 
       if (returnValue && exists) {
-        return results[2];
+        return paramValue;
       } else if (!exists && isFalse) {
         return isFalse;
       }
