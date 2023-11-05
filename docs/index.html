@@ -675,18 +675,18 @@
 
     function updateThemeModeLinkColors() {
       // Update link colors based on current theme mode
-      const darkModeEnabled = getURLParameterByName('dark-mode', null, null, window.location.href, true) || darkmode;
+      const darkModeEnabled = getURLParameterByName(['dark-mode','darkMode'], null, null, window.location.href, true) || darkmode;
 
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && darkModeEnabled) {
         // dark mode
-        const linkColorDarkMode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
+        const linkColorDarkMode = getURLParameterByName(['link-color-dark-mode','linkColorDarkMode'], null, null, window.location.href, true);
 
         if (linkColorDarkMode !== false) {
           setColorProperties('#' + linkColorDarkMode);
           document.documentElement.style.setProperty('--cover-button-color', '#' + linkColorDarkMode);
           document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#' + linkColorDarkMode);
         } else {
-          const linkColor = getURLParameterByName('link-color', null, null, window.location.href, true);
+          const linkColor = getURLParameterByName(['link-color','linkColor'], null, null, window.location.href, true);
 
           if (linkColor !== false) {
             setColorProperties('#' + linkColor);
@@ -699,7 +699,7 @@
           }
         }
 
-        const coverPageColorDarkMode = getURLParameterByName('coverpage-color-dark-mode', null, null, window.location.href, true);
+        const coverPageColorDarkMode = getURLParameterByName(['coverpage-color-dark-mode','coverpageColorDarkMode'], null, null, window.location.href, true);
 
         if (coverPageColorDarkMode !== false) {
           document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColorDarkMode);
@@ -708,7 +708,7 @@
         }
       } else {
         // light mode
-        const linkColor = getURLParameterByName('link-color', null, null, window.location.href, true);
+        const linkColor = getURLParameterByName(['link-color','linkColor'], null, null, window.location.href, true);
 
         if (linkColor !== false) {
           setColorProperties('#' + linkColor);
@@ -720,7 +720,7 @@
           document.documentElement.style.setProperty('--cover-button-border', '1px solid #0374B5');
         }
 
-        const coverPageColor = getURLParameterByName('coverpage-color', null, null, window.location.href, true);
+        const coverPageColor = getURLParameterByName(['coverpage-color','coverpageColor'], null, null, window.location.href, true);
 
         if (coverPageColor !== false) {
           document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColor);
@@ -858,7 +858,7 @@
 
               const links = Array.from(htmlElement.querySelectorAll('a'));
 
-              let existingEditThisPageLink = getURLParameterByName('edit-link', null, null, window.location.href, true);
+              let existingEditThisPageLink = getURLParameterByName(['edit-link','editLink'], null, null, window.location.href, true);
               let fileExt = getFileExtension(existingEditThisPageLink);
               if (!fileExt) {
                 fileExt = getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true));
@@ -926,7 +926,7 @@
             if (!(embeds.length === 0)) {
                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)  {
                   // dark mode
-                  enabledarkmode = getURLParameterByName('dark-mode', true, false, window.location.href, true) === 'true';
+                  enabledarkmode = getURLParameterByName(['dark-mode','darkMode'], true, false, window.location.href, true) === 'true';
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
                       embed.setAttribute('data-card-theme', 'dark');
@@ -983,7 +983,7 @@
                   .replace('raw.githubusercontent.com', 'github.com')
                   .replace(/\/master/, '/blob/master')
               } else if (window.$docsify['basePath']) {
-                url = getURLParameterByName('edit-link', null, null, window.location.href, true);
+                url = getURLParameterByName(['edit-link','editLink'], null, null, window.location.href, true);
                 gitLinkRepoURL = url;
               } else {
                 if (gitLinkRepoURL.includes("github.com")) {
@@ -995,7 +995,7 @@
                 }
               }
 
-              editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
+              editlinktextparm = getURLParameterByName(['edit-link-text','editLinkText'], null, null, window.location.href, true);
               if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
                 editlinktextparm = editlinktextparm.replaceAll('%20', ' ');
                 editLinkText = editlinktextparm;
@@ -1006,14 +1006,14 @@
               var creditHtml = '\n\n' + 'Displayed by <a href="https://docsify-this.net" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
 
               if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink', true, false, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
-                if (!(getURLParameterByName('hide-credits', true, false, window.location.href, true) === 'true')) {
-                  if (getURLParameterByName('edit-link-top', true, false, window.location.href, true) === 'true') {
+                if (!(getURLParameterByName(['hide-credits','hideCredits'], true, false, window.location.href, true) === 'true')) {
+                  if (getURLParameterByName(['edit-link-top','editLinkTop'], true, false, window.location.href, true) === 'true') {
                     return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
                   } else {
                     return html + '<br /><br />' + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
                   }
                 } else {
-                  if (getURLParameterByName('edit-link-top', true, false, window.location.href, true) === 'true') {
+                  if (getURLParameterByName(['edit-link-top','editLinkTop'], true, false, window.location.href, true) === 'true') {
                     return editHtml + '\n' + html
                   } else {
                     return html + '<br />' + '\n\n' + editHtml
@@ -1021,7 +1021,7 @@
                 }
 
               } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink', true, false, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
-                if (getURLParameterByName('edit-link-top', true, false, window.location.href, true) === 'true') {
+                if (getURLParameterByName(['edit-link-top','editLinkTop'], true, false, window.location.href, true) === 'true') {
                   return editHtml + '\n' + html
                 } else {
                   return html + '<br />' + '\n\n' + editHtml
@@ -1078,7 +1078,7 @@
               }
 
               // Change browser title if browser tab title or name parameter present
-              browserTabTitle = getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
+              browserTabTitle = getURLParameterByName(['browser-tab-title','browserTabTitle'], null, null, window.location.href, true);
               siteName = getURLParameterByName('name', null, null, window.location.href, true);
               if (!(browserTabTitle === false)) {
                 // console.log(browserTabTitle);
@@ -1090,7 +1090,7 @@
               }
 
               // Change page title if page title parameter present
-              pageTitle = getURLParameterByName('page-title', null, null, window.location.href, true);
+              pageTitle = getURLParameterByName(['page-title','pageTitle'], null, null, window.location.href, true);
               if (!(pageTitle === false)) {
                 var newh1 = document.createElement("h1");
                 newh1.innerHTML = pageTitle
@@ -1128,29 +1128,24 @@
               return; // Exit if basePath is present
             }
 
-            function getURLParameter(parameterName) {
-              const urlParams = new URLSearchParams(window.location.search);
-              return urlParams.get(parameterName);
-            }
-
-            if (getURLParameter('url-field')) {
+            if (getURLParameterByName(['url-field','urlField'])) {
               // console.log(getURLParameterByName('url-field'));
               var markdownFileURL = '';
-              markdownFileURL = getURLParameterByName('url-field', null, null, window.location.href, true);
+              markdownFileURL = getURLParameterByName(['url-field','urlField'], null, null, window.location.href, true);
               if (markdownFileURL == "empty") {
                 markdownFileURL = '';
               }
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
             }
 
-            if (getURLParameter('show-page-options') === 'true' || getURLParameterByName(['browser-tab-title','font-family', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis'])) {
+            if (getURLParameterByName(['show-page-options','showPageOptions']) === true || getURLParameterByName(['browser-tab-title','browserTabTitle','font-family','fontFamily','font-size','fontSize','line-height','lineHeight','link-color','linkColor','edit-link-text','editLinkText','edit-link-top','editLinkTop','hide-credits','hideCredits','toc-headings','tocHeadings','toc-narrow','tocNarrow','maxLevel','hypothesis'])) {
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
               document.getElementById("pageappearanceoptionsheader").style.display = "none";
               theDiv.style.display = "block";
             }
 
-            if (getURLParameter('advanced') === 'true' || getURLParameterByName(['page-title','header-weight','zoom-images','loadFavicon','coverpage','loadSidebar','loadNavbar','loadFooter','name','subMaxLevel','search','pagination','coverpage-color','dark-mode','link-color-dark-mode','coverpage-color-dark-mode'])) {
+            if (getURLParameterByName('advanced') === true || getURLParameterByName(['page-title','pageTitle','header-weight','headerWeight','zoom-images','zoomImages','loadFavicon','coverpage','loadSidebar','loadNavbar','loadFooter','name','subMaxLevel','search','pagination','coverpage-color','coverpageColor','dark-mode','darkMode','link-color-dark-mode','linkColorDarkMode','coverpage-color-dark-mode','coverpageColorDarkMode'])) {
               document.getElementById("btn_2").style.display = "none";
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
@@ -1159,43 +1154,43 @@
               theDiv2.style.display = "block";
             }
 
-            if (getURLParameter('toc') === 'true') {
+            if (getURLParameterByName('toc') === 'true') {
               document.getElementById("stylecontentonly").checked = false;
               document.getElementById("styletoc").checked = true;
               document.getElementById("stylesidebar").checked = false;
             }
 
-            if (getURLParameter('sidebar') === 'true') {
+            if (getURLParameterByName('sidebar') === 'true') {
               document.getElementById("stylecontentonly").checked = false;
               document.getElementById("styletoc").checked = false;
               document.getElementById("stylesidebar").checked = true;
             }
 
-            if (getURLParameter('edit-link-checkbox') === 'true' || getURLParameter('edit-link')) {
+            if (getURLParameterByName(['edit-link-checkbox','editLinkCheckbox']) === 'true' || getURLParameterByName(['edit-link','editLink'])) {
               document.getElementById("editCheck").checked = true;
             }
 
-            browserTabTitle = getURLParameter('browser-tab-title');
+            browserTabTitle = getURLParameterByName(['browser-tab-title','browserTabTitle']);
             if (browserTabTitle) {
               document.getElementById('browserTabTitle').value = decodeURI(browserTabTitle);
             }
 
-            fontfamily = getURLParameter('font-family');
+            fontfamily = getURLParameterByName(['font-family','fontFamily']);
             if (fontfamily) {
               document.getElementById('fontfamily').value = encodeURI(fontfamily);
             }
 
-            fontsize = getURLParameter('font-size');
+            fontsize = getURLParameterByName(['font-size','fontSize']);
             if (fontsize) {
               document.getElementById('fontsize').value = fontsize;
             }
 
-            lineheight = getURLParameter('line-height');
+            lineheight = getURLParameterByName(['line-height','lineHeight']);
             if (lineheight) {
               document.getElementById('lineheight').value = lineheight;
             }
 
-            linkcolor = getURLParameter('link-color');
+            linkcolor = getURLParameterByName(['link-color','linkColor']);
             if (linkcolor) {
               linkcolor = '#' + linkcolor;
               document.getElementById('linkcolor').value = linkcolor;
@@ -1204,20 +1199,20 @@
               document.getElementById("linkcolorpreview").style.backgroundColor = linkcolor;
             }
 
-            editLinkText = getURLParameter('edit-link-text');
+            editLinkText = getURLParameterByName(['edit-link-text','editLinkText']);
             if (editLinkText) {
               document.getElementById('editLinkText').value = decodeURI(editLinkText);
             }
 
-            if (getURLParameter('edit-link-top') === 'true') {
+            if (getURLParameterByName(['edit-link-top','editLinkTop']) === 'true') {
               document.getElementById("editLinkTopCheck").checked = true;
             }
 
-            if (getURLParameter('hide-credits') === 'true') {
+            if (getURLParameterByName(['hide-credits','hideCredits']) === 'true') {
               document.getElementById("hideCredits").checked = true;
             }
 
-            tocheadings = getURLParameter('toc-headings');
+            tocheadings = getURLParameterByName(['toc-headings','tocHeadings']);
             if (tocheadings) {
               if (tocheadings.includes("h1")) {
                 document.getElementById("toch1").checked = true;
@@ -1230,72 +1225,72 @@
               }
             }
 
-            if (getURLParameter('toc-narrow') === 'true') {
+            if (getURLParameterByName(['toc-narrow','tocNarrow']) === 'true') {
               document.getElementById("narrowToC").checked = true;
             }
 
-            maxLevel = getURLParameter('maxLevel', null, null, window.location.href, true);
+            maxLevel = getURLParameterByName('maxLevel', null, null, window.location.href, true);
             if (maxLevel) {
               document.getElementById('maxLevel').value = maxLevel;
             }
 
-            if (getURLParameter('hypothesis') === 'true') {
+            if (getURLParameterByName('hypothesis') === 'true') {
               document.getElementById("hypothesisenable").checked = true;
             }
 
-            pageTitle = getURLParameter('page-title');
+            pageTitle = getURLParameterByName(['page-title','pageTitle']);
             if (pageTitle) {
               document.getElementById('pageTitle').value = decodeURI(pageTitle);
             }
 
-            headerweight = getURLParameter('header-weight');
+            headerweight = getURLParameterByName(['header-weight','headerWeight']);
             if (headerweight) {
               document.getElementById('headerweight').value = headerweight;
             }
 
-            if (getURLParameter('zoom-images') === 'true') {
+            if (getURLParameterByName(['zoom-images','zoomImages']) === 'true') {
               document.getElementById("zoomimages").checked = true;
             }
             
-            if (getURLParameter('loadFavicon')) {
+            if (getURLParameterByName('loadFavicon')) {
               document.getElementById("loadfavicon").checked = true;
             }
 
-            if (getURLParameter('coverpage')) {
+            if (getURLParameterByName('coverpage')) {
               document.getElementById("loadcoverpage").checked = true;
             }
 
-            if (getURLParameter('loadSidebar')) {
+            if (getURLParameterByName('loadSidebar')) {
               document.getElementById("loadcustomsidebar").checked = true;
             }
 
-            if (getURLParameter('loadNavbar')) {
+            if (getURLParameterByName('loadNavbar')) {
               document.getElementById("loadcustomnavbar").checked = true;
             }
 
-            if (getURLParameter('loadFooter')) {
+            if (getURLParameterByName('loadFooter')) {
               document.getElementById("loadcustomfooter").checked = true;
             }
 
-            siteName = getURLParameter('name', null, null, window.location.href, true);
+            siteName = getURLParameterByName('name', null, null, window.location.href, true);
             if (siteName) {
               document.getElementById("siteName").value = siteName;
             }
 
-            subMaxLevel = getURLParameter('subMaxLevel', null, null, window.location.href, true);
+            subMaxLevel = getURLParameterByName('subMaxLevel', null, null, window.location.href, true);
             if (subMaxLevel) {
               document.getElementById('subMaxLevel').value = subMaxLevel;
             }
 
-            if (getURLParameter('search') === 'true') {
+            if (getURLParameterByName('search') === 'true') {
               document.getElementById("enableSidebarsearch").checked = true;
             }
 
-            if (getURLParameter('pagination') === 'true') {
+            if (getURLParameterByName('pagination') === 'true') {
               document.getElementById("pagination").checked = true;
             }
 
-            coverpagecolor = getURLParameter('coverpage-color');
+            coverpagecolor = getURLParameterByName(['coverpage-color','coverpageColor']);
             if (coverpagecolor) {
               coverpagecolor = '#' + coverpagecolor;
               document.getElementById('coverpagecolor').value = coverpagecolor;
@@ -1304,11 +1299,11 @@
               document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
             }
 
-            if (getURLParameter('dark-mode') === 'true') {
+            if (getURLParameterByName(['dark-mode','darkMode']) === 'true') {
               document.getElementById("enableDarkmode").checked = true;
             }
 
-            linkcolordarkmode = getURLParameter('link-color-dark-mode');
+            linkcolordarkmode = getURLParameterByName(['link-color-dark-mode','linkColorDarkMode']);
             if (linkcolordarkmode) {
               linkcolordarkmode = '#' + linkcolordarkmode;
               document.getElementById('linkcolordarkmode').value = linkcolordarkmode;
@@ -1317,9 +1312,9 @@
               document.getElementById("linkcolordarkmodepreview").style.backgroundColor = linkcolordarkmode;
             }
 
-            coverpagecolordarkmode = getURLParameter('coverpage-color-dark-mode');
+            coverpagecolordarkmode = getURLParameterByName(['coverpage-color-dark-mode','coverpageColorDarkMode'], null, null, window.location.href, true)
             if (coverpagecolordarkmode) {
-              coverpagecolordarkmode = '#' + getURLParameterByName('coverpage-color-dark-mode', null, null, window.location.href, true);
+              coverpagecolordarkmode = '#' + coverpagecolordarkmode;
               document.getElementById('coverpagecolordarkmode').value = coverpagecolordarkmode;
               document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
               document.getElementById("coverpagecolordarkmodepreview").style.borderColor = coverpagecolordarkmode;
@@ -1462,7 +1457,7 @@
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
-    if (getURLParameterByName('toc-narrow', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
+    if (getURLParameterByName(['toc-narrow','tocNarrow'], true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
@@ -1504,7 +1499,7 @@
     if (!(window.$docsify['basePath'] === undefined)) {
 
       // Change header weight if headerweight parameter present
-      headerweight = getURLParameterByName('header-weight', null, null, window.location.href, true);
+      headerweight = getURLParameterByName(['header-weight','headerWeight'], null, null, window.location.href, true);
       if (!(headerweight === false)) {
         document.documentElement.style.setProperty('--heading-h1-font-weight', headerweight);
         document.documentElement.style.setProperty('--heading-h2-font-weight', headerweight);
@@ -1515,20 +1510,20 @@
       }
 
       // Change body font if fontFamily parameter present
-      fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
+      fontfamily = getURLParameterByName(['font-family','fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
       }
 
       // Change body font size if fontSize parameter present
-      fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
+      fontsize = getURLParameterByName(['font-size','fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
         fontsize = fontsize + 'rem';
         document.documentElement.style.setProperty('--base-font-size', fontsize);
       }
 
       // Change line height if lineheight parameter present
-      lineheight = getURLParameterByName('line-height', null, null, window.location.href, true);
+      lineheight = getURLParameterByName(['line-height','lineHeight'], null, null, window.location.href, true);
       if (!(lineheight === false)) {
         document.documentElement.style.setProperty('--base-line-height', lineheight);
       }
@@ -1536,7 +1531,7 @@
       updateThemeModeLinkColors();
 
       // Keep dark theme CSS files loaded if dark-mode parameter is true
-      enabledarkmode = getURLParameterByName('dark-mode', true, false, window.location.href, true) === 'true';
+      enabledarkmode = getURLParameterByName(['dark-mode','darkMode'], true, false, window.location.href, true) === 'true';
       if (enabledarkmode === false && darkmode === false) {
         var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
         linkNode.parentNode.removeChild(linkNode);
@@ -1563,7 +1558,7 @@
   <!-- Zoom Image Plugin -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
-      if (getURLParameterByName('zoom-images', true, false, window.location.href, true) === 'true') {
+      if (getURLParameterByName(['zoom-images','zoomImages'], true, false, window.location.href, true) === 'true') {
       document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
       }
     }
