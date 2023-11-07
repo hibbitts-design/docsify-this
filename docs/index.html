@@ -110,7 +110,7 @@
     var editLinkText = 'Edit this Page';
 
     // Set standalone to true to permanently hide the Sidebar
-    var standalone = (!(getURLParameterByName('sidebar', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')));
+    var standalone = (!(getURLParameterByName('sidebar', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')));
 
     // Set ToC to true to permanently show page Table of Contents (Sidebar and Navbar must also be hidden)
     var ToC = false;
@@ -926,7 +926,7 @@
             if (!(embeds.length === 0)) {
                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)  {
                   // dark mode
-                  enabledarkmode = getURLParameterByName(['dark-mode','darkMode'], true, false, window.location.href, true) === 'true';
+                  enabledarkmode = getURLParameterByName(['dark-mode','darkMode'], null, null, window.location.href, true) === 'true';
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
                       embed.setAttribute('data-card-theme', 'dark');
@@ -1005,30 +1005,30 @@
 
               var creditHtml = '\n\n' + 'Displayed by <a href="https://docsify-this.net" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
 
-              if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink', true, false, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
-                if (!(getURLParameterByName(['hide-credits','hideCredits'], true, false, window.location.href, true) === 'true')) {
-                  if (getURLParameterByName(['edit-link-top','editLinkTop'], true, false, window.location.href, true) === 'true') {
+              if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
+                if (!(getURLParameterByName(['hide-credits','hideCredits'], null, null, window.location.href, true) === 'true')) {
+                  if (getURLParameterByName(['edit-link-top','editLinkTop'], null, null, window.location.href, true) === 'true') {
                     return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
                   } else {
                     return html + '<br /><br />' + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
                   }
                 } else {
-                  if (getURLParameterByName(['edit-link-top','editLinkTop'], true, false, window.location.href, true) === 'true') {
+                  if (getURLParameterByName(['edit-link-top','editLinkTop'], null, null, window.location.href, true) === 'true') {
                     return editHtml + '\n' + html
                   } else {
                     return html + '<br />' + '\n\n' + editHtml
                   }
                 }
 
-              } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink', true, false, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
-                if (getURLParameterByName(['edit-link-top','editLinkTop'], true, false, window.location.href, true) === 'true') {
+              } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
+                if (getURLParameterByName(['edit-link-top','editLinkTop'], null, null, window.location.href, true) === 'true') {
                   return editHtml + '\n' + html
                 } else {
                   return html + '<br />' + '\n\n' + editHtml
                 }
 
               } else if (!(getURLParameterByName(['standalone', 'embedded']))) {
-                if (!(getURLParameterByName('hide-credits', true, false, window.location.href, true) === 'true')) {
+                if (!(getURLParameterByName('hide-credits', null, null, window.location.href, true) === 'true')) {
                   return html + '<br />' + '\n\n' + '<hr>' + creditHtml
                 } else {
                   return html
@@ -1442,7 +1442,7 @@
 
   <!--Pagination Plugin -->
   <script>
-    if (getURLParameterByName('pagination', true, false, window.location.href, true) === 'true') {
+    if (getURLParameterByName('pagination', null, null, window.location.href, true) === 'true') {
       document.write('<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>');
     }
   </script>
@@ -1453,11 +1453,11 @@
 
   <!-- Table of Contents Plugin -->
   <script>
-    if (getURLParameterByName('toc', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath') || ToC) {
+    if (getURLParameterByName('toc', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath') || ToC) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
-    if (getURLParameterByName(['toc-narrow','tocNarrow'], true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
+    if (getURLParameterByName(['toc-narrow','tocNarrow'], null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
@@ -1485,7 +1485,7 @@
 
   <!-- Optionally enable Hypothesis -->
   <script>
-    if (getURLParameterByName('hypothesis', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
+    if (getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<script async src="https://hypothes.is/embed.js"><\/script>');
     }
   </script>
@@ -1531,7 +1531,7 @@
       updateThemeModeLinkColors();
 
       // Keep dark theme CSS files loaded if dark-mode parameter is true
-      enabledarkmode = getURLParameterByName(['dark-mode','darkMode'], true, false, window.location.href, true) === 'true';
+      enabledarkmode = getURLParameterByName(['dark-mode','darkMode'], null, null, window.location.href, true) === 'true';
       if (enabledarkmode === false && darkmode === false) {
         var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
         linkNode.parentNode.removeChild(linkNode);
@@ -1558,7 +1558,7 @@
   <!-- Zoom Image Plugin -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
-      if (getURLParameterByName(['zoom-images','zoomImages'], true, false, window.location.href, true) === 'true') {
+      if (getURLParameterByName(['zoom-images','zoomImages'], null, null, window.location.href, true) === 'true') {
       document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
       }
     }
@@ -1566,7 +1566,7 @@
 
   <!--Search Plugin -->
   <script>
-    if (getURLParameterByName('search', true, false, window.location.href, true) === 'true') {
+    if (getURLParameterByName('search', null, null, window.location.href, true) === 'true') {
       document.write('<script src="assets/vendor/docsify/plugins/search-docsify-this.min.js"><\/script>');
     }
   </script>
