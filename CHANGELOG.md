@@ -9,6 +9,7 @@
 **Bugfix:**
 * Ensure custom Docsify Sidebar is present when setting site name
 * Provide expected results for true and false settings with Web Page Builder defaults
+* Add trailing slash to base Docsify URL to support running from a subdirectory
 
 ## [1.8.1] - 10/31/2023🎃
 
