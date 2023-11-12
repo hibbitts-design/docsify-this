@@ -193,6 +193,7 @@
           docsifyURL = docsifyURL.split("?")[0]; //url;
 
           docsifyURL = docsifyURL.replace('/#/', '');
+          docsifyURL = docsifyURL.replace(/\/?$/, '/'); // If no trailing slash add it
 
           const urlhostname = new URL(url).hostname
 
