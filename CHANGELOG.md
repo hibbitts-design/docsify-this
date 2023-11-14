@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.8.2] - XX/XX/2023
+## [1.8.2] - 11/14/2023
 
 **Improved:**
 * Support for URL parameter aliases (e.g. use of camel case in additions to hyphenated names)
