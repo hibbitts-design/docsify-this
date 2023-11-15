@@ -4,6 +4,7 @@
 
 **Improved:**
 * Use of 'aria-label' instead of 'label for' on select Web Page Builder elements to improve accessibility with screen readers
+* Updated screenshots
 
 ## [1.8.2] - 11/14/2023
 
