@@ -86,7 +86,19 @@ _Docsify-This.net workflow using Webserver Markdown files._
 
 ### Ready-to-Use Docsify-This Markdown Templates
 
-While all you need to get going with Docsify-This is a basic Markdown file, here are some templates (with step-by-step how to use instructions) you can use that show what is possible with Markdown, images, and even a few HTML snippets!
+While all you need to get going with Docsify-This is a basic Markdown file, below are some templates you can use that show what is possible with Markdown, images, and even a few HTML snippets!
+
+To use these templates you would generally do the following (template specific instructions are included with each template):
+
+1. Tap **Use this template** in the chosen template repository (upper-right green button) and then choose **Create a new repository**
+
+2. Choose the name for your new repository to contain the files and then tap **Create repository** to copy the template files to your own GitHub account
+
+3. View the **home.md** Markdown file in your newly created repository and copy it's URL
+
+4. Go to https://docsify-this.net and paste the copied URL into the **Markdown File URL** field
+
+5. Select the page options you want (e.g. Docsify Sidebar) and tap the **View as Standalone Page** button to view your Markdown file as a web page for sharing or embedding  
 
 #### [Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article)
 
