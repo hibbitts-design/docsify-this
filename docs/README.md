@@ -1007,7 +1007,7 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 
 1. Tap **Code** on your GitHub Markdown files repository (upper-right green button)
 2. Choose **Open Desktop** and follow the prompts, installing [GitHub Desktop](https://desktop.github.com/) if not already present
-3. You will now be able to edit the Docsify-This Markdown files using the desktop text editor of your choice such as [VSCode](https://code.visualstudio.com/), [Pulsar](https://pulsar-edit.dev/) (was Atom.io), [Typora](https://typora.io/) etc.
+3. You will now be able to edit the Docsify-This Markdown files using the desktop text editor of your choice such as [Microsoft Visual Studio](https://code.visualstudio.com/), [Pulsar](https://pulsar-edit.dev/) (was Atom.io), [Typora](https://typora.io/) etc.
 4. Use GitHub Desktop to push any changes to your repository.  
 
 [Learn more about getting started with GitHub Desktop](https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop).
