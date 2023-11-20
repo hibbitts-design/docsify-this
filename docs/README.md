@@ -211,6 +211,7 @@ Page layout:
 * [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
 * [Custom Markdown CSS Classes](/?id=custom-markdown-css-classes)
 * [Tips and Techniques](/?id=tips-and-techniques)
+* [Editing Docsify-This Markdown Files on your Desktop](/?id=editing-docsify-this-markdown-files-on-your-desktop)
 * [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 * [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
 * [Troubleshooting](/?id=troubleshooting)
@@ -995,6 +996,21 @@ You can use [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of hy
 
 #### Use of New Web Editor GitHub.dev
 To use the new GitHub.dev Web editor (currently in Beta) for 'Edit this Page' links, change `github.com` to `github.dev` for GitHub.com files entered into the Web Page Builder Markdown File URL field.
+
+---
+
+### Editing Docsify-This Markdown Files on your Desktop
+
+When using Docsify-This to display Markdown files located on Git-based services such as GitHub or Codeberg you can download (clone) files to your desktop for local editing and then upload (push) changes back to the online files.
+
+For example, to edit GitHub Markdown files on your desktop you would do the following:
+
+1. Tap **Code** on your GitHub Markdown files repository (upper-right green button)
+2. Choose **Open Desktop** and follow the prompts, installing [GitHub Desktop](https://desktop.github.com/) if not already present
+3. You will now be able to edit the Docsify-This Markdown files using the desktop text editor of your choice such as [VSCode](https://code.visualstudio.com/), [Pulsar](https://pulsar-edit.dev/) (was Atom.io), [Typora](https://typora.io/) etc.
+4. Use GitHub Desktop to push any changes to your repository.  
+
+[Learn more about getting started with GitHub Desktop](https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop).
 
 ---
 
