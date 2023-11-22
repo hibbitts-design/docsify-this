@@ -287,6 +287,8 @@ To use these templates you would generally do the following (template specific i
 
 5. Select the page options you want (e.g. Docsify Sidebar) and tap the **View as Standalone Page** button to view your Markdown file as a web page for sharing or embedding  
 
+Now that the template files are located on your own GitHub account, modify their content to fit your needs.  
+
 <div class="row">
 
 <div class="docsifythiscolumn35" >
