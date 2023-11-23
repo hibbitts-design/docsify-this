@@ -6,6 +6,7 @@
 * Use of 'aria-label' instead of 'label for' on select Web Page Builder elements to improve accessibility with screen readers
 * Updated screenshots
 * Updated ReadMe
+* Added 'onedrive.live.com' to domains made responsive through the automatic addition of the CSS Markdown class `video-container-16by9`
 
 ## [1.8.2] - 11/14/2023
 
