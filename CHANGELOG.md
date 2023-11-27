@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.8.3] - XX/XX/2023
+## [1.8.3] - 11/27/2023
 
 **Improved:**
 * Use of 'aria-label' instead of 'label for' on select Web Page Builder elements to improve accessibility with screen readers
