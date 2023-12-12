@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.8.4] - XX/XX/2023
+
+**Improved:**
+* Support for Wikilinks in Tables (with thanks and appreciation to @ethack for the docsify-wikilink PR)
+
 ## [1.8.3] - 11/27/2023
 
 **Improved:**
