@@ -554,6 +554,10 @@
   width: 50%;
 }
 
+.markdown-section .column img {
+  padding-top: .35rem;
+}
+
 .markdown-section .row:after {
   content: "";
   display: table;
