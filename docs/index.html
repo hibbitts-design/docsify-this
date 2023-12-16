@@ -838,7 +838,7 @@
 
               // Get current Docsify URL
               var url = '';
-              window.location.href;
+              url = window.location.href;
               url = url.replace('#/', '');
 
               var currentBasePath = '';
@@ -850,8 +850,13 @@
               var paramArray = url.split('&');
               // Ignore the first two parameters (basePath and homepage)
               var remainingParams = paramArray.slice(2);
-              // Assemble remaining URL parameters from the array into a single string
-              var URLparms = '&' + remainingParams.join('&');
+              console.log(remainingParams);
+              // Assemble remaining URL parameters from the array into a single string if not empty
+              if (remainingParams.length != 0) {
+                var URLparms = '&' + remainingParams.join('&');
+              } else {
+                var URLparms = '';
+              }
               // console.log(URLparms);
 
               url = url.replace(/[?].*/, ''); // Strips anything after ?
