@@ -8,6 +8,9 @@
 * Updated ReadMe
 * Improved image alignment with two column layouts
 
+**Bugfix:**
+* Pass all existing URLs on multiple page sites with  'Edit this Page' links
+
 ## [1.8.3] - 11/27/2023
 
 **Improved:**
