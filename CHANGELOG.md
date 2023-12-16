@@ -6,6 +6,7 @@
 * Support for Wikilinks in Tables (with thanks and appreciation to @ethack for the docsify-wikilink PR)
 * Support for Wikilink images
 * Updated ReadMe
+* Improved image alignment with two column layouts
 
 ## [1.8.3] - 11/27/2023
 
