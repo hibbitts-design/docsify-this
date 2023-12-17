@@ -836,32 +836,57 @@
 
               // Scan for links to local Markdown files and adjust URLs to work correctly
 
-              // Get current Docsify URL
+              // Get current Docsify URL without any parmarmeters
               var url = '';
-              url = window.location.href;
-              url = url.replace('#/', '');
+              url = window.location.href
+              url = url.replace(/[?].*/, ''); // Strips anything after ?
 
               var currentBasePath = '';
               currentBasePath = getURLParameterByName('basePath', null, null, window.location.href, true);
 
-              // Will store array of URL parameters
-              var paramArray = [];  
-              // Split the remaining URL parameters into an array
-              var paramArray = url.split('&');
-              // Ignore the first two parameters (basePath and homepage)
-              var remainingParams = paramArray.slice(2);
-              console.log(remainingParams);
-              // Assemble remaining URL parameters from the array into a single string if not empty
-              if (remainingParams.length != 0) {
-                var URLparms = '&' + remainingParams.join('&');
-              } else {
-                var URLparms = '';
+              // List of parameter names to check
+              var paramNames = [
+              'browser-tab-title',
+              'dark-mode',
+              'edit-link-text',
+              'edit-link-top',
+              'font-family',
+              'font-size',
+              'header-weight',
+              'hide-credits',
+              'hypothesis',
+              'line-height',
+              'link-color-dark-mode',
+              'link-color',
+              'loadFavicon',
+              'loadFooter',
+              'loadNavbar',
+              'loadSidebar',
+              'maxLevel',
+              'name',
+              'page-title',
+              'pagination',
+              'search',
+              'sidebar',
+              'subMaxLevel',
+              'toc',
+              'toc-headings',
+              'toc-narrow',
+              'zoom-images',
+              ];
+
+              // Carry any existing URL parms in links
+              var URLparms = '';
+
+              // Loop through the parameter names and check if they exist in the URL
+              for (var i = 0; i < paramNames.length; i++) {
+                var paramName = paramNames[i];
+                var paramValue = getURLParameterByName(paramName, null, null, window.location.href, true);
+                if (paramValue) {
+                  URLparms += '&' + paramName + '=' + encodeURIComponent(paramValue);
+                }
               }
-              // console.log(URLparms);
-
-              url = url.replace(/[?].*/, ''); // Strips anything after ?
-              // console.log(url); //www.example.com
-
+              
               const links = Array.from(htmlElement.querySelectorAll('a'));
 
               let existingEditThisPageLink = getURLParameterByName(['edit-link','editLink'], null, null, window.location.href, true);
