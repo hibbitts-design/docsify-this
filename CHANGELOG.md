@@ -10,7 +10,7 @@
 
 **Bugfix:**
 * Pass all existing URLs on multiple page sites with  'Edit this Page' links
-* Restore earlier existing URL parms script (v.1.8.1)
+* Utilize revised array logic for carrying over URL params
 
 ## [1.8.3] - 11/27/2023
 
