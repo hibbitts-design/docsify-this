@@ -850,7 +850,7 @@
               paramArray = url.split('&');
               // Filter out elements containing 'homepage' or 'basePath'
               var filteredParams = paramArray.filter(function(param) {
-                return !param.includes('homepage') && !param.includes('basePath') && !param.includes('edit-link') && !param.includes('editLink');
+                return !param.includes('homepage') && !param.includes('edit-link') && !param.includes('editLink');
               });
               // Assemble filtered URL parameters from the array into a single string
               var URLparms = '&' + filteredParams.join('&');
