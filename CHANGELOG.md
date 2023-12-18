@@ -2,6 +2,9 @@
 
 ## [1.8.4] - XX/XX/2023
 
+**New:**
+* Support for the docsify-tabs plugin (with thanks and appreciation to @jhildenbiddle for the plugin and thanks to @stephenharlow for requesting this feature)
+
 **Improved:**
 * Support for Wikilinks in Tables (with thanks and appreciation to @ethack for the docsify-wikilink PR)
 * Support for Wikilink images
@@ -9,7 +12,7 @@
 * Improved image alignment with two column layouts
 
 **Bugfix:**
-* Pass all existing URLs on multiple page sites with  'Edit this Page' links
+* Pass all existing URLs on multiple page sites with 'Edit this Page' links
 * Utilize revised array logic for carrying over URL params
 
 ## [1.8.3] - 11/27/2023
