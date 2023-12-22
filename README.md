@@ -576,6 +576,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </div>
 ```
 
+#### row/column with reversed column order
+
+```html
+<div class="row reverse-columns">
+<div class="column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+<div class="column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+</div>
+```
+
 #### video-container-4by3
 
 ```html
