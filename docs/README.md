@@ -136,7 +136,7 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline">Page title (append to top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page title (append to top of page)" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
 <div class='clearfix'>
-  <div class='stackedlabeldropdown' style='margin-bottom:4px;'>
+  <div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
     <label for="headerweight">Page headers font weight:</label>
     <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
       <option value="400">Normal (400)</option>
