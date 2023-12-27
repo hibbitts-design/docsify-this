@@ -60,7 +60,7 @@ Page layout:
 
 <div class='stackedlabeldropdown'>
   <label for="fontfamily">Page font family:</label>
-  <select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
+  <select style="border-radius: 7px;" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
     <option value="default">Source Sans Pro</option>
     <option disabled="disabled">----</option>
     <option value="Arial,sans-serif">Arial, sans-serif</option>
@@ -79,7 +79,7 @@ Page layout:
 
 <div class='stackedlabeldropdown'>
   <label for="fontsize">Font size:</label>
-  <select class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
+  <select style="border-radius: 7px;" class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
     <option value="1.125">18px (1.125rem)</option>
     <option disabled="disabled">----</option>
     <option value=".875">14px (.875rem)</option>
@@ -90,7 +90,7 @@ Page layout:
         
 <div class='stackedlabeldropdown'>
   <label for="lineheight">Line height:</label>
-  <select class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight" style="width: 60px;">
+  <select style="border-radius: 7px;" class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight" style="width: 60px;">
     <option value="1.4">1.4</option>
     <option disabled="disabled">----</option>
     <option value="1.2">1.2</option>
