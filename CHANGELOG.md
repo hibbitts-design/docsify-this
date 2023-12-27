@@ -12,6 +12,7 @@
 * Updated ReadMe
 * Improved image alignment with two column layouts
 * Improved contrast for unselected Tabs
+* Updated Docsify-This Web Page Builder button style
 
 **Bugfix:**
 * Pass all existing URLs on multiple page sites with 'Edit this Page' links
