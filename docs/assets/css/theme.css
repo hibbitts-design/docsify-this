@@ -836,7 +836,7 @@ span #docsifythisurlfield {
   margin-bottom: -8px;
   padding: 10px min(30px, 5%) 10px min(30px, 5%);
   line-height: 1.2rem;
-  background-color: #0b97ef;
+  background-color: #7580bb; /* Original color #0b97ef */
   text-decoration: none;
   font-weight: 600;
   border-radius: 1.2rem;
@@ -1081,7 +1081,7 @@ span #docsifythisurlfield {
 
   .docsifythisurlbuildersecondarybutton {
       color: black;
-      background-color: #a2e8fc;
+      background-color: #c1bfed; /* Original color #a2e8fc */
   }
 
   #docsifythisurlbuilder [type=radio]:checked + img {
