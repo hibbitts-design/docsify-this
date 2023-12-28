@@ -17,6 +17,7 @@
 **Bugfix:**
 * Pass all existing URLs on multiple page sites with 'Edit this Page' links
 * Utilize revised array logic for carrying over URL params
+* Remove link color for H2 headers on Docsify-This app page
 
 ## [1.8.3] - 11/27/2023
 
