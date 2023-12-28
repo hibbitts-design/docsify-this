@@ -1056,7 +1056,7 @@ span #docsifythisurlfield {
     color: #8798ee; /* Original color #4bc3f4 */
   }
   
-  #docsifythis p a, #docsifythis li a, #docsifythis h4 a {
+  #docsifythis p a, #docsifythis li a {
     color: #1BA1EE;
   }
 
