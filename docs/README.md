@@ -408,6 +408,29 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 
 </div>
 
+<div class="row">
+
+<div class="docsifythiscolumn35" >
+
+![Docsify-This Markdown Portfolio Starter Template](images/docsify-this-markdown-portfolio-starter-template.jpg ':class=docsify-this-screenshot')
+
+</div>
+
+<div class="docsifythiscolumn65" >
+
+<h4><a href="https://github.com/hibbitts-design/docsify-this-markdown-portfolio-starter">Docsify-This Markdown Portfolio Starter Template</a></h4>
+
+A simple Markdown portfolio starter template (based on [Markdown Portfolio Template](https://github.com/thoresonjd/markdown-portfolio-template) by [Justin Thoreson](https://github.com/thoresonjd)) which is viewable on both GitHub and with Docsify-This.net, displayed by Docsify-This as:  
+* [Standalone Site](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md "Docsify-This Markdown Starter Portfolio Template")  
+* [Standalone Site with automatic light/dark theme switching](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&dark-mode=true "Docsify-This Markdown Starter Portfolio Template")  
+* [Standalone Site using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter-template/main&homepage=README.md&font-family=Merriweather,Georgia,serif "Docsify-This Markdown Starter Portfolio Template")
+* [Standalone Site using the Merriweather font and red links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&font-family=Merriweather,Georgia,serif&link-color=cc0000#/ "Docsify-This Markdown Starter Portfolio Template")
+* [Standalone Site with zoomable images](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&zoom-images=true "Docsify-This Markdown Starter Portfolio Template")  
+
+</div>
+
+</div>
+
 ---
 
 ### More Docsify-This Markdown Examples
