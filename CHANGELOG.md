@@ -5,6 +5,7 @@
 **New:**
 * Support for the docsify-tabs plugin (with thanks and appreciation to @jhildenbiddle for the plugin and thanks to @harlows for requesting this feature which made me discover it was unintentionally not already included)
 * Added CSS Markdown class `reverse-columns`
+* Added example Docsify-This template (Markdown Starter Portfolio Template) 
 
 **Improved:**
 * Support for Wikilinks in Tables (with thanks and appreciation to @ethack for the docsify-wikilink PR)
