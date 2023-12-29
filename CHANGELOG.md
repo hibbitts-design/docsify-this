@@ -14,6 +14,7 @@
 * Improved contrast for unselected Tabs
 * Updated Docsify-This Web Page Builder button and field styles
 * Slightly adjusted Docsify-This Web Page Builder color scheme
+* Updated ReadMe
 
 **Bugfix:**
 * Pass all existing URLs on multiple page sites with 'Edit this Page' links
