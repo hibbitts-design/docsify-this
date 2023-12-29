@@ -761,16 +761,16 @@ body .docsify-pagination-container {
   padding-right: calc( 16px + (16 - 12) * (100vw - 400px) / (800 - 400) );
   border-width: 0;
   border-radius: 16px;
-  background: #f2f4fD; /* Original color #ecf4fe */
+  background: #f2f2fd; /* Previous colors #f2f4fD #ecf4fe */
 }
 
 #docsifythisurlbuilder h2 {
-  color: #2442ae; /* Original color #2462ae */
+  color: #242bae; /* Previous colors #2442ae #2462ae */
 }
 
 #docsifythisurlbuilder h3 {
   margin-top: 14px;
-  color: #2442ae; /* Original color #2462ae */
+  color: #242bae; /* Previous colors #2442ae #2462ae */
 }
 
 #docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
@@ -820,7 +820,7 @@ span #docsifythisurlfield {
   margin-bottom: -8px;
   padding: 10px min(30px, 5%) 10px min(30px, 5%);
   line-height: 1.2rem;
-  background-color: #0224cd; /* Original color #0361cd */
+  background-color: #2302cd; /* Previous colors #0224cd #0361cd */
   text-decoration: none;
   font-weight: 600; 
   border-radius: 1.2rem;
@@ -864,7 +864,7 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder [type=radio]:checked+img {
-  outline: 4px solid #0224cd; /* Original color #0261cd */
+  outline: 4px solid #2302cd; /* Previous colors #0224cd #0261cd */
   border-radius: 8px;
   position: relative;
 }
@@ -1098,7 +1098,7 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active,   #docsifythisurlbuildershowhidelink2 a:link, #docsifythisurlbuildershowhidelink2 a:visited, #docsifythisurlbuildershowhidelink2 a:hover, #docsifythisurlbuildershowhidelink2 a:active {
-      color: #4bc3f4;
+      color: #c6bfed; /* Original color #4bc3f4 */
   }
 
   #linkcolor {
