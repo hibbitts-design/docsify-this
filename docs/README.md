@@ -355,6 +355,10 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 </div>
 
+</div>
+
+<div class="row">
+
 <div class="docsifythiscolumn35" >
 
 ![Docsify-This Course Site Template](images/docsify-this-multiple-page-course-site.jpg ':class=docsify-this-screenshot')
@@ -897,7 +901,6 @@ Automatically added to all iFrames with the source domains 'youtube.com' or 'doc
   font-weight: bold;
   text-decoration: none;
 }
-
 
 </style>
 
