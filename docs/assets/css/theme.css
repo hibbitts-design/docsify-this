@@ -915,6 +915,10 @@ span #docsifythisurlfield {
   margin-top: 2px;
 }
 
+#docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active,   #docsifythisurlbuildershowhidelink2 a:link, #docsifythisurlbuildershowhidelink2 a:visited, #docsifythisurlbuildershowhidelink2 a:hover, #docsifythisurlbuildershowhidelink2 a:active {
+  color: #3940bf;
+}
+
 #docsifythisurlbuilder select {
   color: #323232;
   border: 1px solid #757575;
