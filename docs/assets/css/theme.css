@@ -1089,8 +1089,8 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuilder [type=radio]:checked + img {
-      outline: 4px solid #9592ec; /* Original color #4bc3f4 */
-      position: relative;
+    outline: 4px solid #7e83ed; /* Previous colors #9592ec #4bc3f4 */
+    position: relative;
   }
 
   #docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #loadfavicon, .markdown-section #loadcoverpage, .markdown-section #loadcustomsidebar, .markdown-section #loadcustomnavbar, .markdown-section #loadcustomfooter, .markdown-section #enableSidebarsearch, .markdown-section #zoomimages, .markdown-section #enableDarkmode, .markdown-section #pagination {
