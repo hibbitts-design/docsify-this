@@ -31,7 +31,8 @@
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css">
- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/vendor/themeable/themes/theme-simple-dark.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)"
+    href="assets/vendor/themeable/themes/theme-simple-dark.css">
   <link rel="stylesheet" href="assets/css/theme.css">
   <link rel="stylesheet" href="assets/css/custom.css">
 
@@ -46,7 +47,7 @@
   <link rel="stylesheet" href="assets/vendor/katex/katex.min.css" />
 
   <!-- Coloris -->
-  <link rel="stylesheet" href="assets/vendor/coloris/coloris.min.css"/>
+  <link rel="stylesheet" href="assets/vendor/coloris/coloris.min.css" />
   <script src="assets/vendor/coloris/coloris.min.js"></script>
 
   <style>
@@ -95,7 +96,7 @@
       --pagination-title-color: #0374B5;
 
       --docsifytabs-tab-color: var(--base-color);
-      --docsifytabs-tab-highlight-color   : var(--link-color);
+      --docsifytabs-tab-highlight-color: var(--link-color);
 
     }
   </style>
@@ -120,7 +121,7 @@
 
     // Set navbar to true to permanently override the hiding of the Navbar when displaying as standalone
     var navbar = false;
- 
+
     // Set footer to true to permanently show the Footer ('_footer.md)
     var footer = false;
 
@@ -133,7 +134,7 @@
     // Set hedgedocInstances to contain domain names of HedgeDoc instances to enable automatic creation of needed Docsify-This URL with Web Page Builder
     var hedgedocInstances = '';
 
-     // Get value from GET-parameter in URL
+    // Get value from GET-parameter in URL
     // @param {array}  name        Parameter-name
     // @param {*}      isTrue      Returns this variable if "name" found
     // @param {*}      isFalse     Returns this variable if "name" not found
@@ -234,7 +235,7 @@
           } else if (url.includes("codeberg.page")) {
             // Automatic determination of gitLink not supported with raw.codeberg.pages URLs
             alert("Codeberg.page URLs not supported, please use Codeberg.org Markdown file URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/src/branch/main/home.md') or raw URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/raw/branch/main/home.md').");
-              return;
+            return;
           } else {
             var gitlinkPageURL = '';
           }
@@ -254,7 +255,7 @@
           const cb1 = document.querySelector('#editCheck');
           if (cb1.checked) {
             if (gitlinkPageURL) {
-              if (!(isExtensionAllowed(lastSegment)) && !(hedgedocInstances.includes(hostname)) ) {
+              if (!(isExtensionAllowed(lastSegment)) && !(hedgedocInstances.includes(hostname))) {
                 // No filename is present and not a HedgeDoc instance, so assume default README.md file
                 gitlinkPageURL = gitlinkPageURL + "README.md";
               }
@@ -404,7 +405,7 @@
           const cb11 = document.querySelector('#loadcustomsidebar');
           if (cb11.checked) {
             if (!(URLparms.includes("&sidebar=true"))) {
-              var URLparms = URLparms + `&sidebar=true`; 
+              var URLparms = URLparms + `&sidebar=true`;
               document.getElementById("stylecontentonly").checked = false;
               document.getElementById("styletoc").checked = false;
               document.getElementById("stylesidebar").checked = true;
@@ -485,7 +486,7 @@
           if (cb16.checked) {
             var URLparms = URLparms + `&dark-mode=true`;
           }
-          
+
           var getColor = document.getElementById("linkcolordarkmode");
           var hexCode = getColor.value;
           if (hexCode === '') {
@@ -519,12 +520,12 @@
           }
 
           if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && url.includes("gist.raw.githubusercontent.com")) {
-          // Filename without supported extension or missing filename
+            // Filename without supported extension or missing filename
             alert("Please use the GitHub Gist raw source URL and a filename that includes the '.md' extension as the file URL. To get this URL, tap on the filename of your Gist (i.e. 'Yourfile.md') and then tap the 'Raw' button.");
             selectText();
             return;
           } else if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && !(hedgedocInstances.includes(hostname))) {
-          // Filename without supported extension or missing filename and not a HedgeDoc instance
+            // Filename without supported extension or missing filename and not a HedgeDoc instance
             alert("Please include the full path and filename with a supported extension (" + getAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
             selectText();
             return;
@@ -534,13 +535,13 @@
             var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
           }
 
-            var docsifyPreviewWin = window.open(baseURL, "Docsify-This Preview");
-            docsifyPreviewWin.focus();
+          var docsifyPreviewWin = window.open(baseURL, "Docsify-This Preview");
+          docsifyPreviewWin.focus();
 
-          } else {
+        } else {
 
-            alert("Please enter a valid Markdown file URL.");
-            selectText();
+          alert("Please enter a valid Markdown file URL.");
+          selectText();
 
         }
 
@@ -553,13 +554,13 @@
 
     }
 
-    const isValidUrl = urlString=> {
-        var urlPattern = new RegExp('^(https?:\\/\\/)?'+ // validate protocol
-        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // validate domain name
-        '((\\d{1,3}\\.){3}\\d{1,3}))'+ // validate OR ip (v4) address
-        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // validate port and path
-        '(\\?[;&a-z\\d%_.~+=-]*)?'+ // validate query string
-        '(\\#[-a-z\\d_]*)?$','i'); // validate fragment locator
+    const isValidUrl = urlString => {
+      var urlPattern = new RegExp('^(https?:\\/\\/)?' + // validate protocol
+        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // validate domain name
+        '((\\d{1,3}\\.){3}\\d{1,3}))' + // validate OR ip (v4) address
+        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // validate port and path
+        '(\\?[;&a-z\\d%_.~+=-]*)?' + // validate query string
+        '(\\#[-a-z\\d_]*)?$', 'i'); // validate fragment locator
       return !!urlPattern.test(urlString);
     }
 
@@ -585,11 +586,11 @@
       var getColor = document.getElementById(inputId);
       var hexCode = getColor.value;
       var regExp = /[#0-9A-Fa-f]{1}/g;
-      
+
       if (!(regExp.test(hexCode.slice(-1)))) {
         document.getElementById(inputId).value = hexCode.slice(0, -1);
       }
-      
+
       if (isHexadecimalColor(hexCode.substring(1))) {
         document.getElementById(previewId).style.visibility = "visible";
       } else {
@@ -599,11 +600,11 @@
           document.getElementById(previewId).style.visibility = "hidden";
         }
       }
-      
+
       if (!(hexCode.charAt(0) == "#")) {
         hexCode = '#' + hexCode;
       }
-      
+
       document.getElementById(previewId).style.borderColor = hexCode;
       document.getElementById(previewId).style.backgroundColor = hexCode;
     }
@@ -671,7 +672,7 @@
       document.documentElement.style.setProperty('--pagination-title-color', color);
       document.documentElement.style.setProperty('--cover-link-color', color);
       document.documentElement.style.setProperty('--cover-button-primary-background', color);
-      document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + color);
+      document.documentElement.style.setProperty('--cover-button-primary-border', '1px solid ' + color);
       document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--active', 'no-repeat 0px center / 5px 6px linear-gradient(225deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px), no-repeat 5px center / 5px 6px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px)');
       document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--collapse', 'no-repeat 2px calc(50% - 2.5px) / 6px 5px linear-gradient(45deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4px), no-repeat 2px calc(50% + 2.5px) / 6px 5px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4px)');
       document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--loaded', 'no-repeat 0px center / 5px 6px linear-gradient(225deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px), no-repeat 5px center / 5px 6px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px)');
@@ -679,18 +680,18 @@
 
     function updateThemeModeLinkColors() {
       // Update link colors based on current theme mode
-      const darkModeEnabled = getURLParameterByName(['dark-mode','darkMode'], null, null, window.location.href, true) || darkmode;
+      const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
 
       if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && darkModeEnabled) {
         // dark mode
-        const linkColorDarkMode = getURLParameterByName(['link-color-dark-mode','linkColorDarkMode'], null, null, window.location.href, true);
+        const linkColorDarkMode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
 
         if (linkColorDarkMode !== false) {
           setColorProperties('#' + linkColorDarkMode);
           document.documentElement.style.setProperty('--cover-button-color', '#' + linkColorDarkMode);
           document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#' + linkColorDarkMode);
         } else {
-          const linkColor = getURLParameterByName(['link-color','linkColor'], null, null, window.location.href, true);
+          const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
 
           if (linkColor !== false) {
             setColorProperties('#' + linkColor);
@@ -703,7 +704,7 @@
           }
         }
 
-        const coverPageColorDarkMode = getURLParameterByName(['coverpage-color-dark-mode','coverpageColorDarkMode'], null, null, window.location.href, true);
+        const coverPageColorDarkMode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
 
         if (coverPageColorDarkMode !== false) {
           document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColorDarkMode);
@@ -712,7 +713,7 @@
         }
       } else {
         // light mode
-        const linkColor = getURLParameterByName(['link-color','linkColor'], null, null, window.location.href, true);
+        const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
 
         if (linkColor !== false) {
           setColorProperties('#' + linkColor);
@@ -724,7 +725,7 @@
           document.documentElement.style.setProperty('--cover-button-border', '1px solid #0374B5');
         }
 
-        const coverPageColor = getURLParameterByName(['coverpage-color','coverpageColor'], null, null, window.location.href, true);
+        const coverPageColor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
 
         if (coverPageColor !== false) {
           document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColor);
@@ -770,15 +771,15 @@
       }
     }
 
-    function setFavicon(favImage){
+    function setFavicon(favImage) {
       let headTitle = document.querySelector('head');
       let setFavicon = document.createElement('link');
-      setFavicon.setAttribute('rel','shortcut icon');
-      setFavicon.setAttribute('href',favImage);
+      setFavicon.setAttribute('rel', 'shortcut icon');
+      setFavicon.setAttribute('href', favImage);
       headTitle.appendChild(setFavicon);
       let appleTouchIcon = document.createElement('link');
-      appleTouchIcon.setAttribute('rel','apple-touch-icon');
-      appleTouchIcon.setAttribute('href',favImage);
+      appleTouchIcon.setAttribute('rel', 'apple-touch-icon');
+      appleTouchIcon.setAttribute('href', favImage);
       headTitle.appendChild(appleTouchIcon);
     }
 
@@ -792,7 +793,7 @@
       homepage: 'README.md',
       // coverpage      : 'coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || getURLParameterByName('basePath')),
-      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) || !(getURLParameterByName('navbar')) || standalone || !navbar ||false),
+      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) || !(getURLParameterByName('navbar')) || standalone || !navbar || false),
       externalLinkTarget: (getURLParameterByName(['standalone', 'embedded'], '_top', '_blank')),
       loadFooter: (getURLParameterByName('footer') || footer || false),
       ext: getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true)),
@@ -848,23 +849,23 @@
               currentBasePath = getURLParameterByName('basePath', null, null, window.location.href, true);
 
               // Will store array of URL parameters
-              var paramArray = [];  
+              var paramArray = [];
               // Split the remaining URL parameters into an array
               paramArray = url.split('&');
               // Filter out elements containing 'homepage' or 'edit-link'
-              var filteredParams = paramArray.filter(function(param) {
+              var filteredParams = paramArray.filter(function (param) {
                 return !param.includes('homepage') && !param.includes('edit-link') && !param.includes('editLink');
               });
               // Assemble filtered URL parameters from the array into a single string
               var URLparms = '&' + filteredParams.join('&');
               // console.log(URLparms);
-              
+
               url = url.replace(/[?].*/, ''); // Strips anything after ?
               // console.log(url); //www.example.com
-              
+
               const links = Array.from(htmlElement.querySelectorAll('a'));
 
-              let existingEditThisPageLink = getURLParameterByName(['edit-link','editLink'], null, null, window.location.href, true);
+              let existingEditThisPageLink = getURLParameterByName(['edit-link', 'editLink'], null, null, window.location.href, true);
               let fileExt = getFileExtension(existingEditThisPageLink);
               if (!fileExt) {
                 fileExt = getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true));
@@ -921,57 +922,57 @@
                   }
                 } else {
                   // Set '_top' as external link targets except for docsify-this.net and GitHub Docsify-This repository
-                  if (! (link.href == "https://docsify-this.net/" || link.href == "https://github.com/hibbitts-design/docsify-open-publishing-starter-kit")) {
+                  if (!(link.href == "https://docsify-this.net/" || link.href == "https://github.com/hibbitts-design/docsify-open-publishing-starter-kit")) {
                     link.setAttribute('target', '_top');
                   }
                 }
               }
 
-            /* JS to change Embedly cards to light or dark theme based on system theme */
-            const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
-            if (!(embeds.length === 0)) {
-               if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)  {
+              /* JS to change Embedly cards to light or dark theme based on system theme */
+              const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
+              if (!(embeds.length === 0)) {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                   // dark mode
-                  enabledarkmode = getURLParameterByName(['dark-mode','darkMode'], null, null, window.location.href, true) === 'true';
+                  enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
                       embed.setAttribute('data-card-theme', 'dark');
                     });
                   }
-                  } else {
+                } else {
                   // light mode
                   embeds.forEach(embed => {
                     embed.setAttribute('data-card-theme', 'light');
                   });
-              }
-              window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-                if (enabledarkmode || darkmode) {
-                  document.location.reload();
                 }
-              });
+                window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+                  if (enabledarkmode || darkmode) {
+                    document.location.reload();
+                  }
+                });
 
-            }
+              }
 
-            /* Change relative HTML img tag src to absolute for GitHub or Codeberg Markdown files */
-            if (currentBasePath.includes("raw.githubusercontent.com") || currentBasePath.includes("raw.codeberg.page")) {
-              const images = Array.from(htmlElement.querySelectorAll('img'));
-              for (const image of images) {
-                // console.log(image.getAttribute('src'));
-                let url = image.getAttribute('src');
-                if (!(url.includes('://') > 0 || url.startsWith('//'))) {
-                  // URL is relative
-                  url = url.replace(/^\/+/g, '');
-                  url = currentBasePath + '/' + url;
-                  image.setAttribute('src', url);
-                  // console.log("changed src");
+              /* Change relative HTML img tag src to absolute for GitHub or Codeberg Markdown files */
+              if (currentBasePath.includes("raw.githubusercontent.com") || currentBasePath.includes("raw.codeberg.page")) {
+                const images = Array.from(htmlElement.querySelectorAll('img'));
+                for (const image of images) {
+                  // console.log(image.getAttribute('src'));
+                  let url = image.getAttribute('src');
+                  if (!(url.includes('://') > 0 || url.startsWith('//'))) {
+                    // URL is relative
+                    url = url.replace(/^\/+/g, '');
+                    url = currentBasePath + '/' + url;
+                    image.setAttribute('src', url);
+                    // console.log("changed src");
+                  }
                 }
               }
-            }
 
-            next(htmlElement.innerHTML);
+              next(htmlElement.innerHTML);
             } else {
               next(html);
-            } 
+            }
 
           });
 
@@ -989,7 +990,7 @@
                   .replace('raw.githubusercontent.com', 'github.com')
                   .replace(/\/master/, '/blob/master')
               } else if (window.$docsify['basePath']) {
-                url = getURLParameterByName(['edit-link','editLink'], null, null, window.location.href, true);
+                url = getURLParameterByName(['edit-link', 'editLink'], null, null, window.location.href, true);
                 gitLinkRepoURL = url;
               } else {
                 if (gitLinkRepoURL.includes("github.com")) {
@@ -1001,7 +1002,7 @@
                 }
               }
 
-              editlinktextparm = getURLParameterByName(['edit-link-text','editLinkText'], null, null, window.location.href, true);
+              editlinktextparm = getURLParameterByName(['edit-link-text', 'editLinkText'], null, null, window.location.href, true);
               if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
                 editlinktextparm = editlinktextparm.replaceAll('%20', ' ');
                 editLinkText = editlinktextparm;
@@ -1012,14 +1013,14 @@
               var creditHtml = '\n\n' + 'Displayed by <a href="https://docsify-this.net" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
 
               if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
-                if (!(getURLParameterByName(['hide-credits','hideCredits'], null, null, window.location.href, true) === 'true')) {
-                  if (getURLParameterByName(['edit-link-top','editLinkTop'], null, null, window.location.href, true) === 'true') {
+                if (!(getURLParameterByName(['hide-credits', 'hideCredits'], null, null, window.location.href, true) === 'true')) {
+                  if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
                     return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
                   } else {
                     return html + '<br /><br />' + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
                   }
                 } else {
-                  if (getURLParameterByName(['edit-link-top','editLinkTop'], null, null, window.location.href, true) === 'true') {
+                  if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
                     return editHtml + '\n' + html
                   } else {
                     return html + '<br />' + '\n\n' + editHtml
@@ -1027,7 +1028,7 @@
                 }
 
               } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
-                if (getURLParameterByName(['edit-link-top','editLinkTop'], null, null, window.location.href, true) === 'true') {
+                if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
                   return editHtml + '\n' + html
                 } else {
                   return html + '<br />' + '\n\n' + editHtml
@@ -1051,11 +1052,11 @@
             if (window.$docsify['basePath']) {
               var hasEmbedly = document.getElementsByClassName('embedly-card');
               if (hasEmbedly.length > 0) {
-                  // elements with class "embedly-card" exist
-                  var script = document.createElement('script');
-                  script.type = 'text/javascript';
-                  script.src = 'https://cdn.embedly.com/widgets/platform.js';    
-                  document.head.appendChild(script);
+                // elements with class "embedly-card" exist
+                var script = document.createElement('script');
+                script.type = 'text/javascript';
+                script.src = 'https://cdn.embedly.com/widgets/platform.js';
+                document.head.appendChild(script);
               }
 
               // Set link for displayed site name
@@ -1084,7 +1085,7 @@
               }
 
               // Change browser title if browser tab title or name parameter present
-              browserTabTitle = getURLParameterByName(['browser-tab-title','browserTabTitle'], null, null, window.location.href, true);
+              browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
               siteName = getURLParameterByName('name', null, null, window.location.href, true);
               if (!(browserTabTitle === false)) {
                 // console.log(browserTabTitle);
@@ -1096,29 +1097,29 @@
               }
 
               // Change page title if page title parameter present
-              pageTitle = getURLParameterByName(['page-title','pageTitle'], null, null, window.location.href, true);
+              pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
               if (!(pageTitle === false)) {
                 var newh1 = document.createElement("h1");
                 newh1.innerHTML = pageTitle
                 var divToMoveTo = document.getElementById("main");
-                divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);   
+                divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);
               }
 
               // Update all iframes with source domains 'youtube.com', 'youtube-nocookie.com', 'docs.google.com' or 'onedrive.live.com' to include the default responsive CSS Markdown class `video-container-16by9`
               const allIframes = Array.from(document.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="youtube-nocookie.com"], iframe[src*="docs.google.com"], iframe[src*="onedrive.live.com"]'));
 
               // Filter out iframes that are not already wrapped with a div including the classes 'video-container-16by9' and 'video-container-4by3'
-              const targetIframes = allIframes.filter(function(iframe) {
+              const targetIframes = allIframes.filter(function (iframe) {
                 const parentDiv = iframe.parentNode;
                 return !parentDiv.matches('.video-container-16by9, .video-container-4by3');
               });
 
               // Wrap each target iframe with a div element
-              targetIframes.forEach(function(iframe) {
+              targetIframes.forEach(function (iframe) {
                 const wrapperDiv = document.createElement('div');
                 wrapperDiv.classList.add('video-container-16by9');
                 // Preserve existing classes on the iframe
-                iframe.classList.forEach(function(className) {
+                iframe.classList.forEach(function (className) {
                   wrapperDiv.classList.add(className);
                 });
                 // Replace the iframe with the wrapper div
@@ -1134,24 +1135,24 @@
               return; // Exit if basePath is present
             }
 
-            if (getURLParameterByName(['url-field','urlField'])) {
+            if (getURLParameterByName(['url-field', 'urlField'])) {
               // console.log(getURLParameterByName('url-field'));
               var markdownFileURL = '';
-              markdownFileURL = getURLParameterByName(['url-field','urlField'], null, null, window.location.href, true);
+              markdownFileURL = getURLParameterByName(['url-field', 'urlField'], null, null, window.location.href, true);
               if (markdownFileURL == "empty") {
                 markdownFileURL = '';
               }
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
             }
 
-            if (getURLParameterByName(['show-page-options','showPageOptions']) === true || getURLParameterByName(['browser-tab-title','browserTabTitle','font-family','fontFamily','font-size','fontSize','line-height','lineHeight','link-color','linkColor','edit-link-text','editLinkText','edit-link-top','editLinkTop','hide-credits','hideCredits','toc-headings','tocHeadings','toc-narrow','tocNarrow','maxLevel','hypothesis'])) {
+            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true || getURLParameterByName(['browser-tab-title', 'browserTabTitle', 'font-family', 'fontFamily', 'font-size', 'fontSize', 'line-height', 'lineHeight', 'link-color', 'linkColor', 'edit-link-text', 'editLinkText', 'edit-link-top', 'editLinkTop', 'hide-credits', 'hideCredits', 'toc-headings', 'tocHeadings', 'toc-narrow', 'tocNarrow', 'maxLevel', 'hypothesis'])) {
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
               document.getElementById("pageappearanceoptionsheader").style.display = "none";
               theDiv.style.display = "block";
             }
 
-            if (getURLParameterByName('advanced') === true || getURLParameterByName(['page-title','pageTitle','header-weight','headerWeight','zoom-images','zoomImages','loadFavicon','coverpage','loadSidebar','loadNavbar','loadFooter','name','subMaxLevel','search','pagination','coverpage-color','coverpageColor','dark-mode','darkMode','link-color-dark-mode','linkColorDarkMode','coverpage-color-dark-mode','coverpageColorDarkMode'])) {
+            if (getURLParameterByName('advanced') === true || getURLParameterByName(['page-title', 'pageTitle', 'header-weight', 'headerWeight', 'zoom-images', 'zoomImages', 'loadFavicon', 'coverpage', 'loadSidebar', 'loadNavbar', 'loadFooter', 'name', 'subMaxLevel', 'search', 'pagination', 'coverpage-color', 'coverpageColor', 'dark-mode', 'darkMode', 'link-color-dark-mode', 'linkColorDarkMode', 'coverpage-color-dark-mode', 'coverpageColorDarkMode'])) {
               document.getElementById("btn_2").style.display = "none";
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
@@ -1172,31 +1173,31 @@
               document.getElementById("stylesidebar").checked = true;
             }
 
-            if ((getURLParameterByName(['edit-link-checkbox','editLinkCheckbox'], null, null, window.location.href, true) === 'true') || (getURLParameterByName(['edit-link','editLink']))) {
+            if ((getURLParameterByName(['edit-link-checkbox', 'editLinkCheckbox'], null, null, window.location.href, true) === 'true') || (getURLParameterByName(['edit-link', 'editLink']))) {
               document.getElementById("editCheck").checked = true;
             }
 
-            browserTabTitle = getURLParameterByName(['browser-tab-title','browserTabTitle']);
+            browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle']);
             if (browserTabTitle) {
               document.getElementById('browserTabTitle').value = decodeURI(browserTabTitle);
             }
 
-            fontfamily = getURLParameterByName(['font-family','fontFamily']);
+            fontfamily = getURLParameterByName(['font-family', 'fontFamily']);
             if (fontfamily) {
               document.getElementById('fontfamily').value = encodeURI(fontfamily);
             }
 
-            fontsize = getURLParameterByName(['font-size','fontSize']);
+            fontsize = getURLParameterByName(['font-size', 'fontSize']);
             if (fontsize) {
               document.getElementById('fontsize').value = fontsize;
             }
 
-            lineheight = getURLParameterByName(['line-height','lineHeight']);
+            lineheight = getURLParameterByName(['line-height', 'lineHeight']);
             if (lineheight) {
               document.getElementById('lineheight').value = lineheight;
             }
 
-            linkcolor = getURLParameterByName(['link-color','linkColor']);
+            linkcolor = getURLParameterByName(['link-color', 'linkColor']);
             if (linkcolor) {
               linkcolor = '#' + linkcolor;
               document.getElementById('linkcolor').value = linkcolor;
@@ -1205,20 +1206,20 @@
               document.getElementById("linkcolorpreview").style.backgroundColor = linkcolor;
             }
 
-            editLinkText = getURLParameterByName(['edit-link-text','editLinkText']);
+            editLinkText = getURLParameterByName(['edit-link-text', 'editLinkText']);
             if (editLinkText) {
               document.getElementById('editLinkText').value = decodeURI(editLinkText);
             }
 
-            if (getURLParameterByName(['edit-link-top','editLinkTop'], null, null, window.location.href, true) === 'true') {
+            if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
               document.getElementById("editLinkTopCheck").checked = true;
             }
 
-            if (getURLParameterByName(['hide-credits','hideCredits'], null, null, window.location.href, true) === 'true') {
+            if (getURLParameterByName(['hide-credits', 'hideCredits'], null, null, window.location.href, true) === 'true') {
               document.getElementById("hideCredits").checked = true;
             }
 
-            tocheadings = getURLParameterByName(['toc-headings','tocHeadings']);
+            tocheadings = getURLParameterByName(['toc-headings', 'tocHeadings']);
             if (tocheadings) {
               if (tocheadings.includes("h1")) {
                 document.getElementById("toch1").checked = true;
@@ -1231,7 +1232,7 @@
               }
             }
 
-            if (getURLParameterByName(['toc-narrow','tocNarrow'], null, null, window.location.href, true) === 'true') {
+            if (getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true') {
               document.getElementById("narrowToC").checked = true;
             }
 
@@ -1244,20 +1245,20 @@
               document.getElementById("hypothesisenable").checked = true;
             }
 
-            pageTitle = getURLParameterByName(['page-title','pageTitle']);
+            pageTitle = getURLParameterByName(['page-title', 'pageTitle']);
             if (pageTitle) {
               document.getElementById('pageTitle').value = decodeURI(pageTitle);
             }
 
-            headerweight = getURLParameterByName(['header-weight','headerWeight']);
+            headerweight = getURLParameterByName(['header-weight', 'headerWeight']);
             if (headerweight) {
               document.getElementById('headerweight').value = headerweight;
             }
 
-            if (getURLParameterByName(['zoom-images','zoomImages'], null, null, window.location.href, true) === 'true') {
+            if (getURLParameterByName(['zoom-images', 'zoomImages'], null, null, window.location.href, true) === 'true') {
               document.getElementById("zoomimages").checked = true;
             }
-            
+
             if (getURLParameterByName('loadFavicon')) {
               document.getElementById("loadfavicon").checked = true;
             }
@@ -1296,7 +1297,7 @@
               document.getElementById("pagination").checked = true;
             }
 
-            coverpagecolor = getURLParameterByName(['coverpage-color','coverpageColor']);
+            coverpagecolor = getURLParameterByName(['coverpage-color', 'coverpageColor']);
             if (coverpagecolor) {
               coverpagecolor = '#' + coverpagecolor;
               document.getElementById('coverpagecolor').value = coverpagecolor;
@@ -1305,11 +1306,11 @@
               document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
             }
 
-            if (getURLParameterByName(['dark-mode','darkMode'], null, null, window.location.href, true) === 'true') {
+            if (getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true') {
               document.getElementById("enableDarkmode").checked = true;
             }
 
-            linkcolordarkmode = getURLParameterByName(['link-color-dark-mode','linkColorDarkMode']);
+            linkcolordarkmode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode']);
             if (linkcolordarkmode) {
               linkcolordarkmode = '#' + linkcolordarkmode;
               document.getElementById('linkcolordarkmode').value = linkcolordarkmode;
@@ -1318,7 +1319,7 @@
               document.getElementById("linkcolordarkmodepreview").style.backgroundColor = linkcolordarkmode;
             }
 
-            coverpagecolordarkmode = getURLParameterByName(['coverpage-color-dark-mode','coverpageColorDarkMode'], null, null, window.location.href, true)
+            coverpagecolordarkmode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true)
             if (coverpagecolordarkmode) {
               coverpagecolordarkmode = '#' + coverpagecolordarkmode;
               document.getElementById('coverpagecolordarkmode').value = coverpagecolordarkmode;
@@ -1467,7 +1468,7 @@
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
-    if (getURLParameterByName(['toc-narrow','tocNarrow'], null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
+    if (getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />');
       document.write('<script src="assets/js/toc.js"><\/script>');
     }
@@ -1509,7 +1510,7 @@
     if (!(window.$docsify['basePath'] === undefined)) {
 
       // Change header weight if headerweight parameter present
-      headerweight = getURLParameterByName(['header-weight','headerWeight'], null, null, window.location.href, true);
+      headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
       if (!(headerweight === false)) {
         document.documentElement.style.setProperty('--heading-h1-font-weight', headerweight);
         document.documentElement.style.setProperty('--heading-h2-font-weight', headerweight);
@@ -1520,20 +1521,20 @@
       }
 
       // Change body font if fontFamily parameter present
-      fontfamily = getURLParameterByName(['font-family','fontFamily'], null, null, window.location.href, true);
+      fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
       }
 
       // Change body font size if fontSize parameter present
-      fontsize = getURLParameterByName(['font-size','fontSize'], null, null, window.location.href, true);
+      fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
         fontsize = fontsize + 'rem';
         document.documentElement.style.setProperty('--base-font-size', fontsize);
       }
 
       // Change line height if lineheight parameter present
-      lineheight = getURLParameterByName(['line-height','lineHeight'], null, null, window.location.href, true);
+      lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
       if (!(lineheight === false)) {
         document.documentElement.style.setProperty('--base-line-height', lineheight);
       }
@@ -1541,7 +1542,7 @@
       updateThemeModeLinkColors();
 
       // Keep dark theme CSS files loaded if dark-mode parameter is true
-      enabledarkmode = getURLParameterByName(['dark-mode','darkMode'], null, null, window.location.href, true) === 'true';
+      enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
       if (enabledarkmode === false && darkmode === false) {
         var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
         linkNode.parentNode.removeChild(linkNode);
@@ -1568,8 +1569,8 @@
   <!-- Zoom Image Plugin -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
-      if (getURLParameterByName(['zoom-images','zoomImages'], null, null, window.location.href, true) === 'true') {
-      document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
+      if (getURLParameterByName(['zoom-images', 'zoomImages'], null, null, window.location.href, true) === 'true') {
+        document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
       }
     }
   </script>
