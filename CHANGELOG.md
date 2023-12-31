@@ -15,7 +15,6 @@
 * Improved contrast for unselected Tabs
 * Updated Docsify-This Web Page Builder button and field styles
 * Slightly adjusted Docsify-This Web Page Builder color scheme
-* Updated ReadMe
 * Updated screenshots
 
 **Bugfix:**
