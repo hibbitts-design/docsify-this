@@ -162,18 +162,6 @@ Example pages, including the use of the `font-family`, `font-size` and `hide-cre
 
 View an example Canvas LMS site using Docsify-This content at https://canvas.sfu.ca/courses/76692.
 
-#### [Docsify-This Markdown Portfolio Starter Template](https://github.com/hibbitts-design/docsify-this-markdown-portfolio-starter)
-
-![Docsify-This Markdown Portfolio Starter Template](docs/images/docsify-this-markdown-portfolio-starter-template-readme.png)
-
-A simple Markdown portfolio starter template (based on [Markdown Portfolio Template](https://github.com/thoresonjd/markdown-portfolio-template) by [Justin Thoreson](https://github.com/thoresonjd)) which is viewable on both GitHub and with Docsify-This.net, displayed by Docsify-This as:  
-* [Standalone Site](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md "Docsify-This Markdown Starter Portfolio Template")  
-* [Standalone Site with automatic light/dark theme switching](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&dark-mode=true "Docsify-This Markdown Starter Portfolio Template")  
-* [Standalone Site using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter-template/main&homepage=README.md&font-family=Merriweather,Georgia,serif "Docsify-This Markdown Starter Portfolio Template")
-* [Standalone Site using the Merriweather font and red links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&font-family=Merriweather,Georgia,serif&link-color=cc0000#/ "Docsify-This Markdown Starter Portfolio Template")
-* [Standalone Site with zoomable images](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&zoom-images=true "Docsify-This Markdown Starter Portfolio Template")
-* [Standalone Site with 'Edit this Page' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&edit-link=https://github.com/hibbitts-design/docsify-this-markdown-portfolio-starter/blob/main/README.md "Docsify-This Markdown Starter Portfolio Template")  
-
 ---
 
 ### More Docsify-This Markdown Examples
@@ -187,6 +175,14 @@ A simple Markdown portfolio starter template (based on [Markdown Portfolio Templ
 * [Standalone Pages](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&homepage=README.md "Easy Markdown to Github Pages - Standalone Page")  
 * [Standalone Pages with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&homepage=README.md&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Standalone Page with Table of Contents")  
 * [Standalone Pages with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&homepage=README.md&sidebar=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Standalone Page with Docsify Sidebar")
+
+A simple [Markdown Portfolio Starter Template](https://github.com/hibbitts-design/docsify-this-markdown-portfolio-starter) (based on [Markdown Portfolio Template](https://github.com/thoresonjd/markdown-portfolio-template) by [Justin Thoreson](https://github.com/thoresonjd)) which is viewable on both GitHub and with Docsify-This.net, displayed by Docsify-This as:  
+* [Standalone Site](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md "Docsify-This Markdown Starter Portfolio Template")  
+* [Standalone Site with automatic light/dark theme switching](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&dark-mode=true "Docsify-This Markdown Starter Portfolio Template")  
+* [Standalone Site using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter-template/main&homepage=README.md&font-family=Merriweather,Georgia,serif "Docsify-This Markdown Starter Portfolio Template")
+* [Standalone Site using the Merriweather font and red links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&font-family=Merriweather,Georgia,serif&link-color=cc0000#/ "Docsify-This Markdown Starter Portfolio Template")
+* [Standalone Site with zoomable images](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&zoom-images=true "Docsify-This Markdown Starter Portfolio Template")
+* [Standalone Site with 'Edit this Page' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&edit-link=https://github.com/hibbitts-design/docsify-this-markdown-portfolio-starter/blob/main/README.md "Docsify-This Markdown Starter Portfolio Template")  
 
 [A Collection of GitHub Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within an SFU CMPT-363 Canvas LMS site](https://canvas.sfu.ca/courses/69678).  
 
