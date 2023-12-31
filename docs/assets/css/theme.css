@@ -1065,12 +1065,12 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuilder {
-      background: #36416d; /* Original color #1f4b66 */
+    background: #36416d; /* Original color #1f4b66 */
   }
 
   #docsifythisurlfield{
-      background-color: #273338;
-      color: white;
+    background-color: #273338;
+    color: white;
   }
 
   #pageTitle {
@@ -1084,8 +1084,8 @@ span #docsifythisurlfield {
   }
 
   .docsifythisurlbuildersecondarybutton {
-      color: black;
-      background-color: #c1bfed; /* Original color #a2e8fc */
+    color: black;
+    background-color: #c1bfed; /* Original color #a2e8fc */
   }
 
   #docsifythisurlbuilder [type=radio]:checked + img {
@@ -1102,7 +1102,7 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active,   #docsifythisurlbuildershowhidelink2 a:link, #docsifythisurlbuildershowhidelink2 a:visited, #docsifythisurlbuildershowhidelink2 a:hover, #docsifythisurlbuildershowhidelink2 a:active {
-      color: #c6bfed; /* Original color #4bc3f4 */
+    color: #c6bfed; /* Original color #4bc3f4 */
   }
 
   #linkcolor {
