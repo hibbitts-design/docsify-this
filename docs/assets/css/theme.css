@@ -1079,8 +1079,8 @@ span #docsifythisurlfield {
   }
 
   .docsifythisurlbuilderprimarybutton {
-      color: black;
-      background-color: #817eed; /* Original color #4bc3f4 */
+    color: black;
+    background-color: #7e83ed; /* Previous colors #817eed #4bc3f4 */
   }
 
   .docsifythisurlbuildersecondarybutton {
