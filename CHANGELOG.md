@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.8.4] - XX/XX/2023
+## [1.9.0] - 01/01/2024🎉
 
 **New:**
 * Support for the docsify-tabs plugin (with thanks and appreciation to @jhildenbiddle for the plugin and thanks to @harlows for requesting this feature which made me discover it was unintentionally not already included)
