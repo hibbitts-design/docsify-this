@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.9.1] - XX/XX/2024
+
+**Improved:**
+* Adjusted padding for Markdown File URL field and buttons in Web Page Builder
+
 ## [1.9.0] - 01/01/2024🎉
 
 **New:**
