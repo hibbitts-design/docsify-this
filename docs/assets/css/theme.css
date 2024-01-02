@@ -784,6 +784,8 @@ body .docsify-pagination-container {
 
 #docsifythisurlfield {
   width: 100%;
+  height: 2.5rem;
+  padding: 0px min(15px, 5%);
 }
 
 span #docsifythisurlfield {
@@ -819,7 +821,7 @@ span #docsifythisurlfield {
   margin-top: 4px;
   margin-bottom: -8px;
   padding: 10px min(30px, 5%) 10px min(30px, 5%);
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   background-color: #2302cd; /* Previous colors #0224cd #0361cd */
   text-decoration: none;
   font-weight: 600; 
@@ -835,7 +837,7 @@ span #docsifythisurlfield {
   margin-top: 4px;
   margin-bottom: -8px;
   padding: 10px min(30px, 5%) 10px min(30px, 5%);
-  line-height: 1.2rem;
+  line-height: 1.5rem;
   background-color: #7580bb; /* Original color #0b97ef */
   text-decoration: none;
   font-weight: 600;
