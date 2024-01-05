@@ -20,7 +20,7 @@ This open-source web app, built with the magical documentation site generator [D
 
 **Markdown File URL** (GitHub, Codeberg or raw source URL):  
 <input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Markdown File URL (GitHub, Codeberg or raw source URL)" name="markdownFileURL" aria-label="markdown file url" id="docsifythisurlfield" type="url" onfocus="this.select()" onkeypress="checkKey(event);" size="200px" value="https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md" />
-<input class="docsifythisurlbuilderprimarybutton" style="border:none;" type="button" id="btn_1" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
+<input class="docsifythisurlbuilderprimarybutton" type="button" id="btn_1" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
 
 Page layout:
 

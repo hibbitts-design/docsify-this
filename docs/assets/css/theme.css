@@ -821,27 +821,29 @@ span #docsifythisurlfield {
   margin-top: 4px;
   margin-bottom: -8px;
   padding: 10px min(30px, 5%) 10px min(30px, 5%);
-  line-height: 1.5rem;
+  line-height: 1.4rem;
   background-color: #2302cd; /* Previous colors #0224cd #0361cd */
   text-decoration: none;
   font-weight: 600; 
-  border-radius: 1.2rem;
+  border: 1px solid #2302cd;
+  border-radius: 1.4rem;
   -webkit-appearance: none;
 }
 
 .docsifythisurlbuildersecondarybutton {
   cursor: pointer;
-  color: white;
+  color: #2302cd;
   height: auto;
   display: inline-block;
   margin-top: 4px;
   margin-bottom: -8px;
   padding: 10px min(30px, 5%) 10px min(30px, 5%);
-  line-height: 1.5rem;
-  background-color: #7580bb; /* Original color #0b97ef */
+  line-height: 1.4rem;
+  background-color: transparent;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 1.2rem;
+  border: 1px solid #2302cd;
+  border-radius: 1.4rem;
   -webkit-appearance: none;
 }
 
@@ -1083,11 +1085,13 @@ span #docsifythisurlfield {
   .docsifythisurlbuilderprimarybutton {
     color: black;
     background-color: #7e83ed; /* Previous colors #817eed #4bc3f4 */
+    border: 1px solid #7e83ed;
   }
 
   .docsifythisurlbuildersecondarybutton {
-    color: black;
-    background-color: #c1bfed; /* Original color #a2e8fc */
+    color: #c1bfed;
+    background-color: transparent;
+    border: 1px solid #c1bfed;
   }
 
   #docsifythisurlbuilder [type=radio]:checked + img {
