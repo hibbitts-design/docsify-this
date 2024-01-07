@@ -5,6 +5,7 @@
 **Improved:**
 * Adjusted padding for Markdown File URL field and buttons in Web Page Builder
 * Further adjusted Docsify-This Web Page Builder primary and secondary button styles
+* Support for Website logo ('logo') in Web Page Builder
 
 ## [1.9.0] - 01/01/2024🎉
 
