@@ -2,6 +2,9 @@
 
 ## [1.9.1] - XX/XX/2024
 
+**New:**
+* Added CSS Markdown class for taller full width header image `header-tall-image-full-width`
+
 **Improved:**
 * Adjusted padding for Markdown File URL field and buttons in Web Page Builder
 * Further adjusted Docsify-This Web Page Builder primary and secondary button styles
