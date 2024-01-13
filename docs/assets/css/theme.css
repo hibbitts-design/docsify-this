@@ -504,6 +504,9 @@
   position: relative;
   right: 50%;
   width: 100vw;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center 50%;
 }
 
 .markdown-section .image-75 {
