@@ -509,6 +509,10 @@
   object-position: center 50%;
 }
 
+.markdown-section .header-tall-image-full-width {
+  height: 40vh;
+}
+
 .markdown-section .image-75 {
   width: 75%;
   height: auto;
