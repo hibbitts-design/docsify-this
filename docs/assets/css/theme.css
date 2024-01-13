@@ -504,7 +504,7 @@
   position: relative;
   right: 50%;
   width: 100vw;
-  height: 30vh;
+  height: 30dvh;
   object-fit: cover;
   object-position: center 50%;
 }
@@ -518,7 +518,7 @@
   position: relative;
   right: 50%;
   width: 100vw;
-  height: 40vh;
+  height: 40dvh;
   object-fit: cover;
   object-position: center 50%;
 }
