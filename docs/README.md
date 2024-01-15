@@ -686,6 +686,7 @@ The following style prefixes are available with Docsify-This:
 * [banner-image](/?id=banner-image)
 * [banner-tall-image](/?id=banner-tall-image)
 * [button](/?id=button)
+* [button](/?id=button-rounded)
 * [embedly-card](/?id=embedly-card)
 * [header-image-fade](/?id=header-image-fade)
 * [header-image-full-width](/?id=header-image-full-width)
@@ -784,6 +785,24 @@ Cropped to height of 350px on large screens, 175px on small screens.
 
 ```html
 <a class="button" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
+```
+
+#### button-rounded
+
+[Example Rounded Button](# ':class=button-rounded')
+
+```markdown
+[Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button-rounded')
+```
+
+<a class="button-rounded" href="#" target="_blank"><i class="fa fa-download fa-fw"></i>Example Rounded Button with Font Awesome Icon</a>
+
+```markdown
+[﹕fa fa-download fa-fw﹕Download](https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip ':class=button-rounded')
+```
+
+```html
+<a class="button-rounded" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
 ```
 
 #### embedly-card
@@ -1149,9 +1168,11 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 
 - Follow [@hibbittsdesign@mastodon.social](https://mastodon.social/@hibbittsdesign) on Mastodon for updates, or subscribe via [RSS feed](https://mastodon.social/@hibbittsdesign.rss)
 - 👩🏻‍💻🧑🏻‍💻 Join the [Docsify Discord](https://discord.gg/docsify) and visit the **#Docsify-This** Channel
-- Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this)
-- 🐦 [tweet out your thoughts](https://twitter.com/intent/tweet?text=I+am+checking+out+the+Docsify-This.net+project+that+displays+Markdown+files+as+web+pages+in+seconds.+You+can+learn+about+the+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,remote,markdown,file,webpage)
-- Share your 💬 [feedback in a brief survey](https://forms.gle/ViYu2ZdPmj6PeQ439)
+- Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this) to the Docsify-This project repository
+
+Have you tried out Docsify-This? Help shape its direction by sharing your feedback in just a few minutes!
+
+[Docsify-This Feedback Form](https://forms.gle/ViYu2ZdPmj6PeQ439 ':class=rounded-button')
 
 By leveraging his extensive UX design expertise and systems-oriented approach, Paul helps teams and individuals utilize open content in a range of education and publication settings, especially in connection with his Markdown-based [Docsify](https://docsify.js.org/#/) and [Grav CMS](https://getgrav.org/) open-source projects. Professional services include user experience and workflow consulting, premium support subscriptions, workshops, and custom development.  Sound of interest? Send a note to [paul@hibbittsdesign.org](mailto:paul@hibbittsdesign.org).
 

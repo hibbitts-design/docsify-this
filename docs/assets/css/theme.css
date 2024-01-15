@@ -296,7 +296,6 @@
   color: var(--base-background-color);
   height: auto;
   display: inline-block;
-  margin-top: 4px;
   padding: 10px;
   font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
   line-height: 1.2rem;
@@ -306,6 +305,25 @@
 }
 
 .markdown-section a.button {
+  cursor: pointer;
+  color: var(--base-background-color);
+  text-decoration: none !important;
+}
+
+.markdown-section .button-rounded {
+  cursor: pointer;
+  color: var(--base-background-color);
+  height: auto;
+  display: inline-block;
+  padding: 10px min(20px, 5%) 10px min(20px, 5%);
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+  line-height: 1.2rem;
+  background-color: var(--link-color);
+  text-decoration: none;
+  border-radius: 1.2rem;
+}
+
+.markdown-section a.button-rounded {
   cursor: pointer;
   color: var(--base-background-color);
   text-decoration: none !important;
@@ -1164,6 +1182,11 @@ span #docsifythisurlfield {
   }
 
   #docsifythis .button {
+    color: #283339;
+    background-color: #1BA1EE;
+  }
+
+  #docsifythis .button-rounded {
     color: #283339;
     background-color: #1BA1EE;
   }
