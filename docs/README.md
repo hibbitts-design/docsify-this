@@ -1172,7 +1172,7 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 
 Have you tried out Docsify-This? Help shape its direction by sharing your feedback in just a few minutes!
 
-[Docsify-This Feedback Form](https://forms.gle/ViYu2ZdPmj6PeQ439 ':class=button-rounded')
+[:fa fa-comment fa-fw: Docsify-This Feedback Form](https://forms.gle/ViYu2ZdPmj6PeQ439 ':class=button-rounded')
 
 By leveraging his extensive UX design expertise and systems-oriented approach, Paul helps teams and individuals utilize open content in a range of education and publication settings, especially in connection with his Markdown-based [Docsify](https://docsify.js.org/#/) and [Grav CMS](https://getgrav.org/) open-source projects. Professional services include user experience and workflow consulting, premium support subscriptions, workshops, and custom development.  Sound of interest? Send a note to [paul@hibbittsdesign.org](mailto:paul@hibbittsdesign.org).
 
