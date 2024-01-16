@@ -791,6 +791,24 @@ Cropped to height of 350px on large screens, 175px on small screens.
 <a class="button" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
 ```
 
+#### button
+
+[Example Button](# ':class=button')
+
+```markdown
+[Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button')
+```
+
+<a class="button" href="#" target="_blank"><i class="fa fa-download fa-fw"></i>Example Button with Font Awesome Icon</a>
+
+```markdown
+[﹕fa fa-download fa-fw﹕Download](https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip ':class=button')
+```
+
+```html
+<a class="button" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
+```
+
 #### button-rounded
 
 [Example Rounded Button](# ':class=button-rounded')
@@ -807,6 +825,42 @@ Cropped to height of 350px on large screens, 175px on small screens.
 
 ```html
 <a class="button-rounded" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
+```
+
+#### button-secondary
+
+[Example Secondary Button](# ':class=button-secondary')
+
+```markdown
+[Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button-secondary')
+```
+
+<a class="button-secondary" href="#" target="_blank"><i class="fa fa-download fa-fw"></i>Example Secondary Button with Font Awesome Icon</a>
+
+```markdown
+[﹕fa fa-download fa-fw﹕Download](https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip ':class=button-secondary')
+```
+
+```html
+<a class="button-secondary" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
+```
+
+#### button-secondary-rounded
+
+[Example Secondary Rounded Button](# ':class=button-secondary-rounded')
+
+```markdown
+[Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button-secondary-rounded')
+```
+
+<a class="button-secondary-rounded" href="#" target="_blank"><i class="fa fa-download fa-fw"></i>Example Secondary Rounded Button with Font Awesome Icon</a>
+
+```markdown
+[﹕fa fa-download fa-fw﹕Download](https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip ':class=button-secondary-rounded')
+```
+
+```html
+<a class="button-secondary-rounded" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
 ```
 
 #### embedly-card
