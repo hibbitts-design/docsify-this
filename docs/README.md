@@ -1174,7 +1174,7 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 - 👩🏻‍💻🧑🏻‍💻 Join the [Docsify Discord](https://discord.gg/docsify) and visit the **#Docsify-This** Channel
 - Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this) to the Docsify-This project repository
 
-Have you tried out Docsify-This? Help shape its direction by sharing your feedback in just a few minutes!
+What do you think about Docsify-This so far? Help shape its direction by sharing your feedback in just a few minutes!
 
 [:fa fa-comment fa-fw: Share your Feedback](https://forms.gle/ViYu2ZdPmj6PeQ439 ':class=button-rounded')
 
