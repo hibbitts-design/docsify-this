@@ -5,6 +5,7 @@
 **New:**
 * Added CSS Markdown class for taller full width header image `header-tall-image-full-width`
 * Added CSS Markdown class for rounded button `button-rounded`
+* Added CSS Markdown classes for secondary buttons `button-secondary` and `button-secondary-rounded`
 
 **Improved:**
 * Adjusted padding for Markdown File URL field and buttons in Web Page Builder
