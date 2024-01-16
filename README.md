@@ -301,6 +301,7 @@ The following URL parameters are available for use in Docsify-This URLs, and are
 * [name](#name)
 * [page-title](#page-title)
 * [pagination](#pagination)
+* [search](#search)
 * [submaxLevel](#subMaxLevel)
 * [zoom-images](#zoom-images)
 
