@@ -32,7 +32,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 * [Privacy Policy Summary](#privacy-policy-summary)
 * [Contact and Support](#contact-and-support
 
-What do you think about Docsify-This so far? Share your [feedback about Docsify-This](https://forms.gle/ViYu2ZdPmj6PeQ439)
+Have you tried out Docsify-This? Share your [feedback about Docsify-This](https://forms.gle/ViYu2ZdPmj6PeQ439)
 
 ---
 
@@ -869,7 +869,7 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 - 👩🏻‍💻🧑🏻‍💻 Join the [Docsify Discord](https://discord.gg/docsify) and visit the **#Docsify-This** Channel
 - Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this) to the Docsify-This project repository
 
-What do you think about Docsify-This so far? Share your [feedback about Docsify-This](https://forms.gle/ViYu2ZdPmj6PeQ439)
+Have you tried out Docsify-This? Share your [feedback about Docsify-This](https://forms.gle/ViYu2ZdPmj6PeQ439)
 
 By leveraging his extensive UX design expertise and systems-oriented approach, Paul helps teams and individuals utilize open content in a range of education and publication settings, especially in connection with his Markdown-based [Docsify](https://docsify.js.org/#/) and [Grav CMS](https://getgrav.org/) open-source projects. Professional services include user experience and workflow consulting, premium support subscriptions, workshops, and custom development.  Sound of interest? Send a note to [paul@hibbittsdesign.org](mailto:paul@hibbittsdesign.org).
 
