@@ -441,6 +441,8 @@ The following style prefixes are available with Docsify-This:
 * [banner-tall-image](#banner-tall-image)
 * [button](#button)
 * [button](#button-rounded)
+* [button](#button-secondary)
+* [button](#button-secondary-rounded)
 * [embedly-card](#embedly-card)
 * [header-image-fade](#header-image-fade)
 * [header-image-full-width](#header-image-full-width)
