@@ -220,7 +220,7 @@ Page layout:
 * [Privacy Policy Summary](/?id=privacy-policy-summary)
 * [Contact and Support](/?id=contact-and-support)
 
-Have you tried out Docsify-This? Help shape its direction by sharing your feedback in just a few minutes!
+What do you think about Docsify-This so far? Help shape its direction by sharing your feedback in just a few minutes!
 
 [:fa fa-comment fa-fw: Share your Feedback](https://forms.gle/ViYu2ZdPmj6PeQ439 ':class=button-rounded')
 
