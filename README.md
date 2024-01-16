@@ -222,7 +222,6 @@ A simple [Markdown Portfolio Starter Template](https://github.com/hibbitts-desig
 * [toc](#toc)
 * [toc-headings](#toc-headings)
 * [toc-narrow](#toc-narrow)
-* [zoom-images](#zoom-images)
 
 ##### browser-tab-title
 Set a custom title on Browser tab for your standalone pages with the optional **browser-tab-title** parameter, for example:  
