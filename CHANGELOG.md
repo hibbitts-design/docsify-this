@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.1] - XX/XX/2024
+## [1.9.1] - 01/18/2024❄️
 
 **New:**
 * Added CSS Markdown class for taller full width header image `header-tall-image-full-width`
