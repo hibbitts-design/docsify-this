@@ -5,6 +5,9 @@
 **New:**
 * Added CSS Markdown class for right-aligned columns `column-right`
 
+**Improved:**
+* Updated ReadMe
+
 ## [1.9.1] - 01/18/2024❄️
 
 **New:**
