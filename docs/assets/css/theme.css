@@ -629,7 +629,17 @@
   width: 50%;
 }
 
+.markdown-section .column-right {
+  float: right;
+  padding-left: 1rem;
+  width: 50%;
+}
+
 .markdown-section .column img {
+  padding-top: .35rem;
+}
+
+.markdown-section .column-right img {
   padding-top: .35rem;
 }
 
@@ -644,8 +654,10 @@
 }
 
 @media screen and (max-width:800px) {
-  .markdown-section .column {
+  .markdown-section .column, .markdown-section .column-right {
     width: 100%;
+    padding-right: 0rem;
+    padding-left: 0rem;
   }
 
   .markdown-section .image-75, .markdown-section .image-50, .markdown-section .image-25, .markdown-section .image-75-border, .markdown-section .image-50-border, .markdown-section .image-25-border {
