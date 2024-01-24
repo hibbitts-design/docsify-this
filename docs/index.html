@@ -26,13 +26,31 @@
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
   <!-- Stylesheets -->
+
+  <!-- Docsify Themeable current release -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
-  <link rel="stylesheet" href="assets/vendor/themeable/themes/theme-simple.css">
+  <!-- <link rel="stylesheet" href="assets/vendor/themeable/themes/theme-simple.css"> -->
+
+  <!-- Docsify Themeable "develop" branch preview files -->
+  <!--<link rel="stylesheet" href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css"> -->
+  <link rel="stylesheet" href="assets/vendor/themeable/themes/preview/theme-simple.css">
+
+   <!-- Docsify Themeable current release -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
-  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css">
+  <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css"> -->
+  <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/vendor/themeable/themes/theme-simple-dark.css"> -->
+
+  <!-- Docsify Themeable "develop" branch preview files -->
+  <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)"
+    href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css">-->
+  <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)"
+    href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple-dark.css">-->
+    <link rel="stylesheet" media="(prefers-color-scheme: light)"
+    href="assets/vendor/themeable/themes/preview/theme-simple.css">
   <link rel="stylesheet" media="(prefers-color-scheme: dark)"
-    href="assets/vendor/themeable/themes/theme-simple-dark.css">
+    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css">
+
   <link rel="stylesheet" href="assets/css/theme.css">
   <link rel="stylesheet" href="assets/css/custom.css">
 
@@ -690,6 +708,7 @@
 
         if (linkColorDarkMode !== false) {
           setColorProperties('#' + linkColorDarkMode);
+          document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
         } else {
           const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
 
@@ -697,6 +716,7 @@
             setColorProperties('#' + linkColor);
           } else {
             setColorProperties('#1BA1EE');
+            document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
           }
         }
 
@@ -711,10 +731,14 @@
         // light mode
         const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
 
+        document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
+
         if (linkColor !== false) {
           setColorProperties('#' + linkColor);
+
         } else {
           setColorProperties('#0374B5');
+          document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
         }
 
         const coverPageColor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
@@ -798,6 +822,8 @@
       // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
       subMaxLevel: 2,
       hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
+
+      skipLink: (!(getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && (!(getURLParameterByName('sidebar')))) || (getURLParameterByName('toc'))),
 
       search: 'auto', // default
 
@@ -1384,8 +1410,12 @@
 
   </script>
 
+  <!-- Docsify current release -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script> -->
-  <script src="assets/vendor/docsify/docsify.min.js"></script>
+  <!-- <script src="assets/vendor/docsify/docsify.min.js"></script> -->
+
+  <!-- Docsify "develop" branch preview files -->
+  <script src="assets/vendor/docsify/preview/docsify.min.js"></script>
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
@@ -1397,11 +1427,18 @@
   </script>
 
   <!-- Customizable Theme -->
+  <!-- Docsify Themeable current release -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script> -->
-  <script src="assets/vendor/themeable/docsify-themeable-docsify-this.min.js"></script>
+  <!-- <script src="assets/vendor/themeable/docsify-themeable-docsify-this.min.js"></script> -->
+
+  <!-- Docsify Themeable "develop" branch preview files -->
+  <script src="assets/vendor/themeable/preview/docsify-themeable.min.js"></script>
 
   <!-- docsify-tabs (latest v1.x.x) -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script> -->
+  <!-- <script src="assets/vendor/docsify/plugins/docsify-tabs.min.js"></script> -->
+
+  <!-- docsify-tabs (preview files) -->
   <script src="assets/vendor/docsify/plugins/docsify-tabs.min.js"></script>
 
   <!-- Load custom.css file only when displaying Markdown files -->
@@ -1570,7 +1607,12 @@
   <!--Search Plugin -->
   <script>
     if (getURLParameterByName('search', null, null, window.location.href, true) === 'true') {
-      document.write('<script src="assets/vendor/docsify/plugins/search-docsify-this.min.js"><\/script>');
+ 
+      <!-- Docsify Search Plugin current release -->
+      <!-- document.write('<script src="assets/vendor/docsify/plugins/search-docsify-this.js"><\/script>'); -->
+ 
+      <!-- Docsify Search Plugin "develop" branch preview files -->
+      document.write('<script src="assets/vendor/docsify/plugins/preview/search-docsify-this.js"><\/script>');
     }
   </script>
 
