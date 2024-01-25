@@ -5,9 +5,11 @@
 **New:**
 * Added CSS Markdown class for right-aligned columns `column-right`
 * Added CSS Markdown class for full width background gradient header image (`header-image-fade-full-width`)
+* Use of Docsify and Docsify Themeable preview build assets for access to upcoming Docsify accessibility enhancements authored by @jhildenbiddle (with thanks and appreciation to John)
 
 **Improved:**
 * Updated ReadMe
+* Moved zoom images option to More Page Appearance Options in Web Page Builder
 
 ## [1.9.1] - 01/18/2024❄️
 
