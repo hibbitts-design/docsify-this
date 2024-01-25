@@ -222,6 +222,7 @@ A simple [Markdown Student Portfolio Starter Template](https://github.com/hibbit
 * [toc](#toc)
 * [toc-headings](#toc-headings)
 * [toc-narrow](#toc-narrow)
+* [zoom-images](#zoom-images)
 
 ##### browser-tab-title
 Set a custom title on Browser tab for your standalone pages with the optional **browser-tab-title** parameter, for example:  
@@ -283,6 +284,10 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.  
 
+##### zoom-images
+Enable image zoom (tapping on images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true. To exclude images, use `![](image.png ":no-zoom")`.  
+
 #### Additional URL Parameters
 
 The following URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://docsify-this.net?advanced=true).
@@ -303,7 +308,6 @@ The following URL parameters are available for use in Docsify-This URLs, and are
 * [pagination](#pagination)
 * [search](#search)
 * [submaxLevel](#subMaxLevel)
-* [zoom-images](#zoom-images)
 
 ##### coverpage
 Display a Docsify coverpage with the optional **coverpage** parameter, for example:  
@@ -368,10 +372,6 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### subMaxLevel
 Set the maximum automatic table of contents header levels in custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md&subMaxLevel=1
-
-##### zoom-images
-Enable image zoom (tapping on images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true. To exclude images, use `![](image.png ":no-zoom")`.  
 
 ---
 
