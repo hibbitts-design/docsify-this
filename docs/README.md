@@ -199,6 +199,7 @@ Page layout:
 
 * [What Problem Does Docsify-This Solve?](/?id=what-problem-does-docsify-this-solve)
 * [How Docsify-This Works](/?id=how-docsify-this-works)
+* [Read What People are Saying about Docsify-This](/?id=read-what-people-are-saying-about-docsify-this)
 * [Example Content Workflows](/?id=example-content-workflows)
 * [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](/?id=more-docsify-this-markdown-examples)
@@ -251,6 +252,19 @@ To render a file stored in a public GitHub repository you need to use the raw so
 The appearance of rendered Markdown files can be customized by optional [URL parameters](/?id=page-appearance-url-parameters) and a small set of available [CSS Classes](/?id=supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.  
 
 Looking for an overall introduction to publishing with Docsify-This? Check out [Markdown Publishing with Docsify-This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=4&title=Markdown%20Publishing%20with%20Docsify-This).
+
+---
+
+### Read What People are Saying about Docsify-This
+
+> I’m blown away just by the fact you put a (Markdown file) URL into Docsify-This and then you get a URL back for a web page… done! Take the URL and go. It is so seamless.  
+— J. Groom, [Reclaim Today Episode 39](https://today.reclaimhosting.com/podcast/039-docsify-this-with-paul-hibbitts/) (Co-founder, Reclaim Hosting)
+
+> I've been using Docsify-This for my graduate publishing production course, partly to explore new models in markdown publishing, but partly also to tame Canvas, which I find awkward and cumbersome. Keeping all my course notes as plain text files and deploying them through Github and Docsify-this is easy and makes my course development a breeze. Plus, I keep all my materials locally, and can use re-use them without being reliant on Canvas.  
+— J. Maxwell (Director & Associate Professor in the Publishing Program at Simon Fraser University, Canada)
+
+> Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
+— A. Levine aka CogDog (Independent Educational Technologist, Saskatchewan, Canada)
 
 ---
 
