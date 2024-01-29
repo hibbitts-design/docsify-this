@@ -599,6 +599,18 @@
       }
     }
 
+    function toggleDiv2(link) {
+      var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv2");
+      if (theDiv.style.display === "none") {
+        link.checked = true;
+        document.getElementById("pageappearanceoptionsheader").style.display = "none";
+        theDiv.style.display = "block";
+      } else {
+        link.checked = false;
+        theDiv.style.display = "none";
+      }
+    }
+
     function validateColorAndUpdatePreview(inputId, previewId) {
       var getColor = document.getElementById(inputId);
       var hexCode = getColor.value;
@@ -1175,6 +1187,8 @@
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
               theDiv.style.display = "block";
+              document.getElementById("advancedwebpagebuilder").style.display = "none";
+              document.querySelector("label[for='advancedwebpagebuilder']").style.display = "none";
               var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
               theDiv2.style.display = "block";
             }

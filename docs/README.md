@@ -129,7 +129,9 @@ Page layout:
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_2" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
-<div id="docsifythisurlbuilderoptionsDiv2" style='display: none'>
+<div class="docsifythisurlbuilderoptionsline" style="margin-top: 30px;margin-bottom: -27px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="advancedwebpagebuilder" onclick='toggleDiv2(this)' unchecked><label for="advancedwebpagebuilder">Advanced Web Page Builder Options</label></div>
+
+<div id="docsifythisurlbuilderoptionsDiv2" style='margin-top:40px;display: none'>
 
 <h3>Page Title and Headings</h3>
 
@@ -185,11 +187,11 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;">Coverpage color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Coverpage color for dark theme" type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolordarkmode', 'coverpagecolordarkmodepreview');" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
 
-<input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
+<input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;margin-bottom: 8px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
 </div>
 
-<div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232; margin-top:12px;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
+<div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 
 </div>
 
