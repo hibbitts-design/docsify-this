@@ -102,6 +102,15 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Page link color:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page link color" type="text" maxlength="7" size="7" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
 
+<div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
+  <label for="headerweight">Page headers font weight:</label>
+  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
+    <option value="400">Normal (400)</option>
+    <option value="600">Semi Bold (600)</option>
+    <option value="800">Bold (800)</option>
+  </select>
+</div></div>
+
 <div class="docsifythisurlbuilderoptionsline">Text of 'Edit this Page' link:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Text of 'Edit this Page' link" type="text" maxlength="60" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
@@ -132,23 +141,6 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline" style="margin-top: 42px;margin-bottom: -27px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="advancedwebpagebuilder" onclick='toggleDiv2(this)' unchecked><label for="advancedwebpagebuilder">Advanced Web Page Builder Options</label></div>
 
 <div id="docsifythisurlbuilderoptionsDiv2" style='margin-top:40px;display: none'>
-
-<h3>Page Title and Headings</h3>
-
-<hr>
-
-<div class="docsifythisurlbuilderoptionsline">Page title (append to top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page title (append to top of page)" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
-
-<div class='clearfix'>
-  <div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
-    <label for="headerweight">Page headers font weight:</label>
-    <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
-      <option value="400">Normal (400)</option>
-      <option value="600">Semi Bold (600)</option>
-      <option value="800">Bold (800)</option>
-    </select>
-  </div>
-</div>
 
 <h3>Docsify Custom Files</h3>
 
@@ -569,7 +561,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 #### Additional URL Parameters
 
-The following URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://docsify-this.net?advanced=true).
+The following URL parameters are available for use in Docsify-This URLs, and (except for **page-title**) are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
 
 * [coverpage](/?id=coverpage)
 * [coverpage-color](/?id=coverpage-color)
@@ -638,7 +630,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page". Not included in the Advanced Web Page Builder.  
 
 ##### pagination
 Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  

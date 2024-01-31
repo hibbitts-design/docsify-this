@@ -461,13 +461,6 @@
             URLparms = URLparms + `&subMaxLevel=` + subMaxLevel;
           }
 
-          var getpageTitle = document.getElementById("pageTitle");
-          var pageTitle = getpageTitle.value;
-          if (!(pageTitle == "")) {
-            pageTitle = pageTitle.replace(/ /g, '%20');
-            URLparms = URLparms + `&page-title=` + pageTitle;
-          }
-
           const cb17 = document.querySelector('#pagination');
           if (cb17.checked) {
             var URLparms = URLparms + `&pagination=true`;
@@ -674,7 +667,6 @@
       document.getElementById("enableSidebarsearch").checked = false;
       document.getElementById("subMaxLevel").value = 2;
       document.getElementById("pagination").checked = false;
-      document.getElementById("pageTitle").value = '';
       document.getElementById("headerweight").value = '400';
       document.getElementById("zoomimages").checked = false;
       document.getElementById("coverpagecolor").value = '#6C8A9A';
