@@ -484,6 +484,7 @@ A simple [Markdown Student Portfolio Starter Template](https://github.com/hibbit
 * [edit-link-top](/?id=edit-link-top)
 * [font-family](/?id=font-family)
 * [font-size](/?id=font-size)
+* [header-weight](/?id=header-weight)
 * [hide-credits](/?id=hide-credits)
 * [hypothesis](/?id=hypothesis)
 * [line-height](/?id=line-height)
@@ -518,6 +519,10 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### font-size
 Set a custom font size for your standalone pages with the optional **font-size** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
+
+##### header-weight
+Set a custom header weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600. 
 
 ##### hide-credits
 Hide the credits usually shown at the bottom of every displayed Docsify-This page with the optional **hide-credits** parameter, for example:  
@@ -567,7 +572,6 @@ The following URL parameters are available for use in Docsify-This URLs, and (ex
 * [coverpage-color](/?id=coverpage-color)
 * [coverpage-color-dark-mode](/?id=coverpage-color-dark-mode)
 * [dark-mode](/?id=dark-mode)
-* [header-weight](/?id=header-weight)
 * [link-color-dark-mode](/?id=link-color-dark-mode)
 * [loadFavicon](/?id=loadFavicon)
 * [loadFooter](/?id=loadFooter)
@@ -595,10 +599,6 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### dark-mode
 Automatically switch light/dark theme based on system OS-level preference, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
-
-##### header-weight
-Set a custom header weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600. 
 
 ##### link-color-dark-mode
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
