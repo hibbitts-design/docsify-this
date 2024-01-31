@@ -147,12 +147,12 @@ Page layout:
 
 <hr>
 
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomsidebar"  unchecked><label for="loadcustomsidebar">Sidebar (<code>_sidebar.md</code>)</label></div>
 <div class="docsifythisurlbuilderoptionsline">Load and display additional <a href="https://docsify.js.org/#/more-pages" target="_blank">Docsify</a> custom files (must be located at root level of remote files):</div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcoverpage" unchecked><label for="loadcoverpage">Coverpage (<code>_coverpage.md</code>)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadfavicon"  unchecked><label for="loadfavicon">Favicon (<code>favicon.png</code>)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomfooter" unchecked><label for="loadcustomfooter">Footer (<code>_footer.md</code>)</label></div>
-<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomnavbar" unchecked><label for="loadcustomnavbar">Navbar (<code>_navbar.md</code>)<Sidebar/label></div>
-<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomsidebar"  unchecked><label for="loadcustomsidebar">Sidebar (<code>_sidebar.md</code>)</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomnavbar" unchecked><label for="loadcustomnavbar">Navbar (<code>_navbar.md</code>)</label></div>
 
 <h3>Docsify Custom Sidebar Options</h3>
 
