@@ -106,6 +106,7 @@ Page layout:
   <label for="headerweight">Page headers font weight:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
     <option value="400">Normal (400)</option>
+    <option disabled="disabled">----</option>
     <option value="600">Semi Bold (600)</option>
     <option value="800">Bold (800)</option>
   </select>
