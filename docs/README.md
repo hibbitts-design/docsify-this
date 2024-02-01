@@ -487,7 +487,7 @@ A simple [Markdown Student Portfolio Starter Template](https://github.com/hibbit
 
 ### Page Appearance URL Parameters
 
-#### Web Page Builder
+#### Basic Web Page Builder
 
 * [browser-tab-title](/?id=browser-tab-title)
 * [edit-link](/?id=edit-link)
@@ -575,7 +575,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Enable image zoom (tapping on page images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true. To exclude images, use `![](image.png ":no-zoom")`.  
 
-#### Additional URL Parameters
+#### Advanced Web Page Builder
 
 The following URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
 
