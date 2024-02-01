@@ -13,7 +13,6 @@
 * Updated ReadMe
 * Moved zoom images option to More Page Appearance Options in Web Page Builder
 * Moved page headers font weight to More Page Appearance Options in Web Page Builder
-* Removed page title option from Advanced Web Page Builder (still available via URL parameter `page-title`)
 * Separated Coverpage color options from Dark Theme settings in Advanced Web Page Builder
 
 ## [1.9.1] - 01/18/2024❄️
