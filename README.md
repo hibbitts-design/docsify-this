@@ -236,7 +236,7 @@ A simple [Markdown Student Portfolio Starter Template](https://github.com/hibbit
 
 ### Page Appearance URL Parameters
 
-#### Basic URL Parameters (included in the standard Web Page Builder)
+#### Base URL Parameters (included in the standard Web Page Builder)
 
 * [browser-tab-title](#browser-tab-title)
 * [edit-link](#edit-link)
