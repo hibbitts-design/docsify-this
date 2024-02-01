@@ -143,6 +143,12 @@ Page layout:
 
 <div id="docsifythisurlbuilderoptionsDiv2" style='margin-top:40px;display: none'>
 
+<h3>Optional Page Title</h3>
+
+<hr>
+
+<div class="docsifythisurlbuilderoptionsline">Page title (when displaying a single Markdown file, add as an H1 level header at top of the page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page title (append to top of page)" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
+
 <h3>Docsify Custom Files</h3>
 
 <hr>
@@ -571,7 +577,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 #### Additional URL Parameters
 
-The following URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true) (except for **page-title**).
+The following URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
 
 * [coverpage](/?id=coverpage)
 * [coverpage-color](/?id=coverpage-color)
@@ -635,7 +641,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page". Not included in the Advanced Web Page Builder.  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 ##### pagination
 Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
