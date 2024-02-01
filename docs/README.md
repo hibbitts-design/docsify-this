@@ -487,7 +487,7 @@ A simple [Markdown Student Portfolio Starter Template](https://github.com/hibbit
 
 ### Page Appearance URL Parameters
 
-#### Basic Web Page Builder
+#### Standard Web Page Builder
 
 * [browser-tab-title](/?id=browser-tab-title)
 * [edit-link](/?id=edit-link)
@@ -577,7 +577,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 #### Advanced Web Page Builder
 
-The following URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
+The following additional URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
 
 * [coverpage](/?id=coverpage)
 * [coverpage-color](/?id=coverpage-color)
