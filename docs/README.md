@@ -147,7 +147,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline">Title added to the top of the page as H1 level header:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Title added to the top of the page as H1 level header" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
+<div class="docsifythisurlbuilderoptionsline">Title added to the top of page as H1 level header:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Title added to the top of page as H1 level header" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
 <h3>Docsify Custom Files</h3>
 
