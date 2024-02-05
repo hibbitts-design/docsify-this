@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.2] - XX/XX/2024
+## [1.9.2] - 02/05/2024
 
 **New:**
 * Added CSS Markdown class for right-aligned columns `column-right`
