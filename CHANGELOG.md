@@ -3,7 +3,7 @@
 ## [1.9.3] - XX/XX/2024
 
 **Improved:**
-* Add ability to define custom colors for badges
+* Add ability to define custom colors for badges (with thanks to @cmadland for the example use of colored badges)
 * Updated ReadMe
 
 ## [1.9.2] - 02/05/2024
