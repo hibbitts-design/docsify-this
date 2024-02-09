@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.9.3] - XX/XX/2024
+
+**Improved:**
+* Add ability to define custom colors for badges
+* Updated ReadMe
+
 ## [1.9.2] - 02/05/2024
 
 **New:**
