@@ -389,7 +389,7 @@
 
 .markdown-section a.navpill {
   cursor: pointer;
-  color: var(--base-color);
+  color: var(--base-color)!important;
   border: 1px solid var(--base-color);
   text-decoration: none !important;
 }
@@ -414,7 +414,7 @@
 }
 
 .markdown-section .badge a {
-  color: var(--badge-text-color, #FFFFFF); /* Default text color */
+  color: var(--badge-text-color, #FFFFFF)!important; /* Default text color */
   text-decoration: none !important;
 }
 
