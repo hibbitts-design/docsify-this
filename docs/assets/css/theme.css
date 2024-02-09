@@ -395,7 +395,7 @@
 }
 
 .markdown-section .badge {
-  color: var(--badge-text-color, #FFFFFF); /* Default text color */
+  color: var(--badge-text-color, var(--base-background-color)); /* Default text color */
   background-color: var(--badge-bg-color, color-mix(in srgb, var(--base-color) 70%, transparent)); /* Default background */
 
   display: inline-block;
@@ -414,7 +414,7 @@
 }
 
 .markdown-section .badge a {
-  color: var(--badge-text-color, #FFFFFF)!important; /* Default text color */
+  color: var(--badge-text-color, var(--base-background-color))!important; /* Default text color */
   text-decoration: none !important;
 }
 
