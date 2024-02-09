@@ -787,6 +787,18 @@ The following CSS classes are available when authoring your own Markdown content
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
 ```
 
+<span class='badge' style='--badge-bg-color: #0164db;'> Example Badge with Custom Background Color</span>
+
+```html
+<span class='badge' style='--badge-bg-color: #0164db;'> Tue Jun 12th 11:59pm PDT</span>
+```
+
+<span class='badge' style='--badge-bg-color: #e7c500; --badge-text-color: #000;'> Example Badge with Custom Background and Text Color</span>
+
+```html
+<span class='badge' style='--badge-bg-color: #e7c500; --badge-text-color: #000;'> Tue Jun 12th 11:59pm PDT</span>
+```
+
 <span class='badge'> [Example Badge with Link](https://www.timeanddate.com/worldclock/fixedtime.html?msg=CMPT-363+Blackboard+Mini-lectures+and+Activities&iso=20220516T1430&p1=256&ah=1&am=50)</span>  
 
 ```html

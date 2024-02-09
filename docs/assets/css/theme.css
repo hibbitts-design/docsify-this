@@ -395,8 +395,9 @@
 }
 
 .markdown-section .badge {
-  color: var(--base-background-color);
-  background-color: color-mix(in srgb, var(--base-color) 70%, transparent);
+  color: var(--badge-text-color, #FFFFFF); /* Default text color */
+  background-color: var(--badge-bg-color, color-mix(in srgb, var(--base-color) 70%, transparent)); /* Default background */
+
   display: inline-block;
   padding: .25em .4em .25em .4em;
   font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
@@ -413,7 +414,7 @@
 }
 
 .markdown-section .badge a {
-  color: var(--base-background-color)!important;
+  color: var(--badge-text-color, #FFFFFF); /* Default text color */
   text-decoration: none !important;
 }
 
