@@ -812,31 +812,28 @@
     }
 
     // Ensure the link for displayed site name is correct after scroll to id element
-    // Function to ensure the href attribute is set correctly
-    function ensureHref() {
+    // Function to check and set the href attribute
+    function checkAndSetHref() {
         const appNameLink = document.querySelector('a.app-name-link');
         if (appNameLink && appNameLink.getAttribute('href') !== '#/') {
             appNameLink.setAttribute('href', '#/');
         }
     }
-    // MutationObserver to observe changes in the DOM
+    // Set up a MutationObserver to monitor the entire body for added nodes or attribute changes
+    // This assumes that the 'a.app-name-link' might be added dynamically or its attributes changed
     const observer = new MutationObserver((mutationsList, observer) => {
-        // For each mutation record, check if the change is relevant and adjust the href if necessary
-        for(const mutation of mutationsList) {
-            if (mutation.type === 'attributes' && mutation.attributeName === 'href') {
-                ensureHref();
-            }
-        }
+        // Call checkAndSetHref to ensure the href is as expected
+        checkAndSetHref();
     });
-    // Start observing the target element if it exists
-    const target = document.querySelector('a.app-name-link');
-    if (target) {
-        observer.observe(target, {
-            attributes: true // Only observe changes to attributes
-        });
-    }
-    // Periodic check as a fallback, checking every 500 milliseconds
-    setInterval(ensureHref, 500);
+    // Assuming the body exists when this script runs, start observing
+    observer.observe(document.body, {
+        childList: true, // observe direct children being added or removed
+        subtree: true, // observe all descendants
+        attributes: true, // observe attributes changes
+        attributeFilter: ['href'] // filter to only observe changes to 'href' attributes
+    });
+    // Initial check in case the element exists at script execution time
+    checkAndSetHref();
 
     // Docsify
     window.$docsify = {
