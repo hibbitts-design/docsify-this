@@ -811,6 +811,33 @@
       headTitle.appendChild(appleTouchIcon);
     }
 
+    // Ensure the link for displayed site name is correct after scroll to id element
+    // Function to ensure the href attribute is set correctly
+    function ensureHref() {
+        const appNameLink = document.querySelector('a.app-name-link');
+        if (appNameLink && appNameLink.getAttribute('href') !== '#/') {
+            appNameLink.setAttribute('href', '#/');
+        }
+    }
+    // MutationObserver to observe changes in the DOM
+    const observer = new MutationObserver((mutationsList, observer) => {
+        // For each mutation record, check if the change is relevant and adjust the href if necessary
+        for(const mutation of mutationsList) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'href') {
+                ensureHref();
+            }
+        }
+    });
+    // Start observing the target element if it exists
+    const target = document.querySelector('a.app-name-link');
+    if (target) {
+        observer.observe(target, {
+            attributes: true // Only observe changes to attributes
+        });
+    }
+    // Periodic check as a fallback, checking every 500 milliseconds
+    setInterval(ensureHref, 500);
+
     // Docsify
     window.$docsify = {
       // GENERAL SETTINGS
