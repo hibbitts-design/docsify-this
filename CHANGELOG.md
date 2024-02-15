@@ -9,6 +9,9 @@
 * Add ability to define custom colors for badges (with thanks to @cmadland for the example use of colored badges)
 * Updated ReadMe
 
+**Bugfix:**
+* Ensure the link for displayed site name is correct after scrolling to id element
+
 ## [1.9.2] - 02/05/2024
 
 **New:**
