@@ -814,7 +814,7 @@
     // Ensure the link for displayed site name is correct after scrolling to id element
     // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
     // Function to check and set the href attribute
-    function checkAndSetHref() {
+    function checkAndSetDisplayedSiteName() {
         const appNameLink = document.querySelector('a.app-name-link');
         if (appNameLink && appNameLink.getAttribute('href') !== '#/') {
             appNameLink.setAttribute('href', '#/');
@@ -824,7 +824,7 @@
     // This assumes that the 'a.app-name-link' might be added dynamically or its attributes changed
     const observer = new MutationObserver((mutationsList, observer) => {
         // Call checkAndSetHref to ensure the href is as expected
-        checkAndSetHref();
+        checkAndSetDisplayedSiteName();
     });
     // Assuming the body exists when this script runs, start observing
     observer.observe(document.body, {
@@ -833,8 +833,6 @@
         attributes: true, // observe attributes changes
         attributeFilter: ['href'] // filter to only observe changes to 'href' attributes
     });
-    // Initial check in case the element exists at script execution time
-    checkAndSetHref();
 
     // Docsify
     window.$docsify = {
