@@ -371,7 +371,7 @@ You can set a custom Favicon from the image file passed from the optional **load
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&loadFavicon=open-access.png
 
 ##### loadFooter
-Load a Docsify footer from the Markdown file passed with the optional **loadFooter** Docsify parameter, for example:  
+Load a global Docsify footer from the Markdown file passed with the optional **loadFooter** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadFooter=_footer.md
 
 ##### loadNavbar
