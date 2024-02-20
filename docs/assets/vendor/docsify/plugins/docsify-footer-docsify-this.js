@@ -1,4 +1,5 @@
 // Support for footer files ('_footer.md') in subfolders
+// Original source plugin 'docsify-footer' by @alertbox
 // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
 (function (Docsify, $docsify, undefined) {
   const DEFAULT_FOOTER = "_footer";
