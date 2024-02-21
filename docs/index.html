@@ -1534,17 +1534,17 @@
 
   <!-- Footer Plugin -->
   <!-- <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-footer-docsify-this.min.js"></script>
+  <script src="assets/vendor/docsify/plugins/custom/docsify-footer.min.js"></script>
 
   <!-- Table of Contents Plugin -->
   <script>
     if (getURLParameterByName('toc', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath') || ToC) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />');
-      document.write('<script src="assets/js/toc.js"><\/script>');
+      document.write('<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>');
     }
     if (getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />');
-      document.write('<script src="assets/js/toc.js"><\/script>');
+      document.write('<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>');
     }
   </script>
 
@@ -1654,10 +1654,10 @@
     if (getURLParameterByName('search', null, null, window.location.href, true) === 'true') {
  
       <!-- Docsify Search Plugin current release -->
-      <!-- document.write('<script src="assets/vendor/docsify/plugins/search-docsify-this.js"><\/script>'); -->
+      <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
  
       <!-- Docsify Search Plugin "develop" branch preview files -->
-      document.write('<script src="assets/vendor/docsify/plugins/preview/search-docsify-this.js"><\/script>');
+      document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>');
     }
   </script>
 
