@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.3] - XX/XX/2024
+## [1.9.3] - 02/22/2024
 
 **New:**
 * Support for the Browser-level image lazy loading (with thanks and appreciation to @sy-records for the source plugin 'docsify-loading')
@@ -8,7 +8,7 @@
 **Improved:**
 * Add ability to define custom colors for badges (with thanks to @cmadland for the example use of colored badges)
 * Updated ReadMe
-* Support for footer files ('_footer.md') in subfolders (with thanks and appreciation to @alertbox for the source plugin 'docsify-footer')
+* Support of footer files ('_footer.md') in subfolders, which also provides multi-language usage (with thanks and appreciation to @alertbox for the source plugin 'docsify-footer')
 
 **Bugfix:**
 * Ensure the link for displayed site name is correct after scrolling to id element
