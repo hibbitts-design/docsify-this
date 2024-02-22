@@ -18,7 +18,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 * [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
 * [Example Content Workflows](#example-content-workflows)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
-* [More Docsify-This Markdown Examples and Templates](#more-docsify-this-markdown-examples-and-temmplates)
+* [Additional Docsify-This Markdown Examples and Templates](#more-docsify-this-markdown-examples-and-temmplates)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 * [Markdown Syntax References](#markdown-syntax-references)
@@ -181,7 +181,7 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 
 ---
 
-### More Docsify-This Markdown Examples and Templates
+### Additional Docsify-This Markdown Examples and Templates
 
 #### Examples
 
