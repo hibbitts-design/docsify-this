@@ -207,7 +207,7 @@ Page layout:
 * [Read What People are Saying about Docsify-This](/?id=read-what-people-are-saying-about-docsify-this)
 * [Example Content Workflows](/?id=example-content-workflows)
 * [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
-* [Additional Docsify-This Markdown Examples and Templates](/?id=more-docsify-this-markdown-examples-and-templates)
+* [Additional Docsify-This Markdown Examples and Templates](/?id=additional-docsify-this-markdown-examples-and-templates)
 * [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
 * [Embedding Docsify-This Pages into Other Platforms](/?id=embedding-docsify-this-pages-into-other-platforms)
 * [Markdown Syntax References](/?id=markdown-syntax-references)
