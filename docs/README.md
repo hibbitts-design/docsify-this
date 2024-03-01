@@ -248,9 +248,9 @@ With Docsify-This you can:
 
 * Frictionless Markdown publishing
 * Flexible content display control
-* Author possession of content
+* Your content, your control
 * Support the 5 Rs of OER
-* Authors can help other authors
+* Authors helping other authors
 
 ---
 
