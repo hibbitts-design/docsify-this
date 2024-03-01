@@ -14,6 +14,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
+* [Docsify-This Core Design Principles](#docsify-this-core-design-principles)
 * [How Docsify-This Works](#how-docsify-this-works)
 * [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
 * [Example Content Workflows](#example-content-workflows)
@@ -49,6 +50,16 @@ With Docsify-This you can:
 * Seamlessly embed constraint-free Markdown/HTML, which you have authored, into other platforms (e.g. LMS or CMS)
 * Reuse existing Markdown content by seamlessly embedding it within other platforms (e.g. LMS or CMS)
 * Utilize the supported URL parameters when embedding content to match each destination platform better visually
+
+---
+
+### Docsify-This Core Design Principles
+
+* Frictionless Markdown publishing
+* Flexible content display control
+* Author possession of content
+* Support the 5 Rs of OER
+* Authors can help other authors
 
 ---
 
