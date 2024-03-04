@@ -4,6 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Updated to use Coloris v0.22.0
 
 ## [1.9.3] - 02/22/2024
 
