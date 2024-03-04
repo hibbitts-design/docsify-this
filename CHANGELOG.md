@@ -5,6 +5,7 @@
 **Improved:**
 * Updated ReadMe
 * Updated to use Coloris v0.22.0
+* Updated to use docsify-tabs plugin 1.6.2.
 
 ## [1.9.3] - 02/22/2024
 
