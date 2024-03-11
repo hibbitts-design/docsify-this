@@ -6,6 +6,7 @@
 * Updated ReadMe
 * Updated to use Coloris v0.22.0
 * Updated to use docsify-tabs plugin 1.6.2
+* Support display of site name with standard Docsify Sidebar
 
 **Bugfix:**
 * Remove extra <br> elements when credits are visible
