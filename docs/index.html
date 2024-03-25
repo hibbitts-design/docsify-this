@@ -1099,83 +1099,73 @@
           // Invoked on each page load after new HTML has been appended to the DOM
           hook.doneEach(function () {
             if (window.$docsify['basePath']) {
-              var hasEmbedly = document.getElementsByClassName('embedly-card');
-              if (hasEmbedly.length > 0) {
-                // elements with class "embedly-card" exist
-                var script = document.createElement('script');
+              const docHead = document.head;
+              const docBody = document.body;
+
+              // Embedly script
+              let hasEmbedly = document.getElementsByClassName('embedly-card');
+              if (hasEmbedly.length > 0 && !document.querySelector('script[src="https://cdn.embedly.com/widgets/platform.js"]')) {
+                let script = document.createElement('script');
                 script.type = 'text/javascript';
                 script.src = 'https://cdn.embedly.com/widgets/platform.js';
-                document.head.appendChild(script);
+                docHead.appendChild(script);
               }
 
               // Set link for displayed site name
-              if (getURLParameterByName('name', null, null, window.location.href, true)) {
+              const appName = getURLParameterByName('name', null, null, window.location.href, true);
+              if (appName) {
                 const appNameLink = document.querySelector('a.app-name-link');
                 appNameLink.setAttribute('href', '#/');
-                var editCSS = document.createElement('style')
-                editCSS.innerHTML = ".sidebar .app-name {display: block;}";
-                document.body.appendChild(editCSS);
+                if (!docBody.querySelector('style.sidebar-app-name')) {
+                  let editCSS = document.createElement('style')
+                  editCSS.innerHTML = ".sidebar .app-name {display: block;}";
+                  editCSS.classList.add('sidebar-app-name');
+                  docBody.appendChild(editCSS);
+                }
               }
 
               // Remove optional ToC area if full width header image is present
-              var hasImageHeader = document.getElementsByClassName('header-image-full-width');
+              let hasImageHeader = document.getElementsByClassName('header-image-full-width');
               if (hasImageHeader.length > 0) {
-                const elements = document.getElementsByClassName("nav");
+                let elements = document.getElementsByClassName("nav");
                 while (elements.length > 0) elements[0].remove();
               }
 
               // Adjust left margin for optional ToC area if faded header image is present
-              var hasImageFade = document.getElementsByClassName('header-image-fade');
-              var hasNav = document.getElementsByClassName('nav');
-              if (hasImageFade.length > 0 && hasNav.length > 0) {
-                var editCSS = document.createElement('style')
+              let hasImageFade = document.getElementsByClassName('header-image-fade').length > 0;
+              let hasNav = document.getElementsByClassName('nav').length > 0;
+              if (hasImageFade && hasNav && !docBody.querySelector('style.markdown-section-adjust')) {
+                let editCSS = document.createElement('style')
                 editCSS.innerHTML = ".markdown-section {margin-right: 0px;}";
-                document.body.appendChild(editCSS);
+                editCSS.classList.add('markdown-section-adjust');
+                docBody.appendChild(editCSS);
               }
 
-              // Change browser title if browser tab title or name parameter present
-              browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
-              siteName = getURLParameterByName('name', null, null, window.location.href, true);
-              if (!(browserTabTitle === false)) {
-                // console.log(browserTabTitle);
-                document.title = browserTabTitle;
-              } else if (!(siteName === false)) {
-                document.title = siteName;
-              } else {
-                document.title = 'Published by Docsify-This';
-              }
+              // Browser title logic optimized by early return pattern
+              let browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
+              document.title = browserTabTitle || appName || 'Published by Docsify-This';
 
-              // Change page title if page title parameter present
-              pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
-              if (!(pageTitle === false)) {
-                var newh1 = document.createElement("h1");
-                newh1.innerHTML = pageTitle
-                var divToMoveTo = document.getElementById("main");
+              // Update page title if parameter present
+              let pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
+              if (pageTitle) {
+                let newh1 = document.createElement("h1");
+                newh1.innerHTML = pageTitle;
+                let divToMoveTo = document.getElementById("main");
                 divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);
               }
 
-              // Update all iframes with source domains 'youtube.com', 'youtube-nocookie.com', 'docs.google.com' or 'onedrive.live.com' to include the default responsive CSS Markdown class `video-container-16by9`
-              const allIframes = Array.from(document.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="youtube-nocookie.com"], iframe[src*="docs.google.com"], iframe[src*="onedrive.live.com"]'));
-
-              // Filter out iframes that are not already wrapped with a div including the classes 'video-container-16by9' and 'video-container-4by3'
-              const targetIframes = allIframes.filter(function (iframe) {
+              // Iframes update for responsive design
+              const allIframes = document.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="youtube-nocookie.com"], iframe[src*="docs.google.com"], iframe[src*="onedrive.live.com"]');
+              allIframes.forEach(iframe => {
                 const parentDiv = iframe.parentNode;
-                return !parentDiv.matches('.video-container-16by9, .video-container-4by3');
+                if (!parentDiv.matches('.video-container-16by9, .video-container-4by3')) {
+                  const wrapperDiv = document.createElement('div');
+                  wrapperDiv.classList.add('video-container-16by9');
+                  iframe.classList.forEach(className => wrapperDiv.classList.add(className));
+                  parentDiv.replaceChild(wrapperDiv, iframe);
+                  wrapperDiv.appendChild(iframe);
+                }
               });
-
-              // Wrap each target iframe with a div element
-              targetIframes.forEach(function (iframe) {
-                const wrapperDiv = document.createElement('div');
-                wrapperDiv.classList.add('video-container-16by9');
-                // Preserve existing classes on the iframe
-                iframe.classList.forEach(function (className) {
-                  wrapperDiv.classList.add(className);
-                });
-                // Replace the iframe with the wrapper div
-                iframe.parentNode.replaceChild(wrapperDiv, iframe);
-                wrapperDiv.appendChild(iframe);
-              });
-
             }
           });
 
