@@ -9,7 +9,7 @@
 * Support display of site name with standard Docsify Sidebar
 
 **Bugfix:**
-* Remove extra <br> elements when credits are visible
+* Remove extra `<br>` elements when credits are visible
 
 ## [1.9.3] - 02/22/2024
 
