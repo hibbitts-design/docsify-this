@@ -941,6 +941,7 @@
                             .replace(/\/master/, '/blob/master');
                         } else if (currentBasePath.includes("codeberg.page")) {
                           editThisPageLink = editThisPageLink.replace('raw.codeberg.page', 'codeberg.org');
+                          editThisPageLink = editThisPageLink + '/src/branch/main/'
                         }
 
                         editThisPageLink = editThisPageLink + '/' + lastSegment + fileExt;
