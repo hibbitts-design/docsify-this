@@ -8,6 +8,7 @@
 * Updated to use docsify-tabs plugin 1.6.2
 * Support display of site name with standard Docsify Sidebar
 * Streamline handling of local URLs to handle 'Edit this Page' links and use of hypothesis
+* Streamline hook.doneEach script
 
 **Bugfix:**
 * Remove extra `<br>` elements when credits are visible
