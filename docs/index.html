@@ -1027,7 +1027,7 @@
 
           hook.beforeEach(function (html) {
 
-            if (!(getURLParameterByName('basePath') === false)) {
+            if (window.$docsify['basePath']) {
 
               // Remove any possible front matter with the delimiters '---'
               if (html.startsWith("---")) {
