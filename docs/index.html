@@ -926,13 +926,17 @@
 
               for (const link of links) {
                 const href = link.getAttribute('href');
+                // Find any local Markdown file links
                 if (href?.startsWith('#')) {
+                  // Modify each Markdown file link to work with Remote Docsify
                   let lastSegment = href.replace('#/', '').replace('./', '').replace(fileExt, '');
 
+                  // Check to make sure link is not Docsify id anchor link
                   if (!lastSegment.startsWith("?id")) {
                     let editThisPageLink = '';
                     if (existingEditThisPageLink) {
                       if (existingEditThisPageLink.endsWith(fileExt)) {
+                        // Calculate existing edit-link URL parm in link
                         editThisPageLink = decodeURIComponent(currentBasePath);
 
                         if (currentBasePath.includes("githubusercontent.com")) {
@@ -951,8 +955,10 @@
                     }
 
                     const editThisPageLinkURLparm = editThisPageLink && `&edit-link=${editThisPageLink}`;
+                    // Update Markdown file link
                     let newURL = '';
 
+                    // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link Markdown pages)
                     var isDynamicLink = (isExtensionAllowed(editThisPageLinkURLparm) && !(editThisPageLinkURLparm === "")) || getURLParameterByName('hypothesis');
                     if (!isDynamicLink) {
                       newURL = `#/${lastSegment}`;
@@ -963,6 +969,7 @@
                     link.setAttribute('href', newURL);
                   }
                 } else {
+                  // Set '_top' as external link targets except for docsify-this.net and GitHub Docsify-This repository
                   if (link.href !== "https://docsify-this.net/" && link.href !== "https://github.com/hibbitts-design/docsify-open-publishing-starter-kit") {
                     link.setAttribute('target', '_top');
                   }
