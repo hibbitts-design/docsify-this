@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.4] - XX/XX/2024
+## [1.9.4] - 03/28/2024
 
 **Improved:**
 * Updated ReadMe
@@ -9,6 +9,7 @@
 * Support display of site name with standard Docsify Sidebar
 * Streamline handling of local URLs to handle 'Edit this Page' links and use of hypothesis
 * Streamline hook.doneEach script
+* Code of Conduct now located in .github Repository
 
 **Bugfix:**
 * Remove extra `<br>` elements when credits are visible
