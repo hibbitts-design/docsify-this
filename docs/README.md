@@ -247,7 +247,7 @@ With Docsify-This you can:
 ### Docsify-This Core Design Principles
 
 * Frictionless Markdown publishing
-* Flexible content display control
+* Flexible content display handling
 * Your content, your control
 * Support the 5 Rs of OER
 * Authors helping other authors
