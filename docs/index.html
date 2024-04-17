@@ -543,7 +543,7 @@
             return;
           } else if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && !(hedgedocInstances.includes(hostname))) {
             // Filename without supported extension or missing filename and not a HedgeDoc instance
-            alert("Please include the full path and filename with a supported extension (" + getAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
+            alert("Please include the full path and filename with a supported extension (" + displayAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
             selectText();
             return;
           } else {
@@ -778,6 +778,13 @@
     function getAllowedFileExtensions() {
       // Return list of supported file extensions
       return ".md,.markdown";
+    }
+
+    function displayAllowedFileExtensions() {
+      // Get list of supported file extensions
+      let itemsString = getAllowedFileExtensions();
+      let displayFileExtentions = itemsString.split(',').join(' or ');
+      return displayFileExtentions;
     }
 
     function isExtensionAllowed(fileURL) {
