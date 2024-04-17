@@ -2,6 +2,9 @@
 
 ## [1.9.5] - XX/XX/2024
 
+**New:**
+* Support for .markdown file extension in addition to .md
+
 **Improved:**
 * Updated ReadMe
 
