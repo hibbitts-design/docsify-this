@@ -8,6 +8,9 @@
 **Improved:**
 * Updated ReadMe
 
+**Bugfix:**
+* Remove CSS for use with accordion elements with plain details/summary elements
+
 ## [1.9.4] - 03/28/2024
 
 **Improved:**
