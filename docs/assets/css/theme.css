@@ -452,7 +452,7 @@
   border-radius: .15rem;
 }
 
-.markdown-section details {
+.markdown-section .accordion details {
   padding: .75rem 1.25rem;
   margin-bottom: 0;
   border-bottom: 1px solid #CCCCCC;
