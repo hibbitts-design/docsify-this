@@ -816,7 +816,7 @@ The content of external Markdown files can be embedded into Docisfy-This Web pag
 ```
 
 ```markdown
-[included Markdown from URL]([itworks.md](https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main/itworks.md) ':include')
+[included Markdown from URL](https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main/itworks.md ':include')
 ```
 
 For additional examples of including external content, view [Docsify Embeded Files](https://docsify.js.org/#/embed-files?id=embed-files).
