@@ -807,6 +807,14 @@ function test() {
 }
 ```
 
+#### Including External Markdown Content
+
+The content of external Markdown files can be embedded into Docisfy-This Web pages with the following:
+
+`[alt text](example.md ':include')`
+
+For additional examples of including external content, view [Embeded Files](https://docsify.js.org/#/embed-files?id=embed-files).
+
 #### Use of WikiLinks
 [WikiLinks format](https://help.obsidian.md/Linking+notes+and+files/Internal+links) for links and images are supported, as also found in the desktop editor [Obsidian](https://obsidian.md) and other platforms.  
 
