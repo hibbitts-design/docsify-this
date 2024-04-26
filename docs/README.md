@@ -1143,6 +1143,64 @@ function test() {
 }
 ```
 
+#### Including Interactive Javascript Blocks
+Using the Docsify Plugin [RunKit](https://jhildenbiddle.github.io/docsify-plugin-runkit/) interactive JavaScript <abbr title="Read-Eval-Print Loop">REPLs</abbr> powered by RunKit can be embedded, for example to embed a data visualization rendered using [D3.js](https://d3js.org/) the following would be used:  
+
+
+````html
+<div
+  data-runkit
+>
+
+```javascript
+var R = require("ramda");
+var randrange = require("random-number-in-range");
+var d3Graph = require("@runkit/runkit/d3-graph/1.0.0");
+
+var count = 100;
+var nodes = R.range(0, 100).map((_, x) => ({ "name": x, "group": Math.floor(x * 7 / count) }));
+
+var links = R.range(0, Math.floor(count * 1.15)).map(function(_, x) {
+    var source = x % count;
+    var target = Math.floor(Math.log(1 + randrange(0, count)) / Math.log(1.3));
+    var value = 10.0 / (1 + Math.abs(source - target));
+
+    return { "source": source, "target": target, "value": value };
+});
+
+d3Graph(nodes, links);
+```
+
+</div>
+````
+
+Which would then appear as:
+
+<div data-runkit>
+
+```javascript
+var R = require("ramda");
+var randrange = require("random-number-in-range");
+var d3Graph = require("@runkit/runkit/d3-graph/1.0.0");
+
+var count = 100;
+var nodes = R.range(0, 100).map((_, x) => ({ "name": x, "group": Math.floor(x * 7 / count) }));
+
+var links = R.range(0, Math.floor(count * 1.15)).map(function(_, x) {
+    var source = x % count;
+    var target = Math.floor(Math.log(1 + randrange(0, count)) / Math.log(1.3));
+    var value = 10.0 / (1 + Math.abs(source - target));
+
+    return { "source": source, "target": target, "value": value };
+});
+
+d3Graph(nodes, links);
+```
+
+</div>
+
+**Tip:** Press <kbd>⇧ Shift</kbd> <kbd>⌤ Enter</kbd> to "run" the notebook.
+
 #### Including External Markdown Content
 
 The content of external Markdown files can be embedded into Docisfy-This Web pages with the following:
