@@ -4,6 +4,7 @@
 
 **New:**
 * Support for .markdown file extension in addition to .md
+* Added Docsify RunKit plugin (with thanks and appreciation to @jhildenbiddle for developing the plugin)
 
 **Improved:**
 * Updated ReadMe
