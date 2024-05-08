@@ -1024,13 +1024,17 @@
                 }
               }
 
-              /* Support Browser-level image lazy loading of images */
-              htmlElement.innerHTML = htmlElement.innerHTML.replace(/<img(.*?)>/g, function (match, p1) {
-                if (p1.indexOf('loading=') === -1) {
-                  return match.replace('>', ' loading="lazy">');
-                }
-                return match;
-              });
+              /* Optional support for Browser-level image lazy loading of images */
+
+              if (getURLParameterByName('lazy', null, null, window.location.href, true) === 'true') {
+                console.log("lazy!");
+                htmlElement.innerHTML = htmlElement.innerHTML.replace(/<img(.*?)>/g, function (match, p1) {
+                  if (p1.indexOf('loading=') === -1) {
+                    return match.replace('>', ' loading="lazy">');
+                  }
+                  return match;
+                });
+              }
 
               next(htmlElement.innerHTML);
             } else {
