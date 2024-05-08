@@ -780,6 +780,26 @@ Markdown:
 
 ### Tips and Techniques
 
+#### Making a Raw Markdown File Available Online
+There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
+
+**GitHub or Codeberg:**  
+1. Signup for a [GitHub](https://github.com) or [Codeberg](https://codeberg.org) account
+2. Create a new repository and upload your Markdown file
+3. View the uploaded file, and copy/paste that URL into the Docsify-This **Markdown File URL** field
+
+**Gist (GitHub Gists):**
+1. Signup for a [GitHub](https://github.com) account
+1. Create a gist with your Markdown file at https://gist.github.com
+2. Enter a filename ending with `.md` (e.g. `myfile.md`)
+3. Choose **Create public gist** and tap on that button
+4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
+
+**Personal or Organizational Website:**  
+1. Obtain login information for your server
+2. Upload the Markdown file to your server
+3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
+
 #### Matching Fonts with Your Destination Platform Content
 Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-family` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1  
