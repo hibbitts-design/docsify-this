@@ -5,9 +5,6 @@
 **Improved:**
 * Updated ReadMe
 
-**Bugfix:**
-* Support for the Browser-level image lazy loading is now off by default to improve scrolling accuracy for HTML anchors with image-heavy pages (to enable, use `lazy=true`)
-
 ## [1.9.5] - 04/29/2024🏒
 
 **New:**
