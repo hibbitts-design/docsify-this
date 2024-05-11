@@ -477,6 +477,10 @@
   word-break: break-all!important;
 }
 
+.markdown-section a {
+  overflow-wrap: anywhere;
+}
+
 .markdown-section .fa-fw {
   text-align: left;
 }
