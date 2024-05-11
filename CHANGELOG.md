@@ -5,6 +5,9 @@
 **Improved:**
 * Updated ReadMe
 
+**Bugfix:**
+* Added CSS to word-wrap long URLs
+
 ## [1.9.5] - 04/29/2024🏒
 
 **New:**
