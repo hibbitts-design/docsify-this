@@ -4,9 +4,10 @@
 
 **Improved:**
 * Updated ReadMe
+* Added CSS Markdown class to support responsive HTML images `images`
 
 **Bugfix:**
-* Added CSS to wrap links that overflow
+* Added CSS to automatically wrap links that overflow
 
 ## [1.9.5] - 04/29/2024🏒
 
