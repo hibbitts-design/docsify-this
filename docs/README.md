@@ -743,6 +743,7 @@ The following style prefixes are available with Docsify-This:
 * [embedly-card](/?id=embedly-card)
 * [header-image-fade](/?id=header-image-fade)
 * [header-image-full-width](/?id=header-image-full-width)
+* [image](/?id=image)
 * [image-75/image-50/image-25](/?id=image-75image-50image-25)
 * [image-75-border/image-50-border/image-25-border](/?id=image-75-borderimage-50-borderimage-25-border)
 * [image-border](/?id=image-border)
@@ -950,6 +951,13 @@ Suggested size of 1200px to 2000px width and 400px to 600px height, and display 
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=header-image')
+```
+
+#### image
+Make raw HTML images that include dimensions responsive
+
+```html
+<img src="https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main/images/docsify-this-web-page-builder.jpg" width="910" height="682" class="image image-border" alt="Docsify-This Web Page Builder">
 ```
 
 #### image-75/image-50/image-25
