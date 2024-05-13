@@ -536,9 +536,9 @@
             URLparms = URLparms + `&coverpage-color-dark-mode=` + hexCode;
           }
 
-          if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && url.includes("gist.raw.githubusercontent.com")) {
+          if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && url.includes("gist.githubusercontent.com")) {
             // Filename without supported extension or missing filename
-            alert("Please use the GitHub Gist raw source URL and a filename that includes the '.md' extension as the file URL. To get this URL, tap on the filename of your Gist (i.e. 'Yourfile.md') and then tap the 'Raw' button.");
+            alert("Please use the GitHub Gist raw source URL and a filename that includes a supported extension (" + displayAllowedFileExtensions() + ") as the file URL. To get this URL, tap on the filename of your Gist (i.e. 'Yourfile.md') and then tap the 'Raw' button.");
             selectText();
             return;
           } else if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && !(hedgedocInstances.includes(hostname))) {
