@@ -4,7 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
-* Added CSS Markdown class to support responsive HTML images `images`
+* Added CSS Markdown class to support responsive HTML images `responsive`
 
 **Bugfix:**
 * Added CSS to automatically wrap links that overflow
