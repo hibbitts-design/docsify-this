@@ -686,7 +686,7 @@ Scale images with border to %.
 Make raw HTML images that include size dimensions responsive.
 
 ```html
-<img src="https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main/images/docsify-this-web-page-builder.jpg" width="910" height="682" class="image image-border" alt="Docsify-This Web Page Builder">
+<img src="https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main/images/docsify-this-web-page-builder.jpg" width="910" height="682" class="responsive image-border" alt="Docsify-This Web Page Builder">
 ```
 
 #### row/column
