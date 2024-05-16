@@ -2,6 +2,9 @@
 
 ## [1.9.6] - XX/XX/2024
 
+**New:**
+* New Open Graph image for social media
+
 **Improved:**
 * Updated ReadMe
 * Added CSS Markdown class to support responsive HTML images `responsive`
