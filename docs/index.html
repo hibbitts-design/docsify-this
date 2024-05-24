@@ -1234,27 +1234,28 @@
               document.getElementById("editCheck").checked = true;
             }
 
-            browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle']);
+            browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
             if (browserTabTitle) {
               document.getElementById('browserTabTitle').value = decodeURI(browserTabTitle);
             }
 
-            fontfamily = getURLParameterByName(['font-family', 'fontFamily']);
+            fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
             if (fontfamily) {
+              console.log(fontfamily);
               document.getElementById('fontfamily').value = encodeURI(fontfamily);
             }
 
-            fontsize = getURLParameterByName(['font-size', 'fontSize']);
+            fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
             if (fontsize) {
               document.getElementById('fontsize').value = fontsize;
             }
 
-            lineheight = getURLParameterByName(['line-height', 'lineHeight']);
+            lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
             if (lineheight) {
               document.getElementById('lineheight').value = lineheight;
             }
 
-            linkcolor = getURLParameterByName(['link-color', 'linkColor']);
+            linkcolor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
             if (linkcolor) {
               linkcolor = '#' + linkcolor;
               document.getElementById('linkcolor').value = linkcolor;
@@ -1263,7 +1264,7 @@
               document.getElementById("linkcolorpreview").style.backgroundColor = linkcolor;
             }
 
-            editLinkText = getURLParameterByName(['edit-link-text', 'editLinkText']);
+            editLinkText = getURLParameterByName(['edit-link-text', 'editLinkText'], null, null, window.location.href, true);
             if (editLinkText) {
               document.getElementById('editLinkText').value = decodeURI(editLinkText);
             }
@@ -1276,7 +1277,7 @@
               document.getElementById("hideCredits").checked = true;
             }
 
-            tocheadings = getURLParameterByName(['toc-headings', 'tocHeadings']);
+            tocheadings = getURLParameterByName(['toc-headings', 'tocHeadings'], null, null, window.location.href, true);
             if (tocheadings) {
               if (tocheadings.includes("h1")) {
                 document.getElementById("toch1").checked = true;
@@ -1302,12 +1303,12 @@
               document.getElementById("hypothesisenable").checked = true;
             }
 
-            pageTitle = getURLParameterByName(['page-title', 'pageTitle']);
+            pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
             if (pageTitle) {
               document.getElementById('pageTitle').value = decodeURI(pageTitle);
             }
 
-            headerweight = getURLParameterByName(['header-weight', 'headerWeight']);
+            headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
             if (headerweight) {
               document.getElementById('headerweight').value = headerweight;
             }
@@ -1354,7 +1355,7 @@
               document.getElementById("pagination").checked = true;
             }
 
-            coverpagecolor = getURLParameterByName(['coverpage-color', 'coverpageColor']);
+            coverpagecolor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
             if (coverpagecolor) {
               coverpagecolor = '#' + coverpagecolor;
               document.getElementById('coverpagecolor').value = coverpagecolor;
@@ -1367,7 +1368,7 @@
               document.getElementById("enableDarkmode").checked = true;
             }
 
-            linkcolordarkmode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode']);
+            linkcolordarkmode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
             if (linkcolordarkmode) {
               linkcolordarkmode = '#' + linkcolordarkmode;
               document.getElementById('linkcolordarkmode').value = linkcolordarkmode;
@@ -1376,7 +1377,7 @@
               document.getElementById("linkcolordarkmodepreview").style.backgroundColor = linkcolordarkmode;
             }
 
-            coverpagecolordarkmode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true)
+            coverpagecolordarkmode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
             if (coverpagecolordarkmode) {
               coverpagecolordarkmode = '#' + coverpagecolordarkmode;
               document.getElementById('coverpagecolordarkmode').value = coverpagecolordarkmode;
