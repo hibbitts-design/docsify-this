@@ -12,6 +12,7 @@
 **Bugfix:**
 * Added CSS to automatically wrap links that overflow
 * Fixed URL error checking for raw GitHub Gists
+* Do not overwrite existing target attribute in Markdown links
 
 ## [1.9.5] - 04/29/2024🏒
 
