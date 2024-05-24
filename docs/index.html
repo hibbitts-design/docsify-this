@@ -978,7 +978,9 @@
                 } else {
                   // Set '_top' as external link targets except for docsify-this.net and GitHub Docsify-This repository
                   if (link.href !== "https://docsify-this.net/" && link.href !== "https://github.com/hibbitts-design/docsify-open-publishing-starter-kit") {
-                    link.setAttribute('target', '_top');
+                    if (!link.hasAttribute('target')) {
+                      link.setAttribute('target', '_top');
+                    }
                   }
                 }
               }
