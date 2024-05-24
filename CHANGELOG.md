@@ -13,6 +13,7 @@
 * Added CSS to automatically wrap links that overflow
 * Fixed URL error checking for raw GitHub Gists
 * Do not overwrite existing target attribute in Markdown links
+* Properly pass URL parameter values when configuring the default values of the Docsify-This Web Page Builder
 
 ## [1.9.5] - 04/29/2024🏒
 
