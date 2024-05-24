@@ -471,6 +471,7 @@
 
 .markdown-section code {
   white-space: pre-wrap!important;
+  overflow-wrap: anywhere;
 }
 
 .markdown-section pre code {
