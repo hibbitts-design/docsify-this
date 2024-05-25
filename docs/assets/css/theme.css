@@ -394,10 +394,6 @@
   text-decoration: none !important;
 }
 
-.markdown-section p .navpill {
-  margin-top: .30rem;
-}
-
 .markdown-section .badge {
   color: var(--badge-text-color, var(--base-background-color)); /* Default text color */
   background-color: var(--badge-bg-color, color-mix(in srgb, var(--base-color) 70%, transparent)); /* Default background */
