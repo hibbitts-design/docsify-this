@@ -8,6 +8,7 @@
 **Improved:**
 * Updated ReadMe
 * Added CSS Markdown class to support responsive HTML images `responsive`
+* Automatically add top margin to a navpill within a paragraph
 
 **Bugfix:**
 * Added CSS to automatically wrap links that overflow
