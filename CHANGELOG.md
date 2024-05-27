@@ -4,6 +4,7 @@
 
 **New:**
 * New Open Graph image for social media
+* Support of optional edit-link-emoji parameter for custom emoji 'Edit this Page' link (not available in the Web Page Builder)
 
 **Improved:**
 * Updated ReadMe
