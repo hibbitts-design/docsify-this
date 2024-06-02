@@ -592,12 +592,13 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 #### Additional URL Parameters (included in the Advanced Web Page Builder)
 
-The following additional URL parameters are also available for use in Docsify-This URLs, and are included in the [Advanced Web Page Builder](https://docsify-this.net?advanced=true).
+The following additional URL parameters are also available for use in Docsify-This URLs, and are included in the [Advanced Web Page Builder](https://docsify-this.net?advanced=true) unless otherwise indicated.
 
 * [coverpage](/?id=coverpage)
 * [coverpage-color](/?id=coverpage-color)
 * [coverpage-color-dark-mode](/?id=coverpage-color-dark-mode)
 * [dark-mode](/?id=dark-mode)
+* [edit-link-emoji](/?id=edit-link-emoji)
 * [link-color-dark-mode](/?id=link-color-dark-mode)
 * [loadFavicon](/?id=loadFavicon)
 * [loadFooter](/?id=loadFooter)
@@ -625,6 +626,10 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### dark-mode
 Automatically switch light/dark theme based on system OS-level preference, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
+
+##### edit-link-emoji
+Change the default emoji for a "Edit this Page" link with the optional **edit-link-emoji** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:
 
 ##### link-color-dark-mode
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
