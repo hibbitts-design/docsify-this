@@ -749,6 +749,15 @@
   line-height: 1.1rem;
 }
 
+.markdown-section .align-items-vertically {
+  display: inline-flex;
+  align-items: center;
+}
+
+.markdown-section .align-items-vertically .emoji {
+  margin-right: 2px;
+}
+
 body .app-nav {
   margin-right: -10px;
 }
