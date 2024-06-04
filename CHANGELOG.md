@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.9.7] - XX/XX/2024
+
+**Improved:**
+* Updated Open Graph image for social media
+
 ## [1.9.6] - 06/03/2024
 
 **New:**
