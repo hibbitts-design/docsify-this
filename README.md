@@ -88,6 +88,9 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 > I've been using Docsify-This for my graduate publishing production course, partly to explore new models in markdown publishing, but partly also to tame Canvas, which I find awkward and cumbersome. Keeping all my course notes as plain text files and deploying them through Github and Docsify-this is easy and makes my course development a breeze. Plus, I keep all my materials locally, and can use re-use them without being reliant on Canvas.  
 — J. Maxwell (Director & Associate Professor in the Publishing Program at Simon Fraser University)
 
+> Best tool I’ve found in years - this is one of those creations that is just done right, all the way to the core.  
+— D. Malawey (Multidisciplinary Lab Coordinator, Texas A&M University, United States)
+
 > Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
 — A. Levine aka CogDog (Independent Educational Technologist)
 
