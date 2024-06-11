@@ -5,6 +5,7 @@
 **Improved:**
 * Updated Open Graph image for social media
 * Updated ReadMe
+* Adjusted bottom margin for summary elements
 
 ## [1.9.6] - 06/03/2024
 
