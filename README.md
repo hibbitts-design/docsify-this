@@ -30,6 +30,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 * [Editing Docsify-This Markdown Files on your Desktop](#editing-docsify-this-markdown-files-on-your-desktop)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
 * [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
+* [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
 * [Troubleshooting](#troubleshooting)
 * [Privacy Policy Summary](#privacy-policy-summary)
 * [Contact and Support](#contact-and-support)
@@ -1001,6 +1002,18 @@ To host a Docsify-This instance on your LMS, do the following:
 If you want to further customize and control the presentation of your Markdown content, especially when rendering multiple page sites, you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted web app is based on) and store all Markdown files within that site. You can learn more about the capabilities of Docsify itself at [Docsify.js.org](https://docsify.js.org).  
 
 Looking for some help with getting a Docsify custom-This instance up and running for your organization? Paul provides a range of professional services related to Docsify-This - [contact him to learn more](https://docsify-this.net/#/?id=contact-and-support).  
+
+---
+
+### Additional Docsify-This Learning Materials
+
+[Introduction to Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/otessa-2024/main/pages&homepage=introduction-to-docsify-this.md&edit-link=https://github.com/paulhibbitts/otessa-2024&sidebar=true&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Introduction%20to%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
+_Introductory, beginner to intermediate._  
+An introduction of Markdown publishing using the open source project Docsify⁠–⁠This.  
+
+[Self-Publishing with Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/self-publishing-with-docsify-this/main/pages&homepage=introduction-to-self-publishing-with-docsify-this.md&edit-link=https://github.com/paulhibbitts/self-publishing-with-docsify-this&sidebar=true&maxLevel=4&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Overview%20to%20Self-Publishing%20with%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
+_Intermediate, with a mix of basic and advanced aspects._  
+An overview to self-publishing with Markdown using the open source project Docsify⁠–⁠This, with a focus on digital literacy.
 
 ---
 
