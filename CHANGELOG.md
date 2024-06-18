@@ -6,6 +6,7 @@
 * Updated Open Graph image for social media
 * Updated ReadMe
 * Adjusted bottom margin for summary elements
+* Revised filter for Markdown/HTML Post content within search results, but leave Post titles
 
 **Bugfix:**
 * Change default external link config from '_blank' to '_top'
