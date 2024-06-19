@@ -295,12 +295,10 @@
           }
         });
 
-        // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
-        // Only prepend postPageTitle when not empty
         if (matchesScore > 0) {
           const matchingPost = {
             title: handlePostTitle,
-            content: (postPageTitle ? `<strong>${postPageTitle}</strong><br>` : '') + postContent,
+            content: postContent ? resultStr : '',
             url: postUrl,
             score: matchesScore,
           };
