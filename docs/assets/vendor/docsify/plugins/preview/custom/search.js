@@ -221,16 +221,25 @@
       .join(' '); // Join the words with spaces
   }
   
-  // Function to replace Markdown links with their titles
+  // Function to replace Markdown links with their titles, excluding Markdown images
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
   function replaceMarkdownLinksWithTitles(content) {
     // Regular expression to match Markdown link syntax and capture the title and URL
-    const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    // Excludes image links which start with '!'
+    const markdownLinkRegex = /(\!\[.*?\])|(\[([^\]]+)\]\(([^)]+)\))/g;
     
-    // Replace each Markdown link with its title
-    return content.replace(markdownLinkRegex, (match, title, url) => title);
+    return content.replace(markdownLinkRegex, (match, image, link, title, url) => {
+        // If it's an image link, return the full match (no replacement)
+        if (image) {
+            return match;
+        }
+        // If it's a normal link, replace it with the title
+        return title;
+    });
   }
 
   // Function to strip all HTML tags from a string
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
   function stripHtmlTags(content) {
     // Regular expression to match HTML tags
     const htmlTagRegex = /<[^>]*>/g;
