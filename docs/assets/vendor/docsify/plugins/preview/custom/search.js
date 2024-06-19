@@ -213,6 +213,23 @@
     return keyword;
   }
 
+  // Function to convert string to title case and replace hyphens with spaces
+  function convertToTitle(str) {
+    return str
+      .split('-') // Split the string by hyphens
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalize the first letter and lower case the rest
+      .join(' '); // Join the words with spaces
+  }
+  
+  // Function to replace Markdown links with their titles
+  function replaceMarkdownLinksWithTitles(content) {
+    // Regular expression to match Markdown link syntax and capture the title and URL
+    const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    
+    // Replace each Markdown link with its title
+    return content.replace(markdownLinkRegex, (match, title, url) => title);
+  }
+
   /**
    * @param {String} query Search query
    * @returns {Array} Array of results
@@ -239,8 +256,10 @@
       let handlePostTitle = '';
       let handlePostContent = '';
       const postTitle = post.title && post.title.trim();
-      const postContent = post.body && post.body.trim();
+      const postContent = replaceMarkdownLinksWithTitles(post.body && post.body.trim());
       const postUrl = post.slug || '';
+      const postPageSlug = postUrl.split('/')[1].split('?')[0].replace('0', '');
+      const postPageTitle = convertToTitle(postPageSlug);
 
       // Skip posts that contain iframes, Font Awesome icons, embedly cards, or Markdown images
       // console.log(postContent);
@@ -290,6 +309,7 @@
 
             const matchContent =
               handlePostContent &&
+              (postPageTitle ? `<strong>${postPageTitle}</strong><br>` : '') + // Add page title if not empty
               '...' +
                 handlePostContent
                   .substring(start, end)
