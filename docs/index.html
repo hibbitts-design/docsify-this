@@ -869,6 +869,8 @@
 
       search: 'auto', // default
 
+      const uniqueNamespace = 'docsify-this-' + new Date().getTime();
+
       // complete configuration parameters
       search: {
         maxAge: 86400000, // Expiration time, the default one day
@@ -877,7 +879,7 @@
         noData: 'No matches found.',
         // Headline depth, 1 - 6
         depth: 6,
-        namespace: 'docsify-this',
+        namespace: uniqueNamespace,
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
       },
 
