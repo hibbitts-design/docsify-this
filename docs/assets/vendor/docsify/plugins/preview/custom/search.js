@@ -222,6 +222,27 @@
       .join(' '); // Join the words with spaces
   }
   
+  // Function to strip common Markdown markup
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+  function stripCommonMarkdown(markdown) {
+    // Regular expressions for common Markdown elements
+    const regexes = [
+      { pattern: /(\*\*|__)(.*?)\1/g, replacement: '$2' }, // Bold: **text** or __text__
+      { pattern: /(\*|_)(.*?)\1/g, replacement: '$2' },   // Italic: *text* or _text_
+      { pattern: /[-+*]\s+(.*?)/g, replacement: '$1' },   // Unordered lists: - item, + item, * item
+      { pattern: /\d+\.\s+(.*?)/g, replacement: '$1' },   // Ordered lists: 1. item
+    ];
+  
+    // Apply all regular expressions to the input text
+    let plainText = markdown;
+    regexes.forEach(({ pattern, replacement }) => {
+      plainText = plainText.replace(pattern, replacement);
+    });
+  
+    // Trim leading/trailing whitespace and return
+    return plainText.trim();
+  }
+
   // Function to replace Markdown links with their titles, excluding Markdown images
   // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
   function replaceMarkdownLinksWithTitles(content) {
@@ -275,7 +296,7 @@
       let handlePostTitle = '';
       let handlePostContent = '';
       const postTitle = post.title && post.title.trim();
-      const postContent = stripHtmlTags(replaceMarkdownLinksWithTitles(post.body && post.body.trim()));
+      const postContent = stripHtmlTags(stripCommonMarkdown(replaceMarkdownLinksWithTitles(post.body && post.body.trim())));
       const postUrl = post.slug || '';
       const postPageSlug = postUrl.split('/')[1].split('?')[0].replace('0', '');
       const postPageTitle = convertToTitle(postPageSlug);
@@ -342,12 +363,11 @@
         });
 
         // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+        // Only prepend postPageTitle when not empty
         if (matchesScore > 0) {
           const matchingPost = {
             title: handlePostTitle,
-            content: postContent 
-            ? resultStr 
-            : `${postPageTitle ? `<strong>${postPageTitle}</strong><br>` : ''}`,
+            content: (postPageTitle ? `<strong>${postPageTitle}</strong><br>` : '') + postContent,
             url: postUrl,
             score: matchesScore,
           };
