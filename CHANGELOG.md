@@ -10,7 +10,6 @@
 
 **Bugfix:**
 * Change default external link config from '_blank' to '_top'
-* Generate random namespace to support multiple Docsify-This sites with Search enabled
 
 ## [1.9.6] - 06/03/2024
 
