@@ -230,6 +230,15 @@
     return content.replace(markdownLinkRegex, (match, title, url) => title);
   }
 
+  // Function to strip all HTML tags from a string
+  function stripHtmlTags(content) {
+    // Regular expression to match HTML tags
+    const htmlTagRegex = /<[^>]*>/g;
+
+    // Replace all HTML tags with an empty string
+    return content.replace(htmlTagRegex, '');
+  }
+
   /**
    * @param {String} query Search query
    * @returns {Array} Array of results
@@ -256,7 +265,7 @@
       let handlePostTitle = '';
       let handlePostContent = '';
       const postTitle = post.title && post.title.trim();
-      const postContent = replaceMarkdownLinksWithTitles(post.body && post.body.trim());
+      const postContent = stripHtmlTags(replaceMarkdownLinksWithTitles(post.body && post.body.trim()));
       const postUrl = post.slug || '';
       const postPageSlug = postUrl.split('/')[1].split('?')[0].replace('0', '');
       const postPageTitle = convertToTitle(postPageSlug);
