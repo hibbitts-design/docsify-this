@@ -214,6 +214,7 @@
   }
 
   // Function to convert string to title case and replace hyphens with spaces
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
   function convertToTitle(str) {
     return str
       .split('-') // Split the string by hyphens
