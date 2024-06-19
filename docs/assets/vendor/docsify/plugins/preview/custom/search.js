@@ -242,6 +242,14 @@
       const postContent = post.body && post.body.trim();
       const postUrl = post.slug || '';
 
+      // Skip posts that contain iframes, Font Awesome icons, embedly cards, or Markdown images
+      // console.log(postContent);
+      const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
+
+      if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage) {
+        continue;
+      }
+
       if (postTitle) {
         keywords.forEach(keyword => {
           // From https://github.com/sindresorhus/escape-string-regexp
@@ -257,15 +265,9 @@
           handlePostTitle = postTitle
             ? escapeHtml(ignoreDiacriticalMarks(postTitle))
             : postTitle;
-
-          // Skip content that contain iframes, Font Awesome icons, embedly cards, or Markdown images
-          // console.log(postContent);
-          const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
-          if (!(postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage)) {
-            handlePostContent = postContent
+          handlePostContent = postContent
             ? escapeHtml(ignoreDiacriticalMarks(postContent))
             : postContent;
-          }
 
           indexTitle = postTitle ? handlePostTitle.search(regEx) : -1;
           indexContent = postContent ? handlePostContent.search(regEx) : -1;
