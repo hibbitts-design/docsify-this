@@ -10,6 +10,7 @@
 
 **Bugfix:**
 * Change default external link config from '_blank' to '_top'
+* Delete and create local database for Search to remove conflicts between Docsify-This web sites
 
 ## [1.9.6] - 06/03/2024
 
