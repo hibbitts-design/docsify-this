@@ -6,7 +6,7 @@
 * Updated Open Graph image for social media
 * Updated ReadMe
 * Adjusted bottom margin for summary elements
-* Updated search to strip out HTML tags, replace Markdown links with just titles, and include page titles per result whenever possible
+* Updated search to strip out HTML tags, replace Markdown links with just titles, remove common Markdown markup, and include page titles per result whenever possible
 
 **Bugfix:**
 * Change default external link config from '_blank' to '_top'
