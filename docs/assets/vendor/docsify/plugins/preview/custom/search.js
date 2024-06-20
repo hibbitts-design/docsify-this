@@ -302,11 +302,11 @@
       const postPageSlug = postUrl.split('/')[1].split('?')[0].replace('0', '');
       const postPageTitle = convertToTitle(postPageSlug);
 
-      // Skip posts that contain iframes, Font Awesome icons, embedly cards, or Markdown images
+      // Skip posts that contain iframes, Font Awesome icons, or embedly cards
       // console.log(postContent);
-      const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
+      // const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
 
-      if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage) {
+      if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card')) {
         continue;
       }
 
