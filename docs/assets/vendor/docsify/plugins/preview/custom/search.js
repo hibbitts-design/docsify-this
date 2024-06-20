@@ -365,11 +365,16 @@
         });
 
         // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
-        // Only prepend postPageTitle when not empty
+        // Only prepend postPageTitle when it is not empty and not equal to handlePostTitle (case insensitive)
         if (matchesScore > 0) {
           const matchingPost = {
             title: handlePostTitle,
-            content: (postPageTitle ? `<strong>${postPageTitle}</strong><br>` : '') + (postContent ? resultStr : ''),
+            content: (
+              // Convert both postPageTitle and handlePostTitle to lowercase for case-insensitive comparison
+              postPageTitle && postPageTitle.toLowerCase() !== handlePostTitle.toLowerCase() 
+                ? `<strong>${postPageTitle}</strong><br>` 
+                : ''
+            ) + (postContent ? resultStr : ''),
             url: postUrl,
             score: matchesScore,
           };
