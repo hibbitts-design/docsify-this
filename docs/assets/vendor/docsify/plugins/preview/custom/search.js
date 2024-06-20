@@ -231,14 +231,15 @@
       { pattern: /(\*|_)(.*?)\1/g, replacement: '$2' },   // Italic: *text* or _text_
       { pattern: /[-+*]\s+(.*?)/g, replacement: '$1' },   // Unordered lists: - item, + item, * item
       { pattern: /\d+\.\s+(.*?)/g, replacement: '$1' },   // Ordered lists: 1. item
+      { pattern: /^#{1,6}\s+(.*)/gm, replacement: '$1' }  // Headers: # Header, ## Header, etc.
     ];
-  
+
     // Apply all regular expressions to the input text
     let plainText = markdown;
     regexes.forEach(({ pattern, replacement }) => {
       plainText = plainText.replace(pattern, replacement);
     });
-  
+
     // Trim leading/trailing whitespace and return
     return plainText.trim();
   }
