@@ -414,14 +414,27 @@
 
     const expireKey = resolveExpireKey(config.namespace) + namespaceSuffix;
     const indexKey = resolveIndexKey(config.namespace) + namespaceSuffix;
+  
+    // Check if the database is expired
+    const isExpired = localStorage.getItem(expireKey) < Date.now();
 
-    // Clear the existing database
+    if (isExpired) {
+      // If expired, clear the existing database
+      localStorage.removeItem(expireKey);
+      localStorage.removeItem(indexKey);
+      // console.log('Existing database expired and deleted.');
+    } else {
+      // console.log('Database is not expired, but it will still be reset.');
+    }
+
+    // Clear the database every load regardless of expiration
     localStorage.removeItem(expireKey);
     localStorage.removeItem(indexKey);
-    // console.log('Existing database deleted.');
+    // console.log('Existing database cleared.');
 
-    INDEXS = {}; // Initialize INDEXS to an empty object
-  
+    // Initialize INDEXS to an empty object
+    INDEXS = {};
+
     const len = paths.length;
     let count = 0;
 
