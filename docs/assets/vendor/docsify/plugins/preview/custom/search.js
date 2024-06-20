@@ -414,16 +414,13 @@
     const expireKey = resolveExpireKey(config.namespace) + namespaceSuffix;
     const indexKey = resolveIndexKey(config.namespace) + namespaceSuffix;
 
-    const isExpired = localStorage.getItem(expireKey) < Date.now();
+    // Clear the existing database
+    localStorage.removeItem(expireKey);
+    localStorage.removeItem(indexKey);
+    // console.log('Existing database deleted.');
 
-    INDEXS = JSON.parse(localStorage.getItem(indexKey));
-
-    if (isExpired) {
-      INDEXS = {};
-    } else if (!isAuto) {
-      return;
-    }
-
+    INDEXS = {}; // Initialize INDEXS to an empty object
+  
     const len = paths.length;
     let count = 0;
 
