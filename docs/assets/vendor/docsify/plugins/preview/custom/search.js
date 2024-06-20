@@ -368,7 +368,7 @@
         if (matchesScore > 0) {
           const matchingPost = {
             title: handlePostTitle,
-            content: (postPageTitle ? `<strong>${postPageTitle}</strong><br>` : '') + postContent,
+            content: (postPageTitle ? `<strong>${postPageTitle}</strong><br>` : '') + (postContent ? resultStr : ''),
             url: postUrl,
             score: matchesScore,
           };
