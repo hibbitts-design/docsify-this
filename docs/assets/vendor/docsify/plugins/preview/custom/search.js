@@ -244,20 +244,21 @@
     return plainText.trim();
   }
 
-  // Function to replace Markdown links with their titles, excluding Markdown images
+  // Function to replace Markdown links with their titles and remove Markdown images
   // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
-  function replaceMarkdownLinksWithTitles(content) {
-    // Regular expression to match Markdown link syntax and capture the title and URL
-    // Excludes image links which start with '!'
-    const markdownLinkRegex = /(\!\[.*?\])|(\[([^\]]+)\]\(([^)]+)\))/g;
+  function replaceMarkdownLinksWithTitlesandRemoveImages(content) {
+    // Regular expression to match both Markdown images and links
+    // Capture images separately to identify and remove them
+    const markdownLinkRegex = /(!?\[([^\]]+)\]\(([^)]+)\))/g;
     
-    return content.replace(markdownLinkRegex, (match, image, link, title, url) => {
-        // If it's an image link, return the full match (no replacement)
-        if (image) {
-            return match;
-        }
-        // If it's a normal link, replace it with the title
-        return title;
+    return content.replace(markdownLinkRegex, (match, fullMatch, title, url) => {
+      // Check if it's an image link by the presence of '!' at the start
+      if (fullMatch.startsWith('!')) {
+        // Return an empty string to remove the image
+        return '';
+      }
+      // Otherwise, replace the link with its title
+      return title;
     });
   }
 
@@ -297,7 +298,7 @@
       let handlePostTitle = '';
       let handlePostContent = '';
       const postTitle = post.title && post.title.trim();
-      const postContent = stripHtmlTags(stripCommonMarkdown(replaceMarkdownLinksWithTitles(post.body && post.body.trim())));
+      const postContent = stripHtmlTags(stripCommonMarkdown(replaceMarkdownLinksWithTitlesandRemoveImages(post.body && post.body.trim())));
       const postUrl = post.slug || '';
       const postPageSlug = postUrl.split('/')[1].split('?')[0].replace('0', '');
       const postPageTitle = convertToTitle(postPageSlug);
