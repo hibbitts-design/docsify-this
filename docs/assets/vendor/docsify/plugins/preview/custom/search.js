@@ -349,18 +349,35 @@
               end = postContent.length;
             }
 
-            const matchContent =
-              handlePostContent &&
-              '...' +
-                handlePostContent
-                  .substring(start, end)
-                  .replace(
-                    regEx,
-                    word => /* html */ `<em class="search-keyword">${word}</em>`
-                  ) +
-                '...';
-
-            resultStr += matchContent;
+            const matchContent = handlePostContent && (() => {
+              // Extract the substring where the match will be applied
+              const contentSegment = handlePostContent.substring(start, end);
+              
+              // Find the first occurrence of the word using the regular expression
+              const match = contentSegment.match(regEx);
+              
+              if (match) {
+                // Get the position of the first match
+                const matchIndex = contentSegment.indexOf(match[0]);
+                
+                // Split the content segment into before, match, and after parts
+                const beforeMatch = contentSegment.substring(0, matchIndex);
+                const firstMatch = contentSegment.substring(matchIndex, matchIndex + match[0].length);
+                const afterMatch = contentSegment.substring(matchIndex + match[0].length);
+                
+                // Return the reassembled string with the first match wrapped in <em> tags
+                return '...' + 
+                  beforeMatch + 
+                  `<em class="search-keyword">${firstMatch}</em>` + 
+                  afterMatch + 
+                  '...';
+              }
+            
+              // If no match is found, return the original segment surrounded by ellipses
+              return '...' + contentSegment + '...';
+            })();
+            
+            resultStr += matchContent;   
           }
         });
 
