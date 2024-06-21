@@ -6,11 +6,11 @@
 * Updated Open Graph image for social media
 * Updated ReadMe
 * Adjusted bottom margin for summary elements
-* Updated search to strip out HTML tags, replace Markdown links with just titles, remove common Markdown markup, and include page titles per result whenever possible
+* Improved Search plugin results list presentation, including source page title when possible
 
 **Bugfix:**
 * Change default external link config from '_blank' to '_top'
-* Delete and create local database for Search to remove conflicts between Docsify-This web sites
+* Delete and create local database for Search plugin to remove conflicts between Docsify-This web sites
 
 ## [1.9.6] - 06/03/2024
 
