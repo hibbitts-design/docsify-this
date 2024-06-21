@@ -389,14 +389,16 @@
             title: handlePostTitle,
             content: (
               // Convert both postPageTitle and handlePostTitle to lowercase for case-insensitive comparison
-              postPageTitle && postPageTitle.toLowerCase() !== handlePostTitle.toLowerCase() 
+              postPageTitle && 
+              postPageTitle.toLowerCase() !== handlePostTitle.toLowerCase() &&
+              postPageTitle.toLowerCase() !== 'readme' // Exclude 'ReadMe' from being prepended
                 ? `<strong>${postPageTitle}</strong><br>` 
                 : ''
             ) + (postContent ? resultStr : ''),
             url: postUrl,
             score: matchesScore,
           };
-
+        
           matchingResults.push(matchingPost);
         }
       }
