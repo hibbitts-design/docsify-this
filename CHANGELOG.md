@@ -6,7 +6,7 @@
 * Updated Open Graph image for social media
 * Updated ReadMe
 * Adjusted bottom margin for summary elements
-* Improved Search plugin results list presentation, including source page title when possible
+* Improved Search plugin results list presentation, including source page title when appropriate
 
 **Bugfix:**
 * Change default external link config from '_blank' to '_top'
