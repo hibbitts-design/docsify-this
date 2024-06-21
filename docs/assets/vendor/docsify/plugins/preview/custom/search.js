@@ -349,6 +349,7 @@
               end = postContent.length;
             }
 
+            // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
             const matchContent = handlePostContent && (() => {
               // Extract the substring where the match will be applied
               const contentSegment = handlePostContent.substring(start, end);
@@ -404,6 +405,7 @@
     return matchingResults.sort((r1, r2) => r2.score - r1.score);
   }
 
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
   function init$1(config, vm) {
     const isAuto = config.paths === 'auto';
     const paths = isAuto ? getAllPaths(vm.router) : config.paths;
