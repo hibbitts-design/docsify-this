@@ -3,7 +3,7 @@
 ## [1.9.7] - XX/XX/2024
 
 **Improved:**
-* Improve accessibility of Font Awesome icons when used for decorative elements (automatic addition of `aria-hidden` attribute)
+* Improve accessibility of Font Awesome icons when used for decorative elements (automatic addition of `aria-hidden` attribute assuming decorative icons)
 * Updated ReadMe
 
 ## [1.9.7] - 06/21/2024🏒
