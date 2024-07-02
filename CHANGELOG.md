@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.9.7] - XX/XX/2024
+
+**Improved:**
+* Updated Open Graph image for social media
+* Updated ReadMe
+* Adjusted bottom margin for summary elements
+* Improved Search plugin results list presentation, including source page title when appropriate
+
 ## [1.9.7] - 06/21/2024🏒
 
 **Improved:**
