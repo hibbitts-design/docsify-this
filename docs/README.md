@@ -264,6 +264,13 @@ Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://githu
 The **basePath** Docsify parameter is the URL path containing the raw source Markdown file to render. If the file is named the expected default **README.md** then no other parameter are required, otherwise the **homepage** Docsify parameter must also be included set to the name of the file to render. An example Docsify-This URL would be:
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md  
 
+Docsify-This can render files from anywhere that the content of a Markdown file can be viewed within a Web Browser, including:
+
+* [GitHub.com](https://github.com/)(recommended) or [Codeberg.org](https://codeberg.org/) repository
+* [GitHub Gist](https://gist.github.com/)
+* Personal or organizational webhost
+* Almost any static file hosting service
+
 To render a file stored in a public GitHub repository you need to use the raw source URL of that file (i.e. raw.githubusercontent.com) - tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file) to get this URL when not using the above Web Page Builder, which does this automatically. It is also possible to render a file stored in a private GitHub repository by activating GitHub Pages within that repository and then using the GitHub Pages URL of that file (i.e. username.github.io).  
 
 The appearance of rendered Markdown files can be customized by optional [URL parameters](/?id=page-appearance-url-parameters) and a small set of available [CSS Classes](/?id=supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) and [RunKit](https://runkit.com/) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.  
