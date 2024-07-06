@@ -269,7 +269,7 @@ Docsify-This can render files from anywhere that the content of a Markdown file 
 * [GitHub.com](https://github.com/)(recommended) or [Codeberg.org](https://codeberg.org/) repository
 * [GitHub Gist](https://gist.github.com/)
 * Personal or organizational webhost
-* Almost any static file hosting service
+* _Or just about anywhere a raw source Markdown file can be accessed!_
 
 To directly render a file stored in a public GitHub repository when not using the above Web Page Builder, you need to use the raw source URL of that file (i.e. raw.githubusercontent.com) by tapping the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file). It is also possible to render a file stored in a private GitHub repository by activating GitHub Pages within that repository and then using the GitHub Pages URL of that file (i.e. username.github.io).  
 
