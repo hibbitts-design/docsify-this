@@ -76,7 +76,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 Docsify-This can render files from anywhere that the content of a Markdown file can be viewed within a Web Browser, including:
 
 * [GitHub.com](https://github.com/)(recommended) or [Codeberg.org](https://codeberg.org/) repository
-* [GitHub Gist](https://gist.github.com/)
+* [GitHub Gist](https://gist.github.com/) (raw source URL required)
 * Personal or organizational webhost
 * _Or just about anywhere a raw source Markdown file can be accessed!_
 
