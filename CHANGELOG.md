@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.7] - XX/XX/2024
+## [1.9.8] - 07/23/2024
 
 **Improved:**
 * Improve accessibility of Font Awesome icons when used for decorative elements (automatic addition of `aria-hidden` attribute assuming decorative icons)
