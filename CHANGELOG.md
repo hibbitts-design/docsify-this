@@ -4,6 +4,7 @@
 
 **Improved:**
 * Support for mathmatical formula display now provided by the Latex plugin for compatibility with future Marked.js upgrades (with thanks and appreciation to @scruel)
+* Replace Source Sans Pro with latest version (Source Sans 3)
 
 ## [1.9.8] - 07/23/2024
 
