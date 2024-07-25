@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.9.9] - XX/XX/2024
+
+**Improved:**
+* Support for mathmatical formula display now provided by the Latex plugin for compatibility with future Marked.js upgrades (with thanks and appreciation to @scruel)
+
 ## [1.9.8] - 07/23/2024
 
 **Improved:**
