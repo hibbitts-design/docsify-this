@@ -4,6 +4,7 @@
 
 **Improved:**
 * Support for mathmatical formula display now provided by the Latex plugin for compatibility with future Marked.js upgrades (with thanks and appreciation to @scruel)
+* Support of the alias searchbox for search for future Docsify-This upgrades
 
 ## [1.9.8] - 07/23/2024
 
