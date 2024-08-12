@@ -35,7 +35,7 @@
   <!--<link rel="stylesheet" href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css"> -->
   <link rel="stylesheet" href="assets/vendor/themeable/themes/preview/theme-simple.css">
 
-   <!-- Docsify Themeable current release -->
+  <!-- Docsify Themeable current release -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css"> -->
@@ -46,7 +46,7 @@
     href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css">-->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)"
     href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple-dark.css">-->
-    <link rel="stylesheet" media="(prefers-color-scheme: light)"
+  <link rel="stylesheet" media="(prefers-color-scheme: light)"
     href="assets/vendor/themeable/themes/preview/theme-simple.css">
   <link rel="stylesheet" media="(prefers-color-scheme: dark)"
     href="assets/vendor/themeable/themes/preview/theme-simple-dark.css">
@@ -818,23 +818,23 @@
     // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
     // Function to check and set the href attribute
     function checkAndSetDisplayedSiteName() {
-        const appNameLink = document.querySelector('a.app-name-link');
-        if (appNameLink && appNameLink.getAttribute('href') !== '#/') {
-            appNameLink.setAttribute('href', '#/');
-        }
+      const appNameLink = document.querySelector('a.app-name-link');
+      if (appNameLink && appNameLink.getAttribute('href') !== '#/') {
+        appNameLink.setAttribute('href', '#/');
+      }
     }
     // Set up a MutationObserver to monitor the entire body for added nodes or attribute changes
     // This assumes that the 'a.app-name-link' might be added dynamically or its attributes changed
     const observer = new MutationObserver((mutationsList, observer) => {
-        // Call checkAndSetHref to ensure the href is as expected
-        checkAndSetDisplayedSiteName();
+      // Call checkAndSetHref to ensure the href is as expected
+      checkAndSetDisplayedSiteName();
     });
     // Assuming the body exists when this script runs, start observing
     observer.observe(document.body, {
-        childList: true, // observe direct children being added or removed
-        subtree: true, // observe all descendants
-        attributes: true, // observe attributes changes
-        attributeFilter: ['href'] // filter to only observe changes to 'href' attributes
+      childList: true, // observe direct children being added or removed
+      subtree: true, // observe all descendants
+      attributes: true, // observe attributes changes
+      attributeFilter: ['href'] // filter to only observe changes to 'href' attributes
     });
 
     // Docsify
@@ -1064,8 +1064,8 @@
 
               let editlinkemoji = getURLParameterByName('edit-link-emoji', null, null, window.location.href, true);
               if (editlinkemoji) {
-              // Remove leading and trailing colons if they are present
-              editlinkemoji = editlinkemoji.replace(/^:+|:+$/g, '');
+                // Remove leading and trailing colons if they are present
+                editlinkemoji = editlinkemoji.replace(/^:+|:+$/g, '');
               } else {
                 editlinkemoji = 'memo';
               }
@@ -1344,7 +1344,7 @@
               document.getElementById('subMaxLevel').value = subMaxLevel;
             }
 
-            if (getURLParameterByName(['search','searchbox'], null, null, window.location.href, true) === 'true') {
+            if (getURLParameterByName(['search', 'searchbox'], null, null, window.location.href, true) === 'true') {
               document.getElementById("enableSidebarsearch").checked = true;
             }
 
@@ -1431,7 +1431,7 @@
     // If switch of light/dark theme mode
     window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
       // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
-      // console.log(e.matches);            
+      // console.log(e.matches);
       updateThemeModeLinkColors();
     });
 
@@ -1634,11 +1634,11 @@
 
   <!--Search Plugin -->
   <script>
-    if (getURLParameterByName(['search','searchbox'], null, null, window.location.href, true) === 'true') {
- 
+    if (getURLParameterByName(['search', 'searchbox'], null, null, window.location.href, true) === 'true') {
+
       <!-- Docsify Search Plugin current release -->
       <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
- 
+
       <!-- Docsify Search Plugin "develop" branch preview files -->
       document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>');
     }
