@@ -2,10 +2,13 @@
 
 ## [1.9.9] - XX/XX/2024
 
+**New:**
+* Added example Docsify-This template (Multiple Page Open Publishing Site Template)
+* Added checkbox to move Navbar items to the top of the Sidebar on smaller screens in Advanced Web Page Builder (in addition to URL parameter `mergeNavbar`)
+
 **Improved:**
 * Support for mathmatical formula display now provided by the Latex plugin for compatibility with future Marked.js compatibility (with thanks and appreciation to @scruel)
 * Support of the alias searchbox for search for future Docsify-This compatibility
-* Added example Docsify-This template (Multiple Page Open Publishing Site Template) 
 
 ## [1.9.8] - 07/23/2024
 
