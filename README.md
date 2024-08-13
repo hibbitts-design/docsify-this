@@ -365,7 +365,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 #### Additional URL Parameters (included in the Advanced Web Page Builder)
 
-The following additional URL parameters are also available for use in Docsify-This URLs, and are included in the [Advanced Web Page Builder](ttps://docsify-this.net?advanced=true) unless otherwise indicated.
+The following additional URL parameters are also available for use in Docsify-This URLs, and are included in the [Advanced Web Page Builder](https://docsify-this.net?advanced=true) unless otherwise indicated.
 
 * [coverpage](#coverpage)
 * [coverpage-color](#coverpage-color)
@@ -378,6 +378,7 @@ The following additional URL parameters are also available for use in Docsify-Th
 * [loadNavbar](#loadNavbar)
 * [loadSidebar](#loadSidebar)
 * [logo](#logo)
+* [mergeNavbar](#mergeNavbar)
 * [name](#name)
 * [page-title](#page-title)
 * [pagination](#pagination)
@@ -427,6 +428,10 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 ##### logo
 Display a logo image for the Website in a Docsify custom Sidebar (i.e. file 'logo.png) with the optional **logo** Docsify parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=CPT-363&logo=/images/logo.png The full folder path and filename must be provided. When a Website name is provided it will be used as the alt text for the logo.  
+
+##### mergeNavbar
+Merge the Navbar items to the top of the sidebar on smaller screens with the optional **mergeNavbar** Docsify parameter, for example: 
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&mergeNavbar=true&name=CPT-363
 
 ##### name
 Display the name for the Website in a Docsify custom Sidebar (i.e. file '_sidebar.md) with the optional **name** Docsify parameter, for example:  
