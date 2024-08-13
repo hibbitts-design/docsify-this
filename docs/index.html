@@ -1242,7 +1242,6 @@
 
             fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
             if (fontfamily) {
-              console.log(fontfamily);
               document.getElementById('fontfamily').value = encodeURI(fontfamily);
             }
 
@@ -1359,7 +1358,7 @@
             if (getURLParameterByName('mergeNavbar', null, null, window.location.href, true) === 'true') {
               document.getElementById("mergeNavbar").checked = true;
             }
-            
+
             coverpagecolor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
             if (coverpagecolor) {
               coverpagecolor = '#' + coverpagecolor;
