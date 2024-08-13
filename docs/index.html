@@ -32,7 +32,7 @@
   <!-- <link rel="stylesheet" href="assets/vendor/themeable/themes/theme-simple.css"> -->
 
   <!-- Docsify Themeable "develop" branch preview files -->
-  <!--<link rel="stylesheet" href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css"> -->
+  <!-- <link rel="stylesheet" href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css"> -->
   <link rel="stylesheet" href="assets/vendor/themeable/themes/preview/theme-simple.css">
 
   <!-- Docsify Themeable current release -->
@@ -66,7 +66,6 @@
 
   <style>
     :root {
-
       --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 
       --base-line-height: 1.4;
@@ -110,7 +109,6 @@
 
       --docsifytabs-tab-color: var(--base-color);
       --docsifytabs-tab-highlight-color: var(--link-color);
-
     }
   </style>
 
@@ -1412,7 +1410,7 @@
       params.forEach((value, key) => {
         // TODO: Parse numbers?
 
-        // console.log(value,key);
+        // console.log(value, key);
         if (key === 'basePath' && !(allowedDomains === '')) {
           const { hostname } = new URL(value);
           if (!(allowedDomains.includes(hostname))) {
@@ -1525,7 +1523,7 @@
   <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
 
-  <!--Pagination Plugin -->
+  <!-- Pagination Plugin -->
   <script>
     if (getURLParameterByName('pagination', null, null, window.location.href, true) === 'true') {
       document.write('<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>');
@@ -1642,7 +1640,7 @@
     }
   </script>
 
-  <!--Search Plugin -->
+  <!-- Search Plugin -->
   <script>
     if (getURLParameterByName(['search', 'searchbox'], null, null, window.location.href, true) === 'true') {
 
