@@ -381,7 +381,7 @@ The following additional URL parameters are also available for use in Docsify-Th
 * [name](#name)
 * [page-title](#page-title)
 * [pagination](#pagination)
-* [search](#search)
+* [searchbox](#searchbox)
 * [submaxLevel](#subMaxLevel)
 
 ##### coverpage
@@ -440,9 +440,9 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&pagination=true  
 
-##### search
-Enable the Docsify Search plugin (which currently includes matches for text and markup) on multiple page sites including a custom Sidebar with the optional **search** Docsify parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true
+##### searchbox
+Enable the Docsify Search plugin (which currently includes matches for text and markup) on multiple page sites including a custom Sidebar with the optional **searchbox** Docsify parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true
 
 ##### subMaxLevel
 Set the maximum automatic table of contents header levels in Docsify custom Sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
