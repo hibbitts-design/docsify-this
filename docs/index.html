@@ -469,6 +469,11 @@
             var URLparms = URLparms + `&pagination=true`;
           }
 
+          const cb18 = document.querySelector('#mergeNavbar');
+          if (cb18.checked) {
+            var URLparms = URLparms + `&mergeNavbar=true`;
+          }
+
           var getheaderweight = document.getElementById('headerweight').value;
           if (!(getheaderweight == "400")) {
             var URLparms = URLparms + `&header-weight=` + getheaderweight
@@ -671,6 +676,7 @@
       document.getElementById("subMaxLevel").value = 2;
       document.getElementById("pageTitle").value = '';
       document.getElementById("pagination").checked = false;
+      document.getElementById("mergeNavbar").checked = false;
       document.getElementById("headerweight").value = '400';
       document.getElementById("zoomimages").checked = false;
       document.getElementById("coverpagecolor").value = '#6C8A9A';
@@ -1204,7 +1210,7 @@
               theDiv.style.display = "block";
             }
 
-            if (getURLParameterByName('advanced') === true || getURLParameterByName(['page-title', 'pageTitle', 'header-weight', 'headerWeight', 'zoom-images', 'zoomImages', 'loadFavicon', 'coverpage', 'loadSidebar', 'loadNavbar', 'loadFooter', 'name', 'subMaxLevel', 'search', 'pagination', 'coverpage-color', 'coverpageColor', 'dark-mode', 'darkMode', 'link-color-dark-mode', 'linkColorDarkMode', 'coverpage-color-dark-mode', 'coverpageColorDarkMode'])) {
+            if (getURLParameterByName('advanced') === true || getURLParameterByName(['page-title', 'pageTitle', 'header-weight', 'headerWeight', 'zoom-images', 'zoomImages', 'loadFavicon', 'coverpage', 'loadSidebar', 'loadNavbar', 'loadFooter', 'mergeNavbar', 'name', 'subMaxLevel', 'searchbox', 'pagination', 'coverpage-color', 'coverpageColor', 'dark-mode', 'darkMode', 'link-color-dark-mode', 'linkColorDarkMode', 'coverpage-color-dark-mode', 'coverpageColorDarkMode'])) {
               document.getElementById("btn_2").style.display = "none";
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
@@ -1352,6 +1358,10 @@
               document.getElementById("pagination").checked = true;
             }
 
+            if (getURLParameterByName('mergeNavbar', null, null, window.location.href, true) === 'true') {
+              document.getElementById("mergeNavbar").checked = true;
+            }
+            
             coverpagecolor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
             if (coverpagecolor) {
               coverpagecolor = '#' + coverpagecolor;
