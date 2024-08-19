@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.9] - XX/XX/2024
+## [1.9.9] - 08/19/2024
 
 **New:**
 * Added example Docsify-This template (Multiple Page Open Publishing Site Template)
