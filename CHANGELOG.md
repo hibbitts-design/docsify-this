@@ -10,6 +10,7 @@
 * Support for mathmatical formula display now provided by the Latex plugin for compatibility with future Marked.js compatibility (with thanks and appreciation to @scruel)
 * Search plugin URL parameter changed to `searchbox` from `search` for future Docsify v5 compatability
 * Updated ReadMe
+* Reorganized Docsify-This docs
 
 ## [1.9.8] - 07/23/2024
 
