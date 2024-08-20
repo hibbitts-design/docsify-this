@@ -119,10 +119,10 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 
 ### 2. Publishing with Docsify-This
 
-The visual appearance of a Markdown file displayed by Docsify-This can be customized in two ways:
+The visual appearance of an online Markdown file displayed as a Web page by Docsify-This can be altered in two ways:
 
-- **Using the Web Page Builder:** This tool automatically generates the required Docsify-This URL with the necessary parameters
-- **Manually Adjusting URL Parameters:** You can also manually modify the appearance by adding specific parameters to the Docsify-This URL
+- **Using the Web Page Builder:** This point-and-click tool automatically generates the required Docsify-This URL with the necessary parameters
+- **Manually Adjusting URL Parameters:** You can also manually modify the appearance by changing or adding specific parameters to the Docsify-This URL
 
 For example, to display the Markdown file located at https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main/home.md with a Docsify sidebar including headings up to 3 levels, the Docsify-This URL is:  
 
