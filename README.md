@@ -132,7 +132,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 #### Page Appearance URL Parameters
 
-**Base URL Parameters (included in the standard Web Page Builder)**  
+**Core URL Parameters (included in the standard Web Page Builder)**  
 
 * [browser-tab-title](#browser-tab-title)
 * [edit-link](#edit-link)
