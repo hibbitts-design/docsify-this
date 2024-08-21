@@ -328,7 +328,7 @@ For example, to display the Markdown file located at https://raw.githubuserconte
 
 #### Page Appearance URL Parameters
 
-**Base URL Parameters (included in the standard Web Page Builder)**  
+**Core URL Parameters (included in the standard Web Page Builder)**  
 
 * [browser-tab-title](/?id=browser-tab-title)
 * [edit-link](/?id=edit-link)
