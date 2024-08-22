@@ -318,13 +318,18 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 
 The visual appearance of an online Markdown file displayed as a Web page by Docsify-This can be altered in two ways:
 
-- **Using the Web Page Builder:** This point-and-click tool automatically generates the required Docsify-This URL with the necessary parameters
-- **Manually Adjusting URL Parameters:** You can also manually modify the appearance by changing or adding specific parameters to the Docsify-This URL
+- **Using the above Web Page Builder** — This point-and-click tool automatically generates the required Docsify-This URL with the necessary parameters
+- **Manually adjusting URL parameters** — You can also manually modify the appearance by changing or adding specific parameters to the Docsify-This URL
 
 For example, to display the Markdown file located at https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main/home.md with a Docsify sidebar including headings up to 3 levels, the Docsify-This URL is:  
 
 <p style="word-wrap: break-word; margin-top: 1rem; padding: 6px; background-color: #666666; color: #F1F1F1; font-weight:normal; font-size: x-large; border-radius: 3px; font-family: monospace;">https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3
 </p>
+
+And here’s how Docsify-This.net displays the same URL:
+
+<img src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/docsify-this-example-page.jpg" width="1152" height="819" class="responsive image-border" alt="Example Docsify-This URL displayed by Docsify-This"><br>
+<em>The web page displayed by Docsify-This.net, showing the Markdown file with a sidebar that includes headings up to 3 levels, as specified by the Docsify-This URL.</em>
 
 #### Page Appearance URL Parameters
 
