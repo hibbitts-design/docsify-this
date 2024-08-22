@@ -310,7 +310,7 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 — D. Malawey (Multidisciplinary Lab Coordinator, Texas A&M University)
 
 > Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
-— A. Levine aka CogDog (Independent Educational Technologist, Saskatchewan)
+— A. Levine aka CogDog (Independent Educational Technologist)
 
 ---
 
