@@ -4,6 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Use Docsify Frontmatter plugin instead of custom HTML filtering
 
 ## [1.9.9] - 08/19/2024
 

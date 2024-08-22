@@ -1038,11 +1038,6 @@
 
             if (window.$docsify['basePath']) {
 
-              // Remove any possible front matter with the delimiters '---'
-              if (html.startsWith("---")) {
-                html = html.replace(/---(.|\n)*?---/, '');
-              }
-
               if (/githubusercontent\.com/.test(vm.route.file)) {
                 url = vm.route.file
                   .replace('raw.githubusercontent.com', 'github.com')
@@ -1653,6 +1648,9 @@
 
   <!-- RunKit Plugin -->
   <script src="assets/vendor/docsify/plugins/docsify-runkit.js"></script>
+
+  <!-- Frontmatter Plugin -->
+  <script src="assets/vendor/docsify/plugins/docsify-frontmatter.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for docsify-this.net homepage -->
 
