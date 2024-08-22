@@ -110,7 +110,7 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 — J. Maxwell (Director & Associate Professor in the Publishing Program at Simon Fraser University)
 
 > Best tool I’ve found in years - this is one of those creations that is just done right, all the way to the core.  
-— D. Malawey (Multidisciplinary Lab Coordinator, Texas A&M University, United States)
+— D. Malawey (Multidisciplinary Lab Coordinator, Texas A&M University)
 
 > Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
 — A. Levine aka CogDog (Independent Educational Technologist)
@@ -121,8 +121,8 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 
 The visual appearance of an online Markdown file displayed as a Web page by Docsify-This can be altered in two ways:
 
-- **Using the Web Page Builder:** This point-and-click tool automatically generates the required Docsify-This URL with the necessary parameters
-- **Manually adjusting URL parameters:** You can also manually modify the appearance by changing or adding specific parameters to the Docsify-This URL
+- **Using the Web Page Builder** — This point-and-click tool automatically generates the required Docsify-This URL with the necessary parameters
+- **Manually adjusting URL parameters** — You can also manually modify the appearance by changing or adding specific parameters to the Docsify-This URL
 
 For example, to display the Markdown file located at https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main/home.md with a Docsify sidebar including headings up to 3 levels, the Docsify-This URL is:  
 

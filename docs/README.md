@@ -61,7 +61,7 @@ Page layout:
 <div class='stackedlabeldropdown'>
   <label for="fontfamily">Page font family:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
-    <option value="default">Source Sans 3</option>
+    <option value="default">Source Sans Pro</option>
     <option disabled="disabled">----</option>
     <option value="Arial,sans-serif">Arial, sans-serif</option>
     <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
@@ -310,7 +310,7 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 — D. Malawey (Multidisciplinary Lab Coordinator, Texas A&M University)
 
 > Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
-— A. Levine aka CogDog (Independent Educational Technologist, Saskatchewan)
+— A. Levine aka CogDog (Independent Educational Technologist)
 
 ---
 
