@@ -9,7 +9,7 @@
 * Updated ReadMe
 * Use Docsify Frontmatter plugin instead of custom HTML filtering
 * Docsify-This Web app UI appearance updates
-* Optimized images for smaller download sizes (thanks to TinyPNG)
+* Optimized images for smaller download sizes (with thanks and appreciation to TinyPNG)
 
 ## [1.9.9] - 08/19/2024
 
