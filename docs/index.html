@@ -66,7 +66,7 @@
 
   <style>
     :root {
-      --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+      --base-font-family: system-ui, sans-serif;
 
       --base-line-height: 1.4;
       --base-font-size: 1.125rem;
@@ -1583,6 +1583,8 @@
       fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
+      } else {
+        document.documentElement.style.setProperty('--base-font-family', '"Source Sans Pro","Helvetica Neue",sans-serif');
       }
 
       // Change body font size if fontSize parameter present
