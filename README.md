@@ -132,8 +132,8 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 And here’s how Docsify-This.net displays the same URL:
 
-<img src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/docsify-this-example-page.jpg" width="1152" height="819" class="responsive image-border" alt="Example Docsify-This URL displayed by Docsify-This"><br>
-<em>The web page displayed by Docsify-This.net, showing the Markdown file with a sidebar that includes headings up to 3 levels, as specified by the Docsify-This URL.</em>
+![Example Docsify-This URL displayed by Docsify-This](docs/images/docsify-this-example-page-readme.png ':class=docsify-this-screenshot')
+_The web page displayed by Docsify-This.net, showing the Markdown file with a sidebar that includes headings up to 3 levels, as specified by the Docsify-This URL._
 
 #### Page Appearance URL Parameters
 
