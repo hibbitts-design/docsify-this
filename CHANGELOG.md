@@ -2,8 +2,12 @@
 
 ## [1.9.10] - XX/XX/2024
 
+**New:**
+* Added platform default font choice ('system-ui')
+
 **Improved:**
 * Updated ReadMe
+* Docsify-This Web app UI appearance updates
 * Use Docsify Frontmatter plugin instead of custom HTML filtering
 
 ## [1.9.9] - 08/19/2024
