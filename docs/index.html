@@ -1042,9 +1042,28 @@
               const { file, response } = vm.route;
               const { ok, status, statusText } = response;
               if (ok === false) {
+                let errorMessage;
+
+                switch (status) {
+                  case 404:
+                    errorMessage = `Looks like the file **${vm.route.file}** couldn't be found on the server. Please check if the **basePath** and **homepage** URL parameters are correct or if the file has been moved or deleted.`;
+                    break;
+                  case 500:
+                    errorMessage = `The server encountered an internal error while trying to fetch **${vm.route.file}**.`;
+                    break;
+                  case 403:
+                    errorMessage = `Access to **${vm.route.file}** is forbidden. You may not have the necessary permissions to view this file.`;
+                    break;
+                  case 401:
+                    errorMessage = `Unauthorized access. Please make sure you are logged in and have the appropriate permissions to access **${vm.route.file}**.`;
+                    break;
+                  default:
+                    errorMessage = `An unexpected **${status}** error occurred while requesting the file **${vm.route.file}**.`;
+                }
+
                 return [
-                  `# Oops!`,
-                  `A **${status}** error occurred while requesting the file **${vm.route.file}**`,
+                  `# Whoops!`,
+                  errorMessage,
                 ].join('\n\n');
               }
 
