@@ -1075,6 +1075,7 @@ body .docsify-pagination-container {
   border-width: 0;
   border-radius: 16px;
   background: #f2f2fd; /* Previous colors #f2f4fD #ecf4fe */
+  background: linear-gradient(to right, #f2f2fd 0%, #e0e0fa 75%, #d4d4fc 100%) 0 0;
 }
 
 #docsifythisurlbuilder h2 {
@@ -1423,6 +1424,7 @@ span #docsifythisurlfield {
 
   #docsifythisurlbuilder {
     background: #36416d; /* Original color #1f4b66 */
+    background: linear-gradient(#36416d 0%, #2a335f 75%, #1c2863 100%) 0 0;
   }
 
   #docsifythisurlfield {
