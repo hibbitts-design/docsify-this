@@ -4,6 +4,7 @@
 
 **New:**
 * Added platform default font choice ('system-ui')
+* Added basic 404 error handling (i.e. 404 - File not found error)
 
 **Improved:**
 * Updated ReadMe
