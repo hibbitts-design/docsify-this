@@ -1038,6 +1038,16 @@
 
             if (window.$docsify['basePath']) {
 
+              // Basic error handling (i.e. 404 - File not found error)
+              const { file, response } = vm.route;
+              const { ok, status, statusText } = response;
+              if (ok === false) {
+                return [
+                  `# Oops!`,
+                  `A **${status}** error occurred while requesting the file **${vm.route.file}**`,
+                ].join('\n\n');
+              }
+
               if (/githubusercontent\.com/.test(vm.route.file)) {
                 url = vm.route.file
                   .replace('raw.githubusercontent.com', 'github.com')
