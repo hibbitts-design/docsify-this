@@ -1424,7 +1424,7 @@ span #docsifythisurlfield {
 
   #docsifythisurlbuilder {
     background: #36416d; /* Original color #1f4b66 */
-    background: linear-gradient(#36416d 0%, #2a335f 75%, #1c2863 100%) 0 0;
+    background: linear-gradient(to right, #36416d 0%, #2a335f 75%, #1c2863 100%) 0 0;
   }
 
   #docsifythisurlfield {
