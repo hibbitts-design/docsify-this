@@ -137,7 +137,7 @@ _The web page displayed by Docsify-This.net, showing the Markdown file with a si
 
 #### Page Appearance URL Parameters
 
-Learn more about each of the available Docsify-This URL parameters below, or explore what is possible when combining URL parameters and online Markdown files with a set of [ready-to-use Docsify-This markdown templates](#ready-to-use-docsify-this-markdown-templates).
+Learn more about each of the available Docsify-This URL parameters below, and discover what is possible when combining URL parameters and online Markdown files with a set of [ready-to-use Docsify-This markdown templates](#ready-to-use-docsify-this-markdown-templates).
 
 **Core URL Parameters (included in the standard Web Page Builder)**  
 
@@ -356,7 +356,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 
 #### Ready-to-Use Docsify-This Markdown Templates
 
-While all you need to get going with Docsify-This is a basic Markdown file, below are some templates you can use that show what is possible with Markdown, images, and even a few HTML snippets!
+While all you need to get going with Docsify-This is a basic Markdown file, below are some templates you can use that show what is possible with Markdown, images, URL parameters and even a few HTML snippets!
 
 To use these templates you would generally do the following (template specific instructions are included with each template):
 
