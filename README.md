@@ -137,6 +137,8 @@ _The web page displayed by Docsify-This.net, showing the Markdown file with a si
 
 #### Page Appearance URL Parameters
 
+Learn more about each of the available Docsify-This URL parameters below, or explore what is possible when combining URL parameters and online Markdown files with a set of [ready-to-use Docsify-This markdown templates](#ready-to-use-docsify-this-markdown-templates).
+
 **Core URL Parameters (included in the standard Web Page Builder)**  
 
 * [browser-tab-title](#browser-tab-title)
