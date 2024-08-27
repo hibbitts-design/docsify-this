@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.10] - XX/XX/2024
+## [1.9.10] - 08/27/2024🏛️
 
 **New:**
 * Added platform default font choice ('system-ui')
