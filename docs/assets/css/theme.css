@@ -1152,6 +1152,7 @@ span #docsifythisurlfield {
   white-space: normal;
   overflow: visible;
   word-wrap: break-word;
+  text-align: left;
 }
 
 .docsifythisurlbuildersecondarybutton {
@@ -1172,6 +1173,7 @@ span #docsifythisurlfield {
   white-space: normal;
   overflow: visible;
   word-wrap: break-word;
+  text-align: left;
 }
 
 .docsifythisurlbuilderoptionsline {
