@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.9.11] - XX/XX/2024
+
+**Bugfix:**
+* Fix Web Page Builder button lable handling on smaller screens 
+
 ## [1.9.10] - 08/27/2024🏛️
 
 **New:**
