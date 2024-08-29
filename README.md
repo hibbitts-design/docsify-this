@@ -95,7 +95,7 @@ Docsify-This can render files from anywhere that the content of a Markdown file 
 
 To directly render a file stored in a public GitHub repository when not using the above Web Page Builder, you need to use the raw source URL of that file (i.e. raw.githubusercontent.com) by tapping the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file). It is also possible to render a file stored in a private GitHub repository by activating GitHub Pages within that repository and then using the GitHub Pages URL of that file (i.e. username.github.io).  
 
-The appearance of rendered Markdown files can be customized by optional [URL parameters](/?id=page-appearance-url-parameters) and a small set of available [CSS Classes](/?id=supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Latex](https://github.com/scruel/docsify-latex), [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) and [RunKit](https://runkit.com/) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.  
+The appearance of rendered Markdown files can be customized by optional [URL parameters](/?id=page-appearance-url-parameters) and a small set of available [CSS Classes](/?id=supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Latex](https://github.com/scruel/docsify-latex) and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.  
 
 Looking for an overall introduction to publishing with Docsify-This? Check out [Markdown Publishing with Docsify-This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=4&title=Markdown%20Publishing%20with%20Docsify-This).
 
@@ -973,37 +973,6 @@ function test() {
   console.log("Hello world!");
 }
 ```
-
-##### Including Interactive Javascript Blocks
-Using the Docsify Plugin [RunKit](https://jhildenbiddle.github.io/docsify-plugin-runkit/) interactive JavaScript <abbr title="Read-Eval-Print Loop">REPLs</abbr> powered by RunKit can be embedded, for example to embed a data visualization rendered using [D3.js](https://d3js.org/) the following would be used:  
-
-
-````html
-<div
-  data-runkit
->
-
-```javascript
-var R = require("ramda");
-var randrange = require("random-number-in-range");
-var d3Graph = require("@runkit/runkit/d3-graph/1.0.0");
-
-var count = 100;
-var nodes = R.range(0, 100).map((_, x) => ({ "name": x, "group": Math.floor(x * 7 / count) }));
-
-var links = R.range(0, Math.floor(count * 1.15)).map(function(_, x) {
-    var source = x % count;
-    var target = Math.floor(Math.log(1 + randrange(0, count)) / Math.log(1.3));
-    var value = 10.0 / (1 + Math.abs(source - target));
-
-    return { "source": source, "target": target, "value": value };
-});
-
-d3Graph(nodes, links);
-```
-
-</div>
-````
 
 ##### Including External Markdown Content
 
