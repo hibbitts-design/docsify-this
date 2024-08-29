@@ -2,6 +2,9 @@
 
 ## [1.9.11] - XX/XX/2024
 
+**Improved:**
+* Updated ReadMe
+
 **Bugfix:**
 * Fix Web Page Builder button lable handling on smaller screens
 * Removal of RunKit support due to unknown status of the platform
