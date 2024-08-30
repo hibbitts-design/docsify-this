@@ -4,11 +4,11 @@
 
 **Improved:**
 * Updated ReadMe
+* Removed RunKit support due to current unavailability of platform and unknown future
 
 **Bugfix:**
-* Fix Web Page Builder button lable handling on smaller screens
-* Removal of RunKit support due to unknown status of the platform
-* Support file URL for 'Edit this Page' links when Sidebar is displayed with single pages
+* Fixed Web Page Builder button lable handling on smaller screens 
+* Support file URL for 'Edit this Page' links as expected when Sidebar is displayed with single pages
 
 ## [1.9.10] - 08/27/2024🏛️
 
