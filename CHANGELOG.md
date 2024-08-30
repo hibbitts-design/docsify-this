@@ -8,6 +8,7 @@
 **Bugfix:**
 * Fix Web Page Builder button lable handling on smaller screens
 * Removal of RunKit support due to unknown status of the platform
+* Support file URL for 'Edit this Page' links when Sidebar is displayed with single pages
 
 ## [1.9.10] - 08/27/2024🏛️
 
