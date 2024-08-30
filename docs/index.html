@@ -270,7 +270,7 @@
                 // No filename is present and not a HedgeDoc instance, so assume default README.md file
                 gitlinkPageURL = gitlinkPageURL + "README.md";
               }
-              if ((document.querySelector('#stylesidebar').checked || document.querySelector('#loadcustomnavbar').checked) && !(hedgedocInstances.includes(hostname))) {
+              if ((document.querySelector('#loadcustomsidebar').checked || document.querySelector('#loadcustomnavbar').checked) && !(hedgedocInstances.includes(hostname))) {
                 gitlinkPageURL = gitlinkPageURL.substring(0, gitlinkPageURL.lastIndexOf("/"));
               }
               var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
