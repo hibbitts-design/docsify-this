@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.11] - XX/XX/2024🏛️
+## [1.9.11] - XX/XX/2024🏫
 
 **Improved:**
 * Updated ReadMe
