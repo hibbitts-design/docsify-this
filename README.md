@@ -356,7 +356,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 
 #### Ready-to-Use Docsify-This Markdown Templates
 
-While all you need to get going with Docsify-This is a basic Markdown file, below are some templates you can use that show what is possible with Markdown, images, URL parameters and even a few HTML snippets!
+While all you need to get going with Docsify-This is a basic Markdown file, below are some templates you can use that show what is possible with Markdown, images, URL parameters, and even a few HTML snippets!
 
 To use these templates you would generally do the following (template specific instructions are included with each template):
 
