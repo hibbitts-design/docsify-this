@@ -315,7 +315,7 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 
 ---
 
-Docsify-This has been recognized as a finalist in the Open Infrastructure category for the [2024 Open Education Global Awards](https://awards.oeglobal.org/2024-finalists/) — thank you to all Docsify.js.org maintainers and contributors, and to fellow open publishers, educators, and creators who share their open content with the rest of the world through Docsify-This.
+Docsify-This has been recognized as a finalist in the Open Infrastructure category for the [2024 Open Education Awards for Excellence](https://awards.oeglobal.org/2024-finalists/) — thank you to all Docsify.js.org maintainers and contributors, and to fellow open publishers, educators, and creators who share their open content with the rest of the world through Docsify-This.
 
 ---
 
