@@ -385,7 +385,7 @@ Set a custom font size for your standalone pages with the optional **font-size**
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
 
 ##### header-weight
-Set a custom header weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
+Set a custom header font weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600. 
 
 ##### hide-credits
