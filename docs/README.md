@@ -1182,7 +1182,7 @@ The following style prefixes are available with Docsify-This:
 
 ---
 
-#### 5. Additional Docsify-This Markdown Examples and Templates
+#### Additional Docsify-This Markdown Examples and Templates
 
 ##### Examples
 
