@@ -1,14 +1,105 @@
 # Changelog
 
-## [1.9.4] - XX/XX/2024
+## [1.9.12] - XX/XX/2024
+
+**Improved:**
+* Updated ReadMe
+
+## [1.9.11] - 09/03/2024🏫
+
+**Improved:**
+* Updated ReadMe
+* Removed RunKit support due to current unavailability of platform and unknown future
+
+**Bugfix:**
+* Fixed Web Page Builder button lable handling on smaller screens 
+* Support file URL for 'Edit this Page' links as expected when Sidebar is displayed with single pages
+
+## [1.9.10] - 08/27/2024
+
+**New:**
+* Added platform default font choice ('system-ui')
+* Added basic 404 error handling (i.e. 404 - File not found error)
+
+**Improved:**
+* Updated ReadMe
+* Use Docsify Frontmatter plugin instead of custom HTML filtering
+* Docsify-This Web app UI appearance updates
+* Optimized images for smaller download sizes (with thanks and appreciation to TinyPNG)
+
+## [1.9.9] - 08/19/2024
+
+**New:**
+* Added example Docsify-This template (Multiple Page Open Publishing Site Template)
+* Added checkbox to move Navbar items to the top of the Sidebar on smaller screens in Advanced Web Page Builder (in addition to URL parameter `mergeNavbar`)
+
+**Improved:**
+* Support for mathematical formula display now provided by the Latex plugin for compatibility with future Marked.js compatibility (with thanks and appreciation to @scruel)
+* Search plugin URL parameter changed to `searchbox` from `search` for future Docsify v5 compatability
+* Updated ReadMe
+* Reorganized Docsify-This docs
+
+## [1.9.8] - 07/23/2024
+
+**Improved:**
+* Improve accessibility of Font Awesome icons when used for decorative elements (automatic addition of `aria-hidden` attribute assuming decorative icons)
+* Updated ReadMe
+
+## [1.9.7] - 06/21/2024🏒
+
+**Improved:**
+* Updated Open Graph image for social media
+* Updated ReadMe
+* Adjusted bottom margin for summary elements
+* Improved Search plugin results list presentation, including source page title when appropriate
+
+**Bugfix:**
+* Change default external link config from '_blank' to '_top'
+* Delete and create local database for Search plugin to remove conflicts between Docsify-This web sites
+
+## [1.9.6] - 06/03/2024
+
+**New:**
+* New Open Graph image for social media
+* Support of optional `edit-link-emoji` URL parameter for custom emoji 'Edit this Page' link (not available in the Web Page Builder)
+
+**Improved:**
+* Updated ReadMe
+* Added CSS Markdown class to support responsive HTML images `responsive`
+
+**Bugfix:**
+* Added CSS to automatically wrap links that overflow
+* Fixed URL error checking for raw GitHub Gists
+* Do not overwrite existing target attribute in Markdown links
+* Properly pass URL parameter values when configuring the default values of the Docsify-This Web Page Builder
+* Added CSS to automatically wrap code blocks that overflow
+* Added CSS to better vertically align 'Edit this Page' emoji and text
+
+## [1.9.5] - 04/29/2024🏒
+
+**New:**
+* Support for .markdown file extension in addition to .md
+* Added Docsify RunKit plugin (with thanks and appreciation to @jhildenbiddle for developing the plugin)
+
+**Improved:**
+* Updated ReadMe
+
+**Bugfix:**
+* Remove CSS for use with accordion elements with plain details/summary elements
+
+## [1.9.4] - 03/28/2024
 
 **Improved:**
 * Updated ReadMe
 * Updated to use Coloris v0.22.0
 * Updated to use docsify-tabs plugin 1.6.2
+* Support display of site name with standard Docsify Sidebar
+* Streamline handling of local URLs to handle 'Edit this Page' links and use of hypothesis
+* Streamline hook.doneEach script
+* Code of Conduct now located in .github Repository
 
 **Bugfix:**
-* Remove extra <br> elements when credits are visible
+* Remove extra `<br>` elements when credits are visible
 
 ## [1.9.3] - 02/22/2024
 

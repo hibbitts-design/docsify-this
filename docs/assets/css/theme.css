@@ -1,261 +1,351 @@
 /* https://gwfh.mranftl.com/fonts/source-sans-pro?subsets=latin */
 /* source-sans-pro-regular - latin */
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/source-sans-pro-v21-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/source-sans-pro-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/source-sans-pro-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/source-sans-pro-v21-latin-regular.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+  src: url("../fonts/source-sans-pro-v21-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/source-sans-pro-v21-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/source-sans-pro-v21-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/source-sans-pro-v21-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/source-sans-pro-v21-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/source-sans-pro-v21-latin-regular.svg#SourceSansPro")
+      format("svg"); /* Legacy iOS */
 }
 
 /* source-sans-pro-italic - latin */
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/source-sans-pro-v21-latin-italic.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/source-sans-pro-v21-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/source-sans-pro-v21-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/source-sans-pro-v21-latin-italic.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+  src: url("../fonts/source-sans-pro-v21-latin-italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/source-sans-pro-v21-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/source-sans-pro-v21-latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/source-sans-pro-v21-latin-italic.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/source-sans-pro-v21-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/source-sans-pro-v21-latin-italic.svg#SourceSansPro")
+      format("svg"); /* Legacy iOS */
 }
 
 /* source-sans-pro-600 - latin */
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/source-sans-pro-v21-latin-600.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/source-sans-pro-v21-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/source-sans-pro-v21-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-600.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/source-sans-pro-v21-latin-600.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+  src: url("../fonts/source-sans-pro-v21-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/source-sans-pro-v21-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/source-sans-pro-v21-latin-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/source-sans-pro-v21-latin-600.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/source-sans-pro-v21-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/source-sans-pro-v21-latin-600.svg#SourceSansPro")
+      format("svg"); /* Legacy iOS */
 }
 
 /* source-sans-pro-700 - latin */
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/source-sans-pro-v21-latin-700.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/source-sans-pro-v21-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/source-sans-pro-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/source-sans-pro-v21-latin-700.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+  src: url("../fonts/source-sans-pro-v21-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/source-sans-pro-v21-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/source-sans-pro-v21-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/source-sans-pro-v21-latin-700.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/source-sans-pro-v21-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/source-sans-pro-v21-latin-700.svg#SourceSansPro")
+      format("svg"); /* Legacy iOS */
 }
 
 /* source-sans-pro-700italic - latin */
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "Source Sans Pro";
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/source-sans-pro-v21-latin-700italic.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/source-sans-pro-v21-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/source-sans-pro-v21-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-700italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/source-sans-pro-v21-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/source-sans-pro-v21-latin-700italic.svg#SourceSansPro') format('svg'); /* Legacy iOS */
+  src: url("../fonts/source-sans-pro-v21-latin-700italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/source-sans-pro-v21-latin-700italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/source-sans-pro-v21-latin-700italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/source-sans-pro-v21-latin-700italic.woff") format("woff"),
+    /* Modern Browsers */
+      url("../fonts/source-sans-pro-v21-latin-700italic.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/source-sans-pro-v21-latin-700italic.svg#SourceSansPro")
+      format("svg"); /* Legacy iOS */
 }
 
 /* https://gwfh.mranftl.com/fonts/lato?subsets=latin */
 /* lato-regular - latin */
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/lato-v23-latin-regular.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+  src: url("../fonts/lato-v23-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/lato-v23-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v23-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v23-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v23-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v23-latin-regular.svg#Lato")
+      format("svg"); /* Legacy iOS */
 }
 
 /* lato-italic - latin */
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/lato-v23-latin-italic.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/lato-v23-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lato-v23-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/lato-v23-latin-italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lato-v23-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/lato-v23-latin-italic.svg#Lato') format('svg'); /* Legacy iOS */
+  src: url("../fonts/lato-v23-latin-italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/lato-v23-latin-italic.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v23-latin-italic.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v23-latin-italic.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v23-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v23-latin-italic.svg#Lato")
+      format("svg"); /* Legacy iOS */
 }
 
 /* lato-700 - latin */
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/lato-v23-latin-700.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/lato-v23-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/lato-v23-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lato-v23-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/lato-v23-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+  src: url("../fonts/lato-v23-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/lato-v23-latin-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v23-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v23-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v23-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v23-latin-700.svg#Lato")
+      format("svg"); /* Legacy iOS */
 }
 
 /* lato-700italic - latin */
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/lato-v23-latin-700italic.eot'); /* IE9 Compat Modes */
-  src: local(''),
-       url('../fonts/lato-v23-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/lato-v23-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/lato-v23-latin-700italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/lato-v23-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/lato-v23-latin-700italic.svg#Lato') format('svg'); /* Legacy iOS */
+  src: url("../fonts/lato-v23-latin-700italic.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/lato-v23-latin-700italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lato-v23-latin-700italic.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lato-v23-latin-700italic.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lato-v23-latin-700italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lato-v23-latin-700italic.svg#Lato")
+      format("svg"); /* Legacy iOS */
 }
 
 /* open-sans-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/open-sans-v34-latin-regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/open-sans-v34-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/open-sans-v34-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/open-sans-v34-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/open-sans-v34-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  src: url("../fonts/open-sans-v34-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/open-sans-v34-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v34-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/open-sans-v34-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v34-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v34-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 
 /* open-sans-italic - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/open-sans-v34-latin-italic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/open-sans-v34-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/open-sans-v34-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/open-sans-v34-latin-italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/open-sans-v34-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/open-sans-v34-latin-italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+  src: url("../fonts/open-sans-v34-latin-italic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/open-sans-v34-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v34-latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/open-sans-v34-latin-italic.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v34-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v34-latin-italic.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 
 /* open-sans-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/open-sans-v34-latin-700.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/open-sans-v34-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/open-sans-v34-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/open-sans-v34-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/open-sans-v34-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+  src: url("../fonts/open-sans-v34-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/open-sans-v34-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v34-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/open-sans-v34-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v34-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v34-latin-700.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 
 /* open-sans-700italic - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/open-sans-v34-latin-700italic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/open-sans-v34-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/open-sans-v34-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/open-sans-v34-latin-700italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/open-sans-v34-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/open-sans-v34-latin-700italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+  src: url("../fonts/open-sans-v34-latin-700italic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/open-sans-v34-latin-700italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v34-latin-700italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/open-sans-v34-latin-700italic.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v34-latin-700italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v34-latin-700italic.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 
 /* merriweather-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/merriweather-v30-latin-regular.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/merriweather-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/merriweather-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/merriweather-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/merriweather-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/merriweather-v30-latin-regular.svg#Merriweather') format('svg'); /* Legacy iOS */
+  src: url("../fonts/merriweather-v30-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/merriweather-v30-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/merriweather-v30-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/merriweather-v30-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/merriweather-v30-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/merriweather-v30-latin-regular.svg#Merriweather")
+      format("svg"); /* Legacy iOS */
 }
 
 /* merriweather-italic - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   font-weight: 400;
-  src: url('../fonts/merriweather-v30-latin-italic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/merriweather-v30-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/merriweather-v30-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/merriweather-v30-latin-italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/merriweather-v30-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/merriweather-v30-latin-italic.svg#Merriweather') format('svg'); /* Legacy iOS */
+  src: url("../fonts/merriweather-v30-latin-italic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/merriweather-v30-latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/merriweather-v30-latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/merriweather-v30-latin-italic.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/merriweather-v30-latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/merriweather-v30-latin-italic.svg#Merriweather")
+      format("svg"); /* Legacy iOS */
 }
 
 /* merriweather-700 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/merriweather-v30-latin-700.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/merriweather-v30-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/merriweather-v30-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/merriweather-v30-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/merriweather-v30-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/merriweather-v30-latin-700.svg#Merriweather') format('svg'); /* Legacy iOS */
+  src: url("../fonts/merriweather-v30-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/merriweather-v30-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/merriweather-v30-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/merriweather-v30-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/merriweather-v30-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/merriweather-v30-latin-700.svg#Merriweather") format("svg"); /* Legacy iOS */
 }
 
 /* merriweather-700italic - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Merriweather';
+  font-family: "Merriweather";
   font-style: italic;
   font-weight: 700;
-  src: url('../fonts/merriweather-v30-latin-700italic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/merriweather-v30-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/merriweather-v30-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/merriweather-v30-latin-700italic.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/merriweather-v30-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/merriweather-v30-latin-700italic.svg#Merriweather') format('svg'); /* Legacy iOS */
+  src: url("../fonts/merriweather-v30-latin-700italic.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/merriweather-v30-latin-700italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/merriweather-v30-latin-700italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/merriweather-v30-latin-700italic.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/merriweather-v30-latin-700italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/merriweather-v30-latin-700italic.svg#Merriweather")
+      format("svg"); /* Legacy iOS */
 }
 
-.app-nav:not(:empty)~main .markdown-section {
-  padding-top: 5.0rem;
+.app-nav:not(:empty) ~ main .markdown-section {
+  padding-top: 5rem;
 }
 
-.pagination-item, .pagination-item-title {
-  opacity: .9 !important;
+.pagination-item,
+.pagination-item-title {
+  opacity: 0.9 !important;
 }
 
-.pagination-item:not(:last-child) a .pagination-item-label, .pagination-item:not(:last-child) a .pagination-item-subtitle, .pagination-item:not(:last-child) a .pagination-item-title {
-  opacity: .9 !important;
-  transition: all .2s;
+.pagination-item:not(:last-child) a .pagination-item-label,
+.pagination-item:not(:last-child) a .pagination-item-subtitle,
+.pagination-item:not(:last-child) a .pagination-item-title {
+  opacity: 0.9 !important;
+  transition: all 0.2s;
 }
 
 .markdown-section {
   padding: 1rem 40px;
 }
 
-.markdown-section .alert, .markdown-section blockquote {
+.markdown-section .alert,
+.markdown-section blockquote {
   overflow: visible;
   margin: 1em 0;
   padding: 1em;
@@ -269,25 +359,28 @@
   font-size: var(--blockquote-font-size);
   font-style: var(--blockquote-font-style);
   font-weight: var(--blockquote-font-weight);
-  quotes: "“""”""‘""’";
+  quotes: "“" "”" "‘" "’";
 }
 
 .markdown-section ul {
   list-style: square outside none;
 }
 
-.markdown-section .alert ul, .markdown-section blockquote ul {
+.markdown-section .alert ul,
+.markdown-section blockquote ul {
   list-style: none;
-  margin-top: .8em;
+  margin-top: 0.8em;
 }
 
-.markdown-section .alert ul li, .markdown-section blockquote ul li {
+.markdown-section .alert ul li,
+.markdown-section blockquote ul li {
   margin: 2px 0;
 }
 
-.markdown-section .alert ul li:before, .markdown-section blockquote ul li:before {
+.markdown-section .alert ul li:before,
+.markdown-section blockquote ul li:before {
   position: absolute;
-  content: '\2B29';
+  content: "\2B29";
   margin-left: -18px;
 }
 
@@ -301,7 +394,7 @@
   line-height: 1.2rem;
   background-color: var(--link-color);
   text-decoration: none;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .markdown-section a.button {
@@ -320,8 +413,8 @@
   line-height: 1.2rem;
   background-color: transparent;
   text-decoration: none;
-  border: 1px solid var(--link-color)!important;
-  border-radius: .25rem;
+  border: 1px solid var(--link-color) !important;
+  border-radius: 0.25rem;
 }
 
 .markdown-section a.button-secondary {
@@ -359,7 +452,7 @@
   line-height: 1.2rem;
   background-color: transparent;
   text-decoration: none;
-  border: 1px solid var(--link-color)!important;
+  border: 1px solid var(--link-color) !important;
   border-radius: 1.4rem;
 }
 
@@ -379,8 +472,8 @@
   padding: 4px 14px 4px 14px;
   margin-bottom: 4px;
   margin-right: 6px;
-  font-size: .8rem;
-  line-height: .9rem;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
   background-color: --base-background-color;
   font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
   font-weight: bold;
@@ -389,17 +482,23 @@
 
 .markdown-section a.navpill {
   cursor: pointer;
-  color: var(--base-color)!important;
+  color: var(--base-color) !important;
   border: 1px solid var(--base-color);
   text-decoration: none !important;
 }
 
 .markdown-section .badge {
-  color: var(--badge-text-color, var(--base-background-color)); /* Default text color */
-  background-color: var(--badge-bg-color, color-mix(in srgb, var(--base-color) 70%, transparent)); /* Default background */
+  color: var(
+    --badge-text-color,
+    var(--base-background-color)
+  ); /* Default text color */
+  background-color: var(
+    --badge-bg-color,
+    color-mix(in srgb, var(--base-color) 70%, transparent)
+  ); /* Default background */
 
   display: inline-block;
-  padding: .25em .4em .25em .4em;
+  padding: 0.25em 0.4em 0.25em 0.4em;
   font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
   font-size: 75%;
   font-weight: 700;
@@ -408,17 +507,46 @@
   white-space: nowrap;
   vertical-align: middle;
   margin-top: -0.4em;
-  border-radius: .25rem;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   text-decoration: none;
 }
 
 .markdown-section .badge a {
-  color: var(--badge-text-color, var(--base-background-color))!important; /* Default text color */
+  color: var(
+    --badge-text-color,
+    var(--base-background-color)
+  ) !important; /* Default text color */
   text-decoration: none !important;
 }
 
-.markdown-section a[href$="?id=a"], .markdown-section a[href$='?id=b'], .markdown-section a[href$="?id=c"], .markdown-section a[href$="?id=d"], .markdown-section a[href$="?id=e"], .markdown-section a[href$="?id=f"], .markdown-section a[href$="?id=g"], .markdown-section a[href$="?id=h"], .markdown-section a[href$="?id=i"], .markdown-section a[href$="?id=j"], .markdown-section a[href$="?id=k"], .markdown-section a[href$="?id=l"], .markdown-section a[href$="?id=m"], .markdown-section a[href$="?id=n"], .markdown-section a[href$="?id=o"], .markdown-section a[href$="?id=p"], .markdown-section a[href$="?id=q"], .markdown-section a[href$="?id=r"], .markdown-section a[href$="?id=s"], .markdown-section a[href$="?id=t"], .markdown-section a[href$="?id=u"], .markdown-section a[href$="?id=v"], .markdown-section a[href$="?id=w"], .markdown-section a[href$="?id=x"], .markdown-section a[href$="?id=y"], .markdown-section a[href$="?id=z"] {
+.markdown-section a[href$="?id=a"],
+.markdown-section a[href$="?id=b"],
+.markdown-section a[href$="?id=c"],
+.markdown-section a[href$="?id=d"],
+.markdown-section a[href$="?id=e"],
+.markdown-section a[href$="?id=f"],
+.markdown-section a[href$="?id=g"],
+.markdown-section a[href$="?id=h"],
+.markdown-section a[href$="?id=i"],
+.markdown-section a[href$="?id=j"],
+.markdown-section a[href$="?id=k"],
+.markdown-section a[href$="?id=l"],
+.markdown-section a[href$="?id=m"],
+.markdown-section a[href$="?id=n"],
+.markdown-section a[href$="?id=o"],
+.markdown-section a[href$="?id=p"],
+.markdown-section a[href$="?id=q"],
+.markdown-section a[href$="?id=r"],
+.markdown-section a[href$="?id=s"],
+.markdown-section a[href$="?id=t"],
+.markdown-section a[href$="?id=u"],
+.markdown-section a[href$="?id=v"],
+.markdown-section a[href$="?id=w"],
+.markdown-section a[href$="?id=x"],
+.markdown-section a[href$="?id=y"],
+.markdown-section a[href$="?id=z"] {
   display: inline-flex;
   padding-top: 0px;
   padding-right: 6px;
@@ -427,11 +555,36 @@
   line-height: 1.2em;
 }
 
-.markdown-section #a, .markdown-section #b, .markdown-section #c, .markdown-section #d, .markdown-section #e, .markdown-section #f, .markdown-section #g, .markdown-section #h, .markdown-section #i, .markdown-section #j, .markdown-section #k, .markdown-section #l, .markdown-section #m, .markdown-section #n, .markdown-section #o, .markdown-section #p, .markdown-section #q, .markdown-section #r, .markdown-section #s, .markdown-section #t, .markdown-section #u, .markdown-section #v, .markdown-section #w, .markdown-section #x, .markdown-section #y, .markdown-section #z {
+.markdown-section #a,
+.markdown-section #b,
+.markdown-section #c,
+.markdown-section #d,
+.markdown-section #e,
+.markdown-section #f,
+.markdown-section #g,
+.markdown-section #h,
+.markdown-section #i,
+.markdown-section #j,
+.markdown-section #k,
+.markdown-section #l,
+.markdown-section #m,
+.markdown-section #n,
+.markdown-section #o,
+.markdown-section #p,
+.markdown-section #q,
+.markdown-section #r,
+.markdown-section #s,
+.markdown-section #t,
+.markdown-section #u,
+.markdown-section #v,
+.markdown-section #w,
+.markdown-section #x,
+.markdown-section #y,
+.markdown-section #z {
   width: 2em;
   color: var(--base-background-color);
   font-weight: 700;
-  margin-top: 1.00rem;
+  margin-top: 1rem;
   padding-left: 0.25rem;
   background: color-mix(in srgb, var(--base-color) 70%, transparent);
 }
@@ -446,35 +599,43 @@
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #CCCCCC;
-  border-left: 1px solid #CCCCCC;
-  border-radius: .15rem;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-radius: 0.15rem;
 }
 
-.markdown-section details {
-  padding: .75rem 1.25rem;
+.markdown-section .accordion details {
+  padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #cccccc;
 }
 
 .markdown-section summary {
   cursor: pointer;
   color: var(--link-color);
+  margin-bottom: -8px;
   padding: 0;
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     margin: 0;
     display: inline-block;
   }
 }
 
 .markdown-section code {
-  white-space: pre-wrap!important;
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere;
 }
 
 .markdown-section pre code {
-  word-break: break-all!important;
+  word-break: break-all !important;
+}
+
+.markdown-section a {
+  overflow-wrap: anywhere;
 }
 
 .markdown-section .fa-fw {
@@ -497,7 +658,10 @@
   max-width: 100%;
 }
 
-.video-container-16by9 iframe, .video-container-4by3 iframe, .embed-container object, .embed-container embed {
+.video-container-16by9 iframe,
+.video-container-4by3 iframe,
+.embed-container object,
+.embed-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -507,6 +671,11 @@
 
 .markdown-section .responsive-container iframe {
   max-width: 100%;
+}
+
+.markdown-section .responsive {
+  max-width: 100%;
+  height: auto;
 }
 
 .markdown-section .banner-image {
@@ -541,8 +710,14 @@
   position: absolute;
   top: 0px;
   left: 0;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   opacity: 0.4;
   z-index: -1;
 }
@@ -557,8 +732,14 @@
   position: absolute;
   width: 100vw;
   max-width: 100vw;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   opacity: 0.4;
   z-index: -1;
 }
@@ -647,11 +828,11 @@
 }
 
 .markdown-section .column img {
-  padding-top: .35rem;
+  padding-top: 0.35rem;
 }
 
 .markdown-section .column-right img {
-  padding-top: .35rem;
+  padding-top: 0.35rem;
 }
 
 .markdown-section .reverse-columns .column {
@@ -664,21 +845,30 @@
   clear: both;
 }
 
-@media screen and (max-width:800px) {
-  .markdown-section .column, .markdown-section .column-right {
+@media screen and (max-width: 800px) {
+  .markdown-section .column,
+  .markdown-section .column-right {
     width: 100%;
     padding-right: 0rem;
     padding-left: 0rem;
   }
 
-  .markdown-section .image-75, .markdown-section .image-50, .markdown-section .image-25, .markdown-section .image-75-border, .markdown-section .image-50-border, .markdown-section .image-25-border {
+  .markdown-section .image-75,
+  .markdown-section .image-50,
+  .markdown-section .image-25,
+  .markdown-section .image-75-border,
+  .markdown-section .image-50-border,
+  .markdown-section .image-25-border {
     width: 100%;
     height: auto;
   }
 }
 
-.markdown-section figure, .markdown-section p, .markdown-section ol, .markdown-section ul {
-  margin: 1em 0em .5em 0em;
+.markdown-section figure,
+.markdown-section p,
+.markdown-section ol,
+.markdown-section ul {
+  margin: 1em 0em 0.5em 0em;
 }
 
 .markdown-section h1 {
@@ -705,38 +895,54 @@
   line-height: 1.2rem;
 }
 
-.markdown-section .alert hr, .markdown-section blockquote hr {
+.markdown-section .alert hr,
+.markdown-section blockquote hr {
   margin: 1em 0;
 }
 
-.markdown-section .alert h1, .markdown-section blockquote h1 {
+.markdown-section .alert h1,
+.markdown-section blockquote h1 {
   font-size: 1.5rem;
   line-height: 1.6rem;
 }
 
-.markdown-section .alert  h2, .markdown-section blockquote h2 {
+.markdown-section .alert h2,
+.markdown-section blockquote h2 {
   font-size: 1.35rem;
   line-height: 1.45rem;
 }
 
-.markdown-section .alert  h3, .markdown-section blockquote h3 {
+.markdown-section .alert h3,
+.markdown-section blockquote h3 {
   font-size: 1.2rem;
   line-height: 1.3rem;
 }
 
-.markdown-section .alert  h4, .markdown-section blockquote h4 {
+.markdown-section .alert h4,
+.markdown-section blockquote h4 {
   font-size: 1.15rem;
   line-height: 1.25rem;
 }
 
-.markdown-section .alert  h5, .markdown-section blockquote h5 {
+.markdown-section .alert h5,
+.markdown-section blockquote h5 {
   font-size: 1.1rem;
   line-height: 1.2rem;
 }
 
-.markdown-section .alert  h6, .markdown-section blockquote h6 {
+.markdown-section .alert h6,
+.markdown-section blockquote h6 {
   font-size: 1rem;
   line-height: 1.1rem;
+}
+
+.markdown-section .align-items-vertically {
+  display: inline-flex;
+  align-items: center;
+}
+
+.markdown-section .align-items-vertically .emoji {
+  margin-right: 2px;
 }
 
 body .app-nav {
@@ -749,7 +955,7 @@ body .docsify-pagination-container {
   justify-content: space-between;
   overflow: hidden;
   margin: 3em 0 1em;
-  border-top: 0px solid rgba(0, 0, 0, .07);
+  border-top: 0px solid rgba(0, 0, 0, 0.07);
 }
 
 .progress {
@@ -757,7 +963,6 @@ body .docsify-pagination-container {
 }
 
 @media only screen and (max-width: 480px) {
-
   .markdown-section h1 {
     font-size: 1.45rem;
     line-height: 1.5rem;
@@ -788,36 +993,41 @@ body .docsify-pagination-container {
     line-height: 1.05rem;
   }
 
-  .markdown-section .alert h1, .markdown-section blockquote h1 {
+  .markdown-section .alert h1,
+  .markdown-section blockquote h1 {
     font-size: 1.3rem;
     line-height: 1.4rem;
   }
 
-  .markdown-section .alert h2, .markdown-section blockquote h2 { 
+  .markdown-section .alert h2,
+  .markdown-section blockquote h2 {
     font-size: 1.2rem;
     line-height: 1.3rem;
   }
 
-  .markdown-section .alert h3, .markdown-section blockquote h3 {
+  .markdown-section .alert h3,
+  .markdown-section blockquote h3 {
     font-size: 1.15rem;
     line-height: 1.25rem;
   }
 
-  .markdown-section .alert h4, .markdown-section blockquote h4 {
+  .markdown-section .alert h4,
+  .markdown-section blockquote h4 {
     font-size: 1.1rem;
     line-height: 1.2rem;
   }
 
-  .markdown-section .alert h5, .markdown-section blockquote h5 {
+  .markdown-section .alert h5,
+  .markdown-section blockquote h5 {
     font-size: 1.05rem;
     line-height: 1.1rem;
   }
 
-  .markdown-section .alert h6, .markdown-section blockquote h6 {
+  .markdown-section .alert h6,
+  .markdown-section blockquote h6 {
     font-size: 1rem;
     line-height: 1.05rem;
   }
-
 }
 
 /* DOCSIFY THIS */
@@ -837,29 +1047,35 @@ body .docsify-pagination-container {
   display: inline;
   vertical-align: middle;
   line-height: 45px;
-  color:#6a6a6a;
+  color: #6a6a6a;
 }
 
 #docsifythis .docsifythisheader .logoandtext img {
   height: 45px;
-  vertical-align:middle;
+  vertical-align: middle;
   opacity: 0.8;
 }
 
-#docsifythis h1, #docsifythis h2, #docsifythis h3, #docsifythis h4, #docsifythis h5, #docsifythis h6 {
+#docsifythis h1,
+#docsifythis h2,
+#docsifythis h3,
+#docsifythis h4,
+#docsifythis h5,
+#docsifythis h6 {
   font-weight: 600;
 }
 
 #docsifythisurlbuilder {
   overflow: visible;
   margin: 1.5em 0;
-  padding-top: calc( 14px + (16 - 12) * (100vw - 400px) / (800 - 400) );
-  padding-left: calc( 16px + (16 - 12) * (100vw - 400px) / (800 - 400) );
-  padding-bottom: calc( 14px + (16 - 12) * (100vw - 400px) / (800 - 400) );
-  padding-right: calc( 16px + (16 - 12) * (100vw - 400px) / (800 - 400) );
+  padding-top: calc(14px + (16 - 12) * (100vw - 400px) / (800 - 400));
+  padding-left: calc(16px + (16 - 12) * (100vw - 400px) / (800 - 400));
+  padding-bottom: calc(14px + (16 - 12) * (100vw - 400px) / (800 - 400));
+  padding-right: calc(16px + (16 - 12) * (100vw - 400px) / (800 - 400));
   border-width: 0;
   border-radius: 16px;
   background: #f2f2fd; /* Previous colors #f2f4fD #ecf4fe */
+  background: linear-gradient(to right, #f2f2fd 0%, #e0e0fa 75%, #d4d4fc 100%) 0 0;
 }
 
 #docsifythisurlbuilder h2 {
@@ -871,13 +1087,15 @@ body .docsify-pagination-container {
   color: #242bae; /* Previous colors #2442ae #2462ae */
 }
 
-#docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
+#docsifythisurlbuilder input[type="text"],
+input[type="url"],
+input[type="color"] {
   overflow: hidden;
   background-color: #white;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 6px;
-  border: 1px solid #323232
+  border: 1px solid #323232;
 }
 
 #docsifythisurlfield {
@@ -893,7 +1111,7 @@ span #docsifythisurlfield {
 
 #browserTabTitle {
   width: 100%;
-  max-width:370px;
+  max-width: 370px;
 }
 
 #editLinkText {
@@ -927,10 +1145,14 @@ span #docsifythisurlfield {
   line-height: 1.4rem;
   background-color: #2302cd; /* Previous colors #0224cd #0361cd */
   text-decoration: none;
-  font-weight: 600; 
+  font-weight: 600;
   border: 1px solid #2302cd;
   border-radius: 1.4rem;
   -webkit-appearance: none;
+  white-space: normal;
+  overflow: visible;
+  word-wrap: break-word;
+  text-align: left;
 }
 
 .docsifythisurlbuildersecondarybutton {
@@ -948,6 +1170,10 @@ span #docsifythisurlfield {
   border: 1px solid #2302cd;
   border-radius: 1.4rem;
   -webkit-appearance: none;
+  white-space: normal;
+  overflow: visible;
+  word-wrap: break-word;
+  text-align: left;
 }
 
 .docsifythisurlbuilderoptionsline {
@@ -960,26 +1186,26 @@ span #docsifythisurlfield {
   margin-left: 10px;
 }
 
-#docsifythisurlbuilder [type=radio] {
+#docsifythisurlbuilder [type="radio"] {
   position: absolute;
   opacity: 0;
 }
 
-#docsifythisurlbuilder [type=radio]+img {
+#docsifythisurlbuilder [type="radio"] + img {
   cursor: pointer;
   margin-right: 0.5rem;
 }
 
-#docsifythisurlbuilder [type=radio]:checked+img {
+#docsifythisurlbuilder [type="radio"]:checked + img {
   outline: 4px solid #2302cd; /* Previous colors #0224cd #0261cd */
   border-radius: 8px;
   position: relative;
 }
 
-#docsifythisurlbuilder input[type=number] {
+#docsifythisurlbuilder input[type="number"] {
   border: 1px solid #000;
   height: 2rem;
-  padding-left: .3rem;
+  padding-left: 0.3rem;
   margin-top: 4px;
   margin-bottom: 6px;
 }
@@ -990,7 +1216,27 @@ span #docsifythisurlfield {
   line-height: 1.2rem;
 }
 
-#docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #loadfavicon, .markdown-section #loadcoverpage, .markdown-section #loadcustomsidebar, .markdown-section #loadcustomnavbar, .markdown-section #loadcustomfooter, .markdown-section #enableSidebarsearch, .markdown-section #zoomimages, .markdown-section #enableDarkmode, .markdown-section #pagination, .markdown-section #advancedwebpagebuilder {
+#docsifythisurlbuilder #editCheck,
+.markdown-section #editLinkTopCheck,
+.markdown-section #narrowToC,
+.markdown-section #toch1,
+.markdown-section #toch2,
+.markdown-section #toch3,
+.markdown-section #hideCredits,
+.markdown-section #hypothesisenable,
+.markdown-section #hypothesisenable,
+.markdown-section #hypothesisenable,
+.markdown-section #loadfavicon,
+.markdown-section #loadcoverpage,
+.markdown-section #loadcustomsidebar,
+.markdown-section #loadcustomnavbar,
+.markdown-section #loadcustomfooter,
+.markdown-section #enableSidebarsearch,
+.markdown-section #mergeNavbar,
+.markdown-section #zoomimages,
+.markdown-section #enableDarkmode,
+.markdown-section #pagination,
+.markdown-section #advancedwebpagebuilder {
   accent-color: #0324cd; /* Original color #0361cd */
 }
 
@@ -1005,15 +1251,15 @@ span #docsifythisurlfield {
   position: absolute;
 }
 
-#docsifythisurlbuilder input[type="checkbox"]~label {
+#docsifythisurlbuilder input[type="checkbox"] ~ label {
   padding-left: 1.2em;
   display: inline-block;
 }
 
-#docsifythisurlbuilder input[type=number] {
+#docsifythisurlbuilder input[type="number"] {
   border: 1px solid #000;
   height: 2rem;
-  padding-left: .3rem;
+  padding-left: 0.3rem;
   margin-top: 4px;
   margin-bottom: 6px;
 }
@@ -1022,7 +1268,14 @@ span #docsifythisurlfield {
   margin-top: 2px;
 }
 
-#docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active,   #docsifythisurlbuildershowhidelink2 a:link, #docsifythisurlbuildershowhidelink2 a:visited, #docsifythisurlbuildershowhidelink2 a:hover, #docsifythisurlbuildershowhidelink2 a:active {
+#docsifythisurlbuildershowhidelink a:link,
+#docsifythisurlbuildershowhidelink a:visited,
+#docsifythisurlbuildershowhidelink a:hover,
+#docsifythisurlbuildershowhidelink a:active,
+#docsifythisurlbuildershowhidelink2 a:link,
+#docsifythisurlbuildershowhidelink2 a:visited,
+#docsifythisurlbuildershowhidelink2 a:hover,
+#docsifythisurlbuildershowhidelink2 a:active {
   color: #3940bf;
 }
 
@@ -1036,38 +1289,38 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuilder hr {
   border: 1px solid #c5d1fd;
-  margin-top: .6em;
-  margin-bottom: .6em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
 }
 
 #docsifythisurlbuilder #linkcolorpreview {
   width: 30px;
-  border: solid 4px #0374B5;
-  background-color: #0374B5;
+  border: solid 4px #0374b5;
+  background-color: #0374b5;
   border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
 
 #docsifythisurlbuilder #coverpagecolorpreview {
   width: 30px;
-  border: solid 4px #6C8A9A;
-  background-color: #6C8A9A;
+  border: solid 4px #6c8a9a;
+  background-color: #6c8a9a;
   border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
 
 #docsifythisurlbuilder #linkcolordarkmodepreview {
   width: 30px;
-  border: solid 4px #0374B5;
-  background-color: #0374B5;
+  border: solid 4px #0374b5;
+  background-color: #0374b5;
   border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
 
 #docsifythisurlbuilder #coverpagecolordarkmodepreview {
   width: 30px;
-  border: solid 4px #262D30;
-  background-color: #262D30;
+  border: solid 4px #262d30;
+  background-color: #262d30;
   border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
@@ -1101,19 +1354,19 @@ span #docsifythisurlfield {
   margin-top: 15px;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width: 800px) {
   .markdown-section .docsifythiscolumn35 {
-      width: 100%;
-      margin-right: 0px;
+    width: 100%;
+    margin-right: 0px;
   }
   .markdown-section .docsifythiscolumn65 {
-      width: 100%;
-      margin-top: 0px;
+    width: 100%;
+    margin-top: 0px;
   }
 }
 
 #docsifythisurlbuilder .stackedlabeldropdown {
-  float: left;   
+  float: left;
   margin: 0 10px 10px 0px;
 }
 
@@ -1123,12 +1376,13 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder .clearfix:after {
-  content:"";
-  display:block;
-  clear:both;
- }
+  content: "";
+  display: block;
+  clear: both;
+}
 
-.sidebar-nav a, .sidebar nav a {
+.sidebar-nav a,
+.sidebar nav a {
   overflow: visible;
   white-space: break-spaces;
 }
@@ -1138,24 +1392,20 @@ span #docsifythisurlfield {
 }
 
 @media only screen and (max-width: 480px) {
-
   #docsifythis .docsifythisheader .logoandtext h1 {
     font-size: 2rem;
     line-height: 35px;
   }
-  
+
   #docsifythis .docsifythisheader .logoandtext img {
     height: 35px;
   }
-
 }
 
 @media only screen and (max-width: 510px) {
-
   #docsifythisurlbuilderrestoredefaultsbutton {
     margin-top: 40px;
   }
-
 }
 
 .clr-picker .clr-alpha {
@@ -1165,24 +1415,29 @@ span #docsifythisurlfield {
 /* Dark mode colours for use with light + dark themes */
 
 @media (prefers-color-scheme: dark) {
-
-  #docsifythis .docsifythisheader .logoandtext  h1 {
-    color: #A6A6A6;
+  #docsifythis .docsifythisheader .logoandtext h1 {
+    color: #a6a6a6;
   }
-  
-  #docsifythis #docsifythisurlbuilder h2, #docsifythis #docsifythisurlbuilder h3 {
+
+  #docsifythis #docsifythisurlbuilder h2,
+  #docsifythis #docsifythisurlbuilder h3 {
     color: #8798ee; /* Original color #4bc3f4 */
   }
-  
-  #docsifythis p a, #docsifythis li a {
-    color: #1BA1EE;
+
+  #docsifythis p a,
+  #docsifythis li a,
+  #docsifythis h3 a,
+  #docsifythis h4 a,
+  #docsifythis summary {
+    color: #1ba1ee;
   }
 
   #docsifythisurlbuilder {
     background: #36416d; /* Original color #1f4b66 */
+    background: linear-gradient(to right, #40486d 0%, #303e6d 75%, #20376d 100%) 0 0;
   }
 
-  #docsifythisurlfield{
+  #docsifythisurlfield {
     background-color: #273338;
     color: white;
   }
@@ -1204,12 +1459,32 @@ span #docsifythisurlfield {
     border: 1px solid #c1bfed;
   }
 
-  #docsifythisurlbuilder [type=radio]:checked + img {
+  #docsifythisurlbuilder [type="radio"]:checked + img {
     outline: 4px solid #7e83ed; /* Previous colors #9592ec #4bc3f4 */
     position: relative;
   }
 
-  #docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #loadfavicon, .markdown-section #loadcoverpage, .markdown-section #loadcustomsidebar, .markdown-section #loadcustomnavbar, .markdown-section #loadcustomfooter, .markdown-section #enableSidebarsearch, .markdown-section #zoomimages, .markdown-section #enableDarkmode, .markdown-section #pagination, .markdown-section #advancedwebpagebuilder {
+  #docsifythisurlbuilder #editCheck,
+  .markdown-section #editLinkTopCheck,
+  .markdown-section #narrowToC,
+  .markdown-section #toch1,
+  .markdown-section #toch2,
+  .markdown-section #toch3,
+  .markdown-section #hideCredits,
+  .markdown-section #hypothesisenable,
+  .markdown-section #hypothesisenable,
+  .markdown-section #hypothesisenable,
+  .markdown-section #loadfavicon,
+  .markdown-section #loadcoverpage,
+  .markdown-section #loadcustomsidebar,
+  .markdown-section #loadcustomnavbar,
+  .markdown-section #loadcustomfooter,
+  .markdown-section #enableSidebarsearch,
+  .markdown-section #mergeNavbar,
+  .markdown-section #zoomimages,
+  .markdown-section #enableDarkmode,
+  .markdown-section #pagination,
+  .markdown-section #advancedwebpagebuilder {
     accent-color: #817eed;
   }
 
@@ -1217,7 +1492,14 @@ span #docsifythisurlfield {
     border: 1px solid #5161a4;
   }
 
-  #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active,   #docsifythisurlbuildershowhidelink2 a:link, #docsifythisurlbuildershowhidelink2 a:visited, #docsifythisurlbuildershowhidelink2 a:hover, #docsifythisurlbuildershowhidelink2 a:active {
+  #docsifythisurlbuildershowhidelink a:link,
+  #docsifythisurlbuildershowhidelink a:visited,
+  #docsifythisurlbuildershowhidelink a:hover,
+  #docsifythisurlbuildershowhidelink a:active,
+  #docsifythisurlbuildershowhidelink2 a:link,
+  #docsifythisurlbuildershowhidelink2 a:visited,
+  #docsifythisurlbuildershowhidelink2 a:hover,
+  #docsifythisurlbuildershowhidelink2 a:active {
     color: #c6bfed; /* Original color #4bc3f4 */
   }
 
@@ -1253,16 +1535,15 @@ span #docsifythisurlfield {
 
   #docsifythis .button {
     color: #283339;
-    background-color: #1BA1EE;
+    background-color: #1ba1ee;
   }
 
   #docsifythis .button-rounded {
     color: #283339;
-    background-color: #1BA1EE;
+    background-color: #1ba1ee;
   }
 
   #docsifythis .mybutton {
-    color: #CC0000;
+    color: #cc0000;
   }
-
 }

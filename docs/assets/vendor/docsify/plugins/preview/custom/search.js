@@ -213,6 +213,65 @@
     return keyword;
   }
 
+  // Function to convert string to title case and replace hyphens with spaces
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+  function convertToTitle(str) {
+    return str
+      .split('-') // Split the string by hyphens
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalize the first letter and lower case the rest
+      .join(' '); // Join the words with spaces
+  }
+  
+  // Function to strip common Markdown markup
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+  function stripCommonMarkdown(markdown) {
+    // Regular expressions for common Markdown elements
+    const regexes = [
+      { pattern: /(\*\*|__)(.*?)\1/g, replacement: '$2' }, // Bold: **text** or __text__
+      { pattern: /(\*|_)(.*?)\1/g, replacement: '$2' },   // Italic: *text* or _text_
+      { pattern: /[-+*]\s+(.*?)/g, replacement: '$1' },   // Unordered lists: - item, + item, * item
+      { pattern: /\d+\.\s+(.*?)/g, replacement: '$1' },   // Ordered lists: 1. item
+      { pattern: /^#{1,6}\s+(.*)/gm, replacement: '$1' }  // Headers: # Header, ## Header, etc.
+    ];
+
+    // Apply all regular expressions to the input text
+    let plainText = markdown;
+    regexes.forEach(({ pattern, replacement }) => {
+      plainText = plainText.replace(pattern, replacement);
+    });
+
+    // Trim leading/trailing whitespace and return
+    return plainText.trim();
+  }
+
+  // Function to replace Markdown links with their titles and remove Markdown images
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+  function replaceMarkdownLinksWithTitlesandRemoveImages(content) {
+    // Regular expression to match both Markdown images and links
+    // Capture images separately to identify and remove them
+    const markdownLinkRegex = /(!?\[([^\]]+)\]\(([^)]+)\))/g;
+    
+    return content.replace(markdownLinkRegex, (match, fullMatch, title, url) => {
+      // Check if it's an image link by the presence of '!' at the start
+      if (fullMatch.startsWith('!')) {
+        // Return an empty string to remove the image
+        return '';
+      }
+      // Otherwise, replace the link with its title
+      return title;
+    });
+  }
+
+  // Function to strip all HTML tags from a string
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+  function stripHtmlTags(content) {
+    // Regular expression to match HTML tags
+    const htmlTagRegex = /<[^>]*>/g;
+
+    // Replace all HTML tags with an empty string
+    return content.replace(htmlTagRegex, '');
+  }
+
   /**
    * @param {String} query Search query
    * @returns {Array} Array of results
@@ -239,14 +298,16 @@
       let handlePostTitle = '';
       let handlePostContent = '';
       const postTitle = post.title && post.title.trim();
-      const postContent = post.body && post.body.trim();
+      const postContent = stripHtmlTags(stripCommonMarkdown(replaceMarkdownLinksWithTitlesandRemoveImages(post.body && post.body.trim())));
       const postUrl = post.slug || '';
+      const postPageSlug = postUrl.split('/')[1].split('?')[0].replace('0', '');
+      const postPageTitle = convertToTitle(postPageSlug);
 
-      // Skip posts that contain iframes, Font Awesome icons, embedly cards, or Markdown images
+      // Skip posts that contain iframes, Font Awesome icons, or embedly cards
       // console.log(postContent);
-      const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
+      // const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
 
-      if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage) {
+      if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card')) {
         continue;
       }
 
@@ -288,29 +349,56 @@
               end = postContent.length;
             }
 
-            const matchContent =
-              handlePostContent &&
-              '...' +
-                handlePostContent
-                  .substring(start, end)
-                  .replace(
-                    regEx,
-                    word => /* html */ `<em class="search-keyword">${word}</em>`
-                  ) +
-                '...';
-
-            resultStr += matchContent;
+            // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+            const matchContent = handlePostContent && (() => {
+              // Extract the substring where the match will be applied
+              const contentSegment = handlePostContent.substring(start, end);
+              
+              // Find the first occurrence of the word using the regular expression
+              const match = contentSegment.match(regEx);
+              
+              if (match) {
+                // Get the position of the first match
+                const matchIndex = contentSegment.indexOf(match[0]);
+                
+                // Split the content segment into before, match, and after parts
+                const beforeMatch = contentSegment.substring(0, matchIndex);
+                const firstMatch = contentSegment.substring(matchIndex, matchIndex + match[0].length);
+                const afterMatch = contentSegment.substring(matchIndex + match[0].length);
+                
+                // Return the reassembled string with the first match wrapped in <em> tags
+                return '...' + 
+                  beforeMatch + 
+                  `<em class="search-keyword">${firstMatch}</em>` + 
+                  afterMatch + 
+                  '...';
+              }
+            
+              // If no match is found, return the original segment surrounded by ellipses
+              return '...' + contentSegment + '...';
+            })();
+            
+            resultStr += matchContent;   
           }
         });
 
+        // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+        // Only prepend postPageTitle when it is not empty and not equal to handlePostTitle (case insensitive)
         if (matchesScore > 0) {
           const matchingPost = {
             title: handlePostTitle,
-            content: postContent ? resultStr : '',
+            content: (
+              // Convert both postPageTitle and handlePostTitle to lowercase for case-insensitive comparison
+              postPageTitle && 
+              postPageTitle.toLowerCase() !== handlePostTitle.toLowerCase() &&
+              postPageTitle.toLowerCase() !== 'readme' // Exclude 'ReadMe' from being prepended
+                ? `<strong>${postPageTitle}</strong><br>` 
+                : ''
+            ) + (postContent ? resultStr : ''),
             url: postUrl,
             score: matchesScore,
           };
-
+        
           matchingResults.push(matchingPost);
         }
       }
@@ -319,6 +407,7 @@
     return matchingResults.sort((r1, r2) => r2.score - r1.score);
   }
 
+  // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
   function init$1(config, vm) {
     const isAuto = config.paths === 'auto';
     const paths = isAuto ? getAllPaths(vm.router) : config.paths;
@@ -352,16 +441,26 @@
 
     const expireKey = resolveExpireKey(config.namespace) + namespaceSuffix;
     const indexKey = resolveIndexKey(config.namespace) + namespaceSuffix;
-
+  
+    // Check if the database is expired
     const isExpired = localStorage.getItem(expireKey) < Date.now();
 
-    INDEXS = JSON.parse(localStorage.getItem(indexKey));
-
     if (isExpired) {
-      INDEXS = {};
-    } else if (!isAuto) {
-      return;
+      // If expired, clear the existing database
+      localStorage.removeItem(expireKey);
+      localStorage.removeItem(indexKey);
+      // console.log('Existing database expired and deleted.');
+    } else {
+      // console.log('Database is not expired, but it will still be reset.');
     }
+
+    // Clear the database every load regardless of expiration
+    localStorage.removeItem(expireKey);
+    localStorage.removeItem(indexKey);
+    // console.log('Existing database cleared.');
+
+    // Initialize INDEXS to an empty object
+    INDEXS = {};
 
     const len = paths.length;
     let count = 0;
