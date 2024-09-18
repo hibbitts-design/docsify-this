@@ -1141,7 +1141,8 @@ span #docsifythisurlfield {
   display: inline-block;
   margin-top: 4px;
   margin-bottom: -8px;
-  padding: 10px min(30px, 5%) 10px min(30px, 5%);
+  width: 260px;
+  padding: 10px;
   line-height: 1.4rem;
   background-color: #2302cd; /* Previous colors #0224cd #0361cd */
   text-decoration: none;
@@ -1152,7 +1153,13 @@ span #docsifythisurlfield {
   white-space: normal;
   overflow: visible;
   word-wrap: break-word;
-  text-align: left;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .docsifythisurlbuilderprimarybutton {
+      width: 100%;
+  }
 }
 
 .docsifythisurlbuildersecondarybutton {
@@ -1162,7 +1169,8 @@ span #docsifythisurlfield {
   display: inline-block;
   margin-top: 4px;
   margin-bottom: -8px;
-  padding: 10px min(30px, 5%) 10px min(30px, 5%);
+  width: 260px;
+  padding: 10px;
   line-height: 1.4rem;
   background-color: transparent;
   text-decoration: none;
@@ -1173,7 +1181,13 @@ span #docsifythisurlfield {
   white-space: normal;
   overflow: visible;
   word-wrap: break-word;
-  text-align: left;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .docsifythisurlbuildersecondarybutton {
+      width: 100%;
+  }
 }
 
 .docsifythisurlbuilderoptionsline {
@@ -1354,7 +1368,7 @@ span #docsifythisurlfield {
   margin-top: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .markdown-section .docsifythiscolumn35 {
     width: 100%;
     margin-right: 0px;
