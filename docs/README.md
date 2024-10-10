@@ -252,13 +252,13 @@ What do you think about Docsify-This so far? Help shape its direction by sharing
 
 #### What Problem Does Docsify-This Solve?
 
-Docsify-This provides an easy way to display and share [Markdown](https://www.markdownguide.org/basic-syntax/) content in various contexts, with no website setup or build process required. Collaborative authoring using GitHub or Codeberg is also supported.  
+Docsify-This provides an easy way to display and share [Markdown](https://www.markdownguide.org/basic-syntax/) content in various contexts, with no website setup or build process required. By hosting your Markdown files on GitHub or Codeberg, you can also leverage version control (the ability to track and reverse changes) and enable collaboration.  
 
 With Docsify-This you can:
 
 * Publish your Markdown files as web pages, with no website setup or build process required
 * Visually style your web pages using a point-and-click Web Page Builder
-* Share existing GitHub-hosted Markdown files as web pages, with an optional 'Edit this Page' link
+* Share existing GitHub or Codeberg-hosted Markdown files as web pages, with an optional 'Edit this Page' link
 * Seamlessly embed constraint-free Markdown/HTML, which you have authored, into other platforms (e.g. LMS or CMS)
 * Reuse existing Markdown content by seamlessly embedding it within other platforms (e.g. LMS or CMS)
 * Utilize the supported URL parameters when embedding content to match each destination platform better visually
