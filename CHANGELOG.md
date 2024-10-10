@@ -2,7 +2,7 @@
 
 ## [1.9.13] - XX/XX/2024
 
-**Improved:**
+**Bugfix:**
 * Support expected passing of id parameter
 
 ## [1.9.12] - 09/18/2024
