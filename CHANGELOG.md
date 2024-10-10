@@ -2,6 +2,9 @@
 
 ## [1.9.13] - XX/XX/2024
 
+**Improved:**
+* Updated ReadMe
+
 **Bugfix:**
 * Support expected passing of id parameter
 
