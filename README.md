@@ -62,7 +62,7 @@ With Docsify-This you can:
 * Keep web page content stored in its original location, under your full control
 * Visually style web pages with a point-and-click Web Page Builder
 * Share GitHub or Codeberg-hosted Markdown files with an automatic 'Edit this Page' link
-* Embed your Markdown/HTML seamlessly into other platforms (e.g., LMS or CMS)
+* Embed your constraint-free Markdown/HTML seamlessly into other platforms (e.g., LMS or CMS)
 * Reuse Markdown content by embedding it across platforms without duplication
 * Use URL parameters to adjust the visual appearance of embedded content for each platform
 
