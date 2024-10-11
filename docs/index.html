@@ -1215,24 +1215,38 @@
               return; // Exit if basePath is present
             }
 
-            let TARGET_QUERY = 'id'
-            let SCROLL_DELAY = 1000 // in milisecond
-            let location = window.location
+            let TARGET_QUERY = 'id';
+            let SCROLL_DELAY = 500; // in milliseconds
+            let location = window.location;
 
+            // Build the current URL without the hash
             let currentUrlWithoutHash = new URL(
-                location.origin+location.pathname+
-                location.search+location.hash.substring(1)
-            )
-            let urlQueryParam = currentUrlWithoutHash.searchParams
-            let isUrlHasIdQuery = urlQueryParam.has(TARGET_QUERY)
-            if(isUrlHasIdQuery){
-                let urlId = urlQueryParam.get(TARGET_QUERY)
-                // run delayed, to make sure everything loaded
-                setTimeout(function() {
-                    try{
-                        document.querySelector('#'+urlId)
-                            .scrollIntoView()
-                    } catch(e){ console.log('custom scroll failed',e) }
+                location.origin + location.pathname +
+                location.search + location.hash.substring(1)
+            );
+
+            // Get the search parameters from the URL
+            let urlQueryParam = currentUrlWithoutHash.searchParams;
+            let isUrlHasIdQuery = urlQueryParam.has(TARGET_QUERY);
+
+            // Check if the URL contains the 'id' query parameter
+            if (isUrlHasIdQuery) {
+                let urlId = urlQueryParam.get(TARGET_QUERY);
+
+                // Delay the scrolling to ensure everything is loaded
+                setTimeout(function () {
+                    try {
+                        let targetElement = document.querySelector('#' + urlId);
+                        if (targetElement) {
+                            // Scroll to the element with smooth behavior
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',  // Enables smooth scrolling
+                                block: 'start',      // Aligns the top of the element to the top of the viewport
+                            });
+                        }
+                    } catch (e) {
+                        console.log('custom scroll failed', e);
+                    }
                 }, SCROLL_DELAY);
             }
 
