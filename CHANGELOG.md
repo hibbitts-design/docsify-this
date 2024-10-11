@@ -7,7 +7,7 @@
 
 **Bugfix:**
 * Support expected passing of id parameter
-* Scroll offset fix
+* Scroll offset fix (with thanks and appreciation to @rizdaprasetya for the initial code)
 
 ## [1.9.12] - 09/18/2024
 
