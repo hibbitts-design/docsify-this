@@ -58,13 +58,13 @@ Docsify-This provides an easy way to display and share [Markdown](https://www.ma
 
 With Docsify-This you can:
 
-* Publish your Markdown files as web pages, with no website setup or build process required
-* Keep the content for your Web pages stored in their original location, and not having it uploaded to another server
-* Visually style your web pages using a point-and-click Web Page Builder
-* Share existing GitHub or Codeberg-hosted Markdown files as web pages, with an optional 'Edit this Page' link
-* Seamlessly embed constraint-free Markdown/HTML, which you have authored, into other platforms (e.g. LMS or CMS)
-* Reuse existing Markdown content by seamlessly embedding it within other platforms (e.g. LMS or CMS)
-* Utilize the supported URL parameters when embedding content to match each destination platform better visually
+* Publish Markdown files as web pages with no website setup or build process
+* Keep web page content stored in its original location, under your full control
+* Visually style web pages with a point-and-click Web Page Builder
+* Share GitHub or Codeberg-hosted Markdown files with an automatic 'Edit this Page' link
+* Embed your Markdown/HTML seamlessly into other platforms (e.g., LMS or CMS)
+* Reuse Markdown content by embedding it across platforms without duplication
+* Use URL parameters to adjust the visual appearance of embedded content for each platform
 
 ---
 
