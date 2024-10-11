@@ -1211,27 +1211,31 @@
           });
 
           hook.ready(function () {
-            if (window.$docsify['basePath']) {
-              return; // Exit if basePath is present
-            }
 
+            // Original code by @rizdaprasetya and further improved with the assistance of ChatGPT, an AI language model by OpenAI
             let TARGET_QUERY = 'id';
-            let SCROLL_DELAY = 500; // in milliseconds
+            let SCROLL_DELAY = 250; // in milliseconds
             let location = window.location;
 
             // Build the current URL without the hash
             let currentUrlWithoutHash = new URL(
                 location.origin + location.pathname +
-                location.search + location.hash.substring(1)
+                location.search
             );
 
-            // Get the search parameters from the URL
+            // Get the search parameters from the URL (before the hash)
             let urlQueryParam = currentUrlWithoutHash.searchParams;
             let isUrlHasIdQuery = urlQueryParam.has(TARGET_QUERY);
 
-            // Check if the URL contains the 'id' query parameter
-            if (isUrlHasIdQuery) {
-                let urlId = urlQueryParam.get(TARGET_QUERY);
+            // Handle the case where the 'id' is in the fragment (hash) part
+            let hashParams = new URLSearchParams(location.hash.slice(2)); // Remove '#/' from the hash
+            let isHashHasIdQuery = hashParams.has(TARGET_QUERY);
+
+            // Check if the URL contains the 'id' query parameter in either search or hash
+            if (isUrlHasIdQuery || isHashHasIdQuery) {
+                
+                // Get the 'id' from either search or hash
+                let urlId = isUrlHasIdQuery ? urlQueryParam.get(TARGET_QUERY) : hashParams.get(TARGET_QUERY);
 
                 // Delay the scrolling to ensure everything is loaded
                 setTimeout(function () {
@@ -1248,6 +1252,10 @@
                         console.log('custom scroll failed', e);
                     }
                 }, SCROLL_DELAY);
+            }
+
+            if (window.$docsify['basePath']) {
+              return; // Exit if basePath is present
             }
 
             if (getURLParameterByName(['url-field', 'urlField'])) {
