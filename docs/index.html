@@ -1058,7 +1058,9 @@
                     errorMessage = `Unauthorized access. Please make sure you are logged in and have the appropriate permissions to access **${vm.route.file}**.`;
                     break;
                   case 0:
-                    errorMessage = `A CORS error occurred while trying to fetch **${vm.route.file}**. Please check if the server at the requested origin allows cross-origin requests.`;
+                    errorMessage = `An error occurred while trying to fetch **${vm.route.file}**. This could be due to one of the following reasons:
+                    \n• Cross-Origin Request Blocked: The server at the requested origin may not allow cross-origin requests. Please check the server's CORS settings.
+                    \n• File Not Found (404): The file might not exist or the URL could be incorrect, but the error response was blocked due to cross-origin restrictions.`;
                     break;
                   default:
                     errorMessage = `An unexpected **${status}** error occurred while requesting the file **${vm.route.file}**.`;
