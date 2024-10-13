@@ -1057,6 +1057,9 @@
                   case 401:
                     errorMessage = `Unauthorized access. Please make sure you are logged in and have the appropriate permissions to access **${vm.route.file}**.`;
                     break;
+                  case 0:
+                    errorMessage = `A CORS error occurred while trying to fetch **${vm.route.file}**. Please check if the server at the requested origin allows cross-origin requests.`;
+                    break;
                   default:
                     errorMessage = `An unexpected **${status}** error occurred while requesting the file **${vm.route.file}**.`;
                 }
