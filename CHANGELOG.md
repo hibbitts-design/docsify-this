@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.13] - XX/XX/2024
+## [1.9.13] - 10/14/2024🍁
 
 **Improved:**
 * Updated ReadMe
