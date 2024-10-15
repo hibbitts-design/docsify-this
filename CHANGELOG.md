@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.9.14] - XX/XX/2024
+
+**Bugfix:**
+* Added missing Markdown Prism language file
+
 ## [1.9.13] - 10/14/2024🍁
 
 **Improved:**
