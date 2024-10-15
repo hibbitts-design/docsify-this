@@ -16,6 +16,10 @@
   flex-direction: row-reverse;
   justify-content: center;
 }
+/* Specific style for .token.content inside code blocks */
+.content code .token.content {
+  display: inline;
+}
 .markdown-section {
 /*   flex: 1 1 0%; */
   margin: 0 48px;
