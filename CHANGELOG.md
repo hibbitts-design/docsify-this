@@ -4,6 +4,7 @@
 
 **Bugfix:**
 * Added missing Markdown Prism language file
+* Fix formatting conflict with Prism formatted code blocks
 
 ## [1.9.13] - 10/14/2024🍁
 
