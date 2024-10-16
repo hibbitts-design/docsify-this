@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.9.14] - XX/XX/2024
+## [1.9.14] - 10/16/2024
 
 **Improved:**
 * Updated CSS with word-wrap for code blocks
