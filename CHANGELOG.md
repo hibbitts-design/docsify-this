@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.9.15] - XX/XX/2024
+
+**Bugfix:**
+* Provide default values in error handling to avoid possible script error
+
 ## [1.9.14] - 10/16/2024
 
 **Improved:**
