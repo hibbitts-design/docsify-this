@@ -1046,26 +1046,26 @@
 
                 switch (status) {
                   case 404:
-                    errorMessage = `Looks like the file **${vm.route.file}** couldn't be found on the server. Please check if the **basePath** and **homepage** URL parameters are correct or if the file has been moved or deleted.\n\nError code ${status}`;
+                    errorMessage = `Looks like the file **${file}** couldn't be found on the server. Please check if the **basePath** and **homepage** URL parameters are correct or if the file has been moved or deleted.\n\nError code ${status}`;
                     break;
                   case 500:
-                    errorMessage = `The server encountered an internal error while trying to fetch **${vm.route.file}**.\nError code ${status}`;
+                    errorMessage = `The server encountered an internal error while trying to fetch **${file}**.\nError code ${status}`;
                     break;
                   case 403:
-                    errorMessage = `Access to **${vm.route.file}** is forbidden. You may not have the necessary permissions to view this file.\nError code ${status}`;
+                    errorMessage = `Access to **${file}** is forbidden. You may not have the necessary permissions to view this file.\nError code ${status}`;
                     break;
                   case 401:
-                    errorMessage = `Unauthorized access. Please make sure you are logged in and have the appropriate permissions to access **${vm.route.file}**.\nError code ${status}`;
+                    errorMessage = `Unauthorized access. Please make sure you are logged in and have the appropriate permissions to access **${file}**.\nError code ${status}`;
                     break;
                   case 0:
-                    errorMessage = `An error occurred while trying to fetch **${vm.route.file}**. This could be due to one of the following reasons:
+                    errorMessage = `An error occurred while trying to fetch **${file}**. This could be due to one of the following reasons:
                     \n- Cross-Origin Request Blocked: The server at the requested origin may not allow cross-origin requests. Please check the server's [CORS settings](https://www.w3.org/wiki/CORS_Enabled).
                     \n- Network Issue: There may be a problem with your internet connection or the server could be unreachable.
                     \n- Request Aborted: The request might have been canceled before it could complete.
                     \n- File Not Found (404): The file might not exist or the URL could be incorrect, but the error response was blocked due to cross-origin restrictions.\n\nError code ${status}`;
                     break;
                   default:
-                    errorMessage = `An unexpected error occurred while requesting the file **${vm.route.file}**.\nError code ${status}`;
+                    errorMessage = `An unexpected error occurred while requesting the file **${file}**.\nError code ${status}`;
                 }
 
                 return [
