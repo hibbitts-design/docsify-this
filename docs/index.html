@@ -1039,8 +1039,8 @@
             if (window.$docsify['basePath']) {
 
               // Basic error handling (i.e. 404 - File not found error)
-              const { file, response } = vm.route;
-              const { ok, status, statusText } = response;
+              const { file = '', response = {} } = vm.route || {};
+              const { ok = true, status = 0, statusText = '' } = response;
               if (ok === false) {
                 let errorMessage;
 
