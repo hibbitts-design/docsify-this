@@ -2,9 +2,6 @@
 
 ## [1.9.15] - XX/XX/2024
 
-**Improved:**
-* Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
-
 **Bugfix:**
 * Provide default values in error handling to avoid possible script error
 
