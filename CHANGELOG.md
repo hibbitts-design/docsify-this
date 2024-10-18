@@ -4,6 +4,7 @@
 
 **Improved:**
 * Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
+* Add missing variable declaration for enabledarkmode
 
 **Bugfix:**
 * Provide default values in error handling to avoid possible script error
