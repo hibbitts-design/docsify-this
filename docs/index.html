@@ -995,7 +995,7 @@
                     embed.setAttribute('data-card-theme', 'light');
                   });
                 }
-                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+                window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
                   if (enabledarkmode || darkmode) {
                     document.location.reload();
                   }
@@ -1512,7 +1512,7 @@
     }
 
     // If switch of light/dark theme mode
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
       // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
       // console.log(e.matches);
       updateThemeModeLinkColors();
