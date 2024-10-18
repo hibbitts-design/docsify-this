@@ -983,7 +983,7 @@
               if (!(embeds.length === 0)) {
                 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
                   // dark mode
-                  enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
+                  var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
                       embed.setAttribute('data-card-theme', 'dark');
@@ -1684,7 +1684,7 @@
       updateThemeModeLinkColors();
 
       // Keep dark theme CSS files loaded if dark-mode parameter is true
-      enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
+      var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
       if (enabledarkmode === false && darkmode === false) {
         var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
         linkNode.parentNode.removeChild(linkNode);
