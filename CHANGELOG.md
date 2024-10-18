@@ -7,6 +7,7 @@
 
 **Bugfix:**
 * Provide default values in error handling to avoid possible script error
+* Add missing variable declaration for enabledarkmode
 
 ## [1.9.14] - 10/16/2024
 
