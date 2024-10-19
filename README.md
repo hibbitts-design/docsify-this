@@ -23,7 +23,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 <div style="display: none;">
 
-<h3><a href="#1-introduction-and-overview">1. Introduction and Overview</a></h3>
+<h3><a href="#1-introduction-and-overview-1">1. Introduction and Overview</a></h3>
 <ul>
   <li><a href="#what-problem-does-docsify-this-solve">What Problem Does Docsify-This Solve?</a></li>
   <li><a href="#docsify-this-core-design-principles">Docsify-This Core Design Principles</a></li>
@@ -31,7 +31,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
   <li><a href="#read-what-people-are-saying-about-docsify-this">Read What People are Saying about Docsify-This</a></li>
 </ul>
 
-<h3><a href="#2-publishing-with-docsify-this">2. Publishing with Docsify-This</a></h3>
+<h3><a href="#2-publishing-with-docsify-this-1">2. Publishing with Docsify-This</a></h3>
 <ul>
   <li><a href="#page-appearance-url-parameters">Page Appearance URL Parameters</a></li>
   <li><a href="#embedding-docsify-this-pages-into-other-platforms">Embedding Docsify-This Pages into Other Platforms</a></li>
@@ -40,14 +40,14 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
   <li><a href="#editing-docsify-this-markdown-files-on-your-desktop">Editing Docsify-This Markdown Files on your Desktop</a></li>
 </ul>
 
-<h3><a href="#3-customization-and-advanced-usage">3. Customization and Advanced Usage</a></h3>
+<h3><a href="#3-customization-and-advanced-usage-1">3. Customization and Advanced Usage</a></h3>
 <ul>
   <li><a href="#supported-markdown-css-classes">Supported Markdown CSS Classes</a></li>
   <li><a href="#custom-markdown-css-classes">Custom Markdown CSS Classes</a></li>
   <li><a href="#looking-for-even-more-customization-and-control">Looking for Even More Customization and Control?</a></li>
 </ul>
 
-<h3><a href="#4-resources-and-additional-templates">4. Resources and Additional Templates</a></h3>
+<h3><a href="#4-resources-and-additional-templates-1">4. Resources and Additional Templates</a></h3>
 <ul>
   <li><a href="#markdown-syntax-references">Markdown Syntax References</a></li>
   <li><a href="#font-awesome-icons">Font Awesome Icons</a></li>
@@ -55,14 +55,14 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
   <li><a href="#additional-docsify-this-learning-materials">Additional Docsify-This Learning Materials</a></li>
 </ul>
 
-<h3><a href="#5-tips-techniques-and-troubleshooting">5. Tips, Techniques, and Troubleshooting</a></h3>
+<h3><a href="#5-tips-techniques-and-troubleshooting-1">5. Tips, Techniques, and Troubleshooting</a></h3>
 <ul>
   <li><a href="#improving-markdown-previews-in-text-editors">Improving Markdown Previews in Text Editors</a></li>
   <li><a href="#tips-and-techniques">Tips and Techniques</a></li>
   <li><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 
-<h3><a href="#6-support-and-policies">6. Support and Policies</a></h3>
+<h3><a href="#6-support-and-policies-1">6. Support and Policies</a></h3>
 <ul>
   <li><a href="#privacy-policy-summary">Privacy Policy Summary</a></li>
   <li><a href="#contact-and-support">Contact and Support</a></li>
@@ -75,6 +75,14 @@ Have you tried out Docsify-This? Share your [feedback about Docsify-This](https:
 </div>
 
 ### 1. Introduction and Overview
+
+* [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
+* [Docsify-This Core Design Principles](#docsify-this-core-design-principles)
+* [How Docsify-This Works](#how-docsify-this-works)
+* [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
+
+---
+
 
 #### What Problem Does Docsify-This Solve?
 
@@ -147,6 +155,15 @@ Docsify-This has been recognized as a finalist in the Open Infrastructure catego
 ---
 
 ### 2. Publishing with Docsify-This
+
+* [Overview](#overview)
+* [Page Appearance URL Parameters](#page-appearance-url-parameters)
+* [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
+* [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
+* [Example Content Workflows](#example-content-workflows)
+* [Editing Docsify-This Markdown Files on your Desktop](#editing-docsify-this-markdown-files-on-your-desktop)
+
+---
 
 The visual appearance of an online Markdown file displayed as a web page by Docsify-This can be altered in two ways:
 
@@ -512,6 +529,12 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 
 ### 3. Customization and Advanced Usage
 
+* [Supported Markdown CSS Classes](#supported-markdown-css-classes)
+* [Custom Markdown CSS Classes](#custom-markdown-css-classes)
+* [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
+
+---
+
 #### Supported Markdown CSS Classes
 
 * [accordion](#accordion)
@@ -846,6 +869,13 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 ### 4. Resources and Additional Templates
 
+* [Markdown Syntax References](#markdown-syntax-references)
+* [Font Awesome Icons](#font-awesome-icons)
+* [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
+* [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
+
+---
+
 #### Markdown Syntax References
 
 * [What Is Markdown, and How Do You Use It?](https://www.howtogeek.com/448323/what-is-markdown-and-how-do-you-use-it/)
@@ -941,6 +971,12 @@ An overview to self-publishing with Markdown using the open source project Docsi
 ---
 
 ### 5. Tips, Techniques, and Troubleshooting
+
+* [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
+* [Tips and Techniques](#tips-and-techniques)
+* [Troubleshooting](#troubleshooting)
+
+---
 
 #### Improving Markdown Previews in Text Editors
 
@@ -1124,6 +1160,11 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 ---
 
 ### 6. Support and Policies
+
+* [Privacy Policy Summary](#privacy-policy-summary)
+* [Contact and Support](#contact-and-support)
+
+---
 
 #### Privacy Policy Summary
 
