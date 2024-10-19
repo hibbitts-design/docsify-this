@@ -23,38 +23,50 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 <div style="display: none;">
 
-### [1. Introduction and Overview](#1-introduction-and-overview) <!-- {docsify-ignore} -->
-- [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
-- [Docsify-This Core Design Principles](#docsify-this-core-design-principles)
-- [How Docsify-This Works](#how-docsify-this-works)
-- [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
+<h3><a href="#1-introduction-and-overview">1. Introduction and Overview</a></h3>
+<ul>
+  <li><a href="#what-problem-does-docsify-this-solve">What Problem Does Docsify-This Solve?</a></li>
+  <li><a href="#docsify-this-core-design-principles">Docsify-This Core Design Principles</a></li>
+  <li><a href="#how-docsify-this-works">How Docsify-This Works</a></li>
+  <li><a href="#read-what-people-are-saying-about-docsify-this">Read What People are Saying about Docsify-This</a></li>
+</ul>
 
-### [2. Publishing with Docsify-This](#2-publishing-with-docsify-this) <!-- {docsify-ignore} -->
-- [Page Appearance URL Parameters](#page-appearance-url-parameters)
-- [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
-- [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
-- [Example Content Workflows](#example-content-workflows)
-- [Editing Docsify-This Markdown Files on your Desktop](#editing-docsify-this-markdown-files-on-your-desktop)
+<h3><a href="#2-publishing-with-docsify-this">2. Publishing with Docsify-This</a></h3>
+<ul>
+  <li><a href="#page-appearance-url-parameters">Page Appearance URL Parameters</a></li>
+  <li><a href="#embedding-docsify-this-pages-into-other-platforms">Embedding Docsify-This Pages into Other Platforms</a></li>
+  <li><a href="#ready-to-use-docsify-this-markdown-templates">Ready-to-Use Docsify-This Markdown Templates</a></li>
+  <li><a href="#example-content-workflows">Example Content Workflows</a></li>
+  <li><a href="#editing-docsify-this-markdown-files-on-your-desktop">Editing Docsify-This Markdown Files on your Desktop</a></li>
+</ul>
 
-### [3. Customization and Advanced Usage](#3-customization-and-advanced-usage) <!-- {docsify-ignore} -->
-- [Supported Markdown CSS Classes](#supported-markdown-css-classes)
-- [Custom Markdown CSS Classes](#custom-markdown-css-classes)
-- [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
+<h3><a href="#3-customization-and-advanced-usage">3. Customization and Advanced Usage</a></h3>
+<ul>
+  <li><a href="#supported-markdown-css-classes">Supported Markdown CSS Classes</a></li>
+  <li><a href="#custom-markdown-css-classes">Custom Markdown CSS Classes</a></li>
+  <li><a href="#looking-for-even-more-customization-and-control">Looking for Even More Customization and Control?</a></li>
+</ul>
 
-### [4. Resources and Additional Templates](#4-resources-and-additional-templates) <!-- {docsify-ignore} -->
-- [Markdown Syntax References](#markdown-syntax-references)
-- [Font Awesome Icons](#font-awesome-icons)
-- [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
-- [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
+<h3><a href="#4-resources-and-additional-templates">4. Resources and Additional Templates</a></h3>
+<ul>
+  <li><a href="#markdown-syntax-references">Markdown Syntax References</a></li>
+  <li><a href="#font-awesome-icons">Font Awesome Icons</a></li>
+  <li><a href="#additional-docsify-this-markdown-examples-and-templates">Additional Docsify-This Markdown Examples and Templates</a></li>
+  <li><a href="#additional-docsify-this-learning-materials">Additional Docsify-This Learning Materials</a></li>
+</ul>
 
-### [5. Tips, Techniques, and Troubleshooting](#5-tips-techniques-and-troubleshooting) <!-- {docsify-ignore} -->
-- [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
-- [Tips and Techniques](#tips-and-techniques)
-- [Troubleshooting](#troubleshooting)
+<h3><a href="#5-tips-techniques-and-troubleshooting">5. Tips, Techniques, and Troubleshooting</a></h3>
+<ul>
+  <li><a href="#improving-markdown-previews-in-text-editors">Improving Markdown Previews in Text Editors</a></li>
+  <li><a href="#tips-and-techniques">Tips and Techniques</a></li>
+  <li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
 
-### [6. Support and Policies](#6-support-and-policies) <!-- {docsify-ignore} -->
-- [Privacy Policy Summary](#privacy-policy-summary)
-- [Contact and Support](#contact-and-support)
+<h3><a href="#6-support-and-policies">6. Support and Policies</a></h3>
+<ul>
+  <li><a href="#privacy-policy-summary">Privacy Policy Summary</a></li>
+  <li><a href="#contact-and-support">Contact and Support</a></li>
+</ul>
 
 Have you tried out Docsify-This? Share your [feedback about Docsify-This](https://forms.gle/ViYu2ZdPmj6PeQ439)
 
