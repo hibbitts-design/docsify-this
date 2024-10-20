@@ -1223,7 +1223,7 @@
 
             // Original code by @rizdaprasetya and further improved with the assistance of ChatGPT, an AI language model by OpenAI
             let TARGET_QUERY = 'id';
-            let SCROLL_DELAY = 750; // in milliseconds
+            let SCROLL_DELAY = 1250; // in milliseconds
             let location = window.location;
 
             // Build the current URL without the hash
@@ -1249,12 +1249,12 @@
                 // Delay the scrolling to ensure everything is loaded
                 setTimeout(function () {
                     try {
-                        let targetElement = document.querySelector('#' + urlId);
+                        let targetElement = document.getElementById(urlId); // Use `getElementById` to directly reference the element
                         if (targetElement) {
-                            // Scroll to the element with smooth behavior
-                            targetElement.scrollIntoView({
-                                behavior: 'smooth',  // Enables smooth scrolling
-                                block: 'start',      // Aligns the top of the element to the top of the viewport
+                            // Use requestAnimationFrame for immediate scroll to the element
+                            requestAnimationFrame(() => {
+                                // Scroll to the element's top position using scrollTo
+                                window.scrollTo(0, targetElement.offsetTop);
                             });
                         }
                     } catch (e) {
