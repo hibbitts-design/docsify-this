@@ -12,7 +12,7 @@ This open-source web app, built with the magical documentation site generator [D
 
 <div style="display: none;">
 
-_Check out what Docsify-This can do right now by [viewing this ReadMe file published as a web page!](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&homepage=README.md&edit-link=https://github.com/hibbitts-design/docsify-this/blob/main/README.md&sidebar=true&browser-tab-title=Docsify-This%20ReadMe&edit-link-text=Suggest%20an%20Edit%20on%20GitHub&maxLevel=3&header-weight=600&zoom-images=true&dark-mode=true)_
+_**Check out what Docsify-This can do right now by [viewing this ReadMe file published as a web page!](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&homepage=README.md&edit-link=https://github.com/hibbitts-design/docsify-this/blob/main/README.md&sidebar=true&browser-tab-title=Docsify-This%20ReadMe&edit-link-text=Suggest%20an%20Edit%20on%20GitHub&maxLevel=3&header-weight=600&zoom-images=true&dark-mode=true)**_
 
 </div>
 
