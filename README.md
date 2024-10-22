@@ -84,7 +84,6 @@ Have you tried out Docsify-This? Share your [feedback about Docsify-This](https:
 
 ---
 
-
 #### What Problem Does Docsify-This Solve?
 
 Docsify-This provides an easy way to display and share [Markdown](https://www.markdownguide.org/basic-syntax/) content in various contexts, with no website setup or build process required. By hosting your Markdown files on GitHub or Codeberg, you can also leverage version control (the ability to track and reverse changes) and enable collaboration.  
