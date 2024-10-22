@@ -52,7 +52,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 <ul>
   <li><a href="#markdown-syntax-references">Markdown Syntax References</a></li>
   <li><a href="#font-awesome-icons">Font Awesome Icons</a></li>
-  <li><a href="#additional-docsify-this-markdown-examples-and-templates">Additional Docsify-This Markdown Examples and Templates</a></li>
+  <li><a href="#additional-docsify-this-markdown-files">Additional Docsify-This Markdown Files</a></li>
   <li><a href="#additional-docsify-this-learning-materials">Additional Docsify-This Learning Materials</a></li>
 </ul>
 
@@ -277,7 +277,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 #### Page Appearance URL Parameters (Supplemental)
 
-The following additional URL parameters are available for use in Docsify-This URLs, and are included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true) unless otherwise indicated.
+The following additional URL parameters are available for use in Docsify-This URLs, and are included in the [Advanced Web Page Builder](https://docsify-this.net/?advanced=true) unless otherwise indicated.
 
 **Supplemental URL Parameters (included in the Advanced Web Page Builder)**  
 
@@ -321,7 +321,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### lazy-load-images
 Enable the lazy loading of images by Browsers with the optional **lazy-load-images** parameter (not included in the Advanced Web Page Builder), for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&lazy-load-images=true Please note that enabling lazy loading of images may affect page scroll accuracy, for example by the Docsify Sidebar etc.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&lazy-load-images=true Please note that enabling lazy loading of images may affect page scroll accuracy, for example by the Docsify Sidebar etc.
 
 ##### link-color-dark-mode
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
@@ -879,7 +879,7 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 * [Markdown Syntax References](#markdown-syntax-references)
 * [Font Awesome Icons](#font-awesome-icons)
-* [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
+* [Additional Docsify-This Markdown Files](#additional-docsify-this-markdown-files)
 * [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
 
 ---
@@ -909,7 +909,10 @@ The following style prefixes are available with Docsify-This:
 
 ---
 
-#### Additional Docsify-This Markdown Examples and Templates
+#### Additional Docsify-This Markdown Files
+
+* [Examples](#examples)
+* [Templates](#templates)
 
 ##### Examples
 

@@ -231,7 +231,7 @@ Page layout:
 ### [4. Resources and Additional Templates](/?id=_4-resources-and-additional-templates-1)
 - [Markdown Syntax References](/?id=markdown-syntax-references)
 - [Font Awesome Icons](/?id=font-awesome-icons)
-- [Additional Docsify-This Markdown Examples and Templates](/?id=additional-docsify-this-markdown-examples-and-templates)
+- [Additional Docsify-This Markdown Files](/?id=additional-docsify-this-markdown-files)
 - [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 
 ### [5. Tips, Techniques, and Troubleshooting](/?id=_5-tips-techniques-and-troubleshooting-1)
@@ -449,7 +449,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 #### Page Appearance URL Parameters (Supplemental)
 
-The following additional URL parameters are available for use in Docsify-This URLs, and are included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true) unless otherwise indicated.
+The following additional URL parameters are available for use in Docsify-This URLs, and are included in the [Advanced Web Page Builder](https://docsify-this.net/?advanced=true) unless otherwise indicated.
 
 **Supplemental URL Parameters (included in the Advanced Web Page Builder)**  
 
@@ -493,7 +493,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### lazy-load-images
 Enable the lazy loading of images by Browsers with the optional **lazy-load-images** parameter (not included in the Advanced Web Page Builder), for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&lazy-load-images=true Please note that enabling lazy loading of images may affect page scroll accuracy, for example by the Docsify Sidebar etc.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&lazy-load-images=true Please note that enabling lazy loading of images may affect page scroll accuracy, for example by the Docsify Sidebar etc.
 
 ##### link-color-dark-mode
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
@@ -1188,10 +1188,10 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 ### 4. Resources and Additional Templates
 
-* [Markdown Syntax References](#markdown-syntax-references)
-* [Font Awesome Icons](#font-awesome-icons)
-* [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
-* [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
+* [Markdown Syntax References](/?id=markdown-syntax-references)
+* [Font Awesome Icons](/?id=font-awesome-icons)
+* [Additional Docsify-This Markdown Files](/?id=additional-docsify-this-markdown-files)
+* [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 
 ---
 
@@ -1220,7 +1220,10 @@ The following style prefixes are available with Docsify-This:
 
 ---
 
-#### Additional Docsify-This Markdown Examples and Templates
+#### Additional Docsify-This Markdown Files
+
+* [Examples](/?id=examples)
+* [Templates](/?id=templates)
 
 ##### Examples
 
@@ -1311,6 +1314,18 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
 #### Tips and Techniques
 
+* [Making a Raw Markdown File Available Online](/?id=making-a-raw-markdown-file-available-online)
+* [Matching Fonts with Your Destination Platform Content](/?id=matching-fonts-with-your-destination-platform-content)
+* [Providing a Page Table of Contents within a Smaller Area](/?id=providing-a-page-table-of-contents-within-a-smaller-area)
+* [Including Code Blocks](/?id=including-code-blocks)
+* [Including External Markdown Content](/?id=including-external-markdown-content)
+* [Use of WikiLinks](/?id=use-of-wikilinks)
+* [Display of AsciiDoc Files (file extension .adoc)](/?id=display-of-asciidoc-files-file-extension-adoc)
+* [Display of HedgeDocs Files](/?id=display-of-hedgedocs-files)
+* [Changing the Default Values of the Web Page Builder](/?id=changing-the-default-values-of-the-web-page-builde)
+* [Use of Camel Case (e.g. camelCase) Format for URL parameters](/?id=use-of-camel-case-eg-camelcase-format-for-url-parameters)
+* [Use of New Web Editor GitHub.dev](/?id=use-of-new-web-editor-githubdev)
+
 ##### Making a Raw Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
 
@@ -1335,7 +1350,7 @@ There are multiple ways to get a raw Markdown file available online, here are th
 Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-family` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1  
 
-##### Providing a Page Table of Contents within a Smaller Destination Platform Screen Area
+##### Providing a Page Table of Contents within a Smaller Area
 If you want to include a Page Table of Contents with embedded Docsify-This content, but the destination platform screen area is not very wide, you might want to try the optional `toc-narrow` display option. For example, to use a narrower Table of Contents area that includes a smaller screen breakpoint:
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-01.md&toc-narrow=true  
 
@@ -1375,19 +1390,19 @@ For additional examples of including external content, view [Docsify Embeded Fil
 ##### Use of WikiLinks
 [WikiLinks format](https://help.obsidian.md/Linking+notes+and+files/Internal+links) for links and images are supported, as also found in the desktop editor [Obsidian](https://obsidian.md) and other platforms.  
 
-##### Display of AsciiDoc files (file extension .adoc)
+##### Display of AsciiDoc Files (file extension .adoc)
 The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) is possible by manually passing the relevant filenames within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc  
 
 You can support the display of AsciiDoc files in the Web Page Builder of your own instance of Docsify-This by locating the function `getAllowedFileExtensions()` within the `index.html` file and add the file extension '.adoc' to the `return` statement, for example `return ".md,.adoc";`.  
 
-##### Display of HedgeDocs files
+##### Display of HedgeDocs Files
 The display of [HedgeDoc](https://hedgedoc.org/) files containing basic Markdown (as well as Mermaid and MathJax elements) is possible by manually using 'download' for the `homepage` URL parameter within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://docsify-this.net/?basePath=https://demo.hedgedoc.org/crN3ispNQdejWkUXXIXYQA&homepage=download  
 
 Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both (seen in split-screen view) and and rendered as a web page by Docsify-This https://docsify-this.net/?basePath=https://demo.hedgedoc.org&homepage=oisWMy9ZS36PE6TvYhJC4A/download&edit-link=https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both&toc=true&edit-link-text=Edit%20this%20Page%20in%20HedgeDoc  
 
 You can support HedgeDoc URLs (e.g. https://demo.hedgedoc.org/ip4SRxZYTEKa6JHr62XTiA) in the Web Page Builder of your own instance of Docsify-This by locating the line `var hedgedocInstances = '';` within the `index.html` file and include your HedgeDoc instances separated by commas, for example `var hedgedocInstances = 'demo.hedgedoc.org';`. Try out a demo instance of Docsify-This with support for demo.hedgedoc.org files at https://hibbitts-design.github.io/hedgedoc-docsify-this.  
 
-##### Changing the Default Values of the Docsify-This Web Page Builder
+##### Changing the Default Values of the Web Page Builder
 You can configure the default values of the Docsify-This Web Page Builder via URL parameters - this is especially useful when doing Docsify-This online sessions/workshops as well as Docsify-This users helping each other out. In addition to Docsify-This URL parameters, the following Web Page Builder URL parameters are available:  
 
 ###### url-field
@@ -1428,8 +1443,8 @@ For example, the following URL will display the Advanced Web Page Builder, with 
 
 The quickest way to create such a shareable URL is to use the Docsify-Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
-##### Use of Camel case (e.g. camelCase) format for Docsify-This URL parameter names instead of hyphenated names
-You can use [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of hyphens for the names of Docsify-This URL parameters if prefered. For example, https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md and https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&tocHeadings=h2,h3&editLink=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md are equilivent.
+##### Use of Camel Case (e.g. camelCase) Format for URL Parameters
+You can use [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of hyphens for the names of Docsify-This URL parameters if prefered. For example, https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md and https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&tocHeadings=h2,h3&editLink=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md are equilivent.
 
 ##### Use of New Web Editor GitHub.dev
 To use the new GitHub.dev web editor (currently in Beta) for 'Edit this Page' links, change `github.com` to `github.dev` for GitHub.com files entered into the Web Page Builder Markdown File URL field.
@@ -1438,21 +1453,30 @@ To use the new GitHub.dev web editor (currently in Beta) for 'Edit this Page' li
 
 #### Troubleshooting
 
-_'404' file not found message is displayed._  
+* ['404' File not Found message is Displayed](/?id=404-file-not-found-message-is-displayed)
+* ['Edit this Page' Links not Working](/?id=edit-this-page-links-not-working)
+* [Updated Markdown file not Displayed in the Browser](/?id=updated-markdown-file-not-displayed-in-the-browser)
+* [Embedded Image not Displayed](/?id=embedded-image-not-displayed)
+* [Embedded iFrame not Displayed](/?id=embedded-iframe-not-displayed)
+* [Docsify Sidebar is not Displaying Header Levels](/?id=docsify-sidebar-is-not-displaying-header-levels)
+* [Search Results do not Return all Expected Matches](/?id=search-results-do-not-return-all-expected-matches)
+* [Multiple Embedded Scripts are not Working as Expected](/?id=multiple-embedded-scripts-are-not-working-as-expected)
+
+##### '404' File not Found message is Displayed
 The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also result from a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests or alternatively if the domain in question is under your control explore re-configuring [CORS related settings](https://www.w3.org/wiki/CORS_Enabled). You can confirm the cause of the 404 message by viewing the errors displayed in the [Browser Javascript Console](https://balsamiq.com/support/faqs/browserconsole/).  
 
 When displaying GitHub Markdown files, the branch name is assumed to be `main`, and other paths will likely cause a 404 file not found message. When displaying Codeberg Markdown files, the path is assumed to contain `/src/branch/main` and other paths will likely cause a 404 file not found message.  
 
-_Generation of 'Edit this Page' links on multiple page Markdown sites with a Navbar or custom Sidebar not working as expected._   
-Due to not being able to update Navbar or custom Sidebar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround, for example https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository and https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar.md&sidebar=true&loadSidebar=_sidebar.md&edit-link=https://github.com/paulhibbitts/docsify-this-cmpt-363-222-site/tree/main&edit-link-text=GitHub%20Repository
+##### 'Edit this Page' Links not Working
+Due to not being able to update Navbar or custom Sidebar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround, for example https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository and https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar.md&sidebar=true&loadSidebar=_sidebar.md&edit-link=https://github.com/paulhibbitts/docsify-this-cmpt-363-222-site/tree/main&edit-link-text=GitHub%20Repository
 
-_Updated Markdown file not displayed in the Browser._  
+##### Updated Markdown file not Displayed in the Browser
 Docsify is likely displaying the last cached version. To ensure the most recent version of a file is loaded, do a [hard refresh of your Browser cache](https://www.makeuseof.com/hard-refresh-browser/).
 
-_Embedded image not displayed as expected._  
+##### Embedded Image not Displayed
 The most likely cause for embedded images in Markdown not being displayed as expected is the use of relative paths (i.e. `![Alt Text](images/filename.jpg)`) - review image paths and ensure the full path to each image is used (i.e. `![Alt Text](/folder/images/filename.jpg)`). Likewise, if images in HTML are not being displayed as expected the likely cause is again the use of relative paths (i.e. `<img src="images/filename.jpg" alt="Alt Text">`) - use absolute URLs for HTML image sources (i.e. `<img src="https://raw.githubusercontent.com/user/repository/main/images/filename.jpg" alt="Alt Text">`).
 
-_Embedded iFrame not displayed as expected._   
+##### Embedded iFrame not Displayed
 Due to iframe cross-domain issues embedded content may not be able to be displayed. Use the included rich media embed service [embed.ly](https://embed.ly/) as a workaround.  
 
 For example, the following iFrame HTML:  
@@ -1467,13 +1491,13 @@ Would be changed to:
 <a class="embedly-card" data-card-controls="0" data-card-align="left" data-card-width="100%" href="https://docs.google.com/presentation/d/1BLaaOTsGxDmNcAhg6pdx3hl9IvI8NErg8Oe5ceh83fw/edit?usp=sharing">Grav and Docsify Slides Placeholder</a>
 ```
 
-_Docsify Sidebar or custom Sidebar is not displaying individual page header levels as expected._  
+##### Docsify Sidebar is not Displaying Header Levels
 When displaying a Docsify Sidebar or custom Sidebar, it is expected that page header levels start with a H1 level header.  
 
-_Search results do not seem to return all expected matches._  
+##### Search Results do not Return all Expected Matches
 When the search field is enabled in a Docsify custom Sidebar, only pages listed and linked in the Sidebar will be indexed for the search. Any pages linked in an optional Navbar will not be included in searches.  
 
-_Multiple embedded scripts are not working as expected._  
+##### Multiple Embedded Scripts are not Working as Expected
 Docsify-This (as with Docsify itself) will only execute the first script included in a Markdown page, as described in the [Docsify documentation](https://docsify.js.org/#/configuration?id=executescript).
 
 ---
