@@ -34,6 +34,6 @@ If you are interested in contributing a new feature vs. fixing a bug or improvin
 - **Commit Messages**  
    Please keep them descriptive and concise.
 - **Documentation**  
-   If you’re adding new features, please make sure to include or update relevant documentation.
+   If you’re adding a new feature, please make sure to include or update relevant documentation.
 
 Thank you for helping make Docsify-This even better!
