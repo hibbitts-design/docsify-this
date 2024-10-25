@@ -1165,7 +1165,7 @@ Markdown:
 
 #### Looking for Even More Customization and Control?
 
-Docsify-This was designed to provide a quick and easy way to display one or more remotely hosted Markdown files. For further customization of the rendering of remote files and to ensure consistent availability, even in the unlikely event that the public Docsify-This.net instance is not available in the future, you can host your own instance of Docsify-This.
+Docsify-This was designed to quickly and easily display one or more remotely hosted Markdown files. For greater customization of file rendering and to ensure consistent availability, even if the public Docsify-This.net instance was no longer available, you can host your own instance of Docsify-This.  
 
 ##### GitHub Hosting
 
