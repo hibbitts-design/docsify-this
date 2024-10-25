@@ -38,7 +38,7 @@ If you are interested in contributing a new feature vs. fixing a bug or improvin
 
 ## Other Ways to Support the Project
 
-- Follow @hibbittsdesign@mastodon.social on Mastodon for updates, or subscribe via RSS feed
+- Follow [@hibbittsdesign@mastodon.social](https://mastodon.social/@hibbittsdesign) on Mastodon for updates, or subscribe via RSS feed
 - Share your experiences with Docsify-This in online forums and on social media
 - Join the [Docsify Discord](https://discord.gg/docsify) and visit the #Docsify-This Channel
 - Add a ⭐️ star on GitHub to the Docsify-This project repository
