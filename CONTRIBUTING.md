@@ -4,7 +4,7 @@ Thank you for your interest in contributing to the Docsify-This project! Your in
 
 ## How to Contribute
 
-If you are interested in contributing a new features vs. fixing a bug or improving existing documentation, please first share your idea as a [Docsify-This GitHub issue](https://github.com/hibbitts-design/docsify-this/issues) for discussion.
+If you are interested in contributing a new feature vs. fixing a bug or improving existing documentation, please first share your idea as a [Docsify-This GitHub issue](https://github.com/hibbitts-design/docsify-this/issues) for discussion.
 
 1. **Fork the Repository**  
    Fork the Docsify-This repository to your GitHub account.
