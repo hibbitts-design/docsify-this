@@ -44,5 +44,4 @@ If you are interested in contributing a new feature vs. fixing a bug or improvin
 - Add a ⭐️ star on GitHub to the Docsify-This project repository
 - [Submit your feedback](https://forms.gle/ViYu2ZdPmj6PeQ439) directly to the project
 
-
 Thank you for helping make Docsify-This even better!
