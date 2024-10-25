@@ -30,7 +30,7 @@ If you are interested in contributing a new features vs. fixing a bug or improvi
 ## Guidelines
 
 - **Code Style**  
-   Follow the existing coding and formatting style when appropriate.
+   Follow the existing coding and formatting style as appropriate.
 - **Commit Messages**  
    Please keep them descriptive and concise.
 - **Documentation**  
