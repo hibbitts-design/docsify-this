@@ -853,7 +853,7 @@ Markdown:
 
 #### Looking for Even More Customization and Control?
 
-Docsify-This is intended as a quick way to display one or more remotely located Markdown files. To further customize the rendering of remote files and have the posibility to have an instance of Docsify-This running on a custom domain, fork/clone your own instance of [Docsify-This](https://github.com/hibbitts-design/docsify-this) on GitHub and enable GitHub Pages with the folder `/docs`.  
+Docsify-This was designed to provide a quick and easy way to display one or more remotely hosted Markdown files. For further customization of the rendering of remote files and to ensure consistent availability, even in the unlikely event that the public Docsify-This.net instance is not available in the future, you can fork or clone your own instance from [Docsify-This](https://github.com/hibbitts-design/docsify-this) on GitHub. Then, enable GitHub Pages using the `/docs` folder.  
 
 You can also have an instance of Docsify-This run on [Codeberg](https://codeberg.org/) such as https://docsify-this.codeberg.page by creating a new repository called `pages`, then choosing **paulhibbitts/docsify-this-app** in the **template** dropdown menu, choosing the **Git Content (Default Branch)** option and then tapping the **Create Repository** button.  
 
