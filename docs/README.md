@@ -1167,32 +1167,23 @@ Markdown:
 
 Docsify-This was designed to quickly and easily display one or more remotely hosted Markdown files. For greater customization of file rendering and to ensure consistent availability, even if the public Docsify-This.net instance was no longer available, you can host your own instance of Docsify-This.  
 
-##### GitHub Hosting
+##### GitHub Instance
 
 To host your own instance on GitHub Pages, which also supports the option of a custom domain, fork or clone the [Docsify-This](https://github.com/hibbitts-design/docsify-this) repository to your GitHub account. Then, enable GitHub Pages using the `/docs` folder.  
 
-##### Codeberg Hosting
+##### Codeberg Instance
 
 You can also have an instance of Docsify-This run on [Codeberg](https://codeberg.org/) such as https://docsify-this.codeberg.page by creating a new repository called `pages`, then choosing **paulhibbitts/docsify-this-app** in the **template** dropdown menu, choosing the **Git Content (Default Branch)** option and then tapping the **Create Repository** button.  
 
 Alternatively, you can upload the files in the Docsify-This `/docs` folder into a newly created Codeberg repository and then manually enable [Codeberg Pages](https://docs.codeberg.org/codeberg-pages/). An example Docsify-This instance running on Codeberg is available at https://codeberg.org/paulhibbitts/docsify-this-app, which uses a Branch renamed to `pages`.  
 
-##### Webserver Hosting
+##### Webserver Instance
 
 If you want to run Docsify-This on your own Websever, create a destination folder on your server and then copy the files within the Docsify-This folder `/docs` to your newly created server folder. 
 
 A more future-friendly setup would be to fork the Docsify-This repository (to support getting upstream updates) and use a GitHub Action such as [FTP-Deploy](https://github.com/SamKirkland/FTP-Deploy-Action) to deploy all repository files to a webserver and set the `docs` folder as a custom domain root.
 
-##### LMS Hosting
-
-You can even run Docsify-This on LMSs that support file libraries such as Canvas and Moodle. For example, here is a [Docsify-This instance on Canvas](https://canvas.instructure.com/courses/6321275/files/folder/docsify-this/docs?preview=212476355).
-
-To host a Docsify-This instance on your LMS, do the following:  
-1. Tap **Download** on the [Docsify-This repository page](https://github.com/hibbitts-design/docsify-this)
-2. Upload to your LMS file storage area, and unzip the upload file
-3. Based on your LMS, determine the external URL required to load the `index.html` file within the Docsify `Docs` folder. In Canvas, an example URL would look similar to `https://canvas.instructure.com/courses/6321275/files/211083785/download`.
-
-##### Allowed File Domains
+##### Limiting File Domains
 
 You can limit the domains which remote files can be rendered from by locating the line `var allowedDomains = '';` within the `index.html` file and include your list of allowed domains separated by commas, for example `var allowedDomains = 'codeberg.org,raw.githubusercontent.com,hibbittsdesign.org';`.  
 
