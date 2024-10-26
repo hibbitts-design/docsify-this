@@ -1179,9 +1179,9 @@ Alternatively, you can upload the files in the Docsify-This `/docs` folder into 
 
 ##### Webserver Instance
 
-If you want to run Docsify-This on your own Websever, create a destination folder on your server and then copy the files within the Docsify-This folder `/docs` to your newly created server folder. 
+If you want to run Docsify-This on your own Websever, create a destination folder on your server and then copy the files within the Docsify-This folder `/docs` to your newly created server folder. You could also use this `docs` folder as a custom domain root. 
 
-A more future-friendly setup would be to fork the Docsify-This repository (to support getting upstream updates) and use a GitHub Action such as [FTP-Deploy](https://github.com/SamKirkland/FTP-Deploy-Action) to deploy all repository files to a webserver and set the `docs` folder as a custom domain root.
+A more future-friendly setup would be to fork the Docsify-This repository (to support getting upstream updates) and use a GitHub Action such as [FTP-Deploy](https://github.com/SamKirkland/FTP-Deploy-Action) to deploy all changed repository files to a webserver.
 
 ##### Limiting File Domains
 
