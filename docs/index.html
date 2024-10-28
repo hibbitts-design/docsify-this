@@ -1020,7 +1020,7 @@
               }
 
               /* Support Browser-level image lazy loading of images */
-              if (getURLParameterByName(['lazy-load-images', 'lazyLoadImages'], null, null, window.location.href, true) === 'true' ) {
+              if (getURLParameterByName(['lazy-load-images', 'lazyLoadImages'], null, null, window.location.href, true) === 'true') {
                 htmlElement.innerHTML = htmlElement.innerHTML.replace(/<img(.*?)>/g, function (match, p1) {
                   if (p1.indexOf('loading=') === -1) {
                     return match.replace('>', ' loading="lazy">');
@@ -1228,8 +1228,8 @@
 
             // Build the current URL without the hash
             let currentUrlWithoutHash = new URL(
-                location.origin + location.pathname +
-                location.search
+              location.origin + location.pathname +
+              location.search
             );
 
             // Get the search parameters from the URL (before the hash)
@@ -1242,28 +1242,28 @@
 
             // Check if the URL contains the 'id' query parameter in either search or hash
             if (isUrlHasIdQuery || isHashHasIdQuery) {
-                
-                // Get the 'id' from either search or hash
-                let urlId = isUrlHasIdQuery ? urlQueryParam.get(TARGET_QUERY) : hashParams.get(TARGET_QUERY);
 
-                // Delay the scrolling to ensure everything is loaded
-                setTimeout(function () {
-                    try {
-                        let targetElement = document.getElementById(urlId); // Use `getElementById` to directly reference the element
-                        if (targetElement) {
-                            // Use requestAnimationFrame for immediate scroll to the element
-                            requestAnimationFrame(() => {
-                            // Scroll smoothly to the element's top position
-                            window.scrollTo({
-                                top: targetElement.offsetTop,
-                                behavior: 'smooth'  // Add smooth scrolling
-                            });
-                        });
-                      }
-                    } catch (e) {
-                        console.log('custom scroll failed', e);
-                    }
-                }, SCROLL_DELAY);
+              // Get the 'id' from either search or hash
+              let urlId = isUrlHasIdQuery ? urlQueryParam.get(TARGET_QUERY) : hashParams.get(TARGET_QUERY);
+
+              // Delay the scrolling to ensure everything is loaded
+              setTimeout(function () {
+                try {
+                  let targetElement = document.getElementById(urlId); // Use `getElementById` to directly reference the element
+                  if (targetElement) {
+                    // Use requestAnimationFrame for immediate scroll to the element
+                    requestAnimationFrame(() => {
+                      // Scroll smoothly to the element's top position
+                      window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'  // Add smooth scrolling
+                      });
+                    });
+                  }
+                } catch (e) {
+                  console.log('custom scroll failed', e);
+                }
+              }, SCROLL_DELAY);
             }
 
             if (window.$docsify['basePath']) {
@@ -1483,8 +1483,8 @@
       ]
     }
 
-    <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
-    <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
+    // Credit to Beau Shaw for dymamic remote docsify technique
+    // To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
     if (getURLParameterByName('basePath')) {
       const params = new URLSearchParams(window.location.search);
       params.forEach((value, key) => {
@@ -1727,10 +1727,10 @@
   <script>
     if (getURLParameterByName(['search', 'searchbox'], null, null, window.location.href, true) === 'true') {
 
-      <!-- Docsify Search Plugin current release -->
-      <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
+      // Docsify Search Plugin current release
+      // document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>');
 
-      <!-- Docsify Search Plugin "develop" branch preview files -->
+      // Docsify Search Plugin "develop" branch preview files
       document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>');
     }
   </script>

@@ -6,6 +6,7 @@
 * Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
 * Updated ReadMe
 * Addition of optional `lazy-load-images` URL parameter for enabling Browser lazy loading of images
+* Cleanup HTML
 
 **Bugfix:**
 * Provide default values in error handling to avoid possible script error
