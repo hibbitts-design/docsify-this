@@ -2,6 +2,9 @@
 
 ## [1.9.15] - XX/XX/2024
 
+**New:**
+* Updated Font Awesome Free assets to v6.6.0
+
 **Improved:**
 * Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
 * Updated ReadMe
