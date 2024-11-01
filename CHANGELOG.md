@@ -2,6 +2,9 @@
 
 ## [1.9.15] - XX/XX/2024
 
+**New:**
+* Support for SVG icons via optional `svg-icons` URL parameter (with thanks and appreciation to @erickjx for the updated Font Awesome plugin)
+
 **Improved:**
 * Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
 * Updated ReadMe
