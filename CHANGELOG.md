@@ -2,14 +2,12 @@
 
 ## [1.9.15] - XX/XX/2024
 
-**New:**
-* Updated Font Awesome Free assets to v6.6.0
-
 **Improved:**
 * Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
 * Updated ReadMe
 * Addition of optional `lazy-load-images` URL parameter for enabling Browser lazy loading of images
 * Cleanup HTML
+* Updated Font Awesome Free assets to v6.6.0
 
 **Bugfix:**
 * Provide default values in error handling to avoid possible script error
