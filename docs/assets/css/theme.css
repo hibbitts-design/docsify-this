@@ -644,6 +644,11 @@
   overflow-wrap: anywhere;
 }
 
+/* Included to support earlier Markdown Schedule templates */
+.markdown-section h2 .fa-fw {
+  text-align: left;
+}
+
 .markdown-section .video-container-4by3 {
   position: relative;
   padding-bottom: 75%;
