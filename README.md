@@ -415,17 +415,19 @@ While all you need to get going with Docsify-This is a basic Markdown file, belo
 
 To use these templates you would generally do the following (template specific instructions are included with each template):
 
-1. Tap **Use this template** in the chosen template repository (upper-right green button) and then choose **Create a new repository**
+1.  Sign in to [GitHub](https://github.com), or create an account if you don’t already have one.
 
-2. Choose the name for your new repository to contain the files and then tap **Create repository** to copy the template files to your own GitHub account
+2. Tap **Use this template** in the chosen template repository (upper-right green button) and then choose **Create a new repository**
 
-3. View the **home.md** Markdown file in your newly created repository and copy it's URL
+3. Choose the name for your new repository to contain the files and then tap **Create repository** to copy the template files to your own GitHub account
 
-4. Go to https://docsify-this.net and paste the copied URL into the **Markdown File URL** field
+4. View an included Markdown file, for example **home.md**, and copy its URL.
 
-5. Select the page options you want (e.g. Docsify Sidebar) and tap the **Publish as a Web Page** button to view your Markdown file as a web page for sharing or embedding  
+5. Go to https://docsify-this.net and paste the copied URL into the **Markdown File URL** field
 
-Now that the template files are located on your own GitHub account, modify their content to fit your needs.  
+6. Select the page options you want (e.g. Docsify Sidebar) and tap the **Publish as a Web Page** button to view your Markdown file as a web page for sharing or embedding  
+
+To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right when viewing the file, make your changes, and then tap the **Commit changes...** button to save those changes.   
 
 ##### [Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article)
 
