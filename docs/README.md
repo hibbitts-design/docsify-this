@@ -1291,6 +1291,8 @@ A simple [Markdown Student Portfolio Starter Template](https://github.com/hibbit
 
 #### Additional Docsify-This Learning Materials
 
+##### Guides
+
 [Introduction to Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/otessa-2024/main/pages&homepage=introduction-to-docsify-this.md&edit-link=https://github.com/paulhibbitts/otessa-2024&sidebar=true&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Introduction%20to%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
 _Introductory, beginner to intermediate._  
 An introduction of Markdown publishing using the open source project Docsify⁠–⁠This.  
@@ -1298,6 +1300,11 @@ An introduction of Markdown publishing using the open source project Docsify⁠�
 [Self-Publishing with Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/self-publishing-with-docsify-this/main/pages&homepage=introduction-to-self-publishing-with-docsify-this.md&edit-link=https://github.com/paulhibbitts/self-publishing-with-docsify-this&sidebar=true&maxLevel=4&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Overview%20to%20Self-Publishing%20with%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
 _Intermediate, with a mix of basic and advanced aspects._  
 An overview to self-publishing with Markdown using the open source project Docsify⁠–⁠This, with a focus on digital literacy.
+
+##### Screencasts
+
+* [Demo Wednesdays Live: Quick Start to Markdown Publishing: Using Docsify-This](https://www.youtube.com/watch?v=FQKniYvXS90)
+* [Open Publishing Ecosystems: DocsifyThis](https://www.youtube.com/watch?v=EjeqxOJ2ZxE)
 
 ---
 
