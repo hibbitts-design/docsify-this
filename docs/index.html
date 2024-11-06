@@ -1264,13 +1264,23 @@
               return; // Exit if basePath is present
             }
 
-            if (getURLParameterByName(['url-field', 'urlField'])) {
-              // console.log(getURLParameterByName('url-field'));
+            if (getURLParameterByName(['url-field', 'urlField']) || (window.location.href.includes('?') && !window.location.href.includes('?='))) {
               var markdownFileURL = '';
-              markdownFileURL = getURLParameterByName(['url-field', 'urlField'], null, null, window.location.href, true);
-              if (markdownFileURL == "empty") {
+              
+              // Check if the URL has only a '?' followed by content, without any '='
+              if (window.location.href.includes('?') && !window.location.href.includes('?=')) {
+                // Extract everything after the '?' as the URL, up to the first '&'
+                markdownFileURL = window.location.href.split('?')[1].split('&')[0] || '';
+              } else {
+                // Use getURLParameterByName for 'url-field' or 'urlField'
+                markdownFileURL = getURLParameterByName(['url-field', 'urlField'], '', null, window.location.href, true);
+              }
+              
+              // If URL was 'empty', reset it to an empty string
+              if (markdownFileURL === "empty") {
                 markdownFileURL = '';
               }
+              
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
             }
 
@@ -1477,27 +1487,8 @@
       ]
     }
 
-    // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
-    function checkAndLoadFileURL() {
-      const currentURL = window.location.href;
-      const urlParts = currentURL.split('?');
-      
-      // If the URL has no query or already has `url-field` or `basePath`, no rewrite is needed
-      if (urlParts.length < 2 || currentURL.includes('url-field=') || currentURL.includes('basePath=')) return;
-      
-      // Separate the URL parameters from the main URL
-      const [mainURL, paramURL] = urlParts;
-
-      // Construct the new URL format with `url-field` without encoding
-      const newURL = `${mainURL}?url-field=${paramURL}`;
-      
-      // Update the URL in the address bar without reloading the page
-      window.history.replaceState({}, '', newURL);
-    }
-
     // Credit to Beau Shaw for dymamic remote docsify technique
     // To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
-    checkAndLoadFileURL()
     if (getURLParameterByName('basePath')) {
       const params = new URLSearchParams(window.location.search);
       params.forEach((value, key) => {
