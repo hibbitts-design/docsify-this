@@ -1028,7 +1028,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 * [Use of WikiLinks](#use-of-wikilinks)
 * [Display of AsciiDoc Files (file extension .adoc)](#display-of-asciidoc-files-file-extension-adoc)
 * [Display of HedgeDocs Files](#display-of-hedgedocs-files)
-* [Preloading Web Page Builder Custom Settings](#preloading-web-page-builder-custom-settings)
+* [Loading Web Page Builder Custom Settings](#loading-web-page-builder-custom-settings)
 * [Use of Camel Case (e.g. camelCase) Format for URL parameters](#use-of-camel-case-eg-camelcase-format-for-url-parameters)
 * [Use of New Web Editor GitHub.dev](#use-of-new-web-editor-githubdev)
 
@@ -1108,8 +1108,8 @@ Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org
 
 You can support HedgeDoc URLs (e.g. https://demo.hedgedoc.org/ip4SRxZYTEKa6JHr62XTiA) in the Web Page Builder of your own instance of Docsify-This by locating the line `var hedgedocInstances = '';` within the `index.html` file and include your HedgeDoc instances separated by commas, for example `var hedgedocInstances = 'demo.hedgedoc.org';`. Try out a demo instance of Docsify-This with support for demo.hedgedoc.org files at https://hibbitts-design.github.io/hedgedoc-docsify-this.  
 
-##### Preloading Web Page Builder Custom Settings
-You can preload custom default settings in the Docsify-This Web Page Builder using URL parameters. This ability is especially helpful for Docsify-This online sessions, workshops, or when users collaborate and assist one another. Along with the standard Docsify-This URL parameters, the Web Page Builder also offers the following specific parameters:  
+##### Loading Web Page Builder Custom Settings
+You can load custom default settings in the Docsify-This Web Page Builder using URL parameters. This ability is especially helpful for Docsify-This online sessions, workshops, or when users collaborate and assist one another. Along with the standard Docsify-This URL parameters, the Web Page Builder also offers the following specific parameters:  
 
 ###### url-field
 ```html
