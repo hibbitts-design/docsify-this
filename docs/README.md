@@ -235,6 +235,7 @@ Page layout:
 - [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 
 ### [5. Tips, Techniques, and Troubleshooting](/?id=_5-tips-techniques-and-troubleshooting-1)
+- [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
 - [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 - [Tips and Techniques](/?id=tips-and-techniques)
 - [Troubleshooting](/?id=troubleshooting)
@@ -1312,9 +1313,55 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 ### 5. Tips, Techniques, and Troubleshooting
 
+* [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
 * [Tips and Techniques](#tips-and-techniques)
 * [Troubleshooting](#troubleshooting)
+
+---
+
+#### Loading Web Page Builder Custom Settings
+You can load custom default settings in the Docsify-This Web Page Builder using URL parameters. This ability is especially helpful for Docsify-This online sessions, workshops, or when users collaborate and assist one another. Along with the standard Docsify-This URL parameters, the Web Page Builder also offers the following specific parameters:  
+
+##### url-field
+```html
+
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
+
+```
+
+```html
+
+https://docsify-this.net/?url-field=empty
+
+```
+
+_You can even just type **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads, press the Return key — no need to leave the keyboard — to see Docsify-This display the Markdown file as a web page! For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`._
+
+##### edit-link-checkbox
+```html
+
+https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link-checkbox=true
+
+```
+
+##### show-page-options
+```html
+
+https://docsify-this.net/?show-page-options=true
+
+```
+
+##### advanced
+```html
+
+https://docsify-this.net/?advanced=true
+
+```
+
+For example, the following URL will display the Advanced Web Page Builder, with the Markdown file URL set to `https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md`, the site name 'CPT-363' along with a Docsify custom Sidebar and Navbar to be included: https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md&sidebar=true&loadSidebar=true&loadNavbar=true&name=CPT-363
+
+The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
 ---
 
@@ -1340,7 +1387,6 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 * [Use of WikiLinks](/?id=use-of-wikilinks)
 * [Display of AsciiDoc Files (file extension .adoc)](/?id=display-of-asciidoc-files-file-extension-adoc)
 * [Display of HedgeDocs Files](/?id=display-of-hedgedocs-files)
-* [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
 * [Use of Camel Case (e.g. camelCase) Format for URL parameters](/?id=use-of-camel-case-eg-camelcase-format-for-url-parameters)
 * [Use of New Web Editor GitHub.dev](/?id=use-of-new-web-editor-githubdev)
 
@@ -1357,12 +1403,12 @@ There are multiple ways to get a raw Markdown file available online, here are th
 1. Create a gist with your Markdown file at https://gist.github.com
 2. Enter a filename ending with `.md` (e.g. `myfile.md`)
 3. Choose **Create public gist** and tap on that button
-4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
+4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 **Personal or Organizational Website:**  
 1. Obtain login information for your server
 2. Upload the Markdown file to your server
-3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
+3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 ##### Matching Fonts with Your Destination Platform Content
 Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-family` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
@@ -1419,49 +1465,6 @@ The display of [HedgeDoc](https://hedgedoc.org/) files containing basic Markdown
 Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both (seen in split-screen view) and and rendered as a web page by Docsify-This https://docsify-this.net/?basePath=https://demo.hedgedoc.org&homepage=oisWMy9ZS36PE6TvYhJC4A/download&edit-link=https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both&toc=true&edit-link-text=Edit%20this%20Page%20in%20HedgeDoc  
 
 You can support HedgeDoc URLs (e.g. https://demo.hedgedoc.org/ip4SRxZYTEKa6JHr62XTiA) in the Web Page Builder of your own instance of Docsify-This by locating the line `var hedgedocInstances = '';` within the `index.html` file and include your HedgeDoc instances separated by commas, for example `var hedgedocInstances = 'demo.hedgedoc.org';`. Try out a demo instance of Docsify-This with support for demo.hedgedoc.org files at https://hibbitts-design.github.io/hedgedoc-docsify-this.  
-
-##### Loading Web Page Builder Custom Settings
-You can load custom default settings in the Docsify-This Web Page Builder using URL parameters. This ability is especially helpful for Docsify-This online sessions, workshops, or when users collaborate and assist one another. Along with the standard Docsify-This URL parameters, the Web Page Builder also offers the following specific parameters:  
-
-###### url-field
-```html
-
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
-
-```
-
-```html
-
-https://docsify-this.net/?url-field=empty
-
-```
-
-_You can even just type **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads, press the Return key — no need to leave the keyboard — to see Docsify-This display the Markdown file as a web page! For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`._
-
-###### edit-link-checkbox
-```html
-
-https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link-checkbox=true
-
-```
-
-###### show-page-options
-```html
-
-https://docsify-this.net/?show-page-options=true
-
-```
-
-###### advanced
-```html
-
-https://docsify-this.net/?advanced=true
-
-```
-
-For example, the following URL will display the Advanced Web Page Builder, with the Markdown file URL set to `https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md`, the site name 'CPT-363' along with a Docsify custom Sidebar and Navbar to be included: https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md&sidebar=true&loadSidebar=true&loadNavbar=true&name=CPT-363
-
-The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
 ##### Use of Camel Case (e.g. camelCase) Format for URL Parameters
 You can use [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of hyphens for the names of Docsify-This URL parameters if prefered. For example, https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md and https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&tocHeadings=h2,h3&editLink=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md are equilivent.
