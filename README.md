@@ -1124,7 +1124,7 @@ https://docsify-this.net/?url-field=empty
 
 ```
 
-_You can even include **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads with your settings, just press the Return key — no need to move your mouse — to see Docsify-This present the Markdown file as a webpage!  For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`._
+_You can even include **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads with your settings, just press the Return key — no need to move your mouse — to see Docsify-This display the Markdown file as a webpage!  For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`._
 
 ###### edit-link-checkbox
 ```html
