@@ -1281,6 +1281,11 @@
                 markdownFileURL = '';
               }
               
+              // Prefix 'https://' if not already present
+              if (markdownFileURL && !markdownFileURL.startsWith('http://') && !markdownFileURL.startsWith('https://')) {
+                markdownFileURL = 'https://' + markdownFileURL;
+              }
+              
               // Remove any '#' and everything after it from the markdownFileURL
               markdownFileURL = markdownFileURL.split('#')[0];
 
