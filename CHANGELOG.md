@@ -4,7 +4,7 @@
 
 **New:**
 * Support for SVG icons via optional `svg-icons` URL parameter (with thanks and appreciation to @erickjx for the updated Font Awesome plugin)
-* Support for prefixing Markdown file URLs with Docsify-This.net to load the Web Page Builder with that URL, for example https://Docsify-This.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md
+* Support for prefixing Markdown file URLs with Docsify-This.net to load the Web Page Builder with that URL, for example https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md
 
 **Improved:**
 * Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
