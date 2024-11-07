@@ -58,8 +58,8 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 <h3><a href="#5-tips-techniques-and-troubleshooting-1">5. Tips, Techniques, and Troubleshooting</a></h3>
 <ul>
-  <li><a href="#loading-web-page-builder-custom-settings">Loading Web Page Builder Custom Settings</a></li>
   <li><a href="#improving-markdown-previews-in-text-editors">Improving Markdown Previews in Text Editors</a></li>
+  <li><a href="#loading-web-page-builder-custom-settings">Loading Web Page Builder Custom Settings</a></li>
   <li><a href="#tips-and-techniques">Tips and Techniques</a></li>
   <li><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
@@ -1001,10 +1001,22 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 ### 5. Tips, Techniques, and Troubleshooting
 
-* [Loading Web Page Builder Custom Settings](#loading-web-page-builder-custom-settings)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
+* [Loading Web Page Builder Custom Settings](#loading-web-page-builder-custom-settings)
 * [Tips and Techniques](#tips-and-techniques)
 * [Troubleshooting](#troubleshooting)
+
+---
+
+#### Improving Markdown Previews in Text Editors
+
+Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/) (including the online [GitHub.dev web editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
+
+Docsify-This (based on the Docsify Open Publishing Starter Kit) CSS:  
+https://docsify-this.net/assets/css/editor.css
+
+FontAwesome CSS:  
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
 ---
 
@@ -1050,18 +1062,6 @@ https://docsify-this.net/?advanced=true
 For example, the following URL will display the Advanced Web Page Builder, with the Markdown file URL set to `https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md`, the site name 'CPT-363' along with a Docsify custom Sidebar and Navbar to be included: https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md&sidebar=true&loadSidebar=true&loadNavbar=true&name=CPT-363
 
 The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
-
----
-
-#### Improving Markdown Previews in Text Editors
-
-Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/) (including the online [GitHub.dev web editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
-
-Docsify-This (based on the Docsify Open Publishing Starter Kit) CSS:  
-https://docsify-this.net/assets/css/editor.css
-
-FontAwesome CSS:  
-https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
 ---
 
