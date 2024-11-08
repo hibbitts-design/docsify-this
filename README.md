@@ -58,9 +58,10 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 <h3><a href="#5-tips-techniques-and-troubleshooting-1">5. Tips, Techniques, and Troubleshooting</a></h3>
 <ul>
+  <li><a href="#making-a-markdown-file-available-online">Making a Markdown File Available Online</a></li>
   <li><a href="#improving-markdown-previews-in-text-editors">Improving Markdown Previews in Text Editors</a></li>
   <li><a href="#loading-web-page-builder-custom-settings">Loading Web Page Builder Custom Settings</a></li>
-  <li><a href="#tips-and-techniques">Tips and Techniques</a></li>
+  <li><a href="#content-display-tips-and-techniques">Content Display Tips and Techniques</a></li>
   <li><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 
@@ -1001,12 +1002,33 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 ### 5. Tips, Techniques, and Troubleshooting
 
+* [Making a Markdown File Available Online](#making-a-markdown-file-available-online)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
 * [Loading Web Page Builder Custom Settings](#loading-web-page-builder-custom-settings)
-* [Tips and Techniques](#tips-and-techniques)
+* [Content Display Tips and Techniques](#content-display-tips-and-techniques)
 * [Troubleshooting](#troubleshooting)
 
 ---
+
+##### Making a Markdown File Available Online
+There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
+
+**GitHub or Codeberg:**  
+1. Signup for a [GitHub](https://github.com) or [Codeberg](https://codeberg.org) account
+2. Create a new repository and upload your Markdown file
+3. View the uploaded file, and copy/paste that URL into the Docsify-This **Markdown File URL** field
+
+**Gist (GitHub Gists):**
+1. Signup for a [GitHub](https://github.com) account
+1. Create a gist with your Markdown file at https://gist.github.com
+2. Enter a filename ending with `.md` (e.g. `myfile.md`)
+3. Choose **Create public gist** and tap on that button
+4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
+
+**Personal or Organizational Website:**  
+1. Obtain login information for your server
+2. Upload the Markdown file to your server
+3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 #### Improving Markdown Previews in Text Editors
 
@@ -1065,9 +1087,8 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 
 ---
 
-#### Tips and Techniques
+#### Content Display Tips and Techniques
 
-* [Making a Raw Markdown File Available Online](#making-a-raw-markdown-file-available-online)
 * [Matching Fonts with Your Destination Platform Content](#matching-fonts-with-your-destination-platform-content)
 * [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
 * [Including Code Blocks](#including-code-blocks)
@@ -1077,26 +1098,6 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 * [Display of HedgeDocs Files](#display-of-hedgedocs-files)
 * [Use of Camel Case (e.g. camelCase) Format for URL parameters](#use-of-camel-case-eg-camelcase-format-for-url-parameters)
 * [Use of New Web Editor GitHub.dev](#use-of-new-web-editor-githubdev)
-
-##### Making a Raw Markdown File Available Online
-There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
-
-**GitHub or Codeberg:**  
-1. Signup for a [GitHub](https://github.com) or [Codeberg](https://codeberg.org) account
-2. Create a new repository and upload your Markdown file
-3. View the uploaded file, and copy/paste that URL into the Docsify-This **Markdown File URL** field
-
-**Gist (GitHub Gists):**
-1. Signup for a [GitHub](https://github.com) account
-1. Create a gist with your Markdown file at https://gist.github.com
-2. Enter a filename ending with `.md` (e.g. `myfile.md`)
-3. Choose **Create public gist** and tap on that button
-4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
-
-**Personal or Organizational Website:**  
-1. Obtain login information for your server
-2. Upload the Markdown file to your server
-3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 ##### Matching Fonts with Your Destination Platform Content
 Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-family` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
