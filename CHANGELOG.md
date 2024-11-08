@@ -12,6 +12,7 @@
 * Addition of optional `lazy-load-images` URL parameter for enabling Browser lazy loading of images
 * Cleanup HTML
 * Updated Font Awesome Free assets to v6.6.0
+* Updated to use docsify-tabs plugin v1.6.3
 
 **Bugfix:**
 * Provide default values in error handling to avoid possible script error
