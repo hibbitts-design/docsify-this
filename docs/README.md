@@ -235,7 +235,7 @@ Page layout:
 - [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 
 ### [5. Tips, Techniques, and Troubleshooting](/?id=_5-tips-techniques-and-troubleshooting-1)
-- [Making a Raw Markdown File Available Online](/?id=making-a-raw-markdown-file-available-online)
+- [Making a Markdown File Available Online](/?id=making-a-markdown-file-available-online)
 - [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 - [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
 - [Content Display Tips and Techniques](/?id=content-display-tips-and-techniques)
@@ -1314,7 +1314,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 ### 5. Tips, Techniques, and Troubleshooting
 
-* [Making a Raw Markdown File Available Online](/?id=making-a-raw-markdown-file-available-online)
+* [Making a Markdown File Available Online](/?id=making-a-markdown-file-available-online)
 * [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 * [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
 * [Content Display Tips and Techniques](/?id=content-display-tips-and-techniques)
@@ -1322,7 +1322,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 ---
 
-##### Making a Raw Markdown File Available Online
+##### Making a Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
 
 **GitHub or Codeberg:**  
