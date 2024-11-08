@@ -1010,7 +1010,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 ---
 
-##### Making a Markdown File Available Online
+#### Making a Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
 
 **GitHub or Codeberg:**  
