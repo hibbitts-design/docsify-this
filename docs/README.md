@@ -1411,7 +1411,7 @@ There are multiple ways to get a raw Markdown file available online, here are th
 1. Create a gist with your Markdown file at https://gist.github.com
 2. Enter a filename ending with `.md` (e.g. `myfile.md`)
 3. Choose **Create public gist** and tap on that button
-4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
+4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 **Personal or Organizational Website:**  
 1. Obtain login information for your server
