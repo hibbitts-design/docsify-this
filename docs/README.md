@@ -235,10 +235,10 @@ Page layout:
 - [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 
 ### [5. Tips, Techniques, and Troubleshooting](/?id=_5-tips-techniques-and-troubleshooting-1)
+- [Content Display Tips and Techniques](/?id=content-display-tips-and-techniques)
 - [Making a Markdown File Available Online](/?id=making-a-markdown-file-available-online)
 - [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 - [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
-- [Content Display Tips and Techniques](/?id=content-display-tips-and-techniques)
 - [Troubleshooting](/?id=troubleshooting)
 
 ### [6. Support and Policies](/?id=_6-support-and-policies-1)
@@ -1314,11 +1314,87 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 ### 5. Tips, Techniques, and Troubleshooting
 
+* [Content Display Tips and Techniques](/?id=content-display-tips-and-techniques)
 * [Making a Markdown File Available Online](/?id=making-a-markdown-file-available-online)
 * [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 * [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
-* [Content Display Tips and Techniques](/?id=content-display-tips-and-techniques)
 * [Troubleshooting](/?id=troubleshooting)
+
+---
+
+#### Content Display Tips and Techniques
+
+* [Matching Fonts with Your Destination Platform Content](/?id=matching-fonts-with-your-destination-platform-content)
+* [Providing a Page Table of Contents within a Smaller Area](/?id=providing-a-page-table-of-contents-within-a-smaller-area)
+* [Including Code Blocks](/?id=including-code-blocks)
+* [Including External Markdown Content](/?id=including-external-markdown-content)
+* [Use of WikiLinks](/?id=use-of-wikilinks)
+* [Display of AsciiDoc Files (file extension .adoc)](/?id=display-of-asciidoc-files-file-extension-adoc)
+* [Display of HedgeDocs Files](/?id=display-of-hedgedocs-files)
+* [Use of Camel Case (e.g. camelCase) Format for URL parameters](/?id=use-of-camel-case-eg-camelcase-format-for-url-parameters)
+* [Use of New Web Editor GitHub.dev](/?id=use-of-new-web-editor-githubdev)
+
+##### Matching Fonts with Your Destination Platform Content
+Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-family` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1  
+
+##### Providing a Page Table of Contents within a Smaller Area
+If you want to include a Page Table of Contents with embedded Docsify-This content, but the destination platform screen area is not very wide, you might want to try the optional `toc-narrow` display option. For example, to use a narrower Table of Contents area that includes a smaller screen breakpoint:
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-01.md&toc-narrow=true  
+
+##### Including Code Blocks
+Using [Prismjs](https://prismjs.com/) code blocks with syntax highlighting is supported for the languages [included with Docsify](https://docsify.js.org/#/language-highlight?id=language-highlighting) and as well Bash, Go, Java, Kotlin, PHP, Python and Swift. To embed a code block use the Markdown standard of triple backticks and start the block with the name of the language, for example to embed a block of Javascript code with syntax highlight the following would be used:  
+
+<pre>
+```javascript
+function test() {
+  console.log("Hello world!");
+}
+```
+</pre>
+
+Which would then appear as:
+
+```javascript
+function test() {
+  console.log("Hello world!");
+}
+```
+
+##### Including External Markdown Content
+
+The content of external Markdown files can be embedded into Docisfy-This web pages with the following:
+
+```markdown
+[included Markdown from same source location](example.md ':include')
+```
+
+```markdown
+[included Markdown from URL](https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main/itworks.md ':include')
+```
+
+For additional examples of including external content, view [Docsify Embeded Files](https://docsify.js.org/#/embed-files?id=embed-files).
+
+##### Use of WikiLinks
+[WikiLinks format](https://help.obsidian.md/Linking+notes+and+files/Internal+links) for links and images are supported, as also found in the desktop editor [Obsidian](https://obsidian.md) and other platforms.  
+
+##### Display of AsciiDoc Files (file extension .adoc)
+The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) is possible by manually passing the relevant filenames within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc  
+
+You can support the display of AsciiDoc files in the Web Page Builder of your own instance of Docsify-This by locating the function `getAllowedFileExtensions()` within the `index.html` file and add the file extension '.adoc' to the `return` statement, for example `return ".md,.adoc";`.  
+
+##### Display of HedgeDocs Files
+The display of [HedgeDoc](https://hedgedoc.org/) files containing basic Markdown (as well as Mermaid and MathJax elements) is possible by manually using 'download' for the `homepage` URL parameter within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://docsify-this.net/?basePath=https://demo.hedgedoc.org/crN3ispNQdejWkUXXIXYQA&homepage=download  
+
+Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both (seen in split-screen view) and and rendered as a web page by Docsify-This https://docsify-this.net/?basePath=https://demo.hedgedoc.org&homepage=oisWMy9ZS36PE6TvYhJC4A/download&edit-link=https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both&toc=true&edit-link-text=Edit%20this%20Page%20in%20HedgeDoc  
+
+You can support HedgeDoc URLs (e.g. https://demo.hedgedoc.org/ip4SRxZYTEKa6JHr62XTiA) in the Web Page Builder of your own instance of Docsify-This by locating the line `var hedgedocInstances = '';` within the `index.html` file and include your HedgeDoc instances separated by commas, for example `var hedgedocInstances = 'demo.hedgedoc.org';`. Try out a demo instance of Docsify-This with support for demo.hedgedoc.org files at https://hibbitts-design.github.io/hedgedoc-docsify-this.  
+
+##### Use of Camel Case (e.g. camelCase) Format for URL Parameters
+You can use [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of hyphens for the names of Docsify-This URL parameters if prefered. For example, https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md and https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&tocHeadings=h2,h3&editLink=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md are equilivent.
+
+##### Use of New Web Editor GitHub.dev
+To use the new GitHub.dev web editor (currently in Beta) for 'Edit this Page' links, change `github.com` to `github.dev` for GitHub.com files entered into the Web Page Builder Markdown File URL field.
 
 ---
 
@@ -1397,82 +1473,6 @@ https://docsify-this.net/?advanced=true
 For example, the following URL will display the Advanced Web Page Builder, with the Markdown file URL set to `https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md`, the site name 'CPT-363' along with a Docsify custom Sidebar and Navbar to be included: https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md&sidebar=true&loadSidebar=true&loadNavbar=true&name=CPT-363
 
 The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
-
----
-
-#### Content Display Tips and Techniques
-
-* [Matching Fonts with Your Destination Platform Content](/?id=matching-fonts-with-your-destination-platform-content)
-* [Providing a Page Table of Contents within a Smaller Area](/?id=providing-a-page-table-of-contents-within-a-smaller-area)
-* [Including Code Blocks](/?id=including-code-blocks)
-* [Including External Markdown Content](/?id=including-external-markdown-content)
-* [Use of WikiLinks](/?id=use-of-wikilinks)
-* [Display of AsciiDoc Files (file extension .adoc)](/?id=display-of-asciidoc-files-file-extension-adoc)
-* [Display of HedgeDocs Files](/?id=display-of-hedgedocs-files)
-* [Use of Camel Case (e.g. camelCase) Format for URL parameters](/?id=use-of-camel-case-eg-camelcase-format-for-url-parameters)
-* [Use of New Web Editor GitHub.dev](/?id=use-of-new-web-editor-githubdev)
-
-##### Matching Fonts with Your Destination Platform Content
-Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-family` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1  
-
-##### Providing a Page Table of Contents within a Smaller Area
-If you want to include a Page Table of Contents with embedded Docsify-This content, but the destination platform screen area is not very wide, you might want to try the optional `toc-narrow` display option. For example, to use a narrower Table of Contents area that includes a smaller screen breakpoint:
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-01.md&toc-narrow=true  
-
-##### Including Code Blocks
-Using [Prismjs](https://prismjs.com/) code blocks with syntax highlighting is supported for the languages [included with Docsify](https://docsify.js.org/#/language-highlight?id=language-highlighting) and as well Bash, Go, Java, Kotlin, PHP, Python and Swift. To embed a code block use the Markdown standard of triple backticks and start the block with the name of the language, for example to embed a block of Javascript code with syntax highlight the following would be used:  
-
-<pre>
-```javascript
-function test() {
-  console.log("Hello world!");
-}
-```
-</pre>
-
-Which would then appear as:
-
-```javascript
-function test() {
-  console.log("Hello world!");
-}
-```
-
-##### Including External Markdown Content
-
-The content of external Markdown files can be embedded into Docisfy-This web pages with the following:
-
-```markdown
-[included Markdown from same source location](example.md ':include')
-```
-
-```markdown
-[included Markdown from URL](https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main/itworks.md ':include')
-```
-
-For additional examples of including external content, view [Docsify Embeded Files](https://docsify.js.org/#/embed-files?id=embed-files).
-
-##### Use of WikiLinks
-[WikiLinks format](https://help.obsidian.md/Linking+notes+and+files/Internal+links) for links and images are supported, as also found in the desktop editor [Obsidian](https://obsidian.md) and other platforms.  
-
-##### Display of AsciiDoc Files (file extension .adoc)
-The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) is possible by manually passing the relevant filenames within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc  
-
-You can support the display of AsciiDoc files in the Web Page Builder of your own instance of Docsify-This by locating the function `getAllowedFileExtensions()` within the `index.html` file and add the file extension '.adoc' to the `return` statement, for example `return ".md,.adoc";`.  
-
-##### Display of HedgeDocs Files
-The display of [HedgeDoc](https://hedgedoc.org/) files containing basic Markdown (as well as Mermaid and MathJax elements) is possible by manually using 'download' for the `homepage` URL parameter within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://docsify-this.net/?basePath=https://demo.hedgedoc.org/crN3ispNQdejWkUXXIXYQA&homepage=download  
-
-Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both (seen in split-screen view) and and rendered as a web page by Docsify-This https://docsify-this.net/?basePath=https://demo.hedgedoc.org&homepage=oisWMy9ZS36PE6TvYhJC4A/download&edit-link=https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both&toc=true&edit-link-text=Edit%20this%20Page%20in%20HedgeDoc  
-
-You can support HedgeDoc URLs (e.g. https://demo.hedgedoc.org/ip4SRxZYTEKa6JHr62XTiA) in the Web Page Builder of your own instance of Docsify-This by locating the line `var hedgedocInstances = '';` within the `index.html` file and include your HedgeDoc instances separated by commas, for example `var hedgedocInstances = 'demo.hedgedoc.org';`. Try out a demo instance of Docsify-This with support for demo.hedgedoc.org files at https://hibbitts-design.github.io/hedgedoc-docsify-this.  
-
-##### Use of Camel Case (e.g. camelCase) Format for URL Parameters
-You can use [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of hyphens for the names of Docsify-This URL parameters if prefered. For example, https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md and https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&tocHeadings=h2,h3&editLink=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md are equilivent.
-
-##### Use of New Web Editor GitHub.dev
-To use the new GitHub.dev web editor (currently in Beta) for 'Edit this Page' links, change `github.com` to `github.dev` for GitHub.com files entered into the Web Page Builder Markdown File URL field.
 
 ---
 
