@@ -1264,7 +1264,7 @@
               return; // Exit if basePath is present
             }
 
-            if (getURLParameterByName(['url-field', 'urlField']) || (window.location.href.includes('?') && !window.location.href.includes('?='))) {
+            if (getURLParameterByName(['url-field', 'urlField']) || (window.location.href.includes('?') && !window.location.href.includes('?=')  && !window.location.href.includes('?id='))) {
               var markdownFileURL = '';
               
               // Check if the URL has only a '?' followed by content, without any '='
