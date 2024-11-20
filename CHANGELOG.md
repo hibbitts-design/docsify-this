@@ -2,6 +2,9 @@
 
 ## [1.9.16] - XX/XX/2024
 
+**Improved:**
+* Updated ReadMe
+
 **Bugfix:**
 * More robust handling of of Web Page Builder custom settings
 

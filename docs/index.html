@@ -1264,6 +1264,7 @@
               return; // Exit if basePath is present
             }
 
+            // Check for valid URL parms or a URL-like pattern after a '?' by using RegEx
             if (getURLParameterByName(['url-field', 'urlField']) || (window.location.href.includes('?') && /[?&](url-field|urlField|https?:\/\/[^\s]+|www\.[^\s]+|[a-z0-9.-]+\.[a-z]{2,})/i.test(window.location.href))) {
               var markdownFileURL = '';
               
