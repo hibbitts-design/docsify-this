@@ -301,6 +301,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 * [pagination](#pagination)
 * [searchbox](#searchbox)
 * [submaxLevel](#subMaxLevel)
+* [svg-icons](#svg-icons)
 
 ##### coverpage
 Display a [Docsify custom coverpage](https://docsify.js.org/#/configuration?id=coverpage) with the optional **coverpage** parameter, for example:  
@@ -373,6 +374,10 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### subMaxLevel
 Set the maximum automatic table of contents header levels in Docsify custom Sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md&subMaxLevel=1
+
+##### svg-icons
+Use the SVG version of Font Awesome icons instead of Web Fonts with the optional **svg-icons** parameter (not included in the Advanced Web Page Builder), for example:  
+https://v2.preview.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-lms-content-pages/main&homepage=schedule.md&svg-icons=true
 
 ---
 
