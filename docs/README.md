@@ -1434,9 +1434,9 @@ https://docsify-this.net/assets/css/editor.css
 FontAwesome CSS:  
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
-**Enhanced Previews with Visual Studio Code**  
+**Enhanced Previews with Microsoft Visual Studio**  
 
-For an even closer visual representation of your Docsify-This pages in Visual Studio Code, do the following:
+For an even closer visual representation of your Docsify-This pages in Microsoft Visual Studio, do the following:
 
 1. Install and enable the [docsify-Preview](https://marketplace.visualstudio.com/items?itemName=dzylikecode.docsify-preview&ssr=false#overview) VSCode Extension
 2. Download and unzip the [Docsify-This GitHub repository](https://github.com/hibbitts-design/docsify-this)
