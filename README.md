@@ -1122,6 +1122,15 @@ https://docsify-this.net/assets/css/editor.css
 FontAwesome CSS:  
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
+**Enhanced Previews with Visual Studio Code**  
+
+For an even closer visual representation of your Docsify-This pages in Visual Studio Code, do the following:
+
+1. Install and enable the [docsify-Preview](https://marketplace.visualstudio.com/items?itemName=dzylikecode.docsify-preview&ssr=false#overview) VSCode Extension
+2. Download and unzip the [Docsify-This GitHub repository](https://github.com/hibbitts-design/docsify-this)
+3. Place the folder of Markdown files to be rendered by Docsify-This inside of the unzipped repository `docs` folder
+4. When viewing a Markdown file, right-click in the content area and select a **docsify Preview** option
+
 ---
 
 #### Loading Web Page Builder Custom Settings
