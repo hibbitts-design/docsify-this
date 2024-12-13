@@ -1443,7 +1443,7 @@ For an even closer visual representation of your Docsify-This pages in Microsoft
 3. Place the folder of Markdown files to be rendered by Docsify-This inside of the unzipped repository `docs` folder
 4. When viewing a Markdown file, right-click in the content area and select a **docsify Preview** option
 
-_TIP: If you change the VSCode setting for **Workbench › Editor: Show Tabs** to **none** then the docsify preview area will remain in place as you edit multiple Markdown files._
+_TIP: If you change the VSCode setting for **Workbench › Editor: Show Tabs** to **single** then the docsify preview area will remain in place as you edit multiple Markdown files._
 
 ---
 
