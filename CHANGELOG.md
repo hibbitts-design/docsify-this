@@ -4,6 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Updated example custom CSS for Moodle LMS
 
 **Bugfix:**
 * Restored missing Website logo support in Web Page Builder
