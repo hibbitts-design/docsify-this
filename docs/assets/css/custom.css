@@ -47,6 +47,9 @@ body .markdown-section {
     --sidebar-nav-link-color--active: #0F6CBF!important;
     --sidebar-nav-link-border-color--active: #0F6CBF!important;
     --link-color: #0F6CBF!important;
+    --link-color--hover: #03005D!important;
+    --link-text-decoration: none!important;
+    --link-text-decoration--hover: underline!important;
     --pagination-title-color: #0F6CBF!important;
 }
 */
