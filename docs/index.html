@@ -1510,7 +1510,7 @@
     // Credit to Beau Shaw for dymamic remote docsify technique
     // To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
     if (getURLParameterByName('basePath')) {
-      const params = new URLSearchParams(window.location.search);
+      const params = new URLSearchParams(window.location.search.replaceAll('&amp;', '&'));
       params.forEach((value, key) => {
         // TODO: Parse numbers?
 
