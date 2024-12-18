@@ -7,6 +7,7 @@
 
 **Bugfix:**
 * Restored missing Website logo support in Web Page Builder
+* Convert any '&amp;' encoded entities in URLs to '&'
 
 ## [1.9.16] - 11/25/2024
 
