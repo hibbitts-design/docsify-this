@@ -32,7 +32,7 @@ body .markdown-section {
 /* CSS to better visually match Docsify pages within Moodle LMS (uncomment to use) */
 /*
 body .markdown-section {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: system-ui,sans-serif;
     line-height: 1.5;
     font-size: 15px;
 }
