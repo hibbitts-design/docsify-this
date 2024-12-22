@@ -290,6 +290,10 @@ The following additional URL parameters are available for use in Docsify-This UR
 * [dark-mode](#dark-mode)
 * [edit-link-emoji](#edit-link-emoji)
 * [link-color-dark-mode](#link-color-dark-mode)
+* [link-color-hover](#link-color-hover)
+* [link-color-hover-dark-mode](#link-color-hover-dark-mode)
+* [link-text-decoration](#link-text-decoration)
+* [link-text-decoration-hover](#link-text-decoration-hover)
 * [loadFavicon](#loadFavicon)
 * [loadFooter](#loadFooter)
 * [loadNavbar](#loadNavbar)
@@ -330,6 +334,22 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### link-color-dark-mode
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000&dark-mode=true&link-color-dark-mode=FF9E9E.
+
+##### link-color-hover
+Set a custom hover color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-hover-color** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-hover-color=CC0000.
+
+##### link-color-hover-dark-mode
+Set a custom hover color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-hover-color-dark-mode** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000&dark-mode=true&link-hover-color-dark-mode=FF9E9E.
+
+##### link-text-decoration
+Set a custom text decoration for all links, with the optional **link-text-decoration** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-text-decoration=none
+
+##### link-text-decoration-hover
+Set a custom hover text decoration for all links, with the optional **link-text-decoration-hover** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-text-decoration-hover=underline
 
 ##### loadFavicon
 You can set a custom Favicon from the image file passed from the optional **loadFavicon** parameter, for example:  
