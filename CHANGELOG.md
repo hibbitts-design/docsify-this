@@ -1,14 +1,10 @@
 # Changelog
 
-## [1.10.0] - XX/XX/XXXX
-
-**New:**
-* Additional link appearance and behavior Web Page Builder options and URL parameters (`link-color-hover`,  `link-color-hover-dark-mode`, `link-text-decoration`, `link-text-decoration-hover` and `external-link-target`)
+## [1.9.17] - XX/XX/XXXX
 
 **Improved:**
 * Updated ReadMe
 * Updated example custom CSS for Moodle LMS
-* Updated to latest verified Docsify preview build (including Marked 4.2.12)
 
 **Bugfix:**
 * Restored missing Website logo support in Web Page Builder
