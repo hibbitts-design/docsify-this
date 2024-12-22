@@ -385,6 +385,7 @@
           if (hexCode === '') {
             hexCode = '#0374B5';
             document.getElementById("linkcolor").value = hexCode;
+            document.getElementById("linkcolorpreview").style.visibility = "visible";
             document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
             document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
           }
@@ -460,31 +461,6 @@
             URLparms = URLparms + `&page-title=` + pageTitle;
           }
 
-          var getlinktextdecoration = document.getElementById("linktextdecoration");
-          var linktextdecoration = getlinktextdecoration.value;
-          if (!(linktextdecoration === 'underline')) {
-            URLparms = URLparms + `&link-text-decoration=` + linktextdecoration;
-          }
-
-          var getColor = document.getElementById("linkhovercolor");
-          var hexCode = getColor.value;
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "")) {
-            URLparms = URLparms + `&link-color-hover=` + hexCode;
-          }
-
-          var linkhovertextdecoration = document.getElementById("linkhovertextdecoration").value;
-          if (!(linkhovertextdecoration === 'none')) {
-            URLparms = URLparms + `&link-text-decoration-hover=` + linkhovertextdecoration;
-          }
-
-          var externalLinkTarget = document.getElementById("externalLinkTarget").value;
-          if (!(externalLinkTarget === '_top')) {
-            URLparms = URLparms + `&externalLinkTarget=` + externalLinkTarget;
-          }
-
           const cb17 = document.querySelector('#pagination');
           if (cb17.checked) {
             var URLparms = URLparms + `&pagination=true`;
@@ -510,6 +486,7 @@
           if (hexCode === '') {
             hexCode = '#6C8A9A';
             document.getElementById("coverpagecolor").value = hexCode;
+            document.getElementById("coverpagecolorpreview").style.visibility = "visible";
             document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
             document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
           }
@@ -530,6 +507,7 @@
           if (hexCode === '') {
             hexCode = '#0374B5';
             document.getElementById("linkcolordarkmode").value = hexCode;
+            document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
             document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
             document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
           }
@@ -540,20 +518,12 @@
             URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
           }
 
-          var getColor = document.getElementById("linkhovercolordarkmode");
-          var hexCode = getColor.value;
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "")) {
-            URLparms = URLparms + `&link-color-hover-dark-mode=` + hexCode;
-          }
-
           var getColor = document.getElementById("coverpagecolordarkmode");
           var hexCode = getColor.value;
           if (hexCode === '') {
             hexCode = '#262D30';
             document.getElementById("coverpagecolordarkmode").value = hexCode;
+            document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
             document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
             document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
           }
@@ -648,10 +618,14 @@
         document.getElementById(inputId).value = hexCode.slice(0, -1);
       }
 
-      if (!isHexadecimalColor(hexCode.substring(1)) && !isHexadecimalColor(document.getElementById(inputId).value)) {
-        const previewElement = document.getElementById(previewId);
-        previewElement.style.border = "4px solid transparent";
-        previewElement.style.backgroundColor = "transparent";
+      if (isHexadecimalColor(hexCode.substring(1))) {
+        document.getElementById(previewId).style.visibility = "visible";
+      } else {
+        if (isHexadecimalColor(document.getElementById(inputId).value)) {
+          document.getElementById(previewId).style.visibility = "visible";
+        } else {
+          document.getElementById(previewId).style.visibility = "hidden";
+        }
       }
 
       if (!(hexCode.charAt(0) == "#")) {
@@ -676,6 +650,7 @@
       document.getElementById("fontsize").value = '1.125';
       document.getElementById("lineheight").value = '1.4';
       document.getElementById("linkcolor").value = '#0374B5';
+      document.getElementById("linkcolorpreview").style.visibility = "visible";
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
       document.getElementById("editLinkText").value = 'Edit this Page';
@@ -697,26 +672,21 @@
       document.getElementById("enableSidebarsearch").checked = false;
       document.getElementById("subMaxLevel").value = 2;
       document.getElementById("pageTitle").value = '';
-      document.getElementById("linktextdecoration").value = 'underline';
-      document.getElementById("linkhovercolor").value = '';
-      document.getElementById("linkhovercolorpreview").style.border = "4px solid transparent";
-      document.getElementById("linkhovercolorpreview").style.backgroundColor = "transparent";
-      document.getElementById("linkhovertextdecoration").value = 'none';
       document.getElementById("pagination").checked = false;
       document.getElementById("mergeNavbar").checked = false;
       document.getElementById("headerweight").value = '400';
       document.getElementById("zoomimages").checked = false;
       document.getElementById("coverpagecolor").value = '#6C8A9A';
+      document.getElementById("coverpagecolorpreview").style.visibility = "visible";
       document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
       document.getElementById("enableDarkmode").checked = false;
       document.getElementById("linkcolordarkmode").value = '#0374B5';
+      document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
       document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
-      document.getElementById("linkhovercolordarkmode").value = '';
-      document.getElementById("linkhovercolordarkmodepreview").style.border = "4px solid transparent";
-      document.getElementById("linkhovercolordarkmodepreview").style.backgroundColor = "transparent";
       document.getElementById("coverpagecolordarkmode").value = '#262D30';
+      document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
       document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
       document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
     }
@@ -761,10 +731,6 @@
           }
         }
 
-        const linkHoverColorDarkMode = getURLParameterByName(['link-color-hover-dark-mode', 'linkColorHoverDarkMode'], null, null, window.location.href, true);
-        if (linkHoverColorDarkMode !== false) {
-          document.documentElement.style.setProperty('--link-color--hover',  '#' + linkHoverColorDarkMode);
-        }
         const coverPageColorDarkMode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
 
         if (coverPageColorDarkMode !== false) {
@@ -786,10 +752,6 @@
           document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
         }
 
-        const linkHoverColor = getURLParameterByName(['link-color-hover', 'linkColorHover'], null, null, window.location.href, true);
-        if (linkHoverColor !== false) {
-          document.documentElement.style.setProperty('--link-color--hover',  '#' + linkHoverColor);
-        }
         const coverPageColor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
 
         if (coverPageColor !== false) {
@@ -1339,10 +1301,11 @@
             if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true || getURLParameterByName(['browser-tab-title', 'browserTabTitle', 'font-family', 'fontFamily', 'font-size', 'fontSize', 'line-height', 'lineHeight', 'link-color', 'linkColor', 'edit-link-text', 'editLinkText', 'edit-link-top', 'editLinkTop', 'hide-credits', 'hideCredits', 'toc-headings', 'tocHeadings', 'toc-narrow', 'tocNarrow', 'maxLevel', 'hypothesis'])) {
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
+              document.getElementById("pageappearanceoptionsheader").style.display = "none";
               theDiv.style.display = "block";
             }
 
-            if (getURLParameterByName('advanced') === true ) {
+            if (getURLParameterByName('advanced') === true || getURLParameterByName(['page-title', 'pageTitle', 'header-weight', 'headerWeight', 'zoom-images', 'zoomImages', 'loadFavicon', 'coverpage', 'loadSidebar', 'loadNavbar', 'loadFooter', 'mergeNavbar', 'name', 'subMaxLevel', 'searchbox', 'pagination', 'coverpage-color', 'coverpageColor', 'dark-mode', 'darkMode', 'link-color-dark-mode', 'linkColorDarkMode', 'coverpage-color-dark-mode', 'coverpageColorDarkMode'])) {
               document.getElementById("btn_2").style.display = "none";
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
@@ -1393,6 +1356,7 @@
             if (linkcolor) {
               linkcolor = '#' + linkcolor;
               document.getElementById('linkcolor').value = linkcolor;
+              document.getElementById("linkcolorpreview").style.visibility = "visible";
               document.getElementById("linkcolorpreview").style.borderColor = linkcolor;
               document.getElementById("linkcolorpreview").style.backgroundColor = linkcolor;
             }
@@ -1439,29 +1403,6 @@
             pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
             if (pageTitle) {
               document.getElementById('pageTitle').value = decodeURI(pageTitle);
-            }
-
-            linktextdecoration = getURLParameterByName(['link-text-decoration', 'linkTextDecoration'], null, null, window.location.href, true);
-            if (linktextdecoration) {
-              document.getElementById('linktextdecoration').value = linktextdecoration;
-            }
-
-            linkhovercolor = getURLParameterByName(['link-color-hover', 'linkColorHover'], null, null, window.location.href, true);
-            if (linkhovercolor) {
-              linkhovercolor = '#' + linkhovercolor;
-              document.getElementById('linkhovercolor').value = linkhovercolor;
-              document.getElementById("linkhovercolorpreview").style.borderColor = linkhovercolor;
-              document.getElementById("linkhovercolorpreview").style.backgroundColor = linkhovercolor;
-            }
-
-            linktextdecorationhover = getURLParameterByName(['link-text-decoration-hover', 'linkTextDecorationHover'], null, null, window.location.href, true);
-            if (linktextdecorationhover) {
-              document.getElementById('linkhovertextdecoration').value = linktextdecorationhover;
-            }
-
-            externalLinkTarget = getURLParameterByName(['external-link-target', 'externalLinkTarget'], null, null, window.location.href, true);
-            if (externalLinkTarget) {
-              document.getElementById('externalLinkTarget').value = externalLinkTarget;
             }
 
             headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
@@ -1524,6 +1465,7 @@
             if (coverpagecolor) {
               coverpagecolor = '#' + coverpagecolor;
               document.getElementById('coverpagecolor').value = coverpagecolor;
+              document.getElementById("coverpagecolorpreview").style.visibility = "visible";
               document.getElementById("coverpagecolorpreview").style.borderColor = coverpagecolor;
               document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
             }
@@ -1536,22 +1478,16 @@
             if (linkcolordarkmode) {
               linkcolordarkmode = '#' + linkcolordarkmode;
               document.getElementById('linkcolordarkmode').value = linkcolordarkmode;
+              document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
               document.getElementById("linkcolordarkmodepreview").style.borderColor = linkcolordarkmode;
               document.getElementById("linkcolordarkmodepreview").style.backgroundColor = linkcolordarkmode;
-            }
-
-            linkhovercolordarkmode = getURLParameterByName(['link-color-hover-dark-mode', 'linkColorHoverDarkMode'], null, null, window.location.href, true);
-            if (linkhovercolordarkmode) {
-              linkhovercolordarkmode = '#' + linkhovercolordarkmode;
-              document.getElementById('linkhovercolordarkmode').value = linkhovercolordarkmode;
-              document.getElementById("linkhovercolordarkmodepreview").style.borderColor = linkhovercolordarkmode;
-              document.getElementById("linkhovercolordarkmodepreview").style.backgroundColor = linkhovercolordarkmode;
             }
 
             coverpagecolordarkmode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
             if (coverpagecolordarkmode) {
               coverpagecolordarkmode = '#' + coverpagecolordarkmode;
               document.getElementById('coverpagecolordarkmode').value = coverpagecolordarkmode;
+              document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
               document.getElementById("coverpagecolordarkmodepreview").style.borderColor = coverpagecolordarkmode;
               document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = coverpagecolordarkmode;
             }
@@ -1717,35 +1653,35 @@
     }
   </script>
 
-  <!-- Font Awesome Plugin -->
-  <script>
-    if (getURLParameterByName('svg-icons', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
+<!-- Font Awesome Plugin -->
+<script>
+  if (getURLParameterByName('svg-icons', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
 
-      // Create the link element
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.type = "text/css";
-      link.href = "assets/vendor/fontawesome/css/svg-with-js.css";
-      // Append the link to the head
-      document.head.appendChild(link);
-
-      // Create the script element
-      const script = document.createElement("script");
-      script.src = "assets/vendor/fontawesome/js/all.js";
-      script.setAttribute("data-auto-replace-svg", "nest");
-      script.async = true; // Optional: load asynchronously
-      // Append the script to the body
-      document.body.appendChild(script);
+    // Create the link element
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = "assets/vendor/fontawesome/css/svg-with-js.css";
+    // Append the link to the head
+    document.head.appendChild(link);
+    
+    // Create the script element
+    const script = document.createElement("script");
+    script.src = "assets/vendor/fontawesome/js/all.js";
+    script.setAttribute("data-auto-replace-svg", "nest");
+    script.async = true; // Optional: load asynchronously
+    // Append the script to the body
+    document.body.appendChild(script);
 
     } else {
 
-      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/fontawesome.css" />');
-      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/brands.css" />');
-      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/regular.css" />');
-      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/solid.css" />');
-
-    }
-  </script>
+    document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/fontawesome.css" />');
+    document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/brands.css" />');
+    document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/regular.css" />');
+    document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/solid.css" />');
+    
+  }
+</script>
 
   <!-- Mermaid Diagrams Plugin v2 -->
   <script type="module">
@@ -1771,7 +1707,7 @@
   <!-- <script src="unpkg.com/docsify-asciidoc@^1/dist/main.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-asciidoc.js"></script>
 
-  <!-- Check for headerweight, fontfamily, fontsize, lineheight, link styles, theme colors and darkmode parameters -->
+  <!-- Check for headerweight, fontfamily, fontsize, lineheight, theme colors, and darkmode parameters -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
 
@@ -1805,18 +1741,6 @@
       lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
       if (!(lineheight === false)) {
         document.documentElement.style.setProperty('--base-line-height', lineheight);
-      }
-
-      // Change link text decoration if link-text-decoration parameter present
-      linktextdecoration = getURLParameterByName(['link-text-decoration', 'linkTextDecoration'], null, null, window.location.href, true);
-      if (!(linktextdecoration === false)) {
-        document.documentElement.style.setProperty('--link-text-decoration', linktextdecoration);
-      }
-
-      // Change link hover text decoration if link-text-decoration-hover parameter present
-      linkhovertextdecoration = getURLParameterByName(['link-text-decoration-hover', 'linkTextDecorationHover'], null, null, window.location.href, true);
-      if (!(linkhovertextdecoration === false)) {
-        document.documentElement.style.setProperty('--link-text-decoration--hover', linkhovertextdecoration);
       }
 
       updateThemeModeLinkColors();

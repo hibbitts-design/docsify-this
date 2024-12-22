@@ -1099,7 +1099,6 @@ input[type="url"],
 input[type="color"] {
   overflow: hidden;
   background-color: #white;
-  height: 1.9rem;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 6px;
@@ -1226,7 +1225,7 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuilder input[type="number"] {
   border: 1px solid #000;
-  height: 1.9rem;
+  height: 2rem;
   padding-left: 0.3rem;
   margin-top: 4px;
   margin-bottom: 6px;
@@ -1280,7 +1279,7 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuilder input[type="number"] {
   border: 1px solid #000;
-  height: 1.9rem;
+  height: 2rem;
   padding-left: 0.3rem;
   margin-top: 4px;
   margin-bottom: 6px;
@@ -1304,8 +1303,8 @@ span #docsifythisurlfield {
 #docsifythisurlbuilder select {
   color: #323232;
   border: 1px solid #757575;
-  height: 1.9rem;
-  line-height: 1.9rem;
+  height: 2rem;
+  line-height: 2rem;
   -webkit-appearance: menulist-button;
 }
 
@@ -1319,19 +1318,7 @@ span #docsifythisurlfield {
   width: 30px;
   border: solid 4px #0374b5;
   background-color: #0374b5;
-  border-radius: 3px;
-  outline: solid 1px #777777;
-  outline-offset: 0px;
-  margin-left: 4px;
-}
-
-#docsifythisurlbuilder #linkhovercolorpreview {
-  width: 30px;
-  border: solid 4px transparent;
-  background-color: transparent;
-  border-radius: 3px;
-  outline: solid 1px #777777;
-  outline-offset: 0px;
+  border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
 
@@ -1339,9 +1326,7 @@ span #docsifythisurlfield {
   width: 30px;
   border: solid 4px #6c8a9a;
   background-color: #6c8a9a;
-  border-radius: 3px;
-  outline: solid 1px #777777;
-  outline-offset: 0px;
+  border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
 
@@ -1349,19 +1334,7 @@ span #docsifythisurlfield {
   width: 30px;
   border: solid 4px #0374b5;
   background-color: #0374b5;
-  border-radius: 3px;
-  outline: solid 1px #777777;
-  outline-offset: 0px;
-  margin-left: 4px;
-}
-
-#docsifythisurlbuilder #linkhovercolordarkmodepreview {
-  width: 30px;
-  border: solid 4px transparent;
-  background-color: transparent;
-  border-radius: 3px;
-  outline: solid 1px #777777;
-  outline-offset: 0px;
+  border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
 
@@ -1369,9 +1342,7 @@ span #docsifythisurlfield {
   width: 30px;
   border: solid 4px #262d30;
   background-color: #262d30;
-  border-radius: 3px;
-  outline: solid 1px #777777;
-  outline-offset: 0px;
+  border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
 
