@@ -1568,7 +1568,27 @@ span #docsifythisurlfield {
     color: white;
   }
 
+  #siteName {
+    background-color: #273338;
+    color: white;
+  }
+
+  #siteLogo {
+    background-color: #273338;
+    color: white;
+  }
+  
   #coverpagecolor {
+    background-color: #273338;
+    color: white;
+  }
+
+  #linkhovercolor {
+    background-color: #273338;
+    color: white;
+  }
+
+  #linkhovercolordarkmode {
     background-color: #273338;
     color: white;
   }
