@@ -673,7 +673,7 @@
       document.getElementById("browserTabTitle").value = 'Published by Docsify-This';
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
-      document.getElementById("fontsize").value = '1.125';
+      document.getElementById("fontsize").value = '18px';
       document.getElementById("lineheight").value = '1.4';
       document.getElementById("linkcolor").value = '#0374B5';
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
@@ -1797,7 +1797,10 @@
       // Change body font size if fontSize parameter present
       fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
-        fontsize = fontsize + 'rem';
+        if (!(fontsize.includes("px"))) {
+          // Append 'rem' if no unit is specified  
+          fontsize = fontsize + 'rem';
+        }
         document.documentElement.style.setProperty('--base-font-size', fontsize);
       }
 
