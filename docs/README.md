@@ -83,7 +83,6 @@ Page layout:
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
     <option value="18px">18px</option>
     <option disabled="disabled">----</option>
-    <option value="12px">12px</option>
     <option value="14px">14px</option>
     <option value="15px">15px</option>
     <option value="16px">16px</option>
