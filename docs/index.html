@@ -1376,9 +1376,7 @@
 
             fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
             if (fontfamily) {
-              const urlParams = new URLSearchParams(window.location.search);
-              const fontFamily = urlParams.get('font-family');
-              const plusToSpace = fontFamily.replace(/\+/g, '%20');
+              const plusToSpace = fontfamily.replace(/\+/g, '%20');
               const decodedString = decodeURIComponent(plusToSpace);
               document.getElementById('fontfamily').value = encodeURI(decodedString);
             }
