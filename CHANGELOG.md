@@ -4,6 +4,7 @@
 
 **New:**
 * Additional link appearance and behavior Web Page Builder options and URL parameters (`link-color-hover`,  `link-color-hover-dark-mode`, `link-text-decoration`, `link-text-decoration-hover` and `external-link-target`)
+* Initial offering of pre-configured styles for embedding content into popular LMSs (Learning Management Systems): http://embed-canvas.docsify-this.net, http://embed-moodle.docsify-this.net, http://embed-brightspace.docsify-this.net and http://embed-sakai.docsify-this.net
 
 **Improved:**
 * Updated ReadMe
