@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.10.0] - XX/XX/XXXX
+## [1.10.0] - 01/01/2025🎉
 
 **New:**
 * Additional link appearance and behavior Web Page Builder options and URL parameters (`link-color-hover`,  `link-color-hover-dark-mode`, `link-text-decoration`, `link-text-decoration-hover` and `external-link-target`)
