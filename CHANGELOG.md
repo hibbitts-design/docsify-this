@@ -9,7 +9,7 @@
 **Improved:**
 * Updated ReadMe
 * Updated example custom CSS for Moodle LMS
-* Updated to latest verified Docsify preview build (including Marked 4.2.12)
+* Updated to latest stable Docsify 4.x preview build (including Marked 4.2.12)
 * Minor Web Page Builder UI updates
 * Font size can now be set in px as well as rem units via URL parameter
 
