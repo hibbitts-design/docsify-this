@@ -1557,6 +1557,14 @@ For example, the following URL will display the Advanced Web Page Builder, with 
 
 The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
+##### Pre-configured Settings for Embedding Docsify-This Content
+
+- Popular Learning Management System (LMS) content styles for Docsify-This:
+  - [Brightspace Config](http://load-brightspace.docsify-this.net)
+  - [Canvas Config](http://load-canvas.docsify-this.net)
+  - [Moodle Config](http://load-moodle.docsify-this.net)
+  - [Sakai Config](http://load-sakai.docsify-this.net)
+
 ---
 
 #### Troubleshooting
