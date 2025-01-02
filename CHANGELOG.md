@@ -4,6 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Support horizontal scrolling in code blocks
 
 ## [1.10.0] - 01/01/2025🎉
 
