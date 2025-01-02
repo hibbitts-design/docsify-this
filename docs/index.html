@@ -1800,7 +1800,7 @@
       fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
         if (!(fontsize.includes("px"))) {
-          // Append 'rem' if no unit is specified  
+          // Append 'rem' if no unit is specified
           fontsize = fontsize + 'rem';
         }
         document.documentElement.style.setProperty('--base-font-size', fontsize);
