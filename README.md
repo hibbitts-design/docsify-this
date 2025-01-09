@@ -88,7 +88,7 @@ Have you tried out Docsify-This? Share your [feedback about Docsify-This](https:
 
 #### What Problem Does Docsify-This Solve?
 
-Docsify-This provides a simple and quick way to transform and style [Markdown](https://www.markdownguide.org/basic-syntax/) content into visually appealing web pages, without requiring a website setup, build process, or in-depth technical knowledge.  
+Docsify-This provides a quick way to transform and style [Markdown](https://www.markdownguide.org/basic-syntax/) content into visually appealing web pages without requiring a website setup, build process, or in-depth technical knowledge. 
 
 With Docsify-This you can:
 
