@@ -614,7 +614,6 @@
 .markdown-section summary {
   cursor: pointer;
   color: var(--link-color);
-  margin-bottom: -8px;
   padding: 0;
 
   h1,
