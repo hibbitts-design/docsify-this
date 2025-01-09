@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.10.1] - XX/XX/XXXX
+## [1.10.1] - XX/XX/2025
 
 **Improved:**
 * Updated ReadMe
