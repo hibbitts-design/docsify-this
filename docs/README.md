@@ -323,7 +323,7 @@ With Docsify-This you can:
 - Maintain full control over your content by keeping files stored in their original locations, such as GitHub or Codeberg
 - Customize web pages visually with an intuitive, point-and-click Web Page Builder, eliminating the need for technical expertise or costly development efforts
 - Encourage collaboration with automatic ‘Edit this Page’ links for Markdown files hosted on GitHub or Codeberg, making it easy for contributors to suggest improvements
-- Embed Markdown or HTML seamlessly into platforms like LMS or CMS, enabling flexible content presentation and cross-platform integration
+- Embed onstraint-free Markdown/HTML seamlessly into other platforms (LMS, CMS, etc.), enabling flexible content presentation and cross-platform integration
 - Streamline content reuse by embedding Markdown files across platforms without duplication, reducing redundant workflows and boosting efficiency
 - Tailor the appearance of embedded content dynamically using URL parameters, adapting it to suit the look and feel of each platform
 
