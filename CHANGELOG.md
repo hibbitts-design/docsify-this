@@ -2,6 +2,9 @@
 
 ## [1.10.1] - XX/XX/2025
 
+**New:**
+* Always on option for dark theme
+
 **Improved:**
 * Updated ReadMe
 * Support horizontal scrolling in code blocks
