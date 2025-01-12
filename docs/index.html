@@ -48,10 +48,10 @@
     href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple-dark.css">-->
 
   <link rel="stylesheet" 
-    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-theme" disabled/>
+    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode" disabled/>
 
   <link rel="stylesheet" media="(prefers-color-scheme: dark)"
-    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-theme-auto"/>
+    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode-auto"/>
 
   <link rel="stylesheet" href="assets/css/theme.css">
 
@@ -711,7 +711,7 @@
       document.getElementById("coverpagecolor").value = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
-      document.getElementById("enableDarkmode").value = false;
+      document.getElementById("enableDarkmode").value = 'false';
       document.getElementById("linkcolordarkmode").value = '#0374B5';
       document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
@@ -1021,7 +1021,7 @@
               const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
               if (!(embeds.length === 0)) {
                 var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
-                if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && enabledarkmode === 'auto') || enabledarkmode === 'on') {
+                if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (enabledarkmode === 'auto') || (enabledarkmode === true)) || enabledarkmode === 'on') {
                   // dark mode
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
@@ -1838,12 +1838,12 @@
       // Enable dark theme CSS files loaded if dark-mode parameter is true
       var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
       if (enabledarkmode === 'auto' || enabledarkmode === 'true' || darkmode === 'auto' ) {
-        document.querySelector('link[data-sheet="dark-theme-auto"]').disabled = false;
+        document.querySelector('link[data-sheet="dark-mode-auto"]').disabled = false;
       } else if (enabledarkmode === 'on' || darkmode === 'on' ) {
-        document.querySelector('link[data-sheet="dark-theme"]').disabled = false;
+        document.querySelector('link[data-sheet="dark-mode"]').disabled = false;
       } else {
-        document.querySelector('link[data-sheet="dark-theme"]').disabled = true;
-        document.querySelector('link[data-sheet="dark-theme-auto"]').disabled = true;
+        document.querySelector('link[data-sheet="dark-mode"]').disabled = true;
+        document.querySelector('link[data-sheet="dark-mode-auto"]').disabled = true;
       }
 
     }

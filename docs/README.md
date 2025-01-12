@@ -237,11 +237,11 @@ Page layout:
 <hr>
 
 <div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
-  <label for="enableDarkmode">Dark mode:</label>
+  <label for="enableDarkmode">Dark theme mode:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="enableDarkmode" name="enableDarkmode">
-    <option value="false">Always Off</option>
+    <option value="false">Off</option>
     <option disabled="disabled">----</option>
-    <option value="on">Always On</option>
+    <option value="on">On</option>
     <option value="auto">Match System Setting</option>
   </select>
 </div></div>
@@ -575,7 +575,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### dark-mode
 
-Always enable dark theme or automatically switch light/dark theme based on system OS-level preference with the optional **dark-mode** parameter, for example:  
+Enable dark theme or automatically switch light/dark theme based on system OS-level preference with the optional **dark-mode** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=on
 
 ##### edit-link-emoji
