@@ -524,7 +524,7 @@
 
           var getenabledarkmode = document.getElementById('enableDarkmode').value;
           if (!(getenabledarkmode == "false")) {
-            var URLparms = URLparms + `&dark-mode=` + getenabledarkmode
+            var URLparms = URLparms + `&dark-theme=` + getenabledarkmode
           }
 
           var getColor = document.getElementById("linkcolordarkmode");
@@ -711,7 +711,7 @@
       document.getElementById("coverpagecolor").value = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
-      document.getElementById("enableDarkmode").value = false;
+      document.getElementById("enableDarkmode").value = 'false';
       document.getElementById("linkcolordarkmode").value = '#0374B5';
       document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
@@ -743,7 +743,7 @@
 
     function updateThemeModeLinkColors() {
       // Update link colors based on current theme mode
-      const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
+      const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode','dark-theme', 'darkTheme'], null, null, window.location.href, true) || darkmode;
 
       if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && darkModeEnabled === 'auto') || darkModeEnabled === 'on') {
         // dark mode
@@ -1020,8 +1020,8 @@
               /* JS to change Embedly cards to light or dark theme based on system theme */
               const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
               if (!(embeds.length === 0)) {
-                var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
-                if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && enabledarkmode === 'auto') || enabledarkmode === 'on') {
+                var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode','dark-theme', 'darkTheme'], null, null, window.location.href, true);
+                if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (enabledarkmode === 'auto') || (enabledarkmode === true)) || enabledarkmode === 'on') {
                   // dark mode
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
@@ -1532,7 +1532,7 @@
               document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
             }
 
-            enableDarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
+            enableDarkmode = getURLParameterByName(['dark-mode', 'darkMode','dark-theme', 'darkTheme'], null, null, window.location.href, true);
             if (enableDarkmode) {
               if (enableDarkmode === 'true') {
                 enableDarkmode = 'auto';
@@ -1836,7 +1836,7 @@
       updateThemeModeLinkColors();
 
       // Enable dark theme CSS files loaded if dark-mode parameter is true
-      var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
+      var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode','dark-theme', 'darkTheme'], null, null, window.location.href, true);
       if (enabledarkmode === 'auto' || enabledarkmode === 'true' || darkmode === 'auto' ) {
         document.querySelector('link[data-sheet="dark-theme-auto"]').disabled = false;
       } else if (enabledarkmode === 'on' || darkmode === 'on' ) {
