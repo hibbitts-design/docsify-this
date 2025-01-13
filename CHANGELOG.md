@@ -11,6 +11,9 @@
 * Adjusted bottom margin for summary elements
 * Various Web Page Builder UI updates
 
+**Bugfix:**
+* Fixed URL parameter handling of dark mode colors for links and link hovers
+
 ## [1.10.0] - 01/01/2025🎉
 
 **New:**
