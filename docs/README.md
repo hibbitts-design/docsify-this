@@ -52,7 +52,7 @@ Page layout:
 
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
-<h3>Page Style and Behavior</h3>
+<h3>Page Styles and Behavior</h3>
 
 <hr>
 
@@ -174,7 +174,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;">Link hover color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page link hover color for dark theme" type="text" maxlength="7" size="8" value="" id="linkhovercolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkhovercolordarkmode', 'linkhovercolordarkmodepreview');" data-coloris><span id="linkhovercolordarkmodepreview"></span></div>
 
-<h3>Link Style and Behavior</h3>
+<h3>Link Styles and Behavior</h3>
 
 <hr>
 
@@ -216,7 +216,7 @@ Page layout:
 
 </div>
 
-<h3>Custom Browser tab and Page Title</h3>
+<h3>Custom Page Titles</h3>
 
 <hr>
 
