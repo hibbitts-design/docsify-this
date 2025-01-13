@@ -207,13 +207,13 @@ Page layout:
 
 </div>
 
-<h3>Add Title to Page</h3>
+<h3>Custom Page Title</h3>
 
 <hr>
 
 <div class="docsifythisurlbuilderoptionsline">Title added to the top of page as H1 level header:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Title added to the top of page as H1 level header" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
-<h3>Docsify Custom Files</h3>
+<h3>Custom Docsify Files</h3>
 
 <hr>
 
@@ -224,7 +224,7 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadfavicon"  unchecked><label for="loadfavicon">Favicon (<code>favicon.png</code>)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomfooter" unchecked><label for="loadcustomfooter">Footer (<code>_footer.md</code>)</label></div>
 
-<h3>Docsify Custom Sidebar Options</h3>
+<h3>Custom Docsify Sidebar Options</h3>
 
 <hr>
 
@@ -238,13 +238,13 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination" unchecked><label for="pagination">Enable pagination buttons in page content area (Docsify custom Sidebar required)  </label></div>
 
-<h3>Docsify Custom Navbar Options</h3>
+<h3>Custom Docsify Navbar Options</h3>
 
 <hr>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="mergeNavbar" unchecked><label for="mergeNavbar">Move Navbar items to the top of the Sidebar on smaller screens</label></div>
 
-<h3>Docsify Custom Coverpage Colors</h3>
+<h3>Custom Docsify Coverpage Colors</h3>
 
 <hr>
 
