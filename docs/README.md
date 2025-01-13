@@ -147,6 +147,12 @@ Page layout:
 
 <div id="docsifythisurlbuilderoptionsDiv2" style='margin-top:40px;display: none'>
 
+<h3>Optional Page Title</h3>
+
+<hr>
+
+<div class="docsifythisurlbuilderoptionsline">Title added to the top of page as H1 level header:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Title added to the top of page as H1 level header" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
+
 <h3>Dark Theme Mode and Link Colors</h3>
 
 <hr>
@@ -206,12 +212,6 @@ Page layout:
 </select></div>
 
 </div>
-
-<h3>Add Title to Page</h3>
-
-<hr>
-
-<div class="docsifythisurlbuilderoptionsline">Title added to the top of page as H1 level header:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Title added to the top of page as H1 level header" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
 <h3>Docsify Custom Files</h3>
 
