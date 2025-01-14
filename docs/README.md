@@ -334,7 +334,7 @@ What do you think about Docsify-This so far? Help shape its direction by sharing
 
 #### What Problem Does Docsify-This Solve?
 
-Docsify-This provides a quick way to transform and style [Markdown](https://www.markdownguide.org/basic-syntax/) content into visually appealing web pages without requiring a website setup, build process, or in-depth technical knowledge.  
+Docsify-This provides a quick way to transform and style [Markdown](https://www.markdownguide.org/basic-syntax/) content into visually appealing web pages without requiring a website setup, build process, or in-depth technical knowledge.
 
 With Docsify-This you can:
 
@@ -700,8 +700,7 @@ iFrame code example, including URL parameters to seamlessly match Docsify-This c
     src="https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=home.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=16px&hide-credits=true"
     width="800px"
     height="1400px"
-    allowfullscreen="allowfullscreen"
-  ></iframe>
+    allowfullscreen="allowfullscreen"></iframe>
 </p>
 ```
 
@@ -1017,7 +1016,8 @@ The following CSS classes are available when authoring your own Markdown content
 
 ```html
 <span class="badge" style="--badge-bg-color: #0164db;">
-  Tue Jun 12th 11:59pm PDT</span>
+  Tue Jun 12th 11:59pm PDT</span
+>
 ```
 
 <span class='badge' style='--badge-bg-color: #e7c500; --badge-text-color: #000;'> Example Badge with Custom Background and Text Color</span>
@@ -1025,9 +1025,9 @@ The following CSS classes are available when authoring your own Markdown content
 ```html
 <span
   class="badge"
-  style="--badge-bg-color: #e7c500; --badge-text-color: #000;"
+  style="--badge-bg-color: #e7c500; --badge-text-color: #000;">
+  Tue Jun 12th 11:59pm PDT</span
 >
-  Tue Jun 12th 11:59pm PDT</span>
 ```
 
 <span class='badge'> [Example Badge with Link](https://www.timeanddate.com/worldclock/fixedtime.html?msg=CMPT-363+Blackboard+Mini-lectures+and+Activities&iso=20220516T1430&p1=256&ah=1&am=50)</span>
@@ -1035,7 +1035,8 @@ The following CSS classes are available when authoring your own Markdown content
 ```html
 <span class="badge">
   [Tue May 16 2:30pm
-  PT](https://www.timeanddate.com/worldclock/fixedtime.html?msg=CMPT-363+Blackboard+Mini-lectures+and+Activities&iso=20220516T1430&p1=256&ah=1&am=50)</span>
+  PT](https://www.timeanddate.com/worldclock/fixedtime.html?msg=CMPT-363+Blackboard+Mini-lectures+and+Activities&iso=20220516T1430&p1=256&ah=1&am=50)</span
+>
 ```
 
 ##### banner-image
@@ -1073,7 +1074,8 @@ Cropped to height of 350px on large screens, 175px on small screens.
   class="button"
   href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip"
   target="_blank"
-  ><i class="fa fa-download fa-fw"></i>Download</a>
+  ><i class="fa fa-download fa-fw"></i>Download</a
+>
 ```
 
 ##### button-rounded
@@ -1095,7 +1097,8 @@ Cropped to height of 350px on large screens, 175px on small screens.
   class="button-rounded"
   href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip"
   target="_blank"
-  ><i class="fa fa-download fa-fw"></i>Download</a>
+  ><i class="fa fa-download fa-fw"></i>Download</a
+>
 ```
 
 ##### button-secondary
@@ -1117,7 +1120,8 @@ Cropped to height of 350px on large screens, 175px on small screens.
   class="button-secondary"
   href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip"
   target="_blank"
-  ><i class="fa fa-download fa-fw"></i>Download</a>
+  ><i class="fa fa-download fa-fw"></i>Download</a
+>
 ```
 
 ##### button-secondary-rounded
@@ -1139,7 +1143,8 @@ Cropped to height of 350px on large screens, 175px on small screens.
   class="button-secondary-rounded"
   href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip"
   target="_blank"
-  ><i class="fa fa-download fa-fw"></i>Download</a>
+  ><i class="fa fa-download fa-fw"></i>Download</a
+>
 ```
 
 ##### embedly-card
@@ -1152,7 +1157,8 @@ For linked article previews, embedded slides/videos, etc.
   data-card-controls="0"
   data-card-align="left"
   href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0"
-  >Defining usability</a>
+  >Defining usability</a
+>
 ```
 
 ##### header-image-fade
@@ -1223,7 +1229,8 @@ Scale images with border to %.
 
 ```html
 <a class="navpill" href="https://github.com" target="_blank"
-  ><i class="fab fa-github fa-fw"></i>GitHub</a>
+  ><i class="fab fa-github fa-fw"></i>GitHub</a
+>
 ```
 
 ##### responsive
@@ -1236,8 +1243,7 @@ Make raw HTML images that include size dimensions responsive.
   width="910"
   height="682"
   class="responsive image-border"
-  alt="Docsify-This Web Page Builder"
-/>
+  alt="Docsify-This Web Page Builder" />
 ```
 
 ##### row/column
@@ -1287,8 +1293,7 @@ Make raw HTML images that include size dimensions responsive.
     <iframe
       width="560"
       height="315"
-      src="https://www.youtube.com/embed/lJIrF4YjHfQ"
-    ></iframe>
+      src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe>
   </div>
 </div>
 ```
@@ -1302,8 +1307,7 @@ Automatically added to all iFrames with the source domains 'youtube.com' or 'doc
   <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/lJIrF4YjHfQ"
-  ></iframe>
+    src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe>
 </div>
 ```
 
@@ -1754,7 +1758,8 @@ Would be changed to:
   data-card-align="left"
   data-card-width="100%"
   href="https://docs.google.com/presentation/d/1BLaaOTsGxDmNcAhg6pdx3hl9IvI8NErg8Oe5ceh83fw/edit?usp=sharing"
-  >Grav and Docsify Slides Placeholder</a>
+  >Grav and Docsify Slides Placeholder</a
+>
 ```
 
 ##### Docsify Sidebar is not Displaying Header Levels
