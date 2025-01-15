@@ -13,6 +13,7 @@
 
 **Bugfix:**
 * Fixed URL parameter handling of dark mode colors for links and link hovers
+* Set correct default link color for dark mode
 
 ## [1.10.0] - 01/01/2025🎉
 
