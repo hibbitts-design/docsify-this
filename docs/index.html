@@ -530,15 +530,15 @@
           var getColor = document.getElementById("linkcolordarkmode");
           var hexCode = getColor.value;
           if (hexCode === '') {
-            hexCode = '#0374B5';
+            hexCode = '#1BA1EE';
             document.getElementById("linkcolordarkmode").value = hexCode;
-            document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
-            document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
+            document.getElementById("linkcolordarkmodepreview").style.borderColor = '#1BA1EE';
+            document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#1BA1EE';
           }
           if (hexCode.charAt(0) == "#") {
             hexCode = hexCode.substring(1);
           }
-          if (!(hexCode == "0374B5")) {
+          if (!(hexCode == "1BA1EE")) {
             URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
           }
 
@@ -710,9 +710,9 @@
       document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
       document.getElementById("enableDarkmode").value = 'false';
-      document.getElementById("linkcolordarkmode").value = '#0374B5';
-      document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
-      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
+      document.getElementById("linkcolordarkmode").value = '#1BA1EE';
+      document.getElementById("linkcolordarkmodepreview").style.borderColor = '#1BA1EE';
+      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#1BA1EE';
       document.getElementById("linkhovercolordarkmode").value = '';
       document.getElementById("linkhovercolordarkmodepreview").style.border = "4px solid transparent";
       document.getElementById("linkhovercolordarkmodepreview").style.backgroundColor = "transparent";
@@ -744,7 +744,7 @@
       const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
 
       console.log(darkModeEnabled);
-      if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto' || darkModeEnabled === 'on' || darkModeEnabled === 'true'))) {
+      if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto' || darkModeEnabled === 'true')) || darkModeEnabled === 'on') {
         // dark mode
         const linkColorDarkMode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
 
@@ -1020,7 +1020,7 @@
               const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
               if (!(embeds.length === 0)) {
                 var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
-                if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto' || darkModeEnabled === 'on' || darkModeEnabled === 'true'))) {
+                if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto' || darkModeEnabled === 'true')) || darkModeEnabled === 'on') {
                   // dark mode
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
