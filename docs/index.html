@@ -743,7 +743,6 @@
       // Update link colors based on current theme mode
       const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
 
-      console.log(darkModeEnabled);
       if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto' || darkModeEnabled === 'true')) || darkModeEnabled === 'on') {
         // dark mode
         const linkColorDarkMode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
