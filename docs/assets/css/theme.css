@@ -328,6 +328,12 @@
   padding-top: 5rem;
 }
 
+.sidebar-nav a,
+.sidebar nav a {
+  overflow: visible;
+  white-space: break-spaces;
+}
+
 .pagination-item,
 .pagination-item-title {
   opacity: 0.9 !important;
@@ -1423,12 +1429,6 @@ span #docsifythisurlfield {
   content: "";
   display: block;
   clear: both;
-}
-
-.sidebar-nav a,
-.sidebar nav a {
-  overflow: visible;
-  white-space: break-spaces;
 }
 
 .sidebar .app-name {
