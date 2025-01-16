@@ -1277,7 +1277,13 @@ _TIP: If you change the VSCode setting for **Workbench › Editor: Show Tabs** t
 
 #### Loading Web Page Builder Custom Settings
 
-You can load custom default settings in the Docsify-This Web Page Builder using URL parameters. This ability is especially helpful for Docsify-This online sessions, workshops, or when users collaborate and assist one another. Along with the standard Docsify-This URL parameters, the Web Page Builder also offers the following specific parameters:
+You can load custom default settings in the Docsify-This Web Page Builder by also using URL parameters. This ability can be helpful in a range of situations, including:
+
+- Producing multiple web pages/sites with consistent styling
+- Conducting online sessions or workshops where specific configurations are to be explored
+- Facilitating support and collaboration among Docsify-This users
+
+Along with the standard Docsify-This URL parameters, the Web Page Builder also offers the following specific parameters:
 
 ##### url-field
 
