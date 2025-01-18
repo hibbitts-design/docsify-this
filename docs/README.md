@@ -167,8 +167,8 @@ Page layout:
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="enableDarkmode" name="enableDarkmode">
     <option value="false">Off</option>
     <option disabled="disabled">----</option>
-    <option value="on">On</option>
     <option value="auto">Match System Setting</option>
+    <option value="on">On</option>
   </select>
 </div></div>
 
