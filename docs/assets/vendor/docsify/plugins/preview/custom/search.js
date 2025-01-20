@@ -378,7 +378,7 @@
               return '...' + contentSegment + '...';
             })();
             
-            resultStr += matchContent;   
+            resultStr += matchContent;
           }
         });
 
