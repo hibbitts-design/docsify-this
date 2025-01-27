@@ -201,6 +201,7 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 - [header-weight](#header-weight)
 - [hide-credits](#hide-credits)
 - [hypothesis](#hypothesis)
+- [image-captions](#image-captions)
 - [line-height](#line-height)
 - [link-color](#link-color)
 - [maxLevel](#maxLevel)
@@ -255,6 +256,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Enable page annotation with [Hypothes.is](https://hypothes.is) with the optional **hypothesis** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hypothesis=true.
 
+##### image-captions
+
+Turn alt text into image captions (using the semantic HTML `<figure>` and `<figcaption>` structure) with the optional **image-captions** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&image-captions=true.
+
 ##### line-height
 
 Set a custom line height for your web pages with the optional **line-height** parameter, for example:  
@@ -306,6 +312,9 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [coverpage-color-dark-mode](#coverpage-color-dark-mode)
 - [dark-mode](#dark-mode)
 - [edit-link-emoji](#edit-link-emoji)
+- [image-captions-font-style](#image-captions-font-style)
+- [image-captions-image-align](#image-captions-image-align)
+- [image-captions-text-align](#image-captions-text-align)
 - [link-color-dark-mode](#link-color-dark-mode)
 - [link-color-hover](#link-color-hover)
 - [link-color-hover-dark-mode](#link-color-hover-dark-mode)
@@ -348,6 +357,21 @@ https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/
 
 Change the default emoji for a "Edit this Page" link with the optional **edit-link-emoji** parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:
+
+##### image-captions-font-style
+
+Set the font style of image captions with the optional **image-captions-font-style** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&image-captions=true&image-captions-font-style=normal.
+
+##### image-captions-image-align
+
+Align image caption images with the optional **image-captions-image-align** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&image-captions=true&image-captions-text-align=right&image-captions-image-align=right.
+
+##### image-captions-text-align
+
+Align image caption text with the optional **image-captions-text-align** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&image-captions=true&image-captions-image-align=center&image-captions-text-align=center.
 
 ##### lazy-load-images
 
@@ -1147,6 +1171,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Matching Fonts with Your Destination Platform Content](#matching-fonts-with-your-destination-platform-content)
 - [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](#including-code-blocks)
+- [Displaying Images in a Grid](#displaying-images-in-grid)
 - [Including External Markdown Content](#including-external-markdown-content)
 - [Use of WikiLinks](#use-of-wikilinks)
 - [Display of AsciiDoc Files (file extension .adoc)](#display-of-asciidoc-files-file-extension-adoc)
@@ -1183,6 +1208,22 @@ function test() {
   console.log("Hello world!");
 }
 ```
+
+##### Displaying Images in a Grid
+
+3 or more images can be transformed into a responsive grid gallery by including them in lists. For example:
+
+```markdown
+- ![image1](path/to/image1.jpg)
+- ![image2](path/to/image2.jpg)
+- ![image3](path/to/image3.jpg)
+```
+
+Change the number of columns (default is 3) with the optional **image-grid-columns** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=4
+
+To accomodate a larger number of columns, the optional **image-grid-minWidth** parameter (default is 200px) can be adjusted, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=6&image-grid-minWidth=100
 
 ##### Including External Markdown Content
 
