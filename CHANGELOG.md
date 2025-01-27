@@ -4,6 +4,8 @@
 
 **New:**
 * Always on option for dark theme
+* Support for image grid plugin, with customizations (with thanks and appreciation to @gllmAR)
+* Support for image captions plugin via optional `image-captions` URL parameter (with thanks and appreciation to @gllmAR)
 
 **Improved:**
 * Updated ReadMe
