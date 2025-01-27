@@ -1611,6 +1611,9 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 To accomodate a larger number of columns, the optional **image-grid-minWidth** parameter (default is 200px) can be adjusted, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=6&image-grid-minWidth=100
 
+Use with the optional **zoom-images** parameter for the ability to view unlinked images at a larger size, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=4&zoom-images=true
+
 ##### Including External Markdown Content
 
 The content of external Markdown files can be embedded into Docisfy-This web pages with the following:
