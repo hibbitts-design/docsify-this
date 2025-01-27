@@ -502,6 +502,11 @@
             var URLparms = URLparms + `&header-weight=` + getheaderweight
           }
 
+          const cb16 = document.querySelector('#imageCaptions');
+          if (cb16.checked) {
+            var URLparms = URLparms + `&image-captions=true`;
+          }
+          
           const cb15 = document.querySelector('#zoomimages');
           if (cb15.checked) {
             var URLparms = URLparms + `&zoom-images=true`;
@@ -678,6 +683,7 @@
       document.getElementById("linkcolor").value = '#0374B5';
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+      document.getElementById("imageCaptions").checked = false;
       document.getElementById("editLinkText").value = 'Edit this Page';
       document.getElementById("editLinkTopCheck").checked = false;
       document.getElementById("narrowToC").checked = false;
@@ -916,6 +922,19 @@
         depth: 6,
         namespace: 'docsify-this',
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+      },
+
+      imgGrid: {
+        columns: (getURLParameterByName('image-grid-columns', null, null, window.location.href, true) || 3), // Default number of columns
+        minItems: (getURLParameterByName('image-grid-minItems', null, null, window.location.href, true) || 3), // Minimum number of items to create a grid
+        minWidth: (getURLParameterByName('image-grid-minWidth', null, null, window.location.href, true) || 200) // Minimum number of items to create a grid
+      },
+      
+      imageCaption: {
+        textAlign: (getURLParameterByName('image-captions-text-align', null, null, window.location.href, true) || 'left'),   // Caption alignment (default: 'left')
+        fontStyle: (getURLParameterByName('image-captions-font-style', null, null, window.location.href, true) || 'italic'),   // Caption font style (default: 'italic')
+        wrapInFigure: true,    // Use figure/figcaption (default: true)
+        imageAlign: (getURLParameterByName('image-captions-image-align', null, null, window.location.href, true) || 'left'),   // Caption alignment (default: 'left')    // Image alignment: 'left', 'center', or 'right' (default: 'center')
       },
 
       // CUSTOM PLUGINS
@@ -1471,6 +1490,10 @@
               document.getElementById('headerweight').value = headerweight;
             }
 
+            if (getURLParameterByName(['image-captions', 'imageCaptions'], null, null, window.location.href, true) === 'true') {
+              document.getElementById("imageCaptions").checked = true;
+            }
+
             if (getURLParameterByName(['zoom-images', 'zoomImages'], null, null, window.location.href, true) === 'true') {
               document.getElementById("zoomimages").checked = true;
             }
@@ -1886,6 +1909,19 @@
 
   <!-- Frontmatter Plugin -->
   <script src="assets/vendor/docsify/plugins/docsify-frontmatter.min.js"></script>
+
+  <!-- Image Grid Plugin -->
+  <script src="assets/vendor/docsify/plugins/custom/docsify-img-grid.js"></script>
+
+  <!-- Image Captions Plugin -->
+  <script>
+    if (!(window.$docsify['basePath'] === undefined)) {
+      imagecaptions = getURLParameterByName(['image-captions', 'imageCaptions'], null, null, window.location.href, true);
+      if (!(imagecaptions === false)) {
+        document.write('<script src="assets/vendor/docsify/plugins/docsify-img-caption.js"><\/script>');
+      }
+    }
+  </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for docsify-this.net homepage -->
 
