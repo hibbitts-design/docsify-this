@@ -42,7 +42,7 @@ aside.nav.nothing {
   padding-left: 5px;
   position: -webkit-sticky;
   position: fixed;
-  overflow-y: scroll;
+  overflow: auto;
   max-height: 100vh;
   top: 0;
   bottom: auto;
