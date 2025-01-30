@@ -1038,7 +1038,7 @@
               /* JS to change Embedly cards to light or dark theme based on system theme */
               const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
               if (!(embeds.length === 0)) {
-                var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
+                const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
                 if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto' || darkModeEnabled === 'true')) || darkModeEnabled === 'on') {
                   // dark mode
                   if (enabledarkmode || darkmode) {
