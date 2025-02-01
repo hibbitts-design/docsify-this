@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.10.1] - 02/01/2025🇨🇦
+## [1.10.1] - 02/01/2025🍁
 
 **New:**
 * Always on option for dark theme
