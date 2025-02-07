@@ -168,8 +168,9 @@
     
         // Sanitize title for ID
         title = title.replace(/\//g, '') // Remove slashes
-          .replace(/[^a-zA-Z0-9-]/g, '-') // Replace other non-alphanumeric
-          .toLowerCase();
+           .replace(/\?/g, '') // Remove question marks
+           .replace(/[^a-zA-Z0-9-]/g, '-') // Replace other non-alphanumeric
+           .toLowerCase();
     
         if (config.id) {
           slug = router.toURL(path, { id: slugify(config.id) });
