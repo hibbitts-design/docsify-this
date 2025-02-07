@@ -4,6 +4,7 @@
 
 **Improved:**
 * Various minor enhancments to Search plugin
+* Updated ReadMe
 
 ## [1.10.1] - 02/01/2025🍁
 
