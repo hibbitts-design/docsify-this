@@ -1764,8 +1764,8 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 
 #### Troubleshooting
 
-- ['404' File not Found message is Displayed](/?id=404-file-not-found-message-is-displayed)
-- ['Edit this Page' Links not Working](/?id=edit-this-page-links-not-working)
+- [A '404' File not Found message is Displayed](/?id=404-file-not-found-message-is-displayed)
+- [The 'Edit this Page' Links are not Working](/?id=edit-this-page-links-not-working)
 - [Updated Markdown file not Displayed in the Browser](/?id=updated-markdown-file-not-displayed-in-the-browser)
 - [Embedded Image not Displayed](/?id=embedded-image-not-displayed)
 - [Embedded iFrame not Displayed](/?id=embedded-iframe-not-displayed)
@@ -1773,13 +1773,13 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 - [Search Results do not Return all Expected Matches](/?id=search-results-do-not-return-all-expected-matches)
 - [Multiple Embedded Scripts are not Working as Expected](/?id=multiple-embedded-scripts-are-not-working-as-expected)
 
-##### '404' File not Found message is Displayed
+##### A '404' File not Found message is Displayed
 
 The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also result from a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/web/HTTP/CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests or alternatively if the domain in question is under your control explore re-configuring [CORS related settings](https://www.w3.org/wiki/CORS_Enabled). You can confirm the cause of the 404 message by viewing the errors displayed in the [Browser Javascript Console](https://balsamiq.com/support/faqs/browserconsole/).
 
 When displaying GitHub Markdown files, the branch name is assumed to be `main`, and other paths will likely cause a 404 file not found message. When displaying Codeberg Markdown files, the path is assumed to contain `/src/branch/main` and other paths will likely cause a 404 file not found message.
 
-##### 'Edit this Page' Links not Working
+##### The 'Edit this Page' Links are not Working
 
 Due to not being able to update Navbar or custom Sidebar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround, for example https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository and https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar.md&sidebar=true&loadSidebar=_sidebar.md&edit-link=https://github.com/paulhibbitts/docsify-this-cmpt-363-222-site/tree/main&edit-link-text=GitHub%20Repository
 
