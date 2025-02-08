@@ -237,7 +237,7 @@
       .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalize the first letter and lower case the rest
       .join(' '); // Join the words with spaces
   }
-  
+
   // Function to strip common Markdown markup
   // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
   function stripCommonMarkdown(markdown) {
@@ -266,7 +266,7 @@
     // Regular expression to match both Markdown images and links
     // Capture images separately to identify and remove them
     const markdownLinkRegex = /(!?\[([^\]]+)\]\(([^)]+)\))/g;
-    
+
     return content.replace(markdownLinkRegex, (match, fullMatch, title, url) => {
       // Check if it's an image link by the presence of '!' at the start
       if (fullMatch.startsWith('!')) {
@@ -342,7 +342,7 @@
           handlePostTitle = postTitle
             ? escapeHtml(ignoreDiacriticalMarks(postTitle))
             : postTitle;
-          
+
           // Remove Markdown link syntax from title
           handlePostTitle = handlePostTitle.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1').trim();
 
@@ -376,28 +376,28 @@
               
               // Find the first occurrence of the word using the regular expression
               const match = contentSegment.match(regEx);
-              
+
               if (match) {
                 // Get the position of the first match
                 const matchIndex = contentSegment.indexOf(match[0]);
-                
+
                 // Split the content segment into before, match, and after parts
                 const beforeMatch = contentSegment.substring(0, matchIndex);
                 const firstMatch = contentSegment.substring(matchIndex, matchIndex + match[0].length);
                 const afterMatch = contentSegment.substring(matchIndex + match[0].length);
-                
+
                 // Return the reassembled string with the first match wrapped in <em> tags
-                return '...' + 
-                  beforeMatch + 
-                  `<em class="search-keyword">${firstMatch}</em>` + 
-                  afterMatch + 
+                return '...' +
+                  beforeMatch +
+                  `<em class="search-keyword">${firstMatch}</em>` +
+                  afterMatch +
                   '...';
               }
-            
+
               // If no match is found, return the original segment surrounded by ellipses
               return '...' + contentSegment + '...';
             })();
-            
+
             resultStr += matchContent;
           }
         });
@@ -409,16 +409,16 @@
             title: handlePostTitle,
             content: (
               // Convert both postPageTitle and handlePostTitle to lowercase for case-insensitive comparison
-              postPageTitle && 
+              postPageTitle &&
               postPageTitle.toLowerCase() !== handlePostTitle.toLowerCase() &&
               postPageTitle.toLowerCase() !== 'readme' // Exclude 'ReadMe' from being prepended
-                ? `<strong>${postPageTitle}</strong><br>` 
+                ? `<strong>${postPageTitle}</strong><br>`
                 : ''
             ) + (postContent ? resultStr : ''),
             url: postUrl,
             score: matchesScore,
           };
-        
+
           matchingResults.push(matchingPost);
         }
       }
@@ -691,7 +691,6 @@
 
     if (options.hideOtherSidebarContent) {
       $sidebarNav && $sidebarNav.classList.add('hide');
-      $appName && $appName.classList.add('hide');
     }
   }
 
