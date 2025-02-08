@@ -25,10 +25,8 @@
 
     if (str) {
       str = str
-        // Replace only leading quote if followed by a space:
-        .replace(/^('|")\s/, ' ') 
-        // Replace only trailing quote if preceded by a space:
-        .replace(/\s('|")$/, ' ') 
+        .replace(/^('|")/, '')
+        .replace(/('|")$/, '')
         .replace(/(?:^|\s):([\w-]+:?)=?([\w-%]+)?/g, (m, key, value) => {
           if (key.indexOf(':') === -1) {
             config[key] = (value && value.replace(/&quot;/g, '')) || true;
