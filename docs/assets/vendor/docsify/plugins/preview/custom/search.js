@@ -25,8 +25,10 @@
 
     if (str) {
       str = str
-        .replace(/^('|")/, '')
-        .replace(/('|")$/, '')
+        // Replace only leading quote if followed by a space:
+        .replace(/^('|")\s/, ' ') 
+        // Replace only trailing quote if preceded by a space:
+        .replace(/\s('|")$/, ' ') 
         .replace(/(?:^|\s):([\w-]+:?)=?([\w-%]+)?/g, (m, key, value) => {
           if (key.indexOf(':') === -1) {
             config[key] = (value && value.replace(/&quot;/g, '')) || true;
@@ -161,21 +163,25 @@
         const { str, config } = getAndRemoveConfig(token.text);
 
         const text = getAndRemoveDocisfyIgnoreConfig(token.text).content;
-    
+
         // Extract title from Markdown link
-        const match = text.match(/\[(.*?)\]\((.*?)\)/); 
+        const match = text.match(/\[(.*?)\]\((.*?)\)/);
         let title = match ? match[1] : text;
-    
-        // Sanitize title for ID
-        title = title.replace(/\//g, '') // Remove slashes
-           .replace(/\?/g, '') // Remove question marks
-           .replace(/[^a-zA-Z0-9-]/g, '-') // Replace other non-alphanumeric
-           .toLowerCase();
-    
         if (config.id) {
           slug = router.toURL(path, { id: slugify(config.id) });
         } else {
-          slug = router.toURL(path, { id: slugify(title) }); 
+          // Sanitize title for ID only if using title for the slug
+          slug = router.toURL(path, { 
+            id: slugify(title)
+              .replace(/\//g, '') // Remove slashes
+              .replace(/\?/g, '') // Remove question marks
+              .replace(/[^a-zA-Z0-9-]/g, '-') // Replace other non-alphanumeric
+              .replace(/^\(|\)$/g, '') // Remove parentheses
+              .replace(/['"]/g, '') // Remove straight quotes
+              .replace(/[\u2018\u2019\u201C\u201D]/g, '') // Remove curved quotes
+              .replace(/^-/, '_') // Remove leading hyphen with underscore
+              .toLowerCase() 
+          });
         }
 
         if (str) {
