@@ -25,8 +25,10 @@
 
     if (str) {
       str = str
-        .replace(/^('|")/, '')
-        .replace(/('|")$/, '')
+        // Replace only leading quote if followed by a space:
+        .replace(/^('|")\s/, ' ') 
+        // Replace only trailing quote if preceded by a space:
+        .replace(/\s('|")$/, ' ') 
         .replace(/(?:^|\s):([\w-]+:?)=?([\w-%]+)?/g, (m, key, value) => {
           if (key.indexOf(':') === -1) {
             config[key] = (value && value.replace(/&quot;/g, '')) || true;
@@ -161,21 +163,25 @@
         const { str, config } = getAndRemoveConfig(token.text);
 
         const text = getAndRemoveDocisfyIgnoreConfig(token.text).content;
-    
+
         // Extract title from Markdown link
-        const match = text.match(/\[(.*?)\]\((.*?)\)/); 
+        const match = text.match(/\[(.*?)\]\((.*?)\)/);
         let title = match ? match[1] : text;
-    
-        // Sanitize title for ID
-        title = title.replace(/\//g, '') // Remove slashes
-           .replace(/\?/g, '') // Remove question marks
-           .replace(/[^a-zA-Z0-9-]/g, '-') // Replace other non-alphanumeric
-           .toLowerCase();
-    
         if (config.id) {
           slug = router.toURL(path, { id: slugify(config.id) });
         } else {
-          slug = router.toURL(path, { id: slugify(title) }); 
+          // Sanitize title for ID only if using title for the slug
+          slug = router.toURL(path, { 
+            id: slugify(title)
+              .replace(/\//g, '') // Remove slashes
+              .replace(/\?/g, '') // Remove question marks
+              .replace(/[^a-zA-Z0-9-]/g, '-') // Replace other non-alphanumeric
+              .replace(/^\(|\)$/g, '') // Remove parentheses
+              .replace(/['"]/g, '') // Remove straight quotes
+              .replace(/[\u2018\u2019\u201C\u201D]/g, '') // Remove curved quotes
+              .replace(/^-/, '_') // Remove leading hyphen with underscore
+              .toLowerCase() 
+          });
         }
 
         if (str) {
@@ -231,7 +237,7 @@
       .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalize the first letter and lower case the rest
       .join(' '); // Join the words with spaces
   }
-  
+
   // Function to strip common Markdown markup
   // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
   function stripCommonMarkdown(markdown) {
@@ -260,7 +266,7 @@
     // Regular expression to match both Markdown images and links
     // Capture images separately to identify and remove them
     const markdownLinkRegex = /(!?\[([^\]]+)\]\(([^)]+)\))/g;
-    
+
     return content.replace(markdownLinkRegex, (match, fullMatch, title, url) => {
       // Check if it's an image link by the presence of '!' at the start
       if (fullMatch.startsWith('!')) {
@@ -336,7 +342,7 @@
           handlePostTitle = postTitle
             ? escapeHtml(ignoreDiacriticalMarks(postTitle))
             : postTitle;
-          
+
           // Remove Markdown link syntax from title
           handlePostTitle = handlePostTitle.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1').trim();
 
@@ -370,28 +376,28 @@
               
               // Find the first occurrence of the word using the regular expression
               const match = contentSegment.match(regEx);
-              
+
               if (match) {
                 // Get the position of the first match
                 const matchIndex = contentSegment.indexOf(match[0]);
-                
+
                 // Split the content segment into before, match, and after parts
                 const beforeMatch = contentSegment.substring(0, matchIndex);
                 const firstMatch = contentSegment.substring(matchIndex, matchIndex + match[0].length);
                 const afterMatch = contentSegment.substring(matchIndex + match[0].length);
-                
+
                 // Return the reassembled string with the first match wrapped in <em> tags
-                return '...' + 
-                  beforeMatch + 
-                  `<em class="search-keyword">${firstMatch}</em>` + 
-                  afterMatch + 
+                return '...' +
+                  beforeMatch +
+                  `<em class="search-keyword">${firstMatch}</em>` +
+                  afterMatch +
                   '...';
               }
-            
+
               // If no match is found, return the original segment surrounded by ellipses
               return '...' + contentSegment + '...';
             })();
-            
+
             resultStr += matchContent;
           }
         });
@@ -403,16 +409,16 @@
             title: handlePostTitle,
             content: (
               // Convert both postPageTitle and handlePostTitle to lowercase for case-insensitive comparison
-              postPageTitle && 
+              postPageTitle &&
               postPageTitle.toLowerCase() !== handlePostTitle.toLowerCase() &&
               postPageTitle.toLowerCase() !== 'readme' // Exclude 'ReadMe' from being prepended
-                ? `<strong>${postPageTitle}</strong><br>` 
+                ? `<strong>${postPageTitle}</strong><br>`
                 : ''
             ) + (postContent ? resultStr : ''),
             url: postUrl,
             score: matchesScore,
           };
-        
+
           matchingResults.push(matchingPost);
         }
       }
@@ -685,7 +691,6 @@
 
     if (options.hideOtherSidebarContent) {
       $sidebarNav && $sidebarNav.classList.add('hide');
-      $appName && $appName.classList.add('hide');
     }
   }
 
