@@ -3,7 +3,7 @@
 ## [1.10.2] - XX/XX/XXXX
 
 **Improved:**
-* Various minor enhancments to Search plugin
+* Various minor enhancements to Search plugin
 * Updated ReadMe
 
 ## [1.10.1] - 02/01/2025🍁
