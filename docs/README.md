@@ -1772,6 +1772,7 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 - [Embedded iFrame not Displayed](/?id=embedded-iframe-not-displayed)
 - [Docsify Sidebar is not Displaying Header Levels](/?id=docsify-sidebar-is-not-displaying-header-levels)
 - [Search Results do not Return all Expected Matches](/?id=search-results-do-not-return-all-expected-matches)
+- [Search Results include Duplicate Matches](?id=search-results-include-duplicate-matches)
 - [Multiple Embedded Scripts are not Working as Expected](/?id=multiple-embedded-scripts-are-not-working-as-expected)
 
 ##### A '404' File not Found message is Displayed
@@ -1822,6 +1823,10 @@ When displaying a Docsify Sidebar or custom Sidebar, it is expected that page he
 ##### Search Results do not Return all Expected Matches
 
 When the search field is enabled in a Docsify custom Sidebar, only pages listed and linked in the Sidebar will be indexed for the search. Any pages linked in an optional Navbar will not be included in searches.
+
+##### Search Results include Duplicate Matches
+
+The most likely cause for this issue is using a page name as the homepage link in a custom Docsify Sidebar. Try to change the homepage link to the default value `/`, assuming the homepage filename is already being passed as a URL parameter.
 
 ##### Multiple Embedded Scripts are not Working as Expected
 
