@@ -5,7 +5,6 @@
 **Improved:**
 * Various minor enhancments to Search plugin
 * Updated ReadMe
-* Removed page title in search results when all results are on the same page
 
 ## [1.10.1] - 02/01/2025🍁
 
