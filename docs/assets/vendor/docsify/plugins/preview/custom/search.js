@@ -422,6 +422,23 @@
       }
     }
 
+    const uniquePageTitles = new Set();
+    matchingResults.forEach(result => {
+      const contentMatch = result.content.match(/^<strong>(.*?)<\/strong><br>/);
+      if (contentMatch) {
+        uniquePageTitles.add(contentMatch[1]);
+      }
+    });
+    
+    // If all results share the same postPageTitle, remove it from display
+    if (uniquePageTitles.size === 1) {
+      const sharedPageTitle = [...uniquePageTitles][0]; // Extract the single title
+      matchingResults.forEach(result => {
+        // Ensure we only remove the correct title, avoiding partial removals
+        result.content = result.content.replace(new RegExp(`^<strong>${sharedPageTitle}</strong><br>`, 'i'), '');
+      });
+    }
+
     return matchingResults.sort((r1, r2) => r2.score - r1.score);
   }
 
