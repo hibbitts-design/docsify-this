@@ -371,7 +371,7 @@
             const matchContent = handlePostContent && (() => {
               // Extract the substring where the match will be applied
               const contentSegment = handlePostContent.substring(start, end);
-              
+
               // Find the first occurrence of the word using the regular expression
               const match = contentSegment.match(regEx);
 
@@ -476,7 +476,7 @@
 
     const expireKey = resolveExpireKey(config.namespace) + namespaceSuffix;
     const indexKey = resolveIndexKey(config.namespace) + namespaceSuffix;
-  
+
     // Check if the database is expired
     const isExpired = localStorage.getItem(expireKey) < Date.now();
 
