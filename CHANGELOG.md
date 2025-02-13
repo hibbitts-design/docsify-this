@@ -5,6 +5,7 @@
 **Improved:**
 * Various minor enhancements to Search plugin
 * Updated ReadMe
+* Underscores may be used to represent spaces in URL parameters, in addition to the standard encoded value of %20
 
 ## [1.10.1] - 02/01/2025🍁
 
