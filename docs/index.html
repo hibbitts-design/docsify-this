@@ -1841,6 +1841,7 @@
       // Change body font if fontFamily parameter present
       fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
+        fontfamily = fontfamily.replaceAll('_', ' ');
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
       } else {
         document.documentElement.style.setProperty('--base-font-family', '"Source Sans Pro","Helvetica Neue",sans-serif');
