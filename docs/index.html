@@ -438,7 +438,7 @@
 
           var getSiteLogo = document.getElementById("siteLogo");
           var siteLogo = getSiteLogo.value;
-          if (!(siteLogo == "")) { 
+          if (!(siteLogo == "")) {
             URLparms = URLparms + `&logo=` + siteLogo;
           }
 
@@ -1153,6 +1153,7 @@
               editlinktextparm = getURLParameterByName(['edit-link-text', 'editLinkText'], null, null, window.location.href, true);
               if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
                 editlinktextparm = editlinktextparm.replaceAll('%20', ' ');
+                editlinktextparm = editlinktextparm.replaceAll('_', ' ');
                 editLinkText = editlinktextparm;
               }
 
@@ -1222,12 +1223,14 @@
               const appName = getURLParameterByName('name', null, null, window.location.href, true);
               if (appName) {
                 const appNameLink = document.querySelector('a.app-name-link');
-                appNameLink.setAttribute('href', '#/');
-                if (!docBody.querySelector('style.sidebar-app-name')) {
-                  let editCSS = document.createElement('style')
-                  editCSS.innerHTML = ".sidebar .app-name {display: block;}";
-                  editCSS.classList.add('sidebar-app-name');
-                  docBody.appendChild(editCSS);
+                if (appNameLink) {
+                  appNameLink.setAttribute('href', '#/');
+                  if (!docBody.querySelector('style.sidebar-app-name')) {
+                    let editCSS = document.createElement('style')
+                    editCSS.innerHTML = ".sidebar .app-name {display: block;}";
+                    editCSS.classList.add('sidebar-app-name');
+                    docBody.appendChild(editCSS);
+                  }
                 }
               }
 
@@ -1250,11 +1253,15 @@
 
               // Browser title logic optimized by early return pattern
               let browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
-              document.title = browserTabTitle || appName || 'Published by Docsify-This';
+              if (browserTabTitle) {
+                browserTabTitle = browserTabTitle.replaceAll('_', ' ');
+              }
+              document.title = browserTabTitle || (appName && appName.trim() !== '' ? appName.replaceAll('_', ' ') : 'Published by Docsify-This');
 
               // Update page title if parameter present
               let pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
               if (pageTitle) {
+                pageTitle = pageTitle.replaceAll('_', ' ');
                 let newh1 = document.createElement("h1");
                 newh1.innerHTML = pageTitle;
                 let divToMoveTo = document.getElementById("main");
@@ -1620,9 +1627,21 @@
             window.$docsify[key] = convertToBoolean(value);
           }
         } else {
+          if (key === 'name') {
+            window.$docsify[key] = replaceUnderscores(value);
+          } else {
           window.$docsify[key] = convertToBoolean(value);
+          }
         }
       });
+    }
+
+    // Replace underscores with spaces
+    function replaceUnderscores(value) {
+      if (typeof value === 'string') {
+        return value.replace(/_/g, ' ');
+      }
+      return value; // Return the original value if it's not a string
     }
 
     // Convert to Boolean if true or false, otherwise return original value
