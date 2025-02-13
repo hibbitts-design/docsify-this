@@ -436,7 +436,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 ##### name
 
 Display the name for the website in a Docsify custom Sidebar (i.e. file '\_sidebar.md) with the optional **name** Docsify parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&name=CPT-363. When this parameter is provided it will be automatically used as the Browser tab title as well. Underscores may also be used to represent spaces.
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&name=CPT-363. When this parameter is provided it will be automatically used as the Browser tab title as well. Please note to use names with spaces they must be encoded, so "My Site" would be "My%20Site". Underscores may also be used to represent spaces.
 
 ##### page-title
 
