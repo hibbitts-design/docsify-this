@@ -328,6 +328,12 @@
   padding-top: 5rem;
 }
 
+.sidebar-nav a,
+.sidebar nav a {
+  overflow: visible;
+  white-space: break-spaces;
+}
+
 .pagination-item,
 .pagination-item-title {
   opacity: 0.9 !important;
@@ -614,7 +620,6 @@
 .markdown-section summary {
   cursor: pointer;
   color: var(--link-color);
-  margin-bottom: -8px;
   padding: 0;
 
   h1,
@@ -625,20 +630,22 @@
   }
 }
 
-.markdown-section code {
+.markdown-section pre {
   white-space: pre-wrap !important;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .markdown-section pre code {
-  word-break: break-all !important;
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word;
 }
 
 .markdown-section a {
   overflow-wrap: anywhere;
 }
 
-.markdown-section .fa-fw {
+/* Included to support earlier Markdown Schedule templates */
+.markdown-section h2 .fa-fw {
   text-align: left;
 }
 
@@ -1092,6 +1099,7 @@ input[type="url"],
 input[type="color"] {
   overflow: hidden;
   background-color: #white;
+  height: 1.9rem;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 6px;
@@ -1141,7 +1149,8 @@ span #docsifythisurlfield {
   display: inline-block;
   margin-top: 4px;
   margin-bottom: -8px;
-  padding: 10px min(30px, 5%) 10px min(30px, 5%);
+  width: 260px;
+  padding: 10px;
   line-height: 1.4rem;
   background-color: #2302cd; /* Previous colors #0224cd #0361cd */
   text-decoration: none;
@@ -1152,7 +1161,13 @@ span #docsifythisurlfield {
   white-space: normal;
   overflow: visible;
   word-wrap: break-word;
-  text-align: left;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .docsifythisurlbuilderprimarybutton {
+      width: 100%;
+  }
 }
 
 .docsifythisurlbuildersecondarybutton {
@@ -1162,7 +1177,8 @@ span #docsifythisurlfield {
   display: inline-block;
   margin-top: 4px;
   margin-bottom: -8px;
-  padding: 10px min(30px, 5%) 10px min(30px, 5%);
+  width: 260px;
+  padding: 10px;
   line-height: 1.4rem;
   background-color: transparent;
   text-decoration: none;
@@ -1173,7 +1189,13 @@ span #docsifythisurlfield {
   white-space: normal;
   overflow: visible;
   word-wrap: break-word;
-  text-align: left;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .docsifythisurlbuildersecondarybutton {
+      width: 100%;
+  }
 }
 
 .docsifythisurlbuilderoptionsline {
@@ -1204,7 +1226,7 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuilder input[type="number"] {
   border: 1px solid #000;
-  height: 2rem;
+  height: 1.9rem;
   padding-left: 0.3rem;
   margin-top: 4px;
   margin-bottom: 6px;
@@ -1233,6 +1255,7 @@ span #docsifythisurlfield {
 .markdown-section #loadcustomfooter,
 .markdown-section #enableSidebarsearch,
 .markdown-section #mergeNavbar,
+.markdown-section #imageCaptions,
 .markdown-section #zoomimages,
 .markdown-section #enableDarkmode,
 .markdown-section #pagination,
@@ -1258,14 +1281,14 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuilder input[type="number"] {
   border: 1px solid #000;
-  height: 2rem;
+  height: 1.9rem;
   padding-left: 0.3rem;
   margin-top: 4px;
   margin-bottom: 6px;
 }
 
 #docsifythisurlbuildershowhidelink {
-  margin-top: 2px;
+  margin-top: 16px;
 }
 
 #docsifythisurlbuildershowhidelink a:link,
@@ -1282,8 +1305,8 @@ span #docsifythisurlfield {
 #docsifythisurlbuilder select {
   color: #323232;
   border: 1px solid #757575;
-  height: 2rem;
-  line-height: 2rem;
+  height: 1.9rem;
+  line-height: 1.9rem;
   -webkit-appearance: menulist-button;
 }
 
@@ -1294,34 +1317,62 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder #linkcolorpreview {
-  width: 30px;
   border: solid 4px #0374b5;
   background-color: #0374b5;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 3px;
+  outline: solid 1px #777777;
+  outline-offset: 0px;
+  padding-bottom:1px;
+  margin-left: 4px;
+}
+
+#docsifythisurlbuilder #linkhovercolorpreview {
+  border: solid 4px transparent;
+  background-color: transparent;
+  border-radius: 3px;
+  outline: solid 1px #777777;
+  outline-offset: 0px;
+  padding-bottom:1px;
   margin-left: 4px;
 }
 
 #docsifythisurlbuilder #coverpagecolorpreview {
-  width: 30px;
   border: solid 4px #6c8a9a;
   background-color: #6c8a9a;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 3px;
+  outline: solid 1px #777777;
+  outline-offset: 0px;
+  padding-bottom:1px;
   margin-left: 4px;
 }
 
 #docsifythisurlbuilder #linkcolordarkmodepreview {
-  width: 30px;
-  border: solid 4px #0374b5;
-  background-color: #0374b5;
-  border-radius: 3px 3px 3px 3px;
+  border: solid 4px #1BA1EE;
+  background-color: #1BA1EE;
+  border-radius: 3px;
+  outline: solid 1px #777777;
+  outline-offset: 0px;
+  padding-bottom:1px;
+  margin-left: 4px;
+}
+
+#docsifythisurlbuilder #linkhovercolordarkmodepreview {
+  border: solid 4px transparent;
+  background-color: transparent;
+  border-radius: 3px;
+  outline: solid 1px #777777;
+  outline-offset: 0px;
+  padding-bottom:1px;
   margin-left: 4px;
 }
 
 #docsifythisurlbuilder #coverpagecolordarkmodepreview {
-  width: 30px;
   border: solid 4px #262d30;
   background-color: #262d30;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 3px;
+  outline: solid 1px #777777;
+  outline-offset: 0px;
+  padding-bottom:1px;
   margin-left: 4px;
 }
 
@@ -1354,7 +1405,7 @@ span #docsifythisurlfield {
   margin-top: 15px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .markdown-section .docsifythiscolumn35 {
     width: 100%;
     margin-right: 0px;
@@ -1379,12 +1430,6 @@ span #docsifythisurlfield {
   content: "";
   display: block;
   clear: both;
-}
-
-.sidebar-nav a,
-.sidebar nav a {
-  overflow: visible;
-  white-space: break-spaces;
 }
 
 .sidebar .app-name {
@@ -1481,6 +1526,7 @@ span #docsifythisurlfield {
   .markdown-section #loadcustomfooter,
   .markdown-section #enableSidebarsearch,
   .markdown-section #mergeNavbar,
+  .markdown-section #imageCaptions,
   .markdown-section #zoomimages,
   .markdown-section #enableDarkmode,
   .markdown-section #pagination,
@@ -1518,7 +1564,27 @@ span #docsifythisurlfield {
     color: white;
   }
 
+  #siteName {
+    background-color: #273338;
+    color: white;
+  }
+
+  #siteLogo {
+    background-color: #273338;
+    color: white;
+  }
+  
   #coverpagecolor {
+    background-color: #273338;
+    color: white;
+  }
+
+  #linkhovercolor {
+    background-color: #273338;
+    color: white;
+  }
+
+  #linkhovercolordarkmode {
     background-color: #273338;
     color: white;
   }

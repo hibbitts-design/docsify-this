@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
 
 <head>
   <meta charset="UTF-8">
@@ -46,19 +46,14 @@
     href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css">-->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)"
     href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple-dark.css">-->
-  <link rel="stylesheet" media="(prefers-color-scheme: light)"
-    href="assets/vendor/themeable/themes/preview/theme-simple.css">
+
+  <link rel="stylesheet" 
+    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode" disabled/>
+
   <link rel="stylesheet" media="(prefers-color-scheme: dark)"
-    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css">
+    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode-auto"/>
 
   <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
-
-  <!-- Font Awesome Stylesheets -->
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/brands.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/regular.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/solid.css" />
 
   <!-- Coloris -->
   <link rel="stylesheet" href="assets/vendor/coloris/coloris.min.css" />
@@ -69,7 +64,7 @@
       --base-font-family: system-ui, sans-serif;
 
       --base-line-height: 1.4;
-      --base-font-size: 1.125rem;
+      --base-font-size: 18px;
 
       --cover-max-width: 45em;
 
@@ -99,6 +94,7 @@
       --blockquote-border-color: #757b7f;
 
       --sidebar-name-color: #0374B5;
+      --sidebar-name-font-weight: 600;
       --sidebar-nav-link-color--active: #0374B5;
       --sidebar-nav-link-border-color--active: #0374B5;
       --sidebar-nav-link-font-weight--active: bold;
@@ -136,7 +132,7 @@
     // Set footer to true to permanently show the Footer ('_footer.md)
     var footer = false;
 
-    // Set darkmode to true to permanently enable dark mode support
+    // Set darkmode to 'on' or 'auto' to permanently enable dark mode support
     var darkmode = false;
 
     // Set allowedDomains to contain single or multiple (comma separated) domain names to control which domains can be used for hosting source Markdown files
@@ -378,7 +374,7 @@
           }
 
           var getFontSize = document.getElementById('fontsize').value;
-          if (!(getFontSize == "1.125")) {
+          if (!(getFontSize == "18px")) {
             var URLparms = URLparms + `&font-size=` + getFontSize;
           }
 
@@ -392,7 +388,6 @@
           if (hexCode === '') {
             hexCode = '#0374B5';
             document.getElementById("linkcolor").value = hexCode;
-            document.getElementById("linkcolorpreview").style.visibility = "visible";
             document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
             document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
           }
@@ -441,6 +436,12 @@
             URLparms = URLparms + `&name=` + siteName;
           }
 
+          var getSiteLogo = document.getElementById("siteLogo");
+          var siteLogo = getSiteLogo.value;
+          if (!(siteLogo == "")) {
+            URLparms = URLparms + `&logo=` + siteLogo;
+          }
+
           const cb14 = document.querySelector('#enableSidebarsearch');
           if (cb14.checked) {
             var URLparms = URLparms + `&searchbox=true`;
@@ -462,6 +463,31 @@
             URLparms = URLparms + `&page-title=` + pageTitle;
           }
 
+          var getlinktextdecoration = document.getElementById("linktextdecoration");
+          var linktextdecoration = getlinktextdecoration.value;
+          if (!(linktextdecoration === 'underline')) {
+            URLparms = URLparms + `&link-text-decoration=` + linktextdecoration;
+          }
+
+          var getColor = document.getElementById("linkhovercolor");
+          var hexCode = getColor.value;
+          if (hexCode.charAt(0) == "#") {
+            hexCode = hexCode.substring(1);
+          }
+          if (!(hexCode == "")) {
+            URLparms = URLparms + `&link-color-hover=` + hexCode;
+          }
+
+          var linkhovertextdecoration = document.getElementById("linkhovertextdecoration").value;
+          if (!(linkhovertextdecoration === 'none')) {
+            URLparms = URLparms + `&link-text-decoration-hover=` + linkhovertextdecoration;
+          }
+
+          var externalLinkTarget = document.getElementById("externalLinkTarget").value;
+          if (!(externalLinkTarget === '_top')) {
+            URLparms = URLparms + `&externalLinkTarget=` + externalLinkTarget;
+          }
+
           const cb17 = document.querySelector('#pagination');
           if (cb17.checked) {
             var URLparms = URLparms + `&pagination=true`;
@@ -477,6 +503,11 @@
             var URLparms = URLparms + `&header-weight=` + getheaderweight
           }
 
+          const cb16 = document.querySelector('#imageCaptions');
+          if (cb16.checked) {
+            var URLparms = URLparms + `&image-captions=true`;
+          }
+          
           const cb15 = document.querySelector('#zoomimages');
           if (cb15.checked) {
             var URLparms = URLparms + `&zoom-images=true`;
@@ -487,7 +518,6 @@
           if (hexCode === '') {
             hexCode = '#6C8A9A';
             document.getElementById("coverpagecolor").value = hexCode;
-            document.getElementById("coverpagecolorpreview").style.visibility = "visible";
             document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
             document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
           }
@@ -498,25 +528,33 @@
             URLparms = URLparms + `&coverpage-color=` + hexCode;
           }
 
-          const cb16 = document.querySelector('#enableDarkmode');
-          if (cb16.checked) {
-            var URLparms = URLparms + `&dark-mode=true`;
+          var getenabledarkmode = document.getElementById('enableDarkmode').value;
+          if (!(getenabledarkmode == "false")) {
+            var URLparms = URLparms + `&dark-mode=` + getenabledarkmode
           }
 
           var getColor = document.getElementById("linkcolordarkmode");
           var hexCode = getColor.value;
           if (hexCode === '') {
-            hexCode = '#0374B5';
+            hexCode = '#1BA1EE';
             document.getElementById("linkcolordarkmode").value = hexCode;
-            document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
-            document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
-            document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
+            document.getElementById("linkcolordarkmodepreview").style.borderColor = '#1BA1EE';
+            document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#1BA1EE';
           }
           if (hexCode.charAt(0) == "#") {
             hexCode = hexCode.substring(1);
           }
-          if (!(hexCode == "0374B5")) {
+          if (!(hexCode == "1BA1EE")) {
             URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
+          }
+
+          var getColor = document.getElementById("linkhovercolordarkmode");
+          var hexCode = getColor.value;
+          if (hexCode.charAt(0) == "#") {
+            hexCode = hexCode.substring(1);
+          }
+          if (!(hexCode == "")) {
+            URLparms = URLparms + `&link-color-hover-dark-mode=` + hexCode;
           }
 
           var getColor = document.getElementById("coverpagecolordarkmode");
@@ -524,7 +562,6 @@
           if (hexCode === '') {
             hexCode = '#262D30';
             document.getElementById("coverpagecolordarkmode").value = hexCode;
-            document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
             document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
             document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
           }
@@ -590,7 +627,6 @@
       var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
       if (theDiv.style.display === "none") {
         link.text = 'Show Fewer Page Appearance Options \«';
-        document.getElementById("pageappearanceoptionsheader").style.display = "none";
         theDiv.style.display = "block";
       } else {
         link.text = 'Show More Page Appearance Options \»';
@@ -602,7 +638,6 @@
       var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv2");
       if (theDiv.style.display === "none") {
         link.checked = true;
-        document.getElementById("pageappearanceoptionsheader").style.display = "none";
         theDiv.style.display = "block";
       } else {
         link.checked = false;
@@ -619,14 +654,10 @@
         document.getElementById(inputId).value = hexCode.slice(0, -1);
       }
 
-      if (isHexadecimalColor(hexCode.substring(1))) {
-        document.getElementById(previewId).style.visibility = "visible";
-      } else {
-        if (isHexadecimalColor(document.getElementById(inputId).value)) {
-          document.getElementById(previewId).style.visibility = "visible";
-        } else {
-          document.getElementById(previewId).style.visibility = "hidden";
-        }
+      if (!isHexadecimalColor(hexCode.substring(1)) && !isHexadecimalColor(document.getElementById(inputId).value)) {
+        const previewElement = document.getElementById(previewId);
+        previewElement.style.border = "4px solid transparent";
+        previewElement.style.backgroundColor = "transparent";
       }
 
       if (!(hexCode.charAt(0) == "#")) {
@@ -648,12 +679,12 @@
       document.getElementById("browserTabTitle").value = 'Published by Docsify-This';
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
-      document.getElementById("fontsize").value = '1.125';
+      document.getElementById("fontsize").value = '18px';
       document.getElementById("lineheight").value = '1.4';
       document.getElementById("linkcolor").value = '#0374B5';
-      document.getElementById("linkcolorpreview").style.visibility = "visible";
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+      document.getElementById("imageCaptions").checked = false;
       document.getElementById("editLinkText").value = 'Edit this Page';
       document.getElementById("editLinkTopCheck").checked = false;
       document.getElementById("narrowToC").checked = false;
@@ -673,21 +704,26 @@
       document.getElementById("enableSidebarsearch").checked = false;
       document.getElementById("subMaxLevel").value = 2;
       document.getElementById("pageTitle").value = '';
+      document.getElementById("linktextdecoration").value = 'underline';
+      document.getElementById("linkhovercolor").value = '';
+      document.getElementById("linkhovercolorpreview").style.border = "4px solid transparent";
+      document.getElementById("linkhovercolorpreview").style.backgroundColor = "transparent";
+      document.getElementById("linkhovertextdecoration").value = 'none';
       document.getElementById("pagination").checked = false;
       document.getElementById("mergeNavbar").checked = false;
       document.getElementById("headerweight").value = '400';
       document.getElementById("zoomimages").checked = false;
       document.getElementById("coverpagecolor").value = '#6C8A9A';
-      document.getElementById("coverpagecolorpreview").style.visibility = "visible";
       document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
-      document.getElementById("enableDarkmode").checked = false;
-      document.getElementById("linkcolordarkmode").value = '#0374B5';
-      document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
-      document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
-      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
+      document.getElementById("enableDarkmode").value = 'false';
+      document.getElementById("linkcolordarkmode").value = '#1BA1EE';
+      document.getElementById("linkcolordarkmodepreview").style.borderColor = '#1BA1EE';
+      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#1BA1EE';
+      document.getElementById("linkhovercolordarkmode").value = '';
+      document.getElementById("linkhovercolordarkmodepreview").style.border = "4px solid transparent";
+      document.getElementById("linkhovercolordarkmodepreview").style.backgroundColor = "transparent";
       document.getElementById("coverpagecolordarkmode").value = '#262D30';
-      document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
       document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
       document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
     }
@@ -714,7 +750,7 @@
       // Update link colors based on current theme mode
       const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
 
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && darkModeEnabled) {
+      if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto' || darkModeEnabled === 'true')) || darkModeEnabled === 'on') {
         // dark mode
         const linkColorDarkMode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
 
@@ -732,6 +768,10 @@
           }
         }
 
+        const linkHoverColorDarkMode = getURLParameterByName(['link-color-hover-dark-mode', 'linkColorHoverDarkMode'], null, null, window.location.href, true);
+        if (linkHoverColorDarkMode !== false) {
+          document.documentElement.style.setProperty('--link-color--hover',  '#' + linkHoverColorDarkMode);
+        }
         const coverPageColorDarkMode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
 
         if (coverPageColorDarkMode !== false) {
@@ -753,6 +793,10 @@
           document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
         }
 
+        const linkHoverColor = getURLParameterByName(['link-color-hover', 'linkColorHover'], null, null, window.location.href, true);
+        if (linkHoverColor !== false) {
+          document.documentElement.style.setProperty('--link-color--hover',  '#' + linkHoverColor);
+        }
         const coverPageColor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
 
         if (coverPageColor !== false) {
@@ -881,6 +925,19 @@
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
       },
 
+      imgGrid: {
+        columns: (getURLParameterByName('image-grid-columns', null, null, window.location.href, true) || 3), // Default number of columns
+        minItems: (getURLParameterByName('image-grid-minItems', null, null, window.location.href, true) || 3), // Minimum number of items to create a grid
+        minWidth: (getURLParameterByName('image-grid-minWidth', null, null, window.location.href, true) || 200) // Minimum number of items to create a grid
+      },
+      
+      imageCaption: {
+        textAlign: (getURLParameterByName('image-captions-text-align', null, null, window.location.href, true) || 'left'),   // Caption alignment (default: 'left')
+        fontStyle: (getURLParameterByName('image-captions-font-style', null, null, window.location.href, true) || 'italic'),   // Caption font style (default: 'italic')
+        wrapInFigure: true,    // Use figure/figcaption (default: true)
+        imageAlign: (getURLParameterByName('image-captions-image-align', null, null, window.location.href, true) || 'left'),   // Caption alignment (default: 'left')    // Image alignment: 'left', 'center', or 'right' (default: 'center')
+      },
+
       // CUSTOM PLUGINS
       // -----------------------------------------------------------------
       plugins: [
@@ -981,9 +1038,9 @@
               /* JS to change Embedly cards to light or dark theme based on system theme */
               const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
               if (!(embeds.length === 0)) {
-                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
+                if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto' || darkModeEnabled === 'true')) || darkModeEnabled === 'on') {
                   // dark mode
-                  enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
                       embed.setAttribute('data-card-theme', 'dark');
@@ -995,7 +1052,7 @@
                     embed.setAttribute('data-card-theme', 'light');
                   });
                 }
-                window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
                   if (enabledarkmode || darkmode) {
                     document.location.reload();
                   }
@@ -1020,12 +1077,14 @@
               }
 
               /* Support Browser-level image lazy loading of images */
-              htmlElement.innerHTML = htmlElement.innerHTML.replace(/<img(.*?)>/g, function (match, p1) {
-                if (p1.indexOf('loading=') === -1) {
-                  return match.replace('>', ' loading="lazy">');
-                }
-                return match;
-              });
+              if (getURLParameterByName(['lazy-load-images', 'lazyLoadImages'], null, null, window.location.href, true) === 'true') {
+                htmlElement.innerHTML = htmlElement.innerHTML.replace(/<img(.*?)>/g, function (match, p1) {
+                  if (p1.indexOf('loading=') === -1) {
+                    return match.replace('>', ' loading="lazy">');
+                  }
+                  return match;
+                });
+              }
 
               next(htmlElement.innerHTML);
             } else {
@@ -1039,26 +1098,33 @@
             if (window.$docsify['basePath']) {
 
               // Basic error handling (i.e. 404 - File not found error)
-              const { file, response } = vm.route;
-              const { ok, status, statusText } = response;
+              const { file = '', response = {} } = vm.route || {};
+              const { ok = true, status = 0, statusText = '' } = response;
               if (ok === false) {
                 let errorMessage;
 
                 switch (status) {
                   case 404:
-                    errorMessage = `Looks like the file **${vm.route.file}** couldn't be found on the server. Please check if the **basePath** and **homepage** URL parameters are correct or if the file has been moved or deleted.`;
+                    errorMessage = `Looks like the file **${file}** couldn't be found on the server. Please check if the **basePath** and **homepage** URL parameters are correct or if the file has been moved or deleted.\n\nError code ${status}`;
                     break;
                   case 500:
-                    errorMessage = `The server encountered an internal error while trying to fetch **${vm.route.file}**.`;
+                    errorMessage = `The server encountered an internal error while trying to fetch **${file}**.\nError code ${status}`;
                     break;
                   case 403:
-                    errorMessage = `Access to **${vm.route.file}** is forbidden. You may not have the necessary permissions to view this file.`;
+                    errorMessage = `Access to **${file}** is forbidden. You may not have the necessary permissions to view this file.\nError code ${status}`;
                     break;
                   case 401:
-                    errorMessage = `Unauthorized access. Please make sure you are logged in and have the appropriate permissions to access **${vm.route.file}**.`;
+                    errorMessage = `Unauthorized access. Please make sure you are logged in and have the appropriate permissions to access **${file}**.\nError code ${status}`;
+                    break;
+                  case 0:
+                    errorMessage = `An error occurred while trying to fetch **${file}**. This could be due to one of the following reasons:
+                    \n- Cross-Origin Request Blocked: The server at the requested origin may not allow cross-origin requests. Please check the server's [CORS settings](https://www.w3.org/wiki/CORS_Enabled).
+                    \n- Network Issue: There may be a problem with your internet connection or the server could be unreachable.
+                    \n- Request Aborted: The request might have been canceled before it could complete.
+                    \n- File Not Found (404): The file might not exist or the URL could be incorrect, but the error response was blocked due to cross-origin restrictions.\n\nError code ${status}`;
                     break;
                   default:
-                    errorMessage = `An unexpected **${status}** error occurred while requesting the file **${vm.route.file}**.`;
+                    errorMessage = `An unexpected error occurred while requesting the file **${file}**.\nError code ${status}`;
                 }
 
                 return [
@@ -1087,6 +1153,7 @@
               editlinktextparm = getURLParameterByName(['edit-link-text', 'editLinkText'], null, null, window.location.href, true);
               if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
                 editlinktextparm = editlinktextparm.replaceAll('%20', ' ');
+                editlinktextparm = editlinktextparm.replaceAll('_', ' ');
                 editLinkText = editlinktextparm;
               }
 
@@ -1156,12 +1223,14 @@
               const appName = getURLParameterByName('name', null, null, window.location.href, true);
               if (appName) {
                 const appNameLink = document.querySelector('a.app-name-link');
-                appNameLink.setAttribute('href', '#/');
-                if (!docBody.querySelector('style.sidebar-app-name')) {
-                  let editCSS = document.createElement('style')
-                  editCSS.innerHTML = ".sidebar .app-name {display: block;}";
-                  editCSS.classList.add('sidebar-app-name');
-                  docBody.appendChild(editCSS);
+                if (appNameLink) {
+                  appNameLink.setAttribute('href', '#/');
+                  if (!docBody.querySelector('style.sidebar-app-name')) {
+                    let editCSS = document.createElement('style')
+                    editCSS.innerHTML = ".sidebar .app-name {display: block;}";
+                    editCSS.classList.add('sidebar-app-name');
+                    docBody.appendChild(editCSS);
+                  }
                 }
               }
 
@@ -1184,11 +1253,15 @@
 
               // Browser title logic optimized by early return pattern
               let browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
-              document.title = browserTabTitle || appName || 'Published by Docsify-This';
+              if (browserTabTitle) {
+                browserTabTitle = browserTabTitle.replaceAll('_', ' ');
+              }
+              document.title = browserTabTitle || (appName && appName.trim() !== '' ? appName.replaceAll('_', ' ') : 'Published by Docsify-This');
 
               // Update page title if parameter present
               let pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
               if (pageTitle) {
+                pageTitle = pageTitle.replaceAll('_', ' ');
                 let newh1 = document.createElement("h1");
                 newh1.innerHTML = pageTitle;
                 let divToMoveTo = document.getElementById("main");
@@ -1211,28 +1284,92 @@
           });
 
           hook.ready(function () {
+
+            // Original code by @rizdaprasetya and further improved with the assistance of ChatGPT, an AI language model by OpenAI
+            let TARGET_QUERY = 'id';
+            let SCROLL_DELAY = 750; // in milliseconds
+            let location = window.location;
+
+            // Build the current URL without the hash
+            let currentUrlWithoutHash = new URL(
+              location.origin + location.pathname +
+              location.search
+            );
+
+            // Get the search parameters from the URL (before the hash)
+            let urlQueryParam = currentUrlWithoutHash.searchParams;
+            let isUrlHasIdQuery = urlQueryParam.has(TARGET_QUERY);
+
+            // Handle the case where the 'id' is in the fragment (hash) part
+            let hashParams = new URLSearchParams(location.hash.split('?')[1]); // Get the query params after `#`
+            let isHashHasIdQuery = hashParams.has(TARGET_QUERY);
+
+            // Check if the URL contains the 'id' query parameter in either search or hash
+            if (isUrlHasIdQuery || isHashHasIdQuery) {
+
+              // Get the 'id' from either search or hash
+              let urlId = isUrlHasIdQuery ? urlQueryParam.get(TARGET_QUERY) : hashParams.get(TARGET_QUERY);
+
+              // Delay the scrolling to ensure everything is loaded
+              setTimeout(function () {
+                try {
+                  let targetElement = document.getElementById(urlId); // Use `getElementById` to directly reference the element
+                  if (targetElement) {
+                    // Use requestAnimationFrame for immediate scroll to the element
+                    requestAnimationFrame(() => {
+                      // Scroll smoothly to the element's top position
+                      window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'  // Add smooth scrolling
+                      });
+                    });
+                  }
+                } catch (e) {
+                  console.log('custom scroll failed', e);
+                }
+              }, SCROLL_DELAY);
+            }
+
             if (window.$docsify['basePath']) {
               return; // Exit if basePath is present
             }
 
-            if (getURLParameterByName(['url-field', 'urlField'])) {
-              // console.log(getURLParameterByName('url-field'));
+            // Check for valid URL parms or a URL-like pattern after a '?' by using RegEx
+            if (getURLParameterByName(['url-field', 'urlField']) || (window.location.href.includes('?') && /[?&](url-field|urlField|https?:\/\/[^\s]+|www\.[^\s]+|[a-z0-9.-]+\.[a-z]{2,})/i.test(window.location.href))) {
               var markdownFileURL = '';
-              markdownFileURL = getURLParameterByName(['url-field', 'urlField'], null, null, window.location.href, true);
-              if (markdownFileURL == "empty") {
+              
+              // Check if the URL has only a '?' followed by content, without any '='
+              if (!(getURLParameterByName(['url-field', 'urlField']))) {
+                // Extract everything after the '?' as the URL, up to the first '&'
+                markdownFileURL = window.location.href.split('?')[1].split('&')[0] || '';
+              } else {
+                // Use getURLParameterByName for 'url-field' or 'urlField'
+                markdownFileURL = getURLParameterByName(['url-field', 'urlField'], '', null, window.location.href, true);
+              }
+              
+              // If URL was 'empty', reset it to an empty string
+              if (markdownFileURL === "empty") {
                 markdownFileURL = '';
               }
+              
+              // Prefix 'https://' if not already present
+              if (markdownFileURL && !markdownFileURL.startsWith('http://') && !markdownFileURL.startsWith('https://')) {
+                markdownFileURL = 'https://' + markdownFileURL;
+              }
+              
+              // Remove any '#' and everything after it from the markdownFileURL
+              markdownFileURL = markdownFileURL.split('#')[0];
+
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
             }
 
-            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true || getURLParameterByName(['browser-tab-title', 'browserTabTitle', 'font-family', 'fontFamily', 'font-size', 'fontSize', 'line-height', 'lineHeight', 'link-color', 'linkColor', 'edit-link-text', 'editLinkText', 'edit-link-top', 'editLinkTop', 'hide-credits', 'hideCredits', 'toc-headings', 'tocHeadings', 'toc-narrow', 'tocNarrow', 'maxLevel', 'hypothesis'])) {
+            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true) {
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
-              document.getElementById("pageappearanceoptionsheader").style.display = "none";
               theDiv.style.display = "block";
             }
 
-            if (getURLParameterByName('advanced') === true || getURLParameterByName(['page-title', 'pageTitle', 'header-weight', 'headerWeight', 'zoom-images', 'zoomImages', 'loadFavicon', 'coverpage', 'loadSidebar', 'loadNavbar', 'loadFooter', 'mergeNavbar', 'name', 'subMaxLevel', 'searchbox', 'pagination', 'coverpage-color', 'coverpageColor', 'dark-mode', 'darkMode', 'link-color-dark-mode', 'linkColorDarkMode', 'coverpage-color-dark-mode', 'coverpageColorDarkMode'])) {
+            if (getURLParameterByName('advanced') === true ) {
               document.getElementById("btn_2").style.display = "none";
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
@@ -1266,7 +1403,9 @@
 
             fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
             if (fontfamily) {
-              document.getElementById('fontfamily').value = encodeURI(fontfamily);
+              const plusToSpace = fontfamily.replace(/\+/g, '%20');
+              const decodedString = decodeURIComponent(plusToSpace);
+              document.getElementById('fontfamily').value = encodeURI(decodedString);
             }
 
             fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
@@ -1283,7 +1422,6 @@
             if (linkcolor) {
               linkcolor = '#' + linkcolor;
               document.getElementById('linkcolor').value = linkcolor;
-              document.getElementById("linkcolorpreview").style.visibility = "visible";
               document.getElementById("linkcolorpreview").style.borderColor = linkcolor;
               document.getElementById("linkcolorpreview").style.backgroundColor = linkcolor;
             }
@@ -1332,9 +1470,36 @@
               document.getElementById('pageTitle').value = decodeURI(pageTitle);
             }
 
+            linktextdecoration = getURLParameterByName(['link-text-decoration', 'linkTextDecoration'], null, null, window.location.href, true);
+            if (linktextdecoration) {
+              document.getElementById('linktextdecoration').value = linktextdecoration;
+            }
+
+            linkhovercolor = getURLParameterByName(['link-color-hover', 'linkColorHover'], null, null, window.location.href, true);
+            if (linkhovercolor) {
+              linkhovercolor = '#' + linkhovercolor;
+              document.getElementById('linkhovercolor').value = linkhovercolor;
+              document.getElementById("linkhovercolorpreview").style.borderColor = linkhovercolor;
+              document.getElementById("linkhovercolorpreview").style.backgroundColor = linkhovercolor;
+            }
+
+            linktextdecorationhover = getURLParameterByName(['link-text-decoration-hover', 'linkTextDecorationHover'], null, null, window.location.href, true);
+            if (linktextdecorationhover) {
+              document.getElementById('linkhovertextdecoration').value = linktextdecorationhover;
+            }
+
+            externalLinkTarget = getURLParameterByName(['external-link-target', 'externalLinkTarget'], null, null, window.location.href, true);
+            if (externalLinkTarget) {
+              document.getElementById('externalLinkTarget').value = externalLinkTarget;
+            }
+
             headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
             if (headerweight) {
               document.getElementById('headerweight').value = headerweight;
+            }
+
+            if (getURLParameterByName(['image-captions', 'imageCaptions'], null, null, window.location.href, true) === 'true') {
+              document.getElementById("imageCaptions").checked = true;
             }
 
             if (getURLParameterByName(['zoom-images', 'zoomImages'], null, null, window.location.href, true) === 'true') {
@@ -1366,6 +1531,11 @@
               document.getElementById("siteName").value = siteName;
             }
 
+            siteLogo = getURLParameterByName('logo', null, null, window.location.href, true);
+            if (siteLogo) {
+              document.getElementById("siteLogo").value = siteLogo;
+            }
+
             subMaxLevel = getURLParameterByName('subMaxLevel', null, null, window.location.href, true);
             if (subMaxLevel) {
               document.getElementById('subMaxLevel').value = subMaxLevel;
@@ -1387,37 +1557,51 @@
             if (coverpagecolor) {
               coverpagecolor = '#' + coverpagecolor;
               document.getElementById('coverpagecolor').value = coverpagecolor;
-              document.getElementById("coverpagecolorpreview").style.visibility = "visible";
               document.getElementById("coverpagecolorpreview").style.borderColor = coverpagecolor;
               document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
             }
 
-            if (getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true') {
-              document.getElementById("enableDarkmode").checked = true;
+            enableDarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
+            if (enableDarkmode) {
+              if (enableDarkmode === 'true') {
+                enableDarkmode = 'auto';
+              }
+              if (enableDarkmode === 'off') {
+                enableDarkmode = 'false';
+              }
+              document.getElementById('enableDarkmode').value = enableDarkmode;
             }
 
             linkcolordarkmode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
             if (linkcolordarkmode) {
               linkcolordarkmode = '#' + linkcolordarkmode;
               document.getElementById('linkcolordarkmode').value = linkcolordarkmode;
-              document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
               document.getElementById("linkcolordarkmodepreview").style.borderColor = linkcolordarkmode;
               document.getElementById("linkcolordarkmodepreview").style.backgroundColor = linkcolordarkmode;
+            }
+
+            linkhovercolordarkmode = getURLParameterByName(['link-color-hover-dark-mode', 'linkColorHoverDarkMode'], null, null, window.location.href, true);
+            if (linkhovercolordarkmode) {
+              linkhovercolordarkmode = '#' + linkhovercolordarkmode;
+              document.getElementById('linkhovercolordarkmode').value = linkhovercolordarkmode;
+              document.getElementById("linkhovercolordarkmodepreview").style.borderColor = linkhovercolordarkmode;
+              document.getElementById("linkhovercolordarkmodepreview").style.backgroundColor = linkhovercolordarkmode;
             }
 
             coverpagecolordarkmode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
             if (coverpagecolordarkmode) {
               coverpagecolordarkmode = '#' + coverpagecolordarkmode;
               document.getElementById('coverpagecolordarkmode').value = coverpagecolordarkmode;
-              document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
               document.getElementById("coverpagecolordarkmodepreview").style.borderColor = coverpagecolordarkmode;
               document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = coverpagecolordarkmode;
             }
 
-            const x = window.scrollX;
-            const y = window.scrollY;
-            selectText();
-            window.scrollTo(x, y);
+            if (!(getURLParameterByName('id'))) {
+              const x = window.scrollX;
+              const y = window.scrollY;
+              selectText();
+              window.scrollTo(x, y);
+            }
 
           });
 
@@ -1426,10 +1610,10 @@
       ]
     }
 
-    <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
-    <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
+    // Credit to Beau Shaw for dymamic remote docsify technique
+    // To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
     if (getURLParameterByName('basePath')) {
-      const params = new URLSearchParams(window.location.search);
+      const params = new URLSearchParams(window.location.search.replaceAll('&amp;', '&'));
       params.forEach((value, key) => {
         // TODO: Parse numbers?
 
@@ -1443,9 +1627,21 @@
             window.$docsify[key] = convertToBoolean(value);
           }
         } else {
+          if (key === 'name') {
+            window.$docsify[key] = replaceUnderscores(value);
+          } else {
           window.$docsify[key] = convertToBoolean(value);
+          }
         }
       });
+    }
+
+    // Replace underscores with spaces
+    function replaceUnderscores(value) {
+      if (typeof value === 'string') {
+        return value.replace(/_/g, ' ');
+      }
+      return value; // Return the original value if it's not a string
     }
 
     // Convert to Boolean if true or false, otherwise return original value
@@ -1460,7 +1656,7 @@
     }
 
     // If switch of light/dark theme mode
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
       // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
       // console.log(e.matches);
       updateThemeModeLinkColors();
@@ -1506,6 +1702,10 @@
   <!-- docsify-tabs (latest v1.x.x) -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-tabs.min.js"></script>
+
+  <!-- flexible-alerts -->
+  <!-- <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script> -->
+  <script src="assets/vendor/docsify/plugins/docsify-plugin-flexible-alerts.min.js"></script>
 
   <!-- Load custom.css file only when displaying Markdown files -->
   <script>
@@ -1569,6 +1769,36 @@
     }
   </script>
 
+  <!-- Font Awesome Plugin -->
+  <script>
+    if (getURLParameterByName('svg-icons', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
+
+      // Create the link element
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = "assets/vendor/fontawesome/css/svg-with-js.css";
+      // Append the link to the head
+      document.head.appendChild(link);
+
+      // Create the script element
+      const script = document.createElement("script");
+      script.src = "assets/vendor/fontawesome/js/all.js";
+      script.setAttribute("data-auto-replace-svg", "nest");
+      script.async = true; // Optional: load asynchronously
+      // Append the script to the body
+      document.body.appendChild(script);
+
+    } else {
+
+      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/fontawesome.css" />');
+      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/brands.css" />');
+      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/regular.css" />');
+      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/solid.css" />');
+
+    }
+  </script>
+
   <!-- Mermaid Diagrams Plugin v2 -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
@@ -1593,7 +1823,7 @@
   <!-- <script src="unpkg.com/docsify-asciidoc@^1/dist/main.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-asciidoc.js"></script>
 
-  <!-- Check for headerweight, fontfamily, fontsize, lineheight, theme colors, and darkmode parameters -->
+  <!-- Check for headerweight, fontfamily, fontsize, lineheight, link styles, theme colors and darkmode parameters -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
 
@@ -1611,6 +1841,7 @@
       // Change body font if fontFamily parameter present
       fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
+        fontfamily = fontfamily.replaceAll('_', ' ');
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
       } else {
         document.documentElement.style.setProperty('--base-font-family', '"Source Sans Pro","Helvetica Neue",sans-serif');
@@ -1619,7 +1850,10 @@
       // Change body font size if fontSize parameter present
       fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
-        fontsize = fontsize + 'rem';
+        if (!(fontsize.includes("px"))) {
+          // Append 'rem' if no unit is specified
+          fontsize = fontsize + 'rem';
+        }
         document.documentElement.style.setProperty('--base-font-size', fontsize);
       }
 
@@ -1629,13 +1863,29 @@
         document.documentElement.style.setProperty('--base-line-height', lineheight);
       }
 
+      // Change link text decoration if link-text-decoration parameter present
+      linktextdecoration = getURLParameterByName(['link-text-decoration', 'linkTextDecoration'], null, null, window.location.href, true);
+      if (!(linktextdecoration === false)) {
+        document.documentElement.style.setProperty('--link-text-decoration', linktextdecoration);
+      }
+
+      // Change link hover text decoration if link-text-decoration-hover parameter present
+      linkhovertextdecoration = getURLParameterByName(['link-text-decoration-hover', 'linkTextDecorationHover'], null, null, window.location.href, true);
+      if (!(linkhovertextdecoration === false)) {
+        document.documentElement.style.setProperty('--link-text-decoration--hover', linkhovertextdecoration);
+      }
+
       updateThemeModeLinkColors();
 
-      // Keep dark theme CSS files loaded if dark-mode parameter is true
-      enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
-      if (enabledarkmode === false && darkmode === false) {
-        var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
-        linkNode.parentNode.removeChild(linkNode);
+      // Enable dark theme CSS files loaded if dark-mode parameter is true
+      var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
+      if (enabledarkmode === 'auto' || enabledarkmode === 'true' || darkmode === 'auto' ) {
+        document.querySelector('link[data-sheet="dark-mode-auto"]').disabled = false;
+      } else if (enabledarkmode === 'on' || darkmode === 'on' ) {
+        document.querySelector('link[data-sheet="dark-mode"]').disabled = false;
+      } else {
+        document.querySelector('link[data-sheet="dark-mode"]').disabled = true;
+        document.querySelector('link[data-sheet="dark-mode-auto"]').disabled = true;
       }
 
     }
@@ -1648,6 +1898,7 @@
   <script src="assets/vendor/prismjs/prism-go.min.js"></script>
   <script src="assets/vendor/prismjs/prism-java.min.js"></script>
   <script src="assets/vendor/prismjs/prism-kotlin.min.js"></script>
+  <script src="assets/vendor/prismjs/prism-markdown.min.js"></script>
   <script src="assets/vendor/prismjs/prism-php.min.js"></script>
   <script src="assets/vendor/prismjs/prism-python.min.js"></script>
   <script src="assets/vendor/prismjs/prism-swift.min.js"></script>
@@ -1669,16 +1920,29 @@
   <script>
     if (getURLParameterByName(['search', 'searchbox'], null, null, window.location.href, true) === 'true') {
 
-      <!-- Docsify Search Plugin current release -->
-      <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
+      // Docsify Search Plugin current release
+      // document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>');
 
-      <!-- Docsify Search Plugin "develop" branch preview files -->
+      // Docsify Search Plugin "develop" branch preview files
       document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>');
     }
   </script>
 
   <!-- Frontmatter Plugin -->
   <script src="assets/vendor/docsify/plugins/docsify-frontmatter.min.js"></script>
+
+  <!-- Image Grid Plugin -->
+  <script src="assets/vendor/docsify/plugins/custom/docsify-img-grid.js"></script>
+
+  <!-- Image Captions Plugin -->
+  <script>
+    if (!(window.$docsify['basePath'] === undefined)) {
+      imagecaptions = getURLParameterByName(['image-captions', 'imageCaptions'], null, null, window.location.href, true);
+      if (!(imagecaptions === false)) {
+        document.write('<script src="assets/vendor/docsify/plugins/docsify-img-caption.js"><\/script>');
+      }
+    }
+  </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for docsify-this.net homepage -->
 

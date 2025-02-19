@@ -32,7 +32,7 @@ body .markdown-section {
 /* CSS to better visually match Docsify pages within Moodle LMS (uncomment to use) */
 /*
 body .markdown-section {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: system-ui,sans-serif;
     line-height: 1.5;
     font-size: 15px;
 }
@@ -47,6 +47,9 @@ body .markdown-section {
     --sidebar-nav-link-color--active: #0F6CBF!important;
     --sidebar-nav-link-border-color--active: #0F6CBF!important;
     --link-color: #0F6CBF!important;
+    --link-color--hover: #03005D!important;
+    --link-text-decoration: none!important;
+    --link-text-decoration--hover: underline!important;
     --pagination-title-color: #0F6CBF!important;
 }
 */

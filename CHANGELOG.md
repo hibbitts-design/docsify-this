@@ -1,9 +1,100 @@
 # Changelog
 
-## [1.9.12] - XX/XX/2024
+## [1.10.2] - XX/XX/XXXX
+
+**Improved:**
+* Various minor enhancements to Search plugin
+* Updated ReadMe
+* Underscores may be used to represent spaces in URL parameters, in addition to the standard encoded value of %20
+
+## [1.10.1] - 02/01/2025🍁
+
+**New:**
+* Always on option for dark theme
+* Support for image grid plugin, including customizations (with thanks and appreciation to @gllmAR)
+* Support for image captions plugin via optional `image-captions` URL parameter (with thanks and appreciation to @gllmAR)
 
 **Improved:**
 * Updated ReadMe
+* Support horizontal scrolling in code blocks
+* Adjusted bottom margin for summary elements
+* Various Web Page Builder UI updates
+
+**Bugfix:**
+* Fixed URL parameter handling of dark mode colors for links and link hovers
+* Set correct default link color for dark mode (with contrast ratio for WCAG)
+
+## [1.10.0] - 01/01/2025🎉
+
+**New:**
+* Additional link appearance and behavior Web Page Builder options and URL parameters (`link-color-hover`,  `link-color-hover-dark-mode`, `link-text-decoration`, `link-text-decoration-hover` and `external-link-target`)
+* Initial offering of pre-configured styles for embedding content into popular LMSs (Learning Management Systems): http://load-canvas.docsify-this.net, http://load-moodle.docsify-this.net, http://load-brightspace.docsify-this.net and http://load-sakai.docsify-this.net
+
+**Improved:**
+* Updated ReadMe
+* Updated example custom CSS for Moodle LMS
+* Updated to latest stable Docsify 4.x preview build (including Marked 4.2.12)
+* Minor Web Page Builder UI updates
+* Font size can now be set in px as well as rem units via URL parameter
+
+**Bugfix:**
+* Restored missing Website logo support in Web Page Builder
+* Convert any '&amp;' encoded entities in URLs to '&'
+* Only load custom.css file when displaying remote Markdown file
+* Ensure font-family URL parameter is decoded correctly
+
+## [1.9.16] - 11/25/2024
+
+**Improved:**
+* Updated ReadMe
+
+**Bugfix:**
+* More robust handling of of Web Page Builder custom settings
+
+## [1.9.15] - 11/18/2024
+
+**New:**
+* Support for SVG icons via optional `svg-icons` URL parameter (with thanks and appreciation to @erickjx for the updated Font Awesome plugin)
+* Support for prefixing Markdown file URLs with Docsify-This.net to load the Web Page Builder with that URL, for example https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md
+* Support for flexible alerts plugin (with thanks and appreciation to @fzankl)
+
+**Improved:**
+* Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
+* Updated ReadMe
+* Addition of optional `lazy-load-images` URL parameter for enabling Browser lazy loading of images
+* Cleanup HTML
+* Updated Font Awesome Free assets to v6.6.0
+* Updated to use docsify-tabs plugin v1.6.3
+
+**Bugfix:**
+* Provide default values in error handling to avoid possible script error
+* Add missing variable declaration for enabledarkmode
+
+## [1.9.14] - 10/16/2024
+
+**Improved:**
+* Updated CSS with word-wrap for code blocks
+
+**Bugfix:**
+* Added missing Markdown Prism language file
+* Fix formatting conflict with Prism formatted code blocks
+
+## [1.9.13] - 10/14/2024🍁
+
+**Improved:**
+* Updated ReadMe
+* Added basic CORS (Cross-Origin Resource Sharing) error handling
+
+**Bugfix:**
+* Support expected passing of id parameter
+* Scroll offset fix (with thanks and appreciation to @rizdaprasetya for the initial code)
+
+## [1.9.12] - 09/18/2024
+
+**Improved:**
+* Updated ReadMe
+* Minor Web Page Builder UI updates
+* Minor theme update
 
 ## [1.9.11] - 09/03/2024🏫
 
