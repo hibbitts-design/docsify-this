@@ -1212,7 +1212,7 @@ function test() {
 
 ##### Displaying Images in a Grid
 
-3 or more images can be transformed into a responsive grid gallery by including them in lists. For example:
+3 or more images with the same dimensions can be transformed into a responsive grid gallery by including them in lists. For example:
 
 ```markdown
 - ![image1](path/to/image1.jpg)
