@@ -6,6 +6,7 @@
 * Various minor enhancements to Search plugin
 * Updated ReadMe
 * Underscores may be used to represent spaces in URL parameters, in addition to the standard encoded value of %20 (thanks to a helpful discussion with @davidmalawey)
+* Adjusted default behaviour of image grid to add needed whitespace (padding) when source images are of different sizes
 
 **Bugfix:**
 * Fixed incorrect theme CSS with regards to image scaling (with thanks and appreciation to @harlows for the PR)
