@@ -1606,6 +1606,8 @@ function test() {
 - ![image3](path/to/image3.jpg)
 ```
 
+If the source images are of different sizes, whitespace (padding) will be added to the sides or top/bottom to fill the space rather than cropping images.  
+
 Change the number of columns (default is 3) with the optional **image-grid-columns** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=4
 
