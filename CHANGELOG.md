@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.10.2] - XX/XX/2025
+## [1.10.2] - 03/04/2025
 
 **Improved:**
 * Various minor enhancements to Search plugin
