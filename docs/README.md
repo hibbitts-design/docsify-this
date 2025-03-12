@@ -1684,7 +1684,7 @@ There are multiple ways to get a raw Markdown file available online, here are th
 
 1. Obtain login information for your server
 2. Upload the Markdown file to your server
-3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
+3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 ---
 
