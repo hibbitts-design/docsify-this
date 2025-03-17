@@ -1173,6 +1173,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](#including-code-blocks)
 - [Displaying Images in a Grid](#displaying-images-in-grid)
+- [Embedding a Responsive Docsify-This Page in HTML](#embedding-a-responsive-docsify-this-page-in-html)
 - [Including External Markdown Content](#including-external-markdown-content)
 - [Use of WikiLinks](#use-of-wikilinks)
 - [Display of AsciiDoc Files (file extension .adoc)](#display-of-asciidoc-files-file-extension-adoc)
@@ -1233,6 +1234,41 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 Use the optional **image-captions** parameter to display alt text below images, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=4&zoom-images=true&image-captions=true&image-captions-text-align=center&image-captions-font-style=normal
+
+##### Embedding a Responsive Docsify-This Page in HTML
+
+A [fully responsive Docsify-This page can be embedded into an HTML page](https://demo.hibbittsdesign.org/embedded-docsify-this-page/), using the following as a working example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Embedded Docsify-This Page</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+ </style>
+</head>
+
+<body>
+  <iframe src="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md#/"></iframe>
+</body>
+
+</html>
+```
 
 ##### Including External Markdown Content
 
