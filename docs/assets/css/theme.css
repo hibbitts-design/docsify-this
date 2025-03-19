@@ -1081,8 +1081,8 @@ body .docsify-pagination-container {
   padding-right: calc(16px + (16 - 12) * (100vw - 400px) / (800 - 400));
   border-width: 0;
   border-radius: 16px;
-  background: #f2f2fd; /* Previous colors #f2f4fD #ecf4fe */
-  background: linear-gradient(to right, #f2f2fd 0%, #e0e0fa 75%, #d4d4fc 100%) 0 0;
+  background: linear-gradient(to right, #f7f8fc, #e2e4f6);
+  border: 1px solid #e2e4f6;
 }
 
 #docsifythisurlbuilder h2 {
@@ -1478,8 +1478,8 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuilder {
-    background: #36416d; /* Original color #1f4b66 */
-    background: linear-gradient(to right, #40486d 0%, #303e6d 75%, #20376d 100%) 0 0;
+    background: linear-gradient(to right, #2b2e3b, #1f1f2f);
+    border: 1px solid #3b3f4a;
   }
 
   #docsifythisurlfield {
