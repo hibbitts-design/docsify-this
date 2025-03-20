@@ -835,11 +835,11 @@
 }
 
 .markdown-section .column img {
-  padding-top: 0.35rem;
+  margin-top: 0.35rem;
 }
 
 .markdown-section .column-right img {
-  padding-top: 0.35rem;
+  margin-top: 0.35rem;
 }
 
 .markdown-section .reverse-columns .column {
