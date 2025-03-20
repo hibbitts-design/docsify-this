@@ -6,6 +6,9 @@
 * Updated ReadMe
 * Minor Web Page Builder UI updates
 
+**Bugfix:**
+* Set margin instead of padding for images contained in columns
+
 ## [1.10.2] - 03/04/2025
 
 **Improved:**
