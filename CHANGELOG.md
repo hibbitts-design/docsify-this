@@ -9,6 +9,7 @@
 **Bugfix:**
 * Set margin instead of padding for images contained in columns
 * Adjust h4 link color for dark mode
+* Update Table of Contents CSS to Docsify Starter Kits CSS
 
 ## [1.10.2] - 03/04/2025
 
