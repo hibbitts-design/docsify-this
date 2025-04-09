@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.10.3] - XX/XX/2025
+## [1.10.3] - 04/09/2025
 
 **Improved:**
 * Updated ReadMe
