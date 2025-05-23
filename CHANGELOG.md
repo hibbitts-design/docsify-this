@@ -5,6 +5,9 @@
 **Improved:**
 * Updated ReadMe
 
+**Bugfix:**
+* Fix for supporting footnotes syntax with inline code (with thanks and appreciation to @sy-records)
+
 ## [1.10.3] - 04/09/2025
 
 **Improved:**
