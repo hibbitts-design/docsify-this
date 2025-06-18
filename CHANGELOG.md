@@ -7,6 +7,7 @@
 
 **Bugfix:**
 * Fix for supporting footnotes syntax with inline code (with thanks and appreciation to @sy-records)
+* Do not display image captions for embedded emoji characters
 
 ## [1.10.3] - 04/09/2025
 
