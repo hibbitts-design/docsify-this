@@ -39,6 +39,11 @@
       
       var images = contentEl.querySelectorAll('img[alt]');
       images.forEach(function(img) {
+        //Check if the image has the class 'emoji'
+        if (img.classList.contains('emoji')) {
+          return; // Ignore images with the class 'emoji'
+        }
+
         var altText = img.getAttribute('alt');
         if (altText) {
           if (config.wrapInFigure) {
