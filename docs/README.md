@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<div style="background: #e8f5e8; border: 1px solid #57985E; border-radius: 8px; padding: 12px; margin: 20px 0; display: flex; align-items: center; gap: 12px;">
+<div style="background: #e8f5e8; border: 1px solid #a8c4aa; border-radius: 8px; padding: 12px; margin: 20px 0; display: flex; align-items: center; gap: 12px;">
     <div style="flex: 1;">
         <strong style="color: #57985E;">Docsify-This v2.0 Preview is now available!</strong>
         <div style="color: #666; margin-top: 2px;">Built with Docsify v5.0 release candidate  and also featuring a refreshed Web Page Builder.</div>
