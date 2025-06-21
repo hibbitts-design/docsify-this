@@ -8,6 +8,14 @@
   </div>
 </div>
 
+<div style="background: #e8f5e8; border: 1px solid #57985E; border-radius: 8px; padding: 12px; margin: 20px 0; display: flex; align-items: center; gap: 12px;">
+    <div style="flex: 1;">
+        <strong style="color: #57985E;">Docsify-This v2.0 Preview is now available!</strong>
+        <div style="color: #666; margin-top: 2px;">Built with Docsify v5.0 release candidate  and also featuring a refreshed Web Page Builder.</div>
+    </div>
+    <a href="https://preview-v2.docsify-this.net" target="_blank" style="background: #57985E; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap;">Explore v2.0</a>
+</div>
+
 <h1>Instantly Turn Online Markdown Files into Web Pages</h1>
 
 This open-source web app, built with magical documentation site generator [Docsify](https://docsify.js.org), lets you publish online [Markdown](https://en.wikipedia.org/wiki/Markdown) files as web pages without setting up your own website. Try it out below!
