@@ -38,6 +38,7 @@ _**Check out what Docsify-This can do by [viewing this ReadMe file as a web page
 
 <h3><a href="#2-publishing-with-docsify-this-1">2. Publishing with Docsify-This</a></h3>
 <ul>
+  <li><a href="#overview">Overview</a></li>
   <li><a href="#page-appearance-url-parameters-basic">Page Appearance URL Parameters (Basic)</a></li>
   <li><a href="#page-appearance-url-parameters-supplemental">Page Appearance URL Parameters (Supplemental)</a></li>
   <li><a href="#embedding-docsify-this-pages-into-other-platforms">Embedding Docsify-This Pages into Other Platforms</a></li>
