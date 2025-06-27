@@ -1039,6 +1039,44 @@ body .docsify-pagination-container {
 
 /* DOCSIFY THIS */
 
+#docsifythis .copy-link {
+  margin-left: 8px;
+  color: var(--link-color);
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none !important;
+  padding: 2px 4px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  display: inline-block;
+  margin-right: 4px; /* Add some right margin */
+  white-space: nowrap; /* Prevent text wrapping */
+  
+  /* Minimal button reset */
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  
+  /* Critical accessibility additions */
+  min-height: 24px; /* Touch target size */
+}
+
+#docsifythis .copy-link:hover {
+  color: var(--link-color);
+  background-color: #ddeeff;
+  text-decoration: none !important;
+}
+
+/* CRITICAL: Focus indicator for keyboard users */
+#docsifythis .copy-link:focus {
+  outline: 2px solid var(--link-color, #0066cc);
+  outline-offset: 2px;
+}
+
+#docsifythis h5:hover .copy-link {
+  text-decoration: none !important;
+}
+
 #docsifythis .docsifythisheader .logoandtext {
   margin-bottom: -4px;
 }
@@ -1108,8 +1146,9 @@ input[type="color"] {
 
 #docsifythisurlfield {
   width: 100%;
-  height: 2.5rem;
-  padding: 0px min(15px, 5%);
+  vertical-align: middle;
+  padding: min(15px, 5%) min(15px, 5%);
+  font-size: 22px;
 }
 
 span #docsifythisurlfield {
@@ -1451,6 +1490,11 @@ span #docsifythisurlfield {
   #docsifythisurlbuilderrestoredefaultsbutton {
     margin-top: 40px;
   }
+
+  #docsifythisurlfield {
+    min-height: 110px;
+    font-size: 18px;
+  }
 }
 
 .clr-picker .clr-alpha {
@@ -1472,7 +1516,8 @@ span #docsifythisurlfield {
   #docsifythis p a,
   #docsifythis li a,
   #docsifythis h3 a,
-  #docsifythis summary {
+  #docsifythis summary,
+  #docsifythis .copy-link {
     color: #1ba1ee;
   }
 
