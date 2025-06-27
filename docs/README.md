@@ -498,17 +498,17 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### edit-link
 
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md. Please note that adding this URL parameter directly to the Markdown File URL field is not supported, use the provided Web Page Builder checkbox instead.
 
 ##### edit-link-text
 
 Change the default text for a "Edit this Page" link with the optional **edit-link-text** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20as%20Markdown. Please note to use text with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "View as Markdown" would be "View%20as%20Markdown". Underscores may also be used to represent spaces.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20as%20Markdown. Please note to use text with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "View as Markdown" would be "View%20as%20Markdown". Underscores may also be used to represent spaces. Please note that adding this URL parameter directly to the Markdown File URL field is not supported, use the provided Web Page Builder checkbox instead.
 
 ##### edit-link-top
 
 Change the location of the "Edit this Page" link from the bottom of pages to be the top of pages with the optional **edit-link-top** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true Please note that adding this URL parameter directly to the Markdown File URL field is not supported, use the provided Web Page Builder checkbox instead.
 
 ##### font-family<button type="button" class="copy-link" aria-label="Copy font-family parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&font-family=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
@@ -635,7 +635,7 @@ https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/
 ##### edit-link-emoji
 
 Change the default emoji for a "Edit this Page" link with the optional **edit-link-emoji** parameter (not included in the Advanced Web Page Builder), for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder: Please note that adding this URL parameter directly to the Markdown File URL field is not supported.
 
 ##### image-captions-font-style<button type="button" class="copy-link" aria-label="Copy image-captions-font-style parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&image-captions-font-style=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
