@@ -1477,7 +1477,7 @@ span #docsifythisurlfield {
 
 @media only screen and (max-width: 480px) {
   #docsifythis .docsifythisheader .logoandtext h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 35px;
   }
 
