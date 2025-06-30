@@ -36,7 +36,7 @@ This open-source web app, built with magical documentation site generator [Docsi
     rows="1"
     onkeydown="if(event.key==='Enter'){event.preventDefault(); checkKey(event); return false;}"
     oninput="if(!CSS.supports('field-sizing', 'content')){this.style.height='auto';this.style.height=this.scrollHeight+'px';} this.value=this.value.replace(/[^a-zA-Z0-9\-._~:\/?#@!$&()*+,;=%]/g,'');"
-    placeholder="Paste Markdown file URL • Choose options below or manually add parameters here">https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md</textarea>
+    placeholder="Paste Markdown file URL • Choose options below or manually add parameters here">https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md</textarea>
 <style>
 #docsifythisurlfield {
     field-sizing: content;
