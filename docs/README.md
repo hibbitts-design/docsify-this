@@ -418,7 +418,7 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 #### Read What People are Saying about Docsify-This
 
 > I’m blown away just by the fact you put a (Markdown file) URL into Docsify-This and then you get a URL back for a web page… done! Take the URL and go. It is so seamless.  
-> — J. Groom, [Reclaim Today Episode 39](https://today.reclaimhosting.com/podcast/039-docsify-this-with-paul-hibbitts/) (Co-founder, Reclaim Hosting)
+> — J. Groom, [Reclaim Today Episode 39](https://bavatuesdays.com/reclaim-today-explores-docsify-this/) (Co-founder, Reclaim Hosting)
 
 > I've been using Docsify-This for my graduate publishing production course, partly to explore new models in markdown publishing, but partly also to tame Canvas, which I find awkward and cumbersome. Keeping all my course notes as plain text files and deploying them through Github and Docsify-this is easy and makes my course development a breeze. Plus, I keep all my materials locally, and can use re-use them without being reliant on Canvas.  
 > — J. Maxwell (Director & Associate Professor in the Publishing Program at Simon Fraser University)
@@ -700,7 +700,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### loadSidebar<button type="button" class="copy-link" aria-label="Copy loadSidebar parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&loadSidebar=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Load a [Docsify custom sidebar](https://docsify.js.org/#/more-pages?id=sidebar) from the Markdown file passed with the optional **loadSidebar** Docsify parameter, for example:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md
 
 ##### logo<button type="button" class="copy-link" aria-label="Copy logo parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&logo=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
