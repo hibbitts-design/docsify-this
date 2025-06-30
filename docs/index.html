@@ -650,8 +650,7 @@
             }
           }
 
-          const parts = lastSegment.split(/[?&]/);
-          lastSegment = parts[0];
+          const parts = url.split(/[?&]/);
           let queryString = '';
           if (parts.length > 1) {
               // Join all parameters back together
