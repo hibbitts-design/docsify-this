@@ -1588,6 +1588,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 #### Content Display Tips and Techniques
 
+- [Inline Parameter Editing for Experienced Users](/?id=inline-parameter-editing-for-experienced-users)
 - [Matching Fonts with Your Destination Platform Content](/?id=matching-fonts-with-your-destination-platform-content)
 - [Providing a Page Table of Contents within a Smaller Area](/?id=providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](/?id=including-code-blocks)
@@ -1599,6 +1600,14 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Display of HedgeDocs Files](/?id=display-of-hedgedocs-files)
 - [Use of Camel Case (e.g. camelCase) Format for URL parameters](/?id=use-of-camel-case-eg-camelcase-format-for-url-parameters)
 - [Use of New Web Editor GitHub.dev](/?id=use-of-new-web-editor-githubdev)
+
+##### Inline Parameter Editing for Experienced Users
+
+For more experienced users who prefer direct control, you can append URL parameters directly to your Markdown file URL in the Web Page Builder field. For example:
+
+`https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&toc=true&font-size=16px&link-color=cc0000`
+
+This approach also enables authors to help other authors by sharing examples of Markdown file URLs to be styled based on provided URL parameters, all represented as shareable plain text.
 
 ##### Matching Fonts with Your Destination Platform Content
 
