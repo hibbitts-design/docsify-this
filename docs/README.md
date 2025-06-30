@@ -1603,13 +1603,13 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 ##### Inline Parameter Editing for Experienced Users
 
-For more experienced users who prefer direct control, you can append URL parameters directly to your Markdown file URL in the Web Page Builder field. For example:
+For more experienced users who prefer direct control and faster workflows, you can append URL parameters directly to your Markdown file URL in the Web Page Builder field instead of using the point-and-click form controls. For example:
 
 ```
 https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&toc=true&font-size=16px&link-color=cc0000
 ```
 
-This approach also enables authors to help other authors by sharing examples of Markdown file URLs to be styled based on provided URL parameters, all represented as shareable plain text.
+This streamlined approach also enables authors to help other authors by sharing examples of Markdown file URLs to be styled based on provided URL parameters, all represented as shareable plain text.
 
 ##### Matching Fonts with Your Destination Platform Content
 
