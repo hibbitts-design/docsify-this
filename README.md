@@ -120,7 +120,7 @@ With Docsify-This you can:
 
 #### How Docsify-This Works
 
-Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the following format:
+Docsify-This is a customized Docsify Open Publishing Starter Kit site configured to render remote Markdown files via URL parameters in the following format (automatically created by the Web Page Builder or by adding parameters directly after the source Markdown file URL):
 
 `https://docsify-this.net?basePath=URLpath&homepage=filename.md`
 
