@@ -197,10 +197,6 @@
 
         if (isValidUrl(url)) {
 
-          // Code generated/assisted by Anthropic Claude AI
-          // Remove 'edit-link=' and values anywhere in the URL string
-          url = url.replace(/[?&]edit-link=[^&]*/g, '').replace(/[?&]$/, '');
-
           var docsifyURL = window.location.href
 
           var params = new URLSearchParams(docsifyURL.search);
@@ -253,16 +249,18 @@
           // Get last segment of URL
           const { hostname } = new URL(url);
 
+          // Code generated/assisted by Anthropic Claude AI
           // Remove URL parameters (anything after ? or &)
           var lastSegment = url.split('?')[0].split('&')[0].split('/').pop();
 
           if (hedgedocInstances.includes(hostname)) {
             // Support for HedgeDoc instances in the Web Page Builder
-            lastSegment = lastSegment.replace(/#/g, '');
+            lastSegment = lastSegment.split('&')[0].split('?')[0];
             if (!url.includes('/download')) {
               lastSegment = lastSegment + '/download';
             }
           }
+
           var URLparms = '';
 
           const cb1 = document.querySelector('#editCheck');
@@ -275,7 +273,9 @@
               if ((document.querySelector('#loadcustomsidebar').checked || document.querySelector('#loadcustomnavbar').checked) && !(hedgedocInstances.includes(hostname))) {
                 gitlinkPageURL = gitlinkPageURL.substring(0, gitlinkPageURL.lastIndexOf("/"));
               }
-              var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
+              if (!url.includes('edit-link=')) {
+                var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
+              }
             }
           }
 
@@ -650,8 +650,7 @@
             }
           }
 
-          const parts = lastSegment.split(/[?&]/);
-          lastSegment = parts[0];
+          const parts = url.split(/[?&]/);
           let queryString = '';
           if (parts.length > 1) {
               // Join all parameters back together
@@ -669,8 +668,11 @@
             selectText();
             return;
           } else {
-            // Filename with supported extension is present along with full path and filename
-            url = url.substring(0, url.lastIndexOf("/"));
+            // Code generated/assisted by Anthropic Claude AI
+            // Extract base URL, handling malformed parameter separators
+            const baseUrl = url.split(/[?&]/)[0];
+            url = baseUrl.substring(0, baseUrl.lastIndexOf("/"));
+
             var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms + queryString;
           }
 
