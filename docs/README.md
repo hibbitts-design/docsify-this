@@ -1588,7 +1588,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 #### Content Display Tips and Techniques
 
-- [Inline Parameter Editing for Experienced Users](/?id=inline-parameter-editing-for-experienced-users)
+- [Inline Parameter Editing for Batch Styling](/?id=inline-parameter-editing-for-batch-styling)
 - [Matching Fonts with Your Destination Platform Content](/?id=matching-fonts-with-your-destination-platform-content)
 - [Providing a Page Table of Contents within a Smaller Area](/?id=providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](/?id=including-code-blocks)
@@ -1601,12 +1601,20 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Use of Camel Case (e.g. camelCase) Format for URL parameters](/?id=use-of-camel-case-eg-camelcase-format-for-url-parameters)
 - [Use of New Web Editor GitHub.dev](/?id=use-of-new-web-editor-githubdev)
 
-##### Inline Parameter Editing for Experienced Users
+##### Inline Parameter Editing for Batch Styling
 
-For more experienced users who prefer direct control and faster workflows, you can append URL parameters directly to your Markdown file URL in the Web Page Builder field instead of using the point-and-click form controls. For example:
+For users who prefer more manual configuration and the ability to configure multiple styling options at once, you can append URL parameters directly to your file URL in the Web Page Builder Markdown File URL field instead of using the point-and-click form controls. For example:
+
+Dark theme batch styling:
 
 ```
-https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&toc=true&font-size=16px&link-color=cc0000
+https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&dark-mode=on&link-color=cc0000&link-color-dark-mode=ff9e9e
+```
+
+Moodle LMS batch styling:
+
+```
+https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&font-family=system-ui,sans-serif&font-size=15px&link-color=0f6cbf&link-text-decoration=none&link-color-hover=03005d&link-text-decoration-hover=underline
 ```
 
 This streamlined approach also enables authors to help other authors by sharing examples of Markdown file URLs to be styled based on provided URL parameters, all represented as shareable plain text.
