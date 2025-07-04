@@ -908,6 +908,11 @@
   font-size: 1.3rem;
 }
 
+.markdown-section .card p:has(img),
+.markdown-section .card-rounded p:has(img) {
+  margin: 0;
+}
+
 .markdown-section .card img,
 .markdown-section .card-rounded img {
   margin: .1rem 0;
