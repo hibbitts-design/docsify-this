@@ -871,6 +871,76 @@
   }
 }
 
+.markdown-section .card-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.markdown-section .card:not(.card-list .card),
+.markdown-section .card-rounded:not(.card-list .card-rounded) {
+  margin-top: 2rem;
+}
+
+.markdown-section .card {
+  border: 1px solid var(--mono-tint2);
+  padding: 1.5rem;
+  background: var(--mono-tint3);
+  display: flex;
+  flex-direction: column;
+}
+
+.markdown-section .card-rounded {
+  border: 1px solid var(--mono-tint2);
+  border-radius: 0.35em;
+  padding: 1.5rem;
+  background: var(--mono-tint3);
+  display: flex;
+  flex-direction: column;
+}
+
+.markdown-section .card h2, 
+.markdown-section .card-rounded h2 {
+  margin-top: 0;
+  margin-bottom: .1rem;
+  padding-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.markdown-section .card img,
+.markdown-section .card-rounded img {
+  margin: .1rem 0;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.markdown-section .card p,
+.markdown-section .card-rounded p {
+  flex-grow: 1;
+  margin-bottom: .1rem;
+}
+
+/* Mobile breakpoint - single column card layout */
+@media screen and (max-width: 768px) {
+  .markdown-section .card-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .markdown-section .card,
+  .markdown-section .card-rounded {
+    padding: 1.25rem;
+  }
+  
+  .markdown-section .card img, 
+  .markdown-section .card-rounded img {
+    height: 180px;
+  }
+}
+
 .markdown-section figure,
 .markdown-section p,
 .markdown-section ol,

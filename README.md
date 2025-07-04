@@ -669,6 +669,9 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 - [button-rounded](#button-rounded)
 - [button-secondary](#button-secondary)
 - [button-secondary-rounded](#button-secondary-rounded)
+- [card](#card)
+- [card-list](#card-list)
+- [card-rounded](#card-rounded)
 - [embedly-card](#embedly-card)
 - [header-image-fade](#header-image-fade)
 - [header-image-full-width](#header-image-full-width)
@@ -816,6 +819,61 @@ Cropped to height of 350px on large screens, 175px on small screens.
   target="_blank"
   ><i class="fa fa-download fa-fw"></i>Download</a
 >
+```
+
+##### card
+
+```html
+<div class="card">
+
+  ## [Card Title](#)
+  ![Card Image](images/example.jpg)
+  Card content goes here.
+
+</div>
+```
+
+##### card-list
+
+```html
+<div class="card-list">
+ <div class="card">
+
+ ## [Blog Post Title Link](#)
+ ![Blog Post Image](images/example.jpg)
+
+ Blog post preview text goes here with more details about the content.  
+
+ Jan 1, 1970. 
+
+ [Read More](# ":class=navpill")
+
+ </div>
+ <div class="card">
+
+ ## [Another Blog Post](#)
+ ![Blog Post Image](images/example.jpg)
+
+ Another blog post preview with different content.  
+
+ Jan 1, 1970. 
+
+ [Read More](# ":class=navpill")
+    
+ </div>
+</div>
+```
+
+##### card-rounded
+
+```html
+<div class="card-rounded">
+
+  ## [Card Title](#)
+  ![Card Image](images/example.jpg)
+  Card content goes here.
+
+</div>
 ```
 
 ##### embedly-card
