@@ -1211,8 +1211,8 @@ Cropped to height of 350px on large screens, 175px on small screens.
 
 <div class="card">
 
-  ## [Card Title](#)
   ![Card Image](images/mountain.jpg)
+  ## [Card Title](#)
   Card content goes here.
 
 </div>
@@ -1220,8 +1220,8 @@ Cropped to height of 350px on large screens, 175px on small screens.
 ```html
 <div class="card">
 
-  ## [Card Title](#)
   ![Card Image](images/example.jpg)
+  ## [Card Title](#)
   Card content goes here.
 
 </div>
@@ -1232,8 +1232,9 @@ Cropped to height of 350px on large screens, 175px on small screens.
 <div class="card-list">
  <div class="card">
 
- ## [Blog Post Title Link](#)
  ![Blog Post Image](images/mountain.jpg)
+
+ ## [Blog Post Title Link](#)
 
  Blog post preview text goes here with more details about the content.  
 
@@ -1244,8 +1245,9 @@ Cropped to height of 350px on large screens, 175px on small screens.
  </div>
  <div class="card">
 
- ## [Another Blog Post](#)
  ![Blog Post Image](images/mountain.jpg)
+
+ ## [Another Blog Post](#)
 
  Another blog post preview with different content.  
 
@@ -1260,8 +1262,9 @@ Cropped to height of 350px on large screens, 175px on small screens.
 <div class="card-list">
  <div class="card">
 
- ## [Blog Post Title Link](#)
  ![Blog Post Image](images/example.jpg)
+
+ ## [Blog Post Title Link](#)
 
  Blog post preview text goes here with more details about the content.  
 
@@ -1272,8 +1275,9 @@ Cropped to height of 350px on large screens, 175px on small screens.
  </div>
  <div class="card">
 
- ## [Another Blog Post](#)
  ![Blog Post Image](images/example.jpg)
+
+ ## [Another Blog Post](#)
 
  Another blog post preview with different content.  
 
@@ -1289,8 +1293,10 @@ Cropped to height of 350px on large screens, 175px on small screens.
 
 <div class="card-rounded">
 
-  ## [Card Title](#)
   ![Card Image](images/mountain.jpg)
+
+  ## [Card Title](#)
+
   Card content goes here.
 
 </div>
@@ -1298,8 +1304,10 @@ Cropped to height of 350px on large screens, 175px on small screens.
 ```html
 <div class="card-rounded">
 
-  ## [Card Title](#)
   ![Card Image](images/example.jpg)
+  
+  ## [Card Title](#)
+
   Card content goes here.
 
 </div>
