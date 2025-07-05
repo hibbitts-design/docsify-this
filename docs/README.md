@@ -1227,6 +1227,24 @@ Cropped to height of 350px on large screens, 175px on small screens.
 </div>
 ```
 
+<div class="card">
+
+  ## [Card Title](#)
+  ![Card Image](images/mountain.jpg)
+  Card content goes here.
+
+</div>
+
+```html
+<div class="card">
+
+  ## [Card Title](#)
+  ![Card Image](images/example.jpg)
+  Card content goes here.
+
+</div>
+```
+
 ##### card-list
 
 <div class="card-list">
