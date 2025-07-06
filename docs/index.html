@@ -1261,13 +1261,21 @@
               if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
                 if (!(getURLParameterByName(['hide-credits', 'hideCredits'], null, null, window.location.href, true) === 'true')) {
                   if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-                    return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
+                    if (!html.includes('full-width')) {
+                      return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
+                    } else {
+                      return html + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
+                    }
                   } else {
                     return html + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
                   }
                 } else {
                   if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-                    return editHtml + '\n' + html
+                    if (!html.includes('full-width')) {
+                      return editHtml + '\n' + html
+                    } else {
+                      return html + '<br />' + '\n\n' + editHtml
+                    }
                   } else {
                     return html + '<br />' + '\n\n' + editHtml
                   }
@@ -1275,7 +1283,11 @@
 
               } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
                 if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-                  return editHtml + '\n' + html
+                  if (!html.includes('full-width')) {
+                    return editHtml + '\n' + html
+                   } else {
+                    return html + '<br />' + '\n\n' + editHtml
+                   }
                 } else {
                   return html + '<br />' + '\n\n' + editHtml
                 }
