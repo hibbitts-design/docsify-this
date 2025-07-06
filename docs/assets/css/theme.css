@@ -887,8 +887,7 @@
 .markdown-section .card,
 .markdown-section .card-rounded {
   border: 1px solid var(--mono-tint2);
-  padding: 1.5rem;
-  background: var(--mono-tint3);
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   overflow: hidden; /* This ensures images respect border-radius */
