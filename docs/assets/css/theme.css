@@ -786,7 +786,7 @@
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 {
   position: absolute;
-  top: 12dvh;
+  top: 14dvh;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -796,7 +796,7 @@
   z-index: 10;
   margin: 0;
   font-size: clamp(2rem, 5vw, 3.5rem); /* Scales between 2rem and 3.5rem */
-  line-height: clamp(2.5rem, 6vw, 4rem);
+  line-height: clamp(2.2rem, 5.5vw, 3.6rem);
   width: 100%;
   text-align: center;
   font-weight: 500;
@@ -810,12 +810,18 @@
   padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   border-radius: 8px;
   max-width: 90vw;
+
+  /* Line clamping */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Maximum 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 + h2 {
   position: absolute;
-  top: 20dvh;
+  top: calc(15dvh + 3rem + 1rem);
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgba(255,255,255,0.95);
@@ -825,7 +831,7 @@
   z-index: 10;
   margin: 0;
   font-size: clamp(1.2rem, 3vw, 1.8rem); /* Scales between 1.2rem and 1.8rem */
-  line-height: clamp(1.6rem, 4vw, 2.2rem);
+  line-height: clamp(1.4rem, 3.5vw, 2rem);
   width: 100%;
   text-align: center;
   font-weight: 300;
@@ -833,6 +839,12 @@
   padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.75rem, 3vw, 1.5rem);
   max-width: 80vw;
   border: 0;
+
+  /* Line clamping */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Maximum 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Keep text-shadow for links in h1 and h2 (same as parent) */
