@@ -752,7 +752,8 @@
 }
 
 /* CSS currently only works with sidebar and standalone pages */
-.markdown-section .header-image-full-width {
+.markdown-section .header-image-full-width,
+.markdown-section .header-image-full-width-header-overlay {
   margin-top: -2rem;
   left: 50%;
   margin-left: -50vw;
@@ -766,7 +767,8 @@
   object-position: center 50%;
 }
 
-.markdown-section .header-tall-image-full-width {
+.markdown-section .header-tall-image-full-width,
+.markdown-section .header-tall-image-full-width-header-overlay {
   margin-top: -2rem;
   left: 50%;
   margin-left: -50vw;
@@ -778,6 +780,57 @@
   height: 40dvh;
   object-fit: cover;
   object-position: center 50%;
+}
+
+.markdown-section p:has(.header-tall-image-full-width-header-overlay,
+.header-image-full-width-header-overlay) + h1 {
+  position: absolute;
+  top: 15dvh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 
+    2px 2px 4px rgba(0,0,0,0.8),
+    0 0 20px rgba(0,0,0,0.4);
+  z-index: 10;
+  margin: 0;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  backdrop-filter: blur(2px);
+  background: linear-gradient(
+    135deg, 
+    rgba(0,0,0,0.3) 0%, 
+    rgba(0,0,0,0.1) 100%
+  );
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  max-width: 90vw;
+}
+
+.markdown-section p:has(.header-tall-image-full-width-header-overlay,
+.header-image-full-width-header-overlay) + h1 + h2 {
+  position: absolute;
+  top: 25dvh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255,255,255,0.95);
+  text-shadow: 
+    1px 1px 3px rgba(0,0,0,0.7),
+    0 0 15px rgba(0,0,0,0.3);
+  z-index: 10;
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  padding: 0.5rem 1.5rem;
+  max-width: 80vw;
 }
 
 .markdown-section .image-75 {
