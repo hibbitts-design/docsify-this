@@ -786,7 +786,7 @@
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 {
   position: absolute;
-  top: 15dvh;
+  top: 12dvh;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -815,7 +815,7 @@
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 + h2 {
   position: absolute;
-  top: 25dvh;
+  top: 20dvh;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgba(255,255,255,0.95);
