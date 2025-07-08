@@ -892,10 +892,10 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-blog-style-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
 
-- [Website](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md "Docsify-This Blog Style Site - Website")
-- [Website using the Merriweather font](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Blog Style Site - Website using the Merriweather font")
-- [Website using the Merriweather font and red links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Blog Style Site - Website using the Merriweather font and red links")
-- [Website and 'Edit this Page' links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-blog-style-site/blob/main/home.md "Docsify-This Blog Style Site - Website with 'Edit this Page' link")
+- [Website](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md "Docsify-This Blog Style Site - Website")
+- [Website using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Blog Style Site - Website using the Merriweather font")
+- [Website using the Merriweather font and red links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Blog Style Site - Website using the Merriweather font and red links")
+- [Website and 'Edit this Page' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-blog-style-site/blob/main/home.md "Docsify-This Blog Style Site - Website with 'Edit this Page' link")
 
 </div>
 
