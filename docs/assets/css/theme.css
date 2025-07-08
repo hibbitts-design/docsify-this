@@ -812,6 +812,10 @@
   max-width: 90vw;
 }
 
+.markdown-section p:has(.header-image-full-width-headings-overlay) + h1 {
+  top: 11dvh;
+}
+
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 + h2 {
   position: absolute;
@@ -833,6 +837,10 @@
   padding: clamp(0.25rem, 1vw, 0.5rem) clamp(0.75rem, 3vw, 1.5rem);
   max-width: 80vw;
   border: 0;
+}
+
+.markdown-section p:has(.header-image-full-width-headings-overlay) + h1 + h2 {
+  top: calc(14dvh + 3rem + 1rem);
 }
 
 /* Keep text-shadow for links in h1 and h2 (same as parent) */
