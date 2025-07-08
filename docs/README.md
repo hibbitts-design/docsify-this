@@ -806,7 +806,7 @@ To use these templates you would generally do the following (template specific i
 
 To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right when viewing the file, make your changes, and then tap the **Commit changes...** button to save those changes.
 
-<div class="row">
+<div class="row" id="docsify-this-one-page-article-template">
 
 <div class="docsifythiscolumn35" >
 
@@ -829,7 +829,7 @@ One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-p
 
 </div>
 
-<div class="row">
+<div class="row" id="docsify-this-one-page-course-template">
 
 <div class="docsifythiscolumn35" >
 
@@ -851,7 +851,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 </div>
 
-<div class="row">
+<div class="row" id="docsify-this-multiple-page-site-template">
 
 <div class="docsifythiscolumn35" >
 
@@ -878,7 +878,7 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 </div>
 
-<div class="row">
+<div class="row" id="docsify-this-blog-style-site-template">
 
 <div class="docsifythiscolumn35" >
 
@@ -901,7 +901,7 @@ Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-blog-s
 
 </div>
 
-<div class="row">
+<div class="row" id="docsify-this-multiple-page-open-publishing-site-template">
 
 <div class="docsifythiscolumn35" >
 
@@ -928,7 +928,7 @@ Multiple Page Open Publishing Site [home.md](https://github.com/hibbitts-design/
 
 </div>
 
-<div class="row">
+<div class="row" id="docsify-this-multiple-page-course-site-template">
 
 <div class="docsifythiscolumn35" >
 
@@ -954,7 +954,7 @@ Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-t
 
 </div>
 
-<div class="row">
+<div class="row" id="docsify-this-lms-content-pages-template">
 
 <div class="docsifythiscolumn35" >
 
