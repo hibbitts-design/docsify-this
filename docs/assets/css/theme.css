@@ -795,7 +795,7 @@
     0 0 20px rgba(0,0,0,0.4);
   z-index: 10;
   margin: 0;
-  font-size: clamp(2rem, 5vw, 3.2rem); /* Scales between 2rem and 3.5rem */
+  font-size: clamp(2rem, 5vw, 3.2rem); /* Scales between 2rem and 3.2rem */
   line-height: clamp(2.2rem, 5.5vw, 3.4rem);
   width: 100%;
   text-align: center;
