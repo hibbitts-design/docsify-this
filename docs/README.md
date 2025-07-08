@@ -882,6 +882,29 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 <div class="docsifythiscolumn35" >
 
+![Docsify-This Blog Style Site](images/docsify-this-blog-style-site.jpg ":class=docsify-this-screenshot")
+
+</div>
+
+<div class="docsifythiscolumn65" >
+
+<h4><a href="https://github.com/hibbitts-design/docsify-this-blog-style-site">Docsify-This Blog Style Site Template</a></h4>
+
+Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-blog-style-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
+
+- [Website](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md "Docsify-This Blog Style Site - Website")
+- [Website using the Merriweather font](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Blog Style Site - Website using the Merriweather font")
+- [Website using the Merriweather font and red links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Blog Style Site - Website using the Merriweather font and red links")
+- [Website and 'Edit this Page' links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-blog-style-site/blob/main/home.md "Docsify-This Blog Style Site - Website with 'Edit this Page' link")
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="docsifythiscolumn35" >
+
 ![Docsify-This Multiple Page Open Publishing Site](images/docsify-this-multiple-page-open-publishing-site.jpg ":class=docsify-this-screenshot")
 
 </div>
