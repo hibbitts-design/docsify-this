@@ -534,7 +534,17 @@ To use these templates you would generally do the following (template specific i
 
 To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right when viewing the file, make your changes, and then tap the **Commit changes...** button to save those changes.
 
-##### [Docsify-This One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article)
+**Available Docsify-This Markdown Templates**
+
+- [One Page Article Template](#docsify-this-one-page-article-template)
+- [One Page Course Template](#docsify-this-one-page-course-template)
+- [Multiple Page Site Template](#docsify-this-multiple-page-site-template)
+- [Blog Style Site Template](#docsify-this-blog-style-site-template)
+- [Multiple Page Open Publishing Site Template](#docsify-this-multiple-page-open-publishing-site-template)
+- [Multiple Page Course Site Template](#docsify-this-multiple-page-course-site-template)
+- [LMS Content Pages Template](#docsify-this-lms-content-pages-template)
+
+##### [One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article)
 
 ![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.png)
 
@@ -545,7 +555,7 @@ One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-p
 - [Web Page with Docsify Sidebar with maxLevel of 3 (H3) and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md "Docsify-This One Page Article Template - Web Page with Docsify Sidebar")
 - [Web Page with Docsify Sidebar with maxLevel of 3 (H3) and a 'View as Markdown' link at top of page with custom emoji](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&edit-link=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/refs/heads/main/home.md&edit-link-text=View%20as%20Markdown&edit-link-emoji=:page_facing_up:&edit-link-top=true "Docsify-This One Page Article Template - Web Page with Docsify Sidebar")
 
-##### [Docsify-This One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course)
+##### [One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course)
 
 ![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course-readme.png)
 
@@ -555,7 +565,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 - [Web Page with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md&toc=true&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md "Docsify-This One Page Course Template - Web Page with Table of Contents")
 - [Web Page with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md&sidebar=true&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md "Docsify-This One Page Course Template - Web Page with Docsify Sidebar")
 
-##### [Docsify-This Multiple Page Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-site)
+##### [Multiple Page Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-site)
 
 ![Docsify-This Multiple Page Site](docs/images/docsify-this-multiple-page-site-readme.png)
 
@@ -570,7 +580,7 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 - [Website with Footer and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadFooter=_footer&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Website with Footer and an 'Edit this Page' link")
 - [Website with Docsify Navbar and 'GitHub Repository' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Site - Website with Docsify Navbar and an 'GitHub Repository' link")
 
-##### [Docsify-This Blog Style Site Template](https://github.com/hibbitts-design/docsify-this-blog-style-site)
+##### [Blog Style Site Template](https://github.com/hibbitts-design/docsify-this-blog-style-site)
 
 ![Docsify-This Blog Style Site](docs/images/docsify-this-blog-style-site-readme.png)
 
@@ -581,7 +591,7 @@ Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-blog-s
 - [Website using the Merriweather font and red links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Blog Style Site - Website using the Merriweather font and red links")
 - [Website and 'Edit this Page' links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-blog-style-site/blob/main/home.md "Docsify-This Blog Style Site - Website with 'Edit this Page' link")
 
-##### [Docsify-This Multiple Page Open Publishing Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site)
+##### [Multiple Page Open Publishing Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site)
 
 ![Docsify-This Open Publishing Site Site Template](docs/images/docsify-this-multiple-page-open-publishing-site-readme.png ":class=docsify-this-screenshot")
 
@@ -596,7 +606,7 @@ Multiple Page Open Publishing Site [home.md](https://github.com/hibbitts-design/
 - [Website with Docsify Sidebar, Search, 'Propose an Edit to this Site' link and a website name](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&name=Open%20Publishing%20Space&hide-credits=true "Docsify-This Multiple Page Open Publishing Site - Website with Docsify Sidebar, 'Propose an Edit to this Site' link and a website name")
 - [Website with Docsify Sidebar, Search, 'Propose an Edit to this Site' link, website name and a Coverpage](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&coverpage=_coverpage.md&name=Open%20Publishing%20Space&hide-credits=true "Docsify-This Multiple Page Open Publishing Site - Website with Docsify Sidebar, 'Propose an Edit to this Site' link , website name and a Coverpage")
 
-##### [Docsify-This Multiple Page Course Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site)
+##### [Multiple Page Course Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site)
 
 ![Docsify-This Course Site Template](docs/images/docsify-this-multiple-page-course-site-readme.png ":class=docsify-this-screenshot")
 
@@ -610,7 +620,7 @@ Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-t
 - [Website with a 'Propose an Edit to this Site' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&hide-credits=true&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Website with a 'Propose an Edit to this Site' link")
 - [Website with Footer and a 'Propose an Edit to this Site' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&hide-credits=true&loadFooter=_footer.md&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Website with Footer and a 'Propose an Edit to this Site' link")
 
-##### [Docsify-This LMS Content Pages Template](https://github.com/hibbitts-design/docsify-this-lms-content-pages)
+##### [LMS Content Pages Template](https://github.com/hibbitts-design/docsify-this-lms-content-pages)
 
 ![Docsify-This LMS Content Pages Template](docs/images/docsify-this-lms-content-pages-readme.png)
 
