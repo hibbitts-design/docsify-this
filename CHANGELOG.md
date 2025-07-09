@@ -8,6 +8,9 @@
 **Improved:**
 * Updated ReadMe
 
+**Bugfix:**
+* Minor CSS fixes
+
 ## [1.10.4] - 07/01/2025🇨🇦
 
 **New:**
