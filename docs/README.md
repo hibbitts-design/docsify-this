@@ -806,6 +806,16 @@ To use these templates you would generally do the following (template specific i
 
 To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right when viewing the file, make your changes, and then tap the **Commit changes...** button to save those changes.
 
+**Available Docsify-This Markdown Templates**
+
+- [One Page Article Template](/?id=docsify-this-one-page-article-template)
+- [One Page Course Template](/?id=docsify-this-one-page-course-template)
+- [Multiple Page Site Template](/?id=docsify-this-multiple-page-site-template)
+- [Blog Style Site Template](/?id=docsify-this-blog-style-site-template)
+- [Multiple Page Open Publishing Site Template](/?id=docsify-this-multiple-page-open-publishing-site-template)
+- [Multiple Page Course Site Template](/?id=docsify-this-multiple-page-course-site-template)
+- [LMS Content Pages Template](/?id=docsify-this-lms-content-pages-template)
+
 <div class="row" id="docsify-this-one-page-article-template">
 
 <div class="docsifythiscolumn35" >
@@ -816,7 +826,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-one-page-article">Docsify-This One Page Article Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-one-page-article">One Page Article Template</a></h4>
 
 One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md) file displayed by Docsify-This as a:
 
@@ -839,7 +849,7 @@ One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-p
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-one-page-course">Docsify-This One Page Course Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-one-page-course">One Page Course Template</a></h4>
 
 One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md) file displayed by Docsify-This as a:
 
@@ -861,7 +871,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-site">Docsify-This Multiple Page Site Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-site">Multiple Page Site Template</a></h4>
 
 Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:
 
@@ -888,7 +898,7 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-blog-style-site">Docsify-This Blog Style Site Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-blog-style-site">Blog Style Site Template</a></h4>
 
 Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-blog-style-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
 
@@ -911,7 +921,7 @@ Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-blog-s
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site">Docsify-This Multiple Page Open Publishing Site Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site">Multiple Page Open Publishing Site Template</a></h4>
 
 Multiple Page Open Publishing Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/blob/main/home.md) file, including the use of a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/blob/main/_sidebar.md) file, displayed by Docsify-This as:
 
@@ -938,7 +948,7 @@ Multiple Page Open Publishing Site [home.md](https://github.com/hibbitts-design/
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-course-site">Docsify-This Multiple Page Course Site Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-course-site">Multiple Page Course Site Template</a></h4>
 
 Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md) file, including the use of a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/_sidebar.md) file and Docsify custom [Navbar](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/_navbar.md) file, displayed by Docsify-This as:
 
@@ -964,7 +974,7 @@ Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-t
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-lms-content-pages">Docsify-This LMS Content Pages Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-lms-content-pages">LMS Content Pages Template</a></h4>
 
 Example pages, including the use of the `font-family`, `font-size` and `hide-credits` URL parameters for seamless content embedding within the Canvas LMS, as displayed by Docsify-This:
 
