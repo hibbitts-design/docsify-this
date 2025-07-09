@@ -480,7 +480,7 @@
   margin-right: 6px;
   font-size: 0.8rem;
   line-height: 0.9rem;
-  background-color: --base-background-color;
+  background-color: var(--base-background-color);
   font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -1054,7 +1054,7 @@
   line-height: 1.55rem;
 }
 
-.markdown-section .h3 {
+.markdown-section h3 {
   line-height: 1.35rem;
 }
 
@@ -1529,7 +1529,7 @@ span #docsifythisurlfield {
   border-radius: 3px;
   outline: solid 1px #777777;
   outline-offset: 0px;
-  padding-bottom:1px;
+  padding-bottom: 1px;
   margin-left: 4px;
 }
 
@@ -1539,7 +1539,7 @@ span #docsifythisurlfield {
   border-radius: 3px;
   outline: solid 1px #777777;
   outline-offset: 0px;
-  padding-bottom:1px;
+  padding-bottom: 1px;
   margin-left: 4px;
 }
 
@@ -1549,7 +1549,7 @@ span #docsifythisurlfield {
   border-radius: 3px;
   outline: solid 1px #777777;
   outline-offset: 0px;
-  padding-bottom:1px;
+  padding-bottom: 1px;
   margin-left: 4px;
 }
 
@@ -1559,7 +1559,7 @@ span #docsifythisurlfield {
   border-radius: 3px;
   outline: solid 1px #777777;
   outline-offset: 0px;
-  padding-bottom:1px;
+  padding-bottom: 1px;
   margin-left: 4px;
 }
 
@@ -1569,7 +1569,7 @@ span #docsifythisurlfield {
   border-radius: 3px;
   outline: solid 1px #777777;
   outline-offset: 0px;
-  padding-bottom:1px;
+  padding-bottom: 1px;
   margin-left: 4px;
 }
 
@@ -1579,7 +1579,7 @@ span #docsifythisurlfield {
   border-radius: 3px;
   outline: solid 1px #777777;
   outline-offset: 0px;
-  padding-bottom:1px;
+  padding-bottom: 1px;
   margin-left: 4px;
 }
 
