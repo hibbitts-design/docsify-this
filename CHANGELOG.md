@@ -4,6 +4,7 @@
 
 **New:**
 * Added CSS Markdown classes to support cards (`card` & `card-rounded`) and responsive card lists (`card-list`)
+* Added CSS Markdown classes to support header overlays on full-width images (`header-image-full-width-headings-overlay` & `card-rounded`) and responsive card lists (`header-tall-image-full-width-headings-overlay`)
 
 **Improved:**
 * Updated ReadMe
