@@ -1370,17 +1370,17 @@
               }
 
               // Code generated/assisted by Anthropic Claude AI
-              // Add home page link if parameter present and transform + characters to &
-              let homeLink = getURLParameterByName(['home-link', 'homeLink'], null, null, window.location.href, true);
+              // Add back link if parameter present and transform + characters to &
+              let backLink = getURLParameterByName(['back-link', 'backLink'], null, null, window.location.href, true);
 
-              if (homeLink) {
-                  homeLink = homeLink.replace(/\+/g, '&');
+              if (backLink) {
+                  backLink = backLink.replace(/\+/g, '&');
                   let divToMoveTo = document.getElementById("main");
-                  let homeLinkElement = document.createElement("a");
-                  homeLinkElement.href = homeLink;
-                  homeLinkElement.textContent = "←Home";
+                  let backLinkElement = document.createElement("a");
+                  backLinkElement.href = backLink;
+                  backLinkElement.textContent = "←Back";
                   let linkWrapper = document.createElement("p");
-                  linkWrapper.appendChild(homeLinkElement);
+                  linkWrapper.appendChild(backLinkElement);
                   let fullWidthImage = divToMoveTo.querySelector('img[class*="full-width"]');             
                   if (fullWidthImage) {
                       let imageClass = fullWidthImage.className;               
@@ -1407,7 +1407,7 @@
                       divToMoveTo.insertBefore(linkWrapper, divToMoveTo.children[0]);
                   }
               }
-              
+
               // Iframes update for responsive design
               const allIframes = document.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="youtube-nocookie.com"], iframe[src*="docs.google.com"], iframe[src*="onedrive.live.com"]');
               allIframes.forEach(iframe => {

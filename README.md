@@ -314,12 +314,12 @@ The following additional URL parameters are available for use in Docsify-This UR
 
 **Supplemental URL Parameters (included in the Advanced Web Page Builder)**
 
+- [back-link](#back-link)
 - [coverpage](#coverpage)
 - [coverpage-color](#coverpage-color)
 - [coverpage-color-dark-mode](#coverpage-color-dark-mode)
 - [dark-mode](#dark-mode)
 - [edit-link-emoji](#edit-link-emoji)
-- [home-link](#home-link)
 - [image-captions-font-style](#image-captions-font-style)
 - [image-captions-image-align](#image-captions-image-align)
 - [image-captions-text-align](#image-captions-text-align)
@@ -340,6 +340,11 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [searchbox](#searchbox)
 - [submaxLevel](#subMaxLevel)
 - [svg-icons](#svg-icons)
+
+##### home-link
+
+Add a custom back link at the top of your web pages with the optional **back-link** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&back-link=https://preview.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main+homepage=home.md. Please note that since & is used to separate URL parameters, any & characters within the back-link URL must be replaced with + characters.
 
 ##### coverpage
 
@@ -365,11 +370,6 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Change the default emoji for a "Edit this Page" link with the optional **edit-link-emoji** parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:
-
-##### home-link
-
-Add a custom home link at the top of your web pages with the optional **home-link** parameter (not included in the Advanced Web Page Builder), for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&home-link=https://preview.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main+homepage=home.md. Please note that since & is used to separate URL parameters, any & characters within the home-link URL must be replaced with + characters.
 
 ##### image-captions-font-style
 
