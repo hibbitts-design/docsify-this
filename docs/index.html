@@ -1369,6 +1369,45 @@
                 divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);
               }
 
+              // Code generated/assisted by Anthropic Claude AI
+              // Add home page link if parameter present and transform + characters to &
+              let homeLink = getURLParameterByName(['home-link', 'homeLink'], null, null, window.location.href, true);
+
+              if (homeLink) {
+                  homeLink = homeLink.replace(/\+/g, '&');
+                  let divToMoveTo = document.getElementById("main");
+                  let homeLinkElement = document.createElement("a");
+                  homeLinkElement.href = homeLink;
+                  homeLinkElement.textContent = "←Home";
+                  let linkWrapper = document.createElement("p");
+                  linkWrapper.appendChild(homeLinkElement);
+                  let fullWidthImage = divToMoveTo.querySelector('img[class*="full-width"]');             
+                  if (fullWidthImage) {
+                      let imageClass = fullWidthImage.className;               
+                      if (imageClass === "header-tall-image-full-width-headings-overlay" || 
+                          imageClass === "header-image-full-width-headings-overlay") {
+                          let firstH1 = divToMoveTo.querySelector("h1");
+                          if (firstH1) {
+                              let nextElement = firstH1.nextElementSibling;
+                              if (nextElement && nextElement.tagName.toLowerCase() === 'h2') {
+                                  nextElement.insertAdjacentElement('afterend', linkWrapper);
+                              } else {
+                                  firstH1.insertAdjacentElement('afterend', linkWrapper);
+                              }
+                          }
+                      } else {
+                          let wrapperP = fullWidthImage.closest('p');                        
+                          if (wrapperP) {
+                              wrapperP.insertAdjacentElement('afterend', linkWrapper);
+                          } else {
+                              fullWidthImage.insertAdjacentElement('afterend', linkWrapper);
+                          }
+                      }
+                  } else {
+                      divToMoveTo.insertBefore(linkWrapper, divToMoveTo.children[0]);
+                  }
+              }
+              
               // Iframes update for responsive design
               const allIframes = document.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="youtube-nocookie.com"], iframe[src*="docs.google.com"], iframe[src*="onedrive.live.com"]');
               allIframes.forEach(iframe => {
