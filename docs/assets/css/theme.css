@@ -786,7 +786,7 @@
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 {
   position: absolute;
-  top: 13dvh;
+  top: calc(-3rem + 20dvh + 1rem); /* h1 center + spacing */
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -813,15 +813,15 @@
 }
 
 .markdown-section p:has(.header-image-full-width-headings-overlay) + h1 {
-  top: 11dvh;
+  top: calc(-3rem + 15dvh + 1rem); /* h1 center + spacing for regular images */
 }
 
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 + h2 {
   position: absolute;
-  top: calc(16dvh + 3rem + 1rem);
+  top: calc(-3rem + 20dvh + 3.5rem); /* h1 center + spacing */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%); /* Only center horizontally */
   color: rgba(255,255,255,0.95);
   text-shadow:
     1px 1px 3px rgba(0,0,0,0.7),
@@ -840,7 +840,7 @@
 }
 
 .markdown-section p:has(.header-image-full-width-headings-overlay) + h1 + h2 {
-  top: calc(14dvh + 3rem + 1rem);
+  top: calc(-3rem + 15dvh + 3.5rem); /* h2 center + spacing for regular images */
 }
 
 /* Keep text-shadow for links in h1 and h2 (same as parent) */
