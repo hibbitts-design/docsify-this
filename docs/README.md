@@ -816,7 +816,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 - [One Page Article Template](/?id=docsify-this-one-page-article-template)
 - [One Page Course Template](/?id=docsify-this-one-page-course-template)
-- [Multiple Page Site Template](/?id=docsify-this-multiple-page-site-template)
+- [Multiple Page Basic Site Template](/?id=docsify-this-multiple-page-basic-site-template)
 - [Multiple Page Blog Style Site Template](/?id=docsify-this-multiple-page-blog-style-site-template)
 - [Multiple Page Open Publishing Site Template](/?id=docsify-this-multiple-page-open-publishing-site-template)
 - [Multiple Page Course Site Template](/?id=docsify-this-multiple-page-course-site-template)
@@ -867,28 +867,28 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 </div>
 
-<div class="row" id="docsify-this-multiple-page-site-template">
+<div class="row" id="docsify-this-multiple-page-basic-site-template">
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This Multiple Page Site](images/docsify-this-multiple-page-site.jpg ":class=docsify-this-screenshot")
+![Docsify-This Multiple Page Basic Site](images/docsify-this-multiple-page-basic-site.jpg ":class=docsify-this-screenshot")
 
 </div>
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-site">Multiple Page Site Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site">Multiple Page Basic Site Template</a></h4>
 
-Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:
+Multiple Page Basic Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:
 
-- [Website](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Website")
-- [Website using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Site - Website using the Merriweather font")
-- [Website using the Merriweather font and red links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Multiple Page Site - Website using the Merriweather font and red links")
-- [Website and 'Edit this Page' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Website with 'Edit this Page' link")
-- [Website and 'Edit this Page' links using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Site - Website with 'Edit this Page' link using the Merriweather font")
-- [Website with Docsify Navbar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar "Docsify-This Multiple Page Site - Website with Docsify Navbar and an 'Edit this Page' link")
-- [Website with Footer and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadFooter=_footer&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Website with Footer and an 'Edit this Page' link")
-- [Website with Docsify Navbar and 'GitHub Repository' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Site - Website with Docsify Navbar and an 'GitHub Repository' link")
+- [Website](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md "Docsify-This Multiple Page Basic Site - Website")
+- [Website using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Basic Site - Website using the Merriweather font")
+- [Website using the Merriweather font and red links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Multiple Page Basic Site - Website using the Merriweather font and red links")
+- [Website and 'Edit this Page' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site/blob/main/home.md "Docsify-This Multiple Page Basic Site - Website with 'Edit this Page' link")
+- [Website and 'Edit this Page' links using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site/blob/main/home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Basic Site - Website with 'Edit this Page' link using the Merriweather font")
+- [Website with Docsify Navbar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md&loadNavbar=_navbar "Docsify-This Multiple Page Basic Site - Website with Docsify Navbar and an 'Edit this Page' link")
+- [Website with Footer and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md&loadFooter=_footer&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site/blob/main/home.md "Docsify-This Multiple Page Basic Site - Website with Footer and an 'Edit this Page' link")
+- [Website with Docsify Navbar and 'GitHub Repository' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Basic Site - Website with Docsify Navbar and an 'GitHub Repository' link")
 
 </div>
 
@@ -1628,7 +1628,7 @@ You can limit the domains which remote files can be rendered from by locating th
 
 ##### Advanced Customization
 
-If you want to further customize and control the presentation of your Markdown content, especially when rendering multiple page sites, you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted web app is based on) and store all Markdown files within that site. You can learn more about the capabilities of Docsify itself at [Docsify.js.org](https://docsify.js.org).
+If you want to further customize and control the presentation of your Markdown content, especially when rendering Multiple Page Basic Sites, you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted web app is based on) and store all Markdown files within that site. You can learn more about the capabilities of Docsify itself at [Docsify.js.org](https://docsify.js.org).
 
 Looking for some help with getting a Docsify custom-This instance up and running for your organization? Paul provides a range of professional services related to Docsify-This - [contact him to learn more](https://docsify-this.net/#/?id=contact-and-support).
 
