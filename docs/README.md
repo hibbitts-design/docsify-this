@@ -817,7 +817,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 - [One Page Article Template](/?id=docsify-this-one-page-article-template)
 - [One Page Course Template](/?id=docsify-this-one-page-course-template)
 - [Multiple Page Site Template](/?id=docsify-this-multiple-page-site-template)
-- [Blog Style Site Template](/?id=docsify-this-blog-style-site-template)
+- [Multiple Page Blog Style Site Template](/?id=docsify-this-multiple-page-blog-style-site-template)
 - [Multiple Page Open Publishing Site Template](/?id=docsify-this-multiple-page-open-publishing-site-template)
 - [Multiple Page Course Site Template](/?id=docsify-this-multiple-page-course-site-template)
 - [LMS Content Pages Template](/?id=docsify-this-lms-content-pages-template)
@@ -894,24 +894,24 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 </div>
 
-<div class="row" id="docsify-this-blog-style-site-template">
+<div class="row" id="docsify-this-multiple-page-blog-style-site-template">
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This Blog Style Site](images/docsify-this-blog-style-site.jpg ":class=docsify-this-screenshot")
+![Docsify-This Multiple Page Blog Style Site](images/docsify-this-multiple-page-blog-style-site.jpg ":class=docsify-this-screenshot")
 
 </div>
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-blog-style-site">Blog Style Site Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site">Multiple Page Blog Style Site Template</a></h4>
 
-Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-blog-style-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
+Multiple Page Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
 
-- [Website](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md "Docsify-This Blog Style Site - Website")
-- [Website using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Blog Style Site - Website using the Merriweather font")
-- [Website using the Merriweather font and red links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Blog Style Site - Website using the Merriweather font and red links")
-- [Website and 'Edit this Page' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-blog-style-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-blog-style-site/blob/main/home.md "Docsify-This Blog Style Site - Website with 'Edit this Page' link")
+- [Website](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md "Docsify-This Multiple Page Blog Style Site - Website")
+- [Website using the Merriweather font](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Blog Style Site - Website using the Merriweather font")
+- [Website using the Merriweather font and red links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Multiple Page Blog Style Site - Website using the Merriweather font and red links")
+- [Website and 'Edit this Page' links](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/blob/main/home.md "Docsify-This Multiple Page Blog Style Site - Website with 'Edit this Page' link")
 
 </div>
 
