@@ -788,6 +788,8 @@
   line-height: clamp(2.2rem, 5.5vw, 3.4rem);
   margin-left: -3px;
   font-weight: 600;
+  margin-top: clamp(1.5rem, 3vw, 2.5rem);
+  margin-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
 .markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + h1 + h2,
