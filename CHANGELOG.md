@@ -10,6 +10,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Improve visual design of h1 and h2 below top full width image
 
 **Bugfix:**
 * Minor CSS fixes
