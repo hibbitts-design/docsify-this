@@ -782,6 +782,22 @@
   object-position: center 50%;
 }
 
+.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + h1,
+.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + * + h1 {
+  font-size: clamp(2rem, 5vw, 3.0rem); /* Scales between 2rem and 3.0rem */
+  line-height: clamp(2.2rem, 5.5vw, 3.4rem);
+  margin-left: -3px;
+  font-weight: 600;
+}
+
+.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + h1 + h2,
+.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + * + h1 + h2 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem); /* Scales between 1.2rem and 1.8rem */
+  line-height: clamp(1.4rem, 3.5vw, 2rem);
+  margin-left: -2px;
+  font-weight: 500;
+}
+
 /* CSS generated/assisted by Anthropic Claude AI */
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 {
