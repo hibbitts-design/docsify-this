@@ -701,7 +701,9 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 - [embedly-card](#embedly-card)
 - [header-image-fade](#header-image-fade)
 - [header-image-full-width](#header-image-full-width)
+- [header-tall-image-full-width](#header-tall-image-full-width)
 - [header-image-full-width-headings-overlay](#header-image-full-width-headings-overlay)
+- [header-tall-image-full-width-headings-overlay](#header-tall-image-full-width-headings-overlay)
 - [image-75/image-50/image-25](/#image-75image-50image-25)
 - [image-75-border/image-50-border/image-25-border](#image-75-borderimage-50-borderimage-25-border)
 - [image-border](#image-border)
@@ -935,18 +937,36 @@ Suggested width of 1200px to 2000px, and display of Table of Contents or 'Edit t
 
 ##### header-image-full-width
 
-Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents or 'Edit this Page' links at top of page are not available.
+Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents or 'Edit this Page' links at top of page are not available. H1 and H2 headings immediately following the image receive enhanced typography styling.
 
 ```markdown
-![Photo of Mountain](images/mountain.jpg ":class=header-image")
+![Photo of Mountain](images/mountain.jpg ":class=header-image-full-width")
+```
+
+##### header-tall-image-full-width
+
+Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents or 'Edit this Page' links at top of page are not available. H1 and H2 headings immediately following the image receive enhanced typography styling.
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ":class=header-tall-image-full-width")
 ```
 
 ##### header-image-full-width-headings-overlay
 
-Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents or 'Edit this Page' links at top of page are not available.
+Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents or 'Edit this Page' links at top of page are not available. H1 and H2 headings immediately following the image are positioned as overlays on the image.
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ":class=header-image-full-width-headings-overlay")
+
+# Page Title
+```
+
+##### header-tall-image-full-width-headings-overlay
+
+Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents or 'Edit this Page' links at top of page are not available. H1 and H2 headings immediately following the image are positioned as overlays on the image.
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ":class=header-tall-image-full-width-headings-overlay")
 
 # Page Title
 ```
