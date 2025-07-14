@@ -826,7 +826,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This One Page Article Template](images/docsify-this-one-page-article.jpg ":class=docsify-this-screenshot")
+[![One Page Article Template](images/docsify-this-one-page-article.jpg ":class=docsify-this-screenshot")](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md)
 
 </div>
 
@@ -849,7 +849,7 @@ One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-p
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This One Page Course Template](images/docsify-this-one-page-course.jpg ":class=docsify-this-screenshot")
+[![One Page Course Template](images/docsify-this-one-page-course.jpg ":class=docsify-this-screenshot")](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main&homepage=home.md)
 
 </div>
 
@@ -871,7 +871,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This Multiple Page Basic Site](images/docsify-this-multiple-page-basic-site.jpg ":class=docsify-this-screenshot")
+[![Multiple Page Basic Site](images/docsify-this-multiple-page-basic-site.jpg ":class=docsify-this-screenshot")](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md)
 
 </div>
 
@@ -897,7 +897,7 @@ Multiple Page Basic Site [home.md](https://github.com/hibbitts-design/docsify-th
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This Multiple Page Blog Style Site](images/docsify-this-multiple-page-blog-style-site.jpg ":class=docsify-this-screenshot")
+[![Multiple Page Blog Style Site](images/docsify-this-multiple-page-blog-style-site.jpg ":class=docsify-this-screenshot")](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md)
 
 </div>
 
@@ -920,7 +920,7 @@ Multiple Page Blog Style Site [home.md](https://github.com/hibbitts-design/docsi
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This Multiple Page Open Publishing Site](images/docsify-this-multiple-page-open-publishing-site.jpg ":class=docsify-this-screenshot")
+[![Multiple Page Open Publishing Site](images/docsify-this-multiple-page-open-publishing-site.jpg ":class=docsify-this-screenshot")](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&hide-credits=true)
 
 </div>
 
@@ -947,7 +947,7 @@ Multiple Page Open Publishing Site [home.md](https://github.com/hibbitts-design/
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This Course Site Template](images/docsify-this-multiple-page-course-site.jpg ":class=docsify-this-screenshot")
+[![Multiple Page Course Site Template](images/docsify-this-multiple-page-course-site.jpg ":class=docsify-this-screenshot")](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&hide-credits=true&browser-tab-title=CPT-363)
 
 </div>
 
@@ -973,7 +973,7 @@ Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-t
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This LMS Content Pages Template](images/docsify-this-lms-content-pages.jpg ":class=docsify-this-screenshot")
+[![LMS Content Pages Template](images/docsify-this-lms-content-pages.jpg ":class=docsify-this-screenshot")](https://canvas.sfu.ca/courses/76289)
 
 </div>
 
