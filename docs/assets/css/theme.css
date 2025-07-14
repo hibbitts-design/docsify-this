@@ -782,27 +782,29 @@
   object-position: center 50%;
 }
 
-.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + h1,
-.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + * + h1 {
+.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + h1[tabindex="-1"],
+.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + * + h1[tabindex="-1"] {
   font-size: clamp(2rem, 5vw, 3.0rem); /* Scales between 2rem and 3.0rem */
   line-height: clamp(2.2rem, 5.5vw, 3.4rem);
   margin-left: -3px;
   font-weight: 600;
+  letter-spacing: clamp(-0.02em, -0.5vw, -0.01em); /* Tighten large text */
   margin-top: clamp(1.5rem, 3vw, 2.5rem);
   margin-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
 }
 
-.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + h1 + h2,
-.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + * + h1 + h2 {
+.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + h1[tabindex="-1"] + h2[tabindex="-1"],
+.markdown-section p:has(.header-tall-image-full-width, .header-image-full-width) + * + h1[tabindex="-1"] + h2[tabindex="-1"] {
   font-size: clamp(1.2rem, 3vw, 1.8rem); /* Scales between 1.2rem and 1.8rem */
   line-height: clamp(1.4rem, 3.5vw, 2rem);
   margin-left: -2px;
   font-weight: 500;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 /* CSS generated/assisted by Anthropic Claude AI */
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
-.header-image-full-width-headings-overlay) + h1 {
+.header-image-full-width-headings-overlay) + h1[tabindex="-1"] {
   position: absolute;
   top: calc(-3rem + 20dvh + 1rem); /* h1 center + spacing */
   left: 50%;
@@ -830,12 +832,12 @@
   max-width: 90vw;
 }
 
-.markdown-section p:has(.header-image-full-width-headings-overlay) + h1 {
+.markdown-section p:has(.header-image-full-width-headings-overlay) + h1[tabindex="-1"] {
   top: calc(-3rem + 15dvh + 1rem); /* h1 center + spacing for regular images */
 }
 
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
-.header-image-full-width-headings-overlay) + h1 + h2 {
+.header-image-full-width-headings-overlay) + h1[tabindex="-1"] + h2[tabindex="-1"] {
   position: absolute;
   top: calc(-3rem + 20dvh + 3.5rem); /* h1 center + spacing */
   left: 50%;
@@ -857,24 +859,24 @@
   border: 0;
 }
 
-.markdown-section p:has(.header-image-full-width-headings-overlay) + h1 + h2 {
+.markdown-section p:has(.header-image-full-width-headings-overlay) + h1[tabindex="-1"] + h2[tabindex="-1"] {
   top: calc(-3rem + 15dvh + 3.5rem); /* h2 center + spacing for regular images */
 }
 
 /* Keep text-shadow for links in h1 and h2 (same as parent) */
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
-.header-image-full-width-headings-overlay) + h1 a,
+.header-image-full-width-headings-overlay) + h1[tabindex="-1"] a,
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
-.header-image-full-width-headings-overlay) + h1 + h2 a {
+.header-image-full-width-headings-overlay) + h1[tabindex="-1"] + h2[tabindex="-1"] a {
   text-shadow: inherit; /* Inherit shadow from parent */
   text-decoration: none; /* Remove default underline */
 }
 
 /* Apply underline only on hover */
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
-.header-image-full-width-headings-overlay) + h1 a:hover,
+.header-image-full-width-headings-overlay) + h1[tabindex="-1"] a:hover,
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
-.header-image-full-width-headings-overlay) + h1 + h2 a:hover {
+.header-image-full-width-headings-overlay) + h1[tabindex="-1"] + h2[tabindex="-1"] a:hover {
   text-decoration: underline; /* Show underline on hover */
 }
 

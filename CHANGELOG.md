@@ -4,7 +4,7 @@
 
 **New:**
 * Added CSS Markdown classes to support cards (`card` & `card-rounded`) and responsive card lists (`card-list`)
-* Added CSS Markdown classes to support header overlays on full-width images (`header-image-full-width-headings-overlay` & `card-rounded`) and responsive card lists (`header-tall-image-full-width-headings-overlay`)
+* Added CSS Markdown classes to support header overlays on full-width images (`header-image-full-width-headings-overlay` and `header-tall-image-full-width-headings-overlay`)
 * Added example Docsify-This template (Blog Style Site Template)
 * Added URL parm `home-link` to display a custom home page link at the top of a page
 
