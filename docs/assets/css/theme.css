@@ -788,6 +788,7 @@
   line-height: clamp(2.2rem, 5.5vw, 3.4rem);
   margin-left: -3px;
   font-weight: 600;
+  letter-spacing: clamp(-0.02em, -0.5vw, -0.01em); /* Tighten large text */
   margin-top: clamp(1.5rem, 3vw, 2.5rem);
   margin-bottom: clamp(0.75rem, 1.5vw, 1.25rem);
 }
@@ -798,6 +799,7 @@
   line-height: clamp(1.4rem, 3.5vw, 2rem);
   margin-left: -2px;
   font-weight: 500;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
 }
 
 /* CSS generated/assisted by Anthropic Claude AI */
