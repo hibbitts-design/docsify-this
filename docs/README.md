@@ -814,13 +814,13 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 **Available Docsify-This Markdown Templates**
 
-- [One Page Article Template](/?id=docsify-this-one-page-article-template)
-- [One Page Course Template](/?id=docsify-this-one-page-course-template)
-- [Multiple Page Basic Site Template](/?id=docsify-this-multiple-page-basic-site-template)
-- [Multiple Page Blog Style Site Template](/?id=docsify-this-multiple-page-blog-style-site-template)
-- [Multiple Page Open Publishing Site Template](/?id=docsify-this-multiple-page-open-publishing-site-template)
-- [Multiple Page Course Site Template](/?id=docsify-this-multiple-page-course-site-template)
-- [LMS Content Pages Template](/?id=docsify-this-lms-content-pages-template)
+- [One Page Article Template](#docsify-this-one-page-article-template)
+- [One Page Course Template](#docsify-this-one-page-course-template)
+- [Multiple Page Basic Site Template](#docsify-this-multiple-page-basic-site-template)
+- [Multiple Page Blog Style Site Template](#docsify-this-multiple-page-blog-style-site-template)
+- [Multiple Page Open Publishing Site Template](#docsify-this-multiple-page-open-publishing-site-template)
+- [Multiple Page Course Site Template](#docsify-this-multiple-page-course-site-template)
+- [LMS Content Pages Template](#docsify-this-lms-content-pages-template)
 
 <div class="row" id="docsify-this-one-page-article-template">
 
