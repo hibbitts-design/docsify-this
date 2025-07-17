@@ -9,11 +9,20 @@
 </div>
 
 <div style="background: #e8f5e8; border: 1px solid #a8c4aa; border-radius: 16px; padding: 12px; margin: 20px 0; display: flex; align-items: center; gap: 12px;">
-    <div style="flex: 1;">
-        <strong style="color: #57985E;">Docsify-This v2.0 Preview is now available!</strong>
-        <div style="color: #666; margin-top: 2px; font-size: 18px;">Built with the latest Docsify v5.0 release candidate and featuring a refreshed UI.</div>
+  <div style="flex: 1;">
+    <strong style="color: #57985e;">Docsify-This v2.0 Preview is now available!</strong>
+    <div style="color: #666; margin-top: 2px; font-size: 18px; display: block;">
+      <style>
+        @media (max-width: 768px) {
+          .hide-on-mobile {
+              display: none !important;
+          }
+        }
+      </style>
+      <span class="hide-on-mobile">Built with the latest Docsify v5.0 release candidate and featuring a refreshed UI.</span>
     </div>
-    <a href="https://preview-v2.docsify-this.net" target="_blank" style="background: #57985E; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap;">Explore v2.0</a>
+  </div>
+  <a href="https://preview-v2.docsify-this.net" target="_blank" style="background: #57985e; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap;">Explore v2.0</a>
 </div>
 
 <h1>Instantly Turn Online Markdown Files into Web Pages</h1>
