@@ -22,7 +22,7 @@
       <span class="hide-on-mobile">Built with the latest Docsify v5.0 release candidate and featuring a refreshed UI.</span>
     </div>
   </div>
-  <a href="https://preview-v2.docsify-this.net" target="_blank" style="background: #57985e; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap;">Explore v2.0</a>
+  <a href="https://preview-v2.docsify-this.net" style="background: #57985e; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap;">Explore v2.0</a>
 </div>
 
 <h1>Instantly Turn Online Markdown Files into Web Pages</h1>
