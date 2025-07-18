@@ -815,6 +815,7 @@
       document.getElementById("coverpagecolordarkmode").value = '#262D30';
       document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
       document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
+      setupFontPreview();
     }
 
     function setColorProperties(color) {
@@ -973,6 +974,51 @@
       attributes: true, // observe attributes changes
       attributeFilter: ['href'] // filter to only observe changes to 'href' attributes
     });
+
+    /* Code generated/assisted by Anthropic Claude AI */
+    // Font preview support
+    function setupFontPreview() {
+      const fontSelect = document.getElementById('fontfamily');
+      const fontPreview = document.getElementById('fontPreview');
+      
+      // Check if both elements exist
+      if (!fontSelect || !fontPreview) {
+        setTimeout(setupFontPreview, 100); // Try again after 100 milliseconds
+        return; // Stop current execution
+      }
+
+      // Map values from your <option> to valid CSS font-family strings
+      const fontMap = {
+        'Source%20Sans%20Pro': '"Source Sans Pro", sans-serif',
+        'Arial,sans-serif': 'Arial, sans-serif',
+        'Helvetica,sans-serif': 'Helvetica, sans-serif',
+        'Helvetica%20Neue,Helvetica,Arial,sans-serif': '"Helvetica Neue", Helvetica, Arial, sans-serif',
+        'Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif': 'Lato, "Helvetica Neue", Helvetica, Arial, sans-serif',
+        'Open%20Sans,sans-serif': '"Open Sans", sans-serif',
+        'system-ui,sans-serif': 'system-ui, sans-serif',
+        'Tahoma,sans-serif': 'Tahoma, sans-serif',
+        'Verdana,sans-serif': 'Verdana, sans-serif',
+        'Georgia,serif': 'Georgia, serif',
+        'Merriweather,Georgia,serif': 'Merriweather, Georgia, serif',
+        'Times%20New%20Roman,serif': '"Times New Roman", serif',
+        'Courier,monospace': 'Courier, monospace'
+      };
+
+      function updateFontPreview() {
+        const selectedValue = fontSelect.value;
+        // Check if the selectedValue exists in fontMap, otherwise use default
+        const fontFamily = fontMap[selectedValue] || fontMap['Source%20Sans%20Pro']; 
+        fontPreview.style.fontFamily = fontFamily;
+      }
+      // Add event listener for when the selection changes
+      fontSelect.addEventListener('change', function() {
+        updateFontPreview();
+      });
+      // Call it once on page load to set the initial preview
+      updateFontPreview();
+    }
+    // Start the setup process when the DOM is fully loaded/parsed
+    document.addEventListener('DOMContentLoaded', setupFontPreview);
 
     // Docsify
     window.$docsify = {

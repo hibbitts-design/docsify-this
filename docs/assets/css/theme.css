@@ -1227,6 +1227,28 @@ body .docsify-pagination-container {
 
 /* DOCSIFY THIS */
 
+@media screen and (max-width: 768px) {
+  /* Force font size to start on a new line, but keep it inline for itself */
+  .stackedlabeldropdown:has(label[for="fontsize"]) {
+    display: block;
+    clear: both;
+    margin-top: 10px;
+  }
+  
+  /* Keep line height on the same line as font size */
+  .stackedlabeldropdown:has(label[for="lineheight"]) {
+    display: inline-block;
+    margin-left: 15px; /* Add some spacing between font size and line height */
+    margin-top: 0;
+  }
+  
+  /* Keep the actual select elements at their normal width */
+  .stackedlabeldropdown select {
+    width: auto !important;
+    max-width: none !important;
+  }
+}
+
 #docsifythis .copy-link {
   margin-left: 8px;
   color: var(--link-color);

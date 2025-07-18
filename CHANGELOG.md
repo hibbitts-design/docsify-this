@@ -7,6 +7,7 @@
 * Added CSS Markdown classes to support header overlays on full-width images (`header-image-full-width-headings-overlay` and `header-tall-image-full-width-headings-overlay`)
 * Added example Docsify-This template (Blog Style Site Template)
 * Added URL parm `home-link` to display a custom home page link at the top of a page
+* Added font preview area next to font selction menu
 
 **Improved:**
 * Updated ReadMe
