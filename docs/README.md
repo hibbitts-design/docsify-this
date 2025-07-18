@@ -101,7 +101,7 @@ Page layout:
 
 <div class='stackedlabeldropdown'>
  <label for="fontfamily">Page font family:</label>
- <select style="border-radius: 7px;border-color: #8e8f9d; display: inline-block; vertical-align: middle;" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
+ <select style="border-radius: 7px;border-color: #8e8f9d; display: inline-block; vertical-align: middle; margin-right: 4px;" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
    <option value="default">Source Sans Pro</option>
    <option disabled="disabled">----</option>
    <option value="Arial,sans-serif">Arial, sans-serif</option>
@@ -117,7 +117,7 @@ Page layout:
    <option value="Times%20New%20Roman,serif">Times New Roman, serif</option>
    <option value="Courier,monospace">Courier, monospace</option>
  </select>
- <span id="fontPreview" style="display: inline-block; vertical-align: middle; margin-top: 6px; margin-left: 4px; font-size: 1.2em; border: 1px dashed #ccc; padding: 2px 5px; background-color: var(--mono-tint3); color: var(--base-color); width: 78px; overflow: hidden;">
+ <span id="fontPreview" style="display: inline-block; vertical-align: middle; margin-top: 6px; font-size: 1.2em; border: 1px dashed #ccc; padding: 2px 5px; background-color: var(--mono-tint3); color: var(--base-color); width: 78px; overflow: hidden;">
    Aa Bb
  </span>
 </div>
