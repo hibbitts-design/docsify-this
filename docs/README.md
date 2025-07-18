@@ -100,23 +100,26 @@ Page layout:
 <div class="clearfix">
 
 <div class='stackedlabeldropdown'>
-  <label for="fontfamily">Page font family:</label>
-  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
-    <option value="default">Source Sans Pro</option>
-    <option disabled="disabled">----</option>
-    <option value="Arial,sans-serif">Arial, sans-serif</option>
-    <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
-    <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
-    <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
-    <option value="Open%20Sans,sans-serif">Open Sans, sans-serif</option>
-    <option value="system-ui,sans-serif">System UI, sans-serif</option>
-    <option value="Tahoma,sans-serif">Tahoma, sans-serif</option>
-    <option value="Verdana,sans-serif">Verdana, sans-serif</option>
-  <option value="Georgia,serif">Georgia, serif</option>
-  <option value="Merriweather,Georgia,serif">Merriweather, serif</option>
-  <option value="Times%20New%20Roman,serif">Times New Roman, serif</option>
-  <option value="Courier,monospace">Courier, monospace</option>
-  </select>
+ <label for="fontfamily">Page font family:</label>
+ <select style="border-radius: 7px;border-color: #8e8f9d; display: inline-block; vertical-align: middle;" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
+   <option value="default">Source Sans Pro</option>
+   <option disabled="disabled">----</option>
+   <option value="Arial,sans-serif">Arial, sans-serif</option>
+   <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
+   <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
+   <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
+   <option value="Open%20Sans,sans-serif">Open Sans, sans-serif</option>
+   <option value="system-ui,sans-serif">System UI, sans-serif</option>
+   <option value="Tahoma,sans-serif">Tahoma, sans-serif</option>
+   <option value="Verdana,sans-serif">Verdana, sans-serif</option>
+   <option value="Georgia,serif">Georgia, serif</option>
+   <option value="Merriweather,Georgia,serif">Merriweather, serif</option>
+   <option value="Times%20New%20Roman,serif">Times New Roman, serif</option>
+   <option value="Courier,monospace">Courier, monospace</option>
+ </select>
+ <span id="fontPreview" style="display: inline-block; vertical-align: middle; margin-top: 6px; margin-left: 4px; font-size: 1.2em; border: 1px dashed #ccc; padding: 2px 5px; background-color: var(--mono-tint3); color: var(--base-color); width: 78px; overflow: hidden;">
+   Aa Bb
+ </span>
 </div>
 
 <div class='stackedlabeldropdown'>
