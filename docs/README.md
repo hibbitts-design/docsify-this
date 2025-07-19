@@ -395,8 +395,9 @@ With Docsify-This you can:
 
 #### Docsify-This Core Design Principles
 
-- Frictionless Markdown publishing
-- Flexible content display handling
+- Zero Maintenance Publishing
+- Separation of Content and Presentation 
+- Platform independence over vendor lock-in
 - Your content, your control
 - Support the 5 Rs of OER
 - Authors helping other authors
