@@ -141,6 +141,8 @@ The appearance of rendered Markdown files can be customized by optional [URL par
 
 Looking for an overall introduction to publishing with Docsify-This? Check out [Markdown Publishing with Docsify-This](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=4&title=Markdown%20Publishing%20with%20Docsify-This).
 
+Docsify-This uses client-side rendering, which means your content will not be indexed by search engines like Google, Bing, or DuckDuckGo.
+
 ---
 
 #### Read What People are Saying about Docsify-This
