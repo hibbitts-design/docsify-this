@@ -591,8 +591,21 @@
   color: var(--base-background-color);
   font-weight: 700;
   margin-top: 1rem;
-  padding-left: 0.25rem;
-  background: color-mix(in srgb, var(--base-color) 70%, transparent);
+    background: color-mix(in srgb, var(--base-color) 70%, transparent);
+    background-clip: content-box;
+}
+
+/* Target first paragraphs with 5+ links (reasonable index minimum) */
+.markdown-section p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)) {
+    flex-wrap: wrap;
+    gap: 2px;
+    font-size: var(--font-size-l);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.markdown-section p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)) a {
+    padding: 0 4px;
 }
 
 .markdown-section .accordion {
