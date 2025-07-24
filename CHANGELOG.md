@@ -7,8 +7,8 @@
 * Added CSS Markdown classes to support header overlays on full-width images (`header-image-full-width-headings-overlay` and `header-tall-image-full-width-headings-overlay`)
 * Added support for topic index using standard links in first paragraph
 * Added example Docsify-This template (Blog Style Site Template)
-* Added URL parm `home-link` to display a custom home page link at the top of a page
-* Added font preview area next to font selction menu
+* Added URL parm `back-link` to display a custom back link at the top of a page
+* Added font preview area next to font selection menu
 
 **Improved:**
 * Updated ReadMe
