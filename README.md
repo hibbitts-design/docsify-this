@@ -38,7 +38,7 @@ _**Check out what Docsify-This can do by [viewing this ReadMe file as a web page
 
 [Try it with the ReadMe file for this project, displayed with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3)
 
-## All About Docsify-This
+## Everything You Need to Know about Docsify-This
 
 <div style="display: none;">
 
