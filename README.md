@@ -24,7 +24,7 @@ _**Check out what Docsify-This can do by [viewing this ReadMe file as a web page
   <em>Figure 1. <a href="https://docsify-this.net">Docsify-This.net</a> Web Page Builder.</em>
 </p>
 
-### 🚀 Quickstart (T-2 minutes to launch)
+### Quickstart (T-2 minutes to launch) 🚀
 
 1. **Have a Markdown file online?** GitHub, Codeberg, or any public raw Markdown file works
 1. **Visit** https://docsify-this.net
