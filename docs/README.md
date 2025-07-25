@@ -317,7 +317,7 @@ Page layout:
 
 </div>
 
-## 🚀 Quickstart (T-2 minutes to launch)
+### 🚀 Quickstart (T-2 minutes to launch)
 
 1. **Have a Markdown file online?** GitHub, Codeberg, or any public raw Markdown file works
 1. **Paste your file URL** into the Markdown File URL field
