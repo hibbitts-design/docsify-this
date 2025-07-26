@@ -27,7 +27,7 @@ _**Check out what Docsify-This can do by [viewing this ReadMe file as a web page
 ### Quickstart ⚡
 
 1. **Have a Markdown file online?** GitHub, Codeberg, or a public raw Markdown file works
-1. Visit the location of your file and **copy your file URL**
+1. Visit the location of your file and **copy the file URL**
 1. **Visit** https://docsify-this.net and **paste that URL** into the Markdown File URL field
 1. Choose a **Page layout** (try **Docsify Sidebar** for enhanced navigation)
 1. Tap on the link  **Show More Page Appearance Options »** and select from available choices
