@@ -317,18 +317,22 @@ Page layout:
 
 </div>
 
-### Quickstart (T-2 minutes to launch) 🚀
+### Quickstart ⚡
 
-1. **Have a Markdown file online?** GitHub, Codeberg, or any public raw Markdown file works
-1. **Paste your file URL** into the Markdown File URL field
+1. **Have a Markdown file online?** GitHub, Codeberg, or a public raw Markdown file works
+1. Visit the location of your file and **copy your file URL**
+1. Return here and **paste that URL** into the above Markdown File URL field
 1. Choose a **Page layout** (try **Docsify Sidebar** for enhanced navigation)
-1. Tap on the link  **Show More Page Appearance Options »** and select from available options
+1. Tap on the link  **Show More Page Appearance Options »** and select from available choices
 1. Tap on the button **Publish as Web Page**
-1. **Share your new web page Docsify-This URL** - that’s it!
 
-**Example:** Turn any GitHub Markdown file like `https://github.com/hibbitts-design/docsify-this/blob/main/README.md` into a responsive web page.  
+No online Markdown file handy? **Try this example** - the GitHub ReadMe file for the Docsify-This project:
 
-[Try it with the ReadMe file for this project, displayed with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3 ':target=_blank')
+```
+https://github.com/hibbitts-design/docsify-this/blob/main/README.md
+```
+
+[See the above ReadMe file displayed with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3 ':target=_blank')
 
 ## Everything You Need to Know about Docsify-This
 
