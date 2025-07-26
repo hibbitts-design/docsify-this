@@ -643,6 +643,11 @@
   }
 }
 
+.markdown-section code {
+  white-space: pre-wrap !important;
+  overflow-wrap: break-word;
+}
+
 .markdown-section pre {
   white-space: pre-wrap !important;
   overflow-wrap: break-word;
