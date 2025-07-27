@@ -332,7 +332,7 @@ No online Markdown file handy? **Copy and paste this example URL** - an overview
 https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 ```
 
-[See the above ReadMe file displayed with Docsify Sidebar →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/markdown/main&homepage=ReadMe.md&sidebar=true ':target=_blank')
+[See the above ReadMe file displayed with Docsify Sidebar and a searchbox, using the Merriweather font →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/markdown/main&homepage=ReadMe.md&sidebar=true&font-family=Merriweather,Georgia,serif&searchbox=true&dark-mode=auto ':target=_blank')
 
 ## Everything You Need to Know about Docsify-This
 
