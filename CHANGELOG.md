@@ -11,7 +11,7 @@
 * Added font preview area next to font selection menu
 
 **Improved:**
-* Updated ReadMe
+* Updated ReadMe, including a new Quickstart section
 * Improve visual design of h1 and h2 below top full width image
 
 **Bugfix:**
