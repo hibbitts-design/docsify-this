@@ -326,13 +326,13 @@ Page layout:
 1. Tap on the link  **Show More Page Appearance Options »** and select from available choices
 1. Tap on the button **Publish as Web Page**
 
-No online Markdown file handy? **Try this example** - the GitHub ReadMe file for the Docsify-This project:
+No online Markdown file handy? **Copy and paste this example URL** - an overview of the Markdown syntax:
 
 ```
-https://github.com/hibbitts-design/docsify-this/blob/main/README.md
+https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 ```
 
-[See the above ReadMe file displayed with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3 ':target=_blank')
+[See the above ReadMe file displayed with Docsify Sidebar →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/markdown/main&homepage=ReadMe.md&sidebar=true ':target=_blank')
 
 ## Everything You Need to Know about Docsify-This
 
