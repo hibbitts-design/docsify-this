@@ -1267,6 +1267,23 @@ body .docsify-pagination-container {
   }
 }
 
+#docsifythis .docsify-copy-code-button {
+  padding: 0.35em 0.5em;
+    background: var(--mono-shade1);
+    color: #fff;
+    font-size: .85em;
+}
+
+.docsify-copy-code-button:focus-visible {
+    opacity: 1; /* Keep visible when focused by keyboard */
+}
+
+#docsifythis .docsify-copy-code-button > .error,
+#docsifythis .docsify-copy-code-button > .success {
+    padding: 0.2em 0.35em;
+    font-size: 0.8em;
+}
+
 #docsifythis .copy-link {
   margin-left: 8px;
   color: var(--link-color);
