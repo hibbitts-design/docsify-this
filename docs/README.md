@@ -723,7 +723,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### loadFavicon<button type="button" class="copy-link" aria-label="Copy loadFavicon parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&loadFavicon=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 You can set a custom Favicon from the image file passed from the optional **loadFavicon** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&loadFavicon=open-access.png
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main&loadFavicon=open-access.png
 
 ##### loadFooter<button type="button" class="copy-link" aria-label="Copy loadFooter parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&loadFooter=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
@@ -1746,7 +1746,7 @@ The following style prefixes are available with Docsify-This:
 
 [GitHub Markdown Content Demo file](https://github.com/hibbitts-design/docsify-this-markdown-content-demo/blob/main/README.md), displayed by Docsify-This as a [Web Page with 'View raw Markdown' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main&edit-link=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main/README.md&edit-link-text=View%20raw%20Markdown).
 
-[Codeberg Markdown Content Demo file](https://codeberg.org/paulhibbitts/docsify-this-markdown-content-demo/src/branch/main/README.md), displayed by Docsify-This as a [Web Page with 'View raw Markdown' link](https://docsify-this.net?basePath=https://raw.codeberg.page/paulhibbitts/docsify-this-markdown-content-demo/&edit-link=https://codeberg.org/paulhibbitts/docsify-this-markdown-content-demo/raw/branch/main/README.md&edit-link-text=View%20raw%20Markdown).
+[Codeberg Markdown Content Demo file](https://codeberg.org/hibbitts-design/docsify-this-markdown-content-demo/src/branch/main/README.md), displayed by Docsify-This as a [Web Page with 'View raw Markdown' link](https://docsify-this.net?basePath=https://raw.codeberg.page/hibbitts-design/docsify-this-markdown-content-demo/&edit-link=https://codeberg.org/hibbitts-design/docsify-this-markdown-content-demo/raw/branch/main/README.md&edit-link-text=View%20raw%20Markdown).
 
 [GitHub's LaTeX Support Examples Markdown file](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md), displayed by Docsify-This as a [Web Page with an 'Edit this Page' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&edit-link=https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md#/).
 
