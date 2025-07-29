@@ -1085,27 +1085,27 @@
 }
 
 .markdown-section h1 {
-  line-height: 1.75rem;
+  line-height: 1.8rem;
 }
 
 .markdown-section h2 {
-  line-height: 1.55rem;
+  line-height: 1.6rem;
 }
 
 .markdown-section h3 {
-  line-height: 1.35rem;
+  line-height: 1.4rem;
 }
 
 .markdown-section h4 {
-  line-height: 1.3rem;
+  line-height: 1.35rem;
 }
 
 .markdown-section h5 {
-  line-height: 1.25rem;
+  line-height: 1.3rem;
 }
 
 .markdown-section h6 {
-  line-height: 1.2rem;
+  line-height: 1.25rem;
 }
 
 .markdown-section .alert hr,
@@ -1116,37 +1116,37 @@
 .markdown-section .alert h1,
 .markdown-section blockquote h1 {
   font-size: 1.5rem;
-  line-height: 1.6rem;
+  line-height: 1.65rem;
 }
 
 .markdown-section .alert h2,
 .markdown-section blockquote h2 {
   font-size: 1.35rem;
-  line-height: 1.45rem;
+  line-height: 1.5rem;
 }
 
 .markdown-section .alert h3,
 .markdown-section blockquote h3 {
   font-size: 1.2rem;
-  line-height: 1.3rem;
+  line-height: 1.35rem;
 }
 
 .markdown-section .alert h4,
 .markdown-section blockquote h4 {
   font-size: 1.15rem;
-  line-height: 1.25rem;
+  line-height: 1.3rem;
 }
 
 .markdown-section .alert h5,
 .markdown-section blockquote h5 {
   font-size: 1.1rem;
-  line-height: 1.2rem;
+  line-height: 1.25rem;
 }
 
 .markdown-section .alert h6,
 .markdown-section blockquote h6 {
   font-size: 1rem;
-  line-height: 1.1rem;
+  line-height: 1.15rem;
 }
 
 .markdown-section .align-items-vertically {
@@ -1178,68 +1178,68 @@ body .docsify-pagination-container {
 @media only screen and (max-width: 480px) {
   .markdown-section h1 {
     font-size: 1.45rem;
-    line-height: 1.5rem;
+    line-height: 1.60rem;
   }
 
   .markdown-section h2 {
     font-size: 1.35rem;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
   }
 
   .markdown-section h3 {
     font-size: 1.25rem;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
   }
 
   .markdown-section h4 {
     font-size: 1.15rem;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
   }
 
   .markdown-section h5 {
     font-size: 1.1rem;
-    line-height: 1.15rem;
+    line-height: 1.25rem;
   }
 
   .markdown-section h6 {
     font-size: 1rem;
-    line-height: 1.05rem;
+    line-height: 1.15rem;
   }
 
   .markdown-section .alert h1,
   .markdown-section blockquote h1 {
     font-size: 1.3rem;
-    line-height: 1.4rem;
+    line-height: 1.45rem;
   }
 
   .markdown-section .alert h2,
   .markdown-section blockquote h2 {
     font-size: 1.2rem;
-    line-height: 1.3rem;
+    line-height: 1.35rem;
   }
 
   .markdown-section .alert h3,
   .markdown-section blockquote h3 {
     font-size: 1.15rem;
-    line-height: 1.25rem;
+    line-height: 1.3rem;
   }
 
   .markdown-section .alert h4,
   .markdown-section blockquote h4 {
     font-size: 1.1rem;
-    line-height: 1.2rem;
+    line-height: 1.25rem;
   }
 
   .markdown-section .alert h5,
   .markdown-section blockquote h5 {
     font-size: 1.05rem;
-    line-height: 1.1rem;
+    line-height: 1.20rem;
   }
 
   .markdown-section .alert h6,
   .markdown-section blockquote h6 {
     font-size: 1rem;
-    line-height: 1.05rem;
+    line-height: 1.15rem;
   }
 }
 
