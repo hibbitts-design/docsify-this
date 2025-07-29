@@ -1085,27 +1085,27 @@
 }
 
 .markdown-section h1 {
-  line-height: 1.8rem;
+  line-height: 1.9rem;
 }
 
 .markdown-section h2 {
-  line-height: 1.6rem;
+  line-height: 1.7rem;
 }
 
 .markdown-section h3 {
-  line-height: 1.4rem;
+  line-height: 1.5rem;
 }
 
 .markdown-section h4 {
-  line-height: 1.35rem;
+  line-height: 1.45rem;
 }
 
 .markdown-section h5 {
-  line-height: 1.3rem;
+  line-height: 1.4rem;
 }
 
 .markdown-section h6 {
-  line-height: 1.25rem;
+  line-height: 1.3rem;
 }
 
 .markdown-section .alert hr,
@@ -1178,32 +1178,32 @@ body .docsify-pagination-container {
 @media only screen and (max-width: 480px) {
   .markdown-section h1 {
     font-size: 1.45rem;
-    line-height: 1.60rem;
+    line-height: 1.75rem;
   }
 
   .markdown-section h2 {
     font-size: 1.35rem;
-    line-height: 1.5rem;
+    line-height: 1.65rem;
   }
 
   .markdown-section h3 {
     font-size: 1.25rem;
-    line-height: 1.4rem;
+    line-height: 1.55rem;
   }
 
   .markdown-section h4 {
     font-size: 1.15rem;
-    line-height: 1.3rem;
+    line-height: 1.45rem;
   }
 
   .markdown-section h5 {
     font-size: 1.1rem;
-    line-height: 1.25rem;
+    line-height: 1.4rem;
   }
 
   .markdown-section h6 {
     font-size: 1rem;
-    line-height: 1.15rem;
+    line-height: 1.3rem;
   }
 
   .markdown-section .alert h1,
