@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.10.6] - XX/XX/2025
+
+**New:**
+* Availability of alias domain Publish-This.net for non Docsify-This branded URLs
+
+**Improved:**
+* Updated ReadMe
+
 ## [1.10.5] - 08/01/2025☀️
 
 **New:**
