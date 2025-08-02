@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.10.5] - 08/01/2025
+## [1.10.5] - 08/01/2025☀️
 
 **New:**
 * Added CSS Markdown classes to support cards (`card` & `card-rounded`) and responsive card lists (`card-list`)
