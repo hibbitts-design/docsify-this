@@ -7,7 +7,7 @@
 
 **Improved:**
 * Updated ReadMe
-* Removed image for Twitter Cards and Open Graph
+* Removed image for Open Graph
 
 ## [1.10.5] - 08/01/2025☀️
 
