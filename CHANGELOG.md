@@ -3,7 +3,7 @@
 ## [1.10.6] - XX/XX/2025
 
 **New:**
-* Availability of alias domain Publish-This.net for non Docsify-This branded URLs
+* Availability of alias domain Share-This.net for non Docsify-This branded URLs
 
 **Improved:**
 * Updated ReadMe
