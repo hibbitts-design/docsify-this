@@ -1548,10 +1548,13 @@ span #docsifythisurlfield {
 }
 
 .docsifythisurlbuildercheckbox {
-  position: absolute;
-  transform: scale(1.2);
-  margin-top: 6px;
-  margin-left: 2px;
+    position: absolute;
+    transform: scale(1.5);
+    transform-origin: 0 0;
+    -webkit-transform: scale(1.5);
+    -webkit-transform-origin: 0 0;
+    margin-top: 4px;
+    margin-left: 2px;
 }
 
 #docsifythisurlbuilder input[type="checkbox"] {
@@ -1559,7 +1562,7 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder input[type="checkbox"] ~ label {
-  padding-left: 1.2em;
+  padding-left: 1.3em;
   display: inline-block;
 }
 
