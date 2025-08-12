@@ -182,6 +182,8 @@ Page layout:
 
 <hr>
 
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable search field in Sidebar</label></div>
+
 <div class="docsifythisurlbuilderoptionsline">Maximum Header level (1-6) of Docsify Sidebar:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Maximum Header level (1-6) of Docsify Sidebar" type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"></div>
 
 <h3>Additional Page Options</h3>
@@ -288,8 +290,6 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline">Website logo displayed in Sidebar (folder path and image filename):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Website logo displayed in Sidebar" type="text" maxlength="80" value="" id="siteLogo" name="siteLogo"></div>
 
 <div class="docsifythisurlbuilderoptionsline">Maximum header level of Sidebar automatic table of contents (0 for none):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Maximum header level of Sidebar automatic table of contents (0 for none)" type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"></div>
-
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable search field in Sidebar</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination" unchecked><label for="pagination">Enable pagination buttons in page content area (Docsify custom Sidebar required)  </label></div>
 
@@ -518,6 +518,7 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 - [line-height](/?id=line-heightconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [link-color](/?id=link-colorconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [maxLevel](/?id=maxLevelconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [searchbox](/?id=searchboxconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [sidebar](/?id=sidebarconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [toc](/?id=tocconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [toc-headings](/?id=toc-headingsconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -589,6 +590,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Set the maximum header level of the Docsify sidebar with the optional **maxLevel** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=3
 
+##### searchbox<button type="button" class="copy-link" aria-label="Copy searchbox parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&searchbox=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Enable the Docsify Search plugin (which currently includes matches for text and markup) on multiple page sites including a custom Sidebar with the optional **searchbox** Docsify parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true
+
 ##### sidebar<button type="button" class="copy-link" aria-label="Copy sidebar parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sidebar=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
@@ -643,7 +649,6 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [name](/?id=nameconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [page-title](/?id=page-titleconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [pagination](/?id=paginationconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
-- [searchbox](/?id=searchboxconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [subMaxLevel](/?id=subMaxLevelconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [svg-icons](/?id=svg-iconsconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 
@@ -766,11 +771,6 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&pagination=true
-
-##### searchbox<button type="button" class="copy-link" aria-label="Copy searchbox parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&searchbox=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
-
-Enable the Docsify Search plugin (which currently includes matches for text and markup) on multiple page sites including a custom Sidebar with the optional **searchbox** Docsify parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true
 
 ##### subMaxLevel<button type="button" class="copy-link" aria-label="Copy subMaxLevel parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&subMaxLevel=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
