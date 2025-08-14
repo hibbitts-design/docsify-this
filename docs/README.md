@@ -8,10 +8,10 @@
   </div>
 </div>
 
-<div style="background: #e8f5e8; border: 1px solid #a8c4aa; border-radius: 16px; padding: 12px; margin: 20px 0; display: flex; align-items: center; gap: 12px;">
+<div style="background: linear-gradient(to right, #e8f5e8 0%, #d4edd6 100%); border: 1px solid #a8c4aa; border-radius: 12px; padding: 16px; margin: 20px 0; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);">
   <div style="flex: 1;">
     <strong style="color: #57985e;">Docsify-This v2.0 Preview is now available!</strong>
-    <div style="color: #666; margin-top: 2px; font-size: 18px; display: block;">
+    <div style="color: #475569; margin-top: 2px; font-size: 18px; display: block;">
       <style>
         @media (max-width: 768px) {
           .hide-on-mobile {
@@ -22,7 +22,7 @@
       <span class="hide-on-mobile">Built with the latest Docsify v5.0 release candidate and featuring a refreshed UI.</span>
     </div>
   </div>
-  <a href="https://preview-v2.docsify-this.net" style="background: #57985e; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap;">Explore v2.0</a>
+  <a href="https://preview-v2.docsify-this.net" style="background: #57985e; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); transition: all 0.2s ease;">Explore v2.0</a>
 </div>
 
 <h1>Instantly Turn Online Markdown Files into Web Pages</h1>
