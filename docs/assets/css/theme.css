@@ -1246,21 +1246,18 @@ body .docsify-pagination-container {
 /* DOCSIFY THIS */
 
 @media screen and (max-width: 768px) {
-  /* Force font size to start on a new line, but keep it inline for itself */
   .stackedlabeldropdown:has(label[for="fontsize"]) {
     display: block;
     clear: both;
     margin-top: 10px;
   }
   
-  /* Keep line height on the same line as font size */
   .stackedlabeldropdown:has(label[for="lineheight"]) {
     display: inline-block;
-    margin-left: 15px; /* Add some spacing between font size and line height */
+    margin-left: 15px;
     margin-top: 0;
   }
   
-  /* Keep the actual select elements at their normal width */
   .stackedlabeldropdown select {
     width: auto !important;
     max-width: none !important;
@@ -1275,7 +1272,7 @@ body .docsify-pagination-container {
 }
 
 .docsify-copy-code-button:focus-visible {
-    opacity: 1; /* Keep visible when focused by keyboard */
+    opacity: 1;
 }
 
 #docsifythis .docsify-copy-code-button > .error,
@@ -1294,16 +1291,14 @@ body .docsify-pagination-container {
   border-radius: 2px;
   transition: all 0.2s ease;
   display: inline-block;
-  margin-right: 4px; /* Add some right margin */
-  white-space: nowrap; /* Prevent text wrapping */
+  margin-right: 4px;
+  white-space: nowrap;
   
-  /* Minimal button reset */
   background: transparent;
   border: none;
   font-family: inherit;
   
-  /* Critical accessibility additions */
-  min-height: 24px; /* Touch target size */
+  min-height: 24px;
 }
 
 #docsifythis .copy-link:hover {
@@ -1312,7 +1307,6 @@ body .docsify-pagination-container {
   text-decoration: none !important;
 }
 
-/* CRITICAL: Focus indicator for keyboard users */
 #docsifythis .copy-link:focus {
   outline: 2px solid var(--link-color, #0066cc);
   outline-offset: 2px;
@@ -1337,7 +1331,7 @@ body .docsify-pagination-container {
   display: inline;
   vertical-align: middle;
   line-height: 45px;
-  color: #6a6a6a;
+  color: #202124;
 }
 
 #docsifythis .docsifythisheader .logoandtext img {
@@ -1363,30 +1357,40 @@ body .docsify-pagination-container {
   padding-bottom: calc(14px + (16 - 12) * (100vw - 400px) / (800 - 400));
   padding-right: calc(16px + (16 - 12) * (100vw - 400px) / (800 - 400));
   border-width: 0;
-  border-radius: 16px;
-  background: linear-gradient(to right, #f7f8fc, #e2e4f6);
-  border: 1px solid #e2e4f6;
+  border-radius: 12px;
+  background: linear-gradient(to right, #f6f8fd 0%, #e6efff 100%);
+  border: 1px solid #e8eaed;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 #docsifythisurlbuilder h2 {
-  color: #242bae; /* Previous colors #2442ae #2462ae */
+  color: #4f56e8;
 }
 
 #docsifythisurlbuilder h3 {
   margin-top: 14px;
-  color: #242bae; /* Previous colors #2442ae #2462ae */
+  color: #4f56e8;
 }
 
 #docsifythisurlbuilder input[type="text"],
 input[type="url"],
 input[type="color"] {
   overflow: hidden;
-  background-color: #white;
+  background-color: #ffffff;
   height: 1.9rem;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 6px;
-  border: 1px solid #323232;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+#docsifythisurlbuilder input[type="text"]:focus,
+input[type="url"]:focus {
+  border-color: #4f56e8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 86, 232, 0.2);
 }
 
 #docsifythisurlfield {
@@ -1436,16 +1440,17 @@ span #docsifythisurlfield {
   width: 260px;
   padding: 10px;
   line-height: 1.4rem;
-  background-color: #2302cd; /* Previous colors #0224cd #0361cd */
+  background-color: #4f56e8;
   text-decoration: none;
   font-weight: 600;
-  border: 1px solid #2302cd;
+  border: 1px solid #4f56e8;
   border-radius: 1.4rem;
   -webkit-appearance: none;
   white-space: normal;
   overflow: visible;
   word-wrap: break-word;
   text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 @media (max-width: 480px) {
@@ -1456,7 +1461,7 @@ span #docsifythisurlfield {
 
 .docsifythisurlbuildersecondarybutton {
   cursor: pointer;
-  color: #2302cd;
+  color: #4f56e8;
   height: auto;
   display: inline-block;
   margin-top: 4px;
@@ -1467,7 +1472,7 @@ span #docsifythisurlfield {
   background-color: transparent;
   text-decoration: none;
   font-weight: 600;
-  border: 1px solid #2302cd;
+  border: 1px solid #4f56e8;
   border-radius: 1.4rem;
   -webkit-appearance: none;
   white-space: normal;
@@ -1503,17 +1508,25 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder [type="radio"]:checked + img {
-  outline: 4px solid #2302cd; /* Previous colors #0224cd #0261cd */
+  outline: 4px solid #4f56e8;
   border-radius: 8px;
   position: relative;
 }
 
 #docsifythisurlbuilder input[type="number"] {
-  border: 1px solid #000;
+  border: 1px solid #dadce0;
   height: 1.9rem;
   padding-left: 0.3rem;
   margin-top: 4px;
   margin-bottom: 6px;
+  border-radius: 4px;
+  transition: border-color 0.2s ease;
+}
+
+#docsifythisurlbuilder input[type="number"]:focus {
+  border-color: #4f56e8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 86, 232, 0.2);
 }
 
 #docsifythisurlbuilder figcaption {
@@ -1544,7 +1557,7 @@ span #docsifythisurlfield {
 .markdown-section #enableDarkmode,
 .markdown-section #pagination,
 .markdown-section #advancedwebpagebuilder {
-  accent-color: #0324cd; /* Original color #0361cd */
+  accent-color: #4f56e8;
 }
 
 .docsifythisurlbuildercheckbox {
@@ -1557,16 +1570,12 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder input[type="checkbox"] ~ label {
-  padding-left: 1.4em;
+  padding-left: 1.2em;
   display: inline-block;
 }
 
 #docsifythisurlbuilder input[type="number"] {
-  border: 1px solid #000;
-  height: 1.9rem;
-  padding-left: 0.3rem;
-  margin-top: 4px;
-  margin-bottom: 6px;
+  width: 4em;
 }
 
 #docsifythisurlbuildershowhidelink {
@@ -1581,19 +1590,27 @@ span #docsifythisurlfield {
 #docsifythisurlbuildershowhidelink2 a:visited,
 #docsifythisurlbuildershowhidelink2 a:hover,
 #docsifythisurlbuildershowhidelink2 a:active {
-  color: #3940bf;
+  color: #4f56e8;
 }
 
 #docsifythisurlbuilder select {
   color: #323232;
-  border: 1px solid #757575;
+  border: 1px solid #dadce0;
   height: 1.9rem;
   line-height: 1.9rem;
+  border-radius: 4px;
   -webkit-appearance: menulist-button;
+  transition: border-color 0.2s ease;
+}
+
+#docsifythisurlbuilder select:focus {
+  border-color: #4f56e8;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 86, 232, 0.2);
 }
 
 #docsifythisurlbuilder hr {
-  border: 1px solid #c5d1fd;
+  border: 1px solid #e8eaed;
   margin-top: 0.6em;
   margin-bottom: 0.6em;
 }
@@ -1656,10 +1673,6 @@ span #docsifythisurlfield {
   outline-offset: 0px;
   padding-bottom: 1px;
   margin-left: 4px;
-}
-
-#docsifythisurlbuilder input[type="number"] {
-  width: 4em;
 }
 
 #docsifythisurlbuilderrestoredefaultsbutton {
@@ -1744,16 +1757,14 @@ span #docsifythisurlfield {
   display: none;
 }
 
-/* Dark mode colours for use with light + dark themes */
-
 @media (prefers-color-scheme: dark) {
   #docsifythis .docsifythisheader .logoandtext h1 {
-    color: #a6a6a6;
+    color: #e8eaed;
   }
 
   #docsifythis #docsifythisurlbuilder h2,
   #docsifythis #docsifythisurlbuilder h3 {
-    color: #8798ee; /* Original color #4bc3f4 */
+    color: #a78bfa;
   }
 
   #docsifythis p a,
@@ -1761,39 +1772,77 @@ span #docsifythisurlfield {
   #docsifythis h3 a,
   #docsifythis summary,
   #docsifythis .copy-link {
-    color: #1ba1ee;
+    color: #a78bfa;
   }
 
   #docsifythisurlbuilder {
-    background: linear-gradient(to right, #2b2e3b, #1f1f2f);
-    border: 1px solid #3b3f4a;
+    background: linear-gradient(135deg, #1a1d29 0%, #2d3748 100%);
+    border: 1px solid #3c4043;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
   }
 
   #docsifythisurlfield {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
+    border-color: #5f6368;
   }
 
   #pageTitle {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
+  }
+
+  #docsifythisurlbuilder input[type="text"],
+  input[type="url"],
+  input[type="color"] {
+    background-color: #303134;
+    color: #e8eaed;
+    border-color: #5f6368;
+  }
+
+  #docsifythisurlbuilder input[type="text"]:focus,
+  input[type="url"]:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.2);
   }
 
   .docsifythisurlbuilderprimarybutton {
-    color: black;
-    background-color: #7e83ed; /* Previous colors #817eed #4bc3f4 */
-    border: 1px solid #7e83ed;
+    color: #1f2937;
+    background-color: #a78bfa;
+    border: 1px solid #a78bfa;
   }
 
   .docsifythisurlbuildersecondarybutton {
-    color: #c1bfed;
+    color: #a78bfa;
     background-color: transparent;
-    border: 1px solid #c1bfed;
+    border: 1px solid #a78bfa;
   }
 
   #docsifythisurlbuilder [type="radio"]:checked + img {
-    outline: 4px solid #7e83ed; /* Previous colors #9592ec #4bc3f4 */
+    outline: 4px solid #a78bfa;
     position: relative;
+  }
+
+  #docsifythisurlbuilder input[type="number"] {
+    background-color: #303134;
+    color: #e8eaed;
+    border-color: #5f6368;
+  }
+
+  #docsifythisurlbuilder input[type="number"]:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.2);
+  }
+
+  #docsifythisurlbuilder select {
+    background-color: #303134;
+    color: #e8eaed;
+    border-color: #5f6368;
+  }
+
+  #docsifythisurlbuilder select:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.2);
   }
 
   #docsifythisurlbuilder #editCheck,
@@ -1818,11 +1867,11 @@ span #docsifythisurlfield {
   .markdown-section #enableDarkmode,
   .markdown-section #pagination,
   .markdown-section #advancedwebpagebuilder {
-    accent-color: #817eed;
+    accent-color: #a78bfa;
   }
 
   #docsifythisurlbuilder hr {
-    border: 1px solid #5161a4;
+    border: 1px solid #3c4043;
   }
 
   #docsifythisurlbuildershowhidelink a:link,
@@ -1833,70 +1882,70 @@ span #docsifythisurlfield {
   #docsifythisurlbuildershowhidelink2 a:visited,
   #docsifythisurlbuildershowhidelink2 a:hover,
   #docsifythisurlbuildershowhidelink2 a:active {
-    color: #c6bfed; /* Original color #4bc3f4 */
+    color: #a78bfa;
   }
 
   #linkcolor {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
 
   #browserTabTitle {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
 
   #editLinkText {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
 
   #siteName {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
 
   #siteLogo {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
   
   #coverpagecolor {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
 
   #linkhovercolor {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
 
   #linkhovercolordarkmode {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
 
   #linkcolordarkmode {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
 
   #coverpagecolordarkmode {
-    background-color: #273338;
-    color: white;
+    background-color: #303134;
+    color: #e8eaed;
   }
 
   #docsifythis .button {
-    color: #283339;
-    background-color: #1ba1ee;
+    color: #1f2937;
+    background-color: #a78bfa;
   }
 
   #docsifythis .button-rounded {
-    color: #283339;
-    background-color: #1ba1ee;
+    color: #1f2937;
+    background-color: #a78bfa;
   }
 
   #docsifythis .mybutton {
-    color: #cc0000;
+    color: #f28b82;
   }
 }
