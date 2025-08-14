@@ -1769,7 +1769,7 @@ span #docsifythisurlfield {
 
   #docsifythis p a,
   #docsifythis li a,
-  #docsifythis h3 a,
+  #docsifythis h3:not(#quickstart-⚡) a,
   #docsifythis summary,
   #docsifythis .copy-link {
     color: #a78bfa;
