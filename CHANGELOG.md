@@ -9,6 +9,7 @@
 * Updated ReadMe
 * Removed image for Twitter Cards and Open Graph
 * Relocated enable search field checkbox to basic URL parameters
+* Minor refresh to Web Page Builder UI
 
 ## [1.10.5] - 08/01/2025☀️
 
