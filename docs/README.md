@@ -1797,7 +1797,7 @@ A simple [Markdown Student Portfolio Starter Template](https://github.com/hibbit
 _Introductory, beginner to intermediate._  
 An introduction of Markdown publishing using the open source project Docsify⁠–⁠This.
 
-[Self-Publishing with Docsify⁠–⁠This](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/self-publishing-with-docsify-this/main/pages&homepage=introduction-to-self-publishing-with-docsify-this.md&edit-link=https://github.com/paulhibbitts/self-publishing-with-docsify-this&sidebar=true&maxLevel=4&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Overview%20to%20Self-Publishing%20with%20Docsify-This&header-weight=600&dark-mode=auto&coverpage=_coverpage.md)  
+[Self-Publishing with Docsify⁠–⁠This](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/self-publishing-with-docsify-this/main/pages&homepage=introduction-to-self-publishing-with-docsify-this.md&edit-link=https://github.com/paulhibbitts/self-publishing-with-docsify-this&sidebar=true&maxLevel=3&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Overview%20to%20Self-Publishing%20with%20Docsify-This&header-weight=600&dark-mode=auto&coverpage=_coverpage.md)  
 _Intermediate, with a mix of basic and advanced aspects._  
 An overview to self-publishing with Markdown using the open source project Docsify⁠–⁠This, with a focus on digital literacy.
 
