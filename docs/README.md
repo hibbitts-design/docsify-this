@@ -416,7 +416,7 @@ With Docsify-This you can:
 
 - Zero Maintenance Publishing
 - Separation of Content and Presentation 
-- Platform independence over vendor lock-in
+- Platform independence and choice
 - Your content, your control
 - Support the 5 Rs of OER
 - Authors helping other authors
