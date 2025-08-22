@@ -49,6 +49,7 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 <ul>
   <li><a href="#what-problem-does-docsify-this-solve">What Problem Does Docsify-This Solve?</a></li>
   <li><a href="#docsify-this-core-design-principles">Docsify-This Core Design Principles</a></li>
+  <li><a href="#when-is-docsify-this-a-good-candidate">When is Docsify-This a Good Candidate?</a></li>
   <li><a href="#how-docsify-this-works">How Docsify-This Works</a></li>
   <li><a href="#read-what-people-are-saying-about-docsify-this">Read What People are Saying about Docsify-This</a></li>
 </ul>
@@ -104,6 +105,7 @@ Have you tried out Docsify-This? Share your [feedback about Docsify-This](https:
 
 - [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
 - [Docsify-This Core Design Principles](#docsify-this-core-design-principles)
+- [When is Docsify-This a Good Candidate?](#when-is-docsify-this-a-good-candidate)
 - [How Docsify-This Works](#how-docsify-this-works)
 - [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
 
@@ -133,6 +135,27 @@ With Docsify-This you can:
 - Your content, your control
 - Support the 5 Rs of OER
 - Authors helping other authors
+
+---
+
+### When is Docsify-This a Good Candidate?
+
+#### Docsify-This often works really well when you:
+- Want to embed the same content across multiple platforms (LMS, websites, etc.)
+- Need cross-platform content reuse (same content for web, mobile, PDF generation)
+- Need to publish content quickly without technical setup
+- Need minimal maintenance publishing (set it and forget it, no server needed)
+- Prefer simple, portable Markdown files with platform independence
+- Are interested in using GitHub/Codeberg for version-control and collaboration
+- Are creating educational materials, documentation, or research content
+
+#### Other publishing tools might be better candidates when you:
+- Require SEO optimization and search engine discoverability
+- Need complex user management, approval workflows, or interactive features (contact forms, newsletters, user accounts)
+- Want rich media features (e-commerce, forums, booking systems) or extensive visual customization
+- Have multiple content types requiring different layouts (events, products, news, etc.)
+- Are building large, complex websites with hundreds of pages
+- Prefer visual page builders over Markdown editing
 
 ---
 
