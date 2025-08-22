@@ -157,7 +157,7 @@ With Docsify-This you can:
 - Are building large, complex websites with hundreds of pages
 - Prefer visual page builders over Markdown editing
 
-**Still unsure?** Docsify-This is designed for easy entry AND exit - try it with your content risk-free. Your Markdown files can be used by other tools if your needs change.
+**Still unsure?** Docsify-This is designed for easy entry _and_ exit - try it with your content risk-free. Your Markdown files can be used by other tools if your needs change. For more powerful Markdown file-based publishing with hosting capabilities, explore the open-source [Grav CMS](https://getgrav.org/) project.
 
 ---
 
