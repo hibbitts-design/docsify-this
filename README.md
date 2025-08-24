@@ -143,7 +143,7 @@ With Docsify-This you can:
 #### Docsify-This often works really well when you:
 - Want to embed the same content across multiple platforms (LMS, websites, etc.)
 - Want cross-platform content reuse (same content for web, mobile, PDF and eBook generation)
-- Need to publish content quickly without technical setup
+- Need to publish open content quickly without technical setup
 - Prefer minimal maintenance publishing (set it and forget it, no Webserver needed)
 - Value simple, portable Markdown files with platform independence
 - Are interested in using GitHub/Codeberg for version-control and collaboration
