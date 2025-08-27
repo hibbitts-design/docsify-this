@@ -662,7 +662,7 @@
             return;
           } else if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && !(hedgedocInstances.includes(hostname))) {
             // Filename without supported extension or missing filename and not a HedgeDoc instance
-            alert("Please include the full path and filename with a supported extension (" + displayAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
+            alert("Please include the full path and filename with a supported extension (" + displayAllowedFileExtensions() + ") in the file URL.\n\nFor example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
             selectText();
             return;
           } else {
@@ -1244,7 +1244,12 @@
 
                 switch (status) {
                   case 404:
-                    errorMessage = `Looks like the file **${file}** couldn't be found on the server. Please check if the **basePath** and **homepage** URL parameters are correct or if the file has been moved or deleted.\n\nError code ${status}`;
+                    const isGitHubOrCodeberg = window.$docsify['basePath'].includes('github') || window.$docsify['basePath'].includes('codeberg');
+                    let publicRepoNote = "";
+                    if (isGitHubOrCodeberg) {
+                      publicRepoNote = " Also ensure your GitHub or Codeberg repository is public.";
+                    }
+                    errorMessage = `Looks like the file **${file}** couldn't be found on the server. Please check if the **basePath** and **homepage** URL parameters are correct or if the file has been moved or deleted.${publicRepoNote}\n\nError code ${status}`;
                     break;
                   case 500:
                     errorMessage = `The server encountered an internal error while trying to fetch **${file}**.\nError code ${status}`;
