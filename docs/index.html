@@ -2029,6 +2029,15 @@
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
 
+      // Change content max width if maxwidth parameter present
+      maxwidth = getURLParameterByName(['max-width', 'maxWidth'], null, null, window.location.href, true);
+      if (!(maxwidth === false)) {
+        if (!(isNaN(maxwidth))) {
+          maxwidth += '%'; // Append '%' if no unit is provided
+        }
+        document.documentElement.style.setProperty('--content-max-width', maxwidth);
+      }
+
       // Change header weight if headerweight parameter present
       headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
       if (!(headerweight === false)) {
