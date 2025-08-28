@@ -1350,7 +1350,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](#including-code-blocks)
 - [Displaying Images in a Grid](#displaying-images-in-a-grid)
-- [Embedding a Responsive Docsify-This Page in an iFrame](/?id=embedding-a-responsive-docsify-this-page-in-html)
+- [Embedding a Responsive Docsify-This Page in an iFrame](/?id=embedding-a-responsive-docsify-this-page-in-an-iframe)
 - [Embedding a Responsive Docsify-This Page in HTML](#embedding-a-responsive-docsify-this-page-in-html)
 - [Including External Markdown Content](#including-external-markdown-content)
 - [Use of WikiLinks](#use-of-wikilinks)
