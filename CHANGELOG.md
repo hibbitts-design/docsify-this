@@ -4,6 +4,7 @@
 
 **New:**
 * Availability of alias domain Share-This.net for non Docsify-This branded URLs
+* Support of optional max-width parameter (`max-width`) to set custom page content width
 
 **Improved:**
 * Updated ReadMe
