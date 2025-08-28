@@ -386,6 +386,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [loadNavbar](#loadNavbar)
 - [loadSidebar](#loadSidebar)
 - [logo](#logo)
+- [max-width](#max-width)
 - [mergeNavbar](#mergeNavbar)
 - [name](#name)
 - [page-title](#page-title)
@@ -492,6 +493,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 Display a logo image for the website in a Docsify custom Sidebar (i.e. file 'logo.png) with the optional **logo** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=CPT-363&logo=/images/logo.png The full folder path and filename must be provided. A website name must also be provided, and will be used as the alt text for the logo.
+
+##### max-width
+
+Set a custom max width for content of your web pages with the optional **max-width** parameter (not included in the Advanced Web Page Builder), for example:  
+https://preview-v2.docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&core-theme-styles=true&max-width=100. If no unit is included the default unit is percentage (%). You can also specify other units like max-width=910px.
 
 ##### mergeNavbar
 
@@ -1344,6 +1350,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](#including-code-blocks)
 - [Displaying Images in a Grid](#displaying-images-in-a-grid)
+- [Embedding a Responsive Docsify-This Page in an iFrame](/?id=embedding-a-responsive-docsify-this-page-in-html)
 - [Embedding a Responsive Docsify-This Page in HTML](#embedding-a-responsive-docsify-this-page-in-html)
 - [Including External Markdown Content](#including-external-markdown-content)
 - [Use of WikiLinks](#use-of-wikilinks)
@@ -1423,6 +1430,20 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 Use the optional **image-captions** parameter to display alt text below images, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=4&zoom-images=true&image-captions=true&image-captions-text-align=center&image-captions-font-style=normal
+
+##### Embedding a Responsive Docsify-This Page in an iFrame
+
+A [fully responsive Docsify-This page can be embedded into an iFrame](https://demo.hibbittsdesign.org/embedded-docsify-this-iframe/), using the following as a working example:
+
+```html
+  <div style="width: 100%; margin: 0; padding: 0; overflow: hidden;">
+    <iframe src="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/github-demo-markdown-file/main&homepage=README.md" 
+          style="width: 100%; height: 2700px; border: none; display: block;"
+          scrolling="no"
+          frameborder="0">
+    </iframe>
+  </div>
+```
 
 ##### Embedding a Responsive Docsify-This Page in HTML
 
