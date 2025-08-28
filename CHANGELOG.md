@@ -12,6 +12,7 @@
 * Relocated enable search field checkbox to basic URL parameters
 * Minor refresh to Web Page Builder UI
 * Improved file error messages
+* Set page margins to 0 when max-width is set to 100%
 
 ## [1.10.5] - 08/01/2025☀️
 

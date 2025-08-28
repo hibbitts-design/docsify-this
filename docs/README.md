@@ -1943,7 +1943,7 @@ A [fully responsive Docsify-This page can be embedded into an iFrame](https://de
 
 ```html
   <div style="width: 100%; margin: 0; padding: 0; overflow: hidden;">
-    <iframe src="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/github-demo-markdown-file/main&homepage=README.md" 
+    <iframe src="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/github-demo-markdown-file/main&homepage=README.md&max-width=100" 
           style="width: 100%; height: 2700px; border: none; display: block;"
           scrolling="no"
           frameborder="0">

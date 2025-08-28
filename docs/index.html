@@ -1885,9 +1885,16 @@
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
-    if (getURLParameterByName(['standalone', 'embedded']) || standalone) {
+    if (getURLParameterByName(['standalone', 'embedded',]) || standalone) {
       var editCSS = document.createElement('style')
-      editCSS.innerHTML = ".markdown-section {padding: 1rem 14px;}";
+      maxwidth = getURLParameterByName(['max-width', 'maxWidth'], null, null, window.location.href, true);
+      if (!(maxwidth === false)) {
+        if (!(isNaN(maxwidth))) {
+          editCSS.innerHTML = ".markdown-section {padding: 0 0;}";
+        }
+      } else {
+        editCSS.innerHTML = ".markdown-section {padding: 1rem 14px;}";
+      }     
       document.body.appendChild(editCSS);
     }
   </script>
