@@ -1433,17 +1433,71 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 ##### Embedding a Responsive Docsify-This Page in an iFrame
 
-A [fully responsive Docsify-This page can be embedded into an iFrame](https://demo.hibbittsdesign.org/embedded-docsify-this-iframe/), using the following as a working example:
+A [fully responsive Docsify-This page can be embedded into an iFrame](https://demo.hibbittsdesign.org/embedded-docsify-this-iframe/).
+
+_In general, paste into your HTML editor. For WordPress users: Add the code below to a Custom HTML block._
+
+**Simple Fixed Height Method**
+
+For basic embedding with a fixed height, use:
 
 ```html
-  <div style="width: 100%; margin: 0; padding: 0; overflow: hidden;">
-    <iframe src="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/github-demo-markdown-file/main&homepage=README.md&max-width=100&hide-credits=true" 
-          style="width: 100%; height: 2700px; border: none; display: block;"
-          scrolling="no"
-          frameborder="0">
-    </iframe>
-  </div>
+<div style="width: 100%; margin: 0; padding: 0; overflow: hidden;">
+  <iframe src="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/github-demo-markdown-file/main&homepage=README.md&max-width=100&hide-credits=true" 
+        style="width: 100%; height: 2700px; border: none; display: block;"
+        scrolling="no"
+        frameborder="0">
+  </iframe>
+</div>
 ```
+
+_Adjust the height value (2700px) to match your content length. Test on different devices to ensure all content is visible._
+
+**Automatic Height Adjustment**
+
+For dynamic height adjustment that works across desktop and mobile devices (generated/assisted by Anthropic Claude AI):
+
+```html
+<div id="iframe-wrapper" style="width: 100%; margin: 0; padding: 0; overflow: hidden;">
+    <iframe id="full-content-iframe"
+            src="https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&max-width=100&hide-credits=true" 
+            style="width: 100%; border: none; display: block; height: 1000px;"
+            scrolling="no"
+            frameborder="0">
+    </iframe>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const iframe = document.getElementById('full-content-iframe');
+    const wrapper = document.getElementById('iframe-wrapper');
+    const isMobile = window.innerWidth < 768;
+    let attempts = 0;
+    
+    function resize() {
+        attempts++;
+        
+        try {
+            const doc = iframe.contentDocument || iframe.contentWindow.document;
+            const height = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight) + 100;
+            iframe.style.height = height + 'px';
+            wrapper.style.height = height + 'px';
+        } catch (e) {
+            const heights = isMobile ? [4000, 8000, 15000, 25000, 35000] : [2000, 4000, 8000, 15000, 20000];
+            const height = heights[Math.min(attempts - 1, heights.length - 1)];
+            iframe.style.height = height + 'px';
+            wrapper.style.height = height + 'px';
+        }
+        
+        if (attempts < 5) setTimeout(resize, 1000);
+    }
+    
+    iframe.onload = resize;
+});
+</script>
+```
+
+_To customize for longer/shorter content, adjust the height arrays in the JavaScript code._
 
 ##### Embedding a Responsive Docsify-This Page in HTML
 
