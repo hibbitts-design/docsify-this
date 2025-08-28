@@ -533,6 +533,8 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 #### Embedding Docsify-This Pages into Other Platforms
 
+For comprehensive iframe embedding guidance, including automatic height adjustment for responsive content, see [Embedding a Responsive Docsify-This Page in an iFrame](#embedding-a-responsive-docsify-this-page-in-an-iframe).
+
 ##### Canvas LMS
 
 [Embed content in Canvas](https://www.howtocanvas.com/create-amazing-pages-in-canvas/embedding-content)  
