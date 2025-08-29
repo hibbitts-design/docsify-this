@@ -821,23 +821,32 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 A [fully responsive Docsify-This page can be embedded into an iFrame](https://demo.hibbittsdesign.org/embedded-docsify-this-iframe/).
 
-_In general, paste the below HTML into your HTML editor. For WordPress users: Add the code below to a Custom HTML block._
+_In general, paste the below HTML into your HTML editor and then replace the default `basepath` and `homepage` value with your own. For WordPress users: Add the code below to a Custom HTML block._
 
-For basic embedding with a fixed height, use:
+For basic embedding with a fixed height to seamlessly integrate with other destination page content:
 
 ```html
 <div style="width: 100%; margin: 0; padding: 0; overflow: hidden;">
   <iframe src="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/github-demo-markdown-file/main&homepage=README.md&max-width=100&hide-credits=true" 
-        style="width: 100%; height: 2700px; border: none; display: block;"
-        scrolling="no"
-        frameborder="0">
+    style="width: 100%; height: 2700px; border: none; display: block;"
+    scrolling="no"
+    frameborder="0">
   </iframe>
 </div>
 ```
 
-_Adjust the height value (2700px) to match your content length. Test on different devices to ensure all content is visible._
+_Adjust the `height` value (2700px) to match your content length. Test on different devices to ensure all content is visible._
 
-For automatic iframe height adjustment, see [Embedding a Responsive Docsify-This Page in a Dynamic iFrame](#embedding-a-responsive-docsify-this-page-in-a-dynamic-iframe).
+To avoid having to determine and set an appropriate height for the iframe, a scrollbar can be included:
+
+```html
+<div style="width: 100%; height: 80vh; margin: 0; padding: 0; overflow: hidden; border: 1px solid #e5e7eb; border-radius: 8px;">
+    <iframe src="https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/github-demo-markdown-file/main&homepage=README.md&hide-credits=true" 
+      style="width: 100%; height: 100%; border: none; display: block;"
+      frameborder="0">
+    </iframe>
+</div>
+```
 
 ##### Canvas LMS
 
@@ -846,16 +855,16 @@ iFrame code example, including URL parameters to seamlessly match Docsify-This c
 
 ```html
 <p>
-  <iframe
-    style="overflow: hidden; border: 0px #ffffff none; background: #ffffff;"
+  <iframe style="overflow: hidden; border: 0px #ffffff none; background: #ffffff;"
     src="https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=home.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=16px&hide-credits=true"
-    width="800px"
-    height="1400px"
-    allowfullscreen="allowfullscreen"></iframe>
+      width="800px"
+      height="1400px"
+      allowfullscreen="allowfullscreen">
+  </iframe>
 </p>
 ```
 
-If a scroll bar is present, you may want to re-edit your iFrame code and adjust the "height" value.
+_If a scrollbar is present and not desired, you may want to re-edit your iFrame code and adjust the `height` value._
 
 [How do I add an external URL as a module item?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-add-an-external-URL-as-a-module-item/ta-p/967)  
 Module external link example, with Page Table of Contents:
@@ -1876,7 +1885,6 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Providing a Page Table of Contents within a Smaller Area](/?id=providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](/?id=including-code-blocks)
 - [Displaying Images in a Grid](/?id=displaying-images-in-a-grid)
-- [Embedding a Responsive Docsify-This Page in a Dynamic iFrame](/?id=embedding-a-responsive-docsify-this-page-in-a-dynamic-iframe)
 - [Embedding a Responsive Docsify-This Page in HTML](/?id=embedding-a-responsive-docsify-this-page-in-html)
 - [Including External Markdown Content](/?id=including-external-markdown-content)
 - [Use of WikiLinks](/?id=use-of-wikilinks)
@@ -1956,54 +1964,6 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 Use the optional **image-captions** parameter to display alt text below images, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=4&zoom-images=true&image-captions=true&image-captions-text-align=center&image-captions-font-style=normal
-
-##### Embedding a Responsive Docsify-This Page in a Dynamic iFrame
-
-A [fully responsive Docsify-This page can be embedded into an automatically resized iFrame](https://demo.hibbittsdesign.org/embedded-docsify-this-iframe-dynamic/).
-
-For dynamic height adjustment that works across desktop and mobile devices (generated/assisted by Anthropic Claude AI):
-
-```html
-<div id="iframe-wrapper" style="width: 100%; margin: 0; padding: 0; overflow: hidden;">
-    <iframe id="full-content-iframe"
-            src="https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&max-width=100&hide-credits=true" 
-            style="width: 100%; border: none; display: block; height: 1000px;"
-            scrolling="no"
-            frameborder="0">
-    </iframe>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const iframe = document.getElementById('full-content-iframe');
-    const wrapper = document.getElementById('iframe-wrapper');
-    const isMobile = window.innerWidth < 768;
-    let attempts = 0;
-    
-    function resize() {
-        attempts++;
-        
-        try {
-            const doc = iframe.contentDocument || iframe.contentWindow.document;
-            const height = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight) + 100;
-            iframe.style.height = height + 'px';
-            wrapper.style.height = height + 'px';
-        } catch (e) {
-            const heights = isMobile ? [4000, 8000, 15000, 25000, 35000] : [2000, 4000, 8000, 15000, 20000];
-            const height = heights[Math.min(attempts - 1, heights.length - 1)];
-            iframe.style.height = height + 'px';
-            wrapper.style.height = height + 'px';
-        }
-        
-        if (attempts < 5) setTimeout(resize, 1000);
-    }
-    
-    iframe.onload = resize;
-});
-</script>
-```
-
-_To customize for longer/shorter content, adjust the height arrays in the JavaScript code._
 
 ##### Embedding a Responsive Docsify-This Page in HTML
 
