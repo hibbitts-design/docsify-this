@@ -362,7 +362,7 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 - [Custom Markdown CSS Classes](/?id=custom-markdown-css-classes)
 - [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
 
-### [4. Resources and Additional Templates](/?id=_4-resources-and-additional-templates-1)
+### [4. Reference Materials and Project Resources](/?id=_4-reference-materials-and-project-resources-1)
 
 - [Markdown Syntax References](/?id=markdown-syntax-references)
 - [Font Awesome Icons](/?id=font-awesome-icons)
@@ -1749,7 +1749,7 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 ---
 
-### 4. Resources and Additional Templates
+### 4. Reference Materials and Project Resources
 
 - [Markdown Syntax References](/?id=markdown-syntax-references)
 - [Font Awesome Icons](/?id=font-awesome-icons)
