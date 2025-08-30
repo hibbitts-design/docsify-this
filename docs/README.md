@@ -184,7 +184,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable search field in Sidebar</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable search field in Docsify Sidebar</label></div>
 
 <div class="docsifythisurlbuilderoptionsline">Maximum Header level (1-6) of Docsify Sidebar:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Maximum Header level (1-6) of Docsify Sidebar" type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"></div>
 
@@ -362,7 +362,7 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 - [Custom Markdown CSS Classes](/?id=custom-markdown-css-classes)
 - [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
 
-### [4. Resources and Additional Templates](/?id=_4-resources-and-additional-templates-1)
+### [4. Reference Materials and Project Resources](/?id=_4-reference-materials-and-project-resources-1)
 
 - [Markdown Syntax References](/?id=markdown-syntax-references)
 - [Font Awesome Icons](/?id=font-awesome-icons)
@@ -1749,7 +1749,7 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 ---
 
-### 4. Resources and Additional Templates
+### 4. Reference Materials and Project Resources
 
 - [Markdown Syntax References](/?id=markdown-syntax-references)
 - [Font Awesome Icons](/?id=font-awesome-icons)
