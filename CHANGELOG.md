@@ -14,9 +14,6 @@
 * Improved file error messages
 * Set page margins to 0 when max-width is set to 100%
 
-**Bugfix:**
-* Fixed Font Awesome plugin regex to only match :fa- prefixed patterns
-
 ## [1.10.5] - 08/01/2025☀️
 
 **New:**
@@ -30,6 +27,7 @@
 **Improved:**
 * Updated ReadMe, including a new Quickstart section
 * Improve visual design of h1 and h2 below top full width image (use HTML tags to keep default styling)
+* Fixed Font Awesome plugin regex to only match :fa- prefixed patterns
 
 **Bugfix:**
 * Minor CSS fixes
