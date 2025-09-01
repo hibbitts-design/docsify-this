@@ -14,9 +14,6 @@
 * Improved file error messages
 * Set page margins to 0 when max-width is set to 100%
 
-**Bugfix:**
-* Fixed Font Awesome plugin regex to only match :fa- prefixed patterns
-
 ## [1.10.5] - 08/01/2025☀️
 
 **New:**
