@@ -1388,6 +1388,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 #### Content Display Tips and Techniques
 
 - [Inline Parameter Editing for Batch Styling](#inline-parameter-editing-for-batch-styling)
+- [Understanding Path Handling in Docsify-This](/?id=understanding-path-handling-in-docsify-this)
 - [Matching Fonts with Your Destination Platform Content](#matching-fonts-with-your-destination-platform-content)
 - [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](#including-code-blocks)
@@ -1417,6 +1418,10 @@ https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.
 ```
 
 This streamlined approach also enables authors to help other authors by sharing examples of Markdown file URLs to be styled based on provided URL parameters, all represented as shareable plain text.
+
+##### Understanding Path Handling in Docsify-This
+
+Docsify, the parent project of Docsify-This, currently handles paths inconsistently, which can cause links to break in nested directories. Until this issue is addressed, it is recommended to keep all content files at the root level and only nesting non-markdown assets. See [Docsify issue #1891](https://github.com/docsifyjs/docsify/issues/1891) for details
 
 ##### Matching Fonts with Your Destination Platform Content
 
