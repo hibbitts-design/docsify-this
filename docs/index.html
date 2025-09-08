@@ -1366,6 +1366,18 @@
               const docHead = document.head;
               const docBody = document.body;
 
+              /* Javascript generated/assisted by Anthropic Claude AI */
+              // Function to resolve image paths
+              window.resolveImagePath = function(imagePath) {
+              const basePath = vm.config.basePath || (window.location.pathname !== '/' ? '/' + window.location.pathname.split('/')[1] : '');
+              const cleanImagePath = imagePath.startsWith('/') ? imagePath.slice(1) : imagePath;
+              return basePath ? `${basePath}/${cleanImagePath}` : cleanImagePath;
+              };    
+              // Auto-update all images with data-src attribute
+              document.querySelectorAll('img[data-src]').forEach(img => {
+              img.src = window.resolveImagePath(img.dataset.src);
+              });
+
               // Embedly script
               let hasEmbedly = document.getElementsByClassName('embedly-card');
               if (hasEmbedly.length > 0 && !document.querySelector('script[src="https://cdn.embedly.com/widgets/platform.js"]')) {
