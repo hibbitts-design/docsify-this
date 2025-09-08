@@ -703,6 +703,35 @@
   height: auto;
 }
 
+.markdown-section .banner-image-sidebar {
+  width: 100%; /* fills full width of sidebar */
+  height: auto;
+  max-height: 155px; /* prevents it from getting too tall */
+  object-fit: cover; /* crops image to fit dimensions */
+  display: block;
+}
+
+/* Make sidebar a flex container when banner image exists */
+aside#__sidebar:has(.sidebar-nav > .banner-image:first-child) {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Put sidebar-nav (with image) first */
+aside#__sidebar:has(.sidebar-nav > .banner-image:first-child) .sidebar-nav {
+    order: 1;
+}
+
+/* Put secondary nav second */
+aside#__sidebar:has(.sidebar-nav > .banner-image:first-child) nav[aria-label="secondary"] {
+    order: 2;
+}
+
+/* Only apply negative margin when both banner image and mergedNavbar nav exist */
+aside#__sidebar:has(.sidebar-nav > .banner-image:first-child):has(nav[aria-label="secondary"]) .sidebar-nav > ul > li:last-child {
+    margin-bottom: -40px !important;
+}
+
 .markdown-section .banner-image {
   width: 100%;
   height: 125px;
