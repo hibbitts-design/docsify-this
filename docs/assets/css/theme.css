@@ -703,10 +703,10 @@
   height: auto;
 }
 
-.markdown-section .banner-image-sidebar {
+aside#__sidebar .banner-image-sidebar {
   width: 100%; /* fills full width of sidebar */
   height: auto;
-  max-height: 155px; /* prevents it from getting too tall */
+  max-height: 165px; /* prevents it from getting too tall */
   object-fit: cover; /* crops image to fit dimensions */
   display: block;
 }
