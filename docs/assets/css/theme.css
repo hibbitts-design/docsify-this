@@ -703,32 +703,38 @@
   height: auto;
 }
 
-aside#__sidebar .banner-image-sidebar {
+aside#__sidebar .card-image-sidebar,
+aside#__sidebar .card-image-sidebar-rounded {
   width: 100%; /* fills full width of sidebar */
   height: auto;
   max-height: 165px; /* prevents it from getting too tall */
   object-fit: cover; /* crops image to fit dimensions */
   display: block;
+  margin-top:0px;
+}
+
+aside#__sidebar .card-image-sidebar-rounded {
+  border-radius: 6px 6px 0 0;
 }
 
 /* Make sidebar a flex container when banner image exists */
-aside#__sidebar:has(.sidebar-nav > .banner-image-sidebar:first-child) {
+aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) {
     display: flex;
     flex-direction: column;
 }
 
 /* Put sidebar-nav (with image) first */
-aside#__sidebar:has(.sidebar-nav > .banner-image-sidebar:first-child) .sidebar-nav {
+aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .sidebar-nav {
     order: 1;
 }
 
 /* Put secondary nav second */
-aside#__sidebar:has(.sidebar-nav > .banner-image-sidebar:first-child) nav[aria-label="secondary"] {
+aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) nav[aria-label="secondary"] {
     order: 2;
 }
 
 /* Only apply negative margin when both banner image and mergedNavbar nav exist */
-aside#__sidebar:has(.sidebar-nav > .banner-image-sidebar:first-child):has(nav[aria-label="secondary"]) .sidebar-nav > ul > li:last-child {
+aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child):has(nav[aria-label="secondary"]) .sidebar-nav > ul > li:last-child {
     margin-bottom: -40px !important;
 }
 
