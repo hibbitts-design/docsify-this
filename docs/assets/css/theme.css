@@ -712,23 +712,23 @@ aside#__sidebar .banner-image-sidebar {
 }
 
 /* Make sidebar a flex container when banner image exists */
-aside#__sidebar:has(.sidebar-nav > .banner-image:first-child) {
+aside#__sidebar:has(.sidebar-nav > .banner-image-sidebar:first-child) {
     display: flex;
     flex-direction: column;
 }
 
 /* Put sidebar-nav (with image) first */
-aside#__sidebar:has(.sidebar-nav > .banner-image:first-child) .sidebar-nav {
+aside#__sidebar:has(.sidebar-nav > .banner-image-sidebar:first-child) .sidebar-nav {
     order: 1;
 }
 
 /* Put secondary nav second */
-aside#__sidebar:has(.sidebar-nav > .banner-image:first-child) nav[aria-label="secondary"] {
+aside#__sidebar:has(.sidebar-nav > .banner-image-sidebar:first-child) nav[aria-label="secondary"] {
     order: 2;
 }
 
 /* Only apply negative margin when both banner image and mergedNavbar nav exist */
-aside#__sidebar:has(.sidebar-nav > .banner-image:first-child):has(nav[aria-label="secondary"]) .sidebar-nav > ul > li:last-child {
+aside#__sidebar:has(.sidebar-nav > .banner-image-sidebar:first-child):has(nav[aria-label="secondary"]) .sidebar-nav > ul > li:last-child {
     margin-bottom: -40px !important;
 }
 
