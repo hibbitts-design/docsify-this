@@ -266,11 +266,13 @@ Page layout:
 
 </div>
 
-<h3>Custom Page Title</h3>
+<h3>Custom Page Additions</h3>
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline">Title added to the top of page as H1 level header:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Title added to the top of page as H1 level header" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
+<div class="docsifythisurlbuilderoptionsline">Back link URL (displayed at top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Back link URL (displayed at top of page)" type="url" maxlength="200" value="" id="backLink" name="backLink"></div>
+
+<div class="docsifythisurlbuilderoptionsline">Page title (added as H1 header at top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page title (added as H1 header at top of page)" type="text" maxlength="200" value="" id="pageTitle" name="pageTitle"></div>
 
 <h3>Docsify Custom Files</h3>
 
@@ -682,7 +684,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 
 ##### back-link<button type="button" class="copy-link" aria-label="Copy back-link parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&back-link=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
-Add a custom back link to other sites at the top of your web pages with the optional back-link parameter (not included in the Advanced Web Page Builder), for example:  
+Add a custom back link to other sites at the top of your web pages with the optional back-link parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&back-link=https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main+homepage=home.md+sidebar=true. Please note that since & is used to separate URL parameters, any & characters within the back-link URL must be replaced with + characters.
 
 ##### coverpage<button type="button" class="copy-link" aria-label="Copy coverpage parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&coverpage=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
