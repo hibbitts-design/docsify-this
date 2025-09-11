@@ -270,9 +270,9 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline">Back link URL (displayed at top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Back link URL (displayed at top of page)" type="url" maxlength="200" value="" id="backLink" name="backLink"></div>
+<div class="docsifythisurlbuilderoptionsline">Add '←Back' link URL (displayed at top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Back link URL (displayed at top of page)" type="url" maxlength="200" value="" id="backLink" name="backLink"></div>
 
-<div class="docsifythisurlbuilderoptionsline">Page title (added as H1 header at top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page title (added as H1 header at top of page)" type="text" maxlength="200" value="" id="pageTitle" name="pageTitle"></div>
+<div class="docsifythisurlbuilderoptionsline">Add page title (as H1 header at top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page title (added as H1 header at top of page)" type="text" maxlength="200" value="" id="pageTitle" name="pageTitle"></div>
 
 <h3>Docsify Custom Files</h3>
 
