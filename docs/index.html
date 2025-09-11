@@ -502,6 +502,18 @@
             }
           }
 
+          var getbackLink = document.getElementById("backLink");
+          var backLink = getbackLink.value;
+          if (!(backLink == "")) {
+              if (!backLink.startsWith('https://') && !backLink.startsWith('http://')) {
+                  backLink = 'https://' + backLink;
+              }
+              if (!url.includes('back-link=')) {
+                  backLink = backLink.replace(/&/g, '+');
+                  var URLparms = URLparms + `&back-link=` + backLink;
+              }
+          }
+
           var getpageTitle = document.getElementById("pageTitle");
           var pageTitle = getpageTitle.value;
           if (!(pageTitle == "")) {
@@ -790,6 +802,7 @@
       document.getElementById("siteName").value = '';
       document.getElementById("enableSidebarsearch").checked = false;
       document.getElementById("subMaxLevel").value = 2;
+      document.getElementById("backLink").value = '';
       document.getElementById("pageTitle").value = '';
       document.getElementById("linktextdecoration").value = 'underline';
       document.getElementById("linkhovercolor").value = '';
@@ -1677,6 +1690,11 @@
 
             if (getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true') {
               document.getElementById("hypothesisenable").checked = true;
+            }
+
+            backLink = getURLParameterByName(['back-link', 'backLink'], null, null, window.location.href, true);
+            if (backLink) {
+              document.getElementById('backLink').value = decodeURI(backLink);
             }
 
             pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
