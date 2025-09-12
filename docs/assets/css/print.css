@@ -64,16 +64,19 @@
   .markdown-section h1 {
     font-size: var(--print-h1-size) !important;
     page-break-after: avoid;
+    margin-top: 1.5em;
   }
 
   .markdown-section h2 {
     font-size: var(--print-h2-size) !important;
     page-break-after: avoid;
+    margin-top: 1.2em;
   }
 
   .markdown-section h3 {
     font-size: var(--print-h3-size) !important;
     page-break-after: avoid;
+    margin-top: 1em;
   }
 
   .markdown-section h4,
@@ -81,6 +84,7 @@
   .markdown-section h6 {
     font-size: var(--print-h4-h6-size) !important;
     page-break-after: avoid;
+    margin-top: 0.8em;
   }
 
   .markdown-section p,
@@ -94,6 +98,8 @@
   pre {
     font-family: monospace;
     font-size: var(--print-code-size) !important;
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
 
   /* Page flow */
@@ -105,6 +111,7 @@
 
   img {
     max-width: 100% !important;
+    height: auto !important;
     page-break-inside: avoid;
   }
 
@@ -118,18 +125,28 @@
   table {
     border-collapse: collapse;
     width: 100%;
+    font-size: 0.9em;
   }
 
   th,
   td {
     border: 1pt solid #ccc;
     padding: 4pt;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  /* Links */
+  a {
+    color: #000 !important;
+    text-decoration: underline;
   }
 
   /* External URLs */
   a[href^="http"]:after {
     content: " (" attr(href) ")";
     font-size: var(--print-url-size);
+    font-style: italic;
   }
 
   .no-print {
