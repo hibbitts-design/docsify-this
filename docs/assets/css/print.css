@@ -1,0 +1,170 @@
+/* CSS generated/assisted by Anthropic Claude AI */
+@media print {
+  /* Font size variables for easy scaling */
+  :root {
+    --print-body-size: 10pt;
+    --print-h1-size: 14pt;
+    --print-h2-size: 12pt;
+    --print-h3-size: 11pt;
+    --print-h4-h6-size: 10pt;
+    --print-code-size: 9pt;
+    --print-url-size: 8pt;
+  }
+
+  /* Hide UI elements - expanded list with specific sidebar ID */
+  .app-nav,
+  #__sidebar,
+  aside,
+  .pagination-item,
+  .docsify-pagination-container,
+  .button,
+  .button-secondary,
+  .button-rounded,
+  .button-secondary-rounded,
+  nav,
+  header,
+  .search,
+  .search-input,
+  .search-button,
+  .navbar,
+  .breadcrumb,
+  .edit-link,
+  .github-corner,
+  .app-nav-merged,
+  .skip-link,
+  [aria-label*="search"],
+  [role="navigation"],
+  .navigation {
+    display: none !important;
+  }
+
+  /* Hide specific elements from this page type */
+  a[href*="github.com"],
+  a[href*="grabcad.com"],
+  a[href*="discord"],
+  .social-links,
+  .external-links {
+    display: none !important;
+  }
+
+  /* Fix layout - remove sidebar spacing */
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    font-size: var(--print-body-size);
+    line-height: 1.4;
+  }
+
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: none !important;
+  }
+
+  .content,
+  .app,
+  .markdown-section {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: none !important;
+    position: static !important;
+    font-size: var(--print-body-size) !important;
+  }
+
+  /* Basic print setup */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
+
+  @page {
+    margin: 2cm;
+  }
+
+  /* Override heading sizes explicitly */
+  .markdown-section h1 {
+    font-size: var(--print-h1-size) !important;
+    page-break-after: avoid;
+  }
+
+  .markdown-section h2 {
+    font-size: var(--print-h2-size) !important;
+    page-break-after: avoid;
+  }
+
+  .markdown-section h3 {
+    font-size: var(--print-h3-size) !important;
+    page-break-after: avoid;
+  }
+
+  .markdown-section h4,
+  .markdown-section h5,
+  .markdown-section h6 {
+    font-size: var(--print-h4-h6-size) !important;
+    page-break-after: avoid;
+  }
+
+  /* Override paragraph and list text */
+  .markdown-section p,
+  .markdown-section li,
+  .markdown-section td,
+  .markdown-section th {
+    font-size: var(--print-body-size) !important;
+  }
+
+  /* Text flow improvements */
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  blockquote,
+  pre,
+  table {
+    page-break-inside: avoid;
+  }
+
+  /* Table improvements */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    border: 1pt solid #ccc;
+    padding: 4pt;
+  }
+
+  /* Code readability */
+  code,
+  pre {
+    font-family: monospace;
+    font-size: var(--print-code-size) !important;
+  }
+
+  /* Link handling for external URLs */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: var(--print-url-size);
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
