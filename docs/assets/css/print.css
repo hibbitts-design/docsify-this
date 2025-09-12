@@ -27,7 +27,8 @@
   .edit-link,
   .github-corner,
   .skip-link,
-  [role="navigation"] {
+  [role="navigation"],
+  .emoji {
     display: none !important;
   }
 
