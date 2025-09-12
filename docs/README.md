@@ -29,13 +29,13 @@
 
 <h1>Instantly Turn Online Markdown Files into Web Pages</h1>
 
-This open-source web app, built with magical documentation site generator [Docsify](https://docsify.js.org), lets you publish online [Markdown](https://en.wikipedia.org/wiki/Markdown) files as web pages without setting up your own website. Try it out below!
+This open-source web app, built with magical documentation site generator [Docsify](https://docsify.js.org), makes [Markdown](https://en.wikipedia.org/wiki/Markdown) publishing as simple as providing a file link - publish single pages or entire websites with no webserver required.
 
 <div id="docsifythisurlbuilder">
 
 <h2>Web Page Builder</h2>
 
-<p style="margin-bottom:-8px;">Enter the URL of a Markdown file and view that file as a web page in a new Browser tab. The resulting Docsify-This page URL can be copied and shared or used as an iFrame source URL.</p>
+<p style="margin-bottom:-8px;">Turn your online Markdown files into styled, responsive web pages - just paste a file URL below. The resulting Docsify-This page can be shared or embedded into just about any platform.</p>
 
 **Markdown File URL** (GitHub, Codeberg or raw source URL):  
 <textarea
