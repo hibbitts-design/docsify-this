@@ -11,7 +11,7 @@
     --print-url-size: 8pt;
   }
 
-  /* Hide UI elements - expanded list with specific sidebar ID */
+  /* Hide UI elements */
   .app-nav,
   #__sidebar,
   aside,
@@ -35,11 +35,6 @@
   [aria-label*="search"],
   [role="navigation"],
   .navigation {
-    display: none !important;
-  }
-
-  /* Hide specific elements from this page type */
-  .external-links {
     display: none !important;
   }
 
@@ -86,7 +81,7 @@
     margin: 2cm;
   }
 
-  /* Override heading sizes explicitly */
+  /* Override heading sizes */
   .markdown-section h1 {
     font-size: var(--print-h1-size) !important;
     page-break-after: avoid;
