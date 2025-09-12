@@ -1,6 +1,5 @@
 /* CSS generated/assisted by Anthropic Claude AI */
 @media print {
-  /* Font size variables for easy scaling */
   :root {
     --print-body-size: 10pt;
     --print-h1-size: 14pt;
@@ -24,53 +23,33 @@
   nav,
   header,
   .search,
-  .search-input,
-  .search-button,
-  .navbar,
   .breadcrumb,
   .edit-link,
   .github-corner,
-  .app-nav-merged,
   .skip-link,
-  [aria-label*="search"],
-  [role="navigation"],
-  .navigation {
+  [role="navigation"] {
     display: none !important;
   }
 
-  /* Fix layout - remove sidebar spacing */
-  body {
+  /* Reset layout for print */
+  body,
+  main,
+  .content,
+  .app,
+  .markdown-section {
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
+    max-width: none !important;
+    transform: none !important;
+    position: static !important;
+  }
+
+  body {
     font-size: var(--print-body-size);
     line-height: 1.4;
   }
 
-  main {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    transform: none !important;
-  }
-
-  .content,
-  .app,
-  .markdown-section {
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    transform: none !important;
-    position: static !important;
-    font-size: var(--print-body-size) !important;
-  }
-
-  /* Basic print setup */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -81,7 +60,7 @@
     margin: 2cm;
   }
 
-  /* Override heading sizes */
+  /* Typography */
   .markdown-section h1 {
     font-size: var(--print-h1-size) !important;
     page-break-after: avoid;
@@ -104,7 +83,6 @@
     page-break-after: avoid;
   }
 
-  /* Override paragraph and list text */
   .markdown-section p,
   .markdown-section li,
   .markdown-section td,
@@ -112,7 +90,13 @@
     font-size: var(--print-body-size) !important;
   }
 
-  /* Text flow improvements */
+  code,
+  pre {
+    font-family: monospace;
+    font-size: var(--print-code-size) !important;
+  }
+
+  /* Page flow */
   p,
   li {
     orphans: 3;
@@ -130,7 +114,7 @@
     page-break-inside: avoid;
   }
 
-  /* Table improvements */
+  /* Tables */
   table {
     border-collapse: collapse;
     width: 100%;
@@ -142,14 +126,7 @@
     padding: 4pt;
   }
 
-  /* Code readability */
-  code,
-  pre {
-    font-family: monospace;
-    font-size: var(--print-code-size) !important;
-  }
-
-  /* Link handling for external URLs */
+  /* External URLs */
   a[href^="http"]:after {
     content: " (" attr(href) ")";
     font-size: var(--print-url-size);
