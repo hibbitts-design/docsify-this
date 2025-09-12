@@ -39,10 +39,6 @@
   }
 
   /* Hide specific elements from this page type */
-  a[href*="github.com"],
-  a[href*="grabcad.com"],
-  a[href*="discord"],
-  .social-links,
   .external-links {
     display: none !important;
   }
