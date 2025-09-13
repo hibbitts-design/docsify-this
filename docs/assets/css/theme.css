@@ -1184,12 +1184,12 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child):ha
   line-height: 1.15rem;
 }
 
-.markdown-section .align-items-vertically {
+.markdown-section .edit-link {
   display: inline-flex;
   align-items: center;
 }
 
-.markdown-section .align-items-vertically .emoji {
+.markdown-section .edit-link .emoji {
   margin-right: 2px;
 }
 
