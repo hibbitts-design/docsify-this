@@ -11,6 +11,7 @@
   }
 
   /* Hide UI elements */
+  .cover,
   .app-nav,
   #__sidebar,
   aside,
