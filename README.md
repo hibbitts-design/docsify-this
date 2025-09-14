@@ -129,7 +129,7 @@ With Docsify-This you can:
 
 #### Docsify-This Core Design Principles
 
-- Zero Maintenance Publishing
+- Zero Setup and Maintenance Publishing
 - Separation of Content and Presentation 
 - Platform independence and choice
 - Your content, your control
