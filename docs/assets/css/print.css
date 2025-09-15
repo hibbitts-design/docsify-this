@@ -10,24 +10,24 @@
     --print-url-size: 8pt;
   }
 
+  /* Reset minimum heights to prevent phantom spacing */
+  * {
+    min-height: 0 !important;
+  }
+
   /* Hide UI elements */
-  .cover,
-  .app-nav,
-  #__sidebar,
-  aside,
-  .pagination-item,
-  .docsify-pagination-container,
-  .button,
   .button-secondary,
   .button-rounded,
   .button-secondary-rounded,
-  nav,
-  header,
-  .search,
   .edit-link,
-  .github-corner,
+  .cover,
   .skip-link,
-  [role="navigation"],
+  .app-nav,
+  #__sidebar,
+  aside,
+  .button,
+  .github-corner,
+  .docsify-pagination-container,
   .emoji {
     display: none !important;
   }
