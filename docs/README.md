@@ -402,7 +402,7 @@ What do you think about Docsify-This so far? Help shape its direction by sharing
 
 #### What Problem Does Docsify-This Solve?
 
-Docsify-This provides a quick way to transform and style [Markdown](https://www.markdownguide.org/basic-syntax/) content into visually appealing web pages without requiring a website setup, build process, or in-depth technical knowledge.
+Docsify-This provides a hassle-free way for tech-curious open publishers, educators, and researchers to transform and style [Markdown content](https://www.markdownguide.org/basic-syntax/) into visually appealing web pages without needing a website, build process, or in-depth technical knowledge.
 
 With Docsify-This you can:
 
