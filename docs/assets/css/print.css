@@ -112,7 +112,6 @@
 
   img {
     max-width: 100% !important;
-    height: auto !important;
     page-break-inside: avoid;
   }
 
