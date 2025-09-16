@@ -110,6 +110,18 @@
     widows: 3;
   }
 
+  /* Make columns print-friendly */
+  .row {
+    display: flex !important;
+    page-break-inside: avoid !important;
+  }
+
+  .column {
+    flex: 1 !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
   img {
     max-width: 100% !important;
     page-break-inside: avoid;
