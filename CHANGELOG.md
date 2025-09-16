@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.10.7] - XX/XX/2025🏫
+## [1.10.7] - XX/XX/2025
 
 **New:**
 * Added sidebar banner image support via HTML image
