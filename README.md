@@ -1391,7 +1391,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 #### Content Display Tips and Techniques
 
-- [Inline Parameter Editing for Batch Styling](#inline-parameter-editing-for-batch-styling)
+- [Batch Styling with Markdown File URL Parameters](#batch-styling-with-markdown-file-url-parameters)
 - [Understanding Path Handling in Docsify-This](/?id=understanding-path-handling-in-docsify-this)
 - [Matching Fonts with Your Destination Platform Content](#matching-fonts-with-your-destination-platform-content)
 - [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
@@ -1405,7 +1405,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Use of Camel Case (e.g. camelCase) Format for URL parameters](#use-of-camel-case-eg-camelcase-format-for-url-parameters)
 - [Use of New Web Editor GitHub.dev](#use-of-new-web-editor-githubdev)
 
-##### Inline Parameter Editing for Batch Styling
+##### Batch Styling with Markdown File URL Parameters
 
 For users who prefer more manual configuration and the ability to configure multiple styling options at once, you can append URL parameters directly to your file URL in the Web Page Builder Markdown File URL field instead of using the point-and-click form controls. For example:
 
