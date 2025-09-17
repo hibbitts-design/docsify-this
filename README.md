@@ -52,6 +52,7 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
   <li><a href="#when-is-docsify-this-a-good-candidate">When is Docsify-This a Good Candidate?</a></li>
   <li><a href="#how-docsify-this-works">How Docsify-This Works</a></li>
   <li><a href="#read-what-people-are-saying-about-docsify-this">Read What People are Saying about Docsify-This</a></li>
+  <li><a href="#see-what-people-are-doing-with-docsify-this">See What People are Doing with Docsify-This</a></li>
 </ul>
 
 <h3><a href="#2-publishing-with-docsify-this-1">2. Publishing with Docsify-This</a></h3>
@@ -108,6 +109,7 @@ Have you tried out Docsify-This? Share your [feedback about Docsify-This](https:
 - [When is Docsify-This a Good Candidate?](#when-is-docsify-this-a-good-candidate)
 - [How Docsify-This Works](#how-docsify-this-works)
 - [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
+- [See What People are Doing with Docsify-This](#see-what-people-are-doing-with-docsify-this)
 
 ---
 
@@ -202,6 +204,20 @@ Docsify-This uses client-side rendering, which means your content will not be in
 
 > Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
 > — A. Levine aka CogDog (Independent Educational Technologist)
+
+---
+
+#### See What People are Doing with Docsify-This
+
+Here are a few real-world examples of how educators and creators are using Docsify-This and/or its site templates:
+
+- **[OpenLab Project Documentation](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/davidmalawey/openLab/main&homepage=home.md&edit-link=https://github.com/davidmalawey/openLab/blob/main&sidebar=true&browser-tab-title=OpenLab_Project&edit-link-top=true&hide-credits=true&loadFavicon=favicon.png&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=OpenLab_Project&searchbox=true&page-title=OpenLab&mergeNavbar=true&zoom-images=true&dark-mode=true#/)** - Robotics prototyping documentation at Texas A&M University
+- **[Digital Literacy Course](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/harlows/TERTL509/main/modules/introduction&homepage=overview.md&hide-credits=true&sidebar=true&loadSidebar=_sidebar.md&loadFooter=_footer.md&name=TERTL509#/)** - Open university course on digital literacy
+- **[Ethics & Other Management Issues in Information Systems Course](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/Parsa-Rajabi/CIS-485/main/docs&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CIS%20485&dark-mode=auto#/)** - Docsify-This site template on a custom [Docsify instance](https://parsa-rajabi.github.io/CIS-485/#/)
+
+BONUS: [What’s up, Doc? Docsifying the SPLOT Docs](https://cogdogblog.com/2022/08/docsifying-splot-docs/) - Blog post about using Docsify-This to provide one source of project documentation in multiple contexts.
+
+x2 BONUS: [SFU CMPT-363 Canvas Course](https://canvas.sfu.ca/courses/69678) - University course using [GitHub Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) embedded within Canvas LMS pages
 
 ---
 
@@ -1293,13 +1309,7 @@ _GitHub Training Manual Working Locally with Git_
 - [Web Page with Table of Contents](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true&toc-headings=h2,h3 "GitHub Training Manual Working Locally with Git - Web Page with Table of Contents")
 - [Web Page with Docsify Sidebar](https://docsify-this.net?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&sidebar=true&maxLevel=3 "GitHub Training Manual Working Locally with Git - Web Page with Docsify Sidebar")
 
-_SFU CMPT-363 Course Content_  
-[A Collection of GitHub Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within an SFU CMPT-363 Canvas LMS site](https://canvas.sfu.ca/courses/69678).
-
 [A Collection of GitHub Markdown files with inline CSS](https://github.com/paulhibbitts/docsify-this-cmpt-363-222-site) used as a [multiple page SFU CMPT-363 course site with SFU visual branding and the Docsify Search plugin enabled](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar.md&sidebar=true&loadSidebar=_sidebar.md&loadFavicon=favicon.png&dark-mode=auto&name=CMPT-363-222&searchbox=true#/course-welcome), [multiple page SFU CMPT-363 course site with SFU visual branding and website logo](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar.md&sidebar=true&loadSidebar=_sidebar.md&loadFavicon=favicon.png&dark-mode=auto&name=CMPT-363-222&logo=images/logo.png#/course-welcome), an example [single Markdown file for embeddeding styled via URL parameters](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&link-color=CC0633&link-text-decoration=none&link-text-decoration-hover=underline&hide-credits=true#/course-welcome) and an example [single Markdown file with for embeddeding into Canvas styled via URL parameters](https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=16px&hide-credits=true#/course-welcome).
-
-_OpenLab Project Documentation_  
-[A Collection of GitHub Markdown files](https://github.com/davidmalawey/openLab/tree/main) for the [OpenLab Project site](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/davidmalawey/openLab/main&homepage=home.md&edit-link=https://github.com/davidmalawey/openLab/blob/main&sidebar=true&browser-tab-title=OpenLab_Project&edit-link-top=true&hide-credits=true&loadFavicon=favicon.png&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=OpenLab_Project&searchbox=true&page-title=OpenLab&mergeNavbar=true&zoom-images=true&dark-mode=true), where documentation about building robotics prototypes at the Texas A&M University is shared.
 
 **General Documentation & Websites**  
 
