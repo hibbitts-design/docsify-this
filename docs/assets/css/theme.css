@@ -1299,7 +1299,7 @@ body .docsify-pagination-container {
   }
 }
 
-.markdown-section.docsify-copy-code-button {
+.markdown-section .docsify-copy-code-button {
   padding: 0.35em 0.5em;
     background: var(--mono-shade1);
     color: #fff;
