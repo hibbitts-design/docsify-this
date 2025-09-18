@@ -2195,7 +2195,7 @@
 
   <!-- Copy Code Plugin -->
   <script>
-    if (window.$docsify['basePath'] === undefined) {
+    if ((window.$docsify['basePath'] === undefined) || (getURLParameterByName(['copy-code','copyCode'], null, null, window.location.href, true) === 'true')) {
       document.write('<script src="assets/vendor/docsify/plugins/docsify-code-copy.min.js"><\/script>');
     }
   </script>
