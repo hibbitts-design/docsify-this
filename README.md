@@ -257,6 +257,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 And here’s how Docsify-This.net displays the same URL:
 
 ![Example Docsify-This URL displayed by Docsify-This](docs/images/docsify-this-example-page-readme.png ":class=docsify-this-screenshot")
+
 _The web page displayed by Docsify-This.net, showing the Markdown file with a sidebar that includes headings up to 3 levels, as specified by the Docsify-This URL._
 
 #### Page Appearance URL Parameters (Basic)
