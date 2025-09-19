@@ -8,6 +8,9 @@
 * Added field for a custom back link to the top of the page in Advanced Web Page Builder (in addition to URL parameter `back-link`)
 * Added (long overdue) basic support for printing
 
+**Improved:**
+* Updated CSS fonts
+
 ## [1.10.6] - 09/02/2025🏫
 
 **New:**
