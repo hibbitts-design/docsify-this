@@ -2196,6 +2196,7 @@ Each opens the Docsify-This Web Page Builder with fonts, colors, and sizing pre-
 - [Search Results do not Return all Expected Matches](/?id=search-results-do-not-return-all-expected-matches)
 - [Search Results include Duplicate Matches](?id=search-results-include-duplicate-matches)
 - [Multiple Embedded Scripts are not Working as Expected](/?id=multiple-embedded-scripts-are-not-working-as-expected)
+- [Unexpected Scroll Position when Using Browser Back Button](/?id=unexpected-scroll-position-when-using-browser-back-button)
 
 ##### A '404' File not Found message is Displayed
 
@@ -2253,6 +2254,10 @@ The most likely cause for this issue is using a page name as the homepage link i
 ##### Multiple Embedded Scripts are not Working as Expected
 
 Docsify-This (as with Docsify itself) will only execute the first script included in a Markdown page, as described in the [Docsify documentation](https://docsify.js.org/#/configuration?id=executescript).
+
+##### Unexpected Scroll Position when Using Browser Back Button
+
+If you experience unexpected scroll adjustments when using the browser back button in Chrome, this may be caused by a password manager extension which forces page reloads during navigation for security reasons. The suggested workaround is to add `docsify-this.net` to the blocked/excluded domains list.
 
 ---
 
