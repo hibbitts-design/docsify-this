@@ -10,6 +10,7 @@
 
 **Improved:**
 * Updated CSS fonts
+* Updated ReadMe
 
 ## [1.10.6] - 09/02/2025🏫
 
