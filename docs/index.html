@@ -1517,24 +1517,6 @@
               location.search
             );
 
-            // Check if user navigated here via back/forward button
-            let isBackNavigation = window.performance && 
-                window.performance.navigation && 
-                window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD;
-            
-            // For newer browsers, use Navigation API
-            if (!isBackNavigation && window.performance && window.performance.getEntriesByType) {
-                let navEntries = window.performance.getEntriesByType('navigation');
-                if (navEntries.length > 0) {
-                    isBackNavigation = navEntries[0].type === 'back_forward';
-                }
-            }
-
-            // Skip scroll adjustment if user came via back button
-            if (isBackNavigation) {
-                return;
-            }
-
             // Get the search parameters from the URL (before the hash)
             let urlQueryParam = currentUrlWithoutHash.searchParams;
             let isUrlHasIdQuery = urlQueryParam.has(TARGET_QUERY);
