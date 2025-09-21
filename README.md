@@ -654,7 +654,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ##### One Page Article Template
 
-![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.png)
+![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.jpg)
 
 [One Page Article Template](https://github.com/hibbitts-design/docsify-this-one-page-article) with [home.md](https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md) file displayed by Docsify-This as a:
 
@@ -665,7 +665,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ##### One Page Course Template
 
-![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course-readme.png)
+![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course-readme.jpg)
 
 [One Page Course Template](https://github.com/hibbitts-design/docsify-this-one-page-course) with [home.md](https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md) file displayed by Docsify-This as a:
 
@@ -675,7 +675,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ##### Multiple Page Basic Site Template
 
-![Docsify-This Multiple Page Basic Site](docs/images/docsify-this-multiple-page-basic-site-readme.png)
+![Docsify-This Multiple Page Basic Site](docs/images/docsify-this-multiple-page-basic-site-readme.jpg)
 
 [Multiple Page Basic Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site) with [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site/blob/main/home.md) file and a range of page content examples, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:
 
@@ -689,7 +689,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ##### Multiple Page Blog Style Site Template
 
-![Docsify-This Multiple Page Blog Style Site](docs/images/docsify-this-multiple-page-blog-style-site-readme.png)
+![Docsify-This Multiple Page Blog Style Site](docs/images/docsify-this-multiple-page-blog-style-site-readme.jpg)
 
 [Multiple Page Blog Style Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site) with [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/blob/main/home.md) file, including the use of a responsive card list created with HTML div elements and the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
 
@@ -700,7 +700,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ##### Multiple Page Open Publishing Site Template
 
-![Docsify-This Open Publishing Site Site Template](docs/images/docsify-this-multiple-page-open-publishing-site-readme.png ":class=docsify-this-screenshot")
+![Docsify-This Open Publishing Site Site Template](docs/images/docsify-this-multiple-page-open-publishing-site-readme.jpg)
 
 [Multiple Page Open Publishing Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site) with [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/blob/main/home.md) file, including the use of a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/blob/main/_sidebar.md) file, displayed by Docsify-This as:
 
@@ -715,7 +715,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ##### Multiple Page Course Site Template
 
-![Docsify-This Course Site Template](docs/images/docsify-this-multiple-page-course-site-readme.png ":class=docsify-this-screenshot")
+![Docsify-This Course Site Template](docs/images/docsify-this-multiple-page-course-site-readme.jpg)
 
 [Multiple Page Course Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site) with [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md) file, including the use of a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/_sidebar.md) file and Docsify custom [Navbar](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/_navbar.md) file, displayed by Docsify-This as:
 
@@ -729,7 +729,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ##### LMS Content Pages Template
 
-![Docsify-This LMS Content Pages Template](docs/images/docsify-this-lms-content-pages-readme.png)
+![Docsify-This LMS Content Pages Template](docs/images/docsify-this-lms-content-pages-readme.jpg)
 
 [LMS Content Pages Template](https://github.com/hibbitts-design/docsify-this-lms-content-pages) example pages, including the use of the `font-family`, `font-size` and `hide-credits` URL parameters for seamless content embedding within the Canvas LMS, as displayed by Docsify-This:
 
