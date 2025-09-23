@@ -270,7 +270,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline">Add '←Back' link URL (displayed at top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Add back link URL (displayed at top of page)" type="url" maxlength="200" value="" id="backLink" name="backLink"></div>
+<div class="docsifythisurlbuilderoptionsline">Add '←Back' link URL (displayed at top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" placeholder="https://example.com" aria-label="Add back link URL (displayed at top of page)" type="url" maxlength="200" value="" id="backLink" name="backLink"></div>
 
 <div class="docsifythisurlbuilderoptionsline">Add page title (as H1 header at top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Add page title (as H1 header at top of page)" type="text" maxlength="200" value="" id="pageTitle" name="pageTitle"></div>
 
