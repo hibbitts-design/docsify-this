@@ -11,6 +11,7 @@
 **Improved:**
 * Updated CSS fonts
 * Updated ReadMe
+* Improved support for Docsify configuration settings of 'topMargin'
 
 ## [1.10.6] - 09/02/2025🏫
 
