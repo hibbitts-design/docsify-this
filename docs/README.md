@@ -1960,9 +1960,8 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 ##### Displaying Markdown Content During a Presentation
 
-When presenting content to an audience, you can optimize its display for better readability by adjusting font size, font family, and Docsify's `topMargin` configuration parameter. For example, to display a specific section of Markdown content using a larger sized serif font with white text on a dark background and increased space above the specific header for the content:
-
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Merriweather,Georgia,serif&max-width=80&font-size=42px&header-weight=600&dark-mode=on&topMargin=20#/?id=docsify-this-core-design-principles
+When presenting content to an audience, you can optimize its display for better readability by adjusting font size, font family, and Docsify's `topMargin` configuration parameter. For example, to display a specific section of Markdown content using a larger sized sans serif font with white text on a dark background and increased space above the specific header for the content:  
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&max-width=80&font-size=42px&header-weight=600&dark-mode=on&topMargin=20#/?id=docsify-this-core-design-principles
 
 ##### Providing a Page Table of Contents within a Smaller Area
 
