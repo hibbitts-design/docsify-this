@@ -1511,6 +1511,9 @@
             let SCROLL_DELAY = 750; // in milliseconds
             let location = window.location;
 
+            // Get topMargin from Docsify config or use default
+            let topMargin = (window.$docsify && window.$docsify.topMargin) || 0;
+
             // Build the current URL without the hash
             let currentUrlWithoutHash = new URL(
               location.origin + location.pathname +
@@ -1538,15 +1541,24 @@
                   if (targetElement) {
                     // Use requestAnimationFrame for immediate scroll to the element
                     requestAnimationFrame(() => {
-                      // Scroll smoothly to the element's top position
+                      // Calculate the scroll position with topMargin offset
+                      let scrollTop = targetElement.offsetTop - topMargin;
+                      
+                      // Ensure we don't scroll above the top of the page
+                      scrollTop = Math.max(0, scrollTop);
+                    
+                      
+                      // Scroll smoothly to the element's top position minus topMargin
                       window.scrollTo({
-                        top: targetElement.offsetTop,
+                        top: scrollTop,
                         behavior: 'smooth'  // Add smooth scrolling
                       });
                     });
+                  } else {
+                    console.log('Element not found');
                   }
                 } catch (e) {
-                  console.log('custom scroll failed', e);
+                  dd && console.log('custom scroll failed', e);
                 }
               }, SCROLL_DELAY);
             }
