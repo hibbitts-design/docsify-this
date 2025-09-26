@@ -360,7 +360,7 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 - [Overview](/?id=overview)
 - [Page Appearance URL Parameters (Basic)](/?id=page-appearance-url-parameters-basic)
 - [Page Appearance URL Parameters (Supplemental)](/?id=page-appearance-url-parameters-supplemental)
-- [Using the Share-This.net Alias](#using-the-share-thisnet-alias)
+- [Using the Share-This.net and Publish-This.net Aliases](#using-the-share-thisnet-and-publish-thisnet-aliases)
 - [Embedding Docsify-This Pages into Other Platforms](/?id=embedding-docsify-this-pages-into-other-platforms)
 - [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
 - [Example Content Workflows](/?id=example-content-workflows)
@@ -524,7 +524,7 @@ Docsify-This has been recognized as a finalist in the Open Infrastructure catego
 - [Overview](#overview)
 - [Page Appearance URL Parameters (Basic)](#page-appearance-url-parameters-basic)
 - [Page Appearance URL Parameters (Supplemental)](#page-appearance-url-parameters-supplemental)
-- [Using the Share-This.net Alias](#using-the-share-thisnet-alias)
+- [Using the Share-This.net and Publish-This.net Aliases](#using-the-share-thisnet-and-publish-thisnet-aliases)
 - [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 - [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 - [Example Content Workflows](#example-content-workflows)
@@ -845,13 +845,14 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ---
 
-#### Using the Share-This.net Alias
+#### Using the Share-This.net and Publish-This.net Aliases
 
-The Share-This.net domain provides an alternative way to access Docsify-This functionality without explicit branding. All Docsify-This features and URL parameters work identically with Share-This.net. Simply replace `docsify-this.net` with `share-this.net` in any Docsify-This URL.
+The Share-This.net and Publish-This.net domains provides alternative ways to access Docsify-This functionality without explicit branding. All Docsify-This features and URL parameters work identically with either alias. Simply replace `docsify-this.net` with `share-this.net` or `publish-this.net` in any Docsify-This URL.
 
-**Example:**
+**Examples:**
 - Docsify-This: `https://docsify-this.net?basePath=...`
 - Share-This alias: `https://share-this.net?basePath=...`
+- Publish-This alias: `https://publish-this.net?basePath=...`
 
 ---
 
