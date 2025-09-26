@@ -12,6 +12,7 @@
 * Updated CSS fonts
 * Updated ReadMe
 * Improved support for Docsify configuration settings of 'topMargin'
+* Added larger font sizes in Web Page Builder to support presentations
 
 ## [1.10.6] - 09/02/2025🏫
 
