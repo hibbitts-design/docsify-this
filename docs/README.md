@@ -135,6 +135,9 @@ Page layout:
     <option value="17px">17px</option>
     <option value="19px">19px</option>
     <option value="20px">20px</option>
+    <option value="24px">24px</option>
+    <option value="36px">36px</option>
+    <option value="48px">48px</option>
   </select>
 </div>
         
