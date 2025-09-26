@@ -63,6 +63,7 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
   <li><a href="#overview">Overview</a></li>
   <li><a href="#page-appearance-url-parameters-basic">Page Appearance URL Parameters (Basic)</a></li>
   <li><a href="#page-appearance-url-parameters-supplemental">Page Appearance URL Parameters (Supplemental)</a></li>
+  <li><a href="#using-the-share-thisnet-alias">Using the Share-This.net Alias</a></li>
   <li><a href="#embedding-docsify-this-pages-into-other-platforms">Embedding Docsify-This Pages into Other Platforms</a></li>
   <li><a href="#ready-to-use-docsify-this-markdown-templates">Ready-to-Use Docsify-This Markdown Templates</a></li>
   <li><a href="#example-content-workflows">Example Content Workflows</a></li>
@@ -186,8 +187,6 @@ To directly render a file stored in a public GitHub repository when not using th
 
 The appearance of rendered Markdown files can be customized by optional [URL parameters](/?id=page-appearance-url-parameters-basic) and a small set of available [CSS Classes](/?id=supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Latex](https://github.com/scruel/docsify-latex) and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
 
-Share-This.net is also available as an alias domain for non Docsify-This branded URLs, for example https://share-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md.
-
 Looking for an overall introduction to publishing with Docsify-This? Check out [Markdown Publishing with Docsify-This](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=3&browser-tab-title=Markdown%20Publishing%20with%20Docsify-This&header-weight=600&dark-mode=auto).
 
 Docsify-This uses client-side rendering, which means your content will not be indexed by search engines like Google, Bing, or DuckDuckGo.
@@ -233,6 +232,7 @@ Docsify-This has been recognized as a finalist in the Open Infrastructure catego
 - [Overview](#overview)
 - [Page Appearance URL Parameters (Basic)](#page-appearance-url-parameters-basic)
 - [Page Appearance URL Parameters (Supplemental)](#page-appearance-url-parameters-supplemental)
+- [Using the Share-This.net Alias](#using-the-share-thisnet-alias)
 - [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 - [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 - [Example Content Workflows](#example-content-workflows)
@@ -552,6 +552,16 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Use the SVG version of Font Awesome icons instead of Web Fonts with the optional **svg-icons** parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-lms-content-pages/main&homepage=schedule.md&svg-icons=true
+
+---
+
+#### Using the Share-This.net Alias
+
+The Share-This.net domain provides an alternative way to access Docsify-This functionality without explicit branding. All Docsify-This features and URL parameters work identically with Share-This.net. Simply replace `docsify-this.net` with `share-this.net` in any Docsify-This URL.
+
+**Example:**
+- Docsify-This: `https://docsify-this.net?basePath=...`
+- Share-This alias: `https://share-this.net?basePath=...`
 
 ---
 
