@@ -29,13 +29,13 @@
 
 <h1>Instantly Turn Online Markdown Files into Web Pages</h1>
 
-This open-source web app, built with magical documentation site generator [Docsify](https://docsify.js.org), makes [Markdown](https://en.wikipedia.org/wiki/Markdown) publishing as simple as providing a file link - publish single pages or entire websites with no webserver required.
+This open-source web app, built with magical documentation site generator [Docsify](https://docsify.js.org), makes [Markdown](https://en.wikipedia.org/wiki/Markdown) publishing as simple as providing a file link - publish and style single pages or entire websites, all with no webserver required and without modifying the original content files.
 
 <div id="docsifythisurlbuilder">
 
 <h2>Web Page Builder</h2>
 
-<p style="margin-bottom:-8px;">Turn your online Markdown files into styled, responsive web pages - just paste a file URL below. The resulting Docsify-This page can be shared as a standalone link or embedded into just about any platform.</p>
+<p style="margin-bottom:-8px;">Turn your online Markdown files into styled, responsive web pages using the form below. The resulting Docsify-This page can be shared as a standalone link or embedded into just about any platform.</p>
 
 **Markdown File URL** (GitHub, Codeberg or raw source URL):  
 <textarea
