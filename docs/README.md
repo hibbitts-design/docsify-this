@@ -35,7 +35,7 @@ This open-source web app, built with magical documentation site generator [Docsi
 
 <h2>Web Page Builder</h2>
 
-<p style="margin-bottom:-8px;">Turn your online Markdown files into styled, responsive web pages using the form below. The resulting Docsify-This page can be shared as a standalone link or embedded into just about any platform.</p>
+<p style="margin-bottom:-8px;">Turn your online Markdown files into styled, responsive web pages using the form below. The resulting Docsify-This page can be shared as a standalone link or embedded into almost any platform.</p>
 
 **Markdown File URL** (GitHub, Codeberg or raw source URL):  
 <textarea
