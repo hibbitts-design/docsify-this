@@ -1166,6 +1166,16 @@
                         }
 
                         editThisPageLink = editThisPageLink + '/' + lastSegment + fileExt;
+
+                        let editlinktext = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
+                        if (editlinktext) {
+                          editThisPageLink = editThisPageLink + `&edit-link-text=${editlinktext}`;
+                        }
+                        let editlinkemoji = getURLParameterByName('edit-link-emoji', null, null, window.location.href, true);
+                        if (editlinkemoji) {
+                          editThisPageLink = editThisPageLink + `&edit-link-emoji=${editlinkemoji}`;
+                        }
+
                       } else {
                         editThisPageLink = existingEditThisPageLink;
                       }
