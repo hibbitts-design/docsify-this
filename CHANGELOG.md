@@ -1,11 +1,11 @@
 # Changelog
 
-## [1.10.7] - 10/01/2025
+## [1.10.7] - 10/01/2025🎃
 
 **New:**
 * Added sidebar banner image support via HTML image
 * Automatic image path resolution for HTML image assets using data-src attribute relative to site base path with fallback support
-* Added field for a custom back link to the top of the page in Advanced Web Page Builder (in addition to URL parameter `back-link`)
+* Added URL field for a custom back link to the top of the page in Advanced Web Page Builder (in addition to URL parameter `back-link`)
 * Added (long overdue) basic support for printing
 
 **Improved:**
@@ -13,7 +13,9 @@
 * Updated ReadMe
 * Improved support for Docsify configuration settings of 'topMargin'
 * Added larger font sizes in Web Page Builder to support use during presentations
-* Improved support for custom edit link text and emoji
+
+**Bugfix:**
+* Fix for custom edit link text and emoji for multiple page sites without Sidebar or Navbar
 
 ## [1.10.6] - 09/02/2025🏫
 
