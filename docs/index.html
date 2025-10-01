@@ -1121,13 +1121,17 @@
               // Will store array of URL parameters
               var paramArray = [];
               // Split the remaining URL parameters into an array
-              paramArray = url.split('&');
+              // Extract only the query string part (everything after the first '?')
+              var queryPart = url.includes('?') ? url.split('?').slice(1).join('?') : '';
+              paramArray = queryPart ? queryPart.split('&') : [];
+
               // Filter out elements containing 'homepage' or 'edit-link'
               var filteredParams = paramArray.filter(function (param) {
-                return !param.includes('homepage') && !param.includes('edit-link') && !param.includes('editLink');
+                return !param.includes('basePath') && !param.includes('homepage') && !param.includes('edit-link') && !param.includes('editLink');
               });
+
               // Assemble filtered URL parameters from the array into a single string
-              var URLparms = '&' + filteredParams.join('&');
+              var URLparms = filteredParams.length > 0 ? '&' + filteredParams.join('&') : '';
               // console.log(URLparms);
 
               url = url.replace(/[?].*/, ''); // Strips anything after ?
