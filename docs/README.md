@@ -1978,7 +1978,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 When presenting content to an audience, you can optimize display for better readability by adjusting font size, font family, and optionally enabling dark theme mode. For example, to display a specific section using a larger sans-serif font with white text on a dark background:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=42px&header-weight=600&dark-mode=on#/?id=docsify-this-core-design-principles
 
-The parameters `max-width` and `topMargin` can also be manually added to the Docsify-This URL to further adjust left/right margins and spacing above the header. 
+To further adjust the left/right margins and spacing above the header the optional parameters `max-width` and `topMargin` can be manually added to the Docsify-This URL:  
 
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=42px&header-weight=600&dark-mode=on&max-width=80&topMargin=20#/?id=docsify-this-core-design-principles
 
