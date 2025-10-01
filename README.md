@@ -583,6 +583,8 @@ For basic embedding with a fixed height to seamlessly integrate with other desti
 </div>
 ```
 
+Once you are viewing the embedded page, you can refine the left/right margins of the content by adjusting the `max-width` parameter (default unit is %), as shown in the example Docsify-This URL above.
+
 _Adjust the `height` value (2700px) to match your content length. Test on different devices to ensure all content is visible._
 
 To avoid having to determine and set an appropriate height for the iframe, a scrollbar can be included:
@@ -1468,7 +1470,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 When presenting content to an audience, you can optimize display for better readability by adjusting font size, font family, and optionally enabling dark theme mode. For example, to display a specific section using a larger sans-serif font with white text on a dark background:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=42px&header-weight=600&dark-mode=on#/?id=docsify-this-core-design-principles
 
-To further adjust the left/right margins and spacing above the header the optional parameters `max-width` and `topMargin` can be manually added to the Docsify-This URL:  
+Once you are viewing the presented page, you can refine the left/right margins and spacing above any navigated to header by manually adding the parameters `max-width` and `topMargin` to the Docsify-This URL:
 
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=42px&header-weight=600&dark-mode=on&max-width=80&topMargin=20#/?id=docsify-this-core-design-principles
 
