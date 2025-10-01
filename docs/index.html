@@ -936,6 +936,13 @@
     function isExtensionAllowed(fileURL) {
       // Check if filename contains an allowed file extension or supported slug
       var allowedExtensions = getAllowedFileExtensions();
+      
+      // Handle case where fileURL is a query parameter string starting with &
+      if (fileURL && fileURL.startsWith('&edit-link=')) {
+        // Extract just the URL part after &edit-link=
+        fileURL = fileURL.split('&edit-link=')[1].split('&')[0];
+      }
+      
       fileURL = fileURL.split('?id')[0];
       var extension = fileURL.split(".").pop();
 
