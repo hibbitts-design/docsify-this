@@ -198,7 +198,7 @@ Page layout:
     </select>
   </div>
     <div style="font-size: 1em; margin-top: -5px;">
-      Embedding or presenting content? Use 100% for embeds or 80% for presentations
+      Embedding or presenting content? Try 100% for embeds or 80% for presentations
     </div>
 </div>
 
