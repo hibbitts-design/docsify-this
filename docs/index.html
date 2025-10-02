@@ -592,6 +592,17 @@
             }
           }
 
+          var getmaxwidthvalue = document.getElementById('maxWidthValue').value;
+          var getmaxwidthvalueunit = document.getElementById('maxWidthValueUnit').value;
+          if (!((getmaxwidthvalue == "910") && (getmaxwidthvalueunit == "px"))) {
+            if (!url.includes('max-width=')) {
+              if (getmaxwidthvalueunit == "%") {
+                getmaxwidthvalueunit = ''
+              }
+              var URLparms = URLparms + `&max-width=` + getmaxwidthvalue + getmaxwidthvalueunit
+            }
+          }
+
           var getColor = document.getElementById("coverpagecolor");
           var hexCode = getColor.value;
           if (hexCode === '') {
@@ -706,6 +717,24 @@
 
     }
 
+    function updateMaxWidthStep() {
+      const select = document.getElementById('maxWidthValueUnit');
+      const input = document.getElementById('maxWidthValue');
+      const selectedOption = select.selectedOptions[0];
+      
+      const step = selectedOption.getAttribute('data-step');
+      input.setAttribute('step', step);
+      
+      // Set appropriate default for each unit
+      const defaults = {
+        'px': '910',
+        '%': '100',
+        'ch': '75'
+      };
+      
+      input.value = defaults[select.value];
+    }
+
     const isValidUrl = urlString => {
       var urlPattern = new RegExp('^(https?:\\/\\/)?' +      // Protocol
         '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // Domain OR
@@ -814,6 +843,8 @@
       document.getElementById("mergeNavbar").checked = false;
       document.getElementById("headerweight").value = '400';
       document.getElementById("zoomimages").checked = false;
+      document.getElementById("maxWidthValue").value = 910;
+      document.getElementById("maxWidthValueUnit").value = 'px';
       document.getElementById("coverpagecolor").value = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
