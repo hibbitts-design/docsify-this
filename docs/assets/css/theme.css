@@ -1507,6 +1507,10 @@ body .docsify-pagination-container {
   color: #4f56e8;
 }
 
+#docsifythisurlbuilder h3 a.anchor:hover {
+  text-decoration: none !important;
+}
+
 #docsifythisurlbuilder input[type="text"],
 input[type="url"],
 input[type="color"] {

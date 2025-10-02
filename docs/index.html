@@ -1655,13 +1655,34 @@
                }
             }
 
-            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true) {
+            // Code generated/assisted by Anthropic Claude AI
+            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === 'true' ||
+              (() => {
+                const targetId = getURLParameterByName('id', null, null, window.location.href, true);
+
+                if (!targetId) return false;
+
+                const target = document.getElementById(targetId);
+                const optionsDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+                return target && optionsDiv?.contains(target);
+              })()) {
+
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
               theDiv.style.display = "block";
             }
 
-            if (getURLParameterByName('advanced') === true ) {
+            if (getURLParameterByName('advanced') === 'true' ||
+              (() => {
+                const targetId = getURLParameterByName('id', null, null, window.location.href, true);
+
+                if (!targetId) return false;
+
+                const target = document.getElementById(targetId);
+                const optionsDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
+                return target && optionsDiv2?.contains(target);
+              })()) {
+
               document.getElementById("btn_2").style.display = "none";
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
