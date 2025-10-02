@@ -233,7 +233,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
 
-<h3>Dark Theme Mode</h3>
+<h3>Dark Theme</h3>
 
 <hr>
 
