@@ -1803,6 +1803,19 @@
               document.getElementById("zoomimages").checked = true;
             }
 
+            maxWidth = getURLParameterByName('max-width', null, null, window.location.href, true);
+            if (maxWidth) {
+              if (!(isNaN(maxWidth))) {
+                document.getElementById('maxWidthValue').value = maxWidth;
+                document.getElementById('maxWidthValueUnit').value = 'px';
+              } else {
+                const maxWidthvalue = parseInt(maxWidth);
+                const maxWidthUnit = maxWidth.replace(/\d+/, '');
+                document.getElementById('maxWidthValue').value = maxWidthvalue;
+                document.getElementById('maxWidthValueUnit').value = maxWidthUnit;
+              }
+            }
+
             if (getURLParameterByName('loadFavicon')) {
               document.getElementById("loadfavicon").checked = true;
             }
