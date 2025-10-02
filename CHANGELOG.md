@@ -4,6 +4,7 @@
 
 **New:**
 * Added value and unit fields for max width in Web Page Builder (in addition to URL parameter `max-width`)
+* Support scrolling to specific Web Page Builder sections
 
 **Improved:**
 * Updated ReadMe
