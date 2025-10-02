@@ -1467,7 +1467,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 ##### Displaying Markdown Content During a Presentation
 
-When presenting content to an audience, you can optimize display for better readability by adjusting font size, font family, and optionally enabling dark theme mode. For example, to display a specific section using a larger sans-serif font with white text on a dark background:  
+When presenting content to an audience, you can optimize display for better readability by adjusting font size, font family, content maximum width, and optionally enabling dark theme mode. For example, to display a specific section using a larger sans-serif font with white text on a dark background:  
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=42px&header-weight=600&dark-mode=on#/?id=docsify-this-core-design-principles
 
 Once you are viewing the presented page, you can refine the left/right margins and spacing above any navigated to header by manually adding the parameters `max-width` (default unit is %) and `topMargin` (default unit is px) to the Docsify-This URL:  
