@@ -1906,8 +1906,9 @@ span #docsifythisurlfield {
   }
 
   #docsifythis #docsifythisurlbuilder h2,
-  #docsifythis #docsifythisurlbuilder h3 {
-    color: #a78bfa;
+  #docsifythis #docsifythisurlbuilder h3,
+  #docsifythis #docsifythisurlbuilder h3 a {
+    color: #a78bfa!important;
   }
 
   #docsifythis p a,
