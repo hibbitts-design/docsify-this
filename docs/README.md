@@ -188,7 +188,7 @@ Page layout:
   <label for="maxWidthValue">Content maximum width:</label>
   <div style="display: flex; gap: 10px;">
     <input type="number" id="maxWidthValue" name="maxWidthValue"
-       style="flex: .2; border-radius: 7px; border-color: #8e8f9d; vertical-align: top;"
+       style="width=80px; border-radius: 7px; border-color: #8e8f9d; vertical-align: top;"
        value="910" step="10">
     <select style="border-radius: 7px; border-color: #8e8f9d; vertical-align: top; transform: translateY(4px);"
         id="maxWidthValueUnit" name="maxWidthValueUnit" value="px" onchange="updateMaxWidthStep()">
