@@ -2019,7 +2019,7 @@
       maxwidth = getURLParameterByName(['max-width', 'maxWidth'], null, null, window.location.href, true);
       if (!(maxwidth === false)) {
         if (!(isNaN(maxwidth))) {
-          editCSS.innerHTML = ".markdown-section {padding: 0 0;}";
+          editCSS.innerHTML = ".markdown-section {padding-left: 0; padding-right: 0;}";
         }
       } else {
         editCSS.innerHTML = ".markdown-section {padding: 1rem 14px;}";
