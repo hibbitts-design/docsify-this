@@ -658,7 +658,7 @@ To use these templates you would generally do the following (template specific i
 
 To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right when viewing the file, make your changes, and then tap the **Commit changes...** button to save those changes.
 
-**Available Docsify-This Markdown Templates**
+##### Available Docsify-This Markdown Templates
 
 - [One Page Article Template](#one-page-article-template)
 - [One Page Course Template](#one-page-course-template)
