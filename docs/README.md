@@ -188,7 +188,7 @@ Page layout:
   <label for="maxWidthValue">Content maximum width:</label>
   <div style="display: flex; gap: 10px;">
     <input type="number" id="maxWidthValue" name="maxWidthValue"
-       style="width=80px; border-radius: 7px; border-color: #8e8f9d; vertical-align: top;"
+       style="width=85px; border-radius: 7px; border-color: #8e8f9d; vertical-align: top;"
        value="910" step="10">
     <select style="border-radius: 7px; border-color: #8e8f9d; vertical-align: top; transform: translateY(4px);"
         id="maxWidthValueUnit" name="maxWidthValueUnit" value="px" onchange="updateMaxWidthStep()">
@@ -197,7 +197,7 @@ Page layout:
       <option value="ch" data-step="1">Characters (ch)</option>
     </select>
   </div>
-    <div style="font-size: 1em; margin-top: -5px;">
+    <div style="font-size: 1em; opacity: 0.8; margin-top: -5px;">
       Embedding or presenting content? Try 100% for embeds or 80% for presentations
     </div>
 </div>
