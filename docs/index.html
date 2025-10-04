@@ -2023,6 +2023,10 @@
           if (maxwidth == 100) {
             editCSS.innerHTML = ".markdown-section {padding-top: 0 !important; padding-left: 0; padding-right: 0;}";
           } else {
+            if (!(getURLParameterByName('topMargin'))) {
+              var adjustedTopMargin = (100 - maxwidth) * 2;
+              window.$docsify.topMargin = adjustedTopMargin;
+            }
             editCSS.innerHTML = ".markdown-section {padding-left: 0; padding-right: 0;}";
           }
         }
