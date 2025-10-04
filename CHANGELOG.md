@@ -9,6 +9,7 @@
 **Improved:**
 * Updated ReadMe
 * Minor reoganization of Advanced Web Page Builder options
+* Automatically adjust padding-top to 0 when max-width=100
 
 ## [1.10.7] - 10/01/2025🎃
 
