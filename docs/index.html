@@ -2016,7 +2016,7 @@
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
     if (getURLParameterByName(['standalone', 'embedded',]) || standalone) {
-      var editCSS = document.createElement('style')
+      var editCSS = document.createElement('style');
       maxwidth = getURLParameterByName(['max-width', 'maxWidth'], null, null, window.location.href, true);
       if (!(maxwidth === false)) {
         if (!(isNaN(maxwidth))) {
