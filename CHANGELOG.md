@@ -24,7 +24,7 @@
 * Updated CSS fonts
 * Updated ReadMe
 * Improved support for Docsify configuration settings of 'topMargin'
-* Added larger font sizes in Web Page Builder to support use during presentations
+* Added larger font sizes in Web Page Builder to support use during presentations, while keeping sidebar text to default font size
 
 **Bugfix:**
 * Fix for custom edit link text and emoji for multiple page sites without Sidebar or Navbar
