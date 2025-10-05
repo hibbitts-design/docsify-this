@@ -11,6 +11,7 @@
 * Minor reoganization of Advanced Web Page Builder options
 * Automatically adjust padding-top to 0 when max-width=100
 * Automatically adjust topMargin when max-width is a percentage
+* Keep sidebar font to default font size
 
 ## [1.10.7] - 10/01/2025🎃
 
@@ -24,7 +25,7 @@
 * Updated CSS fonts
 * Updated ReadMe
 * Improved support for Docsify configuration settings of 'topMargin'
-* Added larger font sizes in Web Page Builder to support use during presentations, while keeping sidebar text to default font size
+* Added larger font sizes in Web Page Builder to support use during presentations
 
 **Bugfix:**
 * Fix for custom edit link text and emoji for multiple page sites without Sidebar or Navbar
