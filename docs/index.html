@@ -2210,7 +2210,25 @@
           // Append 'rem' if no unit is specified
           fontsize = fontsize + 'rem';
         }
+        document.documentElement.style.setProperty('--sidebar-width', '306px');
         document.documentElement.style.setProperty('--base-font-size', fontsize);
+        document.documentElement.style.setProperty('--sidebar-name-font-size', '24px');
+        var fontCSS = document.createElement('style');
+        fontCSS.innerHTML = `
+            .sidebar { font-size: 18px !important; }
+            .search kbd { font-size: 18px !important; }
+        `;
+        document.head.appendChild(fontCSS);
+        document.addEventListener('DOMContentLoaded', function () {
+          const elements = document.querySelectorAll('.sidebar-nav, .search');
+          elements.forEach(element => {
+            element.style.marginTop = '27px';
+          });
+          const sidebarHeadings = document.querySelectorAll('.sidebar > h1');
+          sidebarHeadings.forEach(element => {
+            element.style.setProperty('margin-top', '27px', 'important');
+          });
+        });
       }
 
       // Change line height if lineheight parameter present
