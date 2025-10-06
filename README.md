@@ -124,6 +124,7 @@ Docsify-This provides a quick way to transform and style [Markdown content](http
 With Docsify-This you can:
 
 - Instantly publish online Markdown files as standalone web pages or even complete websites — no complex configuration required
+- Display existing Markdown content in a presentation-friendly style for workshops, courses, and online sessions
 - Maintain full control over your content by keeping files stored in their original locations, such as GitHub or Codeberg
 - Customize web pages with a point-and-click Web Page Builder, avoiding the need for technical expertise or custom development
 - Encourage collaboration with automatic ‘Edit this Page’ links for Markdown files hosted on GitHub or Codeberg, making it possible for collaborative authoring
