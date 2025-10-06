@@ -2028,7 +2028,7 @@ Once viewing the presented page, you can refine the left/right margins and spaci
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=42px&header-weight=600&dark-mode=on&max-width=80#/?id=docsify-this-core-design-principles
 
 > [!TIP]
-> Bookmark Docsify-This page URLs with anchor tags (like `#/?id=section-name` above) to scroll to specific section content to present, as shown in the above example URL.
+> To scroll to specific section content to present, click on the nearest header and then bookmark the resulting Docsify-This page URL with the included anchor tag (like `#/?id=section-name` above), as shown in the above example URL.
 
 ##### Providing a Page Table of Contents within a Smaller Area
 
