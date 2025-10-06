@@ -128,7 +128,7 @@ With Docsify-This you can:
 - Maintain full control over your content by keeping files stored in their original locations, such as GitHub or Codeberg
 - Customize web pages with a point-and-click Web Page Builder, avoiding the need for technical expertise or custom development
 - Encourage collaboration with automatic ‘Edit this Page’ links for Markdown files hosted on GitHub or Codeberg, making it possible for collaborative authoring
-- Embed constraint-free Markdown/HTML seamlessly into other platforms (LMS, CMS, etc.), enabling flexible content presentation and cross-platform integration
+- Embed constraint-free Markdown/HTML seamlessly into other platforms (LMS, CMS, etc.), enabling flexible content display and cross-platform integration
 - Streamline content reuse by embedding Markdown files across platforms without duplication, reducing redundant workflows and boosting efficiency
 - Tailor the appearance of embedded content dynamically using URL parameters, adapting it to suit the look and feel of each destination platform
 
@@ -312,12 +312,12 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### font-family
 
 Set a custom font for your web pages with the optional **font-family** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New". Underscores may also be used to represent spaces.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual appearance of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New". Underscores may also be used to represent spaces.
 
 ##### font-size
 
 Set a custom font size for your web pages with the optional **font-size** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=16px. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=16px. This parameter can be particularly valuable when trying to better match the visual appearance of embedded content with your destination platform.
 
 ##### header-weight
 
