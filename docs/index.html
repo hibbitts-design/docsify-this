@@ -1142,62 +1142,6 @@
             // ...
             // call `next(html)` when task is done.
 
-            // Original code by @rizdaprasetya and further improved with the assistance of ChatGPT, an AI language model by OpenAI
-            let TARGET_QUERY = 'id';
-            let SCROLL_DELAY = 750; // in milliseconds
-            let location = window.location;
-
-            // Get topMargin from Docsify config or use default
-            let topMargin = (window.$docsify && window.$docsify.topMargin) || 0;
-
-            // Build the current URL without the hash
-            let currentUrlWithoutHash = new URL(
-              location.origin + location.pathname +
-              location.search
-            );
-
-            // Get the search parameters from the URL (before the hash)
-            let urlQueryParam = currentUrlWithoutHash.searchParams;
-            let isUrlHasIdQuery = urlQueryParam.has(TARGET_QUERY);
-
-            // Handle the case where the 'id' is in the fragment (hash) part
-            let hashParams = new URLSearchParams(location.hash.split('?')[1]); // Get the query params after `#`
-            let isHashHasIdQuery = hashParams.has(TARGET_QUERY);
-
-            // Check if the URL contains the 'id' query parameter in either search or hash
-            if (isUrlHasIdQuery || isHashHasIdQuery) {
-
-              // Get the 'id' from either search or hash
-              let urlId = isUrlHasIdQuery ? urlQueryParam.get(TARGET_QUERY) : hashParams.get(TARGET_QUERY);
-
-              // Delay the scrolling to ensure everything is loaded
-              setTimeout(function () {
-                try {
-                  let targetElement = document.getElementById(urlId); // Use `getElementById` to directly reference the element
-                  if (targetElement) {
-                    // Use requestAnimationFrame for immediate scroll to the element
-                    requestAnimationFrame(() => {
-                      // Calculate the scroll position with topMargin offset
-                      let scrollTop = targetElement.offsetTop - topMargin;
-                      
-                      // Ensure we don't scroll above the top of the page
-                      scrollTop = Math.max(0, scrollTop);
-                      
-                      // Scroll smoothly to the element's top position minus topMargin
-                      window.scrollTo({
-                        top: scrollTop,
-                        behavior: 'smooth'  // Add smooth scrolling
-                      });
-                    });
-                  } else {
-                    console.log('Element not found');
-                  }
-                } catch (e) {
-                  dd && console.log('custom scroll failed', e);
-                }
-              }, SCROLL_DELAY);
-            }
-
             if (window.$docsify['basePath']) {
 
               var htmlElement = document.createElement('div');
@@ -1615,6 +1559,62 @@
           });
 
           hook.ready(function () {
+
+            // Original code by @rizdaprasetya and further improved with the assistance of ChatGPT, an AI language model by OpenAI
+            let TARGET_QUERY = 'id';
+            let SCROLL_DELAY = 750; // in milliseconds
+            let location = window.location;
+
+            // Get topMargin from Docsify config or use default
+            let topMargin = (window.$docsify && window.$docsify.topMargin) || 0;
+
+            // Build the current URL without the hash
+            let currentUrlWithoutHash = new URL(
+              location.origin + location.pathname +
+              location.search
+            );
+
+            // Get the search parameters from the URL (before the hash)
+            let urlQueryParam = currentUrlWithoutHash.searchParams;
+            let isUrlHasIdQuery = urlQueryParam.has(TARGET_QUERY);
+
+            // Handle the case where the 'id' is in the fragment (hash) part
+            let hashParams = new URLSearchParams(location.hash.split('?')[1]); // Get the query params after `#`
+            let isHashHasIdQuery = hashParams.has(TARGET_QUERY);
+
+            // Check if the URL contains the 'id' query parameter in either search or hash
+            if (isUrlHasIdQuery || isHashHasIdQuery) {
+
+              // Get the 'id' from either search or hash
+              let urlId = isUrlHasIdQuery ? urlQueryParam.get(TARGET_QUERY) : hashParams.get(TARGET_QUERY);
+
+              // Delay the scrolling to ensure everything is loaded
+              setTimeout(function () {
+                try {
+                  let targetElement = document.getElementById(urlId); // Use `getElementById` to directly reference the element
+                  if (targetElement) {
+                    // Use requestAnimationFrame for immediate scroll to the element
+                    requestAnimationFrame(() => {
+                      // Calculate the scroll position with topMargin offset
+                      let scrollTop = targetElement.offsetTop - topMargin;
+                      
+                      // Ensure we don't scroll above the top of the page
+                      scrollTop = Math.max(0, scrollTop);
+                      
+                      // Scroll smoothly to the element's top position minus topMargin
+                      window.scrollTo({
+                        top: scrollTop,
+                        behavior: 'smooth'  // Add smooth scrolling
+                      });
+                    });
+                  } else {
+                    console.log('Element not found');
+                  }
+                } catch (e) {
+                  dd && console.log('custom scroll failed', e);
+                }
+              }, SCROLL_DELAY);
+            }
 
             if (window.$docsify['basePath']) {
               return; // Exit if basePath is present
