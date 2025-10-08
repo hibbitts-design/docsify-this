@@ -1496,7 +1496,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 When the sidebar toggles in desktop view, the content area width can change if the width of the sidebar and content area is wider than the current Browser window, causing text reflow. To prevent this, set the `max-width` parameter to match or be slightly less than the content width when the sidebar is visible.
 
 For example, to reduce the content width from the default 910px to minimize text repositioning when showing/hiding the sidebar:
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&max-width=810px
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&max-width=810px
 
 ##### Providing a Page Table of Contents within a Smaller Area
 
