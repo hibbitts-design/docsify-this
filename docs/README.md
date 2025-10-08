@@ -1992,6 +1992,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Understanding Path Handling in Docsify-This](/?id=understanding-path-handling-in-docsify-this)
 - [Matching Fonts with Your Destination Platform Content](/?id=matching-fonts-with-your-destination-platform-content)
 - [Displaying Markdown Content During a Presentation](/?id=displaying-markdown-content-during-a-presentation)
+- [Reducing Content Shift When Toggling the Sidebar](/?id=reducing-content-shift-when-toggling-the-sidebar)
 - [Providing a Page Table of Contents within a Smaller Area](/?id=providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](/?id=including-code-blocks)
 - [Displaying Images in a Grid](/?id=displaying-images-in-a-grid)
@@ -2039,10 +2040,20 @@ Once viewing the presented page, you can refine the left/right margins and spaci
 
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=56px&header-weight=600&dark-mode=on&max-width=80#/?id=docsify-this-core-design-principles
 
-You can also refine the font-size parameter for further adjusting the amount of text shown on the presented page.  
+You can also refine the font-size parameter for further adjusting the amount of text shown on the presented page.
+
+If you want to toggle the Docsify sidebar for navigation during your presentation, ensure the content width accounts for the sidebar display to prevent possible text reflow. For example, here is the sidebar included but initially closed, and using the more precise content width unit of characters (ch):  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=36px&header-weight=600&dark-mode=on&max-width=50ch&sidebar=true&maxLevel=4&close-sidebar=true#/?id=quickstart-
 
 > [!TIP]
 > To scroll to specific section content to present, click on the nearest header and then bookmark the resulting Docsify-This page URL with the included anchor tag (like `#/?id=section-name` above), as shown in the above example URLs.
+
+##### Reducing Content Shift When Toggling the Sidebar
+
+When the sidebar toggles in desktop view, the content area width can change if the width of the sidebar and content area is wider than the current Browser window, causing text reflow. To prevent this, set the `max-width` parameter to match or be slightly less than the content width when the sidebar is visible.
+
+For example, to reduce the content width from the default 910px to minimize text repositioning when showing/hiding the sidebar:
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&max-width=810px
 
 ##### Providing a Page Table of Contents within a Smaller Area
 
