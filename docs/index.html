@@ -2060,7 +2060,7 @@
             var fontSizeRaw = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
             var fontSize = parseFloat(fontSizeRaw);
             if (!isNaN(fontSize) && fontSize >= 24) {
-              window.$docsify.topMargin = (fontSize - 14);
+              window.$docsify.topMargin = (fontSize - 22);
             }
             editCSS.innerHTML = ".markdown-section {padding-left: 0; padding-right: 0;}";
           }
