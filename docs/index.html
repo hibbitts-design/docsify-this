@@ -2035,24 +2035,39 @@
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
-    if (getURLParameterByName(['standalone', 'embedded',]) || standalone) {
+    if (getURLParameterByName(['standalone', 'embedded']) || standalone ||
+      (getURLParameterByName('sidebar') && getURLParameterByName(['max-width', 'maxWidth']))) {
       var editCSS = document.createElement('style');
       maxwidth = getURLParameterByName(['max-width', 'maxWidth'], null, null, window.location.href, true);
       if (!(maxwidth === false)) {
-        if (!(isNaN(maxwidth))) {
-          if (maxwidth == 100) {
+        // Extract numeric value and unit
+        var numericValue = parseFloat(maxwidth);
+        var unit = maxwidth.toString().replace(numericValue, '').trim() || '%';
+
+        if (!isNaN(numericValue)) {
+          // Handle percentage widths
+          if (unit === '%' && numericValue == 100) {
             editCSS.innerHTML = ".markdown-section {padding-top: 0 !important; padding-left: 0; padding-right: 0;}";
-          } else {
+          } else if (unit === '%') {
             if (!(getURLParameterByName('topMargin'))) {
-              var adjustedTopMargin = (100 - maxwidth) * 1.75;
+              var adjustedTopMargin = (100 - numericValue) * 1.75;
               window.$docsify.topMargin = adjustedTopMargin;
+            }
+            editCSS.innerHTML = ".markdown-section {padding-left: 0; padding-right: 0;}";
+          }
+          // Handle px or ch widths with large font sizes
+          else if ((unit === 'px' || unit === 'ch') && !getURLParameterByName('topMargin')) {
+            var fontSizeRaw = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
+            var fontSize = parseFloat(fontSizeRaw);
+            if (!isNaN(fontSize) && fontSize >= 24) {
+              window.$docsify.topMargin = (fontSize - 14);
             }
             editCSS.innerHTML = ".markdown-section {padding-left: 0; padding-right: 0;}";
           }
         }
       } else {
         editCSS.innerHTML = ".markdown-section {padding: 1rem 14px;}";
-      }     
+      }
       document.body.appendChild(editCSS);
     }
   </script>
