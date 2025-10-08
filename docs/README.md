@@ -483,9 +483,9 @@ With Docsify-This you can:
 
 ---
 
-### When is Docsify-This a Good Candidate?
+#### When is Docsify-This a Good Candidate?
 
-#### Docsify-This often works really well when you:
+##### Docsify-This often works really well when you:
 - Want to embed the same content across multiple platforms (LMS, websites, etc.)
 - Need cross-platform content reuse (same content for web, mobile, PDF and eBook generation)
 - Want to publish open content quickly without technical setup
@@ -495,7 +495,7 @@ With Docsify-This you can:
 - Are interested in using GitHub/Codeberg for version-control and collaboration
 - Are creating educational materials, documentation, or research content
 
-#### Other publishing tools might be better candidates when you:
+##### Other publishing tools might be better candidates when you:
 - Require SEO optimization and search engine discoverability
 - Need complex user management, approval workflows, or interactive features (contact forms, newsletters, user accounts)
 - Want rich media features (e-commerce, forums, booking systems) or extensive visual customization
