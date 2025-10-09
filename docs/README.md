@@ -630,7 +630,7 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 Set a custom title on Browser tab for your web pages with the optional **browser-tab-title** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&browser-tab-title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page". Underscores may also be used to represent spaces.
 
-##### close-sidebar<button type="button" class="copy-link" aria-label="Copy close-sidebar parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&close-sidebar=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### close-sidebar<button type="button" class="copy-link" aria-label="Copy close-sidebar parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&close-sidebar=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Set the Docsify sidebar to start closed and auto-close after navigation with the optional **close-sidebar** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&close-sidebar=true
@@ -645,7 +645,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Change the default text for a "Edit this Page" link with the optional **edit-link-text** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20as%20Markdown. Please note to use text with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "View as Markdown" would be "View%20as%20Markdown". Underscores may also be used to represent spaces.
 
-##### edit-link-top<button type="button" class="copy-link" aria-label="Copy edit-link-top parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&edit-link-top=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### edit-link-top<button type="button" class="copy-link" aria-label="Copy edit-link-top parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&edit-link-top=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Change the location of the "Edit this Page" link from the bottom of pages to be the top of pages with the optional **edit-link-top** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
@@ -665,17 +665,17 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Set a custom header font weight (default is 400 - regular) for your web pages with the optional **header-weight** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600
 
-##### hide-credits<button type="button" class="copy-link" aria-label="Copy hide-credits parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&hide-credits=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### hide-credits<button type="button" class="copy-link" aria-label="Copy hide-credits parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&hide-credits=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Hide the credits usually shown at the bottom of every displayed Docsify-This page with the optional **hide-credits** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true
 
-##### hypothesis<button type="button" class="copy-link" aria-label="Copy hypothesis parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&hypothesis=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### hypothesis<button type="button" class="copy-link" aria-label="Copy hypothesis parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&hypothesis=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Enable page annotation with [Hypothes.is](https://hypothes.is) with the optional **hypothesis** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hypothesis=true
 
-##### image-captions<button type="button" class="copy-link" aria-label="Copy image-captions parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&image-captions=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### image-captions<button type="button" class="copy-link" aria-label="Copy image-captions parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&image-captions=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Turn alt text into image captions (using the semantic HTML `<figure>` and `<figcaption>` structure) with the optional **image-captions** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&image-captions=true
@@ -700,12 +700,12 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Enable the Docsify Search plugin (which currently includes matches for text and markup) on multiple page sites including a Sidebar with the optional **searchbox** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true
 
-##### sidebar<button type="button" class="copy-link" aria-label="Copy sidebar parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sidebar=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### sidebar<button type="button" class="copy-link" aria-label="Copy sidebar parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sidebar=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true
 
-##### toc<button type="button" class="copy-link" aria-label="Copy toc parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### toc<button type="button" class="copy-link" aria-label="Copy toc parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Display a page table of contents with the optional **toc** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true
@@ -715,12 +715,12 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&toc-headings=h1,h2,h3
 
-##### toc-narrow<button type="button" class="copy-link" aria-label="Copy toc-narrow parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc-narrow=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### toc-narrow<button type="button" class="copy-link" aria-label="Copy toc-narrow parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc-narrow=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
-##### zoom-images<button type="button" class="copy-link" aria-label="Copy zoom-images parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&zoom-images=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### zoom-images<button type="button" class="copy-link" aria-label="Copy zoom-images parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&zoom-images=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Enable image zoom (tapping on page images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main&zoom-images=true. To exclude images, use `![](image.png ":no-zoom")`.
