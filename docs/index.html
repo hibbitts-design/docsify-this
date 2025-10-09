@@ -1612,7 +1612,12 @@
                     // Use requestAnimationFrame for immediate scroll to the element
                     requestAnimationFrame(() => {
                       // Calculate the scroll position with topMargin offset
-                      let scrollTop = targetElement.offsetTop - topMargin;
+                      let scrollTop = 0;
+                      if (getURLParameterByName('sidebar') === true) {
+                        scrollTop = targetElement.offsetTop;
+                      } else {
+                        scrollTop = targetElement.offsetTop - topMargin;
+                      }
                       
                       // Ensure we don't scroll above the top of the page
                       scrollTop = Math.max(0, scrollTop);
