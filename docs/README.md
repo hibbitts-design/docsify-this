@@ -2028,17 +2028,16 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 ##### Displaying Markdown Content During a Presentation
 
-When presenting content to an audience, you can optimize display for better readability by adjusting font size, font family, content maximum width, and optionally enabling dark theme mode. For more interactive presentations, you can also include the Docsify Sidebar. For example, to display a specific section using a larger sans-serif font with white text on a dark background:  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&font-family=Open%20Sans,sans-serif&font-size=36px&header-weight=600&dark-mode=on#/?id=introduction
+When presenting content to an audience, you can optimize display for better readability by adjusting font size, font family, content maximum width, and optionally enabling dark theme mode (all available in the Web Page Builder). For more interactive presentations, you can also include the Docsify Sidebar. For example, to display a specific section using a larger sans-serif font with white text on a dark background:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&font-family=Open%20Sans,sans-serif&font-size=36px&header-weight=600&dark-mode=on#/?id=introduction
 
-Once viewing the presented page, you can refine the left/right margins and spacing above any navigated to header by further adjusting content maximum width (`max-width`, default unit is % and the suggested initial value is 80):  
+Once viewing the presented page, you can refine the left/right margins and spacing above any navigated header by adjusting content maximum width (`max-width`, default unit is % and the suggested initial value is 80):  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&font-family=Open%20Sans,sans-serif&font-size=42px&header-weight=600&dark-mode=on&max-width=80#/?id=introduction
 
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&font-family=Open%20Sans,sans-serif&font-size=42px&header-weight=600&dark-mode=on&max-width=80#/?id=introduction
+You can also adjust the `font-size` parameter to fine-tune the amount of text shown on the presented page.
 
-You can also refine the `font-size` parameter for further adjusting the amount of text shown on the presented page.
-
-If you want to toggle the Docsify sidebar for navigation during your presentation, ensure the content width accounts for the sidebar display to prevent possible text reflow. For example, here is the sidebar included but initially closed, using the more consistent content width unit of characters (ch):  
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&font-family=Open%20Sans,sans-serif&font-size=36px&header-weight=600&dark-mode=on&max-width=50ch&sidebar=true&maxLevel=3&close-sidebar=true#/?id=introduction
+If you want to toggle the Docsify sidebar for navigation during your presentation, set the content width to account for the sidebar display and minimize text reflow. For example, here is the sidebar included but automatically closed, using the more consistent content width unit of characters (ch):  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&font-family=Open%20Sans,sans-serif&font-size=36px&header-weight=600&dark-mode=on&max-width=50ch&sidebar=true&maxLevel=3&close-sidebar=true#/?id=introduction
 
 > [!TIP]
 > To scroll to specific section content to present, click on the nearest header and then bookmark the resulting Docsify-This page URL with the included anchor tag (like `#/?id=section-name` above), as shown in the above example URLs.
