@@ -2040,7 +2040,7 @@ If you want to toggle the Docsify sidebar for navigation during your presentatio
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&font-family=Open%20Sans,sans-serif&font-size=36px&header-weight=600&dark-mode=on&max-width=50ch&sidebar=true&maxLevel=3&close-sidebar=true#/?id=introduction
 
 > [!TIP]
-> To scroll to specific section content to present, click on the nearest header and then bookmark the resulting Docsify-This page URL with the included anchor tag (like `#/?id=section-name` above), as shown in the above example URLs.
+> To scroll to specific section content to present, click on the nearest header and then bookmark the resulting Docsify-This page URL with the included anchor tag (like `#/?id=introduction` above).
 
 ##### Reducing Content Shift When Toggling the Sidebar
 
