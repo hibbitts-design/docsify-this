@@ -1152,14 +1152,6 @@
 
             if (window.$docsify['basePath']) {
 
-              // Close Sidebar based on URL parm
-              if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
-                const sidebarToggle = document.querySelector('.sidebar-toggle');
-                if (sidebarToggle) {
-                  sidebarToggle.click();
-                }
-              }
-
               var htmlElement = document.createElement('div');
               htmlElement.innerHTML = html;
 
