@@ -2270,7 +2270,7 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 
 ##### Load and Go Styling Configurations
 
-Use these pre-configured Web Page Builders that automatically apply optimal styling for specific contexts. Just paste your Markdown file URL and go - you can even bookmark these for instant reuse.
+Use these pre-configured Web Page Builders that automatically apply optimal styling for specific contexts. Just paste your Markdown file URL and go - you can even bookmark these for instant reuse.  
 
 **Learning Management Systems**  
 - Brightspace: [brightspace.docsify-this.net](http://brightspace.docsify-this.net)
