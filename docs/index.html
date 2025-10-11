@@ -2283,31 +2283,40 @@
       // Change body font size if fontSize parameter present
       fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
-        if (!(fontsize.includes("px"))) {
-          // Append 'rem' if no unit is specified
-          fontsize = fontsize + 'rem';
+        // If it's just a number, append 'px'
+        if (!isNaN(fontsize)) {
+          fontsize = fontsize + 'px';
         }
-        document.documentElement.style.setProperty('--sidebar-width', '306px');
+        
         document.documentElement.style.setProperty('--base-font-size', fontsize);
-        document.documentElement.style.setProperty('--sidebar-name-font-size', '24px');
-        var fontCSS = document.createElement('style');
-        fontCSS.innerHTML = `
-            .sidebar { font-size: 18px !important; }
-            .search kbd { font-size: 14px !important; }
-            .sidebar .search h2 { font-size: 18px !important; }
-            .page_toc ul { font-size: 18px !important; }
-        `;
-        document.head.appendChild(fontCSS);
-        document.addEventListener('DOMContentLoaded', function () {
-          const elements = document.querySelectorAll('.sidebar-nav, .search');
-          elements.forEach(element => {
-            element.style.marginTop = '27px';
+        
+        // Only apply sidebar/ToC adjustments if font size is 24px or larger
+        const numericFontSize = parseFloat(fontsize);
+        if (numericFontSize >= 24) {
+          console.log("yes");
+          document.documentElement.style.setProperty('--sidebar-width', '306px');
+          document.documentElement.style.setProperty('--sidebar-name-font-size', '24px');
+          
+          var fontCSS = document.createElement('style');
+          fontCSS.innerHTML = `
+              .sidebar { font-size: 18px !important; }
+              .search kbd { font-size: 14px !important; }
+              .sidebar .search h2 { font-size: 18px !important; }
+              .page_toc ul { font-size: 18px !important; }
+          `;
+          document.head.appendChild(fontCSS);
+          
+          document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.sidebar-nav, .search');
+            elements.forEach(element => {
+              element.style.marginTop = '27px';
+            });
+            const sidebarHeadings = document.querySelectorAll('.sidebar > h1');
+            sidebarHeadings.forEach(element => {
+              element.style.setProperty('margin-top', '27px', 'important');
+            });
           });
-          const sidebarHeadings = document.querySelectorAll('.sidebar > h1');
-          sidebarHeadings.forEach(element => {
-            element.style.setProperty('margin-top', '27px', 'important');
-          });
-        });
+        }
       }
 
       // Change line height if lineheight parameter present
