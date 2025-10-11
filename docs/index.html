@@ -1876,13 +1876,16 @@
 
             maxWidth = getURLParameterByName('max-width', null, null, window.location.href, true);
             if (maxWidth) {
-              if (!(isNaN(maxWidth))) {
+              // Check if maxWidth is a pure number (no unit specified)
+              if (!isNaN(maxWidth)) {
+                // Pure number - default to percentage
                 document.getElementById('maxWidthValue').value = maxWidth;
-                document.getElementById('maxWidthValueUnit').value = 'px';
+                document.getElementById('maxWidthValueUnit').value = '%';  // Changed from 'px'
               } else {
-                const maxWidthvalue = parseInt(maxWidth);
+                // Has a unit (px, %, ch) - parse separately
+                const maxWidthValue = parseInt(maxWidth);
                 const maxWidthUnit = maxWidth.replace(/\d+/, '');
-                document.getElementById('maxWidthValue').value = maxWidthvalue;
+                document.getElementById('maxWidthValue').value = maxWidthValue;
                 document.getElementById('maxWidthValueUnit').value = maxWidthUnit;
               }
             }
