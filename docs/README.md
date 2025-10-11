@@ -2272,17 +2272,17 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 
 Use these pre-configured Web Page Builders that automatically apply the default styling for your web pages:
 
-Learning Management Systems:
-- Brightspace Config [brightspace.docsify-this.net](http://brightspace.docsify-this.net)
-- Canvas Config [canvas.docsify-this.net](http://canvas.docsify-this.net)
-- Moodle Config [moodle.docsify-this.net](http://moodle.docsify-this.net)
-- Sakai Config [sakai.docsify-this.net](http://sakai.docsify-this.net)
+**Learning Management Systems**  
+- Brightspace Config: [brightspace.docsify-this.net](http://brightspace.docsify-this.net)
+- Canvas Config: [canvas.docsify-this.net](http://canvas.docsify-this.net)
+- Moodle Config: [moodle.docsify-this.net](http://moodle.docsify-this.net)
+- Sakai Config: [sakai.docsify-this.net](http://sakai.docsify-this.net)
 
-Presentations:
-- Basic Presentation Config [presentation.docsify-this.net](http://presentation.docsify-this.net)
-- Presentation with Sidebar Config [presentation-sidebar.docsify-this.net](http://presentation-sidebar.docsify-this.net)
+**Presentations**  
+- Basic Presentation Config: [presentation.docsify-this.net](http://presentation.docsify-this.net)
+- Presentation with Sidebar Config: [presentation-sidebar.docsify-this.net](http://presentation-sidebar.docsify-this.net)
 
-Each opens the Docsify-This Web Page Builder with fonts, colors, content max width and other styling best suited for the chosen context.
+Each opens the Docsify-This Web Page Builder with fonts, colors, content max width, and other styling best suited for the chosen context.
 
 ---
 
