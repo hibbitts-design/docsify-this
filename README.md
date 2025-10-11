@@ -1713,16 +1713,21 @@ For example, the following URL will display the Advanced Web Page Builder, with 
 
 The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docsify-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
-##### Load and Go LMS Styling Configurations
+##### Load and Go Styling Configurations
 
-Use these pre-configured Web Page Builders that automatically apply the default styling for your Learning Management System:
+Use these pre-configured Web Page Builders that automatically apply the default styling for your web pages:
 
-- [Brightspace Config](http://load-brightspace.docsify-this.net) 
-- [Canvas Config](http://load-canvas.docsify-this.net)
-- [Moodle Config](http://load-moodle.docsify-this.net)
-- [Sakai Config](http://load-sakai.docsify-this.net)
+Learning Management Systems:
+- Brightspace Config [brightspace.docsify-this.net](http://brightspace.docsify-this.net)
+- Canvas Config [canvas.docsify-this.net](http://canvas.docsify-this.net)
+- Moodle Config [moodle.docsify-this.net](http://moodle.docsify-this.net)
+- Sakai Config [sakai.docsify-this.net](http://sakai.docsify-this.net)
 
-Each opens the Docsify-This Web Page Builder with fonts, colors, and sizing pre-set to seamlessly blend with your chosen platform.
+Presentations:
+- Basic Presentation Config [presentation.docsify-this.net](http://presentation.docsify-this.net)
+- Presentation with Sidebar Config [presentation-sidebar.docsify-this.net](http://presentation-sidebar.docsify-this.net)
+
+Each opens the Docsify-This Web Page Builder with fonts, colors, content max width and other styling best suited for the chosen context.
 
 ---
 
