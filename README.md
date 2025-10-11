@@ -1715,19 +1715,19 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 
 ##### Load and Go Styling Configurations
 
-Use these pre-configured Web Page Builders that automatically apply the default styling for your web pages:
+Use these pre-configured Web Page Builders that automatically apply optimal styling for specific contexts. Just paste your Markdown file URL and go - you can even bookmark these for instant reuse.
 
 **Learning Management Systems**  
-- Brightspace Config: [brightspace.docsify-this.net](http://brightspace.docsify-this.net)
-- Canvas Config: [canvas.docsify-this.net](http://canvas.docsify-this.net)
-- Moodle Config: [moodle.docsify-this.net](http://moodle.docsify-this.net)
-- Sakai Config: [sakai.docsify-this.net](http://sakai.docsify-this.net)
+- Brightspace: [brightspace.docsify-this.net](http://brightspace.docsify-this.net)
+- Canvas: [canvas.docsify-this.net](http://canvas.docsify-this.net)
+- Moodle: [moodle.docsify-this.net](http://moodle.docsify-this.net)
+- Sakai: [sakai.docsify-this.net](http://sakai.docsify-this.net)
 
 **Presentations**  
-- Basic Presentation Config: [presentation.docsify-this.net](http://presentation.docsify-this.net)
-- Presentation with Sidebar Config: [presentation-sidebar.docsify-this.net](http://presentation-sidebar.docsify-this.net)
+- Basic Presentation: [presentation.docsify-this.net](http://presentation.docsify-this.net) - Large fonts, no sidebar (optimized for camera recording)
+- Presentation with Sidebar: [presentation-sidebar.docsify-this.net](http://presentation-sidebar.docsify-this.net) - Navigation on-demand for live presenting
 
-Each opens the Docsify-This Web Page Builder with fonts, colors, content max width, and other styling best suited for the chosen context.
+Each configuration pre-sets fonts, colors, content max width, and other styling optimized for the chosen context.
 
 ---
 
