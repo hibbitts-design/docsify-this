@@ -2279,8 +2279,8 @@ Use these pre-configured Web Page Builders that automatically apply optimal styl
 - Sakai: [sakai.docsify-this.net](http://sakai.docsify-this.net)
 
 **Presentations**  
-- Basic Presentation: [presentation.docsify-this.net](http://presentation.docsify-this.net) - Large fonts, no sidebar (optimized for camera recording)
-- Presentation with Sidebar: [presentation-sidebar.docsify-this.net](http://presentation-sidebar.docsify-this.net) - Navigation on-demand for live presenting
+- Basic Presentation: [presentation.docsify-this.net](http://presentation.docsify-this.net)
+- Presentation with Sidebar: [presentation-sidebar.docsify-this.net](http://presentation-sidebar.docsify-this.net)
 
 Each configuration pre-sets fonts, colors, content max width, and other styling optimized for the chosen context.
 
