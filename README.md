@@ -1725,7 +1725,7 @@ Use these pre-configured Web Page Builders that automatically apply optimal styl
 
 **Presentations**  
 - Basic presentation: [present.docsify-this.net](http://present.docsify-this.net)
-- Presentation with Sidebar for navigation: [present-nav.docsify-this.net](http://present-nav.docsify-this.net)
+- Presentation with Sidebar for navigation (auto-closes): [present-nav.docsify-this.net](http://present-nav.docsify-this.net)
 
 Each configuration pre-sets fonts, colors, content max width, and other styling optimized for the chosen context.
 
