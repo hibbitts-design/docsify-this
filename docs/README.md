@@ -2273,16 +2273,18 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 Use these pre-configured Web Page Builders that automatically apply optimal styling for specific contexts. Just paste your Markdown file URL and go - you can even bookmark these for instant reuse.  
 
 **Learning Management Systems**  
-- Brightspace: [brightspace.docsify-this.net](http://brightspace.docsify-this.net)
-- Canvas: [canvas.docsify-this.net](http://canvas.docsify-this.net)
-- Moodle: [moodle.docsify-this.net](http://moodle.docsify-this.net)
-- Sakai: [sakai.docsify-this.net](http://sakai.docsify-this.net)
+*Full-width layout, platform-matched fonts and colors, hidden credits, and links with underline on hover*
+
+- Brightspace: [brightspace.docsify-this.net](http://brightspace.docsify-this.net) → *Lato Extended 19px, #006fbf links (hover: #050077)*
+- Canvas: [canvas.docsify-this.net](http://canvas.docsify-this.net) → *Lato Extended 16px, #0374B5 links*
+- Moodle: [moodle.docsify-this.net](http://moodle.docsify-this.net) → *System-UI 15px, #0f6cbf links (hover: #0C5699)*
+- Sakai: [sakai.docsify-this.net](http://sakai.docsify-this.net) → *Open Sans 14px, #0b1660 links (hover: #091242)*
 
 **Presentations**  
-- Basic presentation: [present.docsify-this.net](http://present.docsify-this.net)
-- Presentation with Sidebar for navigation (auto-closes): [present-nav.docsify-this.net](http://present-nav.docsify-this.net)
+*Open Sans 36px, semi-bold headers, dark mode, and hidden credits*
 
-Each configuration pre-sets fonts, colors, content max width, and other styling optimized for the chosen context.
+- Basic Presentation: [present.docsify-this.net](http://present.docsify-this.net) → *80% width*
+- Presentation with Docsify Sidebar for Navigation (auto-closes): [present-nav.docsify-this.net](http://present-nav.docsify-this.net) → *55ch width, navigation up to H3*
 
 ---
 
