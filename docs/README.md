@@ -125,34 +125,33 @@ Page layout:
 </div>
 
 <div class='stackedlabeldropdown'>
-  <label for="fontsize">Font size:</label>
-  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
-    <option value="18px">18px</option>
-    <option disabled="disabled">----</option>
-    <option value="14px">14px</option>
-    <option value="15px">15px</option>
-    <option value="16px">16px</option>
-    <option value="17px">17px</option>
-    <option value="19px">19px</option>
-    <option value="20px">20px</option>
-    <option value="24px">24px</option>
-    <option value="36px">36px</option>
-    <option value="48px">48px</option>
-    <option value="60px">60px</option>
-    <option value="72px">72px</option>
-  </select>
+  <label for="fontsize">Font size (px):</label>
+  <input 
+    type="number" 
+    id="fontsize" 
+    name="fontsize" 
+    value="18" 
+    min="10" 
+    max="72" 
+    step="1"
+    style="border-radius: 7px; border-color: #8e8f9d; width: 80px;"
+    class="docsifythisurlbuilderoptionsline"
+  >
 </div>
         
 <div class='stackedlabeldropdown'>
   <label for="lineheight">Line height:</label>
-  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight" style="width: 60px;">
-    <option value="1.4">1.4</option>
-    <option disabled="disabled">----</option>
-    <option value="1.2">1.2</option>
-    <option value="1.3">1.3</option>
-    <option value="1.5">1.5</option>
-    <option value="1.6">1.6</option>
-  </select>
+  <input 
+    type="number" 
+    id="lineheight" 
+    name="lineheight" 
+    value="1.4" 
+    min="1.0" 
+    max="3.0" 
+    step="0.1"
+    style="border-radius: 7px; border-color: #8e8f9d; width: 80px;"
+    class="docsifythisurlbuilderoptionsline"
+  >
   <div style="clear: both;"></div>
 </div>
 
