@@ -1724,7 +1724,7 @@ Use these pre-configured Web Page Builders that automatically apply optimal styl
 - Presentation with Docsify Sidebar for Navigation (auto-closes): [present-nav.docsify-this.net](http://present-nav.docsify-this.net) → *55ch width, navigation up to H3*
 
 **Learning Management Systems**  
-*Full-width layout, platform-matched fonts and colors, hidden credits, and links with underline on hover*
+*Visually styled for seamless embedding with full-width layout, platform-matched fonts and colors, hidden credits, and links with underline on hover*
 
 - Brightspace: [brightspace.docsify-this.net](http://brightspace.docsify-this.net) → *Lato Extended 19px, #006fbf links (hover: #050077)*
 - Canvas: [canvas.docsify-this.net](http://canvas.docsify-this.net) → *Lato Extended 16px, #0374B5 links*
