@@ -401,10 +401,8 @@
           if (getFontSize === '' || isNaN(getFontSize)) {
             getFontSize = '18';
           }
-          if (getFontSize != "18") {
-            if (!url.includes('font-size=')) {
-              var URLparms = URLparms + `&font-size=` + getFontSize + 'px';
-            }
+          if (getFontSize != "18" && !url.includes('font-size=')) {
+            var URLparms = URLparms + `&font-size=` + getFontSize + 'px';
           }
 
           var getLineHeight = document.getElementById('lineheight').value;
