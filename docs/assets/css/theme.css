@@ -1534,20 +1534,24 @@ input[type="url"]:focus {
 
 #docsifythisurlfield {
   width: 100%;
-  padding: min(18px, 5%) min(15px, 5%);
-  min-height: 76px; /* +4px for a bit more breathing room */
+  padding: 18px 15px;
   font-size: 22px;
   line-height: 1.6;
   box-sizing: border-box;
-  
-  /* Grid for vertical centering */
-  display: grid;
-  align-content: center;
-  
-  /* Auto-grow and auto-shrink */
-  field-sizing: content;
   resize: none;
   overflow: hidden;
+  
+  /* Auto-sizing for modern browsers */
+  field-sizing: content;
+  min-height: 76px;
+}
+
+/* Firefox: fixed comfortable height */
+@supports not (field-sizing: content) {
+  #docsifythisurlfield {
+    height: 110px; /* Fixed height for Firefox */
+    overflow-y: auto; /* Scroll if needed */
+  }
 }
 
 span #docsifythisurlfield {
