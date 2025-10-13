@@ -398,17 +398,21 @@
           }
 
           var getFontSize = document.getElementById('fontsize').value;
-          if (!(getFontSize == "18px")) {
+          if (getFontSize === '' || isNaN(getFontSize)) {
+            getFontSize = '18';
+          }
+          if (getFontSize != "18") {
             if (!url.includes('font-size=')) {
-              var URLparms = URLparms + `&font-size=` + getFontSize;
+              var URLparms = URLparms + `&font-size=` + getFontSize + 'px';
             }
           }
 
           var getLineHeight = document.getElementById('lineheight').value;
-          if (!(getLineHeight == "1.4")) {
-            if (!url.includes('line-height=')) {
-              var URLparms = URLparms + `&line-height=` + getLineHeight
-            }
+          if (getLineHeight === '' || isNaN(getLineHeight)) {
+            getLineHeight = '1.4';
+          }
+          if (getLineHeight != "1.4" && !url.includes('line-height=')) {
+            var URLparms = URLparms + `&line-height=` + getLineHeight;
           }
 
           var getColor = document.getElementById("linkcolor");
@@ -816,7 +820,7 @@
       document.getElementById("browserTabTitle").value = 'Published by Docsify-This';
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
-      document.getElementById("fontsize").value = '18px';
+      document.getElementById("fontsize").value = '18';
       document.getElementById("lineheight").value = '1.4';
       document.getElementById("linkcolor").value = '#0374B5';
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
