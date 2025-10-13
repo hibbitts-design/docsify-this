@@ -9,7 +9,7 @@
 
 **Improved:**
 * Updated ReadMe
-* Minor reoganization of Advanced Web Page Builder options
+* Minor Web Page Builder UI updates
 * Automatically adjust padding-top to 0 when max-width=100
 * Automatically adjust topMargin when max-width is a percentage
 * Keep sidebar font to default font size
