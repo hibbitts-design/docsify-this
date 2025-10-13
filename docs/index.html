@@ -1769,7 +1769,7 @@
 
             fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
             if (fontsize) {
-              document.getElementById('fontsize').value = fontsize;
+              document.getElementById('fontsize').value = parseInt(fontsize);
             }
 
             lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
