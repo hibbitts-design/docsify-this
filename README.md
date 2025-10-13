@@ -1731,6 +1731,9 @@ Use these pre-configured Web Page Builders that automatically apply optimal styl
 - Basic Presentation: [present.docsify-this.net](http://present.docsify-this.net) → *80% width*
 - Presentation with Docsify Sidebar for Navigation (auto-closes): [present-nav.docsify-this.net](http://present-nav.docsify-this.net) → *55ch width, navigation up to H3*
 
+> [!TIP]
+> After loading any of these configs, you can further modify the generated URL by manually editing URL parameters like `&font-size=32px` or `&link-color=CC0000`. Bookmark your customized URL to create your own personal Load and Go configuration. For example, to make Basic Presentation use 32px fonts instead of 36px, just change `&font-size=36px` to `&font-size=32px` in the URL, reload the Docsify-This page and tap **Publish as a Web Page** button to view the final results.
+
 ---
 
 #### Troubleshooting
