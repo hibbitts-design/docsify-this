@@ -1534,10 +1534,20 @@ input[type="url"]:focus {
 
 #docsifythisurlfield {
   width: 100%;
-  vertical-align: middle;
-  padding: min(15px, 5%) min(15px, 5%);
-  min-height: 88px;
+  padding: min(18px, 5%) min(15px, 5%);
+  min-height: 76px; /* +4px for a bit more breathing room */
   font-size: 22px;
+  line-height: 1.6;
+  box-sizing: border-box;
+  
+  /* Grid for vertical centering */
+  display: grid;
+  align-content: center;
+  
+  /* Auto-grow and auto-shrink */
+  field-sizing: content;
+  resize: none;
+  overflow: hidden;
 }
 
 span #docsifythisurlfield {
