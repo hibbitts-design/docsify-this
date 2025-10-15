@@ -1694,6 +1694,9 @@
               markdownFileURL = markdownFileURL.split('#')[0];
 
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
+              const urlField = document.getElementById('docsifythisurlfield');
+              urlField.value = markdownFileURL;
+              urlField.dispatchEvent(new Event('input'));
             }
 
             if (getURLParameterByName(['hide-banner', 'hideBanner']) === true) {
