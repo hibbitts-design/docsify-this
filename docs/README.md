@@ -61,7 +61,7 @@ This open-source web app, built with magical documentation site generator [Docsi
     }
 }
 </style>
-<input class="docsifythisurlbuilderprimarybutton" type="button" id="btn_1" value="Publish as a Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
+<input class="docsifythisurlbuilderprimarybutton" style="margin-top: -10px;" type="button" id="btn_1" value="Publish as a Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/></br>
 
 Page layout:
 
