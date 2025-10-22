@@ -136,7 +136,7 @@ function pageActionItems(hook, vm) {
 
    // Get the button config
    function getButton() {
-      return { ...defaultButton, ...(vm.config.pageActionItems.button ?? {}) };
+      return { ...defaultButton, ...(vm.config?.pageActionItems?.button ?? {}) };
    }
 
    // Get current Docsify page URL
@@ -382,7 +382,7 @@ function pageActionItems(hook, vm) {
       blobUrl = URL.createObjectURL(new Blob([md], { type: 'text/markdown' }));
       return md;
    });
-hook.afterEach((html, next) => {
+   hook.afterEach((html, next) => {
       injectStyles();
       const menuHtml = generateMenuHtml();
       
