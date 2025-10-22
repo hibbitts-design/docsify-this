@@ -283,6 +283,7 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 - [line-height](#line-height)
 - [link-color](#link-color)
 - [maxLevel](#maxLevel)
+- [page-copy-button](#page-copy-button)
 - [searchbox](#searchbox)
 - [sidebar](#sidebar)
 - [toc](#toc)
@@ -359,6 +360,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Set the maximum header level of the Docsify sidebar with the optional **maxLevel** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=3
+
+##### page-copy-button
+
+Include a page actions menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional page-copy-button parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&page-copy-button=true
 
 ##### searchbox
 
