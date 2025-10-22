@@ -320,6 +320,13 @@
             }
           }
 
+          const cb21 = document.querySelector('#pageCopyButton');
+          if (cb21.checked) {
+            if (!url.includes('page-copy-button=')) {
+              var URLparms = URLparms + `&page-copy-button=true`;
+            }
+          }
+
           const cb3 = document.querySelector('#hideCredits');
           if (cb3.checked) {
             if (!url.includes('hide-credits=')) {
@@ -831,6 +838,7 @@
       document.getElementById("toch2").checked = true;
       document.getElementById("toch3").checked = false;
       document.getElementById("maxLevel").value = 2;
+      document.getElementById("pageCopyButton").checked = false;
       document.getElementById("hideCredits").checked = false;
       document.getElementById("hypothesisenable").checked = false;
       document.getElementById("loadfavicon").checked = false;
@@ -1821,6 +1829,10 @@
 
             if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
               document.getElementById("editLinkTopCheck").checked = true;
+            }
+
+            if (getURLParameterByName(['page-copy-button', 'pageCopyButton'], null, null, window.location.href, true) === 'true') {
+              document.getElementById("pageCopyButton").checked = true;
             }
 
             if (getURLParameterByName(['hide-credits', 'hideCredits'], null, null, window.location.href, true) === 'true') {

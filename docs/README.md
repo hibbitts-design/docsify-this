@@ -177,9 +177,11 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="imageCaptions" unchecked><label for="imageCaptions">Show alternative text of images as captions</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pageCopyButton"/><label for="pageCopyButton">Include Copy Page button for accessing Markdown content</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomimages" unchecked><label for="zoomimages">Enable zoomable page images (tapping on images to enlarge them)</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="imageCaptions" unchecked><label for="imageCaptions">Show alternative text of images as captions</label></div>
 
 <hr>
 
@@ -618,6 +620,7 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 - [line-height](/?id=line-heightconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [link-color](/?id=link-colorconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [maxLevel](/?id=maxLevelconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [page-copy-button](/?id=page-copy-buttonconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [searchbox](/?id=searchboxconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [sidebar](/?id=sidebarconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [toc](/?id=tocconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -694,6 +697,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Set the maximum header level of the Docsify sidebar with the optional **maxLevel** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=3
+
+##### page-copy-button<button type="button" class="copy-link" aria-label="Copy back-link parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&page-copy-button=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Include a copy page menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional page-copy-button parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&page-copy-button=true
 
 ##### searchbox<button type="button" class="copy-link" aria-label="Copy searchbox parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&searchbox=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
