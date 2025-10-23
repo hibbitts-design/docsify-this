@@ -364,7 +364,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### page-copy-button
 
 Include a page actions menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional page-copy-button parameter (not included in the Advanced Web Page Builder), for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&page-copy-button=true
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&page-copy-button=true. To not include the choice for LLM discussion, use `page-copy-button=nollm`.
 
 ##### searchbox
 
