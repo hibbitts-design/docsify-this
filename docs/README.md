@@ -373,9 +373,9 @@ Page layout:
 
 ### Quickstart ⚡
 
-1. **Have a Markdown file online?** GitHub, Codeberg, or a public raw Markdown file works
-1. Visit the location of your file and **copy the file URL**
-1. Return here and **paste that URL** into the above Markdown File URL field
+1. **Have a Markdown file online?** GitHub, Codeberg, or any public Markdown file works
+1. Visit the location of your file and **copy the URL from your browser's address bar**
+1. Return here and **paste that URL** into the above Markdown File URL field (e.g., `https://github.com/username/repo/blob/main/filename.md`)
 1. Choose a **Page layout** (try **Docsify Sidebar** for enhanced navigation)
 1. Tap on the link  **Show More Page Appearance Options »** and select from available choices
 1. Tap on the button **Publish as Web Page**
