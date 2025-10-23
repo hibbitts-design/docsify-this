@@ -1164,6 +1164,19 @@
             onError: 'Copy failed.',
           },
           {
+            icon: '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4C3 3.4 3.4 3 4 3H14C14.6 3 15 3.4 15 4V10C15 10.6 14.6 11 14 11H9L6 14V11H4C3.4 11 3 10.6 3 10V4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+            label: 'Copy page Markdown with LLM prompt',
+            desc: 'Copy page with LLM discussion prompt to clipboard',
+            action: 'custom',
+            onClick: async ({ rawMarkdown, vm, blobUrl }) => {
+                const finalPrompt = `${rawMarkdown}\n\nI'd like to discuss this content. Please read through it and let me know when you're ready for questions.`;
+                await navigator.clipboard.writeText(finalPrompt);
+                console.log({ rawMarkdown, vm, blobUrl, finalPrompt });
+            },
+            onSuccess: 'Copied with prompt to clipboard!',
+            onError: 'Copy failed.',
+          },
+          {
             icon: '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.25 3.75H2.75C1.64543 3.75 0.75 4.64543 0.75 5.75V12.25C0.75 13.3546 1.64543 14.25 2.75 14.25H15.25C16.3546 14.25 17.25 13.3546 17.25 12.25V5.75C17.25 4.64543 16.3546 3.75 15.25 3.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.75 11.25V6.75H8.356L6.25 9.5L4.144 6.75H3.75V11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11.5 9.5L13.25 11.25L15 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.25 11.25V6.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
             label: 'View as Markdown <span style="margin-left:0.25rem;font-size:0.85em;">↗</span>',
             desc: 'View this page as plain text',
