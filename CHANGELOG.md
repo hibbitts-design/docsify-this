@@ -17,6 +17,9 @@
 * Keep sidebar font to default font size
 * Updated pre-configured styles to support presentation defaults
 
+**Bugfix:**
+* Added missing 600 weight Open Sans font
+
 ## [1.10.7] - 10/01/2025🎃
 
 **New:**
