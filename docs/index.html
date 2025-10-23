@@ -1169,7 +1169,7 @@
             desc: 'Copy page with LLM discussion prompt to clipboard',
             action: 'custom',
             onClick: async ({ rawMarkdown, vm, blobUrl }) => {
-                const finalPrompt = `${rawMarkdown}\n\nI'm using Docsify-This to publish educational/open content. Please review this comprehensive documentation so you can help me with configuration questions, best practices, and troubleshooting. I'll have specific questions about URL parameters, embedding options, and workflow optimization for educational contexts.`;
+                const finalPrompt = `${rawMarkdown}\n\nI'm using Docsify-This.net to publish educational/open content. Please review this comprehensive documentation so you can help me with configuration questions, best practices, and troubleshooting. I'll have specific questions about URL parameters, embedding options, and workflow optimization for educational contexts.`;
                 await navigator.clipboard.writeText(finalPrompt);
                 console.log({ rawMarkdown, vm, blobUrl, finalPrompt });
             },
