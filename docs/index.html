@@ -1169,7 +1169,7 @@
             desc: 'Copy page with LLM discussion prompt to clipboard',
             action: 'custom',
             onClick: async ({ rawMarkdown, vm, blobUrl }) => {
-                const finalPrompt = `${rawMarkdown}\n\nI'm using Docsify-This.net to publish educational/open content. Please review this comprehensive documentation so you can help me with configuration questions, best practices, and troubleshooting. I'll have specific questions about URL parameters, embedding options, and workflow optimization for educational contexts.`;
+                const finalPrompt = `${rawMarkdown}\n\nI'm using Docsify-This.net to publish educational/open content. This web service renders public Markdown files (GitHub, Codeberg, etc.) as styled web pages via URL parameters—no server needed. Users paste standard URLs from their browser's address bar; Docsify-This.net automatically handles conversion (raw URLs not required). Please review this documentation to help with configuration, best practices, troubleshooting, URL parameters, embedding, and educational workflow optimization.`;
                 await navigator.clipboard.writeText(finalPrompt);
                 console.log({ rawMarkdown, vm, blobUrl, finalPrompt });
             },
