@@ -616,6 +616,8 @@ To pre-fill the Web Page Builder with a specific URL, use the `url-field` parame
 https://docsify-this.net?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
 ```
 
+To clear the default Markdown file URL field, use the value of `empty`.
+
 ```html
 https://docsify-this.net?url-field=empty
 ```
