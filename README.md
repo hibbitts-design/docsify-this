@@ -179,7 +179,7 @@ The **basePath** Docsify parameter is the URL path containing the raw source Mar
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md
 
 > [!NOTE]
-> You can use either a regular GitHub file URL (e.g. https://github.com/username/repo/blob/main/README.md) or a raw URL (e.g. https://raw.githubusercontent.com/username/repo/main/README.md) with the Docsify-This Web Page Builder.
+> When using the Docsify-This Web Page Builder, a regular GitHub or Codeberg file URL (e.g. https://github.com/username/repo/blob/main/README.md) is recommended for convenience, though raw URLs (e.g. https://raw.githubusercontent.com/username/repo/main/README.md) are also fully supported. If you are manually constructing a Docsify-This URL (bypassing the Web Page Builder) to render a public GitHub file, you must use its raw source URL, obtainable by tapping the Raw button when viewing a file.
 
 Docsify-This can render files from anywhere that the content of a Markdown file can be viewed within a web browser, including:
 
