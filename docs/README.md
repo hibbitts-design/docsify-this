@@ -939,12 +939,18 @@ Use these preset Web Page Builder configurations that automatically apply optima
 Along with the standard Docsify-This URL parameters, the Web Page Builder also offers the following specific parameters for creating custom configurations:
 
 ##### url-field
+
+To pre-fill the Web Page Builder with a specific URL, use the `url-field` parameter, for example:
+
 ```html
-https://preview-v2.docsify-this.net?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
+https://docsify-this.net?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
 ```
+
 ```html
-https://preview-v2.docsify-this.net?url-field=empty
+https://docsify-this.net?url-field=empty
 ```
+
+**Note:** The `url-field` parameter is used only for pre-populating the Web Page Builder form. Once you click "Publish as Web Page", the resulting URL will use `basePath` and `homepage` parameters for the rendered page.
 
 ?> You can even just type **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads, press the Return key — no need to leave the keyboard — to see Docsify-This display the Markdown file as a web page! For example, `https://preview-v2.docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`.
 
