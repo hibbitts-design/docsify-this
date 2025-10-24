@@ -571,6 +571,13 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 #### Loading Web Page Builder Configurations
 
+To pre-load the Docsify-This Web Page Builder with specific options, use the `url-field` parameter along with your desired configuration parameters. This allows you to share a pre-configured builder that others can use by simply clicking "Publish as Web Page".
+
+Basic format:
+```html
+https://docsify-this.net?url-field=https://github.com/username/repo/blob/main/filename.md&sidebar=true&searchbox=true
+```
+
 You can load specific configurations in the Docsify-This Web Page Builder by also using URL parameters. This ability can be helpful in a range of situations, including producing multiple web pages/sites with consistent styling and facilitating support and collaboration among Docsify-This users.
 
 - [Preset Load and Go Styling Configurations](/?id=preset-load-and-go-styling-configurations)
