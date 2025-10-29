@@ -127,6 +127,16 @@
     page-break-inside: avoid;
   }
 
+  .img-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  .img-grid-item {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
   blockquote,
   pre,
   table {
