@@ -2400,9 +2400,9 @@
 
       // Enable dark theme CSS files loaded if dark-mode parameter is true
       var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
-      if (enabledarkmode === 'auto' || enabledarkmode === 'true' || darkmode === 'auto' ) {
+      if (enabledarkmode === 'auto' || darkmode === 'auto' ) {
         document.querySelector('link[data-sheet="dark-mode-auto"]').disabled = false;
-      } else if (enabledarkmode === 'on' || darkmode === 'on' ) {
+      } else if (enabledarkmode === 'on' || enabledarkmode === 'true' || darkmode === 'on' ) {
         document.querySelector('link[data-sheet="dark-mode"]').disabled = false;
       } else {
         document.querySelector('link[data-sheet="dark-mode"]').disabled = true;
