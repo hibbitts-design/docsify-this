@@ -1493,7 +1493,8 @@
               if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
                 const sidebarToggle = document.querySelector('.sidebar-toggle');
                 
-                if (sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'true' && window.innerWidth > 640) {
+                console.log(window.innerWidth);
+                if ((sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'true' && window.innerWidth >= 768) || (sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'false' && window.innerWidth < 768)) {
                   sidebarToggle.click();
                 }
               }
@@ -1699,9 +1700,9 @@
                     lastHash = currentHash;
                     
                     const sidebarToggle = document.querySelector('.sidebar-toggle');
-                    
+                    console.log(window.innerWidth);
                     // Only close if sidebar is currently expanded (visible)
-                    if (sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'true' && window.innerWidth > 640) {
+                    if ((sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'true' && window.innerWidth >= 768) || (sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'false' && window.innerWidth < 768)) {
                       sidebarToggle.click();
                     }
                   }
