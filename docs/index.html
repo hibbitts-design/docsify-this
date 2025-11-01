@@ -1492,9 +1492,8 @@
               // Close Sidebar - handle page-to-page navigation if URL parameter is present
               if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
                 const sidebarToggle = document.querySelector('.sidebar-toggle');
-                const sidebar = document.querySelector('.sidebar');
                 
-                if (sidebar && !sidebar.classList.contains('close') && sidebarToggle && window.innerWidth > 640) {
+                if (sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'true' && window.innerWidth > 640) {
                   sidebarToggle.click();
                 }
               }
@@ -1700,9 +1699,9 @@
                     lastHash = currentHash;
                     
                     const sidebarToggle = document.querySelector('.sidebar-toggle');
-                    const sidebar = document.querySelector('.sidebar');
                     
-                    if (sidebar && !sidebar.classList.contains('close') && sidebarToggle && window.innerWidth > 640) {
+                    // Only close if sidebar is currently expanded (visible)
+                    if (sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'true' && window.innerWidth > 640) {
                       sidebarToggle.click();
                     }
                   }
