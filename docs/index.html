@@ -1969,6 +1969,7 @@
 
             siteName = getURLParameterByName('name', null, null, window.location.href, true);
             if (siteName) {
+              siteName = siteName.replaceAll('_', ' ');
               document.getElementById("siteName").value = siteName;
             }
 
