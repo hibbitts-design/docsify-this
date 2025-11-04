@@ -1887,6 +1887,7 @@
 
             pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
             if (pageTitle) {
+              pageTitle = pageTitle.replaceAll('_', ' ');
               document.getElementById('pageTitle').value = decodeURI(pageTitle);
             }
 
@@ -1968,6 +1969,7 @@
 
             siteName = getURLParameterByName('name', null, null, window.location.href, true);
             if (siteName) {
+              siteName = siteName.replaceAll('_', ' ');
               document.getElementById("siteName").value = siteName;
             }
 
