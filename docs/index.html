@@ -1807,6 +1807,7 @@
 
             browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
             if (browserTabTitle) {
+              browserTabTitle = browserTabTitle.replaceAll('_', ' ');
               document.getElementById('browserTabTitle').value = decodeURI(browserTabTitle);
             }
 
@@ -1837,6 +1838,7 @@
 
             editLinkText = getURLParameterByName(['edit-link-text', 'editLinkText'], null, null, window.location.href, true);
             if (editLinkText) {
+              editLinkText = editLinkText.replaceAll('_', ' ');
               document.getElementById('editLinkText').value = decodeURI(editLinkText);
             }
 
