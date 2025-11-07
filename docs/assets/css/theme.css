@@ -1432,6 +1432,12 @@ body .docsify-pagination-container {
 
 /* DOCSIFY THIS */
 
+/* Override Sidebar initial visibility via CSS for delayed Markdown page load */
+#__sidebar,
+.sidebar-toggle {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .stackedlabeldropdown:has(label[for="fontsize"]) {
     display: block;
