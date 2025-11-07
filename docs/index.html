@@ -2123,6 +2123,17 @@
   <!-- Docsify "develop" branch preview files -->
   <script src="assets/vendor/docsify/preview/docsify.min.js"></script>
 
+  <!-- Restore Sidebar initial visibility via CSS for delayed Markdown page loads -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sidebar = document.getElementById('__sidebar');
+      const toggle = document.querySelector('.sidebar-toggle');
+
+      if (sidebar) sidebar.style.setProperty('display', 'block');
+      if (toggle) toggle.style.setProperty('display', 'block');
+    });
+  </script>
+
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
     if (window.$docsify['basePath']) {
