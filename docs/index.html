@@ -59,6 +59,14 @@
   <script src="assets/vendor/coloris/coloris.min.js"></script>
 
   <style>
+
+    /* Override Sidebar initial visibility via CSS for delayed Markdown page load */
+    #__sidebar:not(.loaded),
+    .sidebar-toggle:not(.loaded) {
+      visibility: hidden;
+      opacity: 0;
+    }
+
     :root {
       --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 
@@ -1486,6 +1494,14 @@
           // Invoked on each page load after new HTML has been appended to the DOM
           hook.doneEach(function () {
             if (window.$docsify['basePath']) {
+
+              // Restore Sidebar visibility
+              const sidebar = document.getElementById('__sidebar');
+              const toggle = document.querySelector('.sidebar-toggle');
+              
+              if (sidebar) sidebar.classList.add('loaded');
+              if (toggle) toggle.classList.add('loaded');
+
               const docHead = document.head;
               const docBody = document.body;
 
