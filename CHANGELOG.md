@@ -18,7 +18,6 @@
 * Updated pre-configured styles to support presentation defaults
 * Delay visibility of Sidebar for better visual experience during delayed page loads
 
-
 **Bugfix:**
 * Added missing 600 weight Open Sans font
 * Adjusted behavior of `dark-mode=true` to match `dark-mode=on`
