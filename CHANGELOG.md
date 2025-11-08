@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.10.8] - XX/XX/2025
+## [1.10.8] - 11/XX/2025
 
 **New:**
 * Added value and unit fields for max width in Web Page Builder (in addition to URL parameter `max-width`)
