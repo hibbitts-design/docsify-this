@@ -321,15 +321,15 @@
             URLparms = URLparms + `&edit-link-text=` + editlinktext;
           }
 
-          const cb21 = document.querySelector('#editLinkTopCheck');
+          const cb2 = document.querySelector('#editLinkTopCheck');
           if (cb1.checked && cb2.checked) {
             if (gitlinkPageURL) {
               var URLparms = URLparms + `&edit-link-top=true`;
             }
           }
 
-          const cb22 = document.querySelector('#pageCopyButton');
-          if (cb22.checked) {
+          const cb21 = document.querySelector('#pageCopyButton');
+          if (cb21.checked) {
             if (!url.includes('page-copy-button=')) {
               var URLparms = URLparms + `&page-copy-button=true`;
             }
