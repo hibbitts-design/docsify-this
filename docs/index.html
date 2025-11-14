@@ -45,11 +45,11 @@
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)"
     href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple-dark.css">-->
 
-  <link rel="stylesheet" 
-    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode" disabled/>
+  <link rel="stylesheet" href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode"
+    disabled />
 
   <link rel="stylesheet" media="(prefers-color-scheme: dark)"
-    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode-auto"/>
+    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode-auto" />
 
   <link rel="stylesheet" href="assets/css/theme.css">
   <link rel="stylesheet" href="assets/css/print.css" media="print">
@@ -59,7 +59,6 @@
   <script src="assets/vendor/coloris/coloris.min.js"></script>
 
   <style>
-
     /* Override Sidebar initial visibility via CSS for delayed Markdown page load */
     #__sidebar:not(.loaded),
     .sidebar-toggle:not(.loaded) {
@@ -394,7 +393,7 @@
           }
           if (!(maxLevel == 2)) {
             if (!url.includes('maxLevel=')) {
-                URLparms = URLparms + `&maxLevel=` + maxLevel;
+              URLparms = URLparms + `&maxLevel=` + maxLevel;
             }
           }
 
@@ -524,13 +523,13 @@
           var getbackLink = document.getElementById("backLink");
           var backLink = getbackLink.value;
           if (!(backLink == "")) {
-              if (!backLink.startsWith('https://') && !backLink.startsWith('http://')) {
-                  backLink = 'https://' + backLink;
-              }
-              if (!url.includes('back-link=')) {
-                  backLink = backLink.replace(/&/g, '+');
-                  var URLparms = URLparms + `&back-link=` + backLink;
-              }
+            if (!backLink.startsWith('https://') && !backLink.startsWith('http://')) {
+              backLink = 'https://' + backLink;
+            }
+            if (!url.includes('back-link=')) {
+              backLink = backLink.replace(/&/g, '+');
+              var URLparms = URLparms + `&back-link=` + backLink;
+            }
           }
 
           var getpageTitle = document.getElementById("pageTitle");
@@ -602,7 +601,7 @@
               var URLparms = URLparms + `&image-captions=true`;
             }
           }
-          
+
           const cb15 = document.querySelector('#zoomimages');
           if (cb15.checked) {
             if (!url.includes('zoom-images=')) {
@@ -700,8 +699,8 @@
           const parts = url.split(/[?&]/);
           let queryString = '';
           if (parts.length > 1) {
-              // Join all parameters back together
-              queryString = '&' + parts.slice(1).join('&');
+            // Join all parameters back together
+            queryString = '&' + parts.slice(1).join('&');
           }
 
           if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && url.includes("gist.githubusercontent.com")) {
@@ -746,17 +745,17 @@
       const select = document.getElementById('maxWidthValueUnit');
       const input = document.getElementById('maxWidthValue');
       const selectedOption = select.selectedOptions[0];
-      
+
       const step = selectedOption.getAttribute('data-step');
       input.setAttribute('step', step);
-      
+
       // Set appropriate default for each unit
       const defaults = {
         'px': '910',
         '%': '100',
         'ch': '65'
       };
-      
+
       input.value = defaults[select.value];
     }
 
@@ -930,7 +929,7 @@
 
         const linkHoverColorDarkMode = getURLParameterByName(['link-color-hover-dark-mode', 'linkColorHoverDarkMode'], null, null, window.location.href, true);
         if (linkHoverColorDarkMode !== false) {
-          document.documentElement.style.setProperty('--link-color--hover',  '#' + linkHoverColorDarkMode);
+          document.documentElement.style.setProperty('--link-color--hover', '#' + linkHoverColorDarkMode);
         }
         const coverPageColorDarkMode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
 
@@ -955,7 +954,7 @@
 
         const linkHoverColor = getURLParameterByName(['link-color-hover', 'linkColorHover'], null, null, window.location.href, true);
         if (linkHoverColor !== false) {
-          document.documentElement.style.setProperty('--link-color--hover',  '#' + linkHoverColor);
+          document.documentElement.style.setProperty('--link-color--hover', '#' + linkHoverColor);
         }
         const coverPageColor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
 
@@ -994,13 +993,13 @@
     function isExtensionAllowed(fileURL) {
       // Check if filename contains an allowed file extension or supported slug
       var allowedExtensions = getAllowedFileExtensions();
-      
+
       // Handle case where fileURL is a query parameter string starting with &
       if (fileURL && fileURL.startsWith('&edit-link=')) {
         // Extract just the URL part after &edit-link=
         fileURL = fileURL.split('&edit-link=')[1].split('&')[0];
       }
-      
+
       fileURL = fileURL.split('?id')[0];
       var extension = fileURL.split(".").pop();
 
@@ -1057,7 +1056,7 @@
     function setupFontPreview() {
       const fontSelect = document.getElementById('fontfamily');
       const fontPreview = document.getElementById('fontPreview');
-      
+
       // Check if both elements exist
       if (!fontSelect || !fontPreview) {
         setTimeout(setupFontPreview, 100); // Try again after 100 milliseconds
@@ -1084,11 +1083,11 @@
       function updateFontPreview() {
         const selectedValue = fontSelect.value;
         // Check if the selectedValue exists in fontMap, otherwise use default
-        const fontFamily = fontMap[selectedValue] || fontMap['Source%20Sans%20Pro']; 
+        const fontFamily = fontMap[selectedValue] || fontMap['Source%20Sans%20Pro'];
         fontPreview.style.fontFamily = fontFamily;
       }
       // Add event listener for when the selection changes
-      fontSelect.addEventListener('change', function() {
+      fontSelect.addEventListener('change', function () {
         updateFontPreview();
       });
       // Call it once on page load to set the initial preview
@@ -1142,7 +1141,7 @@
         minItems: (getURLParameterByName('image-grid-minItems', null, null, window.location.href, true) || 3), // Minimum number of items to create a grid
         minWidth: (getURLParameterByName('image-grid-minWidth', null, null, window.location.href, true) || 200) // Minimum number of items to create a grid
       },
-      
+
       imageCaption: {
         textAlign: (getURLParameterByName('image-captions-text-align', null, null, window.location.href, true) || 'left'),   // Caption alignment (default: 'left')
         fontStyle: (getURLParameterByName('image-captions-font-style', null, null, window.location.href, true) || 'italic'),   // Caption font style (default: 'italic')
@@ -1157,7 +1156,7 @@
       },
 
       pageActionItems: {
-        targetImageClass: ['header-image-fade-full-width','header-tall-image-full-width-headings-overlay', 'header-tall-image-full-width', 'header-image-full-width'],
+        targetImageClass: ['header-image-fade-full-width', 'header-tall-image-full-width-headings-overlay', 'header-tall-image-full-width', 'header-image-full-width'],
         button: {
           icon: '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 5.25H7.25C6.14543 5.25 5.25 6.14543 5.25 7.25V14.25C5.25 15.3546 6.14543 16.25 7.25 16.25H14.25C15.3546 16.25 16.25 15.3546 16.25 14.25V7.25C16.25 6.14543 15.3546 5.25 14.25 5.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.80103 11.998L1.77203 5.07397C1.61003 3.98097 2.36403 2.96397 3.45603 2.80197L10.38 1.77297C11.313 1.63397 12.19 2.16297 12.528 3.00097" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
           label: 'Copy Page',
@@ -1177,9 +1176,9 @@
             desc: 'Copy page with LLM discussion prompt to clipboard',
             action: 'custom',
             onClick: async ({ rawMarkdown, vm, blobUrl }) => {
-                const finalPrompt = `${rawMarkdown}\n\nPlease analyze the provided content thoroughly, paying particular attention to nuance, conditional statements, and presented alternatives. Before answering any question, you MUST search the source material to verify specific details, locating the exact information, and quoting or paraphrasing directly using the exact terminology as written. Crucially, you must clearly identify any conditions, limitations, or exceptions stated in the text that are relevant to the question, and never infer details that "seem logical"—only rely on what's explicitly stated. Always verify against the source, even if you think you know the answer, cross-referencing related sections for a complete picture. Be sure to cite relevant sections with section titles or by quoting the relevant sentence/paragraph, and clearly indicate if something isn't covered in the material rather than filling gaps with general knowledge or assumptions. If uncertain, acknowledge this and offer to search for the correct information, always focusing on accuracy above all else.`;
-                await navigator.clipboard.writeText(finalPrompt);
-                console.log({ rawMarkdown, vm, blobUrl, finalPrompt });
+              const finalPrompt = `${rawMarkdown}\n\nPlease analyze the provided content thoroughly, paying particular attention to nuance, conditional statements, and presented alternatives. Before answering any question, you MUST search the source material to verify specific details, locating the exact information, and quoting or paraphrasing directly using the exact terminology as written. Crucially, you must clearly identify any conditions, limitations, or exceptions stated in the text that are relevant to the question, and never infer details that "seem logical"—only rely on what's explicitly stated. Always verify against the source, even if you think you know the answer, cross-referencing related sections for a complete picture. Be sure to cite relevant sections with section titles or by quoting the relevant sentence/paragraph, and clearly indicate if something isn't covered in the material rather than filling gaps with general knowledge or assumptions. If uncertain, acknowledge this and offer to search for the correct information, always focusing on accuracy above all else.`;
+              await navigator.clipboard.writeText(finalPrompt);
+              console.log({ rawMarkdown, vm, blobUrl, finalPrompt });
             },
             onSuccess: 'Copied with prompt to clipboard!',
             onError: 'Copy failed.',
@@ -1471,9 +1470,9 @@
                 if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
                   if (!html.includes('full-width')) {
                     return editHtml + '\n' + html
-                   } else {
+                  } else {
                     return html + '<br />' + '\n\n' + editHtml
-                   }
+                  }
                 } else {
                   return html + '<br />' + '\n\n' + editHtml
                 }
@@ -1498,7 +1497,7 @@
               // Restore Sidebar visibility (no DOMContentLoaded needed)
               const sidebar = document.getElementById('__sidebar');
               const toggle = document.querySelector('.sidebar-toggle');
-              
+
               if (sidebar) sidebar.classList.add('loaded');
               if (toggle) toggle.classList.add('loaded');
 
@@ -1508,7 +1507,7 @@
               // Close Sidebar - handle page-to-page navigation if URL parameter is present
               if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
                 const sidebarToggle = document.querySelector('.sidebar-toggle');
-                
+
                 console.log(window.innerWidth);
                 if ((sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'true' && window.innerWidth >= 768) || (sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'false' && window.innerWidth < 768)) {
                   sidebarToggle.click();
@@ -1590,38 +1589,38 @@
               let backLink = getURLParameterByName(['back-link', 'backLink'], null, null, window.location.href, true);
 
               if (backLink) {
-                  backLink = backLink.replace(/\+/g, '&');
-                  let divToMoveTo = document.getElementById("main");
-                  let backLinkElement = document.createElement("a");
-                  backLinkElement.href = backLink;
-                  backLinkElement.textContent = "←Back";
-                  let linkWrapper = document.createElement("p");
-                  linkWrapper.appendChild(backLinkElement);
-                  let fullWidthImage = divToMoveTo.querySelector('img[class*="full-width"]');             
-                  if (fullWidthImage) {
-                      let imageClass = fullWidthImage.className;               
-                      if (imageClass === "header-tall-image-full-width-headings-overlay" || 
-                          imageClass === "header-image-full-width-headings-overlay") {
-                          let firstH1 = divToMoveTo.querySelector("h1");
-                          if (firstH1) {
-                              let nextElement = firstH1.nextElementSibling;
-                              if (nextElement && nextElement.tagName.toLowerCase() === 'h2') {
-                                  nextElement.insertAdjacentElement('afterend', linkWrapper);
-                              } else {
-                                  firstH1.insertAdjacentElement('afterend', linkWrapper);
-                              }
-                          }
+                backLink = backLink.replace(/\+/g, '&');
+                let divToMoveTo = document.getElementById("main");
+                let backLinkElement = document.createElement("a");
+                backLinkElement.href = backLink;
+                backLinkElement.textContent = "←Back";
+                let linkWrapper = document.createElement("p");
+                linkWrapper.appendChild(backLinkElement);
+                let fullWidthImage = divToMoveTo.querySelector('img[class*="full-width"]');
+                if (fullWidthImage) {
+                  let imageClass = fullWidthImage.className;
+                  if (imageClass === "header-tall-image-full-width-headings-overlay" ||
+                    imageClass === "header-image-full-width-headings-overlay") {
+                    let firstH1 = divToMoveTo.querySelector("h1");
+                    if (firstH1) {
+                      let nextElement = firstH1.nextElementSibling;
+                      if (nextElement && nextElement.tagName.toLowerCase() === 'h2') {
+                        nextElement.insertAdjacentElement('afterend', linkWrapper);
                       } else {
-                          let wrapperP = fullWidthImage.closest('p');                        
-                          if (wrapperP) {
-                              wrapperP.insertAdjacentElement('afterend', linkWrapper);
-                          } else {
-                              fullWidthImage.insertAdjacentElement('afterend', linkWrapper);
-                          }
+                        firstH1.insertAdjacentElement('afterend', linkWrapper);
                       }
+                    }
                   } else {
-                      divToMoveTo.insertBefore(linkWrapper, divToMoveTo.children[0]);
+                    let wrapperP = fullWidthImage.closest('p');
+                    if (wrapperP) {
+                      wrapperP.insertAdjacentElement('afterend', linkWrapper);
+                    } else {
+                      fullWidthImage.insertAdjacentElement('afterend', linkWrapper);
+                    }
                   }
+                } else {
+                  divToMoveTo.insertBefore(linkWrapper, divToMoveTo.children[0]);
+                }
               }
 
               // Iframes update for responsive design
@@ -1686,7 +1685,7 @@
 
                       // Ensure we don't scroll above the top of the page
                       scrollTop = Math.max(0, scrollTop);
-                      
+
                       // Scroll smoothly to the element's top position minus topMargin
                       window.scrollTo({
                         top: scrollTop,
@@ -1706,15 +1705,15 @@
 
               // Close Sidebar - handle same-page ?id= changes if URL parameter is present
               if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
-                
+
                 let lastHash = window.location.hash;
-                
-                window.addEventListener('hashchange', function() {
+
+                window.addEventListener('hashchange', function () {
                   const currentHash = window.location.hash;
-                  
+
                   if (currentHash !== lastHash) {
                     lastHash = currentHash;
-                    
+
                     const sidebarToggle = document.querySelector('.sidebar-toggle');
                     console.log(window.innerWidth);
                     // Only close if sidebar is currently expanded (visible)
@@ -1731,7 +1730,7 @@
             // Check for valid URL parms or a URL-like pattern after a '?' by using RegEx
             if (getURLParameterByName(['url-field', 'urlField']) || (window.location.href.includes('?') && /[?&](url-field|urlField|https?:\/\/[^\s]+|www\.[^\s]+|[a-z0-9.-]+\.[a-z]{2,})/i.test(window.location.href))) {
               var markdownFileURL = '';
-              
+
               // Check if the URL has only a '?' followed by content, without any '='
               if (!(getURLParameterByName(['url-field', 'urlField']))) {
                 // Extract everything after the '?' as the URL, up to the first '&'
@@ -1740,17 +1739,17 @@
                 // Use getURLParameterByName for 'url-field' or 'urlField'
                 markdownFileURL = getURLParameterByName(['url-field', 'urlField'], '', null, window.location.href, true);
               }
-              
+
               // If URL was 'empty', reset it to an empty string
               if (markdownFileURL === "empty") {
                 markdownFileURL = '';
               }
-              
+
               // Prefix 'https://' if not already present
               if (markdownFileURL && !markdownFileURL.startsWith('http://') && !markdownFileURL.startsWith('https://')) {
                 markdownFileURL = 'https://' + markdownFileURL;
               }
-              
+
               // Remove any '#' and everything after it from the markdownFileURL
               markdownFileURL = markdownFileURL.split('#')[0];
 
@@ -1762,9 +1761,9 @@
 
             if (getURLParameterByName(['hide-banner', 'hideBanner']) === true) {
               var theDiv = document.getElementById("banner");
-               if (theDiv) {
+              if (theDiv) {
                 theDiv.style.display = "none";
-               }
+              }
             }
 
             // Code generated/assisted by Anthropic Claude AI
@@ -2088,7 +2087,7 @@
           if (key === 'name') {
             window.$docsify[key] = replaceUnderscores(value);
           } else {
-          window.$docsify[key] = convertToBoolean(value);
+            window.$docsify[key] = convertToBoolean(value);
           }
         }
       });
@@ -2323,10 +2322,10 @@
         if (!(isNaN(maxwidth))) {
           maxwidth += '%'; // Append '%' if no unit is provided
         }
-        
+
         // Check if aside (ToC) is present and adjust for percentage values
         const hasAside = getURLParameterByName(['toc', 'toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true';
-        
+
         if (hasAside && maxwidth.endsWith('%')) {
           const isNarrowToc = getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true';
           let asideWidth = '440px'; // default to regular ToC
@@ -2335,7 +2334,7 @@
           }
           maxwidth = `calc(${maxwidth} - ${asideWidth})`;
         }
-        
+
         document.documentElement.style.setProperty('--content-max-width', maxwidth);
       }
 
@@ -2366,16 +2365,16 @@
         if (!isNaN(fontsize)) {
           fontsize = fontsize + 'px';
         }
-        
+
         document.documentElement.style.setProperty('--base-font-size', fontsize);
-        
+
         // Only apply sidebar/ToC adjustments if font size is 24px or larger
         const numericFontSize = parseFloat(fontsize);
         if (numericFontSize >= 24) {
           console.log("yes");
           document.documentElement.style.setProperty('--sidebar-width', '306px');
           document.documentElement.style.setProperty('--sidebar-name-font-size', '24px');
-          
+
           var fontCSS = document.createElement('style');
           fontCSS.innerHTML = `
               .sidebar { font-size: 18px !important; }
@@ -2384,7 +2383,7 @@
               .page_toc ul { font-size: 18px !important; }
           `;
           document.head.appendChild(fontCSS);
-          
+
           document.addEventListener('DOMContentLoaded', function () {
             const elements = document.querySelectorAll('.sidebar-nav, .search');
             elements.forEach(element => {
@@ -2420,9 +2419,9 @@
 
       // Enable dark theme CSS files loaded if dark-mode parameter is true
       var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
-      if (enabledarkmode === 'auto' || darkmode === 'auto' ) {
+      if (enabledarkmode === 'auto' || darkmode === 'auto') {
         document.querySelector('link[data-sheet="dark-mode-auto"]').disabled = false;
-      } else if (enabledarkmode === 'on' || enabledarkmode === 'true' || darkmode === 'on' ) {
+      } else if (enabledarkmode === 'on' || enabledarkmode === 'true' || darkmode === 'on') {
         document.querySelector('link[data-sheet="dark-mode"]').disabled = false;
       } else {
         document.querySelector('link[data-sheet="dark-mode"]').disabled = true;
@@ -2487,14 +2486,14 @@
 
   <!-- Copy Code Plugin -->
   <script>
-    if ((window.$docsify['basePath'] === undefined) || (getURLParameterByName(['code-copy','codeCopy'], null, null, window.location.href, true) === 'true')) {
+    if ((window.$docsify['basePath'] === undefined) || (getURLParameterByName(['code-copy', 'codeCopy'], null, null, window.location.href, true) === 'true')) {
       document.write('<script src="assets/vendor/docsify/plugins/docsify-code-copy.min.js"><\/script>');
     }
   </script>
 
   <!-- Page Actions Plugin -->
   <script>
-    if (!(window.$docsify['basePath'] === undefined) && ['true', 'nollm'].includes(getURLParameterByName(['page-copy-button', 'pageCopyButton','page-copy-menu', 'pageCopyMenu','page-actions-menu', 'pageActionsMenu'], null, null, window.location.href, true))) {
+    if (!(window.$docsify['basePath'] === undefined) && ['true', 'nollm'].includes(getURLParameterByName(['page-copy-button', 'pageCopyButton', 'page-copy-menu', 'pageCopyMenu', 'page-actions-menu', 'pageActionsMenu'], null, null, window.location.href, true))) {
       document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-page-actions-menu.js"><\/script>');
     }
   </script>
