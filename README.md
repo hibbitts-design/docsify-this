@@ -6,7 +6,7 @@
 <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
 </a>
 
-## Instantly Turn Online Markdown Files into Web Pages
+## Instantly Turn Markdown Text Files into Styled Web Pages
 
 This open-source web app, built with magical documentation site generator [Docsify](https://docsify.js.org), makes [Markdown](https://en.wikipedia.org/wiki/Markdown) publishing as simple as providing a file link - publish and style single pages or entire websites, without requiring a webserver, website setup, or modifying source content files.  
 
