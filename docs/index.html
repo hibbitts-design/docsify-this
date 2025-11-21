@@ -1054,12 +1054,16 @@
     /* Code generated/assisted by Anthropic Claude AI */
     // Font preview support
     function setupFontPreview() {
+      setupFontPreview.retryCount = (setupFontPreview.retryCount || 0) + 1;
+      
       const fontSelect = document.getElementById('fontfamily');
       const fontPreview = document.getElementById('fontPreview');
 
       // Check if both elements exist
       if (!fontSelect || !fontPreview) {
-        setTimeout(setupFontPreview, 100); // Try again after 100 milliseconds
+        if (setupFontPreview.retryCount < 50) { // Max 5 seconds (50 * 100ms)
+          setTimeout(setupFontPreview, 100); // Try again after 100 milliseconds
+        }
         return; // Stop current execution
       }
 
