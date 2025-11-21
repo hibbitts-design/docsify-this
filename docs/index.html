@@ -2022,7 +2022,7 @@
               document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
             }
 
-            enableDarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
+            var enableDarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
             if (enableDarkmode) {
               if (enableDarkmode === 'true') {
                 enableDarkmode = 'auto';
@@ -2422,7 +2422,7 @@
       updateThemeModeLinkColors();
 
       // Enable dark theme CSS files loaded if dark-mode parameter is true
-      var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
+      enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
       if (enabledarkmode === 'auto' || darkmode === 'auto') {
         document.querySelector('link[data-sheet="dark-mode-auto"]').disabled = false;
       } else if (enabledarkmode === 'on' || enabledarkmode === 'true' || darkmode === 'on') {
