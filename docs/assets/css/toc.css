@@ -130,7 +130,7 @@ aside.nav.nothing {
 /*
 .page_toc .active {
   border-left: 5px solid;
-  color: var(--theme-color, #42b983);
+  color: var(--link-color, #0374B5);
   padding-left: 10px;
 }
 */
