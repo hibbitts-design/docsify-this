@@ -22,6 +22,7 @@
 * Added missing 600 weight Open Sans font
 * Adjusted behavior of `dark-mode=true` to match `dark-mode=on`
 * Support use of underlines when preloading Web Page Builder text fields
+* Fixed automatic dark theme for Embed.ly in dark mode
 
 ## [1.10.7] - 10/01/2025🎃
 
