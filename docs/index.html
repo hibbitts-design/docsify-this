@@ -1312,7 +1312,8 @@
               const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
               if (!(embeds.length === 0)) {
                 const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
-                if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto' || darkModeEnabled === 'true')) || darkModeEnabled === 'on') {
+                if (((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto') || darkModeEnabled === 'true') || darkModeEnabled === 'on' || 
+                darkModeEnabled === true)) {
                   // dark mode
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
