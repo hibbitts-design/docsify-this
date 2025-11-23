@@ -1825,7 +1825,7 @@
               document.getElementById("editCheck").checked = true;
             }
 
-            browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
+            let browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
             if (browserTabTitle) {
               browserTabTitle = browserTabTitle.replaceAll('_', ' ');
               document.getElementById('browserTabTitle').value = decodeURI(browserTabTitle);
