@@ -2317,7 +2317,7 @@
   <!-- <script src="unpkg.com/docsify-asciidoc@^1/dist/main.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-asciidoc.js"></script>
 
-  <!-- Check for headerweight, fontfamily, fontsize, lineheight, link styles, theme colors and darkmode parameters -->
+  <!-- Check for maxwidth, headerweight, fontfamily, fontsize, fontweight, lineheight, theme colors, and darkmode parameters -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
 
@@ -2367,8 +2367,8 @@
       fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
         // If it's just a number, append 'px'
-        if (!isNaN(fontsize)) {
-          fontsize = fontsize + 'px';
+        if (!isNaN(fontsize) && !fontsize.includes('px') && !fontsize.includes('rem') && !fontsize.includes('em')) {
+          fontsize = fontsize + "px";
         }
 
         document.documentElement.style.setProperty('--base-font-size', fontsize);
@@ -2376,7 +2376,6 @@
         // Only apply sidebar/ToC adjustments if font size is 24px or larger
         const numericFontSize = parseFloat(fontsize);
         if (numericFontSize >= 24) {
-          console.log("yes");
           document.documentElement.style.setProperty('--sidebar-width', '306px');
           document.documentElement.style.setProperty('--sidebar-name-font-size', '24px');
 
