@@ -3,7 +3,7 @@
 ## [1.10.9] - XX/XX/2025
 
 **Improved:**
-* Hide empty rows on mobile
+* Hide empty rows in responsive tables
 
 ## [1.10.8] - 11/24/2025
 
