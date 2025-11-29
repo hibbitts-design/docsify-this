@@ -2089,7 +2089,12 @@
             window.$docsify[key] = convertToBoolean(value);
           }
         } else {
-          if (key === 'name') {
+          // Handle nested properties like 'themeable.responsiveTables'
+          if (key.includes('.')) {
+            const [parent, child] = key.split('.');
+            window.$docsify[parent] = window.$docsify[parent] || {};
+            window.$docsify[parent][child] = convertToBoolean(value);
+          } else if (key === 'name') {
             window.$docsify[key] = replaceUnderscores(value);
           } else {
             window.$docsify[key] = convertToBoolean(value);
