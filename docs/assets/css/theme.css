@@ -1157,6 +1157,11 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child):ha
   clear: both;
 }
 
+/* Hide empty rows on mobile */
+.markdown-section .table-wrapper td:empty::before {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
   .markdown-section .column,
   .markdown-section .column-right {
