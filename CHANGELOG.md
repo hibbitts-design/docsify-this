@@ -4,6 +4,7 @@
 
 **Improved:**
 * Hide empty rows in responsive tables
+* Left align rows in responsive tables
 
 ## [1.10.8] - 11/24/2025
 
