@@ -1157,9 +1157,18 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child):ha
   clear: both;
 }
 
-/* Hide empty rows on mobile */
-.markdown-section .table-wrapper td:empty::before {
-    display: none;
+/* Hide empty rows in responsive tables */
+@media (max-width: 30em) {
+    .markdown-section .table-wrapper td:empty::before {
+      display: none;
+  }
+}
+
+/* Left align rows in responsive tables */
+@media (max-width: 30em) {
+    .markdown-section .table-wrapper tbody td {
+        text-align: left !important;
+    }
 }
 
 @media screen and (max-width: 800px) {
