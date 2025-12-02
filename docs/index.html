@@ -2371,9 +2371,14 @@
       // Change body font size if fontSize parameter present
       fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
-        // If it's just a number, append 'px'
+        // If it's just a number, append appropriate unit
         if (!isNaN(fontsize) && !fontsize.includes('px') && !fontsize.includes('rem') && !fontsize.includes('em')) {
-          fontsize = fontsize + "px";
+          // If number is <= 3, assume it's the old Docsify-This rem format, otherwise assume px
+          if (parseFloat(fontsize) <= 4) {
+            fontsize = fontsize + "rem";
+          } else {
+            fontsize = fontsize + "px";
+          }
         }
 
         document.documentElement.style.setProperty('--base-font-size', fontsize);
