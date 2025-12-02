@@ -7,6 +7,9 @@
 * Left align rows in responsive tables
 * Support nested properties via URL parameters
 
+**Bugfix:**
+* Accomodate legacy use of default font sizes being in rem units
+
 ## [1.10.8] - 11/24/2025
 
 **New:**
