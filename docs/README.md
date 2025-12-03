@@ -29,7 +29,7 @@
 
 <h1>Instantly Turn Markdown Text Files into Styled Web&nbsp;Pages</h1>
 
-This open-source web app built with [Docsify](https://docsify.js.org), a magical documentation site generator capable of flexible content display, makes [Markdown](https://en.wikipedia.org/wiki/Markdown) publishing as simple as providing a file link - publish and style single pages or entire websites for reading, embedding, or presenting, without requiring webserver setup or modifying files.  
+This open-source web app built with [Docsify](https://docsify.js.org), a magical documentation site generator capable of flexible content display, makes [Markdown](https://en.wikipedia.org/wiki/Markdown) publishing as simple as providing a file link - publish and style pages or entire sites for reading, embedding, or presenting, without requiring webserver setup or modifying source files.  
 
 <div id="docsifythisurlbuilder">
 
