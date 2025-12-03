@@ -125,14 +125,14 @@ Docsify-This provides a quick way to transform and style [Markdown content](http
 
 With Docsify-This you can:
 
-- Instantly publish online Markdown files as standalone web pages or even complete websites — no complex configuration required
-- Display existing Markdown content in a presentation-friendly style for workshops, courses, and online sessions
-- Maintain full control over your content by keeping files stored in their original locations, such as GitHub or Codeberg
-- Customize web pages with a point-and-click Web Page Builder, avoiding the need for technical expertise or custom development
-- Encourage collaboration with automatic ‘Edit this Page’ links for Markdown files hosted on GitHub or Codeberg, making it possible for collaborative authoring
-- Embed constraint-free Markdown/HTML seamlessly into other platforms (LMS, CMS, etc.), enabling flexible content display and cross-platform integration
-- Streamline content reuse by embedding Markdown files across platforms without duplication, reducing redundant workflows and boosting efficiency
-- Tailor the appearance of embedded content dynamically using URL parameters, adapting it to suit the look and feel of each destination platform
+- Instantly transform online Markdown files into visually styled web pages or complete websites — no technical setup or hosting required
+- Present your materials, courses, documentation, and projects in a clean, professional style great for workshops, presentations, and online sharing
+- Maintain full control over your content by keeping files in their original locations, such as GitHub or Codeberg repositories
+- Style and customize web pages with a point-and-click Web Page Builder — no coding or technical expertise required
+- Enable easy collaboration with automatic "Edit this Page" links, making it simple for teams and communities to contribute content
+- Share your content seamlessly across multiple platforms (LMS, websites, social media, etc.) with flexible embedding options
+- Eliminate content duplication by publishing materials, courses, documentation, and projects from a single source across all your platforms
+- Adapt content appearance dynamically using URL parameters to match the look and feel of any destination platform
 
 ---
 
@@ -150,22 +150,22 @@ With Docsify-This you can:
 #### When is Docsify-This a Good Candidate?
 
 ##### Docsify-This often works really well when you:
-- Want to embed the same content across multiple platforms (LMS, websites, etc.)
-- Need cross-platform content reuse (same content for web, mobile, PDF and eBook generation)
-- Want to publish open content quickly without technical setup
-- Need to present existing Markdown content for live audiences
-- Prefer minimal maintenance publishing (set it and forget it, no Webserver needed)
-- Value simple, portable Markdown files with platform independence
-- Are interested in using GitHub/Codeberg for version-control and collaboration
-- Are creating educational materials, documentation, or research content
+- Want to share the same content across multiple platforms (LMS, websites, social media, etc.)
+- Need to publish materials, courses, documentation, or projects quickly without technical setup
+- Want to present existing Markdown content for workshops, presentations, or online sessions
+- Prefer simple, low-maintenance publishing (set it and forget it, no webserver needed)
+- Value keeping content in portable Markdown files with platform independence
+- Are interested in using GitHub/Codeberg for version control and team collaboration
+- Need professional-looking websites without coding or design skills
+- Want to eliminate content duplication across your publishing workflow
 
 ##### Other publishing tools might be better candidates when you:
-- Require SEO optimization and search engine discoverability
+- Require SEO optimization and search engine discoverability for marketing purposes
 - Need complex user management, approval workflows, or interactive features (contact forms, newsletters, user accounts)
-- Want rich media features (e-commerce, forums, booking systems) or extensive visual customization
+- Want rich media features (e-commerce, forums, booking systems) or extensive visual customization options
 - Have multiple content types requiring different layouts (events, products, news, etc.)
-- Are building large, complex websites with hundreds of pages
-- Prefer visual page builders over Markdown editing
+- Are building large, complex websites with hundreds of pages and advanced functionality
+- Prefer visual page builders and online WYSIWYG editing over Markdown
 
 **Still unsure?** Docsify-This is designed for easy entry _and_ exit - try it with your content risk-free. Your Markdown files can be used by other tools if your needs change. For more powerful Markdown file-based publishing with hosting capabilities, explore the open-source [Grav CMS](https://getgrav.org/) project.
 
