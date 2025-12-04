@@ -155,6 +155,7 @@ With Docsify-This you can:
 - Want to present existing Markdown content for workshops, presentations, or online sessions
 - Prefer simple, low-maintenance publishing (set it and forget it, no webserver needed)
 - Value keeping content in portable Markdown files with platform independence
+- Value open education resource (OER) principles and open publishing workflows
 - Are interested in using GitHub/Codeberg for version control and team collaboration
 - Need professional-looking websites without coding or design skills
 - Want to eliminate content duplication across your publishing workflow
