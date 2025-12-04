@@ -460,11 +460,11 @@ What do you think about Docsify-This so far? Help shape its direction by sharing
 
 #### What Problem Does Docsify-This Solve?
 
-Docsify-This provides a quick way to transform and style [Markdown content](https://www.markdownguide.org/basic-syntax/) into visually appealing web pages without requiring a webserver, website setup, build process, or in-depth technical knowledge. Designed for rapid, flexible content sharing, Docsify-This enables almost instant publishing and seamless content distribution across multiple platforms.  
+Docsify-This provides a quick way to transform and style [Markdown content](https://www.markdownguide.org/basic-syntax/) into visually appealing web pages without requiring a webserver, website setup, build process, or in-depth technical knowledge. Designed to support OER and open publishing workflows, it enables almost instant publishing and seamless content distribution across multiple platforms.
 
 With Docsify-This you can:
 
-- Instantly transform online Markdown files into visually styled web pages or complete websites — no technical setup or hosting required
+- Transform online Markdown files into visually styled web pages or complete websites — no technical setup or hosting required
 - Present your materials, courses, documentation, and projects in a clean, professional style great for workshops, presentations, and online sharing
 - Maintain full control over your content by keeping files in their original locations, such as GitHub or Codeberg repositories
 - Style and customize web pages with a point-and-click Web Page Builder — no coding or technical expertise required
