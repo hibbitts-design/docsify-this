@@ -1,14 +1,13 @@
 # Changelog
 
-## [1.10.9] - XX/XX/2025
+## [1.10.9] - XX/XX/2026
 
 **Improved:**
 * Hide empty rows in responsive tables
 * Left align rows in responsive tables
 * Support nested properties via URL parameters
 * Updated ReadMe
-* Better support for inline CSS vars
-* Updated ReadMe
+* Better support for inline Docsify Themeable CSS vars
 
 **Bugfix:**
 * Accommodate legacy use of default font sizes being in rem units
