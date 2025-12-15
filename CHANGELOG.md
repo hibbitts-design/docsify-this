@@ -7,7 +7,7 @@
 * Left align rows in responsive tables
 * Support nested properties via URL parameters
 * Updated ReadMe
-* Better support for inline Docsify Themeable CSS vars
+* Enhanced support for inline Docsify Themeable CSS vars
 
 **Bugfix:**
 * Accommodate legacy use of default font sizes being in rem units
