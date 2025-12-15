@@ -8,6 +8,7 @@
 * Support nested properties via URL parameters
 * Updated ReadMe
 * Better support for inline CSS vars
+* Updated ReadMe
 
 **Bugfix:**
 * Accommodate legacy use of default font sizes being in rem units
