@@ -1372,10 +1372,6 @@ body .docsify-pagination-container {
   border-top: 0px solid rgba(0, 0, 0, 0.07);
 }
 
-.progress {
-  background-color: var(--blockquote-border-color);
-}
-
 @media only screen and (max-width: 480px) {
   .markdown-section h1 {
     font-size: 1.45rem;
