@@ -566,7 +566,7 @@ Here are a few real-world examples of how educators and creators are using Docsi
 
 BONUS: [What’s up, Doc? Docsifying the SPLOT Docs](https://cogdogblog.com/2022/08/docsifying-splot-docs/) - Blog post about using Docsify-This to provide one source of project documentation in multiple contexts.
 
-x2 BONUS: [SFU CMPT-363 Canvas Course](https://canvas.sfu.ca/courses/69678) - Paul Hibbitts' past university course using [GitHub Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) as constraint-free Markdown/HTML content seamlessly embedded within Canvas LMS.
+x2 BONUS: [SFU CMPT-363 Canvas Course](https://sfu.instructure.com/courses/2602) - Paul Hibbitts' past university course using [GitHub Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages-mirror-instructure) as constraint-free Markdown/HTML content seamlessly embedded within Canvas LMS.
 
 ---
 
@@ -1253,7 +1253,7 @@ Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-t
 
 <div class="docsifythiscolumn35" >
 
-[![LMS Content Pages Template](images/docsify-this-lms-content-pages.jpg ":class=docsify-this-screenshot")](https://canvas.sfu.ca/courses/76289)
+[![LMS Content Pages Template](images/docsify-this-lms-content-pages.jpg ":class=docsify-this-screenshot")](https://sfu.instructure.com/courses/2602)
 
 </div>
 
@@ -1271,7 +1271,7 @@ Example pages, including the use of the `font-family`, `font-size` and `hide-cre
 - [Embeddable Guide Page - using accordion format](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-lms-content-pages/main&homepage=ux-techniques-guide.md&font-family=Lato%20Extended,%20Lato,Helvetica%20Neue,%20Helvetica,%20Arial,%20sans-serif&font-size=16px&hide-credits=true "Embeddable UX Techniques Guide Page (using Accordion format)") ([ux-techniques-guide.md](https://github.com/hibbitts-design/docsify-this-lms-content-pages/blob/main/ux-techniques-guide.md))
 - [Embeddable Contact Page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-lms-content-pages/main&homepage=contact.md&font-family=Lato%20Extended,%20Lato,Helvetica%20Neue,%20Helvetica,%20Arial,%20sans-serif&font-size=16px&hide-credits=true "Embeddable Contact Page") ([contact.md](https://github.com/hibbitts-design/docsify-this-lms-content-pages/blob/main/contact.md))
 
-View an example Canvas LMS site using Docsify-This content at https://canvas.sfu.ca/courses/76692.
+View an example Canvas LMS site using Docsify-This content at https://sfu.instructure.com/courses/2602.
 
 </div>
 
@@ -1872,20 +1872,33 @@ In addition to the Markdown CSS classes supported by Docsify-This, you can also 
 ```
 <style>
   :root {
+    /* Typography */
     --base-font-family: system-ui,sans-serif;
     --base-line-height: 1.4;
     --base-font-size: 20px;
+
+    /* Content */
     --content-max-width: 800px;
+
+    /* Headings */
     --heading-color : #0891b2;
     --heading-h1-font-weight: 700;
     --heading-h2-font-weight: 700;
+
+    /* Theme */
     --theme-color: #9333ea;
-    --link-color: var(--link-color) !important;
-    --link-color--hover: var(--link-color) !important;
-    --sidebar-name-color: var(--link-color) !important;
-    --sidebar-nav-link-color--active: var(--link-color) !important;
-    --sidebar-nav-link-border-color--active: var(--link-color) !important;
-    --navbar-root-color--active: var(--link-color) !important;
+
+    /* Links */
+    --link-color: var(--theme-color) !important;
+    --link-color--hover: var(--theme-color) !important;
+
+    /* Sidebar */
+    --sidebar-name-color: var(--theme-color) !important;
+    --sidebar-nav-link-color--active: var(--theme-color) !important;
+    --sidebar-nav-link-border-color--active: var(--theme-color) !important;
+
+    /* Navbar */
+    --navbar-root-color--active: var(--theme-color) !important;
   }
 </style>
 ```
