@@ -1896,10 +1896,15 @@ In addition to the Markdown CSS classes supported by Docsify-This, you can also 
     --sidebar-name-color: var(--theme-color) !important;
     --sidebar-nav-link-color--active: var(--theme-color) !important;
     --sidebar-nav-link-border-color--active: var(--theme-color) !important;
+  }
 
+  .sidebar { 
+    font-size: 18px;
   }
 </style>
 ```
+
+Here is an example Markdown file containing the above styles, as displayed by Docsify-This (notice no URL parameters are required for visual styling): https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/markdown-file-examples/main&homepage=custom-theme-vars.md&sidebar=true
 
 You can also define your own custom classes within your displayed Markdown files, for example:
 
