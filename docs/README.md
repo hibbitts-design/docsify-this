@@ -1897,8 +1897,6 @@ In addition to the Markdown CSS classes supported by Docsify-This, you can also 
     --sidebar-nav-link-color--active: var(--theme-color) !important;
     --sidebar-nav-link-border-color--active: var(--theme-color) !important;
 
-    /* Navbar */
-    --navbar-root-color--active: var(--theme-color) !important;
   }
 </style>
 ```
