@@ -1342,9 +1342,7 @@ In addition to the Markdown CSS classes supported by Docsify-This, you can also 
     --sidebar-name-color: var(--theme-color) !important;
     --sidebar-nav-link-color--active: var(--theme-color) !important;
     --sidebar-nav-link-border-color--active: var(--theme-color) !important;
-
-    /* Navbar */
-    --navbar-root-color--active: var(--theme-color) !important;
+    --sidebar-name-font-size: 18px;
   }
 </style>
 ```
