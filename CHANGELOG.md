@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.10.9] - 12/23/2026🎊
+## [1.10.9] - 12/23/2025🎊
 
 **Improved:**
 * Hide empty rows in responsive tables
