@@ -100,6 +100,9 @@
 
       --blockquote-border-color: #757b7f;
 
+      --sidebar-background: #FCFCFC;
+      --sidebar-border-color: #F0F0F0;
+      --sidebar-toggle-background: #F0F0F0;
       --sidebar-name-color: #0374B5;
       --sidebar-name-font-weight: 600;
       --sidebar-nav-link-color--active: #0374B5;
@@ -908,6 +911,9 @@
 
       if (((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches || darkModeEnabled === 'true') && (darkModeEnabled === 'auto' || darkModeEnabled === 'true' || darkModeEnabled === 'on'))) {
         // dark mode
+        document.documentElement.style.setProperty('--sidebar-background', 'var(--mono-shade1)');
+        document.documentElement.style.setProperty('--sidebar-border-color', 'var(--mono-tint1');
+        document.documentElement.style.setProperty('--sidebar-toggle-background', 'var(--mono-tint1');
         const linkColorDarkMode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
 
         if (linkColorDarkMode !== false) {
@@ -937,6 +943,9 @@
         }
       } else {
         // light mode
+        document.documentElement.style.setProperty('--sidebar-background', '#FCFCFC');
+        document.documentElement.style.setProperty('--sidebar-border-color', '#F0F0F0');
+        document.documentElement.style.setProperty('--sidebar-toggle-background', '#F0F0F0');
         const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
 
         document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
