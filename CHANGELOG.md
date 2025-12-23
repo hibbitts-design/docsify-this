@@ -8,6 +8,7 @@
 * Support nested properties via URL parameters
 * Updated ReadMe
 * Enhanced support for inline Docsify Themeable CSS vars
+* Minor refresh of Sidebar UI
 
 **Bugfix:**
 * Accommodate legacy use of default font sizes being in rem units
