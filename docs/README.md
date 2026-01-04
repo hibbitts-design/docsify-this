@@ -109,6 +109,7 @@ Page layout:
    <option value="Arial,sans-serif">Arial, sans-serif</option>
    <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
    <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
+   <option value="Inter,sans-serif">Inter, sans-serif</option>
    <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
    <option value="Open%20Sans,sans-serif">Open Sans, sans-serif</option>
    <option value="system-ui,sans-serif">System UI, sans-serif</option>
