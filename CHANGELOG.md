@@ -3,7 +3,7 @@
 ## [1.11.0] - XX/XX/2026
 
 **New:**
-* Add Inter font choice for rendering Grav CMS Helios page content with visual consistency
+* Add Inter font choice, which also enables rendering Grav CMS Helios page content with visual consistency
 
 ## [1.10.9] - 12/23/2025🎊
 
