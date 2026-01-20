@@ -5,6 +5,9 @@
 **New:**
 * Add Inter font choice, which also enables rendering Grav CMS Helios page content with visual consistency
 
+**Improved:**
+* Visual refresh of Web Page Builder with gradient background and enhanced dark mode styling
+
 ## [1.10.9] - 12/23/2025🎊
 
 **Improved:**
