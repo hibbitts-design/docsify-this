@@ -1682,8 +1682,8 @@ body .docsify-pagination-container {
   border-width: 0;
   border-radius: 12px;
   background: linear-gradient(to right, #f6f8fd 0%, #e6efff 100%);
-  border: 1px solid #e8eaed;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.6) !important;
+  box-shadow: none !important;
 }
 
 #docsifythisurlbuilder h2 {
@@ -2125,8 +2125,8 @@ span #docsifythisurlfield {
 
   #docsifythisurlbuilder {
     background: linear-gradient(135deg, #1a1d29 0%, #2d3748 100%);
-    border: 1px solid #3c4043;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(148, 163, 184, 0.2) !important;
+    box-shadow: none !important;
   }
 
   #docsifythisurlfield {
