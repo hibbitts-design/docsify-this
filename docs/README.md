@@ -28,7 +28,7 @@ body {
 </div>
 
 <div id="banner" style="display: block;">
-<div style="background: linear-gradient(to right, #e8f5e8 0%, #d4edd6 100%); border: 1px solid #a8c4aa; border-radius: 12px; padding: 16px; margin: 20px 0; display: flex; align-items: center; gap: 12px; box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);">
+<div style="background: linear-gradient(to right, #e8f5e8 0%, #d4edd6 100%); border: 1px solid #a8c4aa; border-radius: 12px; padding: 16px; margin: 20px 0; display: flex; align-items: center; gap: 12px;">
   <div style="flex: 1;">
     <strong style="color: #57985e;">Docsify-This v2.0 Preview is now available!</strong>
     <div style="color: #475569; margin-top: 2px; font-size: 18px; display: block;">
