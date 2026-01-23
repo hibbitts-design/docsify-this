@@ -7,6 +7,7 @@
 
 **Improved:**
 * Visual refresh of Web Page Builder with gradient background and enhanced dark mode styling
+* Improved text wrapping for longer labels in non-English languages
 
 ## [1.10.9] - 12/23/2025🎊
 
