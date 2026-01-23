@@ -2026,6 +2026,7 @@ span #docsifythisurlfield {
   font-family: inherit;
   font-size: inherit;
   text-align: right;
+  margin-top: 40px;
 }
 
 .markdown-section .docsify-this-screenshot {
@@ -2090,10 +2091,6 @@ span #docsifythisurlfield {
 }
 
 @media only screen and (max-width: 510px) {
-  #docsifythisurlbuilderrestoredefaultsbutton {
-    margin-top: 40px;
-  }
-
   #docsifythisurlfield {
     min-height: 100px;
     font-size: 18px;
