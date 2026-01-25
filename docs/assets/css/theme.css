@@ -1706,7 +1706,8 @@ body .docsify-pagination-container {
   text-decoration: none !important;
 }
 
-#docsifythis .alert.callout {
+#docsifythis .alert.callout,
+#docsifythis .warn {
   background-color: #e8eef7;
   border-top: 1px solid #dce4f0;
   border-right: 1px solid #dce4f0;
