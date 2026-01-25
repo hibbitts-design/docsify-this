@@ -1706,6 +1706,10 @@ body .docsify-pagination-container {
   text-decoration: none !important;
 }
 
+#docsifythis .alert.callout {
+  background-color: #e8eef7; 
+}
+
 #docsifythis .docsifythisheader .logoandtext {
   margin-bottom: -4px;
 }
