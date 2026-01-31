@@ -1926,6 +1926,7 @@ span #docsifythisurlfield {
   outline-offset: 2px;
   border-radius: var(--dt-radius-md);
   position: relative;
+  z-index: 1;
 }
 
 #docsifythisurlbuilder input[type="number"] {
