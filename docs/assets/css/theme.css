@@ -1922,7 +1922,7 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuilder [type="radio"]:checked + img {
   opacity: 1;
-  outline: 2px solid var(--dt-primary-color);
+  outline: 3px solid var(--dt-primary-color);
   outline-offset: 2px;
   border-radius: var(--dt-radius-md);
   position: relative;
