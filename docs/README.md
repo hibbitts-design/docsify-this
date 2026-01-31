@@ -1,6 +1,6 @@
 <style>
 html {
-  background: linear-gradient(135deg, #f8fafd 0%, #eef3ff 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   background-attachment: fixed;
   min-height: 100%;
 }
@@ -11,7 +11,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background: linear-gradient(135deg, #0f1318 0%, #1a2230 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     background-attachment: fixed;
   }
 }
@@ -144,7 +144,7 @@ Page layout:
  </span>
 </div>
 
-<div class='stackedlabeldropdown'>
+<div class='stackedlabeldropdown' style='margin-top: 2px;' >
   <label for="fontsize">Font size (px):</label>
   <input 
     type="number" 
@@ -159,7 +159,7 @@ Page layout:
   >
 </div>
         
-<div class='stackedlabeldropdown'>
+<div class='stackedlabeldropdown' style='margin-top: 2px;'>
   <label for="lineheight">Line height:</label>
   <input 
     type="number" 
