@@ -27,10 +27,10 @@ body {
   </div>
 </div>
 
-<div id="banner" style="display: block;">
-<div style="background: linear-gradient(to right, #e8f5e8 0%, #d4edd6 100%); border: 1px solid #a8c4aa; border-radius: 12px; padding: 16px; margin: 20px 0; display: flex; align-items: center; gap: 12px;">
-  <div style="flex: 1;">
-    <strong style="color: #57985e;">Docsify-This v2.0 Preview is now available!</strong>
+<div id="banner">
+<div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border: 1px solid #86efac; border-radius: 16px; padding: 20px 24px; margin: 24px 0; display: flex; align-items: center; gap: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02), inset 0 1px 0 rgba(255,255,255,0.6);">
+  <div style="flex: 1; min-width: 0;">
+    <strong style="color: #166534;">Docsify-This v2.0 Preview is now available!</strong>
     <div style="color: #475569; margin-top: 2px; font-size: 18px; display: block;">
       <style>
         @media (max-width: 768px) {
@@ -42,7 +42,7 @@ body {
       <span class="hide-on-mobile">Built with the latest Docsify v5.0 release candidate and featuring a refreshed UI.</span>
     </div>
   </div>
-  <a href="https://preview-v2.docsify-this.net" style="background: #57985e; white-space: normal; overflow-wrap: break-word; word-break: break-word; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); transition: all 0.2s ease;">Explore v2.0</a>
+  <a href="https://preview-v2.docsify-this.net" style="background: #16a34a; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.2s ease;">Explore v2.0</a>
 </div>
 </div>
 
