@@ -1702,7 +1702,9 @@ body .docsify-pagination-container {
 #docsifythis .alert.callout,
 #docsifythis .warn {
   background-color: #f1f5f9;
-  border: 1px solid #e2e8f0;
+  border-top: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
   border-radius: var(--dt-radius-lg);
 }
 
@@ -2338,7 +2340,9 @@ span #docsifythisurlfield {
   #docsifythis .alert.callout,
   #docsifythis .warn {
     background-color: rgba(30, 41, 59, 0.7);
-    border: 1px solid var(--dt-border-color-dark);
+    border-top: 1px solid var(--dt-border-color-dark);
+    border-right: 1px solid var(--dt-border-color-dark);
+    border-bottom: 1px solid var(--dt-border-color-dark);
     color: var(--dt-text-primary-dark);
   }
 
