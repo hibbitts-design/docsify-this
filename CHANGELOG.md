@@ -6,7 +6,7 @@
 * Add Inter font choice, which also enables rendering Grav CMS Helios page content with visual consistency
 
 **Improved:**
-* Visual refresh of Web Page Builder with gradient background and enhanced dark mode styling
+* Visual refresh of Web Page Builder with various refinements and enhanced dark mode styling
 * Improved text wrapping for longer labels in non-English languages, especially on smaller screens
 * Refactored Docsify-This CSS to use CSS custom properties (variables)
 
