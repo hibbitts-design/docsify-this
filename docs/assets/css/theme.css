@@ -1702,9 +1702,9 @@ body .docsify-pagination-container {
 #docsifythis .alert.callout,
 #docsifythis .warn {
   background-color: #f1f5f9;
-  border-top: 1px solid #e2e8f0;
-  border-right: 1px solid #e2e8f0;
-  border-bottom: 1px solid #e2e8f0;
+  border-top: 1px solid #dce4f0;
+  border-right: 1px solid #dce4f0;
+  border-bottom: 1px solid #dce4f0;
   border-radius: var(--dt-radius-lg);
 }
 
@@ -1752,22 +1752,21 @@ body .docsify-pagination-container {
   box-shadow: var(--dt-shadow-sm) !important;
 }
 
-/* UPDATED: Purple headers in light mode */
-#docsifythisurlbuilder h2 {
-  color: var(--dt-primary-color);
+/* UPDATED: Slate-purple hybrid headers */
+#docsifythisurlbuilder h2,
+#docsifythisurlbuilder h3,
+#docsifythisurlbuilder h2 a,
+#docsifythisurlbuilder h2 a.anchor,
+#docsifythisurlbuilder h3 a,
+#docsifythisurlbuilder h3 a.anchor {
+  color: #5a6070; /* Fallback for older browsers */
+  color: color-mix(in srgb, var(--dt-text-secondary) 60%, var(--dt-primary-color) 40%);
+  font-weight: 600;
+  text-decoration: none !important;
 }
 
 #docsifythisurlbuilder h3 {
   margin-top: 14px;
-  color: var(--dt-primary-color); /* Changed from var(--dt-text-primary) */
-}
-
-#docsifythisurlbuilder h3 a {
-  color: var(--dt-primary-color); /* Added to ensure anchor links are also purple */
-}
-
-#docsifythisurlbuilder h3 a.anchor:hover {
-  text-decoration: none !important;
 }
 
 #docsifythisurlbuilder input[type="text"],
@@ -2189,12 +2188,16 @@ span #docsifythisurlfield {
     background-color: rgba(96, 165, 250, 0.15);
   }
 
-  /* Builder Headers - PURPLE (explicit override) */
+  /* UPDATED: Builder Headers - Slate-purple hybrid */
   #docsifythis #docsifythisurlbuilder h2,
   #docsifythis #docsifythisurlbuilder h3,
   #docsifythis #docsifythisurlbuilder h2 a,
-  #docsifythis #docsifythisurlbuilder h3 a {
-    color: var(--dt-primary-color-dark) !important;
+  #docsifythis #docsifythisurlbuilder h2 a.anchor,
+  #docsifythis #docsifythisurlbuilder h3 a,
+  #docsifythis #docsifythisurlbuilder h3 a.anchor {
+    color: #8585a3 !important; /* Fallback */
+    color: color-mix(in srgb, var(--dt-text-secondary-dark) 60%, var(--dt-primary-color-dark) 40%) !important;
+    text-decoration: none !important;
   }
 
   #docsifythisurlbuilder {
