@@ -1575,62 +1575,62 @@ body .docsify-pagination-container {
   --dt-link-color: #4f46e5;
   --dt-link-hover-bg: rgba(79, 70, 229, 0.08);
   --dt-coverpage-color: #6c8a9a;
-  
+
   /* Dark Mode - Blue links, Purple UI */
   --dt-link-color-dark: #60a5fa;
   --dt-coverpage-color-dark: #5a7a8a;
-  
+
   /* Backgrounds */
   --dt-bg-gradient: linear-gradient(to right, #f8fafc 0%, #f1f5f9 100%);
   --dt-bg-gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  
+
   /* Text */
   --dt-text-primary: #0f172a;
   --dt-text-primary-dark: #f1f5f9;
   --dt-text-secondary: #334155;
   --dt-text-secondary-dark: #94a3b8;
-  
+
   /* Borders */
   --dt-border-color: #e2e8f0;
   --dt-border-color-dark: #334155;
   --dt-border-color-darker: #1e293b;
   --dt-border-color-outline-dark: #64748b;
-  
+
   /* Inputs */
   --dt-input-bg: #ffffff;
   --dt-input-bg-dark: #1e293b;
   --dt-input-height: 2rem;
   --dt-input-border-radius: 6px;
-  
+
   /* Shadows */
   --dt-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --dt-shadow-sm-dark: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --dt-focus-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
   --dt-focus-shadow-dark: 0 0 0 3px rgba(129, 140, 248, 0.25);
-  
+
   /* Spacing */
   --dt-spacing-xs: 4px;
   --dt-spacing-sm: 8px;
   --dt-spacing-md: 16px;
   --dt-spacing-lg: 40px;
-  
+
   /* Typography */
   --dt-font-size-base: 22px;
   --dt-font-size-sm: 18px;
-  
+
   /* Radius */
   --dt-radius-sm: 4px;
   --dt-radius-md: 6px;
   --dt-radius-lg: 8px;
   --dt-radius-xl: 12px;
   --dt-radius-pill: 9999px;
-  
+
   /* Header */
   --dt-logo-height: 45px;
   --dt-logo-height-mobile: 35px;
   --dt-header-font-size: 2.25rem;
   --dt-header-font-size-mobile: 1.8rem;
-  
+
   /* Button */
   --dt-button-width: 260px;
   --dt-button-padding: 10px;
@@ -1642,11 +1642,13 @@ body .docsify-pagination-container {
     clear: both;
     margin-top: 10px;
   }
+
   .stackedlabeldropdown:has(label[for="lineheight"]) {
     display: inline-block;
     margin-left: 15px;
     margin-top: 0;
   }
+
   .stackedlabeldropdown select {
     width: auto !important;
     max-width: none !important;
@@ -1661,8 +1663,8 @@ body .docsify-pagination-container {
   border-radius: var(--dt-radius-md);
 }
 
-.markdown-section .docsify-copy-code-button > .error,
-.markdown-section .docsify-copy-code-button > .success {
+.markdown-section .docsify-copy-code-button>.error,
+.markdown-section .docsify-copy-code-button>.success {
   padding: 0.2em 0.35em;
   font-size: 0.8em;
 }
@@ -1759,7 +1761,8 @@ body .docsify-pagination-container {
 #docsifythisurlbuilder h2 a.anchor,
 #docsifythisurlbuilder h3 a,
 #docsifythisurlbuilder h3 a.anchor {
-  color: #5a6070; /* Fallback for older browsers */
+  color: #5a6070;
+  /* Fallback for older browsers */
   color: color-mix(in srgb, var(--dt-text-secondary) 60%, var(--dt-primary-color) 40%);
   font-weight: 600;
   text-decoration: none !important;
@@ -1913,7 +1916,7 @@ span #docsifythisurlfield {
   opacity: 0;
 }
 
-#docsifythisurlbuilder [type="radio"] + img {
+#docsifythisurlbuilder [type="radio"]+img {
   cursor: pointer;
   margin-right: 0.5rem;
   border-radius: var(--dt-radius-md);
@@ -1921,7 +1924,7 @@ span #docsifythisurlfield {
   opacity: 0.9;
 }
 
-#docsifythisurlbuilder [type="radio"]:checked + img {
+#docsifythisurlbuilder [type="radio"]:checked+img {
   opacity: 1;
   outline: 3px solid var(--dt-primary-color);
   outline-offset: 0px;
@@ -1985,7 +1988,7 @@ span #docsifythisurlfield {
   margin-top: 3px;
 }
 
-#docsifythisurlbuilder input[type="checkbox"] ~ label {
+#docsifythisurlbuilder input[type="checkbox"]~label {
   padding-left: 1.4em;
   display: inline-block;
 }
@@ -2123,6 +2126,7 @@ span #docsifythisurlfield {
     width: 100%;
     margin-right: 0px;
   }
+
   .markdown-section .docsifythiscolumn65 {
     width: 100%;
     margin-top: 0px;
@@ -2154,6 +2158,7 @@ span #docsifythisurlfield {
     font-size: var(--dt-header-font-size-mobile);
     line-height: 35px;
   }
+
   #docsifythis .docsifythisheader .logoandtext img {
     height: var(--dt-logo-height-mobile);
   }
@@ -2195,7 +2200,8 @@ span #docsifythisurlfield {
   #docsifythis #docsifythisurlbuilder h2 a.anchor,
   #docsifythis #docsifythisurlbuilder h3 a,
   #docsifythis #docsifythisurlbuilder h3 a.anchor {
-    color: #8585a3 !important; /* Fallback */
+    color: #8585a3 !important;
+    /* Fallback */
     color: color-mix(in srgb, var(--dt-text-secondary-dark) 60%, var(--dt-primary-color-dark) 40%) !important;
     text-decoration: none !important;
   }
@@ -2259,7 +2265,7 @@ span #docsifythisurlfield {
     border-color: rgba(129, 140, 248, 0.3);
   }
 
-  #docsifythisurlbuilder [type="radio"]:checked + img {
+  #docsifythisurlbuilder [type="radio"]:checked+img {
     outline-color: var(--dt-primary-color-dark);
   }
 
