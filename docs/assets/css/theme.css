@@ -1797,7 +1797,6 @@ input[type="url"]:focus {
   width: 100%;
   padding: 14px 12px;
   font-size: var(--dt-font-size-base);
-  line-height: var(--dt-line-height-base);
   box-sizing: border-box;
   resize: none;
   overflow: hidden;
