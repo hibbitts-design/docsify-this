@@ -2030,7 +2030,7 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder hr {
-  border: 1px solid var(--dt-border-color-light);
+  border: 1px solid var(--dt-border-color);
   margin-top: 0.6em;
   margin-bottom: 0.6em;
 }
