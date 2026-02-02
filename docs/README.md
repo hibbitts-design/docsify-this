@@ -42,7 +42,7 @@ body {
       <span class="hide-on-mobile">Built with the latest Docsify v5.0 release candidate and featuring a refreshed UI.</span>
     </div>
   </div>
-  <a href="https://preview-v2.docsify-this.net" style="background: #16a34a; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.2s ease;">Explore v2.0</a>
+  <a href="https://preview-v2.docsify-this.net" style="background: #20b256; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.2s ease;">Explore v2.0</a>
 </div>
 </div>
 
