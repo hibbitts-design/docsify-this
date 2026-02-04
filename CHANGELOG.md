@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.11.1] - XX/XX/2026
+
+**Improved:**
+* Banner can now be hidden by default on Web Page Builder page using inline CSS
+
 ## [1.11.0] - 02/01/2026
 
 **New:**
