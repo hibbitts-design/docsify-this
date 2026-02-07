@@ -4,6 +4,7 @@
 
 **Improved:**
 * Banner can now be hidden by default on Web Page Builder page using inline CSS
+* Adjusted Web Page Builder background color for improved contrast
 
 ## [1.11.0] - 02/01/2026
 
