@@ -1586,7 +1586,7 @@ body .docsify-pagination-container {
   --dt-page-bg-dark: #0f172a;
 
   /* Card/Builder */
-  --dt-card-bg: #ffffff;
+  --dt-card-bg: #fafbfc;
   --dt-card-bg-dark: #1e293b;
   --dt-card-shadow: 0 2px 16px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
   --dt-card-shadow-dark: 0 4px 24px rgba(0, 0, 0, 0.4);
