@@ -1582,8 +1582,14 @@ body .docsify-pagination-container {
   --dt-coverpage-color-dark: #5a7a8a;
 
   /* Backgrounds */
-  --dt-bg-gradient: linear-gradient(to right, #f8fafc 0%, #f1f5f9 100%);
-  --dt-bg-gradient-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --dt-page-bg: #f8fafc;
+  --dt-page-bg-dark: #0f172a;
+
+  /* Card/Builder */
+  --dt-card-bg: #ffffff;
+  --dt-card-bg-dark: #1e293b;
+  --dt-card-shadow: 0 2px 16px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --dt-card-shadow-dark: 0 4px 24px rgba(0, 0, 0, 0.4);
 
   /* Text */
   --dt-text-primary: #0f172a;
@@ -1750,9 +1756,9 @@ body .docsify-pagination-container {
   padding-right: calc(16px + (16 - 12) * (100vw - 400px) / (800 - 400));
   border-width: 0;
   border-radius: var(--dt-radius-xl);
-  background: var(--dt-bg-gradient);
+  background: var(--dt-card-bg);
+  box-shadow: var(--dt-card-shadow) !important;
   border: 1px solid var(--dt-border-color) !important;
-  box-shadow: var(--dt-shadow-sm) !important;
 }
 
 /* UPDATED: Slate-purple hybrid headers */
@@ -2207,9 +2213,9 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuilder {
-    background: var(--dt-bg-gradient-dark);
+    background: var(--dt-card-bg-dark);
+    box-shadow: var(--dt-card-shadow-dark) !important;
     border: 1px solid var(--dt-border-color-dark) !important;
-    box-shadow: var(--dt-shadow-sm-dark) !important;
   }
 
   #docsifythisurlfield {
