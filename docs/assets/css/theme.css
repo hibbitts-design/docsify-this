@@ -2271,11 +2271,17 @@ span #docsifythisurlfield {
     border-color: rgba(129, 140, 248, 0.3);
   }
 
+  /* Secondary button hover state for dark mode */
+  .docsifythisurlbuildersecondarybutton:hover {
+    background-color: rgba(129, 140, 248, 0.15);
+    border-color: rgba(129, 140, 248, 0.4);
+  }
+
   #docsifythisurlbuilder [type="radio"]:checked+img {
     outline-color: var(--dt-primary-color-dark);
   }
 
-  /* FIXED: Spin box hover behavior with color-scheme */
+  /* Spin box hover behavior with color-scheme */
   #docsifythisurlbuilder input[type="number"] {
     background-color: var(--dt-input-bg-dark);
     color: var(--dt-text-primary-dark);
@@ -2294,9 +2300,11 @@ span #docsifythisurlfield {
     border-color: var(--dt-border-color-dark);
   }
 
+  /* IMPROVED: Select focus state specificity to match inputs */
   #docsifythisurlbuilder select:focus {
     border-color: var(--dt-primary-color-dark);
     box-shadow: var(--dt-focus-shadow-dark);
+    outline: none;
   }
 
   #docsifythisurlbuilder #editCheck,
