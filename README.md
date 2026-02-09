@@ -1897,7 +1897,7 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 
 #### Content Responsibility
 
-**You are solely responsible for content you display via this service.** Docsify-This renders content from URLs you provide but does not host, store, or control that content. Do not use this service to display illegal content. To report problematic content, contact the platform hosting the displayed source content.
+**You are solely responsible for content you display via this service.** Docsify-This renders content from URLs you provide but does not host, store, or control that content. Users must comply with all applicable laws. To report problematic content, contact the platform hosting the displayed source content.
 
 ---
 
