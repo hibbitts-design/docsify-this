@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.11.2] - XX/XX/2026
+
+**Improved:**
+* Updated ReadMe
+
 ## [1.11.1] - 03/17/2026☘️
 
 **Improved:**
