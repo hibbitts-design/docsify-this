@@ -6,7 +6,7 @@
 * Updated ReadMe
 
 **Bugfix:**
-* Workaround for Docsify upstream bug - relative path handling in sub-documents
+* Workaround for Docsify upstream bug - relative path handling in sub-documents (`relative-paths=true`)
 
 ## [1.11.1] - 03/17/2026☘️
 
