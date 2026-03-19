@@ -1257,12 +1257,60 @@
                 fileExt = getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true));
               }
 
-              for (const link of links) {
+              /* Javascript generated/assisted by Anthropic Claude AI */
+              // PATCH START: Workaround for Docsify upstream bug - relative path handling in sub-documents
+              // Bug report: https://github.com/docsifyjs/docsify/issues/2430
+              // Mirrors Docsify's own 'relativePath' config option name — enable with URL parameter: ?relative-paths=true
+              // When fixed upstream, remove all PATCH blocks and restore the original lastSegment line in Block 2
+              var useRelativePaths = new URLSearchParams(window.location.search).get('relative-paths') === 'true';
+              // currentPageDir defaults to '' — when ?relative-paths=true is not set, prepending '' is a no-op
+              // Hash is empty on initial load when sidebar is processed, so sidebar links are always unaffected
+              // Default to empty string so Block 2 normalization is safe to run for everyone
+              var currentPageDir = '';
+              if (useRelativePaths) {
+                // Get the current page path from the URL hash (e.g. '#/level1/foo' → 'level1/foo')
+                var currentPagePath = window.location.hash.replace(/^#\/?/, '').split('?')[0];
+                // Extract just the directory portion (e.g. 'level1/foo' → 'level1/')
+                // Empty string for root-level pages, which is correct for initial load and sidebar processing
+                currentPageDir = currentPagePath.includes('/')
+                  ? currentPagePath.substring(0, currentPagePath.lastIndexOf('/') + 1)
+                  : '';
+              }
+              // PATCH END
+
+             for (const link of links) {
                 const href = link.getAttribute('href');
                 // Find any local Markdown file links
                 if (href?.startsWith('#')) {
                   // Modify each Markdown file link to work with Remote Docsify
-                  let lastSegment = href.replace('#/', '').replace('./', '').replace(fileExt, '');
+                  // PATCH START: Workaround for Docsify upstream bug - relative path handling in sub-documents
+                  // Bug report: https://github.com/docsifyjs/docsify/issues/2430
+                  // When fixed upstream, remove this block and restore the original line:
+                  //   let lastSegment = href.replace('#/', '').replace('./', '').replace(fileExt, '');
+                  //
+                  // Note: path normalization (resolving '..') runs for everyone, fixing '..' corruption
+                  // even without ?relative-paths=true. currentPageDir prefix is only applied when param is set.
+                  // Strip leading '#/' and file extension (e.g. '#/level2/bar.md' → 'level2/bar')
+                  const linkPath = href.replace(/^#\//, '').replace(fileExt, '');
+                  // Prepend current page directory to resolve relative paths correctly
+                  // When ?relative-paths=true is not set, currentPageDir is '' so this line is a no-op
+                  // Skip for in-page anchor links (e.g. '?id=my-heading') — those don't need correction
+                  const fullPath = linkPath.startsWith('?id') ? linkPath : currentPageDir + linkPath;
+                  // Normalize the path by resolving '..' (go up) and '.' (stay) segments
+                  // e.g. 'level1/level2/../foo' → 'level1/foo'
+                  const pathSegments = fullPath.split('/');
+                  const resolvedSegments = [];
+                  for (const segment of pathSegments) {
+                    if (segment === '..') {
+                      // Go up one directory level
+                      if (resolvedSegments.length > 0) { resolvedSegments.pop(); }
+                    } else if (segment !== '.' && segment !== '') {
+                      // Add normal path segment (skip '.' and empty segments)
+                      resolvedSegments.push(segment);
+                    }
+                  }
+                  let lastSegment = resolvedSegments.join('/');
+                  // PATCH END
 
                   // Check to make sure link is not Docsify id anchor link
                   if (!lastSegment.startsWith("?id")) {
