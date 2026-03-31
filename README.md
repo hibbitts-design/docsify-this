@@ -31,8 +31,8 @@
     </td>
   </tr>
   <tr style="background: none !important;">
-    <td align="center" style="border: none; padding-top: 4px;"><sub>Docsify-This – Web Page Builder</sub></td>
-    <td align="center" style="border: none; padding-top: 4px;"><sub>Docsify-This – Published page example</sub></td>
+    <td align="center" style="border: none; padding-top: 4px;">Docsify-This – Web Page Builder</td>
+    <td align="center" style="border: none; padding-top: 4px;">Docsify-This – Published page example</td>
   </tr>
   <tr style="display:none;"><td colspan="2" style="border: none;">&nbsp;</td></tr>
   <tr style="background: none !important;">
@@ -50,8 +50,8 @@
     </td>
   </tr>
   <tr style="background: none !important;">
-    <td align="center" style="border: none; padding-top: 4px;"><sub>Docsify-This Web Page Builder – Page appearance options</sub></td>
-    <td align="center" style="border: none; padding-top: 4px;"><sub>Docsify-This Web Page Builder – Advanced options</sub></td>
+    <td align="center" style="border: none; padding-top: 4px;">Docsify-This Web Page Builder – Page appearance options</td>
+    <td align="center" style="border: none; padding-top: 4px;">Docsify-This Web Page Builder – Advanced options</td>
   </tr>
 </table>
 
