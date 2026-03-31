@@ -57,7 +57,7 @@
 
 Content stays in the Markdown files you already have, wherever they are hosted. Publish as standalone pages or embed into Canvas, Moodle, WordPress, or almost any platform – one source, many destinations.
 
-### Quickstart ⚡
+## Quickstart ⚡
 
 1. **Have a Markdown file online?** GitHub, Codeberg, or any public Markdown file works
 1. Visit the location of your file and **copy the URL from your browser's address bar**
