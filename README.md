@@ -50,8 +50,8 @@
     </td>
   </tr>
   <tr style="background: none !important;">
-    <td align="center" style="border: none; padding-top: 4px;">Docsify-This Web Page Builder – Page appearance options</td>
-    <td align="center" style="border: none; padding-top: 4px;">Docsify-This Web Page Builder – Advanced options</td>
+    <td align="center" style="border: none; padding-top: 4px;">Web Page Builder – Page appearance options</td>
+    <td align="center" style="border: none; padding-top: 4px;">Web Page Builder – Advanced options</td>
   </tr>
 </table>
 
