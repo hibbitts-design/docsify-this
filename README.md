@@ -6,7 +6,7 @@
 
 <p><em>Instantly publish Markdown files as styled web pages – no setup or hosting required.</em></p>
 
-[![GitHub Stars](https://img.shields.io/github/stars/hibbitts-design/docsify-this?style=flat-square)](https://github.com/hibbitts-design/docsify-this) [![GitHub Commit Activity](https://img.shields.io/github/commit-activity/m/hibbitts-design/docsify-this?style=flat-square)](https://github.com/hibbitts-design/docsify-this/commits) [![Discord](https://img.shields.io/badge/chat-on%20discord-7289DA.svg?style=flat-square)](https://discord.gg/docsify) [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/hibbitts-design/docsify-this/blob/main/LICENSE)
+[![Docsify Discord Chat](https://img.shields.io/badge/Docsify%20Discord%20Chat-7289DA.svg?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/docsify) [![GitHub Stars](https://img.shields.io/github/stars/hibbitts-design/docsify-this?style=flat-square&logo=github&logoColor=white&label=Stars)](https://github.com/hibbitts-design/docsify-this) [![Latest Release](https://img.shields.io/github/v/release/hibbitts-design/docsify-this?style=flat-square&label=Release)](https://github.com/hibbitts-design/docsify-this/releases/latest) [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://github.com/hibbitts-design/docsify-this/blob/main/LICENSE)
 
 <p><a href="https://docsify-this.net">Try Docsify-This.net</a></p>
 
