@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://docsify.js.org/_media/icon.svg" width="64">
+
 # Docsify-This
 
 <p><em>Instantly publish Markdown files as styled web pages – no setup or hosting required.</em></p>
