@@ -6,9 +6,13 @@
 
 </div>
 
+<div style="text-align: left !important;">
+
 # Docsify-This
 
 <p><em>Instantly publish Markdown files as styled web pages – no setup or hosting required.</em></p>
+
+</div>
 
 <div style="display:none;">
 
