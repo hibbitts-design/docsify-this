@@ -1,6 +1,6 @@
-<div style="display:none;">
-  
 <div align="center">
+  
+<div style="display:none;">
 
 <img src="https://docsify.js.org/_media/icon.svg" width="64">
 
