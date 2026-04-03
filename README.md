@@ -23,7 +23,7 @@
 <p>A free, open-source web app built on <a href="https://docsify.js.org">Docsify</a> – publish any public Markdown file as a styled web page in seconds, with no account, server, or configuration required. Named a finalist in the Open Infrastructure category for the <a href="https://www.oeglobal.org/2024/09/04/finalists-2024-oeawards/">2024 Open Education Awards for Excellence</a>.</p>
 
 > *"I'm blown away just by the fact you put a URL into Docsify-This and then you get a URL back for a web page… done!"*
-> — J. Groom, Co-founder, [Reclaim Hosting](https://reclaimhosting.com)
+> – J. Groom, Co-founder, [Reclaim Hosting](https://reclaimhosting.com)
 
 <table style="border-collapse: collapse;">
   <tr style="background: none !important;">
