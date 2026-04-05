@@ -28,16 +28,20 @@
 <table style="border-collapse: collapse;">
   <tr style="background: none !important;">
     <td width="49%" style="border: none; padding-bottom: 0;">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-1.png">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-1-dark.png">
         <img alt="Docsify-This Web Page Builder interface" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-1.png" width="100%">
       </picture>
+      </a>
     </td>
     <td width="49%" style="border: none; padding-bottom: 0;">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-2.png">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-2-dark.png">
         <img alt="Example page published with Docsify-This" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-2.png" width="100%">
       </picture>
+      </a>
     </td>
   </tr>
   <tr style="background: none !important;">
@@ -47,16 +51,20 @@
   <tr style="display:none;"><td colspan="2" style="border: none;">&nbsp;</td></tr>
   <tr style="background: none !important;">
     <td width="49%" style="border: none; padding-bottom: 0;">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-3.png">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-3-dark.png">
         <img alt="Web Page Builder page appearance options" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-3.png" width="100%">
       </picture>
+      </a>
     </td>
     <td width="49%" style="border: none; padding-bottom: 0;">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-4.png">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-4-dark.png">
         <img alt="Web Page Builder advanced options" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-4.png" width="100%">
       </picture>
+      </a>
     </td>
   </tr>
   <tr style="background: none !important;">
