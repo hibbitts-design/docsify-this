@@ -4,6 +4,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Enhanced search results display with page grouping, section titles, smart deduplication, result count, and keyboard navigation
 
 **Bugfix:**
 * Workaround for Docsify upstream bug - relative path handling in sub-documents (`relative-paths=true`)
