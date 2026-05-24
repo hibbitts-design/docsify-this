@@ -1478,6 +1478,7 @@ Looking for some help with getting a Docsify custom-This instance up and running
 - [Font Awesome Icons](#font-awesome-icons)
 - [Additional Docsify-This Examples and Templates](#additional-docsify-this-examples-and-templates)
 - [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
+- [llms.txt](https://docsify-this.net/llms.txt) — machine-readable summary of Docsify-This
 
 ---
 
