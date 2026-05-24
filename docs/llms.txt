@@ -1,0 +1,82 @@
+# Docsify-This
+
+> Docsify-This is a free, open-source web application built on Docsify that instantly publishes any publicly accessible Markdown file as a styled web page — no account, server, build pipeline, or configuration required. Finalist in the Open Infrastructure category for the 2024 Open Education Awards for Excellence.
+
+## How It Works
+
+Paste any public Markdown file URL into the Web Page Builder at https://docsify-this.net to generate a shareable web page URL. The generated URL follows this format:
+
+`https://docsify-this.net?basePath=URLpath&homepage=filename.md`
+
+Content stays in its original location. Docsify-This renders it client-side — pages published this way are not indexed by search engines.
+
+## Supported Markdown Sources
+
+- GitHub and Codeberg repositories (recommended)
+- GitHub Gist (raw source URL required)
+- HedgeDoc instances
+- Any publicly accessible web server serving raw Markdown
+
+## Key Capabilities
+
+- Web Page Builder UI — point-and-click URL generation, no coding required
+- Customization via URL parameters: fonts, colors, link styles, max-width, dark mode, and more
+- Page layouts: standalone content, Docsify Sidebar, Table of Contents, Navbar, Footer, Coverpage
+- Embed into LMS platforms (Canvas, Moodle, Brightspace, Sakai) without LTI — via iFrame or external link
+- Presentation mode — large font, dark mode, optional sidebar navigation
+- Automatic "Edit this Page" link generation for GitHub and Codeberg files
+- Page copy button with optional LLM discussion prompt
+- Plugins: Mermaid diagrams, LaTeX (MathJax), Hypothesis annotation, image zoom, image captions, image grid, Embedly cards, H5P, Font Awesome icons, AsciiDoc
+- WikiLinks format supported
+- Camel case or hyphenated URL parameter names both accepted
+
+## Preset Configurations (Load-and-Go)
+
+LMS-matched styling aliases:
+- canvas.docsify-this.net — Lato Extended 16px, Canvas blue links
+- moodle.docsify-this.net — System-UI 15px, Moodle blue links
+- brightspace.docsify-this.net — Lato Extended 19px
+- sakai.docsify-this.net — Open Sans 14px
+
+Presentation aliases:
+- present.docsify-this.net — Open Sans 36px, dark mode, 80% width
+- present-nav.docsify-this.net — with auto-closing Sidebar
+
+## Domain Aliases
+
+share-this.net and publish-this.net are aliases for docsify-this.net — all URL parameters work identically.
+
+## Ready-to-Use Templates
+
+GitHub template repositories available for: One Page Article, One Page Course, Multiple Page Basic Site, Blog Style Site, Open Publishing Site, Course Site, LMS Content Pages, Simple Visual Portfolio, Visual Portfolio, Multi-language Site.
+
+## Self-Hosting
+
+Fork the repository and enable GitHub Pages (using the /docs folder) to run your own instance. Also deployable on Codeberg Pages or any web server. Supports domain allowlisting via the allowedDomains variable in index.html.
+
+## Design Principles
+
+Zero setup and maintenance — Separation of content and presentation — Platform independence — Content ownership — OER/5Rs support — Authors helping authors
+
+## When It Is Not the Right Fit
+
+- SEO-dependent content (client-side rendering; not indexed by search engines)
+- Complex user management, approval workflows, or interactive features
+- E-commerce, forums, booking systems
+- Large sites with hundreds of pages requiring advanced functionality
+
+## Key URLs
+
+- Web Page Builder: https://docsify-this.net
+- Documentation (README): https://github.com/hibbitts-design/docsify-this/blob/main/README.md
+- GitHub repository: https://github.com/hibbitts-design/docsify-this
+- Community: Docsify Discord #Docsify-This channel — https://discord.gg/docsify
+- Creator: Paul Hibbitts, paul@hibbittsdesign.org — https://hibbittsdesign.org
+
+## Intended Users
+
+Educators, open publishers, technical writers, and developers who want to publish or share Markdown content quickly without a CMS, static site generator, or web server.
+
+## License
+
+MIT
