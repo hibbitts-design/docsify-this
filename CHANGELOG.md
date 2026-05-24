@@ -9,6 +9,7 @@
 **Bugfix:**
 * Workaround for Docsify upstream bug - relative path handling in sub-documents (`relative-paths=true`)
 * Skip currentPageDir prefix for root-anchored links starting with #/ (i.e. ToC links)
+* Remove unused favicon link
 
 ## [1.11.1] - 03/17/2026☘️
 
