@@ -9,10 +9,22 @@ body {
   background: transparent;
 }
 
+#docs-zone {
+  background: #ffffff;
+  margin: 4rem -9999px;
+  padding: 3.5rem 9999px;
+  overflow: hidden;
+  border-top: 2px solid #e2e8f0;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     background-attachment: fixed;
+  }
+  #docs-zone {
+    background: #0f172a;
+    border-top-color: #334155;
   }
 }
 </style>
@@ -411,7 +423,9 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 > [!TIP]
 > **New to Docsify-This?** Try our interactive [Leap into Open Publishing with Docsify-This](https://preview.docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/published-markdown-files/main&homepage=leap-into-open-publishing-standalone-guide.md&edit-link=https://github.com/paulhibbitts/published-markdown-files/blob/main/leap-into-open-publishing-standalone-guide.md&edit-link-text=View%20Source%20Markdown%20File&edit-link-emoji=:page_facing_up:&browser-tab-title=Leap%20into%20Open%20Publishing&sidebar=true&searchbox=true&maxLevel=2&font-family=Open%20Sans,sans-serif&header-weight=600&dark-mode=auto#/) guide with brief hands-on challenges that can get you publishing styled web page in less than 20 minutes!
 > 
-> **Wanting more complete coverage?** Check out the [Markdown Publishing with Docsify-This](https://preview.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&searchbox=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=3&browser-tab-title=Markdown%20Publishing%20with%20Docsify-This&header-weight=600&dark-mode=auto&code-copy=true#/) guide for step-by-step instructions and more advanced workflows.
+> **Wanting more complete coverage?** Browse the full documentation below, or check out the [Markdown Publishing with Docsify-This](https://preview.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&searchbox=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=3&browser-tab-title=Markdown%20Publishing%20with%20Docsify-This&header-weight=600&dark-mode=auto&code-copy=true#/) guide for step-by-step instructions and more advanced workflows.
+
+<div id="docs-zone">
 
 ## Everything You Need to Know about Docsify-This
 
@@ -2499,5 +2513,7 @@ This [open source project](https://github.com/hibbitts-design/docsify-this) is b
 **🙇🏻‍♂️Special Thanks**  
 [Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
 [Alan Levine](https://github.com/cogdog) for the inspiration of a consolidated ReadMe collection.
+
+</div>
 
 </div>
