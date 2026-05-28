@@ -414,7 +414,7 @@ Page layout:
 
 No online Markdown file handy? **Copy and paste this example URL** - an overview of the Markdown syntax:
 
-```
+```text
 https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 ```
 
