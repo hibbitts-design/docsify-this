@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.11.2] - XX/XX/2026
+## [1.11.2] - 06/03/2026
 
 **New:**
 * Add llms.txt file to improve LLM knowledge of Docsify-This
