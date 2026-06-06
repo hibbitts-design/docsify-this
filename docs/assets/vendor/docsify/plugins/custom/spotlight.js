@@ -1,6 +1,5 @@
 // docsify-spotlight.js
 // Docsify plugin: Section Spotlight Mode
-// Assisted by Kimi (Moonshot AI)
 // Activate by adding &spotlight=true to any Docsify-This URL
 // Configure which headings are spotlight-aware with &spotlight-headings=h2,h3
 
@@ -116,6 +115,8 @@
     });
 
     // --- INSTANT NAVIGATION ---
+    // Passive handler: scrolls to target and applies spotlight without
+    // interfering with Docsify's router or URL management.
     window.addEventListener('click', (e) => {
         const link = e.target.closest('a');
         if (!link) return;
@@ -139,11 +140,8 @@
         if (!target || !HEADING_TAGS.includes(target.tagName.toLowerCase())) return;
         if (!hasAnchorLink(target)) return;
 
-        e.preventDefault();
-        e.stopPropagation();
-
+        // Let Docsify handle the URL and routing; we only scroll and spotlight
         window.scrollTo(0, target.offsetTop - PADDING);
-        history.replaceState(null, null, '#' + href.replace(/^.*[?&]id=/, '').replace(/&.*/, ''));
         applySpotlight();
     }, true);
 
@@ -177,23 +175,18 @@
         return list;
     }
 
-    // Find the heading whose top edge is closest to but not below the viewport top,
-    // with a small buffer to catch short sections
     function findActive(headings) {
-        const viewportTop = window.scrollY + 2; // tiny buffer for sub-pixel rounding
+        const viewportTop = window.scrollY + 2;
         const viewportCenter = window.scrollY + (window.innerHeight * 0.25);
 
-        // First: try to find a heading that is actually visible at the top of viewport
         for (let i = 0; i < headings.length; i++) {
             const h = headings[i];
             const hBottom = h.offsetTop + h.offsetHeight;
-            // Heading is active if its top is near or above viewport top, and it hasn't been fully scrolled past
             if (h.offsetTop <= viewportTop + 50 && hBottom > viewportTop) {
                 return h;
             }
         }
 
-        // Fallback: use the center-line method for longer sections
         for (let i = headings.length - 1; i >= 0; i--) {
             if (headings[i].offsetTop <= viewportCenter) {
                 return headings[i];
@@ -251,10 +244,8 @@
         const allHeadings = [...document.querySelectorAll(HEADING_SELECTOR)].filter(hasAnchorLink);
         if (allHeadings.length === 0) return;
 
-        // Always trust scroll position
         let active = findActive(allHeadings);
 
-        // Only use hash as fallback if scroll detection fails
         if (!active) {
             active = getHashHeading();
         }
