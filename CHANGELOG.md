@@ -4,6 +4,7 @@
 
 **New:**
 * Add llms.txt file to improve LLM knowledge of Docsify-This
+* Further support for using Docsify-This during presentations with new custom Docsify Spotlight plugin
 
 **Improved:**
 * Updated ReadMe
