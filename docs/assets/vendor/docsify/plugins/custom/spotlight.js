@@ -90,8 +90,8 @@
         }
         @media (max-width: 480px) {
             #spotlight-toggle {
-                top: 8px;
-                right: 8px;
+                top: 16px;
+                right: 12px;
                 padding: 3px 8px;
                 font-size: 10px;
             }
