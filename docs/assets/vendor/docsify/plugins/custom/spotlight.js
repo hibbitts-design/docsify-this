@@ -21,7 +21,7 @@
     const HEADING_SELECTOR = HEADING_TAGS.join(',');
 
     let spotlightOn = true;
-    const PADDING = 0;
+    const PADDING = window.$docsify && window.$docsify.topMargin || 10;
     const STORAGE_KEY = 'docsify-spotlight-scroll';
     let activeSnapId = null;
 
