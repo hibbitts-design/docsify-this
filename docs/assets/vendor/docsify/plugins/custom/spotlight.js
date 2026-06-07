@@ -3,6 +3,7 @@
 // Assisted by Kimi (Moonshot AI)
 // Activate by adding &spotlight=true to any Docsify-This URL
 // Configure which headings are spotlight-aware with &spotlight-headings=h2,h3
+// Hide the toggle button and force spotlight always-on with &spotlight-toggle=false
 
 (function() {
     'use strict';
@@ -12,16 +13,18 @@
     // --- CONFIG ---
     function getSpotlightHeadings() {
         const match = location.search.match(/[?&]spotlight-headings=([^&]+)/);
-        if (match) {
-            return decodeURIComponent(match[1]).split(',').map(h => h.trim().toLowerCase());
+        if (match && match[1]) {
+            const tags = decodeURIComponent(match[1]).split(',').map(h => h.trim().toLowerCase());
+            return tags.filter(tag => tag);
         }
         return ['h2', 'h3'];
     }
 
     const HEADING_TAGS = getSpotlightHeadings();
     const HEADING_SELECTOR = HEADING_TAGS.join(',');
-    const PADDING = window.$docsify && window.$docsify.topMargin || 10;
+    const PADDING = window.$docsify && window.$docsify.topMargin !== undefined ? window.$docsify.topMargin : 10;
     const STORAGE_KEY = 'docsify-spotlight-scroll';
+    const SHOW_TOGGLE_BUTTON = !location.search.toLowerCase().includes('spotlight-toggle=false');
 
     let spotlightOn = true;
     let activeSnapId = 0;
@@ -213,8 +216,11 @@
         if (heading.querySelector('a[href^="#"]')) return true;
 
         const prev = heading.previousElementSibling;
-        const href = prev && prev.tagName === 'A' && prev.getAttribute('href');
-        return href && href.indexOf(heading.id) !== -1;
+        if (prev && prev.tagName === 'A') {
+            const id = extractId(prev.getAttribute('href'));
+            return id === heading.id;
+        }
+        return false;
     }
 
     // --- SPOTLIGHT LOGIC ---
@@ -442,7 +448,7 @@
 
     // --- DOCSIFY HOOKS ---
     function initUI() {
-        if (!document.getElementById('spotlight-toggle')) {
+        if (SHOW_TOGGLE_BUTTON && !document.getElementById('spotlight-toggle')) {
             document.body.appendChild(btn);
         }
         updateTheme();
