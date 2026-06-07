@@ -9,6 +9,7 @@
 
     if (!location.search.includes('spotlight=true')) return;
 
+    // --- CONFIG ---
     function getSpotlightHeadings() {
         const match = location.search.match(/[?&]spotlight-headings=([^&]+)/);
         if (match) {
@@ -19,14 +20,15 @@
 
     const HEADING_TAGS = getSpotlightHeadings();
     const HEADING_SELECTOR = HEADING_TAGS.join(',');
-
-    let spotlightOn = true;
     const PADDING = window.$docsify && window.$docsify.topMargin || 10;
     const STORAGE_KEY = 'docsify-spotlight-scroll';
-    let activeSnapId = null;
+
+    let spotlightOn = true;
+    let activeSnapId = 0;
 
     // --- STYLES ---
-    const css = `
+    const style = document.createElement('style');
+    style.textContent = `
         html, body { scroll-behavior: auto !important; }
         .section-dim {
             opacity: 0.25;
@@ -61,6 +63,7 @@
             color: #666;
             cursor: pointer;
             transition: all 0.25s ease;
+            white-space: nowrap;
         }
         #spotlight-toggle:hover {
             background: rgba(180, 180, 180, 0.6);
@@ -82,6 +85,14 @@
             background: rgba(200, 200, 200, 0.15);
             color: #fff;
         }
+        @media (max-width: 480px) {
+            #spotlight-toggle {
+                top: 8px;
+                right: 8px;
+                padding: 3px 8px;
+                font-size: 10px;
+            }
+        }
         @media (prefers-color-scheme: dark) {
             #spotlight-toggle {
                 background: rgba(80, 80, 80, 0.5);
@@ -97,9 +108,6 @@
             }
         }
     `;
-
-    const style = document.createElement('style');
-    style.textContent = css;
     document.head.appendChild(style);
 
     // --- TOGGLE BUTTON ---
@@ -122,88 +130,91 @@
         spotlightOn ? applySpotlight() : clearSpotlight();
     });
 
-    // --- INSTANT NAVIGATION ---
-    // Intercepts heading anchor clicks for instant scroll without animation.
-    // Updates URL hash's ?id= parameter for reload persistence in v1.
-    document.addEventListener('click', (e) => {
-        let link = e.target.closest('a');
-        let heading = null;
+    // --- ID EXTRACTION ---
+    // Pulls a heading ID from various href formats
+    function extractId(href) {
+        if (!href) return null;
+
         let id = null;
 
-        // Case 1: Click on an anchor link
-        if (link) {
-            const href = link.getAttribute('href');
-            if (!href) return;
-
-            if (href.startsWith('#')) {
-                let hash = href.replace(/^#/, '');
-                const match = hash.match(/[?&]id=([^&]+)/);
-                id = match ? decodeURIComponent(match[1]) : hash.replace(/^\//, '').split(/[?&]/)[0];
-            } else if (href.includes('?id=') || href.includes('&id=')) {
-                const match = href.match(/[?&]id=([^&]+)/);
-                if (match) id = decodeURIComponent(match[1]);
-            }
+        if (href.startsWith('#')) {
+            const hash = href.replace(/^#/, '');
+            const match = hash.match(/[?&]id=([^&]+)/);
+            id = match ? decodeURIComponent(match[1]) : hash.replace(/^\//, '').split(/[?&]/)[0];
+        } else if (href.includes('?id=') || href.includes('&id=')) {
+            const match = href.match(/[?&]id=([^&]+)/);
+            if (match) id = decodeURIComponent(match[1]);
         }
 
-        // Case 2: Click on a heading element itself
+        return id;
+    }
+
+    // --- INSTANT NAVIGATION ---
+    // Intercepts heading clicks, prevents smooth scroll, jumps instantly.
+    // Updates URL hash so reloads preserve position.
+    document.addEventListener('click', (e) => {
+        let id = null;
+        let target = null;
+
+        // Case 1: clicked an anchor link
+        const link = e.target.closest('a');
+        if (link) {
+            id = extractId(link.getAttribute('href'));
+        }
+
+        // Case 2: clicked a heading directly
         if (!id) {
-            heading = e.target.closest(HEADING_SELECTOR);
-            if (heading && heading.id) {
+            const heading = e.target.closest(HEADING_SELECTOR);
+            if (heading && heading.id && hasAnchorLink(heading)) {
                 id = heading.id;
-                if (!hasAnchorLink(heading)) return;
+                target = heading;
             }
         }
 
         if (!id) return;
 
-        const target = document.getElementById(id);
+        if (!target) target = document.getElementById(id);
         if (!target) return;
         if (!HEADING_TAGS.includes(target.tagName.toLowerCase())) return;
-        if (heading !== target && !hasAnchorLink(target)) return;
+        if (!hasAnchorLink(target)) return;
 
         const targetY = Math.round(target.getBoundingClientRect().top) + window.pageYOffset - PADDING;
 
-        // Stop browser default AND Docsify's handler
+        // Prevent default browser and Docsify scroll behavior
         e.preventDefault();
         e.stopPropagation();
 
-        // Update URL hash's ?id= parameter for reload persistence (v1)
+        // Update URL hash for reload persistence (v1 format: #/?id=section)
         const currentHash = location.hash;
         if (currentHash.includes('?id=') || currentHash.includes('&id=')) {
             const newHash = currentHash.replace(/([?&])id=[^&]*/, '$1id=' + id);
-            const newUrl = location.href.split('#')[0] + newHash;
-            history.replaceState(null, '', newUrl);
+            history.replaceState(null, '', location.href.split('#')[0] + newHash);
         }
 
-        // Store in sessionStorage as fallback
+        // Remember position as fallback
         try {
-            const strippedUrl = location.href.split('?')[0].split('#')[0];
             sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
                 id: id,
                 y: targetY,
-                url: strippedUrl
+                url: location.href.split('?')[0].split('#')[0]
             }));
         } catch (e) {
-            // Storage may be unavailable
+            // Private mode — ignore
         }
 
-        // Instant scroll to target
         window.scrollTo(0, targetY);
-
         applySpotlight();
     }, true);
 
     // --- ANCHOR LINK DETECTION ---
+    // Checks if a heading has an auto-generated anchor link (Docsify TOC behavior)
     function hasAnchorLink(heading) {
         if (!heading || !heading.id) return false;
         if (heading.querySelector('a[href^="#"]')) return true;
 
         const prev = heading.previousElementSibling;
         const href = prev && prev.tagName === 'A' && prev.getAttribute('href');
-        if (href && href.indexOf(heading.id) !== -1) {
-            return true;
-        }
-        return false;
+        return href && href.indexOf(heading.id) !== -1;
     }
 
     // --- SPOTLIGHT LOGIC ---
@@ -245,53 +256,39 @@
         return null;
     }
 
-    function getHashHeading() {
+    // Finds the element referenced by the current URL hash
+    // requireAnchor: if true, only returns headings with anchor links
+    function findTargetByHash(requireAnchor) {
         let id = null;
 
-        // Check hash first (v1 format: #/?id=section)
-        let hash = location.hash.replace(/^#/, '');
+        // v1 format: #/?id=section
+        const hash = location.hash.replace(/^#/, '');
         if (hash) {
             const match = hash.match(/[?&]id=([^&]+)/);
             if (match) id = decodeURIComponent(match[1]);
         }
 
-        // Check query parameter if no hash id (v2 or other)
+        // v2 format: ?id=section
         if (!id) {
-            const searchMatch = location.search.match(/[?&]id=([^&]+)/);
-            if (searchMatch) id = decodeURIComponent(searchMatch[1]);
+            const match = location.search.match(/[?&]id=([^&]+)/);
+            if (match) id = decodeURIComponent(match[1]);
         }
 
         if (!id) return null;
 
         const el = document.getElementById(id);
-        if (el && HEADING_TAGS.includes(el.tagName.toLowerCase()) && hasAnchorLink(el)) return el;
-        return null;
-    }
+        if (!el) return null;
+        if (!HEADING_TAGS.includes(el.tagName.toLowerCase())) return null;
+        if (requireAnchor && !hasAnchorLink(el)) return null;
 
-    // Get hash target without hasAnchorLink check (for scroll restoration)
-    function getHashTarget() {
-        let id = null;
-
-        let hash = location.hash.replace(/^#/, '');
-        if (hash) {
-            const match = hash.match(/[?&]id=([^&]+)/);
-            if (match) id = decodeURIComponent(match[1]);
-        }
-
-        if (!id) {
-            const searchMatch = location.search.match(/[?&]id=([^&]+)/);
-            if (searchMatch) id = decodeURIComponent(searchMatch[1]);
-        }
-
-        if (!id) return null;
-        return document.getElementById(id);
+        return el;
     }
 
     function getParentHeading(heading) {
-        const myLevel = parseInt(heading.tagName[1]);
+        const myLevel = parseInt(heading.tagName[1], 10);
         let prev = heading.previousElementSibling;
         while (prev) {
-            const prevLevel = parseInt(prev.tagName[1]);
+            const prevLevel = parseInt(prev.tagName[1], 10);
             if (HEADING_TAGS.includes(prev.tagName.toLowerCase()) && prevLevel < myLevel && hasAnchorLink(prev)) {
                 return prev;
             }
@@ -301,7 +298,7 @@
     }
 
     function getFirstChildHeading(heading) {
-        const myLevel = parseInt(heading.tagName[1]);
+        const myLevel = parseInt(heading.tagName[1], 10);
         let next = heading.nextElementSibling;
         let paragraphs = 0;
         while (next && !HEADING_TAGS.includes(next.tagName.toLowerCase())) {
@@ -309,7 +306,7 @@
             next = next.nextElementSibling;
         }
         if (next && HEADING_TAGS.includes(next.tagName.toLowerCase())) {
-            const childLevel = parseInt(next.tagName[1]);
+            const childLevel = parseInt(next.tagName[1], 10);
             if (childLevel > myLevel && paragraphs <= 1 && hasAnchorLink(next)) {
                 return next;
             }
@@ -323,12 +320,7 @@
         const allHeadings = [...document.querySelectorAll(HEADING_SELECTOR)].filter(hasAnchorLink);
         if (allHeadings.length === 0) return;
 
-        let active = findActive(allHeadings);
-
-        if (!active) {
-            active = getHashHeading();
-        }
-
+        let active = findActive(allHeadings) || findTargetByHash(true);
         if (!active) return;
 
         clearSpotlight();
@@ -341,12 +333,9 @@
             });
         }
 
-        let parentHeading = null;
-        if (parseInt(active.tagName[1]) > 2) {
-            parentHeading = getParentHeading(active);
-        }
-
-        let firstChild = getFirstChildHeading(active);
+        const activeLevel = parseInt(active.tagName[1], 10);
+        const parentHeading = activeLevel > 2 ? getParentHeading(active) : null;
+        const firstChild = getFirstChildHeading(active);
 
         sections.forEach(section => {
             const isActive = section.heading === active ||
@@ -359,7 +348,7 @@
         });
     }
 
-    // --- SCROLL HANDLER ---
+    // --- SCROLL & HASH HANDLERS ---
     let waiting = false;
     window.addEventListener('scroll', () => {
         if (!waiting) {
@@ -371,7 +360,6 @@
         }
     }, { passive: true });
 
-    // --- HASHCHANGE HANDLER ---
     window.addEventListener('hashchange', () => {
         setTimeout(applySpotlight, 150);
     });
@@ -393,7 +381,7 @@
         if (bg && bg !== 'rgba(0, 0, 0, 0)' && bg !== 'transparent') {
             const rgb = bg.match(/\d+/g);
             if (rgb) {
-                const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000;
+                const brightness = (parseInt(rgb[0], 10) * 299 + parseInt(rgb[1], 10) * 587 + parseInt(rgb[2], 10) * 114) / 1000;
                 if (brightness < 80) return true;
             }
         }
@@ -409,16 +397,14 @@
         }
     }
 
-    // --- SNAP TO TARGET ---
-    // Forces scroll position to target for a short duration to override
-    // any smooth-scroll animation that may be running.
+    // --- SNAP LOOP ---
+    // Forces scroll position to override any smooth-scroll animation
     function snapToTarget(targetY, duration) {
         const thisSnapId = ++activeSnapId;
         const startTime = Date.now();
         function snap() {
-            if (thisSnapId !== activeSnapId) return; // Cancelled by newer snap
-            const elapsed = Date.now() - startTime;
-            if (elapsed < duration) {
+            if (thisSnapId !== activeSnapId) return;
+            if (Date.now() - startTime < duration) {
                 if (Math.abs(window.scrollY - targetY) > 2) {
                     window.scrollTo(0, targetY);
                 }
@@ -428,8 +414,7 @@
         snap();
     }
 
-    // --- RESTORE SCROLL POSITION ---
-    // Restores scroll position from sessionStorage after page load/reload.
+    // --- SCROLL RESTORATION ---
     function restoreScrollPosition() {
         try {
             const stored = sessionStorage.getItem(STORAGE_KEY);
@@ -437,7 +422,6 @@
 
             const data = JSON.parse(stored);
             const currentUrl = location.href.split('?')[0].split('#')[0];
-            // Only restore if URL pathname matches (ignores query parameters and hash)
             if (data.url && data.url === currentUrl) {
                 if (data.id) {
                     const target = document.getElementById(data.id);
@@ -452,37 +436,34 @@
                 }
             }
         } catch (e) {
-            // Storage may be unavailable or data invalid
+            // Private mode or invalid data — ignore
         }
     }
 
-    // --- DOCSIFY PLUGIN HOOK ---
+    // --- DOCSIFY HOOKS ---
+    function initUI() {
+        if (!document.getElementById('spotlight-toggle')) {
+            document.body.appendChild(btn);
+        }
+        updateTheme();
+    }
+
     window.$docsify = window.$docsify || {};
     window.$docsify.plugins = (window.$docsify.plugins || []).concat(function(hook, vm) {
         hook.ready(() => {
-            if (!document.getElementById('spotlight-toggle')) {
-                document.body.appendChild(btn);
-            }
-            updateTheme();
+            initUI();
             applySpotlight();
         });
 
         hook.doneEach(() => {
-            if (!document.getElementById('spotlight-toggle')) {
-                document.body.appendChild(btn);
-            }
-            updateTheme();
-
-            // Delayed scroll restoration to ensure content is fully rendered
+            initUI();
             setTimeout(() => {
-                // First, try to scroll to hash target (v1)
-                const hashTarget = getHashTarget();
+                const hashTarget = findTargetByHash(false);
                 if (hashTarget) {
                     const targetY = Math.round(hashTarget.getBoundingClientRect().top) + window.pageYOffset - PADDING;
                     window.scrollTo(0, targetY);
                     snapToTarget(targetY, 600);
                 } else {
-                    // Fall back to sessionStorage
                     restoreScrollPosition();
                 }
                 applySpotlight();
