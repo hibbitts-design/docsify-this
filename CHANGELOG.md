@@ -4,6 +4,7 @@
 
 **New:**
 * Further support for using Docsify-This during presentations with new custom Docsify Spotlight plugin
+* Updated ReadMe
 
 ## [1.11.2] - 06/03/2026
 
