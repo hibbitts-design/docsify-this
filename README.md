@@ -627,12 +627,12 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### spotlight-headings
 
 Set which heading levels are used to define sections in Spotlight Mode with the optional **spotlight-headings** parameter (not included in the Advanced Web Page Builder), for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&spotlight=true&spotlight-headings=h2,h3. The default value is `h2,h3`. Requires **spotlight=true**.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&spotlight=true&spotlight-headings=h2,h3. The default value is `h2,h3`.
 
 ##### spotlight-toggle
 
 Hide the Spotlight toggle button and keep Spotlight Mode always on with the optional **spotlight-toggle** parameter (not included in the Advanced Web Page Builder), for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&spotlight=true&spotlight-toggle=false. When set to `false` the toggle button is hidden and Spotlight Mode cannot be disabled by the viewer. Requires **spotlight=true**.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&spotlight=true&spotlight-toggle=false. When set to `false` the toggle button is hidden and Spotlight Mode can only be disabled via URL parameter.
 
 ##### subMaxLevel
 
