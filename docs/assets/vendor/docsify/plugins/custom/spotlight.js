@@ -45,10 +45,8 @@
         }
         .section-dim h1, .section-dim h2, .section-dim h3,
         .section-dim h4, .section-dim h5, .section-dim h6 {
-            opacity: 0.55;
+            opacity: 0.40;
         }
-        .section-dim h2 { opacity: 0.45; }
-        .section-dim h3 { opacity: 0.40; }
 
         #spotlight-toggle {
             position: fixed;
