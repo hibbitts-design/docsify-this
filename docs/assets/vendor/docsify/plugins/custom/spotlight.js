@@ -10,9 +10,6 @@
 
     if (!location.search.includes('spotlight=true')) return;
 
-    // Disable browser-native scroll restoration to prevent smooth-scroll on reload
-    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-
     // --- CONFIG ---
     function getSpotlightHeadings() {
         const match = location.search.match(/[?&]spotlight-headings=([^&]+)/);
@@ -31,7 +28,6 @@
 
     let spotlightOn = true;
     let activeSnapId = 0;
-    let lastClickedId = null;
 
     // --- STYLES ---
     const style = document.createElement('style');
@@ -207,7 +203,6 @@
             // Private mode — ignore
         }
 
-        lastClickedId = id;
         window.scrollTo(0, targetY);
         applySpotlight();
     }, true);
@@ -246,7 +241,7 @@
 
     function findActive(headings) {
         const viewportTop = window.scrollY + 2;
-        const viewportCenter = window.scrollY + (window.innerHeight * 0.5);
+        const viewportCenter = window.scrollY + (window.innerHeight * 0.25);
 
         for (let i = 0; i < headings.length; i++) {
             const h = headings[i];
@@ -329,17 +324,7 @@
         const allHeadings = [...document.querySelectorAll(HEADING_SELECTOR)].filter(hasAnchorLink);
         if (allHeadings.length === 0) return;
 
-        let active = null;
-        if (lastClickedId) {
-            const clicked = document.getElementById(lastClickedId);
-            if (clicked && HEADING_TAGS.includes(clicked.tagName.toLowerCase()) && hasAnchorLink(clicked)) {
-                active = clicked;
-            }
-            lastClickedId = null;
-        }
-        if (!active) {
-            active = findActive(allHeadings) || findTargetByHash(true);
-        }
+        let active = findActive(allHeadings) || findTargetByHash(true);
         if (!active) return;
 
         clearSpotlight();
@@ -424,7 +409,9 @@
         function snap() {
             if (thisSnapId !== activeSnapId) return;
             if (Date.now() - startTime < duration) {
-                window.scrollTo(0, targetY);
+                if (Math.abs(window.scrollY - targetY) > 2) {
+                    window.scrollTo(0, targetY);
+                }
                 requestAnimationFrame(snap);
             }
         }
