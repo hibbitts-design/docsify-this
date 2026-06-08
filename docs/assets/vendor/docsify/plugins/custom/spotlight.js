@@ -32,6 +32,7 @@
     let spotlightOn = true;
     let activeSnapId = 0;
     let lastClickedId = null;
+    let lastClickedTime = 0;
 
     // --- STYLES ---
     const style = document.createElement('style');
@@ -208,6 +209,7 @@
         }
 
         lastClickedId = id;
+        lastClickedTime = Date.now();
         window.scrollTo(0, targetY);
         applySpotlight();
     }, true);
@@ -333,11 +335,13 @@
         if (allHeadings.length === 0) return;
 
         let active = null;
-        if (lastClickedId) {
+        if (lastClickedId && Date.now() - lastClickedTime < 150) {
             const clicked = document.getElementById(lastClickedId);
             if (clicked && HEADING_TAGS.includes(clicked.tagName.toLowerCase()) && hasAnchorLink(clicked)) {
                 active = clicked;
             }
+        }
+        if (active) {
             lastClickedId = null;
         }
         if (!active) {
