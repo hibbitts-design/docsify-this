@@ -246,7 +246,7 @@
 
     function findActive(headings) {
         const viewportTop = window.scrollY + 2;
-        const viewportCenter = window.scrollY + (window.innerHeight * 0.25);
+        const viewportCenter = window.scrollY + (window.innerHeight * 0.5);
 
         for (let i = 0; i < headings.length; i++) {
             const h = headings[i];
