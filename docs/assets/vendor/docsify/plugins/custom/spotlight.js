@@ -10,9 +10,6 @@
 
     if (!location.search.includes('spotlight=true')) return;
 
-    // Disable browser-native scroll restoration to prevent smooth-scroll on reload
-    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-
     // --- CONFIG ---
     function getSpotlightHeadings() {
         const match = location.search.match(/[?&]spotlight-headings=([^&]+)/);
@@ -31,7 +28,6 @@
 
     let spotlightOn = true;
     let activeSnapId = 0;
-    let lastClickedId = null;
 
     // --- STYLES ---
     const style = document.createElement('style');
@@ -49,8 +45,10 @@
         }
         .section-dim h1, .section-dim h2, .section-dim h3,
         .section-dim h4, .section-dim h5, .section-dim h6 {
-            opacity: 0.40;
+            opacity: 0.55;
         }
+        .section-dim h2 { opacity: 0.45; }
+        .section-dim h3 { opacity: 0.40; }
 
         #spotlight-toggle {
             position: fixed;
@@ -207,7 +205,6 @@
             // Private mode — ignore
         }
 
-        lastClickedId = id;
         window.scrollTo(0, targetY);
         applySpotlight();
     }, true);
@@ -329,17 +326,7 @@
         const allHeadings = [...document.querySelectorAll(HEADING_SELECTOR)].filter(hasAnchorLink);
         if (allHeadings.length === 0) return;
 
-        let active = null;
-        if (lastClickedId) {
-            const clicked = document.getElementById(lastClickedId);
-            if (clicked && HEADING_TAGS.includes(clicked.tagName.toLowerCase()) && hasAnchorLink(clicked)) {
-                active = clicked;
-            }
-            lastClickedId = null;
-        }
-        if (!active) {
-            active = findActive(allHeadings) || findTargetByHash(true);
-        }
+        let active = findActive(allHeadings) || findTargetByHash(true);
         if (!active) return;
 
         clearSpotlight();
@@ -424,7 +411,9 @@
         function snap() {
             if (thisSnapId !== activeSnapId) return;
             if (Date.now() - startTime < duration) {
-                window.scrollTo(0, targetY);
+                if (Math.abs(window.scrollY - targetY) > 2) {
+                    window.scrollTo(0, targetY);
+                }
                 requestAnimationFrame(snap);
             }
         }
