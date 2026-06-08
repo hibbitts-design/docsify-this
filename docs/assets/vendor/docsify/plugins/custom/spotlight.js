@@ -10,6 +10,9 @@
 
     if (!location.search.includes('spotlight=true')) return;
 
+    // Disable browser-native scroll restoration to prevent smooth-scroll on reload
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
     // --- CONFIG ---
     function getSpotlightHeadings() {
         const match = location.search.match(/[?&]spotlight-headings=([^&]+)/);
@@ -28,6 +31,7 @@
 
     let spotlightOn = true;
     let activeSnapId = 0;
+    let lastClickedId = null;
 
     // --- STYLES ---
     const style = document.createElement('style');
@@ -203,6 +207,7 @@
             // Private mode — ignore
         }
 
+        lastClickedId = id;
         window.scrollTo(0, targetY);
         applySpotlight();
     }, true);
@@ -312,7 +317,10 @@
         if (next && HEADING_TAGS.includes(next.tagName.toLowerCase())) {
             const childLevel = parseInt(next.tagName[1], 10);
             if (childLevel > myLevel && paragraphs <= 1 && hasAnchorLink(next)) {
-                return next;
+                const childTop = next.getBoundingClientRect().top;
+                if (childTop < window.innerHeight) {
+                    return next;
+                }
             }
         }
         return null;
@@ -324,7 +332,17 @@
         const allHeadings = [...document.querySelectorAll(HEADING_SELECTOR)].filter(hasAnchorLink);
         if (allHeadings.length === 0) return;
 
-        let active = findActive(allHeadings) || findTargetByHash(true);
+        let active = null;
+        if (lastClickedId) {
+            const clicked = document.getElementById(lastClickedId);
+            if (clicked && HEADING_TAGS.includes(clicked.tagName.toLowerCase()) && hasAnchorLink(clicked)) {
+                active = clicked;
+            }
+            lastClickedId = null;
+        }
+        if (!active) {
+            active = findActive(allHeadings) || findTargetByHash(true);
+        }
         if (!active) return;
 
         clearSpotlight();
