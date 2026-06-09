@@ -511,16 +511,10 @@
                 }
                 applySpotlight();
 
-                // Re-apply once images load in case unloaded images skewed offsetTop on initial render
-                const unloaded = [...document.querySelectorAll('#main img, .content img')].filter(img => !img.complete);
-                if (unloaded.length > 0) {
-                    let pending = unloaded.length;
-                    unloaded.forEach(img => {
-                        const done = () => { if (--pending === 0 && window.scrollY < 50) applySpotlight(); };
-                        img.addEventListener('load', done, { once: true });
-                        img.addEventListener('error', done, { once: true });
-                    });
-                }
+                // Re-apply after layout settles in case images (cached or not) shifted offsetTop
+                requestAnimationFrame(() => requestAnimationFrame(() => {
+                    if (window.scrollY < 50) applySpotlight();
+                }));
             }, 100);
         });
     });
