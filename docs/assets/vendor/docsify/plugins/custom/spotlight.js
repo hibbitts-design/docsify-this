@@ -192,8 +192,15 @@
 
         // Update URL hash for reload persistence (v1 format: #/?id=section)
         const currentHash = location.hash;
-        if (currentHash.includes('?id=') || currentHash.includes('&id=')) {
-            const newHash = currentHash.replace(/([?&])id=[^&]*/, '$1id=' + id);
+        if (currentHash) {
+            let newHash;
+            if (currentHash.includes('?id=') || currentHash.includes('&id=')) {
+                newHash = currentHash.replace(/([?&])id=[^&]*/, '$1id=' + id);
+            } else if (currentHash.includes('?')) {
+                newHash = currentHash + '&id=' + id;
+            } else {
+                newHash = currentHash + '?id=' + id;
+            }
             history.replaceState(null, '', location.href.split('#')[0] + newHash);
         }
 
@@ -347,6 +354,9 @@
         if (!active) {
             active = findActive(allHeadings) || findTargetByHash(true);
         }
+        if (!active && allHeadings.length > 0) {
+            active = allHeadings[0];
+        }
         if (!active) return;
 
         clearSpotlight();
@@ -445,6 +455,13 @@
         try {
             const stored = sessionStorage.getItem(STORAGE_KEY);
             if (!stored) return;
+
+            // Only restore if current URL has a section ID
+            const hasId = (location.search + location.hash).includes('?id=') || (location.search + location.hash).includes('&id=');
+            if (!hasId) {
+                sessionStorage.removeItem(STORAGE_KEY);
+                return;
+            }
 
             const data = JSON.parse(stored);
             const currentUrl = location.href.split('?')[0].split('#')[0];
