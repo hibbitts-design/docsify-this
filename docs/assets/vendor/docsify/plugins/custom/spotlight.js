@@ -254,6 +254,9 @@
     }
 
     function findActive(headings) {
+        // At the very top of the page, always use the first heading
+        if (window.scrollY < 10) return headings[0];
+
         const viewportTop = window.scrollY + 2;
         const viewportCenter = window.scrollY + (window.innerHeight * 0.25);
 
