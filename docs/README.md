@@ -209,13 +209,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="spotlight" unchecked><label for="spotlight">Enable spotlight to focus on currently viewed section (dims surrounding content)</label></div>
-
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomimages" unchecked><label for="zoomimages">Enable zoomable page images (tapping on images to enlarge them)</label></div>
-
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="imageCaptions" unchecked><label for="imageCaptions">Show alternative text of images as captions</label></div>
-
-<hr>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="spotlight" unchecked><label for="spotlight">Enable spotlight to focus on current heading (dims surrounding content)</label></div>
 
 <div class="clearfix">
 
@@ -223,7 +217,7 @@ Page layout:
   <label for="maxWidthValue">Content maximum width:</label>
   <div style="display: flex; gap: 10px;">
     <input type="number" id="maxWidthValue" name="maxWidthValue"
-       style="width=85px; border-radius: 7px; border-color: #8e8f9d; vertical-align: top;"
+       style="width:85px; border-radius: 7px; border-color: #8e8f9d; vertical-align: top;"
        value="910" step="10">
     <select style="border-radius: 7px; border-color: #8e8f9d; vertical-align: top; transform: translateY(4px);"
         id="maxWidthValueUnit" name="maxWidthValueUnit" value="px" onchange="updateMaxWidthStep()">
@@ -238,6 +232,12 @@ Page layout:
 </div>
 
 </div>
+
+<hr>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomimages" unchecked><label for="zoomimages">Enable zoomable page images (tapping on images to enlarge them)</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="imageCaptions" unchecked><label for="imageCaptions">Show image alternative text as captions</label></div>
 
 ### Navigation Display Options
 
