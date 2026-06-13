@@ -8,6 +8,7 @@
 
 **Improved:**
 * Reorganized Web Page Builder options into clearer sections
+* Add card-box grouping to  Web Page Builder for improved visual heirarchy and reduced complexity
 
 ## [1.11.2] - 06/03/2026
 
