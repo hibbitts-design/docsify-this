@@ -273,7 +273,7 @@ Page layout:
 
 <div class="clearfix">
 
-<div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-top:-6px; margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
+<div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-top:-6px; margin-bottom:12px;border-radius: 7px;border-color: #8e8f9d'>
   <label for="enableDarkmode">Dark theme mode:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="enableDarkmode" name="enableDarkmode">
     <option value="false">Off</option>
@@ -285,6 +285,8 @@ Page layout:
 
 </div>
 
+<div class="docsifythisurlbuilderoptionsline">Link color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link color for dark theme" type="text" maxlength="7" size="8" value="#1BA1EE" id="linkcolordarkmode" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
+
 </div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_2" value="Publish as a Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
@@ -292,16 +294,6 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline" style="margin-top: 42px;margin-bottom: -27px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="advancedwebpagebuilder" onclick='toggleDiv2(this)'><label for="advancedwebpagebuilder">Advanced Web Page Builder Options</label></div>
 
 <div id="docsifythisurlbuilderoptionsDiv2" style='margin-top:40px;display: none'>
-
-<div class="builder-section">
-
-### Dark Theme Link Colors
-
-<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;">Link color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link color for dark theme" type="text" maxlength="7" size="8" value="#1BA1EE" id="linkcolordarkmode" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
-
-<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;">Link hover color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link hover color for dark theme" type="text" maxlength="7" size="8" value="" id="linkhovercolordarkmode" oninput="validateColorAndUpdatePreview('linkhovercolordarkmode', 'linkhovercolordarkmodepreview');" data-coloris><span id="linkhovercolordarkmodepreview"></span></div>
-
-</div>
 
 <div class="builder-section">
 
@@ -322,6 +314,12 @@ Page layout:
 <div class="clearfix">
 
   <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style='margin-top:-2px;'>Link hover color:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Link hover color" type="text" maxlength="7" size="8" value="" id="linkhovercolor" oninput="validateColorAndUpdatePreview('linkhovercolor', 'linkhovercolorpreview');" data-coloris><span id="linkhovercolorpreview"></span></div></div>
+
+  <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style='margin-top:-2px;'>Link hover color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link hover color for dark theme" type="text" maxlength="7" size="8" value="" id="linkhovercolordarkmode" oninput="validateColorAndUpdatePreview('linkhovercolordarkmode', 'linkhovercolordarkmodepreview');" data-coloris><span id="linkhovercolordarkmodepreview"></span></div></div>
+
+</div>
+
+<div class="clearfix">
 
   <div class='stackedlabeldropdown' style="margin-top:-6px;">
   <label for="linkhovertextdecoration">Link hover text decoration:</label>
