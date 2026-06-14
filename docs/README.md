@@ -133,7 +133,7 @@ Page layout:
 <div class="clearfix">
 
 <div class='stackedlabeldropdown'>
-  <label for="fontfamily">Page font family:</label>
+  <label for="fontfamily">Font family:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d; display: inline-block; vertical-align: middle; margin-right: 4px;" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
     <option value="default">Source Sans Pro</option>
     <option disabled="disabled">----</option>
@@ -189,12 +189,12 @@ Page layout:
 
 </div>
 
-<div class="docsifythisurlbuilderoptionsline" style='margin-top:0px;'>Page link color:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link color" type="text" maxlength="7" size="8" value="#0374B5" id="linkcolor" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline" style='margin-top:0px;'>Link color:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link color" type="text" maxlength="7" size="8" value="#0374B5" id="linkcolor" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
 
 <div class="clearfix">
 
 <div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:12px;border-radius: 7px;border-color: #8e8f9d'>
-  <label for="headerweight">Page headers font weight:</label>
+  <label for="headerweight">Headers font weight:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
     <option value="400">Normal (400)</option>
     <option disabled="disabled">----</option>
@@ -274,7 +274,7 @@ Page layout:
 <div class="clearfix">
 
 <div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-top:-6px; margin-bottom:12px;border-radius: 7px;border-color: #8e8f9d'>
-  <label for="enableDarkmode">Dark theme mode:</label>
+  <label for="enableDarkmode">Dark mode:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="enableDarkmode" name="enableDarkmode">
     <option value="false">Off</option>
     <option disabled="disabled">----</option>
@@ -285,7 +285,7 @@ Page layout:
 
 </div>
 
-<div class="docsifythisurlbuilderoptionsline">Link color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link color for dark theme" type="text" maxlength="7" size="8" value="#1BA1EE" id="linkcolordarkmode" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline">Link color (dark theme):<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link color for dark theme" type="text" maxlength="7" size="8" value="#1BA1EE" id="linkcolordarkmode" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
 
 </section>
 
@@ -315,7 +315,7 @@ Page layout:
 
   <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style='margin-top:-2px;'>Link hover color:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Link hover color" type="text" maxlength="7" size="8" value="" id="linkhovercolor" oninput="validateColorAndUpdatePreview('linkhovercolor', 'linkhovercolorpreview');" data-coloris><span id="linkhovercolorpreview"></span></div></div>
 
-  <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style='margin-top:-2px;'>Link hover color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link hover color for dark theme" type="text" maxlength="7" size="8" value="" id="linkhovercolordarkmode" oninput="validateColorAndUpdatePreview('linkhovercolordarkmode', 'linkhovercolordarkmodepreview');" data-coloris><span id="linkhovercolordarkmodepreview"></span></div></div>
+  <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style='margin-top:-2px;'>Link hover color (dark theme):<br><input style="border-radius: 7px;border-color: #8e8f9d;text-transform:uppercase" aria-label="Page link hover color for dark theme" type="text" maxlength="7" size="8" value="" id="linkhovercolordarkmode" oninput="validateColorAndUpdatePreview('linkhovercolordarkmode', 'linkhovercolordarkmodepreview');" data-coloris><span id="linkhovercolordarkmodepreview"></span></div></div>
 
 </div>
 
