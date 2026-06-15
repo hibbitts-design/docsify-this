@@ -40,22 +40,22 @@ body {
 </div>
 
 <div id="banner" style="display: block;">
-<div style="background: linear-gradient(135deg, #f8fafc 0%, #f0fdf4 100%); border: 1px solid #bbf7d0; border-radius: 16px; padding: 20px 24px; margin: 24px 0; display: flex; align-items: center; gap: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02), inset 0 1px 0 rgba(255,255,255,0.6);">
-  <div style="flex: 1; min-width: 0;">
-    <strong style="color: #166534;">Docsify-This v2.0 Preview is now available!</strong>
-    <div style="color: #475569; margin-top: 2px; font-size: 18px; display: block;">
-      <style>
-        @media (max-width: 768px) {
-          .hide-on-mobile {
-              display: none !important;
-          }
-        }
-      </style>
-      <span class="hide-on-mobile">Built with the latest Docsify v5.0 release candidate and featuring a refreshed UI.</span>
+  <style>
+    @media (max-width: 768px) {
+      #banner > div { flex-direction: column; }
+      #banner a { text-align: center; }
+      .hide-on-mobile { display: none !important; }
+    }
+  </style>
+  <div style="background: linear-gradient(135deg, #f8fafc 0%, #f0fdf4 100%); border: 1px solid #bbf7d0; border-radius: 16px; padding: 20px 24px; margin: 24px 0; display: flex; align-items: center; gap: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02), inset 0 1px 0 rgba(255,255,255,0.6);">
+    <div style="flex: 1; min-width: 0;">
+      <strong style="color: #166534;">Docsify-This v2.0 Preview is now available!</strong>
+      <div style="color: #475569; margin-top: 2px; font-size: 18px; display: block;">
+        <span class="hide-on-mobile">Built with the latest Docsify v5.0 release candidate and featuring a refreshed UI.</span>
+      </div>
     </div>
+    <a href="https://preview-v2.docsify-this.net" style="background: #20b256; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.2s ease;">Explore v2.0</a>
   </div>
-  <a href="https://preview-v2.docsify-this.net" style="background: #20b256; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: 600; white-space: nowrap; box-shadow: 0 1px 2px rgba(0,0,0,0.05); transition: all 0.2s ease;">Explore v2.0</a>
-</div>
 </div>
 
 <h1>Instantly Turn Markdown Text Files into Styled Web&nbsp;Pages</h1>
