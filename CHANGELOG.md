@@ -5,7 +5,7 @@
 **New:**
 * Built with the modernized and refactored Docsify v5 platform
 * Adoption of Docsify v5's new theme system for enhanced customization and a modern user interface
-* Use of Marked.js v16+ (from Docsify v5) for markdown rendering, providing improved compatibility and rendering capabilities
+* Use of Marked.js v17+ (from Docsify v5) for markdown rendering, providing improved compatibility and rendering capabilities
 * Added support for responsive tables (with thanks and appreciation to @jhildenbiddle for the original Docsify v4 Themeable plugin)
 * Option to display pages using the new Docsify v5 core theme
 * Refreshed Web Page Builder UI
