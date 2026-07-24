@@ -30,7 +30,7 @@
 * Improved search results, which exclude Markdown formatting syntax (via Docsify v5)
 * Added variable for applying Docsify v5 core theme defaults
 * Updated support of Docsify config topMargin to CSS var `scroll-padding-top`
-* Move responsive table layout to core CSS so tables render correctly
+* Optional responsive table layout
 * Improve toc and toc-narrow display
 * Point docsify CDN links at self-hosted fork
 
