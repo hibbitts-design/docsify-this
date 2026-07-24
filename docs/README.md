@@ -39,7 +39,7 @@ body {
   </div>
 </div>
 
-<div id="banner" style="display: block;">
+<div id="banner" style="display: none;">
   <style>
     @media (max-width: 768px) {
       #banner > div { flex-direction: column; }
