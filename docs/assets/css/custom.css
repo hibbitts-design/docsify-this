@@ -15,17 +15,31 @@ body .markdown-section {
 }
 */
 
-/* Link colors to match visual styling of SFU Canvas LMS (uncomment to use) */
+/* Link colors to match SFU branding visual styling (uncomment to use) */
 /*
 :root {
-    --sidebar-name-color: #A6192E!important;
-    --blockquote-border-color: #A6192E!important;
-    --sidebar-nav-link-color--active: #A6192E!important;
-    --sidebar-nav-link-border-color--active: #A6192E!important;
-    --sidebar-name-margin: 1.5rem -.2rem!important;
-    --sidebar-nav-link-font-weight--active: bold!important;
-    --link-color: #A6192E!important;
-    --pagination-title-color: #A6192E!important;
+    --theme-color: #CC0633;
+    --link-color: #CC0633;
+    --link-color-hover: var(--link-color);
+    --link-underline-color: #CC0633;
+    --link-underline-thickness: auto;
+    --link-underline-thickness-hover: var(--link-underline-thickness);
+    --blockquote-border-color: #757B7F;
+}
+*/
+
+/* Dark mode colours to match SFU branding visual styling for use with light + dark theme (uncomment to use) */
+/*
+@media (prefers-color-scheme: dark) {
+:root {
+    --theme-color: #EA7688;
+    --link-color: #EA7688;
+    --link-color-hover: var(--link-color);
+    --link-underline-color: #EA7688;
+    --link-underline-thickness: auto;
+    --link-underline-thickness-hover: var(--link-underline-thickness);
+    --blockquote-border-color: #757B7F;
+    }
 }
 */
 
@@ -41,16 +55,14 @@ body .markdown-section {
 /* Link colors to match visual styling of Moodle LMS (uncomment to use) */
 /*
 :root {
-    --navbar-root-color--active: #0F6CBF!important;
-    --blockquote-border-color: #0F6CBF!important;
-    --sidebar-name-color: #0F6CBF!important;
-    --sidebar-nav-link-color--active: #0F6CBF!important;
-    --sidebar-nav-link-border-color--active: #0F6CBF!important;
-    --link-color: #0F6CBF!important;
-    --link-color--hover: #03005D!important;
-    --link-text-decoration: none!important;
-    --link-text-decoration--hover: underline!important;
-    --pagination-title-color: #0F6CBF!important;
+    --theme-color: #0F6CBF;
+    --link-color: #0F6CBF;
+    --link-color-hover: var(--link-color);
+    --link-underline-color: #0F6CBF;
+    --link-underline-thickness: 0px;
+    --link-underline-color-hover: #0F6CBF;
+    --link-underline-thickness-hover: auto;
+    --blockquote-border-color: #0F6CBF;
 }
 */
 
@@ -68,12 +80,13 @@ body .markdown-section {
 /* Link colors to match visual styling of Sakai LMS (uncomment to use) */
 /*
 :root {
-    --navbar-root-color--active: #0B1660!important;
-    --blockquote-border-color: #0B1660!important;
-    --sidebar-name-color: #0B1660!important;
-    --sidebar-nav-link-color--active: #0B1660!important;
-    --sidebar-nav-link-border-color--active: #0B1660!important;
-    --link-color: #0B1660!important;
-    --pagination-title-color: #0B1660!important;
+    --theme-color: #0B1660;
+    --link-color: #0B1660;
+    --link-color-hover: var(--link-color);
+    --link-underline-color: #0B1660;
+    --link-underline-thickness: 0px;
+    --link-underline-color-hover: #0B1660;
+    --link-underline-thickness-hover: auto;
+    --blockquote-border-color: #0B1660;
 }
 */

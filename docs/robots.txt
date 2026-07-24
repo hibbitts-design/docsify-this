@@ -1,5 +1,2 @@
-User-agent: * 
-Disallow: /*?*
-
-Sitemap: https://docsify-this.net/sitemap.xml
-LLM-Context: https://docsify-this.net/llms.txt
+User-agent: *
+Disallow: /

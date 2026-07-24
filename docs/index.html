@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
   <title>Docsify-This | Instantly Publish Markdown Files as Web Pages</title>
   <meta name="description"
     content="Docsify-This makes it easy to start turning online Markdown files into shareable web pages, embeddable content, and presentation-friendly displays. Great for documentation, course materials, technical writing, and lightweight publishing. Open-source and setup-free — just write, share, and future-proof your content.">
@@ -13,7 +14,7 @@
   <meta property="og:title" content="Docsify-This" />
   <meta property="og:description" content="Publish and Style Online Markdown Files Instantly." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://docsify-this.net" />
+  <meta property="og:url" content="https://docsify-this.net?v=2" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@hibbittsdesign" />
@@ -24,107 +25,55 @@
 
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 
+  <!-- Preload Default Source Sans 3 Fonts -->
+  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-italic.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-600.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-600italic.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-700.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-700italic.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+
   <!-- Stylesheets -->
 
-  <!-- Docsify Themeable current release -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
-  <!-- <link rel="stylesheet" href="assets/vendor/themeable/themes/theme-simple.css"> -->
+  <!-- Core Theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/themes/core.min.css" />
+  <!-- <link rel="stylesheet" href="assets/vendor/docsify/themes/core.min.css" /> -->
 
-  <!-- Docsify Themeable "develop" branch preview files -->
-  <!-- <link rel="stylesheet" href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css"> -->
-  <link rel="stylesheet" href="assets/vendor/themeable/themes/preview/theme-simple.css">
+  <!-- Core Dark (add-on) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/themes/addons/core-dark.min.css"
+    data-sheet="dark-mode" disabled />
+  <!-- <link rel="stylesheet" href="assets/vendor/docsify/themes/addons/core-dark.min.css" data-sheet="dark-mode" disabled /> -->
 
-  <!-- Docsify Themeable current release -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css"> -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/vendor/themeable/themes/theme-simple-dark.css"> -->
+  <!-- Core Dark (add-on) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/themes/addons/core-dark.min.css"
+    media="(prefers-color-scheme: dark)" data-sheet="dark-mode-auto" />
+  <!-- <link rel="stylesheet" href="assets/vendor/docsify/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)"
+    data-sheet="dark-mode-auto" /> -->
 
-  <!-- Docsify Themeable "develop" branch preview files -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)"
-    href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css">-->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)"
-    href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple-dark.css">-->
-
-  <link rel="stylesheet" href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode"
-    disabled />
-
-  <link rel="stylesheet" media="(prefers-color-scheme: dark)"
-    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css" data-sheet="dark-mode-auto" />
-
-  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/docsify-this-v2.css">
   <link rel="stylesheet" href="assets/css/print.css" media="print">
+  <link rel="stylesheet" href="assets/css/docsify-v5-core.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
 
   <!-- Coloris -->
   <link rel="stylesheet" href="assets/vendor/coloris/coloris.min.css" />
   <script src="assets/vendor/coloris/coloris.min.js"></script>
 
-  <style>
-    /* Override Sidebar initial visibility via CSS for delayed Markdown page load */
-    #__sidebar:not(.loaded),
-    .sidebar-toggle:not(.loaded) {
-      visibility: hidden;
-      opacity: 0;
-    }
-
-    :root {
-      --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-
-      --base-line-height: 1.4;
-      --base-font-size: 18px;
-
-      --cover-max-width: 45em;
-      --content-max-width: 910px;
-
-      --heading-h2-border-style: none;
-      --heading-h1-margin: 1rem 0rem -0.5rem 0rem;
-      --heading-h2-margin: 1rem 0rem -1.5rem 0rem;
-      --heading-h3-margin: 1rem 0rem -.5rem 0rem;
-      --heading-h4-margin: 1rem 0rem -.5rem 0rem;
-      --heading-h5-margin: 1rem 0rem -.5rem 0rem;
-      --heading-h6-margin: 1rem 0rem 0rem 0rem;
-      --heading-h1-font-size: 1.60rem;
-      --heading-h2-font-size: 1.40rem;
-      --heading-h3-font-size: 1.20rem;
-      --heading-h4-font-size: 1.15rem;
-      --heading-h5-font-size: 1.1rem;
-      --heading-h6-font-size: 1rem;
-      --heading-h1-font-weight: 400;
-      --heading-h2-font-weight: 400;
-      --heading-h3-font-weight: 400;
-      --heading-h4-font-weight: 400;
-      --heading-h5-font-weight: 400;
-      --heading-h6-font-weight: 400;
-
-      --navbar-root-color--active: #0374B5;
-      --navbar-root-margin: 0 0 0 .8em;
-
-      --blockquote-border-color: #757b7f;
-
-      --sidebar-background: #FCFCFC;
-      --sidebar-border-color: #F0F0F0;
-      --sidebar-toggle-background: #F0F0F0;
-      --sidebar-name-color: #0374B5;
-      --sidebar-name-font-weight: 600;
-      --sidebar-nav-link-color--active: #0374B5;
-      --sidebar-nav-link-border-color--active: #0374B5;
-      --sidebar-nav-link-font-weight--active: bold;
-
-      --link-color: #0374B5;
-
-      --pagination-title-color: #0374B5;
-
-      --docsifytabs-tab-color: var(--base-color);
-      --docsifytabs-tab-highlight-color: var(--link-color);
-    }
-  </style>
+  <!-- Mermaid -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
 
 </head>
 
-<body>
+<body class="sidebar-chevron-right sidebar-toggle-kebab">
   <div id="app"></div>
   <script>
-
     // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
     var gitLinkRepoURL = '';
 
@@ -143,6 +92,9 @@
     // Set footer to true to permanently show the Footer ('_footer.md)
     var footer = false;
 
+    // Set corethemestyles to true to apply the Docsify v5 core theme defaults
+    var corethemestyles = false;
+
     // Set darkmode to 'on' or 'auto' to permanently enable dark mode support
     var darkmode = false;
 
@@ -150,7 +102,7 @@
     var allowedDomains = '';
 
     // Set hedgedocInstances to contain domain names of HedgeDoc instances to enable automatic creation of needed Docsify-This URL with Web Page Builder
-    var hedgedocInstances = '';
+    var hedgedocInstances = 'demo.hedgedoc.org';
 
     // Get value from GET-parameter in URL
     // @param {array}  name        Parameter-name
@@ -199,6 +151,14 @@
       }
 
       return exists;
+    }
+
+    if (((getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true') || corethemestyles) && (getURLParameterByName('basePath'))) {
+      document.querySelectorAll('link[href*="theme.css"]').forEach(el => el.remove());
+      const body = document.body;
+      // body.classList.add('sidebar-group-box');
+    } else {
+      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
     }
 
     // DOCSIFY THIS SCRIPTS
@@ -365,6 +325,9 @@
           const cb5 = document.querySelector('#toch1');
           const cb6 = document.querySelector('#toch2');
           const cb7 = document.querySelector('#toch3');
+          // console.log (cb5.checked,cb6.checked,cb7.checked );
+          // console.log ( (!(cb5.checked) && (cb6.checked) && (cb7.checked)) );
+          // console.log ( ((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false)) === true );
 
           if (URLparms.includes("&toc=true") || URLparms.includes("&toc-narrow=true")) {
             if (((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false))) {
@@ -415,8 +378,16 @@
             }
           }
 
+          const cb19 = document.querySelector('#docsifyV5coretheme');
+          if (cb19.checked) {
+            if (!url.includes('core-theme-styles=')) {
+              var URLparms = URLparms + `&core-theme-styles=true`;
+            }
+          }
+
           var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
-          if (!(getFontFamily == "default")) {
+          console.log(getFontFamily);
+          if (!(getFontFamily == "Source%20Sans%203,Helvetica%20Neue,sans-serif")) {
             if (!url.includes('font-family=')) {
               var URLparms = URLparms + `&font-family=` + getFontFamily;
             }
@@ -426,32 +397,38 @@
           if (getFontSize === '' || isNaN(getFontSize)) {
             getFontSize = '18';
           }
-          if (getFontSize != "18" && !url.includes('font-size=')) {
-            var URLparms = URLparms + `&font-size=` + getFontSize + 'px';
+          if (getFontSize != "18" && !document.getElementById('fontsize').disabled) {
+            if (!url.includes('font-size=')) {
+              var URLparms = URLparms + `&font-size=` + getFontSize + 'px';
+            }
           }
 
           var getLineHeight = document.getElementById('lineheight').value;
           if (getLineHeight === '' || isNaN(getLineHeight)) {
             getLineHeight = '1.4';
           }
-          if (getLineHeight != "1.4" && !url.includes('line-height=')) {
-            var URLparms = URLparms + `&line-height=` + getLineHeight;
+          if (getLineHeight != "1.4" && !document.getElementById('lineheight').disabled) {
+            if (!url.includes('line-height=')) {
+              var URLparms = URLparms + `&line-height=` + getLineHeight;
+            }
           }
 
           var getColor = document.getElementById("linkcolor");
-          var hexCode = getColor.value;
-          if (hexCode === '') {
-            hexCode = '#0374B5';
-            document.getElementById("linkcolor").value = hexCode;
-            document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
-            document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
-          }
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "0374B5")) {
-            if (!url.includes('link-color=')) {
-              URLparms = URLparms + `&link-color=` + hexCode;
+          if (!(document.getElementById('linkcolor').disabled)) {
+            var hexCode = getColor.value;
+            if (hexCode === '') {
+              hexCode = '#0374B5';
+              document.getElementById("linkcolor").value = hexCode;
+              document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
+              document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+            }
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "0374B5")) {
+              if (!url.includes('link-color=')) {
+                URLparms = URLparms + `&link-color=` + hexCode;
+              }
             }
           }
 
@@ -554,25 +531,27 @@
 
           var getlinktextdecoration = document.getElementById("linktextdecoration");
           var linktextdecoration = getlinktextdecoration.value;
-          if (!(linktextdecoration === 'underline')) {
+          if ((!(linktextdecoration === 'underline')) && (!(document.getElementById('linktextdecoration').disabled))) {
             if (!url.includes('link-text-decoration=')) {
               var URLparms = URLparms + `&link-text-decoration=` + linktextdecoration;
             }
           }
 
           var getColor = document.getElementById("linkhovercolor");
-          var hexCode = getColor.value;
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "")) {
-            if (!url.includes('link-color-hover=')) {
-              var URLparms = URLparms + `&link-color-hover=` + hexCode;
+          if (!(document.getElementById('linkhovercolor').disabled)) {
+            var hexCode = getColor.value;
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "")) {
+              if (!url.includes('link-color-hover=')) {
+                var URLparms = URLparms + `&link-color-hover=` + hexCode;
+              }
             }
           }
 
           var linkhovertextdecoration = document.getElementById("linkhovertextdecoration").value;
-          if (!(linkhovertextdecoration === 'none')) {
+          if ((!(linkhovertextdecoration === 'none')) && (!(document.getElementById('linkhovertextdecoration').disabled))) {
             if (!url.includes('link-text-decoration-hover=')) {
               var URLparms = URLparms + `&link-text-decoration-hover=` + linkhovertextdecoration;
             }
@@ -600,7 +579,7 @@
           }
 
           var getheaderweight = document.getElementById('headerweight').value;
-          if (!(getheaderweight == "400")) {
+          if ((!(getheaderweight == "600")) && (!(document.getElementById('fontfamily').disabled))) {
             if (!url.includes('header-weight=')) {
               var URLparms = URLparms + `&header-weight=` + getheaderweight
             }
@@ -629,7 +608,7 @@
 
           var getmaxwidthvalue = document.getElementById('maxWidthValue').value;
           var getmaxwidthvalueunit = document.getElementById('maxWidthValueUnit').value;
-          if (!((getmaxwidthvalue == "910") && (getmaxwidthvalueunit == "px"))) {
+          if (!((getmaxwidthvalue == "840") && (getmaxwidthvalueunit == "px"))) {
             if (!url.includes('max-width=')) {
               if (getmaxwidthvalueunit == "%") {
                 getmaxwidthvalueunit = ''
@@ -639,19 +618,21 @@
           }
 
           var getColor = document.getElementById("coverpagecolor");
-          var hexCode = getColor.value;
-          if (hexCode === '') {
-            hexCode = '#6C8A9A';
-            document.getElementById("coverpagecolor").value = hexCode;
-            document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
-            document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
-          }
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "6C8A9A")) {
-            if (!url.includes('coverpage-color=')) {
-              var URLparms = URLparms + `&coverpage-color=` + hexCode;
+          if (!(document.getElementById('coverpagecolor').disabled)) {
+            var hexCode = getColor.value;
+            if (hexCode === '') {
+              hexCode = '#C1E1F6';
+              document.getElementById("coverpagecolor").value = hexCode;
+              document.getElementById("coverpagecolorpreview").style.borderColor = '#C1E1F6';
+              document.getElementById("coverpagecolorpreview").style.backgroundColor = '#C1E1F6';
+            }
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "C1E1F6")) {
+              if (!url.includes('coverpage-color=')) {
+                var URLparms = URLparms + `&coverpage-color=` + hexCode;
+              }
             }
           }
 
@@ -663,47 +644,53 @@
           }
 
           var getColor = document.getElementById("linkcolordarkmode");
-          var hexCode = getColor.value;
-          if (hexCode === '') {
-            hexCode = '#1BA1EE';
-            document.getElementById("linkcolordarkmode").value = hexCode;
-            document.getElementById("linkcolordarkmodepreview").style.borderColor = '#1BA1EE';
-            document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#1BA1EE';
-          }
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "1BA1EE")) {
-            if (!url.includes('link-color-dark-mode=')) {
-              var URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
+          if (!(document.getElementById('linkcolordarkmode').disabled)) {
+            var hexCode = getColor.value;
+            if (hexCode === '') {
+              hexCode = '#1BA1EE';
+              document.getElementById("linkcolordarkmode").value = hexCode;
+              document.getElementById("linkcolordarkmodepreview").style.borderColor = '#1BA1EE';
+              document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#1BA1EE';
+            }
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "1BA1EE")) {
+              if (!url.includes('link-color-dark-mode=')) {
+                var URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
+              }
             }
           }
 
           var getColor = document.getElementById("linkhovercolordarkmode");
-          var hexCode = getColor.value;
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "")) {
-            if (!url.includes('link-color-hover-dark-mode=')) {
-              var URLparms = URLparms + `&link-color-hover-dark-mode=` + hexCode;
+          if (!(document.getElementById('linkhovercolordarkmode').disabled)) {
+            var hexCode = getColor.value;
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "")) {
+              if (!url.includes('link-color-hover-dark-mode=')) {
+                var URLparms = URLparms + `&link-color-hover-dark-mode=` + hexCode;
+              }
             }
           }
 
           var getColor = document.getElementById("coverpagecolordarkmode");
-          var hexCode = getColor.value;
-          if (hexCode === '') {
-            hexCode = '#262D30';
-            document.getElementById("coverpagecolordarkmode").value = hexCode;
-            document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
-            document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
-          }
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "262D30")) {
-            if (!url.includes('coverpage-color-dark-mode=')) {
-              var URLparms = URLparms + `&coverpage-color-dark-mode=` + hexCode;
+          if (!(document.getElementById('coverpagecolordarkmode').disabled)) {
+            var hexCode = getColor.value;
+            if (hexCode === '') {
+              hexCode = '#20587D';
+              document.getElementById("coverpagecolordarkmode").value = hexCode;
+              document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#20587D';
+              document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#20587D';
+            }
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "20587D")) {
+              if (!url.includes('coverpage-color-dark-mode=')) {
+                var URLparms = URLparms + `&coverpage-color-dark-mode=` + hexCode;
+              }
             }
           }
 
@@ -762,7 +749,7 @@
 
       // Set appropriate default for each unit
       const defaults = {
-        'px': '910',
+        'px': '840',
         '%': '100',
         'ch': '65'
       };
@@ -783,7 +770,7 @@
 
     function selectText() {
       const input = document.getElementById('docsifythisurlfield');
-      input.focus();
+      input.focus({ preventScroll: true });
       input.select();
     }
 
@@ -837,12 +824,26 @@
     }
 
     function restoreAllDefaults() {
+      (document.getElementById('fontfamily') || {}).disabled = false;
+      (document.getElementById('fontsize') || {}).disabled = false;
+      (document.getElementById('lineheight') || {}).disabled = false;
+      (document.getElementById('linkcolor') || {}).disabled = false;
+      (document.getElementById('headerweight') || {}).disabled = false;
+      (document.getElementById('maxWidthValue') || {}).disabled = false;
+      (document.getElementById('maxWidthValueUnit') || {}).disabled = false;
+      (document.getElementById('linkcolordarkmode') || {}).disabled = false;
+      (document.getElementById('linkhovercolordarkmode') || {}).disabled = false;
+      (document.getElementById('linktextdecoration') || {}).disabled = false;
+      (document.getElementById('linkhovercolor') || {}).disabled = false;
+      (document.getElementById('linkhovertextdecoration') || {}).disabled = false;
+      (document.getElementById('coverpagecolor') || {}).disabled = false;
+      (document.getElementById('coverpagecolordarkmode') || {}).disabled = false;
       document.getElementById("stylecontentonly").checked = true;
       document.getElementById("styletoc").checked = false;
       document.getElementById("stylesidebar").checked = false;
       document.getElementById("browserTabTitle").value = 'Published by Docsify-This';
       document.getElementById("editCheck").checked = false;
-      document.getElementById("fontfamily").value = 'default';
+      document.getElementById("fontfamily").value = 'Source%20Sans%203,Helvetica%20Neue,sans-serif';
       document.getElementById("fontsize").value = '18';
       document.getElementById("lineheight").value = '1.4';
       document.getElementById("linkcolor").value = '#0374B5';
@@ -860,6 +861,7 @@
       document.getElementById("spotlight").checked = false;
       document.getElementById("hideCredits").checked = false;
       document.getElementById("hypothesisenable").checked = false;
+      document.getElementById("docsifyV5coretheme").checked = false;
       document.getElementById("loadfavicon").checked = false;
       document.getElementById("loadcoverpage").checked = false;
       document.getElementById("loadcustomsidebar").checked = false;
@@ -871,21 +873,20 @@
       document.getElementById("subMaxLevel").value = 2;
       document.getElementById("backLink").value = '';
       document.getElementById("pageTitle").value = '';
-      document.getElementById("linktextdecoration").value = 'underline';
+      document.getElementById("linkhovertextdecoration").value = 'none';
       document.getElementById("linkhovercolor").value = '';
       document.getElementById("linkhovercolorpreview").style.border = "4px solid transparent";
       document.getElementById("linkhovercolorpreview").style.backgroundColor = "transparent";
-      document.getElementById("linkhovertextdecoration").value = 'none';
       document.getElementById("pagination").checked = false;
       document.getElementById("mergeNavbar").checked = false;
-      document.getElementById("headerweight").value = '400';
+      document.getElementById("headerweight").value = 600;
       document.getElementById("zoomimages").checked = false;
       document.getElementById("closesidebar").checked = false;
-      document.getElementById("maxWidthValue").value = 910;
+      document.getElementById("maxWidthValue").value = 840;
       document.getElementById("maxWidthValueUnit").value = 'px';
-      document.getElementById("coverpagecolor").value = '#6C8A9A';
-      document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
-      document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
+      document.getElementById("coverpagecolor").value = '#C1E1F6';
+      document.getElementById("coverpagecolorpreview").style.borderColor = '#C1E1F6';
+      document.getElementById("coverpagecolorpreview").style.backgroundColor = '#C1E1F6';
       document.getElementById("enableDarkmode").value = 'false';
       document.getElementById("linkcolordarkmode").value = '#1BA1EE';
       document.getElementById("linkcolordarkmodepreview").style.borderColor = '#1BA1EE';
@@ -893,25 +894,17 @@
       document.getElementById("linkhovercolordarkmode").value = '';
       document.getElementById("linkhovercolordarkmodepreview").style.border = "4px solid transparent";
       document.getElementById("linkhovercolordarkmodepreview").style.backgroundColor = "transparent";
-      document.getElementById("coverpagecolordarkmode").value = '#262D30';
-      document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
-      document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
+      document.getElementById("coverpagecolordarkmode").value = '#20587D';
+      document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#20587D';
+      document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#20587D';
       setupFontPreview();
     }
 
     function setColorProperties(color) {
-      document.documentElement.style.setProperty('--navbar-root-color--active', color);
-      document.documentElement.style.setProperty('--blockquote-border-color', color);
-      document.documentElement.style.setProperty('--sidebar-name-color', color);
-      document.documentElement.style.setProperty('--sidebar-nav-link-color--active', color);
-      document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', color);
-      document.documentElement.style.setProperty('--link-color', color);
-      document.documentElement.style.setProperty('--pagination-title-color', color);
-      document.documentElement.style.setProperty('--cover-link-color', color);
-      document.documentElement.style.setProperty('--cover-button-primary-background', color);
-      document.documentElement.style.setProperty('--cover-button-primary-border', '1px solid ' + color);
-      document.documentElement.style.setProperty('--cover-button-color', color);
-      document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + color);
+      document.documentElement.style.setProperty('--theme-color', color);
+      if ((getURLParameterByName(['link-color', 'linkColor']) || getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'])) || (!(getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true')) || (!corethemestyles)) {
+        document.documentElement.style.setProperty('--link-color', color);
+      }
     }
 
     function updateThemeModeLinkColors() {
@@ -920,63 +913,80 @@
 
       if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && darkModeEnabled === 'auto') || darkModeEnabled === 'true' || darkModeEnabled === 'on') {
         // dark mode
-        document.documentElement.style.setProperty('--sidebar-background', 'var(--mono-shade1)');
-        document.documentElement.style.setProperty('--sidebar-border-color', 'var(--mono-tint1');
-        document.documentElement.style.setProperty('--sidebar-toggle-background', 'var(--mono-tint1');
         const linkColorDarkMode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
+        const themeColorDarkMode = getURLParameterByName(['theme-color-dark-mode', 'themeColorDarkMode'], null, null, window.location.href, true);
 
-        if (linkColorDarkMode !== false) {
-          setColorProperties('#' + linkColorDarkMode);
-          document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
+        if ((linkColorDarkMode !== false) || (themeColorDarkMode !== false)) {
+          if (themeColorDarkMode !== false) {
+            setColorProperties('#' + themeColorDarkMode);
+          }
+          if ((linkColorDarkMode !== false) && ((!getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true') || (!corethemestyles))) {
+            setColorProperties('#' + linkColorDarkMode);
+            document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
+          }
         } else {
           const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
+          const themeColor = getURLParameterByName(['theme-color', 'themeColor'], null, null, window.location.href, true);
 
+          if (themeColor !== false) {
+            setColorProperties('#' + themeColor);
+          }
           if (linkColor !== false) {
             setColorProperties('#' + linkColor);
           } else {
-            setColorProperties('#1BA1EE');
-            document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
+            if (!(getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true') && !(corethemestyles)) {
+              setColorProperties('#1BA1EE');
+              document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
+            }
           }
         }
 
         const linkHoverColorDarkMode = getURLParameterByName(['link-color-hover-dark-mode', 'linkColorHoverDarkMode'], null, null, window.location.href, true);
         if (linkHoverColorDarkMode !== false) {
-          document.documentElement.style.setProperty('--link-color--hover', '#' + linkHoverColorDarkMode);
+          document.documentElement.style.setProperty('--link-color-hover', '#' + linkHoverColorDarkMode);
+          document.documentElement.style.setProperty('--link-underline-color-hover', '#' + linkHoverColorDarkMode);
         }
         const coverPageColorDarkMode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
 
         if (coverPageColorDarkMode !== false) {
-          document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColorDarkMode);
+          document.documentElement.style.setProperty('--cover-bg', '#' + coverPageColorDarkMode);
         } else {
-          document.documentElement.style.setProperty('--cover-background-color', '#262d30');
+          document.documentElement.style.setProperty('--cover-bg', '#20587D');
         }
       } else {
         // light mode
-        document.documentElement.style.setProperty('--sidebar-background', '#FCFCFC');
-        document.documentElement.style.setProperty('--sidebar-border-color', '#F0F0F0');
-        document.documentElement.style.setProperty('--sidebar-toggle-background', '#F0F0F0');
         const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
+        const themeColor = getURLParameterByName(['theme-color', 'themeColor'], null, null, window.location.href, true);
 
         document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
 
-        if (linkColor !== false) {
-          setColorProperties('#' + linkColor);
-
+        if ((themeColor !== false) || (linkColor !== false)) {
+          if (themeColor !== false) {
+            setColorProperties('#' + themeColor);
+          }
+          if (linkColor !== false) {
+            setColorProperties('#' + linkColor);
+          }
         } else {
-          setColorProperties('#0374B5');
-          document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
+          if (!(getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true') || (!(corethemestyles))) {
+            setColorProperties('#0374B5');
+            document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
+          }
         }
 
         const linkHoverColor = getURLParameterByName(['link-color-hover', 'linkColorHover'], null, null, window.location.href, true);
         if (linkHoverColor !== false) {
-          document.documentElement.style.setProperty('--link-color--hover', '#' + linkHoverColor);
+          document.documentElement.style.setProperty('--link-color-hover', '#' + linkHoverColor);
+          document.documentElement.style.setProperty('--link-underline-color-hover', '#' + linkHoverColor);
         }
         const coverPageColor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
 
         if (coverPageColor !== false) {
-          document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColor);
+          document.documentElement.style.setProperty('--cover-bg', '#' + coverPageColor);
         } else {
-          document.documentElement.style.setProperty('--cover-background-color', '#6c8a9a');
+          if (!(getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true') || (!(corethemestyles))) {
+            document.documentElement.style.setProperty('--cover-bg', '#C1E1F6');
+          }
         }
 
       }
@@ -995,7 +1005,7 @@
 
     function getAllowedFileExtensions() {
       // Return list of supported file extensions
-      return ".md,.markdown";
+      return ".md,.markdown,.adoc";
     }
 
     function displayAllowedFileExtensions() {
@@ -1032,16 +1042,24 @@
     }
 
     function setFavicon(favImage) {
+      // console.log(favImage);
       let headTitle = document.querySelector('head');
       let setFavicon = document.createElement('link');
       setFavicon.setAttribute('rel', 'shortcut icon');
       setFavicon.setAttribute('href', favImage);
+      // console.log(setFavicon);
       headTitle.appendChild(setFavicon);
       let appleTouchIcon = document.createElement('link');
       appleTouchIcon.setAttribute('rel', 'apple-touch-icon');
       appleTouchIcon.setAttribute('href', favImage);
       headTitle.appendChild(appleTouchIcon);
+      // console.log(appleTouchIcon);
     }
+
+    // console.log (getURLParameterByName(['standalone', 'embedded']));
+    // console.log (!(getURLParameterByName('navbar')));
+    // console.log (standalone);
+    // console.log (navbar);
 
     // Ensure the link for displayed site name is correct after scrolling to id element
     // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
@@ -1066,6 +1084,43 @@
       attributeFilter: ['href'] // filter to only observe changes to 'href' attributes
     });
 
+    function disableEnableThemeStyleOptions() {
+      toggleElementState('fontfamily');
+      toggleElementState('fontsize');
+      toggleElementState('lineheight');
+      toggleElementState('linkcolor');
+      toggleElementState('headerweight');
+      toggleElementState('maxWidthValue');
+      toggleElementState('maxWidthValueUnit');
+      toggleElementState('linkcolordarkmode');
+      toggleElementState('linkhovercolordarkmode');
+      toggleElementState('linktextdecoration');
+      toggleElementState('linkhovercolor');
+      toggleElementState('linkhovertextdecoration');
+      toggleElementState('coverpagecolor');
+      toggleElementState('coverpagecolordarkmode');
+    }
+
+    // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+    const updateEnableThemeStyleOptions = disableEnableThemeStyleOptions();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const checkbox = document.getElementById('docsifyV5coretheme');
+      if (checkbox) {
+        checkbox.addEventListener('change', disableEnableThemeStyleOptions);
+      }
+    });
+
+    function toggleElementState(elementId) {
+      const element = document.getElementById(elementId);
+      if (element) {
+        if (typeof element.disabled !== 'undefined') {
+          element.disabled = !element.disabled;
+          element.setAttribute('aria-disabled', element.disabled);
+        }
+      }
+    }
+
     /* Code generated/assisted by Anthropic Claude AI */
     // Font preview support
     function setupFontPreview() {
@@ -1084,7 +1139,7 @@
 
       // Map values from your <option> to valid CSS font-family strings
       const fontMap = {
-        'default': '"Source Sans Pro", sans-serif',
+        'Source%20Sans%203,Helvetica%20Neue,sans-serif': '"Source Sans 3", sans-serif',
         'Arial,sans-serif': 'Arial, sans-serif',
         'Helvetica,sans-serif': 'Helvetica, sans-serif',
         'Helvetica%20Neue,Helvetica,Arial,sans-serif': '"Helvetica Neue", Helvetica, Arial, sans-serif',
@@ -1103,7 +1158,7 @@
       function updateFontPreview() {
         const selectedValue = fontSelect.value;
         // Check if the selectedValue exists in fontMap, otherwise use default
-        const fontFamily = fontMap[selectedValue] || fontMap['Source%20Sans%20Pro'];
+        const fontFamily = fontMap[selectedValue] || fontMap['Source%20Sans%203'];
         fontPreview.style.fontFamily = fontFamily;
       }
       // Add event listener for when the selection changes
@@ -1117,6 +1172,10 @@
     document.addEventListener('DOMContentLoaded', setupFontPreview);
 
     // Docsify
+
+    let num = 0;
+    mermaid.initialize({ startOnLoad: false });
+
     window.$docsify = {
       // GENERAL SETTINGS
       // -----------------------------------------------------------------
@@ -1127,10 +1186,14 @@
       // coverpage      : 'coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || getURLParameterByName('basePath')),
       loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) || !(getURLParameterByName('navbar')) || standalone || !navbar || false),
+      mergeNavbar: false,
       externalLinkTarget: '_top',
       loadFooter: (getURLParameterByName('footer') || footer || false),
       ext: getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true)),
       executeScript: true,
+      sidebarExpandCollapse: {
+        accordion: (getURLParameterByName(['sidebar-collapse', 'sidebarCollapse']) || true),
+      },
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
@@ -1152,8 +1215,11 @@
         noData: 'No matches found.',
         // Headline depth, 1 - 6
         depth: 6,
-        namespace: 'docsify-this',
+        namespace: "docsify-this-" + Date.now(),
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+        insertBefore: (getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme']) || corethemestyles)
+          ? '.app-name'
+          : '.sidebar-nav'
       },
 
       imgGrid: {
@@ -1212,6 +1278,22 @@
         ]
       },
 
+      markdown: {
+        renderer: {
+          code({ text, lang }) {
+            if (lang === 'mermaid') {
+              return /* html */ `
+                <div class="mermaid">${mermaid.render(
+                'mermaid-svg-' + num++,
+                text,
+              )}</div>
+              `;
+            }
+            return this.origin.code.apply(this, arguments);
+          },
+        },
+      },
+
       // CUSTOM PLUGINS
       // -----------------------------------------------------------------
       plugins: [
@@ -1265,6 +1347,7 @@
               if (!fileExt) {
                 fileExt = getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true));
               }
+              // console.log(fileExt);
 
               /* Javascript generated/assisted by Anthropic Claude AI */
               // PATCH START: Workaround for Docsify upstream bug - relative path handling in sub-documents
@@ -1287,7 +1370,7 @@
               }
               // PATCH END
 
-             for (const link of links) {
+              for (const link of links) {
                 const href = link.getAttribute('href');
                 // Find any local Markdown file links
                 if (href?.startsWith('#')) {
@@ -1385,6 +1468,7 @@
                 if (((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && (darkModeEnabled === 'auto') || darkModeEnabled === 'true') || darkModeEnabled === 'on' ||
                   darkModeEnabled === true)) {
                   // dark mode
+                  // console.log("dark");
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
                       embed.setAttribute('data-card-theme', 'dark');
@@ -1392,11 +1476,14 @@
                   }
                 } else {
                   // light mode
+                  // console.log("light");
                   embeds.forEach(embed => {
                     embed.setAttribute('data-card-theme', 'light');
                   });
                 }
                 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+                  // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
+                  // console.log(e.matches);            
                   if (enabledarkmode || darkmode) {
                     document.location.reload();
                   }
@@ -1499,6 +1586,9 @@
                 }
               }
 
+              //console.log(url);
+              //console.log(gitLinkRepoURL);
+
               var editlinktextparm = getURLParameterByName(['edit-link-text', 'editLinkText'], null, null, window.location.href, true);
               if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
                 editlinktextparm = editlinktextparm.replaceAll('%20', ' ');
@@ -1569,25 +1659,27 @@
           hook.doneEach(function () {
             if (window.$docsify['basePath']) {
 
-              // Restore Sidebar visibility (no DOMContentLoaded needed)
-              const sidebar = document.getElementById('__sidebar');
-              const toggle = document.querySelector('.sidebar-toggle');
-
-              if (sidebar) sidebar.classList.add('loaded');
-              if (toggle) toggle.classList.add('loaded');
-
               const docHead = document.head;
               const docBody = document.body;
 
               // Close Sidebar - handle page-to-page navigation if URL parameter is present
               if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
                 const sidebarToggle = document.querySelector('.sidebar-toggle');
+                const sidebar = document.querySelector('.sidebar');
 
-                console.log(window.innerWidth);
-                if ((sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'true' && window.innerWidth >= 768) || (sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'false' && window.innerWidth < 768)) {
+                // Only close if sidebar has 'show' class (is visible)
+                if (sidebar && sidebar.classList.contains('show') && sidebarToggle && window.innerWidth > 640) {
                   sidebarToggle.click();
                 }
               }
+
+              // Remove page-link classes (chevrons) for external links
+              document.querySelectorAll('.sidebar a.page-link[href^="http"]').forEach(link => {
+                // Check if it's truly external (not your domain)
+                if (!link.href.includes(window.location.hostname)) {
+                  link.classList.remove('page-link');
+                }
+              });
 
               /* Javascript generated/assisted by Anthropic Claude AI */
               // Function to resolve image paths
@@ -1600,6 +1692,38 @@
               document.querySelectorAll('img[data-src]').forEach(img => {
                 img.src = window.resolveImagePath(img.dataset.src);
               });
+
+              // Code generated/assisted by Anthropic Claude AI
+              // Get core theme classes from URL and apply to body
+              const themeClasses = getURLParameterByName('theme-classes', null, null, window.location.href, true);
+
+              if (themeClasses) {
+                // Preserve important system classes
+                const importantClasses = [];
+                if (document.body.classList.contains('ready')) {
+                  importantClasses.push('ready');
+                }
+                if (document.body.classList.contains('sticky')) {
+                  importantClasses.push('sticky');
+                }
+
+                // Clear all classes
+                document.body.className = '';
+
+                // Re-add important classes first
+                for (let importantClass of importantClasses) {
+                  document.body.classList.add(importantClass);
+                }
+
+                // Add theme classes
+                const newClasses = themeClasses.split(',');
+                for (let className of newClasses) {
+                  const cleanClassName = className.trim();
+                  if (cleanClassName) {
+                    document.body.classList.add(cleanClassName);
+                  }
+                }
+              }
 
               // Embedly script
               let hasEmbedly = document.getElementsByClassName('embedly-card');
@@ -1622,6 +1746,17 @@
                     editCSS.classList.add('sidebar-app-name');
                     docBody.appendChild(editCSS);
                   }
+                }
+              } else {
+                if (!docBody.querySelector('style.sidebar-nav-adjusted')) {
+                  let editCSS = document.createElement('style')
+                  if (docBody.querySelector('.app-nav')) {
+                    editCSS.innerHTML = ".sidebar {padding-top: 28px;}";
+                  } else {
+                    editCSS.innerHTML = ".sidebar {padding-top: 8px;}";
+                  }
+                  editCSS.classList.add('style.sidebar-nav-adjusted');
+                  docBody.appendChild(editCSS);
                 }
               }
 
@@ -1716,12 +1851,20 @@
           hook.ready(function () {
 
             // Original code by @rizdaprasetya and further improved with the assistance of ChatGPT, an AI language model by OpenAI
+            // true = show debug log
+            let dd = false;
             let TARGET_QUERY = 'id';
-            let SCROLL_DELAY = 750; // in milliseconds
+            let SCROLL_DELAY = 500; // in milliseconds
+            let EXCLUDED_PARENT_CLASS = 'cover'; // Class of parent to exclude
             let location = window.location;
 
+            dd && console.log('custom scroll plugin called!');
+
             // Get topMargin from Docsify config or use default
-            let topMargin = (window.$docsify && window.$docsify.topMargin) || 0;
+            // let topMargin = (window.$docsify && window.$docsify.topMargin) || 0;
+            let topMargin = parseInt(getComputedStyle(document.documentElement)
+              .getPropertyValue('--scroll-padding-top')) || 0;
+            dd && console.log('topMargin setting:', topMargin);
 
             // Build the current URL without the hash
             let currentUrlWithoutHash = new URL(
@@ -1739,39 +1882,47 @@
 
             // Check if the URL contains the 'id' query parameter in either search or hash
             if (isUrlHasIdQuery || isHashHasIdQuery) {
+              dd && console.log('url or hash has id, will scroll to element');
 
               // Get the 'id' from either search or hash
               let urlId = isUrlHasIdQuery ? urlQueryParam.get(TARGET_QUERY) : hashParams.get(TARGET_QUERY);
 
               // Delay the scrolling to ensure everything is loaded
               setTimeout(function () {
+                dd && console.log('will scroll now!');
                 try {
                   let targetElement = document.getElementById(urlId); // Use `getElementById` to directly reference the element
+                  dd && console.log('Target element ID:', urlId);
                   if (targetElement) {
-                    // Use requestAnimationFrame for immediate scroll to the element
-                    requestAnimationFrame(() => {
-                      // Calculate the scroll position with topMargin offset
-                      let scrollTop = 0;
-                      if ((getURLParameterByName('sidebar') === true) && (!(getURLParameterByName('topMargin')))) {
-                        scrollTop = targetElement.offsetTop;
-                      } else {
-                        scrollTop = targetElement.offsetTop - topMargin;
-                      }
+                    // Check if the target element is within an excluded parent
+                    let excludedParent = targetElement.closest('.' + EXCLUDED_PARENT_CLASS);
 
-                      // Ensure we don't scroll above the top of the page
-                      scrollTop = Math.max(0, scrollTop);
+                    if (!excludedParent) {
+                      // Use requestAnimationFrame for immediate scroll to the element
+                      requestAnimationFrame(() => {
+                        // Calculate the scroll position with topMargin offset
+                        let elementTop = targetElement.offsetTop + (targetElement.offsetParent?.offsetTop || 0);
+                        let scrollTop = elementTop - topMargin;
 
-                      // Scroll smoothly to the element's top position minus topMargin
-                      window.scrollTo({
-                        top: scrollTop,
-                        behavior: 'smooth'  // Add smooth scrolling
+                        // Ensure we don't scroll above the top of the page
+                        scrollTop = Math.max(0, scrollTop);
+
+                        dd && console.log('scrolling to position:', scrollTop, '(element top:', elementTop, '- topMargin:', topMargin, ')');
+
+                        // Scroll smoothly to the element's top position minus topMargin
+                        window.scrollTo({
+                          top: scrollTop,
+                          behavior: 'smooth'
+                        });
                       });
-                    });
+                    } else {
+                      dd && console.log('Target is within an excluded parent:', excludedParent);
+                    }
                   } else {
-                    console.log('Element not found');
+                    dd && console.log('Element not found');
                   }
                 } catch (e) {
-                  console.log('custom scroll failed', e);
+                  dd && console.log('custom scroll failed', e);
                 }
               }, SCROLL_DELAY);
             }
@@ -1790,9 +1941,10 @@
                     lastHash = currentHash;
 
                     const sidebarToggle = document.querySelector('.sidebar-toggle');
-                    console.log(window.innerWidth);
-                    // Only close if sidebar is currently expanded (visible)
-                    if ((sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'true' && window.innerWidth >= 768) || (sidebarToggle && sidebarToggle.getAttribute('aria-expanded') === 'false' && window.innerWidth < 768)) {
+                    const sidebar = document.querySelector('.sidebar');
+
+                    // Only close if sidebar has 'show' class (is visible)
+                    if (sidebar && sidebar.classList.contains('show') && sidebarToggle && window.innerWidth > 640) {
                       sidebarToggle.click();
                     }
                   }
@@ -1829,9 +1981,6 @@
               markdownFileURL = markdownFileURL.split('#')[0];
 
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
-              const urlField = document.getElementById('docsifythisurlfield');
-              urlField.value = markdownFileURL;
-              urlField.dispatchEvent(new Event('input'));
             }
 
             if (getURLParameterByName(['hide-banner', 'hideBanner']) === true) {
@@ -1972,6 +2121,11 @@
 
             if (getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true') {
               document.getElementById("hypothesisenable").checked = true;
+            }
+
+            if (getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true') {
+              document.getElementById("docsifyV5coretheme").checked = true;
+              disableEnableThemeStyleOptions();
             }
 
             backLink = getURLParameterByName(['back-link', 'backLink'], null, null, window.location.href, true);
@@ -2151,6 +2305,11 @@
     if (getURLParameterByName('basePath')) {
       const params = new URLSearchParams(window.location.search.replaceAll('&amp;', '&'));
       params.forEach((value, key) => {
+        // Skip assignment for topMargin
+        if (key === 'topMargin') {
+          return; // Skip
+        }
+
         // TODO: Parse numbers?
 
         // console.log(value, key);
@@ -2163,7 +2322,7 @@
             window.$docsify[key] = convertToBoolean(value);
           }
         } else {
-          // Handle nested properties like 'themeable.responsiveTables'
+          // Handle nested properties
           if (key.includes('.')) {
             const [parent, child] = key.split('.');
             window.$docsify[parent] = window.$docsify[parent] || {};
@@ -2215,19 +2374,17 @@
 
   </script>
 
-  <!-- Docsify current release -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script> -->
+  <!-- Docsify v5 release -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@rc/dist/docsify.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/docsify.min.js"></script>
   <!-- <script src="assets/vendor/docsify/docsify.min.js"></script> -->
-
-  <!-- Docsify v4 "develop" branch latest verified preview files -->
-  <script src="assets/vendor/docsify/preview/docsify.min.js"></script>
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
     if (window.$docsify['basePath']) {
       if (getURLParameterByName(['standalone', 'embedded']) || standalone ||
         (getURLParameterByName('sidebar') && getURLParameterByName(['max-width', 'maxWidth']))) {
-        var editCSS = document.createElement('style');
+        const root_theme = document.querySelector(':root');
         maxwidth = getURLParameterByName(['max-width', 'maxWidth'], null, null, window.location.href, true);
         if (!(maxwidth === false)) {
           // Extract numeric value and unit
@@ -2236,49 +2393,42 @@
 
           if (!isNaN(numericValue)) {
             // Handle percentage widths
-            if (unit === '%' && numericValue == 100) {
-              editCSS.innerHTML = ".markdown-section {padding-top: 0 !important; padding-left: 0; padding-right: 0;}";
-            } else if (unit === '%') {
-              if (!(getURLParameterByName('topMargin'))) {
-                var adjustedTopMargin = (100 - numericValue) * 1.75;
-                window.$docsify.topMargin = adjustedTopMargin;
+            if (unit === '%') {
+              // root_theme.style.setProperty('--content-margin-inline', '0px');
+              if (numericValue == 100) {
+                var editCSS = document.createElement('style');
+                editCSS.innerHTML = ".markdown-section {margin-top: 0 !important;}";
+                document.body.appendChild(editCSS);
+                document.documentElement.style.setProperty('--content-margin-inline', 0);
+              } else {
+                if (!(getURLParameterByName('topMargin'))) {
+                  var adjustedTopMargin = (100 - numericValue) * 1.6;
+                  // window.$docsify.topMargin = adjustedTopMargin;
+                  document.documentElement.style.setProperty('--scroll-padding-top', adjustedTopMargin);
+                }
               }
-              editCSS.innerHTML = ".markdown-section {padding-left: 0; padding-right: 0;}";
             }
             // Handle px or ch widths with large font sizes
             else if ((unit === 'px' || unit === 'ch') && !getURLParameterByName('topMargin')) {
+              // root_theme.style.setProperty('--content-margin-inline', '0px');
               var fontSizeRaw = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
               var fontSize = parseFloat(fontSizeRaw);
               if (!isNaN(fontSize) && fontSize >= 24) {
-                window.$docsify.topMargin = (fontSize - 16);
+                // window.$docsify.topMargin = (fontSize - 16);
+                document.documentElement.style.setProperty('--scroll-padding-top', fontSize - 16);
               }
-              editCSS.innerHTML = ".markdown-section {padding-left: 0; padding-right: 0;}";
             }
           }
         } else {
-          editCSS.innerHTML = ".markdown-section {padding: 1rem 14px;}";
+          root_theme.style.setProperty('--content-margin-inline', '14px');
         }
-        document.body.appendChild(editCSS);
       }
     }
   </script>
 
-  <!-- Customizable Theme -->
-  <!-- Docsify Themeable current release -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script> -->
-  <!-- <script src="assets/vendor/themeable/docsify-themeable-docsify-this.min.js"></script> -->
-  <!-- <script src="https://docsify-themeable-preview.vercel.app/dist/js/docsify-themeable.min.js"></script> -->
-
-  <!-- Docsify Themeable "develop" branch preview files -->
-  <script src="assets/vendor/themeable/preview/docsify-themeable.min.js"></script>
-
   <!-- docsify-tabs (latest v1.x.x) -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-tabs.min.js"></script>
-
-  <!-- flexible-alerts -->
-  <!-- <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-plugin-flexible-alerts.min.js"></script>
 
   <!-- Load custom.css file only when displaying Markdown files -->
   <script>
@@ -2290,23 +2440,28 @@
   <!-- Load default or custom favicon file -->
   <script>
     const favicon = getURLParameterByName('loadFavicon', null, null, window.location.href, true);
+    // console.log(favicon);
     if ((favicon !== false) && getURLParameterByName('basePath')) {
       const fileUrl = window.$docsify['basePath'] + '/' + favicon;
       checkIfFileExists(fileUrl)
         .then(exists => {
           if (exists) {
+            // console.log("File exists.");
             // Perform actions when the file exists
             setFavicon(fileUrl);
           } else {
+            // console.log("File does not exist.");
             // Perform actions when the file does not exist
             setFavicon('assets/favicon/favicon.png');
           }
         })
         .catch(error => {
+          // console.error("Error occurred while checking the file:", error);
           // Handle the error
           setFavicon('assets/favicon/favicon.png');
         });
     } else {
+      // console.log ("use standard favicon");
       setFavicon('assets/favicon/favicon.png');
     }
   </script>
@@ -2316,8 +2471,8 @@
   <script src="assets/vendor/docsify/plugins/custom/docsify-fontawesome.min.js"></script>
 
   <!-- Footnotes Plugin -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/dist/index.min.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes@2.3.1/dist/index.min.js"></script>
 
   <!-- Pagination Plugin -->
   <script>
@@ -2372,21 +2527,15 @@
     }
   </script>
 
-  <!-- Mermaid Diagrams Plugin v2 -->
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true });
-    window.mermaid = mermaid;
-  </script>
-  <!-- <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-mermaid.js"></script>
-
   <!-- LaTeX Plugin -->
   <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script>
   <script src="assets/vendor/docsify/plugins/docsify-latex.js"></script>
 
   <!-- Optionally enable Hypothesis -->
   <script>
+    // console.log(getURLParameterByName('hypothesis'));
+    // console.log(getURLParameterByName('hypothesis', null, null, window.location.href, true) === true);
+    // console.log(getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true');
     if (getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<script async src="https://hypothes.is/embed.js"><\/script>');
     }
@@ -2396,9 +2545,18 @@
   <!-- <script src="unpkg.com/docsify-asciidoc@^1/dist/main.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-asciidoc.js"></script>
 
-  <!-- Check for maxwidth, headerweight, fontfamily, fontsize, fontweight, lineheight, theme colors, and darkmode parameters -->
+  <!-- Check for scrollpaddingtop, maxwidth, headerweight, fontfamily, fontsize, fontweight, lineheight, theme colors, and darkmode parameters -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
+
+      // Change scroll padding top if scrollpaddingtop parameter present
+      scrollpaddingtop = getURLParameterByName(['scroll-padding-top', 'scrollPaddingTop', 'topMargin'], null, null, window.location.href, true);
+      if (!(scrollpaddingtop === false)) {
+        if (!isNaN(scrollpaddingtop)) {
+          scrollpaddingtop = scrollpaddingtop + "px";
+        }
+        document.documentElement.style.setProperty('--scroll-padding-top', scrollpaddingtop);
+      }
 
       // Change content max width if maxwidth parameter present
       maxwidth = getURLParameterByName(['max-width', 'maxWidth'], null, null, window.location.href, true);
@@ -2425,19 +2583,24 @@
       // Change header weight if headerweight parameter present
       headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
       if (!(headerweight === false)) {
-        document.documentElement.style.setProperty('--heading-h1-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h2-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h3-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h4-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h5-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h6-font-weight', headerweight);
+        // console.log(headerweight);
+        document.documentElement.style.setProperty('--heading-font-weight', headerweight);
       }
 
-      // Change body font if fontFamily parameter present
+      // Change body font if fontFamily or core-theme-styles parameters present
       fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
-        fontfamily = fontfamily.replaceAll('_', ' ');
-        document.documentElement.style.setProperty('--base-font-family', fontfamily);
+        const fontlist = fontfamily.split(',').map(font => {
+          const trimmed = font.trim();
+          return trimmed.includes(' ') ? `'${trimmed}'` : trimmed;
+        });
+        var finalfontstack = fontlist.join(',');
+        finalfontstack = finalfontstack.replaceAll('_', ' ');
+        document.documentElement.style.setProperty('--font-family', finalfontstack);
+      } else {
+        if ((getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true') || corethemestyles) {
+          document.documentElement.style.setProperty('--font-family', 'system-ui, sans-serif');
+        }
       }
 
       // Change body font size if fontSize parameter present
@@ -2453,32 +2616,36 @@
           }
         }
 
-        document.documentElement.style.setProperty('--base-font-size', fontsize);
+        document.documentElement.style.setProperty('--font-size', fontsize);
 
         // Only apply sidebar/ToC adjustments if font size is 24px or larger
         const numericFontSize = parseFloat(fontsize);
         if (numericFontSize > 18) {
-          document.documentElement.style.setProperty('--sidebar-width', '306px');
-          document.documentElement.style.setProperty('--sidebar-name-font-size', '24px');
+          document.documentElement.style.setProperty('--sidebar-name-font-size', '28px');
 
           var fontCSS = document.createElement('style');
           fontCSS.innerHTML = `
               .sidebar { font-size: 18px !important; }
-              .search kbd { font-size: 14px !important; }
-              .sidebar .search h2 { font-size: 18px !important; }
+              .search kbd { font-size: 18px !important; }
+              .search .results-status { font-size: 15px !important; }
+              .search .matching-post .content { font-size: 15px !important; }
               .page_toc ul { font-size: 18px !important; }
               .app-nav { font-size: 18px !important; }
           `;
           document.head.appendChild(fontCSS);
 
           document.addEventListener('DOMContentLoaded', function () {
-            const elements = document.querySelectorAll('.sidebar-nav, .search');
-            elements.forEach(element => {
-              element.style.marginTop = '27px';
+            // Apply regular margin-top to search elements
+            const searchElements = document.querySelectorAll('.search');
+            searchElements.forEach(element => {
+              element.style.marginTop = '11px';
             });
+
+            // Apply margin-top and margin-bottom to sidebar headings
             const sidebarHeadings = document.querySelectorAll('.sidebar > h1');
             sidebarHeadings.forEach(element => {
               element.style.setProperty('margin-top', '27px', 'important');
+              element.style.setProperty('margin-bottom', '27px', 'important');
             });
           });
         }
@@ -2487,26 +2654,40 @@
       // Change line height if lineheight parameter present
       lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
       if (!(lineheight === false)) {
-        document.documentElement.style.setProperty('--base-line-height', lineheight);
+        document.documentElement.style.setProperty('--line-height', lineheight);
       }
 
       // Change link text decoration if link-text-decoration parameter present
       linktextdecoration = getURLParameterByName(['link-text-decoration', 'linkTextDecoration'], null, null, window.location.href, true);
       if (!(linktextdecoration === false)) {
-        document.documentElement.style.setProperty('--link-text-decoration', linktextdecoration);
+        if (linktextdecoration === 'none') {
+          document.documentElement.style.setProperty('--link-underline-thickness', '0px');
+          document.documentElement.style.setProperty('--link-underline-color', 'transparent');
+        } else if (linktextdecoration === 'underline') {
+          document.documentElement.style.setProperty('--link-underline-thickness', '1px');
+          document.documentElement.style.setProperty('--link-underline-color', '--link-color');
+        }
       }
 
       // Change link hover text decoration if link-text-decoration-hover parameter present
       linkhovertextdecoration = getURLParameterByName(['link-text-decoration-hover', 'linkTextDecorationHover'], null, null, window.location.href, true);
       if (!(linkhovertextdecoration === false)) {
-        document.documentElement.style.setProperty('--link-text-decoration--hover', linkhovertextdecoration);
+        if (linkhovertextdecoration === 'none') {
+          document.documentElement.style.setProperty('--link-underline-thickness', '0px');
+          document.documentElement.style.setProperty('--link-underline-color', 'transparent');
+        } else if (linkhovertextdecoration === 'underline') {
+          document.documentElement.style.setProperty('--link-underline-thickness-hover', '1px');
+          document.documentElement.style.setProperty('--link-underline-color-hover', '--link-color-hover');
+        }
       }
 
       updateThemeModeLinkColors();
 
       // Enable dark theme CSS files loaded if dark-mode parameter is true
       var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
+      // console.log(enabledarkmode);
       if (enabledarkmode === 'auto' || darkmode === 'auto') {
+        // console.log(enabledarkmode);
         document.querySelector('link[data-sheet="dark-mode-auto"]').disabled = false;
       } else if (enabledarkmode === 'on' || enabledarkmode === 'true' || darkmode === 'on') {
         document.querySelector('link[data-sheet="dark-mode"]').disabled = false;
@@ -2538,6 +2719,7 @@
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
       if (getURLParameterByName(['zoom-images', 'zoomImages'], null, null, window.location.href, true) === 'true') {
+        // document.write('<script src="https://cdn.jsdelivr.net/npm/docsify@rc/dist/plugins/zoom-image.min.js"><\/script>');
         document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
       }
     }
@@ -2550,13 +2732,17 @@
       // Docsify Search Plugin current release
       // document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>');
 
+      // Docsify Search Plugin "develop" branch custom preview files
+      // document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>');
+
       // Docsify Search Plugin "develop" branch preview files
-      document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>');
+      // document.write('<script src="assets/vendor/docsify/plugins/search.min.js"><\/script>');
+      document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>');
     }
   </script>
 
   <!-- Frontmatter Plugin -->
-  <script src="assets/vendor/docsify/plugins/docsify-frontmatter.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/plugins/front-matter.min.js"></script>
 
   <!-- Image Grid Plugin -->
   <script src="assets/vendor/docsify/plugins/custom/docsify-img-grid.js"></script>
@@ -2585,6 +2771,20 @@
     }
   </script>
 
+  <!-- Experimental responsive tables -->
+  <script>
+    if (!(window.$docsify['basePath'] === undefined) && (getURLParameterByName(['responsive-tables', 'responsiveTables'], null, null, window.location.href, true) === 'true')) {
+      document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-responsive-tables.js"><\/script>');
+    }
+  </script>
+
+  <!-- Sidebar expand collapse plugin -->
+  <script>
+    if (!(window.$docsify['basePath'] === undefined) && (getURLParameterByName(['sidebar-collapse', 'sidebarCollapse'], null, null, window.location.href, true) === 'true')) {
+      document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-sidebar-expand-collapse.js"><\/script>');
+    }
+  </script>
+
   <!-- Spotlight plugin -->
   <script>
     if (!(window.$docsify['basePath'] === undefined) && (getURLParameterByName('spotlight', null, null, window.location.href, true) === 'true')) {
@@ -2594,11 +2794,13 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for docsify-this.net homepage -->
 
+  <!--
   <script>
     if ((location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
       document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19424343-37"><\/script>');
     }
   </script>
+  -->
 
   <script>
     if ((location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
