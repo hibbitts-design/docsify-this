@@ -123,7 +123,7 @@ function plugin(hook, vm) {
     var content = window.Docsify.dom.find(".content");
     if (content) {
       var nav = window.Docsify.dom.create("aside", "");
-      window.Docsify.dom.toggleClass(nav, "add", "nav");
+      nav.classList.add("nav")
       window.Docsify.dom.before(content, nav);
     }
   });

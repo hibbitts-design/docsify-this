@@ -15,10 +15,15 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .markdown-section {
   flex: 1 1 0%;
-  margin: 0 48px;
+  min-width: 0;
+  max-width: var(--content-max-width, 840px);
+  margin-left: 20px; /* DOCSIFY v5 */
+  margin-right: 20px; /* DOCSIFY v5 */
 }
 .nav {
   width: var(--toc-width, 280px);
@@ -38,7 +43,7 @@ aside.nav.nothing {
   padding-left: 5px;
   position: -webkit-sticky;
   position: fixed;
-  overflow: auto;
+  overflow-y: auto;
   max-height: 100vh;
   top: 0;
   bottom: auto;
@@ -76,7 +81,7 @@ aside.nav.nothing {
   list-style-type: none;
   margin-top: 0px;
   padding-left: 10px;
-  color: var(--base-color, black);
+  color: var(--color-mono-max, black); /* DOCSIFY v5 */
   text-decoration: none;
   font-weight: 400;
   line-height: 1.2em;
@@ -88,7 +93,7 @@ aside.nav.nothing {
 }
 
 .page_toc ul a {
-  color: var(--base-color, black);
+  color: var(--color-mono-max, black); /* DOCSIFY v5 */
   text-decoration: none;
   font-weight: 400;
   line-height: 1.2em;
@@ -102,7 +107,7 @@ aside.nav.nothing {
   .page_toc {
     position: relative;
     top: -10px;
-    padding: 10px 0;
+    padding: 0 0 0 6px; /* DOCSIFY v5 */
     border: none;
     border-bottom: 1px solid #ddd;
     font-size: 1.0em;
@@ -117,16 +122,23 @@ aside.nav.nothing {
   }
   .content {
     display: block;
+    padding-left: 0;
+    padding-right: 0;
   }
   .markdown-section {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 /*
 .page_toc .active {
-  border-left: 5px solid;
+  // border-left: 5px solid;
   color: var(--link-color, #0374B5);
-  padding-left: 10px;
+  // padding-left: 10px;
 }
 */
