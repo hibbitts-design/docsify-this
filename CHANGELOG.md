@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.0] - XX/XX/2026
+## [2.0.0] - 07/27/2026
 
 **New:**
 * Built with the modernized and refactored Docsify v5 platform
