@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.0.1] - XX/XX/2026
+
+**Improved:**
+* Add explicit embedly.look() reprocessing to make conditional Embedly script loading reliable across page navigations
+
 ## [2.0.0] - 07/27/2026
 
 **New:**
