@@ -1726,11 +1726,23 @@
 
               // Embedly script
               let hasEmbedly = document.getElementsByClassName('embedly-card');
-              if (hasEmbedly.length > 0 && !document.querySelector('script[src="https://cdn.embedly.com/widgets/platform.js"]')) {
-                let script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.src = 'https://cdn.embedly.com/widgets/platform.js';
-                docHead.appendChild(script);
+              if (hasEmbedly.length > 0) {
+                let embedlyScript = document.querySelector('script[src="https://cdn.embedly.com/widgets/platform.js"]');
+                if (!embedlyScript) {
+                  embedlyScript = document.createElement('script');
+                  embedlyScript.type = 'text/javascript';
+                  embedlyScript.src = 'https://cdn.embedly.com/widgets/platform.js';
+                  embedlyScript.onload = function () {
+                    if (window.embedly) window.embedly.look();
+                  };
+                  docHead.appendChild(embedlyScript);
+                } else if (window.embedly) {
+                  window.embedly.look();
+                } else {
+                  embedlyScript.addEventListener('load', function () {
+                    if (window.embedly) window.embedly.look();
+                  }, { once: true });
+                }
               }
 
               // Set link for displayed site name
