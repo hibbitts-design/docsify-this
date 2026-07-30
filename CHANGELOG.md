@@ -4,6 +4,7 @@
 
 **Improved:**
 * Add explicit embedly.look() reprocessing to make conditional Embedly script loading reliable across page navigations
+* Updated ReadMe
 
 ## [2.0.0] - 07/27/2026
 
