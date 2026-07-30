@@ -692,6 +692,12 @@ Use these preset Web Page Builder configurations that automatically apply optima
 - Basic Presentation: [present.docsify-this.net](http://present.docsify-this.net) → *80% width*
 - Presentation with Docsify Sidebar for Navigation (auto-closes): [present-nav.docsify-this.net](http://present-nav.docsify-this.net) → *55ch width, navigation up to H3*
 
+**Presentations with Spotlight** 
+*Open Sans 22px, semi-bold headers, spotlight, and hidden credits*
+
+- Basic: [spotlight.docsify-this.net](http://spotlight.docsify-this.net)
+- Presentation with Docsify Sidebar for Navigation (auto-closes): [spotlight-nav.docsify-this.net](http://spotlight-nav.docsify-this.net) → navigation up to H3*
+
 **Learning Management Systems**  
 *Visually styled for seamless embedding with full-width layout, platform-matched fonts and colors, hidden credits, and links with underline on hover*
 
