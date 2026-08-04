@@ -6,6 +6,9 @@
 * Add explicit embedly.look() reprocessing to make conditional Embedly script loading reliable across page navigations
 * Updated ReadMe
 
+**Bugfix:**
+* Remove duplicate Search config
+
 ## [2.0.0] - 07/27/2026
 
 **New:**
