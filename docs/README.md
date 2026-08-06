@@ -410,7 +410,7 @@ Page layout:
   <label for="docsifyV5coretheme">Use Docsify v5 core theme style defaults instead of Docsify-This styling</label>
   <details class="docsifythiscustomdetails">
     <summary aria-label="More information about using Docsify v5 Core Theme">
-      <img src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/docs/images/Info.svg" alt="Info" width="16" height="16"/>
+      <img src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/docs/images/Info.svg" alt="Info" width="16" height="16"/>
       <span class="docsifythisinfolabel" id="docsifythisurlbuildercustomdetailslink">Learn more</span>
     </summary>
     <p>This applies the Docsify v5 core theme defaults, removing Docsify-This and Web Page Builder theme styling. To adjust the visual appearance after publishing manually add URL parameters, for example <code>&font-family=Merriweather,serif</code>, <code>&theme-color=CC0000</code>, <code>&link-color=CC0000</code>, or <code>&max-width=910px</code>.</p>
