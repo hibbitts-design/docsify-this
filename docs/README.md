@@ -672,7 +672,7 @@ For example, to display the Markdown file located at https://raw.githubuserconte
 
 And here’s how Docsify-This.net displays the same URL:
 
-<img src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/test-docsify-this-v2/docs/images/docsify-this-example-page.jpg" width="1152" height="819" class="responsive image-border-rounded" alt="Example Docsify-This URL displayed by Docsify-This"/><br>
+<img src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/docs/images/docsify-this-example-page.jpg" width="1152" height="819" class="responsive image-border-rounded" alt="Example Docsify-This URL displayed by Docsify-This"/><br>
 <em>The web page displayed by Docsify-This.net, showing the Markdown file with a sidebar that includes headings up to 3 levels, as specified by the Docsify-This URL.</em>
 
 #### Page Appearance URL Parameters (Basic)
