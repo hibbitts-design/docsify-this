@@ -10,6 +10,8 @@
 * Add explicit embedly.look() reprocessing to make conditional Embedly script loading reliable across page navigations
 * Updated ReadMe
 * Set new search results option for grouped by page only when loadSidebar param is set (for updated Docsify v5 search plugin)
+* Minor reorganization of Web Page Builder
+* Visual indicator of active page layout in Web Page Builder page options
 
 **Bugfix:**
 * Remove duplicate Search config
