@@ -383,7 +383,7 @@ Page layout:
 
 <div class="clearfix">
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-top:-2px;"><div class="stackedlabeldropdown">
+<div class="docsifythisurlbuilderoptionsline" style="margin-top:-2px;"><div class="stackedlabeldropdown" data-searchresultsource="true">
   <label for="searchresultsource">Show below each search result:</label>
   <select class="docsifythisurlbuilderoptionsline" id="searchresultsource" name="searchresultsource">
     <option value="" selected>Automatic (breadcrumb for multiple page sites)</option>

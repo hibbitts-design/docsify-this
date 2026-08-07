@@ -203,6 +203,16 @@ input[type="checkbox"] {
     width: auto !important;
     max-width: none !important;
   }
+
+  .stackedlabeldropdown[data-searchresultsource="true"] {
+    float: none;
+    width: 100%;
+  }
+
+  .stackedlabeldropdown[data-searchresultsource="true"] select {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 @media (min-width: 481px) {
