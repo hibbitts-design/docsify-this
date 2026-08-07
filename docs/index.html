@@ -1214,7 +1214,7 @@
         depth: 6,
         namespace: "docsify-this-" + Date.now(),
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-        resultSource: (getURLParameterByName('loadSidebar')) ? 'breadcrumb' : 'none',
+        resultSource: getURLParameterByName('search.resultSource', null, null, window.location.href, true) || (getURLParameterByName('loadSidebar') ? 'breadcrumb' : 'none'),
         insertBefore: (getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme']) || corethemestyles)
           ? '.app-name'
           : '.sidebar-nav'
