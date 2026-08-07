@@ -844,6 +844,8 @@
       document.getElementById("stylecontentonly").checked = true;
       document.getElementById("styletoc").checked = false;
       document.getElementById("stylesidebar").checked = false;
+      (document.getElementById('tocLayoutBadge') || {}).className = 'layout-status-badge';
+      (document.getElementById('sidebarLayoutBadge') || {}).className = 'layout-status-badge';
       document.getElementById("browserTabTitle").value = 'Published by Docsify-This';
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'Source%20Sans%203,Helvetica%20Neue,sans-serif';
