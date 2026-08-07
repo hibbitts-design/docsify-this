@@ -246,7 +246,7 @@ Page layout:
 
 <section class="builder-section">
 
-### Table of Contents Options<span class="layout-status-badge" id="tocLayoutBadge">Selected Layout</span>
+### Table of Contents Options<span class="layout-status-badge" id="tocLayoutBadge">Selected Page Layout</span>
 
 <div class="docsifythisurlbuilderoptionsline" >Headings to include in table of contents (at least one required):</div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input aria-label="Include h1 in table of contents" class="docsifythisurlbuildercheckbox" type="checkbox" id="toch1" /><label for="toch1">Heading 1 (h1)</label></div>
@@ -257,7 +257,7 @@ Page layout:
 
 <section class="builder-section">
 
-### Sidebar Display Options<span class="layout-status-badge" id="sidebarLayoutBadge">Selected Layout</span>
+### Sidebar Display Options<span class="layout-status-badge" id="sidebarLayoutBadge">Selected Page Layout</span>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="closesidebar"/><label for="closesidebar">Automatically close Docsify Sidebar for presentations or focused reading</label></div>
 
