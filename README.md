@@ -22,7 +22,7 @@
 <table style="border-collapse: collapse;">
   <tr style="background: none !important;">
     <td width="49%" style="border: none; padding-bottom: 0;">
-      <a href="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-1.png">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-1.png">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-1-dark.png">
         <img alt="Docsify-This Web Page Builder interface" src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-1.png" width="100%">
@@ -30,7 +30,7 @@
       </a>
     </td>
     <td width="49%" style="border: none; padding-bottom: 0;">
-      <a href="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-2.png">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-2.png">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-2-dark.png">
         <img alt="Example page published with Docsify-This" src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-2.png" width="100%">
@@ -45,7 +45,7 @@
   <tr style="display:none;"><td colspan="2" style="border: none;">&nbsp;</td></tr>
   <tr style="background: none !important;">
     <td width="49%" style="border: none; padding-bottom: 0;">
-      <a href="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-3.png">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-3.png">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-3-dark.png">
         <img alt="Web Page Builder page appearance options" src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-3.png" width="100%">
@@ -53,7 +53,7 @@
       </a>
     </td>
     <td width="49%" style="border: none; padding-bottom: 0;">
-      <a href="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-4.png">
+      <a href="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-4.png">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-4-dark.png">
         <img alt="Web Page Builder advanced options" src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshots/screenshot-4.png" width="100%">
@@ -497,6 +497,8 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [name](#name)
 - [page-title](#page-title)
 - [pagination](#pagination)
+- [search.resultSource](#search.resultSource)
+- [sidebarPosition](#sidebarPosition)
 - [spotlight-headings](#spotlight-headings)
 - [spotlight-toggle](#spotlight-toggle)
 - [submaxLevel](#subMaxLevel)
@@ -630,6 +632,16 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&pagination=true
+
+##### search.resultSource
+
+Show page context (page title or full breadcrumb path) below each search result — helpful on multi-page sites with similarly named sections — with the optional **search.resultSource** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=page. Defaults to `breadcrumb` when a custom Sidebar (`loadSidebar`) is loaded, otherwise `none`; override with `page` or `none`.
+
+##### sidebarPosition
+
+Position the Docsify Sidebar on the right side of the page with the optional **sidebarPosition** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true&sidebarPosition=right
 
 ##### spotlight-headings
 

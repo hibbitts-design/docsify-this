@@ -381,6 +381,21 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable pagination buttons in page content area (Docsify custom Sidebar required)</label></div>
 
+<div class="clearfix">
+
+<div class="docsifythisurlbuilderoptionsline" style="margin-top:-2px;"><div class="stackedlabeldropdown">
+  <label for="searchresultsource">Show below each search result:</label>
+  <select class="docsifythisurlbuilderoptionsline" id="searchresultsource" name="searchresultsource">
+    <option value="" selected>Automatic (breadcrumb for multiple page sites)</option>
+    <option disabled="disabled">──</option>
+    <option value="none">Nothing</option>
+    <option value="page">Page title</option>
+    <option value="breadcrumb">Full breadcrumb path</option>
+  </select>
+</div></div>
+
+</div>
+
 </section>
 
 <section class="builder-section">
@@ -850,6 +865,8 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [name](/?id=nameconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [page-title](/?id=page-titleconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [pagination](/?id=paginationconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [search.resultSource](/?id=searchresultsourceconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [sidebarPosition](/?id=sidebarPositionconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [spotlight-headings](/?id=spotlight-headingsconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [spotlight-toggle](/?id=spotlight-toggleconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [subMaxLevel](/?id=subMaxLevelconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -982,6 +999,16 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&pagination=true
+
+##### search.resultSource<button type="button" class="copy-link" aria-label="Copy search.resultSource parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&search.resultSource=page').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Show page context (page title or full breadcrumb path) below each search result — helpful on multi-page sites with similarly named sections — with the optional **search.resultSource** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=page. Defaults to `breadcrumb` when a custom Sidebar (`loadSidebar`) is loaded, otherwise `none`; override with `page` or `none`.
+
+##### sidebarPosition<button type="button" class="copy-link" aria-label="Copy sidebarPosition parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sidebarPosition=right').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Position the Docsify Sidebar on the right side of the page with the optional **sidebarPosition** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true&sidebarPosition=right
 
 ##### spotlight-headings<button type="button" class="copy-link" aria-label="Copy spotlight-headings parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&spotlight-headings=h2,h3').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 

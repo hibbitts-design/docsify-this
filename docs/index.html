@@ -41,16 +41,16 @@
   <!-- Stylesheets -->
 
   <!-- Core Theme -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/themes/core.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@dist/themes/core.min.css" />
   <!-- <link rel="stylesheet" href="assets/vendor/docsify/themes/core.min.css" /> -->
 
   <!-- Core Dark (add-on) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/themes/addons/core-dark.min.css"
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@dist/themes/addons/core-dark.min.css"
     data-sheet="dark-mode" disabled />
   <!-- <link rel="stylesheet" href="assets/vendor/docsify/themes/addons/core-dark.min.css" data-sheet="dark-mode" disabled /> -->
 
   <!-- Core Dark (add-on) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/themes/addons/core-dark.min.css"
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@dist/themes/addons/core-dark.min.css"
     media="(prefers-color-scheme: dark)" data-sheet="dark-mode-auto" />
   <!-- <link rel="stylesheet" href="assets/vendor/docsify/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)"
     data-sheet="dark-mode-auto" /> -->
@@ -567,6 +567,13 @@
           if (cb17.checked) {
             if (!url.includes('pagination=')) {
               var URLparms = URLparms + `&pagination=true`;
+            }
+          }
+
+          var searchresultsource = document.getElementById('searchresultsource').value;
+          if (searchresultsource !== "") {
+            if (!url.includes('search.resultSource=')) {
+              var URLparms = URLparms + `&search.resultSource=` + searchresultsource
             }
           }
 
@@ -1213,10 +1220,10 @@
         // Headline depth, 1 - 6
         depth: 6,
         namespace: "docsify-this-" + Date.now(),
-        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
         resultSource: getURLParameterByName('search.resultSource', null, null, window.location.href, true) || (getURLParameterByName('loadSidebar') ? 'breadcrumb' : 'none'),
+        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
         insertBefore: (getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme']) || corethemestyles)
-          ? '.app-name'
+                  ? '.app-name'
           : '.sidebar-nav'
       },
 
@@ -2249,6 +2256,11 @@
               document.getElementById("pagination").checked = true;
             }
 
+            resultSource = getURLParameterByName('search.resultSource', null, null, window.location.href, true);
+            if (resultSource) {
+              document.getElementById('searchresultsource').value = resultSource;
+            }
+
             if (getURLParameterByName('mergeNavbar', null, null, window.location.href, true) === 'true') {
               document.getElementById("mergeNavbar").checked = true;
             }
@@ -2385,8 +2397,8 @@
   </script>
 
   <!-- Docsify v5 release -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@rc/dist/docsify.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/docsify.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify@5"></script> -->
+  <script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@dist/docsify.min.js"></script>
   <!-- <script src="assets/vendor/docsify/docsify.min.js"></script> -->
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
@@ -2730,7 +2742,8 @@
     if (!(window.$docsify['basePath'] === undefined)) {
       if (getURLParameterByName(['zoom-images', 'zoomImages'], null, null, window.location.href, true) === 'true') {
         // document.write('<script src="https://cdn.jsdelivr.net/npm/docsify@rc/dist/plugins/zoom-image.min.js"><\/script>');
-        document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
+        // document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
+        document.write('<script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@dist/plugins/zoom-image.min.js"><\/script>');
       }
     }
   </script>
@@ -2747,12 +2760,13 @@
 
       // Docsify Search Plugin "develop" branch preview files
       // document.write('<script src="assets/vendor/docsify/plugins/search.min.js"><\/script>');
-      document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>');
+      // document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>');
+      document.write('<script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@dist/plugins/search.min.js"><\/script>');
     }
   </script>
 
   <!-- Frontmatter Plugin -->
-  <script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@5/plugins/front-matter.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@dist/plugins/front-matter.min.js"></script>
 
   <!-- Image Grid Plugin -->
   <script src="assets/vendor/docsify/plugins/custom/docsify-img-grid.js"></script>
