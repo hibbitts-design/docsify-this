@@ -311,13 +311,10 @@
             }
           }
 
-          const cb4 = document.querySelector('#narrowToC');
-          if (cb4.checked) {
-            if (URLparms.includes("&toc=true")) {
-              if (!url.includes('toc-narrow=')) {
-                var URLparms = URLparms.replace("&toc=true", "");
-                URLparms = URLparms + `&toc-narrow=true`;
-              }
+          var sidebarposition = document.getElementById('sidebarposition').value;
+          if (sidebarposition === "right") {
+            if (!url.includes('sidebarPosition=')) {
+              var URLparms = URLparms + `&sidebarPosition=right`;
             }
           }
 
@@ -858,7 +855,7 @@
       document.getElementById("imageCaptions").checked = false;
       document.getElementById("editLinkText").value = 'Edit this Page';
       document.getElementById("editLinkTopCheck").checked = false;
-      document.getElementById("narrowToC").checked = false;
+      document.getElementById("sidebarposition").value = 'left';
       document.getElementById("toch1").checked = false;
       document.getElementById("toch2").checked = true;
       document.getElementById("toch3").checked = false;
@@ -2057,6 +2054,26 @@
               document.getElementById("stylesidebar").checked = true;
             }
 
+            function updateLayoutStatusBadges() {
+              const tocBadge = document.getElementById('tocLayoutBadge');
+              const sidebarBadge = document.getElementById('sidebarLayoutBadge');
+              const styletocEl = document.getElementById('styletoc');
+              const stylesidebarEl = document.getElementById('stylesidebar');
+              if (!tocBadge || !sidebarBadge || !styletocEl || !stylesidebarEl) {
+                return;
+              }
+              tocBadge.classList.toggle('is-active', styletocEl.checked);
+              sidebarBadge.classList.toggle('is-active', stylesidebarEl.checked);
+            }
+
+            updateLayoutStatusBadges();
+            ['stylecontentonly', 'styletoc', 'stylesidebar'].forEach(function (id) {
+              const radio = document.getElementById(id);
+              if (radio) {
+                radio.addEventListener('change', updateLayoutStatusBadges);
+              }
+            });
+
             if ((getURLParameterByName(['edit-link-checkbox', 'editLinkCheckbox'], null, null, window.location.href, true) === 'true') || (getURLParameterByName(['edit-link', 'editLink']))) {
               document.getElementById("editCheck").checked = true;
             }
@@ -2127,8 +2144,8 @@
               }
             }
 
-            if (getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true') {
-              document.getElementById("narrowToC").checked = true;
+            if (getURLParameterByName('sidebarPosition', null, null, window.location.href, true) === 'right') {
+              document.getElementById("sidebarposition").value = 'right';
             }
 
             let maxLevel = getURLParameterByName('maxLevel', null, null, window.location.href, true);

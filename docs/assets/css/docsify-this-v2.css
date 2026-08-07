@@ -304,6 +304,25 @@ input[type="checkbox"] {
   gap: 4px;
 }
 
+#docsifythisurlbuilder .layout-status-badge {
+  display: none;
+  font-size: 0.6em;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 20px;
+  line-height: 1;
+  margin-left: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+#docsifythisurlbuilder .layout-status-badge.is-active {
+  display: inline-block;
+  background-color: var(--dt-link-color);
+  color: var(--dt-bg-primary);
+}
+
 #docsifythis .docsifythisheader .logoandtext h1 {
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   font-weight: 600;

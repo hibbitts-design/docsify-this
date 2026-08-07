@@ -344,10 +344,10 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 - [page-copy-button](#copy-page)
 - [searchbox](#searchbox)
 - [sidebar](#sidebar)
+- [sidebarPosition](#sidebarPosition)
 - [spotlight](#spotlight)
 - [toc](#toc)
 - [toc-headings](#toc-headings)
-- [toc-narrow](#toc-narrow)
 - [zoom-images](#zoom-images)
 
 ##### browser-tab-title
@@ -442,6 +442,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true
 
+##### sidebarPosition
+
+Position the Docsify Sidebar on the right side of the page (default is left) with the optional **sidebarPosition** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true&sidebarPosition=right
+
 ##### spotlight
 
 Enable Section Spotlight Mode to visually focus on the section currently in view, dimming all other sections, with the optional **spotlight** parameter, for example:  
@@ -456,11 +461,6 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&toc-headings=h1,h2,h3
-
-##### toc-narrow
-
-Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
 ##### zoom-images
 
@@ -498,7 +498,6 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [page-title](#page-title)
 - [pagination](#pagination)
 - [search.resultSource](#search.resultSource)
-- [sidebarPosition](#sidebarPosition)
 - [spotlight-headings](#spotlight-headings)
 - [spotlight-toggle](#spotlight-toggle)
 - [submaxLevel](#subMaxLevel)
@@ -506,6 +505,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [theme-color](#theme-color)
 - [theme-color-dark-mode](#theme-color-dark-mode)
 - [theme-classes](#theme-classes)
+- [toc-narrow](#toc-narrow)
 
 ##### back-link
 
@@ -638,11 +638,6 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Show page context (page title or full breadcrumb path) below each search result — helpful on multi-page sites with similarly named sections — with the optional **search.resultSource** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=page. Defaults to `breadcrumb` when a custom Sidebar (`loadSidebar`) is loaded, otherwise `none`; override with `page` or `none`.
 
-##### sidebarPosition
-
-Position the Docsify Sidebar on the right side of the page with the optional **sidebarPosition** parameter (not included in the Advanced Web Page Builder), for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true&sidebarPosition=right
-
 ##### spotlight-headings
 
 Set which heading levels are used to define sections in Spotlight Mode with the optional **spotlight-headings** parameter (not included in the Advanced Web Page Builder), for example:  
@@ -677,6 +672,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Add one or more Docsify v5 [core theme classes](https://preview.docsifyjs.org/#/themes?id=classes) with the optional **theme-classes** parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&hide-credits=true&browser-tab-title=CPT-363&theme-classes=sidebar-chevron-left,sidebar-group-box,sidebar-toggle-hamburger
+
+##### toc-narrow
+
+Use a less wide Page Table of Contents with the optional **toc-narrow** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
 ---
 
