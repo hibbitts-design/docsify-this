@@ -2,6 +2,10 @@
 
 ## [2.0.1] - XX/XX/2026
 
+**New:**
+* Support for Docsify Sidebar on right
+* Support for including search result source
+
 **Improved:**
 * Add explicit embedly.look() reprocessing to make conditional Embedly script loading reliable across page navigations
 * Updated ReadMe
