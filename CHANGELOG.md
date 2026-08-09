@@ -6,19 +6,17 @@
 * Support for Docsify Sidebar on right
 * Support for including search result source
 
-**Bugfix:**
-* Address TOC plugin double-load, dark-mode colors, and multi-level heading crashes
-
-
 **Improved:**
 * Add explicit embedly.look() reprocessing to make conditional Embedly script loading reliable across page navigations
 * Updated ReadMe
 * Set new search results option for grouped by page only when loadSidebar param is set (for updated Docsify v5 search plugin)
 * Minor reorganization of Web Page Builder
 * Visual indicator of active page layout in Web Page Builder page options
+* Add collapsible mobile ToC toggle and fix mobile width/rule bugs
 
 **Bugfix:**
 * Remove duplicate Search config
+* Address TOC plugin double-load, dark-mode colors, and multi-level heading crashes
 
 ## [2.0.0] - 07/27/2026
 
