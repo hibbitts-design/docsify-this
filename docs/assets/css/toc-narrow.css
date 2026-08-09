@@ -149,7 +149,13 @@ aside.nav.nothing {
     cursor: pointer;
   }
   .page_toc-toggle::after {
-    content: "\25BE";
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid currentColor;
     transition: transform 0.2s ease;
   }
   .page_toc.open .page_toc-toggle::after {
