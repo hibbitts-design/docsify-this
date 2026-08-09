@@ -155,11 +155,32 @@ function plugin(hook, vm) {
 		title.innerHTML = userOptions.title;
 		title.setAttribute('class', 'title');
 
+		// Mobile-only accordion toggle; hidden and inert on desktop via CSS.
+		// No [type] attribute on purpose: the core theme styles any button
+		// carrying one like a pill button, which clobbers this flat bar look.
+		var toggle = document.createElement('button');
+		toggle.setAttribute('class', 'page_toc-toggle');
+		toggle.setAttribute('aria-expanded', 'false');
+		toggle.setAttribute('aria-controls', 'page_toc-panel');
+		toggle.innerHTML = userOptions.title || 'On this page';
+
+		var panel = document.createElement('div');
+		panel.id = 'page_toc-panel';
+		panel.setAttribute('class', 'page_toc-panel');
+		panel.appendChild(toc);
+
 		var container = document.createElement('div');
 		container.setAttribute('class', 'page_toc');
 
+		toggle.onclick = function (e) {
+		  e.preventDefault(); // guard against accidental form submit; no [type] attr to key off of
+		  var isOpen = container.classList.toggle('open');
+		  toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+		};
+
 		container.appendChild(title);
-		container.appendChild(toc);
+		container.appendChild(toggle);
+		container.appendChild(panel);
 
     // Existing TOC
     var tocChild = document.querySelectorAll('.nav .page_toc');

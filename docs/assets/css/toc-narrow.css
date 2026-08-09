@@ -107,22 +107,67 @@ aside.nav.nothing {
   padding-top: 7px;
 }
 
+/* Mobile-only accordion toggle; inert on desktop where the ToC is always visible. */
+.page_toc-toggle {
+  display: none;
+}
+.page_toc-panel {
+  max-height: none;
+  overflow: visible;
+}
+
 @media screen and (max-width: 900px) {
   .page_toc {
     position: relative;
-    top: -10px;
-    padding: 0 0 0 6px; /* DOCSIFY v5 */
+    top: 0;
+    padding: 0;
+    margin-right: 0;
     border: none;
-    border-bottom: 1px solid var(--border-color, #ddd);
     font-size: 1.0em;
   }
   .nav {
     margin: 0 auto;
-    width: 900px;
+    width: 100%;
   }
   .page_toc p.title {
+    display: none;
+  }
+  .page_toc-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 10px;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.07));
+    font: inherit;
+    font-size: 1.1em;
     font-weight: 400;
-    font-size: 1.2em;
+    color: var(--color-mono-max, black);
+    cursor: pointer;
+  }
+  .page_toc-toggle::after {
+    content: "\25BE";
+    transition: transform 0.2s ease;
+  }
+  .page_toc.open .page_toc-toggle::after {
+    transform: rotate(180deg);
+  }
+  .page_toc-panel {
+    max-height: 0;
+    padding: 0 20px 0 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+  .page_toc.open .page_toc-panel {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  .page_toc-panel > ul > li:first-child {
+    padding-top: 5px;
   }
   .content {
     display: block;
