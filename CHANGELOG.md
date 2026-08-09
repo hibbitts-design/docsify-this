@@ -6,6 +6,10 @@
 * Support for Docsify Sidebar on right
 * Support for including search result source
 
+**Bugfix:**
+* Address TOC plugin double-load, dark-mode colors, and multi-level heading crashes
+
+
 **Improved:**
 * Add explicit embedly.look() reprocessing to make conditional Embedly script loading reliable across page navigations
 * Updated ReadMe
