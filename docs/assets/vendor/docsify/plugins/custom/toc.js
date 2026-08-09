@@ -1,3 +1,5 @@
+// Modified with the assistance of Claude Code (claude.ai)
+
 var defaultOptions = {
   headings: 'h2',
   scope: '.markdown-section',
