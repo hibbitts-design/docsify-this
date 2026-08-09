@@ -2528,11 +2528,11 @@
 
   <!-- Table of Contents Plugin -->
   <script>
-    if (getURLParameterByName('toc', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath') || ToC) {
+    var tocEnabled = (getURLParameterByName('toc', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) || ToC;
+    if (tocEnabled) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />');
       document.write('<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>');
-    }
-    if (getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
+    } else if (getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />');
       document.write('<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>');
     }

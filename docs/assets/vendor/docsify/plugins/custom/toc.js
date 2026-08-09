@@ -49,7 +49,7 @@ var createList = function(wrapper, count) {
 	      document.createElement('ul')
 	    );
     }
-    if (count) {
+    if (count && wrapper) {
       wrapper = wrapper.appendChild(
         document.createElement('li')
       );
@@ -80,6 +80,9 @@ var getLevel = function(header) {
 
 var jumpBack = function(currentWrapper, offset) {
   while (offset--) {
+    if (!currentWrapper.parentElement) {
+      break;
+    }
     currentWrapper = currentWrapper.parentElement;
   }
 
@@ -90,7 +93,10 @@ var buildTOC = function(options) {
   var ret = document.createElement('ul');
   var wrapper = ret;
   var lastLi = null;
-  var selector = options.scope + ' ' + options.headings
+  var selector = options.headings
+    .split(',')
+    .map(function(h) { return options.scope + ' ' + h.trim(); })
+    .join(',');
   var headers = getHeaders(selector).filter(h => h.id);
 
   headers.reduce(function(prev, curr, index) {
