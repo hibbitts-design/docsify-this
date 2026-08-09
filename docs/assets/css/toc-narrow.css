@@ -77,6 +77,9 @@ aside.nav.nothing {
   font-weight: 400;
   font-size: 1.2em;
 }
+.page_toc p.title:empty {
+  display: none;
+}
 .page_toc .anchor:hover:after {
   content: "";
 }
@@ -125,6 +128,9 @@ aside.nav.nothing {
     border: none;
     font-size: 1.0em;
   }
+  .page_toc:not(.open) {
+    padding-bottom: 6px;
+  }
   .nav {
     margin: 0 auto;
     width: 100%;
@@ -137,8 +143,8 @@ aside.nav.nothing {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 0 0 10px;
-    padding: 10px 20px;
+    margin: 0 0 4px;
+    padding: 10px var(--toc-inline-padding, 20px);
     background: none;
     border: none;
     border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.07));
@@ -163,7 +169,7 @@ aside.nav.nothing {
   }
   .page_toc-panel {
     max-height: 0;
-    padding: 0 20px 0 10px;
+    padding: 0 var(--toc-inline-padding, 20px) 0 calc(var(--toc-inline-padding, 20px) - 10px);
     box-sizing: border-box;
     overflow: hidden;
     transition: max-height 0.25s ease;
