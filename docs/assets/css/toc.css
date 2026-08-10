@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
+  align-content: flex-start;
   justify-content: center;
   padding-left: 12px;
   padding-right: 12px;
@@ -41,6 +42,9 @@
 aside.nav.nothing {
   width: 0;
 }
+body:has(.app-nav) .nav {
+  margin-top: var(--toc-navbar-height, 0px);
+}
 
 .page_toc {
   border-left-style: solid;
@@ -57,6 +61,10 @@ aside.nav.nothing {
   margin-right: 10px;
   scrollbar-width: thin !important;
   scrollbar-color: grey transparent;
+}
+body:has(.app-nav) .page_toc {
+  top: calc(var(--toc-navbar-height, 0px) + 1.5rem);
+  max-height: calc(100vh - var(--toc-navbar-height, 0px) - 1.5rem);
 }
 
 .page_toc a > * {
@@ -131,6 +139,9 @@ aside.nav.nothing {
     border: none;
     font-size: 1.0em;
   }
+  body:has(.app-nav) .page_toc {
+    top: 0;
+  }
   .page_toc:not(.open) {
     padding-bottom: 6px;
   }
@@ -193,6 +204,9 @@ aside.nav.nothing {
     margin: 0 auto;
     padding-left: calc(var(--content-margin-inline, 20px) - 12px);
     padding-right: calc(var(--content-margin-inline, 20px) - 12px);
+  }
+  body:has(.app-nav) .markdown-section {
+    margin-top: 0;
   }
 }
 

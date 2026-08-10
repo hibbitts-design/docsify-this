@@ -18,12 +18,19 @@ var tocHeading = function(Title) {
 
 var aTag = function(src) {
   var a = document.createElement('a');
-  var content = src.firstChild.innerHTML;
+
+  // Headings that are themselves a markdown link (e.g. "## [Week 1](page.md)")
+  // render as two sibling <a> tags, since Docsify's own auto-generated
+  // anchor (class="anchor") can't nest another <a> inside it. Prefer that
+  // real link over the self-anchor, which would otherwise contribute only
+  // whatever precedes it (e.g. a leading icon) with a same-page href.
+  var link = src.querySelector('a:not(.anchor)') || src.firstChild;
+  var content = link.innerHTML;
 
   // Use this to clip text w/ HTML in it.
   // https://github.com/arendjr/text-clipper
   a.innerHTML = content;
-  a.href = src.firstChild.href;
+  a.href = link.href;
   a.onclick = tocClick
 
   // In order to remove this gotta fix the styles.
@@ -123,6 +130,21 @@ var buildTOC = function(options) {
   return ret;
 };
 
+// Tracks the navbar's actual rendered height (0 when Docsify collapses it
+// out of view at narrow widths) so CSS can clear it without reserving
+// space for a navbar that isn't actually on screen.
+var updateNavbarHeightVar = function () {
+  var appNav = document.querySelector('.app-nav');
+  var height = appNav ? appNav.getBoundingClientRect().height : 0;
+  document.documentElement.style.setProperty('--toc-navbar-height', height + 'px');
+};
+
+// Deferred to the next tick: right after mount/render the navbar may not
+// have finished laying out under the current viewport's responsive state yet.
+var scheduleNavbarHeightUpdate = function () {
+  setTimeout(updateNavbarHeightVar, 0);
+};
+
 // Docsify plugin functions
 function plugin(hook, vm) {
   var userOptions = vm.config.toc;
@@ -134,9 +156,14 @@ function plugin(hook, vm) {
       nav.classList.add("nav");
       window.Docsify.dom.before(content, nav);
     }
+
+    scheduleNavbarHeightUpdate();
+    window.addEventListener('resize', scheduleNavbarHeightUpdate);
   });
 
   hook.doneEach(function () {
+    scheduleNavbarHeightUpdate();
+
     var nav = document.querySelectorAll('.nav')[0]
     var t = Array.from(document.querySelectorAll('.nav'))
 
