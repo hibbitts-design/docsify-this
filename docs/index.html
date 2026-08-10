@@ -2370,6 +2370,8 @@
             window.$docsify[parent][child] = convertToBoolean(value);
           } else if (key === 'name') {
             window.$docsify[key] = replaceUnderscores(value);
+          } else if (window.$docsify[key] !== null && typeof window.$docsify[key] === 'object' && !Array.isArray(window.$docsify[key])) {
+            // don't clobber object-valued config with a same-named scalar param
           } else {
             window.$docsify[key] = convertToBoolean(value);
           }

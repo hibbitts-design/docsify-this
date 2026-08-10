@@ -348,6 +348,7 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 - [spotlight](#spotlight)
 - [toc](#toc)
 - [toc-headings](#toc-headings)
+- [toc-title](#toc-title)
 - [zoom-images](#zoom-images)
 
 ##### browser-tab-title
@@ -461,6 +462,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&toc-headings=h1,h2,h3
+
+##### toc-title
+
+Set a custom title for the Page Table of Contents with the optional **toc-title** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&toc-title=On%20This%20Page. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "On This Page" would be "On%20This%20Page".
 
 ##### zoom-images
 

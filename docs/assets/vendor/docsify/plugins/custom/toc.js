@@ -206,4 +206,10 @@ if (typeof tocheadings === 'string' && tocheadings) {
   window.$docsify['toc'].headings = tocheadings;
 }
 
+// toc-title URL param always wins, same override behavior as toc-headings above.
+tocTitle = getURLParameterByName(['toc-title','tocTitle'], null, null, window.location.href, true);
+if (typeof tocTitle === 'string' && tocTitle) {
+  window.$docsify['toc'].title = tocTitle;
+}
+
 window.$docsify.plugins = [].concat(plugin, window.$docsify.plugins);
