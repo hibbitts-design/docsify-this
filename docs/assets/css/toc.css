@@ -47,8 +47,8 @@ aside.nav.nothing {
   position: -webkit-sticky;
   position: fixed;
   overflow: auto;
-  max-height: 100vh;
-  top: 0;
+  max-height: calc(100vh - 1.4rem);
+  top: 1.4rem;
   bottom: auto;
   margin-right: 10px;
   scrollbar-width: thin !important;
