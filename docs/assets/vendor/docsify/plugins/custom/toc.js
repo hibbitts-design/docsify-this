@@ -1,7 +1,7 @@
 // Modified with the assistance of Claude Code (claude.ai)
 
 var defaultOptions = {
-  headings: 'h2',
+  headings: 'h1, h2',
   scope: '.markdown-section',
 
   // To make work
@@ -131,7 +131,7 @@ function plugin(hook, vm) {
     var content = window.Docsify.dom.find(".content");
     if (content) {
       var nav = window.Docsify.dom.create("aside", "");
-      nav.classList.add("nav")
+      nav.classList.add("nav");
       window.Docsify.dom.before(content, nav);
     }
   });
@@ -158,8 +158,8 @@ function plugin(hook, vm) {
 		title.setAttribute('class', 'title');
 
 		// Mobile-only accordion toggle; hidden and inert on desktop via CSS.
-		// No [type] attribute on purpose: the core theme styles any button
-		// carrying one like a pill button, which clobbers this flat bar look.
+		// No [type] attribute on purpose: some themes style any button carrying
+		// one like a pill button, which can clobber this flat bar look.
 		var toggle = document.createElement('button');
 		toggle.setAttribute('class', 'page_toc-toggle');
 		toggle.setAttribute('aria-expanded', 'false');
@@ -196,13 +196,14 @@ function plugin(hook, vm) {
 }
 
 // Docsify plugin options
-// console.log(defaultOptions);
-var myOptions = defaultOptions ;
+window.$docsify['toc'] = Object.assign(defaultOptions, window.$docsify['toc']);
+
+// toc-headings URL param always wins, even over a site's own explicit
+// toc.headings config, so it works as a genuine override (matching how
+// toc/toc-narrow/standalone etc. already behave elsewhere in docsify-this).
 tocheadings = getURLParameterByName(['toc-headings','tocHeadings'], null, null, window.location.href, true);
-if (tocheadings) {
-  // console.log(tocheadings);
-  // console.log(defaultOptions.headings);
-  defaultOptions.headings = tocheadings;
+if (typeof tocheadings === 'string' && tocheadings) {
+  window.$docsify['toc'].headings = tocheadings;
 }
-window.$docsify['toc'] = Object.assign(myOptions, window.$docsify['toc']);
+
 window.$docsify.plugins = [].concat(plugin, window.$docsify.plugins);
