@@ -14,16 +14,20 @@
 .content {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
   justify-content: center;
   padding-left: 12px;
   padding-right: 12px;
+  container-type: inline-size;
+  container-name: page-content;
 }
 /* Specific style for .token.content inside code blocks */
 .content code .token.content {
   display: inline;
 }
 .markdown-section {
-  /*   flex: 1 1 0%; */
+  flex: 1 1 0%;
+  min-width: 0;
   margin-left: 20px; /* DOCSIFY v5 */
   margin-right: 20px; /* DOCSIFY v5 */
 }
@@ -31,8 +35,8 @@
 .nav {
   width: var(--toc-width, 440px);
   min-width: 340px;
-  /*   align-self: flex-start;
-  flex: 0 0 auto; */
+  align-self: flex-start;
+  flex: 0 0 auto;
 }
 aside.nav.nothing {
   width: 0;
@@ -118,7 +122,7 @@ aside.nav.nothing {
   overflow: visible;
 }
 
-@media screen and (max-width: 980px) {
+@container page-content (max-width: 980px) {
   .page_toc {
     position: relative;
     top: 0;
@@ -131,6 +135,7 @@ aside.nav.nothing {
     padding-bottom: 6px;
   }
   .nav {
+    flex: 1 1 100%;
     margin: 0 auto;
     width: 100%;
   }
@@ -143,7 +148,7 @@ aside.nav.nothing {
     justify-content: space-between;
     width: 100%;
     margin: 0 0 4px;
-    padding: 10px var(--content-margin-inline, 20px);
+    padding: 10px calc(var(--content-margin-inline, 20px) - 12px);
     background: none;
     border: none;
     border-bottom: 1px solid var(--border-color, rgba(0, 0, 0, 0.07));
@@ -168,7 +173,7 @@ aside.nav.nothing {
   }
   .page_toc-panel {
     max-height: 0;
-    padding: 0 var(--content-margin-inline, 20px) 0 calc(var(--content-margin-inline, 20px) - 10px);
+    padding: 0 calc(var(--content-margin-inline, 20px) - 12px) 0 calc(var(--content-margin-inline, 20px) - 22px);
     box-sizing: border-box;
     overflow: hidden;
     transition: max-height 0.25s ease;
@@ -180,18 +185,14 @@ aside.nav.nothing {
   .page_toc-panel > ul > li:first-child {
     padding-top: 5px;
   }
-  .content {
-    display: block;
-    padding-left: 0;
-    padding-right: 0;
-  }
   .markdown-section {
+    flex: 1 1 100%;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
-    padding-left: var(--content-margin-inline, 20px);
-    padding-right: var(--content-margin-inline, 20px);
+    padding-left: calc(var(--content-margin-inline, 20px) - 12px);
+    padding-right: calc(var(--content-margin-inline, 20px) - 12px);
   }
 }
 
