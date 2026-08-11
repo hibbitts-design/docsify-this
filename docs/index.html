@@ -321,16 +321,20 @@
           const cb5 = document.querySelector('#toch1');
           const cb6 = document.querySelector('#toch2');
           const cb7 = document.querySelector('#toch3');
-          // console.log (cb5.checked,cb6.checked,cb7.checked );
-          // console.log ( (!(cb5.checked) && (cb6.checked) && (cb7.checked)) );
-          // console.log ( ((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false)) === true );
+          const cb22 = document.querySelector('#toch4');
 
           if (URLparms.includes("&toc=true") || URLparms.includes("&toc-narrow=true")) {
-            if (((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false))) {
-              alert("At least one page Heading level for the Table of Contents must be selected.");
+            if (((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false) && (cb22.checked === false))) {
+              document.getElementById('tocValidationMessage').style.display = 'block';
               return;
-            } else if (!(!(cb5.checked) && (cb6.checked) && (!(cb7.checked)))) {
-              if (URLparms.includes("&toc=true")) {
+            } else {
+              document.getElementById('tocValidationMessage').style.display = 'none';
+              // h1+h2 checked, h3/h4 unchecked matches toc.js's own default
+              // headings ('h1, h2'), so the URL can skip the param entirely
+              // and stay clean without changing the resulting ToC.
+              var isDefaultToCHeadings = cb5.checked && cb6.checked && !cb7.checked && !cb22.checked;
+
+              if (URLparms.includes("&toc=true") && !isDefaultToCHeadings) {
                 var ToCHeadings = "";
                 if (cb5.checked) {
                   ToCHeadings = "h1";
@@ -347,6 +351,13 @@
                     ToCHeadings = ToCHeadings + ",h3";
                   } else {
                     ToCHeadings = "h3";
+                  }
+                }
+                if (cb22.checked) {
+                  if (ToCHeadings) {
+                    ToCHeadings = ToCHeadings + ",h4";
+                  } else {
+                    ToCHeadings = "h4";
                   }
                 }
                 if (!url.includes('toc-headings=')) {
@@ -858,9 +869,14 @@
       document.getElementById("editLinkText").value = 'Edit this Page';
       document.getElementById("editLinkTopCheck").checked = false;
       document.getElementById("sidebarposition").value = 'left';
-      document.getElementById("toch1").checked = false;
+      document.getElementById("toch1").checked = true;
       document.getElementById("toch2").checked = true;
       document.getElementById("toch3").checked = false;
+      document.getElementById("toch4").checked = false;
+      const tocValidationMessageReset = document.getElementById("tocValidationMessage");
+      if (tocValidationMessageReset) {
+        tocValidationMessageReset.style.display = 'none';
+      }
       document.getElementById("maxLevel").value = 2;
       document.getElementById("pageCopyButton").checked = false;
       document.getElementById("spotlight").checked = false;
@@ -2066,6 +2082,16 @@
               }
               tocBadge.classList.toggle('is-active', styletocEl.checked);
               sidebarBadge.classList.toggle('is-active', stylesidebarEl.checked);
+
+              // The ToC heading validation message only applies when the
+              // Table of Contents layout is selected; clear it if the user
+              // switches away, so it doesn't linger as a stale warning.
+              if (!styletocEl.checked) {
+                const tocValidationMessage = document.getElementById('tocValidationMessage');
+                if (tocValidationMessage) {
+                  tocValidationMessage.style.display = 'none';
+                }
+              }
             }
 
             updateLayoutStatusBadges();
@@ -2073,6 +2099,15 @@
               const radio = document.getElementById(id);
               if (radio) {
                 radio.addEventListener('change', updateLayoutStatusBadges);
+              }
+            });
+
+            ['toch1', 'toch2', 'toch3', 'toch4'].forEach(function (id) {
+              const checkbox = document.getElementById(id);
+              if (checkbox) {
+                checkbox.addEventListener('change', function () {
+                  document.getElementById('tocValidationMessage').style.display = 'none';
+                });
               }
             });
 
@@ -2135,15 +2170,10 @@
 
             let tocheadings = getURLParameterByName(['toc-headings', 'tocHeadings'], null, null, window.location.href, true);
             if (tocheadings) {
-              if (tocheadings.includes("h1")) {
-                document.getElementById("toch1").checked = true;
-              }
-              if (tocheadings.includes("h2")) {
-                document.getElementById("toch2").checked = true;
-              }
-              if (tocheadings.includes("h3")) {
-                document.getElementById("toch3").checked = true;
-              }
+              document.getElementById("toch1").checked = tocheadings.includes("h1");
+              document.getElementById("toch2").checked = tocheadings.includes("h2");
+              document.getElementById("toch3").checked = tocheadings.includes("h3");
+              document.getElementById("toch4").checked = tocheadings.includes("h4");
             }
 
             if (getURLParameterByName('sidebarPosition', null, null, window.location.href, true) === 'right') {

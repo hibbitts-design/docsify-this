@@ -15,6 +15,7 @@
   --dt-border-color: #e8eaed;
   --dt-border-strong: #374151;
   --dt-link-color: #4f46e5;
+  --dt-danger-color: #dc2626;
   --dt-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03),
     0 1px 3px 0 rgba(0, 0, 0, 0.05),
     0 4px 8px -2px rgba(0, 0, 0, 0.04);
@@ -54,6 +55,7 @@
     --dt-shadow-hover: 0 4px 6px -1px rgba(0, 0, 0, 0.3),
       0 10px 15px -3px rgba(0, 0, 0, 0.4);
     --dt-link-color: #818cf8;
+    --dt-danger-color: #f87171;
   }
 
   #docsifythis p a,
@@ -321,6 +323,11 @@ input[type="checkbox"] {
   display: inline-block;
   background-color: var(--dt-link-color);
   color: var(--dt-bg-primary);
+}
+
+#docsifythisurlbuilder .toc-validation-message {
+  color: var(--dt-danger-color);
+  margin-top: calc(0.5rem - 6px);
 }
 
 #docsifythis .docsifythisheader .logoandtext h1 {

@@ -249,9 +249,11 @@ Page layout:
 ### Table of Contents Options<span class="layout-status-badge" id="tocLayoutBadge">Selected Page Layout</span>
 
 <div class="docsifythisurlbuilderoptionsline" >Headings to include in table of contents (at least one required):</div>
-<div class="docsifythisurlbuilderoptionsindentedline"><input aria-label="Include h1 in table of contents" class="docsifythisurlbuildercheckbox" type="checkbox" id="toch1" /><label for="toch1">Heading 1 (h1)</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input aria-label="Include h1 in table of contents" class="docsifythisurlbuildercheckbox" type="checkbox" id="toch1" checked/><label for="toch1">Heading 1 (h1)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input aria-label="Include h2 in table of contents" class="docsifythisurlbuildercheckbox" type="checkbox" id="toch2" checked><label for="toch2">Heading 2 (h2)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input aria-label="Include h3 in table of contents" class="docsifythisurlbuildercheckbox" type="checkbox" id="toch3"/><label for="toch3">Heading 3 (h3)</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input aria-label="Include h4 in table of contents" class="docsifythisurlbuildercheckbox" type="checkbox" id="toch4"/><label for="toch4">Heading 4 (h4)</label></div>
+<div class="docsifythisurlbuilderoptionsline toc-validation-message" id="tocValidationMessage" style="display:none;">At least one page Heading level for the Table of Contents must be selected.</div>
 
 </section>
 
