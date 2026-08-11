@@ -13,6 +13,7 @@
 * Minor reorganization of Web Page Builder
 * Visual indicator of active page layout in Web Page Builder page options
 * Add collapsible mobile ToC toggle and fix mobile width/rule bugs
+* Add ToC h4 heading option and improve ToC validation UX in Web Page Builder
 
 **Bugfix:**
 * Remove duplicate Search config
