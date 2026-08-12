@@ -20,6 +20,26 @@
   overflow-wrap: break-word;
 }
 
+/* Keep table links intact instead of breaking character-by-character */
+.markdown-section table a {
+  word-break: normal;
+  overflow-wrap: normal;
+  white-space: nowrap;
+}
+
+/* Same for `code`-wrapped link text - overrides the !important rule above */
+.markdown-section table code {
+  white-space: nowrap !important;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+/* Give the column after a link-only cell more room to read, instead of an
+   auto-layout split that squeezes it down to the link's leftover space */
+.markdown-section table td:has(> a:only-child) + td {
+  min-width: 14em;
+}
+
 /* Patch for Topics index links with Docsify v5 */
 .markdown-section a[href$="?id=a"],
 .markdown-section a[href$="?id=b"],
@@ -654,9 +674,12 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
 
 /* Responsive table layout - mobile */
 @media (max-width: 30em) {
+    .markdown-section .table-wrapper {
+        overflow-x: auto;
+    }
+
     .markdown-section .table-wrapper tbody,
-    .markdown-section .table-wrapper tr,
-    .markdown-section .table-wrapper td {
+    .markdown-section .table-wrapper tr {
         display: block;
     }
 
@@ -669,9 +692,14 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
         border: none;
     }
 
+    /* Label column sizes to its own content, so an empty header takes ~0
+       width instead of a fixed 8em gutter squeezing the value column */
     .markdown-section .table-wrapper td {
-        padding: .35em 0 .35em 8em;
-        position: relative;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        column-gap: 0.5em;
+        align-items: baseline;
+        padding: .35em .5em;
         text-align: left !important;
     }
 
@@ -684,11 +712,7 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
     }
 
     .markdown-section .table-wrapper td::before {
-        display: inline-block;
-        float: left;
-        width: 8em;
-        margin-left: -8em;
-        padding-left: 0.5em;
+        display: block;
         font-weight: bold;
         text-align: left;
     }
