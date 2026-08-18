@@ -612,6 +612,10 @@ With Docsify-This you can:
 
 **Still unsure?** Docsify-This is designed for easy entry _and_ exit — try it with your content risk-free. Your Markdown files can be used by other tools if your needs change. For more powerful Markdown file-based publishing with hosting capabilities, explore the open-source [Grav CMS](https://getgrav.org/) project.
 
+> [!TIP]
+>
+> **Already have content in Canvas, Moodle, Brightspace, or Blackboard?** The [Docsify Common Cartridge Converter](https://docsify-common-cartridge-converter.hibbittsdesign.org/) turns a Common Cartridge export (.imscc) into flat Markdown pages ready to use with Docsify-This or Docsify, with an auto-generated `_sidebar.md` — no need to rebuild your course by hand.
+
 ---
 
 #### How Docsify-This Works
