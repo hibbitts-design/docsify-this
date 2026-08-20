@@ -19,6 +19,7 @@
 * Remove duplicate Search config
 * Address TOC plugin double-load, dark-mode colors, and multi-level heading crashes
 * Address table links fracturing character-by-character and widen narrow description columns
+* Respect user-supplied basePath/homepage overrides in the Web Page Builder
 
 ## [2.0.0] - 07/27/2026
 
