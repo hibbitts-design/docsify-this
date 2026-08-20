@@ -1228,9 +1228,6 @@
       loadFooter: (getURLParameterByName('footer') || footer || false),
       ext: getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true)),
       executeScript: true,
-      sidebarExpandCollapse: {
-        accordion: (getURLParameterByName(['sidebar-collapse', 'sidebarCollapse']) || true),
-      },
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
@@ -2896,12 +2893,8 @@
     }
   </script>
 
-  <!-- Sidebar expand collapse plugin -->
-  <script>
-    if (!(window.$docsify['basePath'] === undefined) && (getURLParameterByName(['sidebar-collapse', 'sidebarCollapse'], null, null, window.location.href, true) === 'true')) {
-      document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-sidebar-expand-collapse.js"><\/script>');
-    }
-  </script>
+  <!-- Sidebar collapse markers plugin (opt-in +/- bullets for collapsible groups) -->
+  <script src="assets/vendor/docsify/plugins/custom/docsify-sidebar-collapse-markers.js"></script>
 
   <!-- Spotlight plugin -->
   <script>
