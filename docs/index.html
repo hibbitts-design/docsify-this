@@ -1730,6 +1730,33 @@
               });
 
               // Code generated/assisted by Anthropic Claude AI
+              // On image load failure, retry with basePath re-inserted - handles
+              // content authored assuming a shallower basePath (e.g. ../../images/...).
+              // Error-only, so images already working outside basePath stay untouched.
+              try {
+                const basePathValue = (window.$docsify['basePath'] || '').replace(/\/$/, '');
+                if (basePathValue) {
+                  const basePathUrl = new URL(basePathValue);
+                  const repoRoot = basePathUrl.origin + '/' + basePathUrl.pathname.split('/').filter(Boolean).slice(0, 3).join('/');
+                  if (repoRoot !== basePathValue) {
+                    // Idempotent: a corrected src fails this check on any retry.
+                    const applyFallback = (img) => {
+                      if (img.src.startsWith(repoRoot + '/') && !img.src.startsWith(basePathValue + '/')) {
+                        img.src = basePathValue + img.src.slice(repoRoot.length);
+                      }
+                    };
+                    document.querySelectorAll('.markdown-section img[src]').forEach((img) => {
+                      // A fast 404 may already be complete before this hook runs.
+                      img.addEventListener('error', () => applyFallback(img), { once: true });
+                      if (img.complete && img.naturalWidth === 0) applyFallback(img);
+                    });
+                  }
+                }
+              } catch (e) {
+                // Ignore malformed basePath values
+              }
+
+              // Code generated/assisted by Anthropic Claude AI
               // Get core theme classes from URL and apply to body
               const themeClasses = getURLParameterByName('theme-classes', null, null, window.location.href, true);
 
