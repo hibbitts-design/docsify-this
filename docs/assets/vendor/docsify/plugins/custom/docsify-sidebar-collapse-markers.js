@@ -59,6 +59,12 @@
       var compiler = vm.compiler;
       var originalSidebar = compiler.sidebar.bind(compiler);
       compiler.sidebar = function (text, level) {
+        // No _sidebar.md loaded (e.g. sidebar shown without loadSidebar) -
+        // nothing for us to preprocess, so hand off to native untouched.
+        if (typeof text !== 'string') {
+          return originalSidebar(text, level);
+        }
+
         // Read the outgoing sidebar's collapse states before it's replaced,
         // so a group the user toggled stays that way across navigation
         // instead of resetting to its marker's initial state every render.
