@@ -38,6 +38,21 @@
     var previousState = {};
     var previousScrollTop = null;
 
+    hook.init(function () {
+      // Native's expanded chevron uses an asymmetric offset that can render
+      // visibly off from the collapsed chevron's column (sub-pixel rounding
+      // quirk). A symmetric offset around the same anchor stays aligned.
+      var style = document.createElement('style');
+      style.textContent = [
+        'body[class*="sidebar-chevron"] .sidebar-nav p.group-title[role="button"][aria-expanded="true"] {',
+        '  background-position:',
+        '    calc(var(--_sidebar_pagelink-bg-left) - 2.5px) 50%,',
+        '    calc(var(--_sidebar_pagelink-bg-left) + 2.5px) 50% !important;',
+        '}'
+      ].join('\n');
+      document.head.appendChild(style);
+    });
+
     // vm.compiler isn't created until initRender(), which runs after the
     // "init" hook fires, so patch it on "mounted" instead.
     hook.mounted(function () {
