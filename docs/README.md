@@ -2376,6 +2376,8 @@ Docsify, the parent project of Docsify-This, currently handles paths inconsisten
 
 If nesting content files is required, add the URL parameter ?relative-paths=true to your Docsify-This URL. Use explicit relative path prefixes for all links — ./filename.md for same-directory links and ../ or ../../ for parent directories (e.g. ../readme.md, ../../readme.md). Note that this parameter is not compatible with full root-relative paths (e.g. level1/foo.md). This is an unlisted advanced parameter for this specific scenario.
 
+Similarly, if your homepage file is nested more deeply than its `_sidebar.md`/`_navbar.md` files, add explicit `basePath` and `homepage` parameters to the Markdown File URL field, restating `homepage` relative to that `basePath` — for example: `.../docs/section/page.md?basePath=.../docs&homepage=section/page.md&sidebar=true&loadSidebar=_sidebar.md`.
+
 ##### Matching Fonts with Your Destination Platform Content
 
 Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-family` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  

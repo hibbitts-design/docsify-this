@@ -708,11 +708,26 @@
             }
           }
 
+          // Code generated/assisted by Anthropic Claude AI
+          // Respect an explicit basePath and/or homepage already present on the
+          // pasted file URL (e.g. when _sidebar.md / _navbar.md live in an
+          // ancestor folder rather than alongside the file), the same way other
+          // options below are respected instead of overridden when already set.
+          let userBasePath = getURLParameterByName('basePath', null, null, url, true);
+          const userHomepage = getURLParameterByName('homepage', null, null, url, true);
+          if (userBasePath) {
+            userBasePath = userBasePath.replace('github.com', 'raw.githubusercontent.com').replace(/\/blob/, '');
+            userBasePath = userBasePath.replace('github.dev', 'raw.githubusercontent.com').replace(/\/blob/, '');
+            userBasePath = userBasePath.replace(/\/$/, '');
+          }
+
           const parts = url.split(/[?&]/);
           let queryString = '';
           if (parts.length > 1) {
-            // Join all parameters back together
-            queryString = '&' + parts.slice(1).join('&');
+            // Join all parameters back together, excluding basePath/homepage (handled separately above)
+            queryString = parts.slice(1)
+              .filter((p) => !/^basePath=/.test(p) && !/^homepage=/.test(p))
+              .map((p) => '&' + p).join('');
           }
 
           if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && url.includes("gist.githubusercontent.com")) {
@@ -729,7 +744,8 @@
             // Code generated/assisted by Anthropic Claude AI
             // Extract base URL, handling malformed parameter separators
             const baseUrl = url.split(/[?&]/)[0];
-            url = baseUrl.substring(0, baseUrl.lastIndexOf("/"));
+            url = userBasePath || baseUrl.substring(0, baseUrl.lastIndexOf("/"));
+            lastSegment = userHomepage || lastSegment;
 
             var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms + queryString;
           }
