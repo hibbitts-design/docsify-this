@@ -258,7 +258,7 @@ Docsify-This uses client-side rendering, which means your content will not be in
 
 #### Read What People are Saying about Docsify-This
 
-> I had great fun working with Docsify-This, especially as the whole process is quite simple (considering that I’m already familiar with Markdown, and a bit with Codeberg). I especially enjoyed its straightforward interface, making it very easy to generate something neat in just a few clicks, while still allowing more advanced adjustments. 
+> I had great fun working with Docsify-This, especially as the whole process is quite simple (considering that I’m already familiar with Markdown, and a bit with Codeberg). I especially enjoyed its straightforward interface, making it very easy to generate something neat in just a few clicks, while still allowing more advanced adjustments.  
 > — E. Louërat, (Nantes Université & EUniWell, the European University for Well-Being)
 
 > I’m blown away just by the fact you put a (Markdown file) URL into Docsify-This and then you get a URL back for a web page… done! Take the URL and go. It is so seamless.  
