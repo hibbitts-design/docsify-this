@@ -2902,7 +2902,7 @@
 
   <!-- Chatwoot script -->
   <script>
-    if ((location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
+    if (!(getURLParameterByName(['hide-chat', 'hideChat'], null, null, window.location.href, true) === 'true') && (location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
       (function(d,t) {
         var BASE_URL="https://app.chatwoot.com";
         var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
