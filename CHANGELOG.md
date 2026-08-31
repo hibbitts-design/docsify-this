@@ -2,6 +2,9 @@
 
 ## [2.0.2] - XX/XX/2026
 
+**New:**
+* Live chat widget (via Chatwoot) on docsify-this.net, letting visitors ask questions or share feedback directly from the site. Restricted to the production domain and can be hidden via `?hide-chat=true` or `?hideChat=true` URL parameters.
+
 **Improved:**
 * Updated ReadMe
 
