@@ -463,6 +463,8 @@ Page layout:
 
 </div>
 
+<p style="margin:10px 0 0; font-size:0.9em;"><span style="opacity:0.75;">Questions or feedback? Feel free to </span><a href="https://hibbittsdesign.org/contact.html">get in touch</a><span style="opacity:0.75;">.</span></p>
+
 ### Quickstart ⚡
 
 1. **Have a Markdown file online?** GitHub, Codeberg, or any public Markdown file works
@@ -542,9 +544,9 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 
 </div>
 
-What do you think about Docsify-This so far? Help shape its direction by sharing your feedback in just a few minutes!
+What do you think about Docsify-This so far? Help shape its direction by sharing your experience in just a few minutes!
 
-[:fa fa-comment fa-fw: Share your Feedback](https://forms.gle/ViYu2ZdPmj6PeQ439 ":class=button-secondary-rounded")
+[:fa fa-comment fa-fw: Share your Docsify-This Experience](https://forms.gle/ViYu2ZdPmj6PeQ439 ":class=button-secondary-rounded")
 
 <div id='docsifythisdocscontent'>
 
@@ -2692,11 +2694,17 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 - 👩🏻‍💻🧑🏻‍💻 Join the [Docsify Discord](https://discord.gg/docsify) and visit the **#Docsify-This** Channel
 - Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this) to the Docsify-This project repository
 
-What do you think about Docsify-This so far? Help shape its direction by sharing your feedback in just a few minutes!
+What do you think about Docsify-This so far? Help shape its direction by sharing your experience in just a few minutes!
 
-[:fa fa-comment fa-fw: Share your Feedback](https://forms.gle/ViYu2ZdPmj6PeQ439 ":class=button-secondary-rounded")
+[:fa fa-comment fa-fw: Share your Docsify-This Experience](https://forms.gle/ViYu2ZdPmj6PeQ439 ":class=button-secondary-rounded")
 
-By leveraging his extensive UX design expertise and systems-oriented approach, Paul helps teams and individuals utilize open content in a range of education and publication settings, especially in connection with his Markdown-based [Docsify](https://docsify.js.org/#/) and [Grav CMS](https://getgrav.org/) open-source projects. Professional services include user experience and workflow consulting, premium support subscriptions, workshops, and custom development. Sound of interest? Send a note to [paul@hibbittsdesign.org](mailto:paul@hibbittsdesign.org).
+<blockquote class="announcement">
+  <h3 style="margin-top:0;">Curious about using Markdown for open education, open publishing, or OER?</h3>
+  <p>If you're deciding which tool fits, or working through a migration, questions are welcome.</p>
+  <p><a href="https://hibbittsdesign.org/contact.html">Get in touch →</a></p>
+</blockquote>
+
+By leveraging his extensive UX design expertise and systems-oriented approach, Paul helps teams and individuals utilize open content in a range of education and publication settings, especially in connection with his Markdown-based [Docsify](https://docsify.js.org/#/) and [Grav CMS](https://getgrav.org/) open-source projects. Professional services include user experience and workflow consulting, premium support subscriptions, workshops, and custom development. For team or organization support, feel free to send a note to [paul@hibbittsdesign.org](mailto:paul@hibbittsdesign.org).
 
 </div>
 

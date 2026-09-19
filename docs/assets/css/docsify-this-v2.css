@@ -55,14 +55,26 @@
     --dt-shadow-hover: 0 4px 6px -1px rgba(0, 0, 0, 0.3),
       0 10px 15px -3px rgba(0, 0, 0, 0.4);
     --dt-link-color: #818cf8;
+    /* standard blue for links in page content; the indigo above is for the Web Page Builder controls only */
+    --dt-content-link-color: #1BA1EE;
     --dt-danger-color: #f87171;
   }
 
   #docsifythis p a,
   #docsifythis li a,
   #docsifythis h3:not(#quickstart-⚡) a,
+  #docsifythis h4 a,
   #docsifythis summary,
   #docsifythis .copy-link {
+    color: var(--dt-content-link-color);
+    text-decoration-color: var(--dt-content-link-color);
+  }
+
+  #docsifythisurlbuilder p a,
+  #docsifythisurlbuilder li a,
+  #docsifythisurlbuilder h3 a,
+  #docsifythisurlbuilder summary,
+  #docsifythisurlbuilder .copy-link {
     color: var(--dt-link-color);
     text-decoration-color: var(--dt-link-color);
   }
@@ -1105,6 +1117,14 @@ input[type="number"]:focus {
 
 /* Dark mode specific overrides */
 @media (prefers-color-scheme: dark) {
+  #docsifythis .copy-link {
+    color: var(--dt-content-link-color);
+  }
+
+  #docsifythisurlbuilder .copy-link {
+    color: var(--dt-link-color);
+  }
+
   #docsifythisurlbuilder {
     background: var(--dt-card-bg-dark);
     border: 1px solid var(--dt-border-color) !important;

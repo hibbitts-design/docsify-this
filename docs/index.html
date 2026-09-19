@@ -1596,10 +1596,14 @@
                     errorMessage = `An unexpected error occurred while requesting the file **${file}**.\nError code ${status}`;
                 }
 
+                // Contact line only on the hosted site, so self-hosted copies do not point visitors to the original maintainer
+                const stillStuckLine = location.hostname.includes("docsify-this.net") ? 'Still stuck? Feel free to [get in touch](https://hibbittsdesign.org/contact.html).' : '';
+
                 return [
                   `# Whoops!`,
                   errorMessage,
-                ].join('\n\n');
+                  stillStuckLine,
+                ].filter(Boolean).join('\n\n');
               }
 
               if (/githubusercontent\.com/.test(vm.route.file)) {
