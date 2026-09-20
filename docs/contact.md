@@ -1,6 +1,6 @@
 <div id="docsifythis">
 
-# Contact
+<h1> Contact </h1>
 
 Questions about Docsify-This? Feedback, ideas, or a quick hello are all welcome. You can also email me direct at [paul@hibbittsdesign.org](mailto:paul@hibbittsdesign.org), or complete the form below.
 
