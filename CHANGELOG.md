@@ -4,6 +4,7 @@
 
 **New:**
 * Example chat widget (via Chatwoot) on docsify-this.net (commented out), letting visitors ask questions or share feedback directly from the site. Restricted to the production domain and can be hidden via `?hide-chat=true` or `?hideChat=true` URL parameters.
+* Add Docsify-This contact page
 
 **Improved:**
 * Updated ReadMe
