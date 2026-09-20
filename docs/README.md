@@ -61,7 +61,7 @@ body {
 
 <h1 style="margin-top:6px;"><span class="subhead">Instantly Turn Markdown Text Files into Styled Web&nbsp;Pages</span></h1>
 
-This open-source web app built with [Docsify](https://docsify.js.org), a magical documentation site generator capable of flexible content display, makes [Markdown](https://en.wikipedia.org/wiki/Markdown) publishing as simple as providing a file link - publish and style pages or entire sites for reading, embedding, or presenting, without requiring webserver setup or modifying source files.  
+This open-source web app, built on [Docsify](https://docsify.js.org), makes [Markdown](https://en.wikipedia.org/wiki/Markdown) publishing as simple as providing a file link. Publish and style pages or entire sites for reading, embedding, or presenting, with no web server setup and no changes to your source files.  
 
 <div id="docsifythisurlbuilder">
 
@@ -474,7 +474,7 @@ Page layout:
 1. Tap on the link  **Show More Page Appearance Options »** and select from available choices
 1. Tap on the button **Publish as Web Page**
 
-No online Markdown file handy? **Copy and paste this example URL** - an overview of the Markdown syntax:
+No online Markdown file handy? **Copy and paste this example URL** – an overview of the Markdown syntax:
 
 ```text
 https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md

@@ -82,7 +82,7 @@ Content stays in the Markdown files you already have, wherever they are hosted. 
 1. Tap on the link  **Show More Page Appearance Options »** and select from available choices
 1. Tap on the button **Publish as Web Page**
 
-No online Markdown file handy? **Copy and paste this example URL** - an overview of the Markdown syntax:
+No online Markdown file handy? **Copy and paste this example URL** – an overview of the Markdown syntax:
 
 ```text
 https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
