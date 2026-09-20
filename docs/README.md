@@ -463,7 +463,7 @@ Page layout:
 
 </div>
 
-<p style="margin:10px 0 0; font-size:0.9em;"><span style="opacity:0.75;">Questions or feedback? Feel free to </span><a href="/#/contact.md">get in touch</a><span style="opacity:0.75;">.</span></p>
+<p style="margin:8px 0 0; padding-bottom:8px; font-size:0.9em;"><span style="opacity:0.75;">Questions or feedback? Feel free to </span><a href="/#/contact.md">get in touch</a><span style="opacity:0.75;">.</span></p>
 
 ### Quickstart ⚡
 
