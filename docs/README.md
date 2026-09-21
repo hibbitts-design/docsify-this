@@ -364,7 +364,7 @@ Page layout:
 
 ### Links Within a Site
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="relativepaths"/><label for="relativepaths">Enable relative links to other files in the site (all links need to be relative to each file's folder)</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="relativepaths"/><label for="relativepaths">Enable relative links to other site files (all links need to be relative to each file's folder)</label></div>
 </section>
 <!-- PATCH END -->
 
