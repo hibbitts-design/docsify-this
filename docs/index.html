@@ -1604,7 +1604,16 @@
                     if (isGitHubOrCodeberg) {
                       publicRepoNote = " Also ensure your GitHub or Codeberg repository is public.";
                     }
-                    errorMessage = `Looks like the file **${file}** couldn't be found on the server. Please check if the **basePath** and **homepage** URL parameters are correct or if the file has been moved or deleted.${publicRepoNote}\n\nError code ${status}`;
+                    // PATCH START: relative-paths workaround hint for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430)
+                    // Remove with the 'Links Within a Site' builder section (README.md) once fixed upstream
+                    let relativePathsNote = "";
+                    if (new URLSearchParams(window.location.search).get('relative-paths') === 'true') {
+                      relativePathsNote = "\n\nWith relative-paths on, all links need to be relative to each file's folder, not paths from the repository root.";
+                    } else if (/^\/[^\/]+$/.test(file)) {
+                      relativePathsNote = "\n\nIf this link is in a page inside a subfolder, try adding `&relative-paths=true` to the URL (or choose the **Links Within a Site** option in the Web Page Builder under **Advanced Web Page Builder Options**).";
+                    }
+                    // PATCH END
+                    errorMessage = `Looks like the file **${file}** couldn't be found on the server. Please check if the **basePath** and **homepage** URL parameters are correct or if the file has been moved or deleted.${publicRepoNote}${relativePathsNote}\n\nError code ${status}`;
                     break;
                   case 500:
                     errorMessage = `The server encountered an internal error while trying to fetch **${file}**.\nError code ${status}`;
