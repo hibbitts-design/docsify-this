@@ -709,7 +709,7 @@
           }
 
           // PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430)
-          // Remove with the 'Links Between Files' builder section (README.md) once fixed upstream
+          // Remove with the 'Links Within a Site' builder section (README.md) once fixed upstream
           const cbRelativePaths = document.querySelector('#relativepaths');
           if (cbRelativePaths && cbRelativePaths.checked && !url.includes('relative-paths=')) {
             var URLparms = URLparms + `&relative-paths=true`;
@@ -906,7 +906,7 @@
       document.getElementById("spotlight").checked = false;
       document.getElementById("hideCredits").checked = false;
       document.getElementById("hypothesisenable").checked = false;
-      // PATCH START: relative-paths workaround (see 'Links Between Files' builder section)
+      // PATCH START: relative-paths workaround (see 'Links Within a Site' builder section)
       (document.getElementById("relativepaths") || {}).checked = false;
       // PATCH END
       document.getElementById("docsifyV5coretheme").checked = false;
@@ -2264,7 +2264,7 @@
             }
 
             // PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430)
-            // Preload the 'Links Between Files' option
+            // Preload the 'Links Within a Site' option
             if (getURLParameterByName('relative-paths', null, null, window.location.href, true) === 'true') {
               const relativePathsCheckbox = document.getElementById("relativepaths");
               if (relativePathsCheckbox) {

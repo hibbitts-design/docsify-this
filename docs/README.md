@@ -362,9 +362,9 @@ Page layout:
 <!-- PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430). Remove this whole section, plus the matching PATCH blocks in index.html, once fixed upstream. -->
 <section class="builder-section">
 
-### Links Between Files
+### Links Within a Site
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="relativepaths"/><label for="relativepaths">Enable relative links between files (all links need to be relative to each file's folder)</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="relativepaths"/><label for="relativepaths">Enable relative links to other files in the site (all links need to be relative to each file's folder)</label></div>
 </section>
 <!-- PATCH END -->
 
@@ -2390,7 +2390,7 @@ This streamlined approach also enables authors to help other authors by sharing 
 
 Docsify, the parent project of Docsify-This, currently handles paths inconsistently, which can cause links to break in nested directories. Until this issue is addressed, it is recommended to keep all content files at the root level and only nesting non-markdown assets. See [Docsify issue #1891](https://github.com/docsifyjs/docsify/issues/1891) for details.
 
-If nesting content files is required, add the URL parameter ?relative-paths=true to your Docsify-This URL. Write links relative to the current file's folder: `filename.md` or `./filename.md` for the same folder, `subfolder/filename.md` for a child folder, and `../filename.md` or `../../filename.md` for parent folders. A site can use either full (root-relative) paths or relative paths with this parameter, but not both, so paths from the repository root such as `level1/foo.md` are not supported from within a nested file. Image paths are not covered by this parameter. In the Web Page Builder, tick **Links Between Files** under **Advanced Web Page Builder Options**, or add `?relative-paths=true` to the Markdown File URL. This is a temporary workaround for an upstream Docsify issue ([#2430](https://github.com/docsifyjs/docsify/issues/2430)) and will be removed once it is fixed.
+If nesting content files is required, add the URL parameter ?relative-paths=true to your Docsify-This URL. Write links relative to the current file's folder: `filename.md` or `./filename.md` for the same folder, `subfolder/filename.md` for a child folder, and `../filename.md` or `../../filename.md` for parent folders. A site can use either full (root-relative) paths or relative paths with this parameter, but not both, so paths from the repository root such as `level1/foo.md` are not supported from within a nested file. Image paths are not covered by this parameter. In the Web Page Builder, tick **Links Within a Site** under **Advanced Web Page Builder Options**, or add `?relative-paths=true` to the Markdown File URL. This is a temporary workaround for an upstream Docsify issue ([#2430](https://github.com/docsifyjs/docsify/issues/2430)) and will be removed once it is fixed.
 
 <!-- PATCH END -->
 
