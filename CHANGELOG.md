@@ -1,13 +1,13 @@
 # Changelog
 
-## [2.0.2] - 09/21/2026
+## [2.0.2] - 09/21/2026🍂
 
 **New:**
-* Example chat widget (via Chatwoot) on docsify-this.net (commented out), letting visitors ask questions or share feedback directly from the site. Restricted to the production domain and can be hidden via `?hide-chat=true` or `?hideChat=true` URL parameters.
 * Add Docsify-This contact page
 * Modify search indexing to support linked pages as you view them when no custom sidebar is used
 * Change search placeholder to "Type to search page" when no custom sidebar is used
 * Link folders and non-Markdown files to GitHub when content is hosted there
+* Example use of chat widget (via Chatwoot) on docsify-this.net (commented out), letting visitors ask questions or share feedback directly from the site. Restricted to the production domain and can be hidden via `?hide-chat=true` or `?hideChat=true` URL parameters.
 
 **Improved:**
 * Updated ReadMe
