@@ -6,6 +6,7 @@
 * Add "Links Within a Site" Web Page Builder option
 * Updated ReadMe
 * Add relative-paths hint to the Markdown 404 page
+* Resolve HTML image paths from the page's folder when relative-paths is on
 
 ## [2.1.0] - 09/21/2026🍂
 
