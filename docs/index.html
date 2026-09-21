@@ -1562,8 +1562,17 @@
                   let url = image.getAttribute('src');
                   if (!(url.includes('://') > 0 || url.startsWith('//'))) {
                     // URL is relative
+                    let imagePrefix = currentBasePath + '/';
+                    // PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430)
+                    // Resolve relative HTML image paths from the current page's folder, matching how GitHub displays the file.
+                    // This uses useRelativePaths and currentPageDir from the PATCH block above. When those are removed, replace
+                    // this block with an always-on page-folder prefix (do not simply delete it, or HTML images on nested pages break again).
+                    if (useRelativePaths && currentPageDir && !url.startsWith('/')) {
+                      imagePrefix = currentBasePath + '/' + currentPageDir;
+                    }
+                    // PATCH END
                     url = url.replace(/^\/+/g, '');
-                    url = currentBasePath + '/' + url;
+                    url = imagePrefix + url;
                     image.setAttribute('src', url);
                     // console.log("changed src");
                   }
