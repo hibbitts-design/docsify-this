@@ -2264,15 +2264,11 @@
             }
 
             // PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430)
-            // Preload the 'Links Between Files' option and reveal the Advanced section so the ticked option is visible
+            // Preload the 'Links Between Files' option
             if (getURLParameterByName('relative-paths', null, null, window.location.href, true) === 'true') {
               const relativePathsCheckbox = document.getElementById("relativepaths");
-              const advancedToggle = document.getElementById("advancedwebpagebuilder");
-              const advancedOptionsDiv = document.getElementById("docsifythisurlbuilderoptionsDiv2");
-              if (relativePathsCheckbox && advancedToggle && advancedOptionsDiv) {
+              if (relativePathsCheckbox) {
                 relativePathsCheckbox.checked = true;
-                advancedToggle.checked = true;
-                advancedOptionsDiv.style.display = "block";
               }
             }
             // PATCH END
