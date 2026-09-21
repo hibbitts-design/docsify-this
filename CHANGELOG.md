@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.1] - XX/XX/2026
+
+**Improved:**
+* Add "Links Between Files" Web Page Builder option
+* Updated ReadMe
+
 ## [2.1.0] - 09/21/2026🍂
 
 **New:**
