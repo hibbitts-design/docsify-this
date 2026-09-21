@@ -708,6 +708,14 @@
             }
           }
 
+          // PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430)
+          // Remove with the 'Links Between Files' builder section (README.md) once fixed upstream
+          const cbRelativePaths = document.querySelector('#relativepaths');
+          if (cbRelativePaths && cbRelativePaths.checked && !url.includes('relative-paths=')) {
+            var URLparms = URLparms + `&relative-paths=true`;
+          }
+          // PATCH END
+
           // Code generated/assisted by Anthropic Claude AI
           // Respect an explicit basePath and/or homepage already present on the
           // pasted file URL (e.g. when _sidebar.md / _navbar.md live in an
@@ -898,6 +906,9 @@
       document.getElementById("spotlight").checked = false;
       document.getElementById("hideCredits").checked = false;
       document.getElementById("hypothesisenable").checked = false;
+      // PATCH START: relative-paths workaround (see 'Links Between Files' builder section)
+      (document.getElementById("relativepaths") || {}).checked = false;
+      // PATCH END
       document.getElementById("docsifyV5coretheme").checked = false;
       document.getElementById("loadfavicon").checked = false;
       document.getElementById("loadcoverpage").checked = false;
@@ -2251,6 +2262,20 @@
             if (getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true') {
               document.getElementById("hypothesisenable").checked = true;
             }
+
+            // PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430)
+            // Preload the 'Links Between Files' option and reveal the Advanced section so the ticked option is visible
+            if (getURLParameterByName('relative-paths', null, null, window.location.href, true) === 'true') {
+              const relativePathsCheckbox = document.getElementById("relativepaths");
+              const advancedToggle = document.getElementById("advancedwebpagebuilder");
+              const advancedOptionsDiv = document.getElementById("docsifythisurlbuilderoptionsDiv2");
+              if (relativePathsCheckbox && advancedToggle && advancedOptionsDiv) {
+                relativePathsCheckbox.checked = true;
+                advancedToggle.checked = true;
+                advancedOptionsDiv.style.display = "block";
+              }
+            }
+            // PATCH END
 
             if (getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true') {
               document.getElementById("docsifyV5coretheme").checked = true;

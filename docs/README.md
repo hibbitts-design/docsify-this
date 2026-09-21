@@ -375,6 +375,15 @@ Page layout:
 
 </section>
 
+<!-- PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430). Remove this whole section, plus the matching PATCH blocks in index.html, once fixed upstream. -->
+<section class="builder-section">
+
+### Links Between Files
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="relativepaths"/><label for="relativepaths">Enable relative links between files (all links must be relative to each file's folder)</label></div>
+</section>
+<!-- PATCH END -->
+
 <section class="builder-section">
 
 ### Docsify Custom Files
@@ -2343,7 +2352,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 #### Content Display Tips and Techniques
 
 - [Batch Styling with Markdown File URL Parameters](/?id=batch-styling-with-markdown-file-url-parameters)
-- [Understanding Path Handling in Docsify-This](/?id=understanding-path-handling-in-docsify-this)
+- [Understanding Path Handling in Docsify-This](/?id=understanding-path-handling-in-docsify-this) <!-- PATCH: relative-paths workaround docs; remove this line with the "Understanding Path Handling" section once fixed upstream -->
 - [Matching Fonts with Your Destination Platform Content](/?id=matching-fonts-with-your-destination-platform-content)
 - [Displaying Markdown Content During a Presentation](/?id=displaying-markdown-content-during-a-presentation)
 - [Reducing Content Shift When Toggling the Sidebar](/?id=reducing-content-shift-when-toggling-the-sidebar)
@@ -2376,11 +2385,14 @@ https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.
 
 This streamlined approach also enables authors to help other authors by sharing examples of Markdown file URLs to be styled based on provided URL parameters, all represented as shareable plain text.
 
+<!-- PATCH START: relative-paths workaround docs (Docsify link issue). Remove this heading and the next two paragraphs, plus the matching table-of-contents line above, once fixed upstream. Review the following sidebar/basePath paragraph at that time: it may still be needed and would need its own heading. -->
 ##### Understanding Path Handling in Docsify-This
 
 Docsify, the parent project of Docsify-This, currently handles paths inconsistently, which can cause links to break in nested directories. Until this issue is addressed, it is recommended to keep all content files at the root level and only nesting non-markdown assets. See [Docsify issue #1891](https://github.com/docsifyjs/docsify/issues/1891) for details.
 
-If nesting content files is required, add the URL parameter ?relative-paths=true to your Docsify-This URL. Use explicit relative path prefixes for all links — ./filename.md for same-directory links and ../ or ../../ for parent directories (e.g. ../readme.md, ../../readme.md). Note that this parameter is not compatible with full root-relative paths (e.g. level1/foo.md). This is an unlisted advanced parameter for this specific scenario.
+If nesting content files is required, add the URL parameter ?relative-paths=true to your Docsify-This URL. Write links relative to the current file's folder: `filename.md` or `./filename.md` for the same folder, `subfolder/filename.md` for a child folder, and `../filename.md` or `../../filename.md` for parent folders. A site can use either full (root-relative) paths or relative paths with this parameter, but not both, so paths from the repository root such as `level1/foo.md` are not supported from within a nested file. Image paths are not covered by this parameter. In the Web Page Builder, tick **Links Between Files** under **Advanced Web Page Builder Options**, or add `?relative-paths=true` to the Markdown File URL. This is a temporary workaround for an upstream Docsify issue ([#2430](https://github.com/docsifyjs/docsify/issues/2430)) and will be removed once it is fixed.
+
+<!-- PATCH END -->
 
 Similarly, if your homepage file is nested more deeply than its `_sidebar.md`/`_navbar.md` files, add explicit `basePath` and `homepage` parameters to the Markdown File URL field, restating `homepage` relative to that `basePath` — for example: `.../docs/section/page.md?basePath=.../docs&homepage=section/page.md&sidebar=true&loadSidebar=_sidebar.md`.
 
