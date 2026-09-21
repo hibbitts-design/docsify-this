@@ -1040,6 +1040,17 @@
       return '';
     }
 
+    function getGitHubSourceLink(basePath, filePath, isFolder) {
+      // For a folder, or a file that is not a page (e.g. .ipynb, .py, .pdf), returns its GitHub URL
+      // when the content is hosted on GitHub, so it can be viewed there, otherwise returns ''
+      if (/[?#]/.test(filePath)) return ''; // In-page anchor (e.g. ?id=search.resultsource or README?id=node.js), not a file
+      const ext = (filePath.match(/\.[a-z][a-z0-9]*$/i) || [''])[0].toLowerCase();
+      if (!isFolder && (!ext || getAllowedFileExtensions().split(',').includes(ext))) return '';
+      const repo = basePath.match(/^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/(?:refs\/heads\/)?([^/]+)\/?(.*?)\/?$/);
+      if (!repo) return '';
+      return `https://github.com/${repo[1]}/${repo[2]}/${isFolder ? 'tree' : 'blob'}/${[repo[3], repo[4], filePath].filter(Boolean).join('/')}`;
+    }
+
     function getAllowedFileExtensions() {
       // Return list of supported file extensions
       return ".md,.markdown,.adoc";
@@ -1442,6 +1453,14 @@
                   }
                   let lastSegment = resolvedSegments.join('/');
                   // PATCH END
+
+                  // Link to a folder (trailing slash) or a non-page file (e.g. .ipynb, .py, .pdf) hosted on GitHub: open it on GitHub instead of as a Docsify page
+                  const sourceLink = getGitHubSourceLink(currentBasePath, lastSegment, href.endsWith('/') && lastSegment !== '');
+                  if (sourceLink) {
+                    link.setAttribute('href', sourceLink);
+                    link.setAttribute('target', getURLParameterByName(['external-link-target', 'externalLinkTarget'], null, null, window.location.href, true) || window.$docsify.externalLinkTarget);
+                    continue;
+                  }
 
                   // Check to make sure link is not Docsify id anchor link
                   if (!lastSegment.startsWith("?id")) {
