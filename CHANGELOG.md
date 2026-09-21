@@ -5,6 +5,7 @@
 **Improved:**
 * Add "Links Within a Site" Web Page Builder option
 * Updated ReadMe
+* Add relative-paths hint to the Markdown 404 page
 
 ## [2.1.0] - 09/21/2026🍂
 
