@@ -7,6 +7,7 @@
 * Add Docsify-This contact page
 * Modify search indexing to support linked pages as you view them when no custom sidebar is used
 * Change search placeholder to "Type to search page" when no custom sidebar is used
+* Link folders and non-Markdown files to GitHub when content is hosted there
 
 **Improved:**
 * Updated ReadMe
