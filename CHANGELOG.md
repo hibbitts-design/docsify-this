@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.2] - 09/21/2026🍂
+## [2.1.0] - 09/21/2026🍂
 
 **New:**
 * Add Docsify-This contact page
