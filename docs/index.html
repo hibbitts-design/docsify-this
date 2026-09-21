@@ -2857,6 +2857,20 @@
       // document.write('<script src="assets/vendor/docsify/plugins/search.min.js"><\/script>');
       // document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>');
       document.write('<script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@dist/plugins/search.min.js"><\/script>');
+      document.write('<script>' +
+        // Without a custom sidebar the search plugin finds no page links to index, so it only
+        // indexes "/". Add a hidden link for the current page, ahead of the search plugin's own hook.
+        'window.$docsify.plugins.unshift(function (hook, vm) {' +
+          'hook.doneEach(function () {' +
+            'var nav = document.querySelector(".sidebar-nav");' +
+            'if (!nav || nav.querySelector("a:not(.section-link)")) return;' +
+            'var a = document.createElement("a");' +
+            'a.href = vm.router.toURL(vm.route.path);' +
+            'a.hidden = true;' +
+            'nav.appendChild(a);' +
+          '});' +
+        '});' +
+      '<\/script>');
     }
   </script>
 
