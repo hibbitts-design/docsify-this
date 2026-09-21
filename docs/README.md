@@ -359,6 +359,15 @@ Page layout:
 
 </section>
 
+<!-- PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430). Remove this whole section, plus the matching PATCH blocks in index.html, once fixed upstream. -->
+<section class="builder-section">
+
+### Links Between Files
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="relativepaths"/><label for="relativepaths">Enable relative links between files (all links need to be relative to each file's folder)</label></div>
+</section>
+<!-- PATCH END -->
+
 <section class="builder-section">
 
 ### Custom Page Options
@@ -374,15 +383,6 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesisenable"/><label for="hypothesisenable">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
 
 </section>
-
-<!-- PATCH START: relative-paths workaround for a Docsify link issue (https://github.com/docsifyjs/docsify/issues/2430). Remove this whole section, plus the matching PATCH blocks in index.html, once fixed upstream. -->
-<section class="builder-section">
-
-### Links Between Files
-
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="relativepaths"/><label for="relativepaths">Enable relative links between files (all links must be relative to each file's folder)</label></div>
-</section>
-<!-- PATCH END -->
 
 <section class="builder-section">
 
