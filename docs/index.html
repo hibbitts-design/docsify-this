@@ -1243,7 +1243,7 @@
       search: {
         maxAge: 86400000, // Expiration time, the default one day
         paths: 'auto',
-        placeholder: 'Type to search',
+        placeholder: getURLParameterByName('loadSidebar') ? 'Type to search' : 'Type to search page',
         noData: 'No matches found.',
         // Headline depth, 1 - 6
         depth: 6,
