@@ -59,7 +59,7 @@ body {
   </div>
 </div>
 
-<h1 style="margin-top:6px;"><span class="subhead">Instantly Turn Markdown Text Files into Styled Web&nbsp;Pages</span></h1>
+<h1 style="margin-top:6px;"><span class="subhead">Instantly Turn Markdown Files into Styled Web&nbsp;Pages</span></h1>
 
 This open-source web app, built on [Docsify](https://docsify.js.org), makes [Markdown](https://en.wikipedia.org/wiki/Markdown) publishing as simple as providing a file link. Publish and style pages or entire sites, including existing README files on GitHub or Codeberg, for reading, embedding, or presenting, with no web server setup and no changes to your source files.  
 
