@@ -607,6 +607,7 @@ With Docsify-This you can:
 - Need to publish materials, courses, documentation, or projects quickly without technical setup
 - Want to present existing Markdown content for workshops, presentations, or online sessions
 - Want a cleaner, more readable view of existing README or Markdown files on GitHub or Codeberg, without changing the source files
+- Are a student whose instructor shares course notes on GitHub, and want a better way to read them, including on mobile
 - Prefer simple, low-maintenance publishing (set it and forget it, no webserver needed)
 - Value keeping content in portable Markdown files with platform independence
 - Value open education resource (OER) principles and open publishing workflows
