@@ -8,6 +8,9 @@
 * Add relative-paths hint to the Markdown 404 page
 * Resolve HTML image paths from the page's folder when relative-paths is on
 
+**Bugfix:**
+* Fix Docsify hang on digit-leading heading ids
+
 ## [2.1.0] - 09/21/2026🍂
 
 **New:**
