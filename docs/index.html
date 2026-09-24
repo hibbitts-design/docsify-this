@@ -2549,6 +2549,51 @@
 
   </script>
 
+  <script>
+    // PATCH START: digit-leading heading id crash (docsifyjs/docsify#1075, won't be fixed upstream)
+    // querySelector('#'+id) throws for ids starting with a digit (e.g. "1.0 Intro" -> "10-intro"),
+    // hanging the page. Docsify's heading renderer prefixes such ids with "_", but its own link
+    // builder doesn't -- so try the plain id first, then the "_"-prefixed form. Patched here (not
+    // in the vendored docsify.min.js) so that file stays an untouched, refreshable upstream copy.
+    (function () {
+      var nativeQuerySelector = Document.prototype.querySelector;
+      Document.prototype.querySelector = function (selector) {
+        try {
+          return nativeQuerySelector.call(this, selector);
+        } catch (err) {
+          if (typeof selector === "string" && /^#[0-9]/.test(selector)) {
+            var id = selector.slice(1);
+            return this.getElementById(id) || this.getElementById("_" + id);
+          }
+          throw err;
+        }
+      };
+    })();
+    // PATCH END
+
+    // PATCH START: reliable scroll-to-heading for "?id=" deep links
+    // Docsify only scrolls if it just added the target's tabindex, but headings here already ship
+    // with tabindex="-1", so that never fires and the scroll silently never happens. Do it
+    // ourselves after each render, with the same id fallback as above.
+    window.$docsify = window.$docsify || {};
+    window.$docsify.plugins = (window.$docsify.plugins || []).concat(function (hook) {
+      hook.doneEach(function () {
+        var query = window.location.hash.split("?")[1] || "";
+        var match = query.match(/(?:^|&)id=([^&]+)/);
+        if (!match) return;
+        var id = decodeURIComponent(match[1]);
+        // Content can still be reflowing right after render, so retry once after a short delay.
+        var scrollToTarget = function () {
+          var target = document.getElementById(id) || document.getElementById("_" + id);
+          if (target) target.scrollIntoView({ behavior: "instant", block: "start" });
+        };
+        setTimeout(scrollToTarget, 150);
+        setTimeout(scrollToTarget, 600);
+      });
+    });
+    // PATCH END
+  </script>
+
   <!-- Docsify v5 release -->
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify@5"></script> -->
   <script src="https://cdn.jsdelivr.net/gh/hibbitts-design/docsify@dist/docsify.min.js"></script>
