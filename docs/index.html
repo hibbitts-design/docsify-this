@@ -2574,23 +2574,38 @@
     // PATCH START: reliable scroll-to-heading for "?id=" deep links
     // Docsify only scrolls if it just added the target's tabindex, but headings here already ship
     // with tabindex="-1", so that never fires and the scroll silently never happens. Do it
-    // ourselves after each render, with the same id fallback as above.
-    window.$docsify = window.$docsify || {};
-    window.$docsify.plugins = (window.$docsify.plugins || []).concat(function (hook) {
-      hook.doneEach(function () {
-        var query = window.location.hash.split("?")[1] || "";
+    // ourselves instead. Two triggers are needed: doneEach (a real route change, where content
+    // still needs to render -- so retry after a short delay) and hashchange on an unchanged route
+    // (clicking a same-page TOC/anchor link, e.g. one of DocToc's own -- content is already there,
+    // so no render ever fires and doneEach alone would miss it).
+    (function () {
+      var lastRoute = null;
+      function currentRouteAndId() {
+        var hash = window.location.hash.replace(/^#/, "");
+        var parts = hash.split("?");
+        var query = parts[1] || "";
         var match = query.match(/(?:^|&)id=([^&]+)/);
-        if (!match) return;
-        var id = decodeURIComponent(match[1]);
-        // Content can still be reflowing right after render, so retry once after a short delay.
-        var scrollToTarget = function () {
-          var target = document.getElementById(id) || document.getElementById("_" + id);
-          if (target) target.scrollIntoView({ behavior: "instant", block: "start" });
-        };
-        setTimeout(scrollToTarget, 150);
-        setTimeout(scrollToTarget, 600);
+        return { route: parts[0], id: match ? decodeURIComponent(match[1]) : null };
+      }
+      function scrollToId(id) {
+        if (!id) return;
+        var target = document.getElementById(id) || document.getElementById("_" + id);
+        if (target) target.scrollIntoView({ behavior: "instant", block: "start" });
+      }
+      window.$docsify = window.$docsify || {};
+      window.$docsify.plugins = (window.$docsify.plugins || []).concat(function (hook) {
+        hook.doneEach(function () {
+          var info = currentRouteAndId();
+          lastRoute = info.route;
+          setTimeout(function () { scrollToId(info.id); }, 150);
+          setTimeout(function () { scrollToId(info.id); }, 600);
+        });
       });
-    });
+      window.addEventListener("hashchange", function () {
+        var info = currentRouteAndId();
+        if (info.route === lastRoute) scrollToId(info.id);
+      });
+    })();
     // PATCH END
   </script>
 
