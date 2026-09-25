@@ -496,6 +496,8 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 > **New to Docsify-This?** Try our interactive [Leap into Open Publishing with Docsify-This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/published-markdown-files/main&homepage=leap-into-open-publishing-standalone-guide.md&edit-link=https://github.com/paulhibbitts/published-markdown-files/blob/main/leap-into-open-publishing-standalone-guide.md&edit-link-text=View%20Source%20Markdown%20File&edit-link-emoji=:page_facing_up:&browser-tab-title=Leap%20into%20Open%20Publishing&sidebar=true&searchbox=true&maxLevel=2&font-family=Open%20Sans,sans-serif&header-weight=600&dark-mode=auto#/) guide with brief hands-on activities that can get you publishing styled web page in minutes!
 >
 > **Wanting more complete coverage?** Browse the full documentation below, or check out the [Markdown Publishing with Docsify-This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&searchbox=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=3&browser-tab-title=Markdown%20Publishing%20with%20Docsify-This&header-weight=600&dark-mode=auto&code-copy=true#/) guide for step-by-step instructions and more advanced workflows.
+>
+> **Sharing or reading course notes on GitHub or Codeberg?** See [Creating GitHub Course Notes for Docsify-This](https://hibbittsdesign.org/creating-github-course-notes.html) if you're an instructor, or [Viewing an Instructor's GitHub Course Notes with Docsify-This](https://hibbittsdesign.org/viewing-github-course-notes.html) if you're a student.
 
 
 <div id="docs-zone">
