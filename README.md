@@ -96,6 +96,8 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 >
 > **Wanting more complete coverage?** Browse the full documentation below, or check out the [Markdown Publishing with Docsify-This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&searchbox=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=3&browser-tab-title=Markdown%20Publishing%20with%20Docsify-This&header-weight=600&dark-mode=auto&code-copy=true#/) guide for step-by-step instructions and more advanced workflows.
 >
+> **Sharing or reading course notes on GitHub or Codeberg?** See [Creating GitHub Course Notes for Docsify-This](https://hibbittsdesign.org/creating-github-course-notes.html) if you're an instructor, or [Viewing an Instructor's GitHub Course Notes with Docsify-This](https://hibbittsdesign.org/viewing-github-course-notes.html) if you're a student.
+>
 > **Questions along the way?** Feel free to [get in touch](https://docsify-this.net/#/contact.md).
 
 </div>
