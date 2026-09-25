@@ -32,6 +32,12 @@ body {
   font-weight: bold;
 }
 
+/* PATCH: upstream docsify bug collapses a text-only sidebar group's own
+   title along with its children. Remove once fixed upstream. */
+.sidebar-nav li.collapse > p.group-toggle {
+  display: block !important;
+}
+
 .pagination-item:not(:last-child) a .pagination-item-label,
 .pagination-item:not(:last-child) a .pagination-item-subtitle,
 .pagination-item:not(:last-child) a .pagination-item-title {
