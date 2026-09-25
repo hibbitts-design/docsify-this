@@ -2555,6 +2555,7 @@
     // hanging the page. Docsify's heading renderer prefixes such ids with "_", but its own link
     // builder doesn't -- so try the plain id first, then the "_"-prefixed form. Patched here (not
     // in the vendored docsify.min.js) so that file stays an untouched, refreshable upstream copy.
+    // See the scroll-to-heading patch below -- same "?id=" deep-link code path, different bug.
     (function () {
       var nativeQuerySelector = Document.prototype.querySelector;
       Document.prototype.querySelector = function (selector) {
@@ -2572,12 +2573,13 @@
     // PATCH END
 
     // PATCH START: reliable scroll-to-heading for "?id=" deep links
-    // Docsify only scrolls if it just added the target's tabindex, but headings here already ship
-    // with tabindex="-1", so that never fires and the scroll silently never happens. Do it
-    // ourselves instead. Two triggers are needed: doneEach (a real route change, where content
-    // still needs to render -- so retry after a short delay) and hashchange on an unchanged route
-    // (clicking a same-page TOC/anchor link, e.g. one of DocToc's own -- content is already there,
-    // so no render ever fires and doneEach alone would miss it).
+    // Unrelated to the digit-leading-id crash patched above (this affects every heading, not just
+    // digit-leading ones): Docsify only scrolls if it just added the target's tabindex, but
+    // headings here already ship with tabindex="-1", so that never fires and the scroll silently
+    // never happens. Do it ourselves instead. Two triggers are needed: doneEach (a real route
+    // change, where content still needs to render -- so retry after a short delay) and hashchange
+    // on an unchanged route (clicking a same-page TOC/anchor link, e.g. one of DocToc's own --
+    // content is already there, so no render ever fires and doneEach alone would miss it).
     (function () {
       var lastRoute = null;
       function currentRouteAndId() {
