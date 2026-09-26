@@ -217,6 +217,10 @@ body {
   margin: 0.75em 0em 0.5em 0em;
 }
 
+.markdown-section table {
+  margin-top: 0.75em;
+}
+
 .markdown-section li:not(:last-child) {
   margin-bottom: .08em;
 }
