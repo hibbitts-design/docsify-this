@@ -25,6 +25,16 @@
             wrapper.appendChild(table);
           }
 
+          // Wrap each cell's contents in one span so the mobile grid layout
+          // treats links, emphasis and line breaks as a single value
+          table.querySelectorAll('td').forEach(function (td) {
+            if (td.childNodes.length) {
+              const span = document.createElement('span');
+              while (td.firstChild) span.appendChild(td.firstChild);
+              td.appendChild(span);
+            }
+          });
+
           // Get headers - matching v4 approach
           const thElms = Array.apply(
             null,

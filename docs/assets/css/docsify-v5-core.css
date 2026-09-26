@@ -36,7 +36,8 @@
 
 /* Give the column after a link-only cell more room to read, instead of an
    auto-layout split that squeezes it down to the link's leftover space */
-.markdown-section table td:has(> a:only-child) + td {
+/* The span form matches cells wrapped by the responsive tables plugin */
+.markdown-section table td:has(> a:only-child, > span > a:only-child) + td {
   min-width: 14em;
 }
 
@@ -82,6 +83,8 @@
 #page-actions-menu-dropdown .page-actions-menu-desc {
   font-size: .8rem;
 }
+
+/* Support for Docsify-This classes with preview build of Docsify v5 theme */
 
 /* Target first paragraphs with 5+ links (reasonable index minimum) */
 .markdown-section p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)) {
@@ -678,47 +681,64 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
         overflow-x: auto;
     }
 
+    /* Convert to block layout */
     .markdown-section .table-wrapper tbody,
     .markdown-section .table-wrapper tr {
         display: block;
     }
 
+    /* Hide original headers */
     .markdown-section .table-wrapper th {
         display: none;
     }
 
+    /* Remove borders */
     .markdown-section .table-wrapper th,
     .markdown-section .table-wrapper td {
         border: none;
     }
 
+    /* Cell styling with space for labels and increased vertical padding */
     /* Label column sizes to its own content, so an empty header takes ~0
        width instead of a fixed 8em gutter squeezing the value column */
+    /* Capping it at 40% of the row lets a long header wrap instead of
+       squeezing the value column */
     .markdown-section .table-wrapper td {
-        display: grid;
-        grid-template-columns: auto minmax(0, 1fr);
-        column-gap: 0.5em;
+        display: grid; /* Contain the floated label so long headers stay inside the card */
+        grid-template-columns: fit-content(40%) minmax(0, 1fr);
+        column-gap: 0.5em; /* Keep long headers from touching the value */
         align-items: baseline;
-        padding: .35em .5em;
+        padding: .35em .5em; /* Increased from .15em to .35em for top/bottom */ /* Added space to the left of headers */
         text-align: left !important;
     }
 
+    /* Add extra padding to first and last cells of each row */
     .markdown-section .table-wrapper td:first-child {
-        padding-top: .7em;
+        padding-top: .7em; /* Extra space at top of each row */
     }
 
     .markdown-section .table-wrapper td:last-child {
-        padding-bottom: .7em;
+        padding-bottom: .7em; /* Extra space at bottom of each row */
     }
 
+    /* This is the KEY part - makes the generated labels visible and positioned */
     .markdown-section .table-wrapper td::before {
         display: block;
         font-weight: bold;
         text-align: left;
+        /* The content is set by your JavaScript */
     }
 
+    /* Hide labels on empty cells */
     .markdown-section .table-wrapper td:empty::before {
         display: none;
+    }
+
+    /* Stacked cards have room to wrap, so let long links and code wrap
+       instead of the table nowrap rules pushing them past the card edge */
+    .markdown-section .table-wrapper a,
+    .markdown-section .table-wrapper code {
+        white-space: normal !important;
     }
 }
 
@@ -840,5 +860,43 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
   .markdown-section blockquote.announcement h6 {
     font-size: 1rem;
     line-height: 1.15rem;
+  }
+}
+
+@media print {
+  /* Hide UI elements */
+  .cover,
+  .app-nav,
+  #__sidebar,
+  .sidebar,
+  aside,
+  nav,
+  .pagination-item,
+  .docsify-pagination-container,
+  .pagination {
+    display: none !important;
+  }
+
+  /* Reset layout for full width */
+  body,
+  main,
+  .content,
+  .markdown-section {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    transform: none !important;
+    position: static !important;
+  }
+
+  /* Page margins */
+  @page {
+    margin: 2cm;
+  }
+
+  /* Prevent bad page breaks */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
   }
 }
