@@ -7,6 +7,7 @@
 * Updated ReadMe
 * Add relative-paths hint to the Markdown 404 page
 * Resolve HTML image paths from the page's folder when relative-paths is on
+* Add top margin to tables so they don't sit flush against preceding headings
 
 **Bugfix:**
 * Fix Docsify hang on digit-leading heading ids
