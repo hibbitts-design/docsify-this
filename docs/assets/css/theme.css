@@ -217,7 +217,8 @@ body {
   margin: 0.75em 0em 0.5em 0em;
 }
 
-.markdown-section table {
+.markdown-section table,
+.markdown-section .mermaid {
   margin-top: 0.75em;
 }
 
