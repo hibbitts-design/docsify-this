@@ -9,6 +9,7 @@
 * Resolve HTML image paths from the page's folder when relative-paths is on
 * Add top margin to tables and Mermaid diagrams so they don't sit flush against preceding headings
 * Unify docsify-v5-core.css and responsive tables plugin across docsify-this and starter kits
+* Draw Mermaid diagrams after the icon font loads, and drop the unused Mermaid 7 stylesheet
 
 **Bugfix:**
 * Fix Docsify hang on digit-leading heading ids
