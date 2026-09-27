@@ -1711,7 +1711,15 @@
                 editlinkemoji = 'memo';
               }
 
-              var editHtml = '[:' + editlinkemoji + ':' + editLinkText + '](' + url + ' ":class=edit-link")\n'
+              // The text in [ ] becomes the link, with any text before or after it shown as plain text
+              // If there are no [ ], all of the text becomes the link
+              var editHtml
+              var editLinkParts = editLinkText.match(/^(.*?)\[([^\]]+)\](?!\()(.*)$/);
+              if (editLinkParts) {
+                editHtml = editLinkParts[1] + '[:' + editlinkemoji + ':' + editLinkParts[2] + '](' + url + ' ":class=edit-link")' + editLinkParts[3] + '\n'
+              } else {
+                editHtml = '[:' + editlinkemoji + ':' + editLinkText + '](' + url + ' ":class=edit-link")\n'
+              }
 
               var creditHtml = '\n\n' + '<div style="color: #777;">Published by <a href="https://docsify-this.net" target="_blank">Docsify-This</a> — Turn your online Markdown files into web pages, or even entire sites, in seconds.</div>'
 
