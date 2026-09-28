@@ -1280,6 +1280,13 @@
           : '.sidebar-nav'
       },
 
+      pagination: {
+        previousText: 'PREVIOUS',
+        nextText: 'NEXT',
+        crossChapter: true,
+        crossChapterText: false,
+      },
+
       imgGrid: {
         columns: (getURLParameterByName('image-grid-columns', null, null, window.location.href, true) || 3), // Default number of columns
         minItems: (getURLParameterByName('image-grid-minItems', null, null, window.location.href, true) || 3), // Minimum number of items to create a grid
@@ -2744,7 +2751,8 @@
   <!-- Pagination Plugin -->
   <script>
     if (getURLParameterByName('pagination', null, null, window.location.href, true) === 'true') {
-      document.write('<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>');
+      // document.write('<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>');
+      document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-pagination.min.js"><\/script>');
     }
   </script>
 
