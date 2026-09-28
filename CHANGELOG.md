@@ -12,6 +12,7 @@
 * Draw Mermaid diagrams after the icon font loads, and drop the unused Mermaid 7 stylesheet
 * Support [ ] link text in Edit this Page and fix its vertical alignment
 * Enable crossChapter and use a patched pagination plugin that skips external links
+* Show pagination page names when the sidebar is hidden, with smaller titles on phones
 
 **Bugfix:**
 * Fix Docsify hang on digit-leading heading ids
