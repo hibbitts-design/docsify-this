@@ -429,6 +429,10 @@ body .docsify-pagination-container {
     font-size: 1rem;
     line-height: 1.15rem;
   }
+
+  .pagination-item-title {
+    font-size: 1.1em !important;
+  }
 }
 
 /* Dark mode custom colours for use with Core Dark Theme (uncomment to use, and remove @media statement and matching closing bracket for dark mode only) */
