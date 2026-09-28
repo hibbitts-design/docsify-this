@@ -17,6 +17,7 @@
 
 **Bugfix:**
 * Fix Docsify hang on digit-leading heading ids
+* Reset the search result source option with Reset to Defaults
 
 ## [2.1.0] - 09/21/2026🍂
 
