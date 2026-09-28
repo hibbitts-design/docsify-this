@@ -433,6 +433,11 @@ body .docsify-pagination-container {
   .pagination-item-title {
     font-size: 1.1em !important;
   }
+
+  /* Give a navbar with 6 or more links room for its extra rows (no effect when mergeNavbar is true) */
+  :root:has(.app-nav > ul > li:nth-child(6)) {
+    --navbar-height: 6em;
+  }
 }
 
 /* Dark mode custom colours for use with Core Dark Theme (uncomment to use, and remove @media statement and matching closing bracket for dark mode only) */
