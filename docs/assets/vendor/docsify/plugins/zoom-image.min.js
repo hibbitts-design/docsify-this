@@ -1,5 +1,5 @@
 /*!
- * Docsify Plugin: zoom-image v5.0.0-rc.4
+ * Docsify Plugin: zoom-image v5.0.0
  * https://docsify.js.org
  * (c) 2017-2026
  * MIT license
