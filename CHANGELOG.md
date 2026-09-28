@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.1.1] - XX/XX/2026
+## [2.2.0] - XX/XX/2026
 
 **Improved:**
 * Add "Links Within a Site" Web Page Builder option
