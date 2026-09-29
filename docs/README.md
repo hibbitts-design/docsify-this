@@ -410,8 +410,6 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline" style="margin-top: 0.25rem;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapsibleSidebarGroups" onclick="updateCollapseSidebarGroupsState()"/><label for="collapsibleSidebarGroups">Enable collapsible Sidebar groups</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline" style="margin-top: 6px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapseSidebarGroups" disabled aria-disabled="true"/><label for="collapseSidebarGroups">Initially collapse all Sidebar groups</label></div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable pagination buttons in page content area</label></div>
-
 <div class="clearfix">
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-top:-2px;"><div class="stackedlabeldropdown" data-searchresultsource="true">
@@ -426,6 +424,8 @@ Page layout:
 </div></div>
 
 </div>
+
+<div class="docsifythisurlbuilderoptionsline" style="margin-top: calc(0.5rem + 2px);"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable pagination buttons in page content area</label></div>
 
 </section>
 
