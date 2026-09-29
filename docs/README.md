@@ -407,7 +407,10 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Maximum Header depth of Sidebar for page table of contents (0 for none):<br><input aria-label="Maximum Header depth of Sidebar for page table of contents (0 for none)" type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"/></div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable pagination buttons in page content area (Docsify custom Sidebar required)</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable pagination buttons in page content area</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapsibleSidebarGroups" onclick="updateCollapseSidebarGroupsState()"/><label for="collapsibleSidebarGroups">Enable collapsible Sidebar groups</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline" style="margin-top: 6px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapseSidebarGroups" disabled aria-disabled="true"/><label for="collapseSidebarGroups">Initially collapse all Sidebar groups</label></div>
 
 <div class="clearfix">
 
@@ -889,6 +892,8 @@ The following additional URL parameters are available for use in Docsify-This UR
 **Supplemental URL Parameters (included in the Advanced Web Page Builder)**
 
 - [back-link](/?id=back-linkconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [collapseSidebarGroups](/?id=collapseSidebarGroupsconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [collapsibleSidebarGroups](/?id=collapsibleSidebarGroupsconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [coverpage](/?id=coverpageconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [coverpage-color](/?id=coverpage-colorconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [coverpage-color-dark-mode](/?id=coverpage-color-dark-modeconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -926,6 +931,16 @@ The following additional URL parameters are available for use in Docsify-This UR
 
 Add a custom back link to other sites at the top of your web pages with the optional back-link parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&back-link=https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main+homepage=home.md+sidebar=true. Please note that since & is used to separate URL parameters, any & characters within the back-link URL must be replaced with + characters.
+
+##### collapseSidebarGroups<button type="button" class="copy-link" aria-label="Copy collapseSidebarGroups parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&collapseSidebarGroups=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Initially collapse all top-level Sidebar groups (Docsify custom Sidebar required) with the optional **collapseSidebarGroups** Docsify parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&collapseSidebarGroups=true The **collapsibleSidebarGroups** parameter must also be included. Visitors can still expand and collapse each group, and their choices are remembered while moving between pages.
+
+##### collapsibleSidebarGroups<button type="button" class="copy-link" aria-label="Copy collapsibleSidebarGroups parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&collapsibleSidebarGroups=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Enable visitors to expand and collapse top-level Sidebar groups (Docsify custom Sidebar required) by selecting a group title (or using the Enter and Space keys) with the optional **collapsibleSidebarGroups** Docsify parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true Groups are displayed expanded by default. To have them initially collapsed, also include the **collapseSidebarGroups** parameter.
 
 ##### coverpage<button type="button" class="copy-link" aria-label="Copy coverpage parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&coverpage=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 

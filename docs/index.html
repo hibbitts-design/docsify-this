@@ -585,6 +585,19 @@
             }
           }
 
+          const cb24 = document.querySelector('#collapsibleSidebarGroups');
+          if (cb24.checked) {
+            if (!url.includes('collapsibleSidebarGroups=')) {
+              var URLparms = URLparms + `&collapsibleSidebarGroups=true`;
+            }
+            const cb25 = document.querySelector('#collapseSidebarGroups');
+            if (cb25.checked) {
+              if (!url.includes('collapseSidebarGroups=')) {
+                var URLparms = URLparms + `&collapseSidebarGroups=true`;
+              }
+            }
+          }
+
           const cb18 = document.querySelector('#mergeNavbar');
           if (cb18.checked) {
             if (!url.includes('mergeNavbar=')) {
@@ -928,6 +941,9 @@
       document.getElementById("pagination").checked = false;
       document.getElementById("searchresultsource").value = '';
       document.getElementById("mergeNavbar").checked = false;
+      document.getElementById("collapsibleSidebarGroups").checked = false;
+      document.getElementById("collapseSidebarGroups").checked = false;
+      updateCollapseSidebarGroupsState();
       document.getElementById("headerweight").value = 600;
       document.getElementById("zoomimages").checked = false;
       document.getElementById("closesidebar").checked = false;
@@ -1178,6 +1194,19 @@
           element.disabled = !element.disabled;
           element.setAttribute('aria-disabled', element.disabled);
         }
+      }
+    }
+
+    // Initially collapsed Sidebar groups require collapsible Sidebar groups
+    function updateCollapseSidebarGroupsState() {
+      const collapsible = document.getElementById('collapsibleSidebarGroups');
+      const collapse = document.getElementById('collapseSidebarGroups');
+      if (collapsible && collapse) {
+        if (!collapsible.checked) {
+          collapse.checked = false;
+        }
+        collapse.disabled = !collapsible.checked;
+        collapse.setAttribute('aria-disabled', collapse.disabled);
       }
     }
 
@@ -2459,6 +2488,17 @@
             if (resultSource) {
               document.getElementById('searchresultsource').value = resultSource;
             }
+
+            if (getURLParameterByName('collapsibleSidebarGroups', null, null, window.location.href, true) === 'true') {
+              document.getElementById("collapsibleSidebarGroups").checked = true;
+            }
+
+            // Initially collapsing Sidebar groups also enables collapsible Sidebar groups
+            if (getURLParameterByName('collapseSidebarGroups', null, null, window.location.href, true) === 'true') {
+              document.getElementById("collapsibleSidebarGroups").checked = true;
+              document.getElementById("collapseSidebarGroups").checked = true;
+            }
+            updateCollapseSidebarGroupsState();
 
             if (getURLParameterByName('mergeNavbar', null, null, window.location.href, true) === 'true') {
               document.getElementById("mergeNavbar").checked = true;

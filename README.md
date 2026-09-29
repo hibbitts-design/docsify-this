@@ -493,6 +493,8 @@ The following additional URL parameters are available for use in Docsify-This UR
 **Supplemental URL Parameters (included in the Advanced Web Page Builder)**
 
 - [back-link](#back-link)
+- [collapseSidebarGroups](#collapseSidebarGroups)
+- [collapsibleSidebarGroups](#collapsibleSidebarGroups)
 - [coverpage](#coverpage)
 - [coverpage-color](#coverpage-color)
 - [coverpage-color-dark-mode](#coverpage-color-dark-mode)
@@ -531,6 +533,18 @@ The following additional URL parameters are available for use in Docsify-This UR
 Add a custom back link to other sites at the top of your web pages with the optional back-link parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&back-link=https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main+homepage=home.md+sidebar=true  
 Please note that since & is used to separate URL parameters, any & characters within the back-link URL must be replaced with + characters.
+
+##### collapseSidebarGroups
+
+Initially collapse all top-level Sidebar groups (Docsify custom Sidebar required) with the optional **collapseSidebarGroups** Docsify parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&collapseSidebarGroups=true  
+The **collapsibleSidebarGroups** parameter must also be included. Visitors can still expand and collapse each group, and their choices are remembered while moving between pages.
+
+##### collapsibleSidebarGroups
+
+Enable visitors to expand and collapse top-level Sidebar groups (Docsify custom Sidebar required) by selecting a group title (or using the Enter and Space keys) with the optional **collapsibleSidebarGroups** Docsify parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true  
+Groups are displayed expanded by default. To have them initially collapsed, also include the **collapseSidebarGroups** parameter.
 
 ##### coverpage
 
