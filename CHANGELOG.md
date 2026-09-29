@@ -14,6 +14,7 @@
 * Enable crossChapter and use a patched pagination plugin that skips external links
 * Show pagination page names when the sidebar is hidden, with smaller titles on phones
 * Give long navbars (6 or more links) room for their extra rows on phones
+* Support a top Edit this Page link below full-width header images instead of moving it to the bottom
 
 **Bugfix:**
 * Fix Docsify hang on digit-leading heading ids
