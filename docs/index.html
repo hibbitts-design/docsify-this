@@ -1731,24 +1731,38 @@
 
               var creditHtml = '\n\n' + '<div style="color: #777;">Published by <a href="https://docsify-this.net" target="_blank">Docsify-This</a> — Turn your online Markdown files into web pages, or even entire sites, in seconds.</div>'
 
+              // Place the Edit this Page link at the top of the page, but below a full-width header image if the page starts with one
+              // (right after the image, or after the title and subtitle when they overlay the image)
+              var placeEditLinkAtTop = function (html, editHtml) {
+                var pageLines = html.split('\n');
+                if (/^!\[.*header-(tall-)?image-(fade-)?full-width/.test(pageLines[0])) {
+                  var insertAt = 1; // right after the header image
+
+                  // With overlaid headings, go past the title (# ) and optional subtitle (## ) after the image
+                  if (pageLines[0].includes('-headings-overlay')) {
+                    var titleLine = pageLines.findIndex(function (line, i) { return i > 0 && line.trim() !== ''; });
+                    if (titleLine > 0 && pageLines[titleLine].startsWith('# ')) {
+                      var hasSubtitle = (pageLines[titleLine + 1] || '').startsWith('## ');
+                      insertAt = hasSubtitle ? titleLine + 2 : titleLine + 1;
+                    }
+                  }
+
+                  pageLines.splice(insertAt, 0, '', editHtml);
+                  return pageLines.join('\n')
+                }
+                return editHtml + '\n' + html
+              }
+
               if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
                 if (!(getURLParameterByName(['hide-credits', 'hideCredits'], null, null, window.location.href, true) === 'true')) {
                   if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-                    if (!html.includes('full-width')) {
-                      return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
-                    } else {
-                      return html + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
-                    }
+                    return placeEditLinkAtTop(html, editHtml) + '<br />' + '\n\n' + '<hr>' + creditHtml
                   } else {
                     return html + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
                   }
                 } else {
                   if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-                    if (!html.includes('full-width')) {
-                      return editHtml + '\n' + html
-                    } else {
-                      return html + '<br />' + '\n\n' + editHtml
-                    }
+                    return placeEditLinkAtTop(html, editHtml)
                   } else {
                     return html + '<br />' + '\n\n' + editHtml
                   }
@@ -1756,11 +1770,7 @@
 
               } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
                 if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-                  if (!html.includes('full-width')) {
-                    return editHtml + '\n' + html
-                  } else {
-                    return html + '<br />' + '\n\n' + editHtml
-                  }
+                  return placeEditLinkAtTop(html, editHtml)
                 } else {
                   return html + '<br />' + '\n\n' + editHtml
                 }
