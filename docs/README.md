@@ -407,15 +407,15 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Maximum Header depth of Sidebar for page table of contents (0 for none):<br><input aria-label="Maximum Header depth of Sidebar for page table of contents (0 for none)" type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"/></div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable pagination buttons in page content area</label></div>
-
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapsibleSidebarGroups" onclick="updateCollapseSidebarGroupsState()"/><label for="collapsibleSidebarGroups">Enable collapsible Sidebar groups</label></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-top: 0.25rem;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapsibleSidebarGroups" onclick="updateCollapseSidebarGroupsState()"/><label for="collapsibleSidebarGroups">Enable collapsible Sidebar groups</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline" style="margin-top: 6px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapseSidebarGroups" disabled aria-disabled="true"/><label for="collapseSidebarGroups">Initially collapse all Sidebar groups</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable pagination buttons in page content area</label></div>
 
 <div class="clearfix">
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-top:-2px;"><div class="stackedlabeldropdown" data-searchresultsource="true">
-  <label for="searchresultsource">Show below each search result:</label>
+  <label for="searchresultsource">Show below each Sidebar search result:</label>
   <select class="docsifythisurlbuilderoptionsline" id="searchresultsource" name="searchresultsource">
     <option value="" selected>Automatic (breadcrumb for multiple page sites)</option>
     <option disabled="disabled">──</option>
