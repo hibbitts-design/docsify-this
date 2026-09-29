@@ -2,6 +2,9 @@
 
 ## [2.2.0] - XX/XX/2026
 
+**New:**
+* Add collapsible Sidebar group support
+
 **Improved:**
 * Add "Links Within a Site" Web Page Builder option
 * Updated ReadMe
