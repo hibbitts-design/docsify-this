@@ -425,7 +425,7 @@ Page layout:
 
 </div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-top: calc(0.5rem + 2px);"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable pagination buttons in page content area</label></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-top: calc(0.5rem + 2px);"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable Previous/Next page buttons (follows the page order in Sidebar)</label></div>
 
 </section>
 
