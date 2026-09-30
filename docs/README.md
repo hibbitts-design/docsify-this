@@ -130,8 +130,6 @@ Page layout:
 
 ### Page Style and Behavior
 
-<div class="docsifythisurlbuilderoptionsline">Title on Browser tab:<br><input aria-label="Title on Browser tab" type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"/></div>
-
 <div class="pagefontsettings clearfix">
 
 <div class="stackedlabeldropdown">
@@ -186,23 +184,21 @@ Page layout:
   >
 </div>
 
-</div>
-
-<div class="docsifythisurlbuilderoptionsline" style="margin-top:-10px;">Link color:<br><input aria-label="Page link color" type="text" maxlength="7" size="8" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
-
-<div class="clearfix">
-
-<div class="docsifythisurlbuilderoptionsline"><div class="stackedlabeldropdown" style='margin-bottom:8px;'>
-  <label for="headerweight">Headers font weight:</label>
+<div class="stackedlabeldropdown">
+  <label for="headerweight">Headings font weight:</label>
   <select class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
     <option value="600">Semi Bold (600)</option>
     <option disabled="disabled">──</option>
     <option value="400">Normal (400)</option>
     <option value="700">Bold (700)</option>
   </select>
-</div></div>
+</div>
 
 </div>
+
+<div class="docsifythisurlbuilderoptionsline" style="margin-top:-10px;">Link color:<br><input aria-label="Page link color" type="text" maxlength="7" size="8" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
+
+<div class="docsifythisurlbuilderoptionsline">Title on Browser tab:<br><input aria-label="Title on Browser tab" type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"/></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits"/><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
 
@@ -211,8 +207,6 @@ Page layout:
 <section class="builder-section">
 
 ### Page Display Options
-
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="spotlight"/><label for="spotlight">Enable spotlight to focus on current heading (dims surrounding content)</label></div>
 
 <div class="clearfix">
 
@@ -242,6 +236,8 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="imageCaptions"><label for="imageCaptions">Show image alternative text as captions</label></div>
 
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="spotlight"/><label for="spotlight">Enable spotlight to focus on current heading (dims surrounding content)</label></div>
+
 </section>
 
 <section class="builder-section">
@@ -265,7 +261,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch"/><label for="enableSidebarsearch">Enable search box in Docsify Sidebar</label></div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-top:7px;">Maximum Header depth (1-6) for Docsify Sidebar:<br><input aria-label="Maximum Header depth (1-6) for Docsify Sidebar" type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"/></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-top:7px;">Heading levels shown in Sidebar (1-6):<br><input aria-label="Heading levels shown in Sidebar (1-6)" type="number" size="1" value="2" min="1" max="6" id="maxLevel" name="maxLevel"/></div>
 
 <div class="clearfix">
 
@@ -405,7 +401,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Website logo displayed in Sidebar (folder path and image filename):<br><input placeholder="/images/logo.png" aria-label="Website logo displayed in Sidebar" type="text" maxlength="80" value="" id="siteLogo" name="siteLogo"/></div>
 
-<div class="docsifythisurlbuilderoptionsline">Maximum Header depth of Sidebar for page table of contents (0 for none):<br><input aria-label="Maximum Header depth of Sidebar for page table of contents (0 for none)" type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"/></div>
+<div class="docsifythisurlbuilderoptionsline">Page headings listed under each custom Sidebar link (0 for none):<br><input aria-label="Page headings listed under each custom Sidebar link (0 for none)" type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"/></div>
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-top: 0.25rem;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapsibleSidebarGroups" onclick="updateCollapseSidebarGroupsState()"/><label for="collapsibleSidebarGroups">Enable collapsible Sidebar groups</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline" style="margin-top: 6px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapseSidebarGroups" disabled aria-disabled="true"/><label for="collapseSidebarGroups">Initially collapse all Sidebar groups</label></div>

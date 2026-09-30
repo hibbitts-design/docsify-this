@@ -2225,8 +2225,11 @@
               theDiv.style.display = "block";
               document.getElementById("advancedwebpagebuilder").style.display = "none";
               document.querySelector("label[for='advancedwebpagebuilder']").style.display = "none";
+              // Hide the toggle's wrapper too, and drop the advanced group's top margin, so the gap matches other sections
+              document.getElementById("advancedwebpagebuilder").closest(".toggle-wrapper").style.display = "none";
               var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
               theDiv2.style.display = "block";
+              theDiv2.style.marginTop = "0";
             }
 
             if (getURLParameterByName('toc') === true) {
