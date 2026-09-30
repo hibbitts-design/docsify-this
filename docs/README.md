@@ -198,16 +198,6 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-top:-10px;">Link color:<br><input aria-label="Page link color" type="text" maxlength="7" size="8" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
 
-<div class="docsifythisurlbuilderoptionsline">Title on Browser tab:<br><input aria-label="Title on Browser tab" type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"/></div>
-
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits"/><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
-
-</section>
-
-<section class="builder-section">
-
-### Page Display Options
-
 <div class="clearfix">
 
 <div class='stackedlabeldropdown'>
@@ -229,6 +219,16 @@ Page layout:
 </div>
 
 </div>
+
+<div class="docsifythisurlbuilderoptionsline">Title on Browser tab:<br><input aria-label="Title on Browser tab" type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"/></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits"/><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
+
+</section>
+
+<section class="builder-section">
+
+### Page Features
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pageCopyButton"/><label for="pageCopyButton">Include Copy Page button for accessing Markdown content</label></div>
 
@@ -289,7 +289,7 @@ Page layout:
   <select class="docsifythisurlbuilderoptionsline" id="enableDarkmode" name="enableDarkmode">
     <option value="false">Off</option>
     <option disabled="disabled">──</option>
-    <option value="auto">Match System Setting</option>
+    <option value="auto">Match system setting</option>
     <option value="on">On</option>
   </select>
 </div></div>
@@ -370,7 +370,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Add '←Back' link URL (displayed at top of page):<br><input placeholder="https://example.com" aria-label="Add back link URL (displayed at top of page)" type="url" maxlength="200" value="" id="backLink" name="backLink"></div>
 
-<div class="docsifythisurlbuilderoptionsline">Add page title (as H1 header at top of page):<br><input aria-label="Add page title (as H1 header at top of page)" type="text" maxlength="200" value="" id="pageTitle" name="pageTitle"></div>
+<div class="docsifythisurlbuilderoptionsline">Add page title (as H1 heading at top of page):<br><input aria-label="Add page title (as H1 heading at top of page)" type="text" maxlength="200" value="" id="pageTitle" name="pageTitle"></div>
 
 <div class="docsifythisurlbuilderoptionsline">Text of 'Edit this Page' link:<br><input aria-label="Text of 'Edit this Page' link" type="text" maxlength="60" value="Edit this Page" id="editLinkText" name="editLinkText"/></div>
 
@@ -404,7 +404,7 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline">Page headings listed under each custom Sidebar link (0 for none):<br><input aria-label="Page headings listed under each custom Sidebar link (0 for none)" type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"/></div>
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-top: 0.25rem;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapsibleSidebarGroups"/><label for="collapsibleSidebarGroups">Enable collapsible Sidebar groups</label></div>
-<div class="docsifythisurlbuilderoptionsindentedline" style="margin-top: 6px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapseSidebarGroups"/><label for="collapseSidebarGroups">Initially collapse all Sidebar groups</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline" style="margin-top: 6px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapseSidebarGroups"/><label for="collapseSidebarGroups">Initially collapse all Sidebar groups (collapsible groups required)</label></div>
 
 <div class="clearfix">
 
