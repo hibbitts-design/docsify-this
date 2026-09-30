@@ -403,8 +403,8 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Page headings listed under each custom Sidebar link (0 for none):<br><input aria-label="Page headings listed under each custom Sidebar link (0 for none)" type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"/></div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-top: 0.25rem;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapsibleSidebarGroups" onclick="updateCollapseSidebarGroupsState()"/><label for="collapsibleSidebarGroups">Enable collapsible Sidebar groups</label></div>
-<div class="docsifythisurlbuilderoptionsindentedline" style="margin-top: 6px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapseSidebarGroups" disabled aria-disabled="true"/><label for="collapseSidebarGroups">Initially collapse all Sidebar groups</label></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-top: 0.25rem;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapsibleSidebarGroups"/><label for="collapsibleSidebarGroups">Enable collapsible Sidebar groups</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline" style="margin-top: 6px;"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="collapseSidebarGroups"/><label for="collapseSidebarGroups">Initially collapse all Sidebar groups</label></div>
 
 <div class="clearfix">
 

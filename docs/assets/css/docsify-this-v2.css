@@ -797,12 +797,6 @@ input.toggle:where([type=checkbox], [type=radio]):before {
   vertical-align: top;
 }
 
-#docsifythisurlbuilder input[type="checkbox"]:disabled,
-#docsifythisurlbuilder input[type="checkbox"]:disabled~label {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
 #docsifythisurlbuildershowhidelink {
   margin-top: 16px;
 }
