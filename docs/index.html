@@ -64,9 +64,7 @@
   <link rel="stylesheet" href="assets/vendor/coloris/coloris.min.css" />
   <script src="assets/vendor/coloris/coloris.min.js"></script>
 
-  <!-- Mermaid -->
-  <!-- Uncomment the line below to render ```mermaid code blocks as diagrams -->
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"></script>
+  <!-- Mermaid is loaded only on pages with ```mermaid code blocks – see mermaidScriptURL below -->
 
 </head>
 
@@ -78,6 +76,9 @@
 
     // Customize the text for your Edit this Page on GitHub link between the two quotes below
     var editLinkText = 'Edit this Page';
+
+    // The Mermaid script, loaded only on pages with ```mermaid code blocks (set to '' to show those blocks as code instead)
+    var mermaidScriptURL = 'https://cdn.jsdelivr.net/npm/mermaid@11.17.2/dist/mermaid.min.js';
 
     // Set standalone to true to permanently hide the Sidebar
     var standalone = (!(getURLParameterByName('sidebar', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')));
@@ -1249,10 +1250,24 @@
 
     // Docsify
 
-    // Mermaid setup, which only runs when the Mermaid script in the <head> is uncommented
+    // Mermaid: its script is loaded the first time a page has a ```mermaid code block, then reused
     let num = 0;
-    if (typeof mermaid !== 'undefined') {
-      mermaid.initialize({ startOnLoad: false });
+    let mermaidLoading = null;
+    function loadMermaid() {
+      if (!mermaidLoading) {
+        mermaidLoading = new Promise(function (resolve, reject) {
+          const script = document.createElement('script');
+          script.src = mermaidScriptURL;
+          script.onload = function () {
+            // suppressErrorRendering stops Mermaid adding its own error graphic to the page for a diagram with a mistake
+            mermaid.initialize({ startOnLoad: false, suppressErrorRendering: true });
+            resolve();
+          };
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      }
+      return mermaidLoading;
     }
 
     window.$docsify = {
@@ -1360,11 +1375,11 @@
         ]
       },
 
-      // Render ```mermaid code blocks as diagrams when the Mermaid script in the <head> is uncommented
+      // Render ```mermaid code blocks as diagrams (unless mermaidScriptURL above is empty)
       markdown: {
         renderer: {
           code({ text, lang }) {
-            if (lang === 'mermaid' && typeof mermaid !== 'undefined') {
+            if (lang === 'mermaid' && mermaidScriptURL) {
               // Output a hidden placeholder, the diagram is drawn in the doneEach hook below
               const source = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
               return /* html */ `<div class="mermaid" style="visibility: hidden">${source}</div>`;
@@ -1380,22 +1395,36 @@
 
         function (hook, vm) {
 
-          // Draw Mermaid diagrams once the Font Awesome icon font has loaded, so labels with icons are sized correctly
+          // Draw Mermaid diagrams once the Mermaid script and the Font Awesome icon font have loaded, so labels with
+          // icons are sized correctly. A diagram that can't be drawn (or if Mermaid can't load) shows its source text.
           hook.doneEach(function () {
             const diagrams = document.querySelectorAll('.markdown-section .mermaid:not([data-processed])');
-            if (typeof mermaid === 'undefined' || !diagrams.length) {
+            if (!diagrams.length) {
               return;
             }
+            diagrams.forEach(function (diagram) {
+              diagram.setAttribute('data-processed', 'true');
+            });
             const iconFont = document.fonts ? document.fonts.load('900 1em "Font Awesome 6 Free"') : Promise.resolve();
             const timeout = new Promise(function (resolve) { setTimeout(resolve, 3000); });
-            Promise.race([iconFont, timeout]).catch(function () {}).then(function () {
+            const iconFontOrTimeout = Promise.race([iconFont, timeout]).catch(function () {});
+            Promise.all([loadMermaid(), iconFontOrTimeout]).then(function () {
               diagrams.forEach(function (diagram) {
-                diagram.setAttribute('data-processed', 'true');
-                try {
-                  diagram.innerHTML = mermaid.render('mermaid-svg-' + num++, diagram.textContent);
-                } catch (error) {
-                  console.error(error);
-                }
+                // mermaid.render() returns a promise with the drawn diagram (since Mermaid 10)
+                mermaid.render('mermaid-svg-' + num++, diagram.textContent)
+                  .then(function (result) {
+                    diagram.innerHTML = result.svg;
+                  })
+                  .catch(function (error) {
+                    console.error(error);
+                  })
+                  .finally(function () {
+                    diagram.style.visibility = '';
+                  });
+              });
+            }).catch(function (error) {
+              console.error('Mermaid could not be loaded', error);
+              diagrams.forEach(function (diagram) {
                 diagram.style.visibility = '';
               });
             });
