@@ -15,6 +15,7 @@
 * Draw Mermaid diagrams after the icon font loads, and drop the unused Mermaid 7 stylesheet
 * Updated Mermaid to 11.17.2 (same as the Grav Mermaid plugin), loaded only on pages with diagrams
 * Updated MathJax from 2 to 3.2.2, adding chemistry (\ce) and other LaTeX extras
+* Draw Mermaid diagrams in Mermaid's dark theme when the page is in dark mode (as the Grav Mermaid plugin does)
 * Support [ ] link text in Edit this Page and fix its vertical alignment
 * Enable crossChapter and use a patched pagination plugin that skips external links
 * Show pagination page names when the sidebar is hidden, with smaller titles on phones
