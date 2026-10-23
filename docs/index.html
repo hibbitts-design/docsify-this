@@ -1253,14 +1253,25 @@
     // Mermaid: its script is loaded the first time a page has a ```mermaid code block, then reused
     let num = 0;
     let mermaidLoading = null;
+
+    // True when the page is shown in dark mode: dark-mode=on (or true), or dark-mode=auto on a device set to dark
+    function isDarkMode() {
+      const mode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
+      if (mode === 'on' || mode === 'true' || mode === true) {
+        return true;
+      }
+      return mode === 'auto' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+
     function loadMermaid() {
       if (!mermaidLoading) {
         mermaidLoading = new Promise(function (resolve, reject) {
           const script = document.createElement('script');
           script.src = mermaidScriptURL;
           script.onload = function () {
-            // suppressErrorRendering stops Mermaid adding its own error graphic to the page for a diagram with a mistake
-            mermaid.initialize({ startOnLoad: false, suppressErrorRendering: true });
+            // suppressErrorRendering stops Mermaid adding its own error graphic to the page for a diagram with a mistake.
+            // In dark mode, Mermaid's dark colour theme keeps lines and labels readable (as the Grav Mermaid plugin does)
+            mermaid.initialize({ startOnLoad: false, suppressErrorRendering: true, theme: isDarkMode() ? 'dark' : 'default' });
             resolve();
           };
           script.onerror = reject;
