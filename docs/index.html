@@ -2583,6 +2583,35 @@
 
           });
 
+        },
+
+        // PATCH FOR THE LATEX PLUGIN (docsify-latex 0.5.2, which is no longer updated)
+        // -----------------------------------------------------------------
+        // docsify-latex reads any two $ signs on a line as math (so "$20 and $30" became a formula), and reads math
+        // inside ~~~ code blocks. This runs just before it, tidying each page's Markdown so it doesn't:
+        //   1. ~~~ code blocks become ``` code blocks, which docsify-latex already leaves alone
+        //   2. a $ that isn't math (such as in a price) becomes \$, which Markdown shows as a plain $
+        // Math is $…$ with no space just inside either $, and no digit straight after the closing $ (the same rule as
+        // the Grav LaTeX Math plugin). Code, $$…$$, \(…\) and \[…\] are left as they are.
+        function (hook) {
+          hook.beforeEach(function (markdown) {
+
+            // 1. A ~~~ code block: its opening line (~~~ and an optional language), its code, and its closing ~~~ line.
+            // The new ``` fence is one backtick longer than any run of backticks in the code, so the code can't end it.
+            markdown = markdown.replace(/^(~{3,})(.*)\n([\s\S]*?)\n~{3,}[ \t]*$/gm, function (block, tildes, language, code) {
+              const backtickRuns = (code.match(/`+/g) || []).map(function (run) { return run.length; });
+              const fence = '`'.repeat(Math.max(2, ...backtickRuns) + 1);
+              return fence + language + '\n' + code + '\n' + fence;
+            });
+
+            // 2. Find, in order: a ``` code block, `code`, an HTML tag, a \ and the character after it, $$…$$, $…$ math,
+            // or a $. Everything is kept as it is, except a $ on its own, which isn't math.
+            const parts = /(`{3,})[\s\S]*?\1|`[^`\n]+`|<[^<>\n]+>|\\[\s\S]|\$\$[\s\S]*?\$\$|\$(?![\s$])(?:\\.|[^$\\\n])*?[^\s$\\]\$(?!\d)|\$/g;
+            return markdown.replace(parts, function (part) {
+              return part === '$' ? '\\$' : part;
+            });
+
+          });
         }
 
       ]
