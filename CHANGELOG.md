@@ -6,6 +6,7 @@
 * Support for collapsible Sidebar groups
 
 **Improved:**
+* Updated to Docsify v5.1
 * Add "Links Within a Site" Web Page Builder option
 * Updated ReadMe
 * Add relative-paths hint to the Markdown 404 page
