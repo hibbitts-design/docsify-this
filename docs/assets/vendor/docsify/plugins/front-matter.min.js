@@ -1,5 +1,5 @@
 /*!
- * Docsify Plugin: front-matter v5.0.0
+ * Docsify Plugin: front-matter v5.1.0
  * https://docsify.js.org
  * (c) 2017-2026
  * MIT license
