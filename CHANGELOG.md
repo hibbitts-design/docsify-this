@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.2.0] - XX/XX/2026
+## [2.2.0] - 11/01/2026
 
 **New:**
 * Support for collapsible Sidebar groups
