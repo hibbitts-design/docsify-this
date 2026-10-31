@@ -743,15 +743,15 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
 }
 
 /* CSS generated/assisted by Anthropic Claude AI */
-.markdown-section .card-list {
+.markdown-section :is(.card-list, .card-list-guides, .card-list-sections) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 1rem;
 }
 
-.markdown-section .card:not(.card-list .card),
-.markdown-section .card-rounded:not(.card-list .card-rounded) {
+.markdown-section .card:not(:is(.card-list, .card-list-guides, .card-list-sections) .card),
+.markdown-section .card-rounded:not(:is(.card-list, .card-list-guides, .card-list-sections) .card-rounded) {
   margin-top: 2rem;
 }
 
@@ -810,7 +810,7 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-  .markdown-section .card-list {
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-sections) {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
@@ -828,6 +828,104 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
   .markdown-section .card p:has(img):first-child,
   .markdown-section .card-rounded p:has(img):first-child {
     margin: -1.35rem -1.25rem -0.75rem -1.25rem;
+  }
+}
+
+/* A link button (":class=navpill", or Docsify's ":class=button") in its own paragraph at the end of a card sits at
+   the bottom of the card, lined up with the buttons on the other cards in the row; the card's top image keeps its
+   own height */
+.markdown-section :is(.card, .card-rounded) > p:has(img):first-child {
+  flex-grow: 0;
+}
+
+.markdown-section :is(.card, .card-rounded) > p:last-child:has(> :is(a.navpill, a.button):only-child) {
+  flex-grow: 0;
+  margin-top: auto;
+  padding-top: .75rem;
+}
+
+/* Guide card lists – used on their own, as in <div class="card-list-guides">, like any card-list
+   card-list-guides: a Guides page's list of guides; card-list-sections: a guide home's list of its sections (parts)
+   Both show three cards in a row on wide screens (two on tablets, one on phones).
+   Optional, with any card-list: card-lines-2 or card-lines-3 – each card's text is trimmed to two or three lines, so
+   the cards stay a similar size (a paragraph with a link button is left whole, so the button always shows); leave
+   both out for the full text */
+.markdown-section :is(.card-list-guides, .card-list-sections) {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.markdown-section :is(.card-list-guides, .card-list-sections) :is(.card, .card-rounded) img {
+  height: 180px;
+}
+
+.markdown-section :is(.card-lines-2, .card-lines-3) :is(.card, .card-rounded) > p:not(:has(img)):not(:has(:is(a.navpill, a.button))) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  /* not stretched to fill a taller card, which would show part of the next line */
+  flex-grow: 0;
+}
+
+.markdown-section .card-lines-2 :is(.card, .card-rounded) > p:not(:has(img)):not(:has(:is(a.navpill, a.button))) {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+/* Cards in a list line up across each row: the image, title, text and button of every card start level, however long
+   a card's title or text is. Each card shares its row's heights (subgrid), taking one row for each of its parts – the
+   rules below give the count, for cards of two to eight parts. Browsers without subgrid, and cards of more than eight
+   parts, keep the layout above. */
+@supports (grid-template-rows: subgrid) {
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-sections) > :is(.card, .card-rounded):not(:has(> :nth-child(9))) {
+    display: grid;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-sections) > :is(.card, .card-rounded):has(> :nth-child(2):last-child) {
+    grid-row: span 2;
+  }
+
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-sections) > :is(.card, .card-rounded):has(> :nth-child(3):last-child) {
+    grid-row: span 3;
+  }
+
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-sections) > :is(.card, .card-rounded):has(> :nth-child(4):last-child) {
+    grid-row: span 4;
+  }
+
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-sections) > :is(.card, .card-rounded):has(> :nth-child(5):last-child) {
+    grid-row: span 5;
+  }
+
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-sections) > :is(.card, .card-rounded):has(> :nth-child(6):last-child) {
+    grid-row: span 6;
+  }
+
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-sections) > :is(.card, .card-rounded):has(> :nth-child(7):last-child) {
+    grid-row: span 7;
+  }
+
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-sections) > :is(.card, .card-rounded):has(> :nth-child(8):last-child) {
+    grid-row: span 8;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .markdown-section :is(.card-list-guides, .card-list-sections) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .markdown-section :is(.card-list-guides, .card-list-sections) {
+    grid-template-columns: 1fr;
+  }
+
+  .markdown-section :is(.card-list-guides, .card-list-sections) :is(.card, .card-rounded) img {
+    height: 200px;
   }
 }
 

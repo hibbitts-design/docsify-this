@@ -1060,6 +1060,8 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 - [button-secondary-rounded](#button-secondary-rounded)
 - [card](#card)
 - [card-list](#card-list)
+- [card-list-guides/card-list-sections](#card-list-guidescard-list-sections)
+- [card-lines-2/card-lines-3](#card-lines-2card-lines-3)
 - [card-rounded](#card-rounded)
 - [embedly-card](#embedly-card)
 - [header-image-fade](#header-image-fade)
@@ -1258,6 +1260,8 @@ Cropped to height of 350px on large screens, 175px on small screens.
 
 ##### card-list
 
+Cards in a list line up across each row, and a link button in its own paragraph at the end of a card sits at the bottom.
+
 ```html
 <div class="card-list">
  <div class="card">
@@ -1283,6 +1287,69 @@ Cropped to height of 350px on large screens, 175px on small screens.
 
  [Read More](# ":class=navpill")
     
+ </div>
+</div>
+```
+
+##### card-list-guides/card-list-sections
+
+A card list for guides: `card-list-guides` for a list of guides, and `card-list-sections` for a guide's sections. Both show three cards in a row (two on tablets, one on phones).
+
+```html
+<div class="card-list-guides">
+ <div class="card">
+
+ ![First Guide](images/example.jpg)
+
+ ## [First Guide](#)
+
+ A short guide to getting started.
+
+ </div>
+ <div class="card">
+
+ ![Second Guide With a Longer Title](images/example.jpg)
+
+ ## [Second Guide With a Longer Title](#)
+
+ Another guide, with its text lined up with the others.
+
+ </div>
+ <div class="card">
+
+ ![Third Guide](images/example.jpg)
+
+ ## [Third Guide](#)
+
+ One more guide.
+
+ </div>
+</div>
+```
+
+##### card-lines-2/card-lines-3
+
+Add to any card list to trim each card's text to two or three lines, so the cards stay a similar size. Leave it out to show the full text.
+
+```html
+<div class="card-list-guides card-lines-2">
+ <div class="card">
+
+ ![First Guide](images/example.jpg)
+
+ ## [First Guide](#)
+
+ A short guide to getting started.
+
+ </div>
+ <div class="card">
+
+ ![Second Guide](images/example.jpg)
+
+ ## [Second Guide](#)
+
+ A longer description that goes on for a while, to show how the text is trimmed to two lines so the cards stay a similar size.
+
  </div>
 </div>
 ```
