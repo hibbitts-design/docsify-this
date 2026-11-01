@@ -32,6 +32,12 @@ body {
   font-weight: bold;
 }
 
+/* A bold first line in a sidebar (for example **Guide Name** or **Course Name** at the top of a _sidebar.md)
+   is a little larger, so it reads as a label for the list and stands apart from the bold current page */
+.sidebar-nav > p:first-child > strong:only-child {
+  font-size: 1.1em;
+}
+
 /* PATCH: upstream docsify bug collapses a text-only sidebar group's own
    title along with its children. Remove once fixed upstream. */
 .sidebar-nav li.collapse > p.group-toggle {
