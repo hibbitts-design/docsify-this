@@ -394,6 +394,13 @@ body:has(.app-nav:empty) .markdown-section {
     margin-top: var(--content-margin-inline);
 }
 
+/* The sidebar stays hidden until the first page has been shown, so a page that hides its sidebar (with a <style> line
+   in its Markdown) doesn't show it briefly while loading. Before then the page area holds only a comment, which :empty matches.
+   (opacity, not visibility: Docsify checks whether the sidebar is visible when it starts, and would start it closed) */
+body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
+    opacity: 0;
+}
+
 .markdown-section .banner-image {
   width: 100%;
   height: 125px;
