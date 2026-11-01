@@ -32,6 +32,7 @@
 * Fix Docsify hang on digit-leading heading ids
 * Reset the search result source option with Reset to Defaults
 * LaTeX: prices such as $5 and $10 stay as text, and math in ~~~ code blocks stays as code (a patch for the docsify-latex plugin)
+* An empty navbar no longer leaves space above the page
 
 ## [2.1.0] - 09/21/2026🍂
 
