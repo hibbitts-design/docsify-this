@@ -383,6 +383,17 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
     order: 2;
 }
 
+/* An empty navbar (for example from an empty _navbar.md) takes no space, so the page starts as it would with no navbar.
+   Docsify leaves room above the content whenever a navbar is loaded, even with nothing in it.
+   1.4rem is theme.css's .markdown-section margin-top */
+.app-nav:empty {
+    display: none;
+}
+
+body:has(.app-nav:empty) .markdown-section {
+    margin-top: 1.4rem;
+}
+
 .markdown-section .banner-image {
   width: 100%;
   height: 125px;
