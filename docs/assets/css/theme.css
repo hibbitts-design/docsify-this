@@ -57,6 +57,12 @@ body {
   margin-top: 1.4rem;
 }
 
+/* With an empty navbar, the same top margin as with no navbar (docsify-v5-core.css hides the empty navbar).
+   "html" makes this win over docsify-v5-core.css's rule, which some setups load after this file */
+html body:has(.app-nav:empty) .markdown-section {
+  margin-top: 1.4rem;
+}
+
 .markdown-section blockquote {
   overflow: visible;
   margin: 1em 0;
