@@ -26,7 +26,7 @@
 * Support a top Edit this Page link below full-width header images instead of moving it to the bottom
 * Various minor Web Page Builder UI refinements
 * A card's link button in its own paragraph now sits at the bottom of the card, lined up across the row
-* Cards in a list line up across each row (image, title, text), however long their titles are
+* Cards in a list line up across each row (image, title, text), however long their titles may be
 
 **Bugfix:**
 * Fix Docsify hang on digit-leading heading ids
