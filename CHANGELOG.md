@@ -27,6 +27,7 @@
 * Various minor Web Page Builder UI refinements
 * A card's link button in its own paragraph now sits at the bottom of the card, lined up across the row
 * Cards in a list line up across each row (image, title, text), however long their titles are
+* A bold first line in a sidebar (such as a guide or course name) shows slightly larger, as a label for the list
 
 **Bugfix:**
 * Fix Docsify hang on digit-leading heading ids
