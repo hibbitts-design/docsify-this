@@ -1304,7 +1304,7 @@ Cards in a list line up across each row, and a link button in its own paragraph 
 
 ##### card-list-guides/card-list-sections
 
-A card list for guides: `card-list-guides` for a list of guides, and `card-list-sections` for a guide's sections. Both show three cards in a row (two on tablets, one on phones).
+A card list for guides: `card-list-guides` for a list of guides, and `card-list-sections` for a guide's sections. Both show three cards in a row (two on tablets, one on phones). For just two cards, use `card-list`, which fills the row with two.
 
 ```html
 <div class="card-list-guides">
@@ -1343,7 +1343,7 @@ A card list for guides: `card-list-guides` for a list of guides, and `card-list-
 Add to any card list to trim each card's text to two or three lines, so the cards stay a similar size. Leave it out to show the full text.
 
 ```html
-<div class="card-list-guides card-lines-2">
+<div class="card-list card-lines-2">
  <div class="card">
 
  ![First Guide](images/example.jpg)
