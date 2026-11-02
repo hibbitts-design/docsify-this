@@ -2,6 +2,9 @@
 
 ## [2.2.1] - XX/XX/2026
 
+**New:**
+* Guide cover: `guide-cover` shows a small cover image with a guide's details and Start Reading beside it, at the top of a guide home
+
 **Improved:**
 * Updated ReadMe with the Open Publishing Guides Converter
 

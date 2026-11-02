@@ -947,6 +947,67 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
   }
 }
 
+/* Guide cover – a small cover image with the guide's details beside it, at the top of a guide home, as in
+   <div class="guide-cover"> with the image, then a <div> holding the # title, subtitle, author(s),
+   <small>edition</small>, licence (":class=navpill") and Start Reading button. Stacks on phones. */
+.markdown-section .guide-cover {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-mono-max) 15%, transparent);
+}
+
+/* the cover: a 4:3 picture about as tall as the details beside it, trimmed to fill it */
+.markdown-section .guide-cover > p:first-child {
+  flex: 0 0 18rem;
+  margin: 0;
+}
+
+.markdown-section .guide-cover > p:first-child img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.markdown-section .guide-cover h1 {
+  margin-top: 0;
+}
+
+.markdown-section .guide-cover p {
+  margin: 0 0 0.4rem;
+}
+
+/* the subtitle, just below the title */
+.markdown-section .guide-cover h1 + p {
+  font-size: 1.2em;
+  color: color-mix(in srgb, var(--color-mono-max) 65%, transparent);
+}
+
+.markdown-section .guide-cover small {
+  font-size: 0.9em;
+  color: color-mix(in srgb, var(--color-mono-max) 65%, transparent);
+}
+
+/* the Start Reading button, a little apart from the details */
+.markdown-section .guide-cover p:last-child {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .markdown-section .guide-cover {
+    flex-direction: column;
+  }
+
+  .markdown-section .guide-cover > p:first-child {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .markdown-section blockquote.announcement h1 {
     font-size: 1.3rem;
