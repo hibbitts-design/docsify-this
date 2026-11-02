@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.2.1] - XX/XX/2026
+
+**Improved:**
+* Updated ReadMe with the Open Publishing Guides Converter
+
 ## [2.2.0] - 11/01/2026
 
 **New:**
