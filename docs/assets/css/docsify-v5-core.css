@@ -1008,6 +1008,84 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
   }
 }
 
+/* Site title – the site's name at the top left of the navbar, as in a site header, on pages that hide the sidebar
+   (where Docsify shows the name). Used as the navbar's first link: - [Site Name](home.md ":class=site-title").
+   A page hides its sidebar with a <style> line in its own text, so .markdown-section > style finds those pages.
+   On phones it shows on every page, since the sidebar starts closed there. */
+.app-nav li:has(> a.site-title) {
+  display: none;
+}
+
+.app-nav a.site-title {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--color-mono-max);
+  text-decoration: none;
+}
+
+/* No sliding: Docsify moves the navbar's left edge with a transition (for opening and closing the sidebar), which
+   would slide it across when a page without the sidebar loads. It also stays hidden until the first page has been
+   shown (as the sidebar does), so it appears in place. */
+.app-nav:has(a.site-title) {
+  transition: none;
+}
+
+body:has(.markdown-section:empty) .app-nav:has(a.site-title) {
+  opacity: 0;
+}
+
+/* the navbar spans the page, lined up with the text, with the title on the left and the other links on the right */
+body:has(.markdown-section > style) .app-nav:has(a.site-title) {
+  left: 0;
+}
+
+body:has(.markdown-section > style) .app-nav:has(a.site-title) > ul {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  /* the title's text sits on the same line as the other links' text */
+  align-items: baseline;
+}
+
+body:has(.markdown-section > style) .app-nav li:has(> a.site-title) {
+  display: block;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  /* the title on its own line with the other links below it, at the top of the page (not over it) */
+  .app-nav:has(a.site-title) {
+    position: static;
+    height: auto;
+    padding-top: 1.25rem;
+    padding-bottom: 0;
+  }
+
+  .app-nav:has(a.site-title) > ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 1.1rem;
+    row-gap: 0.2rem;
+  }
+
+  .app-nav:has(a.site-title) li {
+    margin: 0;
+  }
+
+  body:has(.app-nav a.site-title) .markdown-section {
+    margin-top: 1.4rem !important;
+  }
+
+  .app-nav li:has(> a.site-title) {
+    display: block;
+    flex-basis: 100%;
+  }
+
+  .app-nav a.site-title {
+    font-size: 1.25em;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .markdown-section blockquote.announcement h1 {
     font-size: 1.3rem;
