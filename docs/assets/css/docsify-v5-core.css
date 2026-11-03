@@ -103,6 +103,9 @@
 
 .markdown-section :is(p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)), p:has(> a[href*="?id="]:nth-of-type(5))) a {
     padding: 0 2px;
+    /* each letter is at least 18px wide: with the | between letters, a comfortable target to tap or click */
+    min-width: 18px;
+    justify-content: center;
 }
 
 .markdown-section #a,
