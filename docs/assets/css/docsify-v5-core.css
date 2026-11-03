@@ -86,8 +86,9 @@
 
 /* Support for Docsify-This classes with preview build of Docsify v5 theme */
 
-/* Target first paragraphs with 5+ links (reasonable index minimum) */
-.markdown-section p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)) {
+/* Target first paragraphs with 5+ links (reasonable index minimum), and a letter bar anywhere on the page
+   (a paragraph whose fifth link jumps to a heading on the same page, such as [A](#a)|[B](#b)|…) */
+.markdown-section :is(p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)), p:has(> a[href*="?id="]:nth-of-type(5))) {
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
@@ -96,11 +97,11 @@
     line-height: 1.4;
 }
 
-.markdown-section p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)) a {
+.markdown-section :is(p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)), p:has(> a[href*="?id="]:nth-of-type(5))) a {
     color: var(--theme-color);
 }
 
-.markdown-section p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)) a {
+.markdown-section :is(p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)), p:has(> a[href*="?id="]:nth-of-type(5))) a {
     padding: 0 2px;
 }
 

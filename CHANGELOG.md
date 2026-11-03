@@ -7,6 +7,7 @@
 * Site title: a navbar link with `:class=site-title` shows the site's name at the top of pages that hide the sidebar, and on phones
 
 **Improved:**
+* A Topics letter bar (`[A](#a)|[B](#b)|…`) is styled wherever it is on the page, not only as the first paragraph
 * Updated ReadMe with the Open Publishing Guides Converter
 
 ## [2.2.0] - 11/01/2026
