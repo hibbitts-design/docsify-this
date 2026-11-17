@@ -908,8 +908,8 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 - [One Page Course Template](#one-page-course-template)
 - [Guide Site Template](#guide-site-template) <span class="badge" style="--badge-bg-color: #22c55e;">NEW</span>
 - [Multiple Page Basic Site Template](#multiple-page-basic-site-template)
-- [Multiple Page Blog Style Site Template](#multiple-page-blog-style-site-template) <span class="badge" style="--badge-bg-color: #22c55e;">NEW</span>
-- [Multiple Page Open Publishing Site Template](#multiple-page-open-publishing-site-template) <span class="badge" style="--badge-bg-color: #22c55e;">NEW</span>
+- [Multiple Page Blog Style Site Template](#multiple-page-blog-style-site-template)
+- [Multiple Page Open Publishing Site Template](#multiple-page-open-publishing-site-template)
 - [Multiple Guides Site Template](#multiple-guides-site-template) <span class="badge" style="--badge-bg-color: #22c55e;">NEW</span>
 - [Multiple Page Course Site Template](#multiple-page-course-site-template)
 - [Courses Site Template](#courses-site-template) <span class="badge" style="--badge-bg-color: #22c55e;">NEW</span>
