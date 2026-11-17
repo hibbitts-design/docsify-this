@@ -1318,6 +1318,7 @@
         namespace: "docsify-this-" + Date.now(),
         resultSource: getURLParameterByName('search.resultSource', null, null, window.location.href, true) || (getURLParameterByName('loadSidebar') ? 'breadcrumb' : 'none'),
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+        pathNamespaces: /^\/[^\/]+(?=\/)/, // a separate search index for each top-level folder (each course or guide)
         insertBefore: (getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme']) || corethemestyles)
                   ? '.app-name'
           : '.sidebar-nav'
