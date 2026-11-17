@@ -1018,7 +1018,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ![Docsify-This Multiple Courses Site](docs/images/docsify-this-multiple-courses-site-readme.jpg)
 
-[Multiple Courses Site Template](https://github.com/hibbitts-design/docsify-this-multiple-courses-site) with [home.md](https://github.com/hibbitts-design/docsify-this-multiple-courses-site/blob/main/home.md) file, including the use of the `card-list-guides` card list for a Courses page, and a Docsify custom Sidebar and Navbar for each course (such as the [CPT363-1 Sidebar](https://github.com/hibbitts-design/docsify-this-multiple-courses-site/blob/main/cpt363-basic/_sidebar.md)), displayed by Docsify-This as:
+[Multiple Courses Site Template](https://github.com/hibbitts-design/docsify-this-multiple-courses-site) with [home.md](https://github.com/hibbitts-design/docsify-this-multiple-courses-site/blob/main/home.md) file, including the use of the `card-list-courses` card list for a Courses page, and a Docsify custom Sidebar and Navbar for each course (such as the [CPT363-1 Sidebar](https://github.com/hibbitts-design/docsify-this-multiple-courses-site/blob/main/cpt363-basic/_sidebar.md)), displayed by Docsify-This as:
 
 - [Website with a Docsify Sidebar and Navbar for each course, and Search](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&searchbox=true "Docsify-This Multiple Courses Site - Website with a Docsify Sidebar and Navbar for each course, and Search")
 - [Website with a Docsify Sidebar and Navbar for each course, Pagination buttons and Search](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&pagination=true&searchbox=true "Docsify-This Multiple Courses Site - Website with Pagination buttons and Search")
@@ -1097,7 +1097,7 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 - [button-secondary-rounded](#button-secondary-rounded)
 - [card](#card)
 - [card-list](#card-list)
-- [card-list-guides/card-list-sections](#card-list-guidescard-list-sections)
+- [card-list-guides/card-list-courses/card-list-sections](#card-list-guidescard-list-coursescard-list-sections)
 - [card-lines-2/card-lines-3](#card-lines-2card-lines-3)
 - [card-rounded](#card-rounded)
 - [embedly-card](#embedly-card)
@@ -1328,9 +1328,9 @@ Cards in a list line up across each row, and a link button in its own paragraph 
 </div>
 ```
 
-##### card-list-guides/card-list-sections
+##### card-list-guides/card-list-courses/card-list-sections
 
-A card list for guides: `card-list-guides` for a list of guides, and `card-list-sections` for a guide's sections. Both show three cards in a row (two on tablets, one on phones). For just two cards, use `card-list`, which fills the row with two.
+A card list for guides and courses: `card-list-guides` for a list of guides, `card-list-courses` for a list of courses, and `card-list-sections` for a guide's sections. All three show three cards in a row (two on tablets, one on phones). `card-list-courses` looks the same as `card-list-guides` for now, with its own name so courses and guides can be styled apart later. For just two cards, use `card-list`, which fills the row with two.
 
 ```html
 <div class="card-list-guides">
