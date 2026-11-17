@@ -1304,7 +1304,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 - [Multiple Page Open Publishing Site Template](#docsify-this-multiple-page-open-publishing-site-template) <span class="badge" style="--badge-bg-color: #22c55e;">NEW</span>
 - [Multiple Guides Site Template](#docsify-this-multiple-guides-site-template) <span class="badge" style="--badge-bg-color: #22c55e;">NEW</span>
 - [Multiple Page Course Site Template](#docsify-this-multiple-page-course-site-template)
-- [Multiple Courses Site Template](#docsify-this-multiple-courses-site-template) <span class="badge" style="--badge-bg-color: #22c55e;">NEW</span>
+- [Courses Site Template](#docsify-this-courses-site-template) <span class="badge" style="--badge-bg-color: #22c55e;">NEW</span>
 - [LMS Content Pages Template](#docsify-this-lms-content-pages-template)
 
 <div class="row" id="docsify-this-one-page-article-template">
@@ -1501,23 +1501,23 @@ Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-t
 
 </div>
 
-<div class="row" id="docsify-this-multiple-courses-site-template">
+<div class="row" id="docsify-this-courses-site-template">
 
 <div class="docsifythiscolumn35" >
 
-[![Multiple Courses Site](images/docsify-this-multiple-courses-site.jpg ":class=docsify-this-screenshot")](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true)
+[![Courses Site](images/docsify-this-multiple-courses-site.jpg ":class=docsify-this-screenshot")](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true)
 
 </div>
 
 <div class="docsifythiscolumn65" >
 
-<h4><a href="https://github.com/hibbitts-design/docsify-this-courses-site">Multiple Courses Site Template</a></h4>
+<h4><a href="https://github.com/hibbitts-design/docsify-this-courses-site">Courses Site Template</a></h4>
 
-Multiple Courses Site [home.md](https://github.com/hibbitts-design/docsify-this-courses-site/blob/main/home.md) file, including the use of the `card-list-courses` card list for a Courses page, and a Docsify custom Sidebar and Navbar for each course (such as the [CPT363-1 Sidebar](https://github.com/hibbitts-design/docsify-this-courses-site/blob/main/cpt363-basic/_sidebar.md)), displayed by Docsify-This as:
+Courses Site [home.md](https://github.com/hibbitts-design/docsify-this-courses-site/blob/main/home.md) file, including the use of the `card-list-courses` card list for a Courses page, and a Docsify custom Sidebar and Navbar for each course (such as the [CPT363-1 Sidebar](https://github.com/hibbitts-design/docsify-this-courses-site/blob/main/cpt363-basic/_sidebar.md)), displayed by Docsify-This as:
 
-- [Website with a Docsify Sidebar and Navbar for each course, website name and Search](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&searchbox=true "Docsify-This Multiple Courses Site - Website with a Docsify Sidebar and Navbar for each course, and Search")
-- [Website with a Docsify Sidebar and Navbar for each course, Pagination buttons, Search and website name](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true "Docsify-This Multiple Courses Site - Website with Pagination buttons and Search")
-- [Website with a Docsify Sidebar and Navbar for each course, Pagination buttons, Search, website name and a 'Source Markdown Files' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true&edit-link=https://github.com/hibbitts-design/docsify-this-courses-site&edit-link-text=Source%20Markdown%20Files&edit-link-emoji=:file_folder: "Docsify-This Multiple Courses Site - Website with Pagination buttons, Search, website name and 'Source Markdown Files' link")
+- [Website with a Docsify Sidebar and Navbar for each course, website name and Search](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&searchbox=true "Docsify-This Courses Site - Website with a Docsify Sidebar and Navbar for each course, and Search")
+- [Website with a Docsify Sidebar and Navbar for each course, Pagination buttons, Search and website name](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true "Docsify-This Courses Site - Website with Pagination buttons and Search")
+- [Website with a Docsify Sidebar and Navbar for each course, Pagination buttons, Search, website name and a 'Source Markdown Files' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true&edit-link=https://github.com/hibbitts-design/docsify-this-courses-site&edit-link-text=Source%20Markdown%20Files&edit-link-emoji=:file_folder: "Docsify-This Courses Site - Website with Pagination buttons, Search, website name and 'Source Markdown Files' link")
 
 </div>
 
