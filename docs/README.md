@@ -628,7 +628,7 @@ With Docsify-This you can:
 
 > [!TIP]
 >
-> **Have guides or a course in Grav, or want to bring your Docsify site into Grav?** The [Open Publishing Course Hub Converter](https://open-publishing-course-hub-converter.hibbittsdesign.org/) moves open guides and courses between Docsify-This or a Docsify Starter Kit and [Grav Open Publishing Space](https://github.com/hibbitts-design/grav-skeleton-open-publishing-space) or [Open Course Hub](https://github.com/hibbitts-design/grav-skeleton-course-hub), in either direction, with the same Markdown.
+> **Have guides or a course in Grav, or want to bring your Docsify site into Grav?** The [Open Publishing Course Space Converter](https://open-publishing-course-space-converter.hibbittsdesign.org/) moves open guides and courses between Docsify-This or a Docsify Starter Kit and [Grav Open Publishing Space](https://github.com/hibbitts-design/grav-skeleton-open-publishing-space) or [Open Course Space](https://github.com/hibbitts-design/grav-skeleton-open-course-space), in either direction, with the same Markdown.
 >
 > **Already have content in Canvas, Moodle, Brightspace, or Blackboard?** The [Docsify Common Cartridge Converter](https://docsify-common-cartridge-converter.hibbittsdesign.org/) turns a Common Cartridge export (.imscc) into flat Markdown pages ready to use with Docsify-This or Docsify, with an auto-generated `_sidebar.md` — no need to rebuild your course by hand.
 
@@ -1518,6 +1518,8 @@ Courses Site [home.md](https://github.com/hibbitts-design/docsify-this-courses-s
 - [Website with a Docsify Sidebar and Navbar for each course, website name and Search](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&searchbox=true "Docsify-This Courses Site - Website with a Docsify Sidebar and Navbar for each course, and Search")
 - [Website with a Docsify Sidebar and Navbar for each course, Pagination buttons, Search and website name](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true "Docsify-This Courses Site - Website with Pagination buttons and Search")
 - [Website with a Docsify Sidebar and Navbar for each course, Pagination buttons, Search, website name and a 'Source Markdown Files' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true&edit-link=https://github.com/hibbitts-design/docsify-this-courses-site&edit-link-text=Source%20Markdown%20Files&edit-link-emoji=:file_folder: "Docsify-This Courses Site - Website with Pagination buttons, Search, website name and 'Source Markdown Files' link")
+
+The same courses are also available as the [Docsify Open Courses Starter Kit](https://github.com/hibbitts-design/docsify-open-courses-starter-kit), for a site of your own on GitHub Pages.
 
 </div>
 
