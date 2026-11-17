@@ -11,6 +11,7 @@
 * A Topics letter bar (`[A](#a)|[B](#b)|…`) is styled wherever it is on the page, not only as the first paragraph
 * Letters in a Topics letter bar are at least 18px wide, easier to tap or click
 * Updated ReadMe with the Open Publishing Course Hub Converter, for guides and courses
+* Search stays within the current course or guide on sites with a folder per course or guide
 
 ## [2.2.0] - 11/01/2026
 
