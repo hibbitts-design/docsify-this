@@ -5,6 +5,7 @@
 **New:**
 * Guide cover: `guide-cover` shows a small cover image with a guide's details and Start Reading beside it, at the top of a guide home
 * Site title: a navbar link with `:class=site-title` shows the site's name at the top of pages that hide the sidebar, and on phones
+* Course card list: `card-list-courses` for a Courses page, laid out like `card-list-guides` (three cards in a row), with its own name so courses and guides can be styled apart later
 
 **Improved:**
 * A Topics letter bar (`[A](#a)|[B](#b)|…`) is styled wherever it is on the page, not only as the first paragraph
