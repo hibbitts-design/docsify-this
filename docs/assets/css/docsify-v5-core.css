@@ -765,15 +765,15 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
 }
 
 /* CSS generated/assisted by Anthropic Claude AI */
-.markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections) {
+.markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections, .card-list-rows) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 1rem;
 }
 
-.markdown-section .card:not(:is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections) .card),
-.markdown-section .card-rounded:not(:is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections) .card-rounded) {
+.markdown-section .card:not(:is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections, .card-list-rows) .card),
+.markdown-section .card-rounded:not(:is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections, .card-list-rows) .card-rounded) {
   margin-top: 2rem;
 }
 
@@ -832,7 +832,7 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
-  .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections) {
+  .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections, .card-list-rows) {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
@@ -951,6 +951,28 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
   .markdown-section :is(.card-list-guides, .card-list-courses, .card-list-sections) :is(.card, .card-rounded) img {
     height: 200px;
   }
+}
+
+/* Card list in rows – card-list-rows: one card per row, across the page, for cards without images (such as a guide's
+   sections listed one under the other). The same cards as the other card lists, one column on every screen. */
+.markdown-section .card-list-rows {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* (a little less space above and below each card's content, as these cards are short) */
+.markdown-section .card-list-rows > :is(.card, .card-rounded) {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.markdown-section .card-list-rows > :is(.card, .card-rounded) > :last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.markdown-section .card-list-rows > :is(.card, .card-rounded) > h2 + p {
+  margin-top: .25rem;
 }
 
 /* Guide cover – a small cover image with the guide's details beside it, at the top of a guide home, as in

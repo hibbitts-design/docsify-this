@@ -1611,6 +1611,7 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 - [card](/?id=card)
 - [card-list](/?id=card-list)
 - [card-list-guides/card-list-courses/card-list-sections](/?id=card-list-guidescard-list-coursescard-list-sections)
+- [card-list-rows](/?id=card-list-rows)
 - [card-lines-2/card-lines-3](/?id=card-lines-2card-lines-3)
 - [card-rounded](/?id=card-rounded)
 - [embedly-card](/?id=embedly-card)
@@ -2026,6 +2027,52 @@ A card list for guides and courses: `card-list-guides` for a list of guides, `ca
  ## [Third Guide](#)
 
  One more guide.
+
+ </div>
+</div>
+```
+
+##### card-list-rows
+
+A card list in rows: one card per row, across the page, for cards without images – such as a guide's sections listed one under the other. The cards look the same as in the other card lists.
+
+<div class="card-list-rows">
+ <div class="card">
+
+ ## [First Section](#)
+
+ A short description of this section.
+
+ </div>
+ <div class="card">
+
+ ## [Second Section With a Longer Title](#)
+
+ </div>
+ <div class="card">
+
+ ## [Third Section](#)
+
+ </div>
+</div>
+
+```html
+<div class="card-list-rows">
+ <div class="card">
+
+ ## [First Section](#)
+
+ A short description of this section.
+
+ </div>
+ <div class="card">
+
+ ## [Second Section With a Longer Title](#)
+
+ </div>
+ <div class="card">
+
+ ## [Third Section](#)
 
  </div>
 </div>
