@@ -999,6 +999,10 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   border-radius: 0.5rem;
+  /* a faint edge and soft shadow, as Open Publishing Space gives a cover, so a light cover stands out from the page */
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-mono-max) 10%, transparent),
+    0 4px 8px color-mix(in srgb, var(--color-mono-max) 6%, transparent);
 }
 
 .markdown-section .guide-cover h1 {
@@ -1034,6 +1038,21 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
     flex-basis: auto;
     width: 100%;
   }
+}
+
+/* A portrait cover (such as a book cover), with guide-cover-portrait next to guide-cover: shown whole, at its own
+   shape and a narrower width, also on phones, as in Open Publishing Space. An unusually tall image is kept to 18rem
+   high, and narrows to keep its shape. */
+.markdown-section .guide-cover.guide-cover-portrait > p:first-child {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.markdown-section .guide-cover.guide-cover-portrait > p:first-child img {
+  width: auto;
+  max-width: 11rem;
+  max-height: 18rem;
+  aspect-ratio: auto;
 }
 
 /* Site title – the site's name at the top left of the navbar, as in a site header, on pages that hide the sidebar
