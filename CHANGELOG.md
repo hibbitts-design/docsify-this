@@ -6,10 +6,12 @@
 * Guide cover: `guide-cover` shows a small cover image with a guide's details and Start Reading beside it, at the top of a guide home
 * Site title: a navbar link with `:class=site-title` shows the site's name at the top of pages that hide the sidebar, and on phones
 * Course card list: `card-list-courses` for a Courses page, laid out like `card-list-guides` (three cards in a row), with its own name so courses and guides can be styled apart later
+* Portrait guide cover: `guide-cover-portrait`, added to `guide-cover`, shows a book cover whole at its own shape
 * Card list in rows: `card-list-rows` shows one card per row, for cards without images, such as a guide's sections
 
 **Improved:**
 * A Topics letter bar (`[A](#a)|[B](#b)|…`) is styled wherever it is on the page, not only as the first paragraph
+* A guide cover has a faint edge and soft shadow, as in Open Publishing Space, so a light cover stands out from the page
 * Letters in a Topics letter bar are at least 18px wide, easier to tap or click
 * Updated ReadMe with the Open Publishing Course Hub Converter, for guides and courses
 * Search stays within the current course or guide on sites with a folder per course or guide
