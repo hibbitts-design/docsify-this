@@ -1128,8 +1128,11 @@ body:has(.markdown-section > style) .app-nav li:has(> a.site-title) {
     flex-basis: 100%;
   }
 
+  /* a long name wraps onto a second line instead of running off the page (Docsify keeps navbar links on one line) */
   .app-nav a.site-title {
     font-size: 1.25em;
+    white-space: normal;
+    line-height: 1.3;
   }
 }
 
