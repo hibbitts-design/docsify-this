@@ -15,6 +15,7 @@
 * Letters in a Topics letter bar are at least 18px wide, easier to tap or click
 * Updated ReadMe with the Open Publishing Course Space Bridge, for guides and courses, and the Courses Site Template
 * Search stays within the current course or guide on sites with a folder per course or guide
+* Each page of a site with a custom sidebar has its own Browser tab title, such as "Week 1 | CPT-363", easier to tell apart and better for screen readers; one-page sites keep their title as set
 
 ## [2.2.0] - 11/01/2026
 
