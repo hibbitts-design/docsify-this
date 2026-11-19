@@ -16,6 +16,7 @@
 * Updated ReadMe with the Open Publishing Course Space Bridge, for guides and courses, and the Courses Site Template
 * Search stays within the current course or guide on sites with a folder per course or guide
 * Each page of a site with a custom sidebar has its own Browser tab title, such as "Week 1 | CPT-363", easier to tell apart and better for screen readers; one-page sites keep their title as set
+* A card whose title is a link can be clicked anywhere – on its image, title or text – yet is still one link for keyboard and screen reader users, so its image no longer needs to be a second link
 
 ## [2.2.0] - 11/01/2026
 
