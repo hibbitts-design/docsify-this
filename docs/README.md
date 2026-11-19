@@ -629,8 +629,6 @@ With Docsify-This you can:
 > [!TIP]
 >
 > **Have guides or a course in Grav, or want to bring your Docsify site into Grav?** The [Open Publishing Course Space Bridge](https://open-publishing-course-space-bridge.hibbittsdesign.org/) moves open guides and courses between Docsify-This or a Docsify Starter Kit and [Grav Open Publishing Space](https://github.com/hibbitts-design/grav-skeleton-open-publishing-space) or [Open Course Space](https://github.com/hibbitts-design/grav-skeleton-open-course-space), in either direction, with the same Markdown.
->
-> **Already have content in Canvas, Moodle, Brightspace, or Blackboard?** The [Docsify Common Cartridge Converter](https://docsify-common-cartridge-converter.hibbittsdesign.org/) turns a Common Cartridge export (.imscc) into flat Markdown pages ready to use with Docsify-This or Docsify, with an auto-generated `_sidebar.md` — no need to rebuild your course by hand.
 
 ---
 
