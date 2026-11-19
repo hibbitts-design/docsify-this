@@ -1866,6 +1866,8 @@ Cropped to height of 350px on large screens, 175px on small screens.
 
 ##### card
 
+A card whose title is a link can be clicked anywhere – on its image, title or text – yet is still one link for keyboard and screen reader users, so its image can be a plain image rather than a second link.
+
 <div class="card">
 
   ![Card Image](images/mountain.jpg)

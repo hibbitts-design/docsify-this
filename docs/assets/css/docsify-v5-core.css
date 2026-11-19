@@ -866,6 +866,26 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
   padding-top: .75rem;
 }
 
+/* A card whose title is a link can be clicked anywhere – on its image, title or text – yet is still one link for
+   keyboard and screen reader users (the title's link is stretched over the whole card). Its image can then be a
+   plain image, as in ![](image.jpg ":no-zoom"), rather than a second link to the same page. Any other link in the
+   card, such as a link button, sits above it and still works. (a.anchor is Docsify's own heading link) */
+.markdown-section :is(.card, .card-rounded):has(> h2 > a:not(.anchor)) {
+  position: relative;
+}
+
+.markdown-section :is(.card, .card-rounded) > h2 > a:not(.anchor)::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.markdown-section :is(.card, .card-rounded):has(> h2 > a:not(.anchor)) a:not(h2 > a) {
+  position: relative;
+  z-index: 2;
+}
+
 /* Guide and course card lists – used on their own, as in <div class="card-list-guides">, like any card-list
    card-list-guides: a Guides page's list of guides; card-list-courses: a Courses page's list of courses (the same
    layout for now, with its own name so guides and courses can be styled apart later); card-list-sections: a guide
