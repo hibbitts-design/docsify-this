@@ -2006,12 +2006,22 @@
                 docBody.appendChild(editCSS);
               }
 
-              // Browser title logic optimized by early return pattern
+              // Browser tab title: the browser-tab-title text, else the site name, else the default
               let browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
               if (browserTabTitle) {
                 browserTabTitle = browserTabTitle.replaceAll('_', ' ');
               }
-              document.title = browserTabTitle || (appName && appName.trim() !== '' ? appName.replaceAll('_', ' ') : 'Published by Docsify-This');
+              const siteTitle = browserTabTitle || (appName && appName.trim() !== '' ? appName.replaceAll('_', ' ') : '');
+              let tabTitle = siteTitle || 'Published by Docsify-This';
+              // On sites with a sidebar file (several pages), each page's heading goes first, so every tab has its own title
+              if (getURLParameterByName('loadSidebar')) {
+                const firstHeading = document.querySelector('#main h1');
+                const pageHeading = firstHeading ? firstHeading.textContent.trim() : '';
+                if (pageHeading && pageHeading !== siteTitle) {
+                  tabTitle = siteTitle ? pageHeading + ' | ' + siteTitle : pageHeading;
+                }
+              }
+              document.title = tabTitle;
 
               // Update page title if parameter present
               let pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
