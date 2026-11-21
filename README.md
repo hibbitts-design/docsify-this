@@ -369,6 +369,8 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 Set a custom title on Browser tab for your web pages with the optional **browser-tab-title** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&browser-tab-title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page". Underscores may also be used to represent spaces.
 
+On sites with a custom Sidebar (the **loadSidebar** parameter), each page's heading is added before this title, such as "Week 1 | CPT-363", so every page has its own Browser tab title. On a site of several courses (or guides), each in a folder whose navbar starts with its name as a site title (`:class=site-title`), pages show their course instead, such as "Module 2 | CPT363-1".
+
 ##### close-sidebar
 
 Set the Docsify sidebar to start closed and auto-close after navigation with the optional **close-sidebar** parameter, for example:  
@@ -503,6 +505,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [image-captions-font-style](#image-captions-font-style)
 - [image-captions-image-align](#image-captions-image-align)
 - [image-captions-text-align](#image-captions-text-align)
+- [keep-my-place](#keep-my-place)
 - [link-color-dark-mode](#link-color-dark-mode)
 - [link-color-hover](#link-color-hover)
 - [link-color-hover-dark-mode](#link-color-hover-dark-mode)
@@ -591,6 +594,19 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Enable the lazy loading of images by Browsers with the optional **lazy-load-images** parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&lazy-load-images=true Please note that enabling lazy loading of images may affect page scroll accuracy, for example by the Docsify Sidebar etc.
 
+##### keep-my-place
+
+Show a "Continue reading" link on the home page, to the Sidebar page last read, with the optional **keep-my-place** parameter (Docsify custom Sidebar required). On a site with a folder per course or guide, each one remembers its own place. The place is kept only in the reader's own browser. Read a page or two, then go back to the home page to see it, for example with the:
+
+**Guide Site Template** (a Continue reading link below the guide's cover)  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&keep-my-place=true
+
+**Multiple Guides Site Template** (one for each guide, on its home page)  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-guides-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&collapsibleSidebarGroups=true&dark-mode=auto&pagination=true&searchbox=true&keep-my-place=true
+
+**Courses Site Template** (one for each course, on its home page)  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true&keep-my-place=true
+
 ##### link-color-dark-mode
 
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
@@ -663,7 +679,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### pagination
 
-Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
+Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter – the ← → keys also go to the previous and next page – for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&pagination=true
 
 ##### search.resultSource
