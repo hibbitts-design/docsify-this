@@ -112,7 +112,7 @@
     var bar = document.createElement('div');
     bar.className = 'keep-my-place';
     bar.innerHTML = '<a><span class="keep-my-place-label">Continue reading:</span> <span class="keep-my-place-title"></span></a>'
-      + '<button type="button" class="keep-my-place-close" aria-label="Forget this place"><span aria-hidden="true">&times;</span></button>';
+      + '<button type="button" class="keep-my-place-close" aria-label="Dismiss Continue reading"><span aria-hidden="true">&times;</span></button>';
     bar.querySelector('a').href = '#' + place.path;
     bar.querySelector('.keep-my-place-title').textContent = place.title;
 
