@@ -990,8 +990,16 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### keep-my-place<button type="button" class="copy-link" aria-label="Copy keep-my-place parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&keep-my-place=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
-Show a "Continue reading" link on the home page, to the Sidebar page last read, with the optional **keep-my-place** parameter (Docsify custom Sidebar required). On a site with a folder per course or guide, each one remembers its own place. The place is kept only in the reader's own browser. For example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&pagination=true&keep-my-place=true
+Show a "Continue reading" link on the home page, to the Sidebar page last read, with the optional **keep-my-place** parameter (Docsify custom Sidebar required). On a site with a folder per course or guide, each one remembers its own place. The place is kept only in the reader's own browser. Read a page or two, then go back to the home page to see it, for example with the:
+
+**Guide Site Template** (a Continue reading link below the guide's cover)  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&keep-my-place=true
+
+**Multiple Guides Site Template** (one for each guide, on its home page)  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-guides-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&collapsibleSidebarGroups=true&dark-mode=auto&pagination=true&searchbox=true&keep-my-place=true
+
+**Courses Site Template** (one for each course, on its home page)  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-courses-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&dark-mode=auto&name=Open%20Course%20Space%20Courses&hide-credits=true&pagination=true&searchbox=true&keep-my-place=true
 
 ##### link-color-dark-mode<button type="button" class="copy-link" aria-label="Copy link-color-dark-mode parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&link-color-dark-mode=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
