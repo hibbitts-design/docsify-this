@@ -128,10 +128,14 @@
       }
     });
 
-    // below a guide's cover (guide-cover), otherwise below the page's heading, unless that heading is inside
-    // a box (such as a course's This Week announcement), then at the top of the page
+    // right above a guide's section cards (card-list-sections), as in Grav Open Publishing Space; otherwise below
+    // its cover (guide-cover) or the page's heading, unless that heading is inside a box (such as a course's
+    // This Week announcement), then at the top of the page
+    var sectionCards = content.querySelector('.card-list-sections');
     var cover = content.querySelector('.guide-cover');
-    if (cover) {
+    if (sectionCards) {
+      sectionCards.before(bar);
+    } else if (cover) {
       cover.after(bar);
     } else if (heading && heading.parentElement === content) {
       heading.after(bar);
