@@ -4,13 +4,13 @@
 (function () {
   var homePages = ['', 'home', 'README'];
 
-  // Docsify-This sites all share one address, so the site's basePath is part of the name too
-  function getStorageKey(folder) {
+  // sites can share one address (all Docsify-This sites, or local previews), so the site's basePath and name are part of it too
+  function getStorageKey(siteName, folder) {
     var basePath = new URLSearchParams(window.location.search).get('basePath');
     if (!basePath) {
       basePath = '';
     }
-    return 'docsify-keep-my-place|' + window.location.pathname + '|' + basePath + '|' + folder;
+    return 'docsify-keep-my-place|' + window.location.pathname + '|' + basePath + '|' + siteName + '|' + folder;
   }
 
   // "/cpt363-basic/module-01" has the folder "cpt363-basic" and the page "module-01"
@@ -128,13 +128,15 @@
       }
     });
 
-    // right above a guide's section cards (card-list-sections), as in Grav Open Publishing Space; otherwise below
-    // its cover (guide-cover) or the page's heading, unless that heading is inside a box (such as a course's
-    // This Week announcement), then at the top of the page
+    // right above a guide's section cards (card-list-sections), as in Grav Open Publishing Space, or a course's
+    // This Week box (announcement); otherwise below the guide's cover (guide-cover) or the page's heading, or at the top
     var sectionCards = content.querySelector('.card-list-sections');
+    var thisWeek = content.querySelector('.announcement');
     var cover = content.querySelector('.guide-cover');
     if (sectionCards) {
       sectionCards.before(bar);
+    } else if (thisWeek && thisWeek.parentElement === content) {
+      thisWeek.before(bar);
     } else if (cover) {
       cover.after(bar);
     } else if (heading && heading.parentElement === content) {
@@ -154,7 +156,9 @@
       var path = vm.route.path;
       var page = getPage(path);
       var placeFolder = getPlaceFolder(path);
-      var key = getStorageKey(placeFolder);
+      // a name can have a line break in it (such as 'Docsify\nOpen Publishing Starter Kit'), read as a space here
+      var siteName = (vm.config.name || '').replace(/\s+/g, ' ').trim();
+      var key = getStorageKey(siteName, placeFolder);
 
       if (isHomePage(path, placeFolder)) {
         var savedPlace = loadPlace(key);
