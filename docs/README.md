@@ -421,7 +421,9 @@ Page layout:
 
 </div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-top: calc(0.5rem + 2px);"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable Previous/Next page buttons (follows the page order in Sidebar)</label></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-top: calc(0.5rem + 2px);"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="keepmyplace"/><label for="keepmyplace">Show a Continue reading link on the home page, to the Sidebar page last read</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable Previous/Next page buttons and the ← → keys (follows the page order in Sidebar)</label></div>
 
 </section>
 
@@ -900,6 +902,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [image-captions-font-style](/?id=image-captions-font-styleconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [image-captions-image-align](/?id=image-captions-image-alignconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [image-captions-text-align](/?id=image-captions-text-alignconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [keep-my-place](/?id=keep-my-placeconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [link-color-dark-mode](/?id=link-color-dark-modeconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [link-color-hover](/?id=link-color-hoverconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [link-color-hover-dark-mode](/?id=link-color-hover-dark-modeconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -985,6 +988,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Enable the lazy loading of images by Browsers with the optional **lazy-load-images** parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&lazy-load-images=true. Please note that enabling lazy loading of images may affect page scroll accuracy, for example by the Docsify Sidebar etc.
 
+##### keep-my-place<button type="button" class="copy-link" aria-label="Copy keep-my-place parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&keep-my-place=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Show a "Continue reading" link on the home page, to the Sidebar page last read, with the optional **keep-my-place** parameter (Docsify custom Sidebar required). On a site with a folder per course or guide, each one remembers its own place. The place is kept only in the reader's own browser. For example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&pagination=true&keep-my-place=true
+
 ##### link-color-dark-mode<button type="button" class="copy-link" aria-label="Copy link-color-dark-mode parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&link-color-dark-mode=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
@@ -1057,7 +1065,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### pagination<button type="button" class="copy-link" aria-label="Copy pagination parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&pagination=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
-Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
+Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter – the ← → keys also go to the previous and next page – for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&pagination=true
 
 ##### search.resultSource<button type="button" class="copy-link" aria-label="Copy search.resultSource parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&search.resultSource=page').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>

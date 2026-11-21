@@ -1225,3 +1225,47 @@ body:has(.markdown-section > style) .app-nav li:has(> a.site-title) {
     page-break-after: avoid;
   }
 }
+
+/* Keep My Place (keep-my-place=true): the "Continue reading" bar on a course or guide home page,
+   linking to the page the reader last opened there, with a button that forgets it */
+.markdown-section .keep-my-place {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+  padding: 0.6rem 0.6rem 0.6rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--color-mono-max) 15%, transparent);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--theme-color) 8%, transparent);
+}
+.markdown-section .keep-my-place a {
+  flex: 1;
+  text-decoration: none;
+}
+.markdown-section .keep-my-place-label {
+  color: var(--color-text);
+}
+.markdown-section .keep-my-place-title {
+  font-weight: 600;
+}
+.markdown-section .keep-my-place-close {
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--color-text);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.markdown-section .keep-my-place-close:hover {
+  background: color-mix(in srgb, var(--color-mono-max) 10%, transparent);
+}
+/* a clear outline in the theme colour when reached with the keyboard */
+.markdown-section .keep-my-place-close:focus-visible {
+  outline: 2px solid var(--theme-color);
+  outline-offset: 2px;
+}
