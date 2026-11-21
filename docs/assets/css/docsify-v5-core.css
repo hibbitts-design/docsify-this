@@ -1236,12 +1236,10 @@ body:has(.markdown-section > style) .app-nav li:has(> a.site-title) {
   padding: 0.45rem 0.5rem 0.45rem 0.9rem;
   border: 1px solid color-mix(in srgb, var(--color-mono-max) 15%, transparent);
   border-radius: 0.5rem;
-  background: color-mix(in srgb, var(--theme-color) 8%, transparent);
+  background: color-mix(in srgb, var(--theme-color) 5%, transparent);
 }
-/* a little smaller than the page text, as in Open Publishing Space, so the bar stays slim */
 .markdown-section .keep-my-place a {
   flex: 1;
-  font-size: 0.875em;
   line-height: 1.4;
   text-decoration: none;
 }
