@@ -990,9 +990,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### keep-my-place<button type="button" class="copy-link" aria-label="Copy keep-my-place parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&keep-my-place=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
-Show a "Continue reading" link on the home page, to the Sidebar page last read, with the optional **keep-my-place** parameter (Docsify custom Sidebar required). On a site with a folder per course or guide, each one remembers its own place. The place is kept only in the reader's own browser. Read a page or two, then go back to the home page to see it, for example with the:
+Show a "Continue reading" link on the home page, to the Sidebar page last read, with the optional **keep-my-place** parameter (Docsify custom Sidebar required). On a site with a folder per course or guide, each one remembers its own place. The place is kept only in the reader's own browser.
 
-**Guide Site Template** (a Continue reading link below the guide's cover)  
+The link goes right above a guide's section cards (`card-list-sections`) or a course's This Week box (`announcement`). Without either, it goes below the guide's cover (`guide-cover`), then below the page's heading, or else at the top of the page. Read a page or two, then go back to the home page to see it, for example with the:
+
+**Guide Site Template** (a Continue reading link above the guide's section cards)  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&keep-my-place=true
 
 **Multiple Guides Site Template** (one for each guide, on its home page)  
