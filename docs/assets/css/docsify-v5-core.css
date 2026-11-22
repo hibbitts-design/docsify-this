@@ -266,11 +266,12 @@
   text-decoration: none !important;
 }
 
+/* the default background is 75% of the text colour, so the badge's text has WCAG AA contrast in light and dark modes */
 .markdown-section .badge {
   color: var(--badge-text-color, var(--color-mono-min));
   background-color: var(
     --badge-bg-color,
-    color-mix(in srgb, var(--color-mono-max) 60%, transparent)
+    color-mix(in srgb, var(--color-mono-max) 75%, transparent)
   );
   display: inline-block;
   padding: 0.25em 0.4em 0.25em 0.4em;
@@ -1033,15 +1034,15 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
   margin: 0 0 0.4rem;
 }
 
-/* the subtitle, just below the title */
+/* the subtitle, just below the title (70% of the text colour, for WCAG AA contrast) */
 .markdown-section .guide-cover h1 + p {
   font-size: 1.2em;
-  color: color-mix(in srgb, var(--color-mono-max) 65%, transparent);
+  color: color-mix(in srgb, var(--color-mono-max) 70%, transparent);
 }
 
 .markdown-section .guide-cover small {
   font-size: 0.9em;
-  color: color-mix(in srgb, var(--color-mono-max) 65%, transparent);
+  color: color-mix(in srgb, var(--color-mono-max) 70%, transparent);
 }
 
 /* the Start Reading button, a little apart from the details */
