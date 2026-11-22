@@ -421,7 +421,13 @@ Page layout:
 
 </div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-top: calc(0.5rem + 2px);"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="keepmyplace"/><label for="keepmyplace">Show a Continue reading link on the home page, to the Sidebar page last read</label></div>
+</section>
+
+<section class="builder-section">
+
+### Docsify Custom Sidebar Reading Options
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="keepmyplace"/><label for="keepmyplace">Show a Continue reading link on the home page, to the Sidebar page last read</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable Previous/Next page buttons and the ← → keys (follows the page order in Sidebar)</label></div>
 
