@@ -21,6 +21,7 @@
 * A card whose title is a link can be clicked anywhere – on its image, title or text – yet is still one link for keyboard and screen reader users, so its image no longer needs to be a second link
 * With `pagination=true`, the ← → keys also go to the previous and next page (not while typing, or in a wide table or code block)
 * Previous/Next no longer briefly shows the new page partway down before it scrolls to the top
+* Web Page Builder: the Continue reading and Previous/Next options have their own section, Docsify Custom Sidebar Reading Options
 * Badges have WCAG AA contrast: the default background is a little darker
 
 ## [2.2.0] - 11/01/2026
