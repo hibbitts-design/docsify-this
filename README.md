@@ -702,7 +702,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### sticky-pagination
 
-Show the Pagination buttons in a bar fixed to the bottom of the screen on phones, as on guide pages in Grav Open Publishing Space, with the optional **sticky-pagination** parameter (**pagination** also required). Previous is on the left and Next on the right, with each page title on one line. The bar is not shown on a guide's home page (with section cards), on phones turned sideways, while the Sidebar is open, or when a page is embedded – for example:  
+Show the Pagination buttons in a bar fixed to the bottom of the screen on phones, as on guide pages in Grav Open Publishing Space, with the optional **sticky-pagination** parameter (**pagination** also required). The bar is not shown on a guide's home page (with section cards), on phones turned sideways, while the Sidebar is open, or when a page is embedded – for example (open it on a phone):  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&sticky-pagination=true
 
 ##### subMaxLevel
