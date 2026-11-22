@@ -2937,6 +2937,22 @@
       if (getURLParameterByName('sticky-pagination', null, null, window.location.href, true) === 'true' && !getURLParameterByName(['standalone', 'embedded'])) {
         document.documentElement.classList.add('sticky-pagination');
       }
+      // Hide the page while Previous/Next loads (no flash of the new page before it scrolls to the top)
+      window.$docsify.plugins = (window.$docsify.plugins || []).concat(function (hook) {
+        var showTimer;
+        function showPage() { var main = document.querySelector('.markdown-section'); if (main) main.style.visibility = ''; }
+        document.addEventListener('click', function (e) {
+          var link = e.target.closest && e.target.closest('.pagination-item a');
+          if (!link || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          var main = document.querySelector('.markdown-section');
+          if (!main) return;
+          main.style.visibility = 'hidden';
+          link.closest('.docsify-pagination-container').style.visibility = 'visible'; // the bar is inside the page; keep it showing
+          clearTimeout(showTimer);
+          showTimer = setTimeout(showPage, 3000); // safety net if loading fails
+        });
+        hook.doneEach(showPage); // Docsify has already scrolled to the top by now
+      });
       // document.write('<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>');
       document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-pagination.min.js"><\/script>');
       document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-arrow-keys.js"><\/script>');
