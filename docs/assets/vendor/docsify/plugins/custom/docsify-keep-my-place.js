@@ -131,9 +131,10 @@
       }
     });
 
-    // right above a guide's section cards (card-list-sections), as in Grav Open Publishing Space, or a course's
-    // This Week box (announcement); otherwise below the guide's cover (guide-cover) or the page's heading, or at the top
-    var sectionCards = content.querySelector('.card-list-sections');
+    // right above a guide's section cards (card-list-sections, or card-list-rows for cards one per row), as in Grav
+    // Open Publishing Space, or a course's This Week box (announcement); otherwise below the guide's cover
+    // (guide-cover) or the page's heading, or at the top
+    var sectionCards = content.querySelector('.card-list-sections, .card-list-rows');
     var thisWeek = content.querySelector('.announcement');
     var cover = content.querySelector('.guide-cover');
     if (sectionCards) {
