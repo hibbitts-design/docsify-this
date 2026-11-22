@@ -8,7 +8,7 @@
 * Course card list: `card-list-courses` for a Courses page, laid out like `card-list-guides` (three cards in a row), with its own name so courses and guides can be styled apart later
 * Portrait guide cover: `guide-cover-portrait`, added to `guide-cover`, shows a book cover whole at its own shape
 * Card list in rows: `card-list-rows` shows one card per row, for cards without images, such as a guide's sections
-* Keep My Place: `keep-my-place=true` shows a Continue reading link on the home page, to the Sidebar page last read (on a site of several courses or guides, one for each)
+* Keep My Place: `keep-my-place=true` shows a Continue reading link on the home page, to the Sidebar page last read (on a site of several courses or guides, one for each); its label can be changed with `keepMyPlace.label`, such as `Continue%20where%20you%20left%20off` for courses
 
 **Improved:**
 * A Topics letter bar (`[A](#a)|[B](#b)|…`) is styled wherever it is on the page, not only as the first paragraph
@@ -19,6 +19,7 @@
 * Each page of a site with a custom sidebar has its own Browser tab title, such as "Week 1 | CPT-363" – or "Module 2 | CPT363-1" on a site of several courses, using each course's navbar site title – easier to tell apart and better for screen readers; one-page sites keep their title as set
 * A card whose title is a link can be clicked anywhere – on its image, title or text – yet is still one link for keyboard and screen reader users, so its image no longer needs to be a second link
 * With `pagination=true`, the ← → keys also go to the previous and next page (not while typing, or in a wide table or code block)
+* Badges have WCAG AA contrast: the default background is a little darker
 
 ## [2.2.0] - 11/01/2026
 
