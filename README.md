@@ -524,6 +524,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [search.resultSource](#search.resultSource)
 - [spotlight-headings](#spotlight-headings)
 - [spotlight-toggle](#spotlight-toggle)
+- [sticky-pagination](#sticky-pagination)
 - [submaxLevel](#subMaxLevel)
 - [svg-icons](#svg-icons)
 - [theme-color](#theme-color)
@@ -698,6 +699,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Hide the Spotlight toggle button and keep Spotlight Mode always on with the optional **spotlight-toggle** parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&spotlight=true&spotlight-toggle=false. When set to `false` the toggle button is hidden and Spotlight Mode can only be disabled via URL parameter.
+
+##### sticky-pagination
+
+Show the Pagination buttons in a bar fixed to the bottom of the screen on phones, as on guide pages in Grav Open Publishing Space, with the optional **sticky-pagination** parameter (**pagination** also required). Previous is on the left and Next on the right, with each page title on one line. The bar is not shown on a guide's home page (with section cards), on phones turned sideways, while the Sidebar is open, or when a page is embedded – for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&sticky-pagination=true
 
 ##### subMaxLevel
 

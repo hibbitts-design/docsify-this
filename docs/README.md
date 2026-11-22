@@ -425,6 +425,8 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pagination"/><label for="pagination">Enable Previous/Next page buttons and the ← → keys (follows the page order in Sidebar)</label></div>
 
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="stickypagination"/><label for="stickypagination">On phones, keep the Previous/Next page buttons in a bar at the bottom of the screen</label></div>
+
 </section>
 
 <section class="builder-section">
@@ -921,6 +923,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [search.resultSource](/?id=searchresultsourceconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [spotlight-headings](/?id=spotlight-headingsconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [spotlight-toggle](/?id=spotlight-toggleconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [sticky-pagination](/?id=sticky-paginationconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [subMaxLevel](/?id=subMaxLevelconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [svg-icons](/?id=svg-iconsconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [theme-color](/?id=theme-colorconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -1092,6 +1095,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Hide the Spotlight toggle button and keep Spotlight Mode always on with the optional **spotlight-toggle** parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&spotlight=true&spotlight-toggle=false. When set to `false` the toggle button is hidden and Spotlight Mode can only be disabled via URL parameter.
+
+##### sticky-pagination<button type="button" class="copy-link" aria-label="Copy sticky-pagination parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sticky-pagination=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Show the Pagination buttons in a bar fixed to the bottom of the screen on phones, as on guide pages in Grav Open Publishing Space, with the optional **sticky-pagination** parameter (**pagination** also required). Previous is on the left and Next on the right, with each page title on one line. The bar is not shown on a guide's home page (with section cards), on phones turned sideways, while the Sidebar is open, or when a page is embedded – for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&sticky-pagination=true
 
 ##### subMaxLevel<button type="button" class="copy-link" aria-label="Copy subMaxLevel parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&subMaxLevel=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 

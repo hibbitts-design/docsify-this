@@ -463,3 +463,74 @@ body .docsify-pagination-container {
   }
 }
 */
+
+/* CSS generated/assisted by Anthropic Claude AI */
+/* Sticky Previous/Next bar (sticky-pagination=true): fixed to the bottom on phones, as in Grav guides.
+   Not on guide home pages (section cards), phones turned sideways, or while the sidebar is open or typing */
+@media screen and (max-width: 768px) and (min-height: 500px) {
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) .docsify-pagination-container:has(.pagination-item) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 !important;
+    background: var(--color-bg, #fff);
+    border-top: 1px solid color-mix(in srgb, var(--color-mono-max) 15%, transparent) !important;
+    padding-bottom: env(safe-area-inset-bottom); /* iPhone home bar */
+  }
+
+  /* Previous always left, Next always right */
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) .docsify-pagination-container:has(.pagination-item) .pagination-item {
+    float: none !important;
+    width: auto !important;
+    min-width: 0;
+    margin: 0 !important;
+  }
+
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) .docsify-pagination-container:has(.pagination-item) .pagination-item--previous {
+    grid-column: 1;
+    border-right: 1px solid color-mix(in srgb, var(--color-mono-max) 15%, transparent);
+    text-align: left;
+  }
+
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) .docsify-pagination-container:has(.pagination-item) .pagination-item--next {
+    grid-column: 2;
+    text-align: right;
+  }
+
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) .docsify-pagination-container:has(.pagination-item) .pagination-item a {
+    display: block;
+    box-sizing: border-box;
+    min-height: 3.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) .docsify-pagination-container:has(.pagination-item) .pagination-item-label {
+    font-size: 0.75rem;
+  }
+
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) .docsify-pagination-container:has(.pagination-item) .pagination-item-title {
+    font-size: 1rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* room for the bar below the page (body padding doesn't reach the page area) */
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) .markdown-section:has(.pagination-item) {
+    padding-bottom: calc(2.25rem + 4.25rem + env(safe-area-inset-bottom));
+  }
+
+  /* keep focused links and jump targets above the bar */
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)):has(.pagination-item) {
+    scroll-padding-bottom: calc(4.25rem + env(safe-area-inset-bottom));
+  }
+
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) body:has(aside.sidebar.show) .docsify-pagination-container,
+  html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) body:has(input:not([type="checkbox"], [type="radio"], [type="button"], [type="submit"], [type="reset"]):focus, textarea:focus) .docsify-pagination-container {
+    display: none !important;
+  }
+}
