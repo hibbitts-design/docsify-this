@@ -20,6 +20,7 @@
 * Each page of a site with a custom sidebar has its own Browser tab title, such as "Week 1 | CPT-363" – or "Module 2 | CPT363-1" on a site of several courses, using each course's navbar site title – easier to tell apart and better for screen readers; one-page sites keep their title as set
 * A card whose title is a link can be clicked anywhere – on its image, title or text – yet is still one link for keyboard and screen reader users, so its image no longer needs to be a second link
 * With `pagination=true`, the ← → keys also go to the previous and next page (not while typing, or in a wide table or code block)
+* Previous/Next no longer briefly shows the new page partway down before it scrolls to the top
 * Badges have WCAG AA contrast: the default background is a little darker
 
 ## [2.2.0] - 11/01/2026
