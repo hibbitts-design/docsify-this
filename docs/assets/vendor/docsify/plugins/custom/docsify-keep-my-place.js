@@ -1,4 +1,5 @@
 // Keep My Place: a "Continue reading" bar on each course's or guide's home page, as in Grav Open Course Space – hibbittsdesign.org
+// Its label can be changed with keepMyPlace: { label: '...' } in window.$docsify (courses use "Continue where you left off").
 // Only sidebar pages are remembered (not navbar pages such as Schedule), in the reader's own browser.
 // Code generated/assisted by Anthropic Claude AI
 (function () {
@@ -103,7 +104,7 @@
     }
   }
 
-  function showContinueBar(key, place) {
+  function showContinueBar(key, place, label) {
     var content = document.querySelector('.markdown-section');
     if (!content) {
       return;
@@ -111,8 +112,10 @@
 
     var bar = document.createElement('div');
     bar.className = 'keep-my-place';
-    bar.innerHTML = '<a><span class="keep-my-place-label">Continue reading:</span> <span class="keep-my-place-title"></span></a>'
-      + '<button type="button" class="keep-my-place-close" aria-label="Dismiss Continue reading"><span aria-hidden="true">&times;</span></button>';
+    bar.innerHTML = '<a><span class="keep-my-place-label"></span> <span class="keep-my-place-title"></span></a>'
+      + '<button type="button" class="keep-my-place-close"><span aria-hidden="true">&times;</span></button>';
+    bar.querySelector('.keep-my-place-label').textContent = label + ':';
+    bar.querySelector('button').setAttribute('aria-label', 'Dismiss ' + label);
     bar.querySelector('a').href = '#' + place.path;
     bar.querySelector('.keep-my-place-title').textContent = place.title;
 
@@ -163,7 +166,11 @@
       if (isHomePage(path, placeFolder)) {
         var savedPlace = loadPlace(key);
         if (savedPlace) {
-          showContinueBar(key, savedPlace);
+          var label = 'Continue reading';
+          if (vm.config.keepMyPlace && vm.config.keepMyPlace.label) {
+            label = vm.config.keepMyPlace.label;
+          }
+          showContinueBar(key, savedPlace, label);
         }
         return;
       }
