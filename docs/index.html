@@ -1098,7 +1098,7 @@
 
     // Code generated/assisted by Anthropic Claude AI
     function getPageEditLink(editLink, basePath, pageFile) {
-      // Points an edit-link to a .md file at the page being shown, for a site on GitHub
+      // Points an edit-link to a .md file at the page being shown, for a site on GitHub or Codeberg
       // Returns '' when that isn't possible, so the edit-link is used as given (e.g. a link to a repository)
       if (!editLink || !basePath || !pageFile) {
         return '';
@@ -1111,22 +1111,8 @@
         return '';
       }
 
-      // The site's GitHub details, from a basePath like https://raw.githubusercontent.com/owner/repo/main/folder
       basePath = decodeURIComponent(basePath);
-      const parts = basePath.match(/^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/(?:refs\/heads\/)?([^/]+)\/?(.*?)\/?$/);
-      if (!parts) {
-        return '';
-      }
-      const owner = parts[1];
-      const repo = parts[2];
-      const branch = parts[3];
-      const folder = parts[4]; // empty when the site is at the top of the repository
-
-      // Only when the edit-link is for the same repository as the site
-      const editLinkLower = decodeURIComponent(editLink).toLowerCase();
-      if (!editLinkLower.includes('/' + owner.toLowerCase() + '/' + repo.toLowerCase() + '/')) {
-        return '';
-      }
+      editLink = decodeURIComponent(editLink);
 
       // The page's file inside the site, such as guide/intro.md
       let file = pageFile.split('?')[0].split('#')[0];
@@ -1135,14 +1121,55 @@
       }
       file = file.replace(/^\/+/, ''); // no leading /
 
-      const path = [branch, folder, file].filter(Boolean).join('/');
+      // GitHub: a basePath like https://raw.githubusercontent.com/owner/repo/main/folder
+      // Captures the owner, repo, branch and folder (an optional refs/heads/ before the branch is skipped)
+      const github = basePath.match(/^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/(?:refs\/heads\/)?([^/]+)\/?(.*?)\/?$/);
+      if (github) {
+        const owner = github[1];
+        const repo = github[2];
+        const branch = github[3];
+        const folder = github[4]; // empty when the site is at the top of the repository
+        if (!isSameRepo(editLink, owner, repo)) {
+          return '';
+        }
+        const path = [branch, folder, file].filter(Boolean).join('/'); // filter(Boolean) skips empty parts, e.g. no folder
 
-      // The same kind of link as the edit-link: the raw file, github.dev, or a GitHub page
-      if (editLink.includes('raw.githubusercontent.com')) {
-        return 'https://raw.githubusercontent.com/' + owner + '/' + repo + '/' + path;
+        // The same kind of link as the edit-link: the raw file, github.dev, or a GitHub page
+        if (editLink.includes('raw.githubusercontent.com')) {
+          return 'https://raw.githubusercontent.com/' + owner + '/' + repo + '/' + path;
+        }
+        const host = editLink.includes('github.dev') ? 'github.dev' : 'github.com';
+        return 'https://' + host + '/' + owner + '/' + repo + '/blob/' + path;
       }
-      const host = editLink.includes('github.dev') ? 'github.dev' : 'github.com';
-      return 'https://' + host + '/' + owner + '/' + repo + '/blob/' + path;
+
+      // Codeberg: a basePath like https://raw.codeberg.page/owner/repo/folder (or .../owner/repo/@main/folder)
+      // Captures the owner, repo and folder (an optional @branch after the repo is skipped)
+      const codeberg = basePath.match(/^https:\/\/raw\.codeberg\.page\/([^/]+)\/([^/]+)\/?(?:@[^/]+\/?)?(.*?)\/?$/);
+      if (codeberg) {
+        const owner = codeberg[1];
+        const repo = codeberg[2];
+        const folder = codeberg[3];
+        if (!isSameRepo(editLink, owner, repo)) {
+          return '';
+        }
+        // The branch and kind of link, from an edit-link like https://codeberg.org/owner/repo/src/branch/main/home.md
+        const linkParts = editLink.match(/\/(src|raw)\/branch\/([^/]+)\//);
+        if (!linkParts) {
+          return '';
+        }
+        const kind = linkParts[1]; // src (a Codeberg page) or raw (the raw file)
+        const branch = linkParts[2];
+        const path = [folder, file].filter(Boolean).join('/'); // filter(Boolean) skips empty parts, e.g. no folder
+        return 'https://codeberg.org/' + owner + '/' + repo + '/' + kind + '/branch/' + branch + '/' + path;
+      }
+
+      return '';
+    }
+
+    // Code generated/assisted by Anthropic Claude AI
+    function isSameRepo(editLink, owner, repo) {
+      // True when the edit-link is for this owner's repository, e.g. https://github.com/owner/repo/...
+      return editLink.toLowerCase().includes('/' + owner.toLowerCase() + '/' + repo.toLowerCase() + '/');
     }
 
     function getAllowedFileExtensions() {
