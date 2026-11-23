@@ -1664,7 +1664,9 @@
                     let newURL = '';
 
                     // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link Markdown pages)
-                    var isDynamicLink = (isExtensionAllowed(editThisPageLinkURLparm) && !(editThisPageLinkURLparm === "")) || getURLParameterByName('hypothesis');
+                    // A normal link when the edit link is already set for each page (see getPageEditLink), so relative images still work
+                    var editLinkSetPerPage = getPageEditLink(existingEditThisPageLink, currentBasePath, lastSegment + fileExt) !== '';
+                    var isDynamicLink = (!editLinkSetPerPage && isExtensionAllowed(editThisPageLinkURLparm) && !(editThisPageLinkURLparm === "")) || getURLParameterByName('hypothesis');
                     if (!isDynamicLink) {
                       newURL = `#/${lastSegment}`;
                     } else {
