@@ -1096,6 +1096,55 @@
       return `https://github.com/${repo[1]}/${repo[2]}/${isFolder ? 'tree' : 'blob'}/${[repo[3], repo[4], filePath].filter(Boolean).join('/')}`;
     }
 
+    // Code generated/assisted by Anthropic Claude AI
+    function getPageEditLink(editLink, basePath, pageFile) {
+      // Points an edit-link to a .md file at the page being shown, for a site on GitHub
+      // Returns '' when that isn't possible, so the edit-link is used as given (e.g. a link to a repository)
+      if (!editLink || !basePath || !pageFile) {
+        return '';
+      }
+
+      // Only an edit-link to a page file, such as .../blob/main/home.md
+      const editLinkFile = editLink.split('?')[0].split('#')[0];
+      const allowedExtensions = getAllowedFileExtensions().split(',');
+      if (!allowedExtensions.includes(getFileExtension(editLinkFile).toLowerCase())) {
+        return '';
+      }
+
+      // The site's GitHub details, from a basePath like https://raw.githubusercontent.com/owner/repo/main/folder
+      basePath = decodeURIComponent(basePath);
+      const parts = basePath.match(/^https:\/\/raw\.githubusercontent\.com\/([^/]+)\/([^/]+)\/(?:refs\/heads\/)?([^/]+)\/?(.*?)\/?$/);
+      if (!parts) {
+        return '';
+      }
+      const owner = parts[1];
+      const repo = parts[2];
+      const branch = parts[3];
+      const folder = parts[4]; // empty when the site is at the top of the repository
+
+      // Only when the edit-link is for the same repository as the site
+      const editLinkLower = decodeURIComponent(editLink).toLowerCase();
+      if (!editLinkLower.includes('/' + owner.toLowerCase() + '/' + repo.toLowerCase() + '/')) {
+        return '';
+      }
+
+      // The page's file inside the site, such as guide/intro.md
+      let file = pageFile.split('?')[0].split('#')[0];
+      if (file.startsWith(basePath)) {
+        file = file.slice(basePath.length);
+      }
+      file = file.replace(/^\/+/, ''); // no leading /
+
+      const path = [branch, folder, file].filter(Boolean).join('/');
+
+      // The same kind of link as the edit-link: the raw file, github.dev, or a GitHub page
+      if (editLink.includes('raw.githubusercontent.com')) {
+        return 'https://raw.githubusercontent.com/' + owner + '/' + repo + '/' + path;
+      }
+      const host = editLink.includes('github.dev') ? 'github.dev' : 'github.com';
+      return 'https://' + host + '/' + owner + '/' + repo + '/blob/' + path;
+    }
+
     function getAllowedFileExtensions() {
       // Return list of supported file extensions
       return ".md,.markdown,.adoc";
@@ -1757,7 +1806,13 @@
                 ].filter(Boolean).join('\n\n');
               }
 
-              if (/githubusercontent\.com/.test(vm.route.file)) {
+              // Edit link for the page being shown
+              var editLinkParam = getURLParameterByName(['edit-link', 'editLink'], null, null, window.location.href, true);
+              var pageEditLink = getPageEditLink(editLinkParam, window.$docsify['basePath'], vm.route.file);
+              if (pageEditLink) {
+                url = pageEditLink;
+                gitLinkRepoURL = url;
+              } else if (/githubusercontent\.com/.test(vm.route.file)) {
                 url = vm.route.file
                   .replace('raw.githubusercontent.com', 'github.com')
                   .replace(/\/master/, '/blob/master')
