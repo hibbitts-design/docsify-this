@@ -23,7 +23,7 @@
 * Previous/Next no longer briefly shows the new page partway down before it scrolls to the top
 * Web Page Builder: the Continue reading and Previous/Next options have their own section, Docsify Custom Sidebar Reading Options
 * Badges have WCAG AA contrast: the default background is a little darker
-* On a site of several pages from GitHub, an `edit-link` to a page file now links to the page being shown, however readers get there (sidebar, navbar or Previous/Next), and links between its pages stay normal links, so images in a subfolder page show
+* On a site of several pages from GitHub or Codeberg, an `edit-link` to a page file now links to the page being shown, however readers get there (sidebar, navbar or Previous/Next), and links between its pages stay normal links, so images in a subfolder page show
 
 ## [2.2.0] - 11/01/2026
 
