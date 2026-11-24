@@ -1334,6 +1334,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 - [One Page Article Template](#docsify-this-one-page-article-template)
 - [One Page Course Template](#docsify-this-one-page-course-template)
 - [Guide Site Template](#docsify-this-guide-site-template) <span class="badge" style="--badge-bg-color: #15803d;">NEW</span>
+- [Guide Site with Image Cards Template](#docsify-this-guide-site-image-cards-template) <span class="badge" style="--badge-bg-color: #15803d;">NEW</span>
 - [Multiple Page Basic Site Template](#docsify-this-multiple-page-basic-site-template)
 - [Multiple Page Blog Style Site Template](#docsify-this-multiple-page-blog-style-site-template)
 - [Multiple Page Open Publishing Site Template](#docsify-this-multiple-page-open-publishing-site-template)
@@ -1399,7 +1400,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 <h4><a href="https://github.com/hibbitts-design/docsify-this-guide-site">Guide Site Template</a></h4>
 
-Guide Site [home.md](https://github.com/hibbitts-design/docsify-this-guide-site/blob/main/home.md) file, including the use of the `card-list-sections` card list, and a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-guide-site/blob/main/_sidebar.md) with collapsible sidebar groups, displayed by Docsify-This as:
+Guide Site [home.md](https://github.com/hibbitts-design/docsify-this-guide-site/blob/main/home.md) file, including the use of the `card-list-rows` card list (text-only section cards), and a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-guide-site/blob/main/_sidebar.md) with collapsible sidebar groups, displayed by Docsify-This as:
 
 - [Website with a Docsify Sidebar, Search and website name](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&searchbox=true "Docsify-This Guide Site - Website with a Docsify Sidebar, Search and website name")
 - [Website with a Docsify Sidebar, Pagination buttons, Search and website name](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true "Docsify-This Guide Site - Website with Pagination buttons, Search and website name")
@@ -1407,6 +1408,31 @@ Guide Site [home.md](https://github.com/hibbitts-design/docsify-this-guide-site/
 - [Website with a Docsify Sidebar, Pagination buttons, Search, website name and initially collapsed Sidebar groups](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&collapseSidebarGroups=true "Docsify-This Guide Site - Website with a Docsify Sidebar, Pagination buttons, Search, website name and initially collapsed Sidebar groups")
 - [Website with a Docsify Sidebar, Pagination buttons, Search, website name and a 'Source Markdown Files' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&edit-link=https://github.com/hibbitts-design/docsify-this-guide-site&edit-link-text=Source%20Markdown%20Files&edit-link-emoji=:file_folder: "Docsify-This Guide Site - Website with Pagination buttons, Search, website name and 'Source Markdown Files' link")
 - [Website with a Docsify Sidebar, Pagination buttons, Search, website name and a 'View on GitHub' link for each page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&edit-link=https://github.com/hibbitts-design/docsify-this-guide-site/blob/main/home.md&edit-link-text=View%20on%20GitHub&edit-link-emoji=:page_facing_up: "Docsify-This Guide Site - Website with Pagination buttons, Search, website name and a 'View on GitHub' link for each page")
+
+</div>
+
+</div>
+
+<div class="row" id="docsify-this-guide-site-image-cards-template">
+
+<div class="docsifythiscolumn35" >
+
+[![Guide Site with Image Cards](images/docsify-this-guide-site-image-cards.jpg ":class=docsify-this-screenshot")](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site-image-cards/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true)
+
+</div>
+
+<div class="docsifythiscolumn65" >
+
+<h4><a href="https://github.com/hibbitts-design/docsify-this-guide-site-image-cards">Guide Site with Image Cards Template</a></h4>
+
+Guide Site with Image Cards [home.md](https://github.com/hibbitts-design/docsify-this-guide-site-image-cards/blob/main/home.md) file, including the use of the `card-list-sections` card list (a picture on each section card), and a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-guide-site-image-cards/blob/main/_sidebar.md) with collapsible sidebar groups, displayed by Docsify-This as:
+
+- [Website with a Docsify Sidebar, Search and website name](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site-image-cards/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&searchbox=true "Docsify-This Guide Site with Image Cards - Website with a Docsify Sidebar, Search and website name")
+- [Website with a Docsify Sidebar, Pagination buttons, Search and website name](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site-image-cards/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true "Docsify-This Guide Site with Image Cards - Website with Pagination buttons, Search and website name")
+- [Website with a Docsify Sidebar, Pagination buttons, Search, website name and a Continue reading link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site-image-cards/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&keep-my-place=true "Docsify-This Guide Site with Image Cards - Website with Pagination buttons, Search, website name and a Continue reading link")
+- [Website with a Docsify Sidebar, Pagination buttons, Search, website name and initially collapsed Sidebar groups](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site-image-cards/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&collapseSidebarGroups=true "Docsify-This Guide Site with Image Cards - Website with a Docsify Sidebar, Pagination buttons, Search, website name and initially collapsed Sidebar groups")
+- [Website with a Docsify Sidebar, Pagination buttons, Search, website name and a 'Source Markdown Files' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site-image-cards/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&edit-link=https://github.com/hibbitts-design/docsify-this-guide-site-image-cards&edit-link-text=Source%20Markdown%20Files&edit-link-emoji=:file_folder: "Docsify-This Guide Site with Image Cards - Website with Pagination buttons, Search, website name and 'Source Markdown Files' link")
+- [Website with a Docsify Sidebar, Pagination buttons, Search, website name and a 'View on GitHub' link for each page](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site-image-cards/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&edit-link=https://github.com/hibbitts-design/docsify-this-guide-site-image-cards/blob/main/home.md&edit-link-text=View%20on%20GitHub&edit-link-emoji=:page_facing_up: "Docsify-This Guide Site with Image Cards - Website with Pagination buttons, Search, website name and a 'View on GitHub' link for each page")
 
 </div>
 
