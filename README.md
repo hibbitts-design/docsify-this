@@ -678,6 +678,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Display the name for the website in a Docsify custom Sidebar (i.e. file '\_sidebar.md) with the optional **name** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&name=CPT-363. When this parameter is provided it will be automatically used as the Browser tab title as well. Please note to use names with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Site" would be "My%20Site". Underscores may also be used to represent spaces.
 
+##### name-link
+
+Link the website name to one page, such as one guide's home page on a site with several guides, with the optional **name-link** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-share-move-reuse-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=Share%2C%20Move%2C%20Reuse&name-link=open-publishing-space/README#/open-publishing-space/README. The name in the Sidebar and a Navbar site title (`:class=site-title`) then go to that page, and a page's first-line back link to it (such as "← Guide") isn't shown – with no All Guides link in that guide's Navbar, the guide can be shared on its own. Give a page, such as `open-publishing-space/README`, not just a folder name.
+
 ##### page-title
 
 Add a custom page title at the top of your web pages with the optional **page-title** parameter, for example:  

@@ -1235,10 +1235,48 @@
     // Function to check and set the href attribute
     function checkAndSetDisplayedSiteName() {
       const appNameLink = document.querySelector('a.app-name-link');
-      if (appNameLink && appNameLink.getAttribute('href') !== '#/') {
-        appNameLink.setAttribute('href', '#/');
+      if (appNameLink && appNameLink.getAttribute('href') !== siteNameLink()) {
+        appNameLink.setAttribute('href', siteNameLink());
+      }
+      // with name-link, the navbar's site title (":class=site-title") goes to the same page
+      const navbarTitle = document.querySelector('.app-nav a.site-title');
+      if (hasNameLink() && navbarTitle && navbarTitle.getAttribute('href') !== siteNameLink()) {
+        navbarTitle.setAttribute('href', siteNameLink());
       }
     }
+
+    // name-link: the page the displayed site name links to, such as name-link=open-publishing-space/README for
+    // one guide's home. Returns it without a leading #/ or / and without .md (empty when not set)
+    function nameLinkValue() {
+      const nameLink = getURLParameterByName(['name-link', 'nameLink'], null, null, window.location.href, true) || '';
+      return nameLink.replace(/^#?\/?/, '').replace(/\.md$/, '');
+    }
+
+    function hasNameLink() {
+      return nameLinkValue() !== '';
+    }
+
+    // Where the displayed site name links to: the home page, or the page set by name-link
+    function siteNameLink() {
+      return '#/' + nameLinkValue();
+    }
+
+    // With name-link, a page's first line is hidden when it's only a link to that same page (a guide's
+    // "← Guide" back link), as the site name goes there. A CSS rule, so it's hidden before the page is shown.
+    // The ways of writing the same address all match: #/guide, #/guide/ and #/guide/README
+    function hideBackLinkToNameLink() {
+      const path = nameLinkValue().replace(/\/?README$/i, '').replace(/\/$/, ''); // e.g. open-publishing-space
+      if (path === '' || !/^[A-Za-z0-9_\-\/.]+$/.test(path)) {
+        return; // nothing to match, or characters that can't go in the rule
+      }
+      const addresses = ['#/' + path, '#/' + path + '/', '#/' + path + '/README'];
+      const selectors = addresses.map(address => '.markdown-section > p:first-child:has(> a:only-child[href="' + address + '"])');
+      const style = document.createElement('style');
+      style.textContent = selectors.join(',\n') + ' { display: none; }';
+      document.head.appendChild(style);
+    }
+    hideBackLinkToNameLink();
+
     // Set up a MutationObserver to monitor the entire body for added nodes or attribute changes
     // This assumes that the 'a.app-name-link' might be added dynamically or its attributes changed
     const observer = new MutationObserver((mutationsList, observer) => {
@@ -2068,7 +2106,7 @@
               if (appName) {
                 const appNameLink = document.querySelector('a.app-name-link');
                 if (appNameLink) {
-                  appNameLink.setAttribute('href', '#/');
+                  appNameLink.setAttribute('href', siteNameLink());
                   if (!docBody.querySelector('style.sidebar-app-name')) {
                     let editCSS = document.createElement('style')
                     editCSS.innerHTML = ".sidebar .app-name {display: block;}";
