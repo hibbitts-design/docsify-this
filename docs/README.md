@@ -1004,7 +1004,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Show a "Continue reading" link on the home page, to the Sidebar page last read, with the optional **keep-my-place** parameter (Docsify custom Sidebar required). On a site with a folder per course or guide, each one remembers its own place. The place is kept only in the reader's own browser.
 
-The link goes right above a guide's section cards (`card-list-sections`) or a course's This Week box (`announcement`). Without either, it goes below the guide's cover (`guide-cover`), then below the page's heading, or else at the top of the page. Change its label with the **keepMyPlace.label** parameter, such as `keepMyPlace.label=Continue%20where%20you%20left%20off` for courses. Read a page or two, then go back to the home page to see it, for example with the:
+The link goes right above a guide's section cards (`card-list-sections` or `card-list-rows`) or a course's This Week box (`announcement`). Without either, it goes below the guide's cover (`guide-cover`), then below the page's heading, or else at the top of the page. Change its label with the **keepMyPlace.label** parameter, such as `keepMyPlace.label=Continue%20where%20you%20left%20off` for courses. Read a page or two, then go back to the home page to see it, for example with the:
 
 **Guide Site Template** (a Continue reading link above the guide's section cards)  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true&keep-my-place=true
