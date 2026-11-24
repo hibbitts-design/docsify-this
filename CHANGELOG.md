@@ -10,6 +10,7 @@
 * Card list in rows: `card-list-rows` shows one card per row, for cards without images, such as a guide's sections
 * Keep My Place: `keep-my-place=true` shows a Continue reading link on the home page, to the Sidebar page last read (on a site of several courses or guides, one for each); its label can be changed with `keepMyPlace.label`, such as `Continue%20where%20you%20left%20off` for courses
 * Sticky Previous/Next: `sticky-pagination=true` (with `pagination=true`) keeps Previous/Next in a bar at the bottom of the screen on phones, as on Open Publishing Space guide pages (also an Advanced Web Page Builder option)
+* Name link: `name-link=` links the website name to one page, such as one guide's home – with no All Guides link in that guide's navbar, the guide can be shared on its own
 
 **Improved:**
 * A Topics letter bar (`[A](#a)|[B](#b)|…`) is styled wherever it is on the page, not only as the first paragraph
