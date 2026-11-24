@@ -1272,3 +1272,23 @@ body:has(.markdown-section > style) .app-nav li:has(> a.site-title) {
   outline: 2px solid var(--theme-color);
   outline-offset: 2px;
 }
+
+/* Glossary terms, as in Grav: a link to a Glossary page with the definition as its title. Text colour, dotted
+   underline (solid on hover) */
+.markdown-section a[title][href$="/glossary"] {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  cursor: help;
+}
+
+.markdown-section a[title][href$="/glossary"]:hover {
+  text-decoration-style: solid;
+}
+
+@media print {
+  .markdown-section a[title][href$="/glossary"] {
+    text-decoration: none;
+  }
+}
