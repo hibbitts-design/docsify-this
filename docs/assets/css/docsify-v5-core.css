@@ -1303,9 +1303,9 @@ body:has(.markdown-section > style) .app-nav li:has(> a.site-title) {
   outline-offset: 2px;
 }
 
-/* Glossary terms, as in Grav: a link to a Glossary page (or to an entry on it, ?id=) with the definition as its
-   title. Text colour, dotted underline (solid on hover) */
-.markdown-section a[title]:is([href$="/glossary"], [href*="/glossary?id="]) {
+/* Glossary terms, as in Grav: a link to a Glossary page, or to a glossary entry (?id=glossary-…) on any page, such as a
+   book's Glossary section, with the definition as its title. Text colour, dotted underline (solid on hover) */
+.markdown-section a[title]:is([href$="/glossary"], [href*="/glossary?id="], [href*="?id=glossary-"]) {
   color: inherit;
   text-decoration: underline dotted;
   text-decoration-thickness: 1px;
@@ -1313,12 +1313,12 @@ body:has(.markdown-section > style) .app-nav li:has(> a.site-title) {
   cursor: help;
 }
 
-.markdown-section a[title]:is([href$="/glossary"], [href*="/glossary?id="]):hover {
+.markdown-section a[title]:is([href$="/glossary"], [href*="/glossary?id="], [href*="?id=glossary-"]):hover {
   text-decoration-style: solid;
 }
 
 @media print {
-  .markdown-section a[title]:is([href$="/glossary"], [href*="/glossary?id="]) {
+  .markdown-section a[title]:is([href$="/glossary"], [href*="/glossary?id="], [href*="?id=glossary-"]) {
     text-decoration: none;
   }
 }
