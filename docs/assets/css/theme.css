@@ -459,7 +459,7 @@ body .docsify-pagination-container {
 */
 
 /* CSS generated/assisted by Anthropic Claude AI */
-/* Sticky Previous/Next bar (sticky-pagination=true): fixed to the bottom on phones, as in Grav guides.
+/* Sticky Previous/Next bar (on unless sticky-pagination=false): fixed to the bottom on phones, as in Grav guides.
    Not on guide home pages (section cards), phones turned sideways, or while the sidebar is open or typing */
 @media screen and (max-width: 768px) and (min-height: 500px) {
   html.sticky-pagination:not(:has(.card-list-sections, .card-list-rows)) .docsify-pagination-container:has(.pagination-item) {
