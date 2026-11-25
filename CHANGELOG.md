@@ -6,6 +6,7 @@
 * Guide cover (`guide-cover`) with Start Reading beside it, plus `guide-cover-portrait` for book covers
 * Site title (`:class=site-title` navbar link) on pages without the sidebar, and on phones
 * Card lists for courses (`card-list-courses`) and in rows (`card-list-rows`)
+* Card images shown whole, such as book covers (`card-images-portrait`)
 * Keep My Place (`keep-my-place=true`): a Continue reading link on the home page, with an optional `keepMyPlace.label`
 * Sticky Previous/Next on phones (`sticky-pagination=true`), also in the Web Page Builder
 * Name link (`name-link=`) to share one guide of several on its own
@@ -24,6 +25,9 @@
 * Badges have WCAG AA contrast
 * `edit-link` follows the page being shown on GitHub and Codeberg sites
 * Updated ReadMe
+
+**Bugfix:**
+* A page's own title no longer shows up now and then in the sidebar as one of its headings
 
 ## [2.2.0] - 11/01/2026
 
