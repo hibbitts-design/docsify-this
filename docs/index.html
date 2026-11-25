@@ -1535,6 +1535,42 @@
       // -----------------------------------------------------------------
       plugins: [
 
+        // Docsify sometimes lists a page's own title (its # heading) in the sidebar, under the page's link, as if it
+        // were one of its headings – not on every load, so it's checked whenever the sidebar changes. That item is
+        // taken out; any headings listed under it move up in its place.
+        function (hook) {
+          function removePageTitleFromSidebar() {
+            const title = document.querySelector('.markdown-section h1[id]');
+            if (!title) {
+              return;
+            }
+            document.querySelectorAll('.sidebar-nav .app-sub-sidebar > li > a').forEach(function (link) {
+              if (!(link.getAttribute('href') || '').endsWith('?id=' + title.id)) {
+                return;
+              }
+              const item = link.parentElement;
+              const list = item.parentElement;
+              const headings = item.querySelector(':scope > ul');
+              if (headings) {
+                item.replaceWith(...headings.children);
+              } else {
+                item.remove();
+              }
+              // a list left empty is taken out too, so the page's link doesn't look like it has headings
+              if (list.children.length === 0) {
+                list.remove();
+              }
+            });
+          }
+          hook.doneEach(removePageTitleFromSidebar);
+          hook.mounted(function () {
+            const sidebar = document.querySelector('aside.sidebar');
+            if (sidebar) {
+              new MutationObserver(removePageTitleFromSidebar).observe(sidebar, { childList: true, subtree: true });
+            }
+          });
+        },
+
         function (hook, vm) {
 
           // Draw Mermaid diagrams once the Mermaid script and the Font Awesome icon font have loaded, so labels with
