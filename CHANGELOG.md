@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.2.1] - XX/XX/2026
+## [2.3.0] - XX/XX/2026
 
 **New:**
 * Guide cover (`guide-cover`) with Start Reading beside it, plus `guide-cover-portrait` for book covers
