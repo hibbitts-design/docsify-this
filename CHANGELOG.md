@@ -8,7 +8,7 @@
 * Card lists for courses (`card-list-courses`) and in rows (`card-list-rows`)
 * Card images shown whole, such as book covers (`card-images-portrait`)
 * Keep My Place (`keep-my-place=true`): a Continue reading link on the home page, with an optional `keepMyPlace.label`
-* Sticky Previous/Next on phones (`sticky-pagination=true`), also in the Web Page Builder
+* Sticky Previous/Next on phones, on by default with `pagination=true` (`sticky-pagination=false` turns it off), also in the Web Page Builder
 * Name link (`name-link=`) to share one guide of several on its own
 * Glossary terms styled as in Grav, including links to an entry (`?id=`)
 * Guide name at the top of a sidebar can link to its home, in place of back links on each page
