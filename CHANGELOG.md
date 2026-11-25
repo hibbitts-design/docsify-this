@@ -3,30 +3,27 @@
 ## [2.2.1] - XX/XX/2026
 
 **New:**
-* Guide cover: `guide-cover` shows a small cover image with a guide's details and Start Reading beside it, at the top of a guide home
-* Site title: a navbar link with `:class=site-title` shows the site's name at the top of pages that hide the sidebar, and on phones (where a long name wraps onto a second line)
-* Course card list: `card-list-courses` for a Courses page, laid out like `card-list-guides` (three cards in a row), with its own name so courses and guides can be styled apart later
-* Portrait guide cover: `guide-cover-portrait`, added to `guide-cover`, shows a book cover whole at its own shape
-* Card list in rows: `card-list-rows` shows one card per row, for cards without images, such as a guide's sections
-* Keep My Place: `keep-my-place=true` shows a Continue reading link on the home page, to the Sidebar page last read (on a site of several courses or guides, one for each); its label can be changed with `keepMyPlace.label`, such as `Continue%20where%20you%20left%20off` for courses
-* Sticky Previous/Next: `sticky-pagination=true` (with `pagination=true`) keeps Previous/Next in a bar at the bottom of the screen on phones, as on Open Publishing Space guide pages (also an Advanced Web Page Builder option)
-* Name link: `name-link=` links the website name to one page, such as one guide's home – with no All Guides link in that guide's navbar, the guide can be shared on its own
-* Glossary terms: a link with a title to a Glossary page, or to an entry on it (`?id=`), shows as a term, with the text's colour and a dotted underline, as in Grav
-* Linked guide name: a guide's name at the top of its sidebar can link to its home (`[**Guide Name**](guide/README.md)`) and still looks like the bold label, underlined on hover or keyboard focus – the way back from any page, in place of a back link on each one
+* Guide cover (`guide-cover`) with Start Reading beside it, plus `guide-cover-portrait` for book covers
+* Site title (`:class=site-title` navbar link) on pages without the sidebar, and on phones
+* Card lists for courses (`card-list-courses`) and in rows (`card-list-rows`)
+* Keep My Place (`keep-my-place=true`): a Continue reading link on the home page, with an optional `keepMyPlace.label`
+* Sticky Previous/Next on phones (`sticky-pagination=true`), also in the Web Page Builder
+* Name link (`name-link=`) to share one guide of several on its own
+* Glossary terms styled as in Grav, including links to an entry (`?id=`)
+* Guide name at the top of a sidebar can link to its home, in place of back links on each page
 
 **Improved:**
-* A Topics letter bar (`[A](#a)|[B](#b)|…`) is styled wherever it is on the page, not only as the first paragraph
-* A guide cover has a faint edge and soft shadow, as in Open Publishing Space, so a light cover stands out from the page
-* Letters in a Topics letter bar are at least 18px wide, easier to tap or click
-* Updated ReadMe with the Open Publishing Course Space Bridge, for guides and courses, and the Courses Site Template
-* Search stays within the current course or guide on sites with a folder per course or guide
-* Each page of a site with a custom sidebar has its own Browser tab title, such as "Week 1 | CPT-363" – or "Module 2 | CPT363-1" on a site of several courses, using each course's navbar site title – easier to tell apart and better for screen readers; one-page sites keep their title as set
-* A card whose title is a link can be clicked anywhere – on its image, title or text – yet is still one link for keyboard and screen reader users, so its image no longer needs to be a second link
-* With `pagination=true`, the ← → keys also go to the previous and next page (not while typing, or in a wide table or code block)
-* Previous/Next no longer briefly shows the new page partway down before it scrolls to the top
-* Web Page Builder: the Continue reading and Previous/Next options have their own section, Docsify Custom Sidebar Reading Options
-* Badges have WCAG AA contrast: the default background is a little darker
-* On a site of several pages from GitHub or Codeberg, an `edit-link` to a page file now links to the page being shown, however readers get there (sidebar, navbar or Previous/Next), and links between its pages stay normal links, so images in a subfolder page show
+* Topics letter bar styled anywhere on the page, with larger tap targets
+* Guide covers have a faint edge and soft shadow
+* Search stays within the current course or guide
+* Each page has its own browser tab title on sites with a custom sidebar
+* Cards with a linked title can be clicked anywhere, as one link for keyboard and screen reader users
+* ← → keys move between pages with `pagination=true`
+* Previous/Next no longer shows the new page partway down first
+* Web Page Builder: reading options in their own section
+* Badges have WCAG AA contrast
+* `edit-link` follows the page being shown on GitHub and Codeberg sites
+* Updated ReadMe
 
 ## [2.2.0] - 11/01/2026
 
