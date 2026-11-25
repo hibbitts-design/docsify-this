@@ -934,6 +934,20 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
   line-clamp: 2;
 }
 
+/* Portrait card images – card-images-portrait, added to a card list: each card's top image (such as a book cover) is
+   shown whole at its own shape, centred on a light band, instead of cropped to fill the card. It keeps the list's
+   image height, so the cards in a row still line up */
+.markdown-section .card-images-portrait :is(.card, .card-rounded) > p:has(img):first-child {
+  background-color: var(--color-mono-1);
+  text-align: center;
+}
+
+.markdown-section .card-images-portrait :is(.card, .card-rounded) > p:has(img):first-child img {
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 /* Cards in a list line up across each row: the image, title, text and button of every card start level, however long
    a card's title or text is. Each card shares its row's heights (subgrid), taking one row for each of its parts – the
    rules below give the count, for cards of two to eight parts. Browsers without subgrid, and cards of more than eight
