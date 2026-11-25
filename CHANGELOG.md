@@ -12,6 +12,7 @@
 * Sticky Previous/Next: `sticky-pagination=true` (with `pagination=true`) keeps Previous/Next in a bar at the bottom of the screen on phones, as on Open Publishing Space guide pages (also an Advanced Web Page Builder option)
 * Name link: `name-link=` links the website name to one page, such as one guide's home – with no All Guides link in that guide's navbar, the guide can be shared on its own
 * Glossary terms: a link with a title to a Glossary page, or to an entry on it (`?id=`), shows as a term, with the text's colour and a dotted underline, as in Grav
+* Linked guide name: a guide's name at the top of its sidebar can link to its home (`[**Guide Name**](guide/README.md)`) and still looks like the bold label, underlined on hover or keyboard focus – the way back from any page, in place of a back link on each one
 
 **Improved:**
 * A Topics letter bar (`[A](#a)|[B](#b)|…`) is styled wherever it is on the page, not only as the first paragraph
