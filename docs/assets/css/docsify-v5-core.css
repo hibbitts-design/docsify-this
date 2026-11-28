@@ -986,6 +986,39 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
   .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections) > :is(.card, .card-rounded):has(> :nth-child(8):last-child) {
     grid-row: span 8;
   }
+
+  /* Cards with fewer parts (such as one without a subtitle) take as many rows as the list's longest card, so the
+     boxes in a row are the same height. Their last part (such as the authors or a button) goes in the bottom row,
+     level with the other cards' last parts. Phones skip this, as their cards are stacked one per row. */
+  @media screen and (min-width: 769px) {
+    .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections):has(> :is(.card, .card-rounded) > :nth-child(3):last-child) > :is(.card, .card-rounded):not(:has(> :nth-child(9))) {
+      grid-row: span 3;
+    }
+
+    .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections):has(> :is(.card, .card-rounded) > :nth-child(4):last-child) > :is(.card, .card-rounded):not(:has(> :nth-child(9))) {
+      grid-row: span 4;
+    }
+
+    .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections):has(> :is(.card, .card-rounded) > :nth-child(5):last-child) > :is(.card, .card-rounded):not(:has(> :nth-child(9))) {
+      grid-row: span 5;
+    }
+
+    .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections):has(> :is(.card, .card-rounded) > :nth-child(6):last-child) > :is(.card, .card-rounded):not(:has(> :nth-child(9))) {
+      grid-row: span 6;
+    }
+
+    .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections):has(> :is(.card, .card-rounded) > :nth-child(7):last-child) > :is(.card, .card-rounded):not(:has(> :nth-child(9))) {
+      grid-row: span 7;
+    }
+
+    .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections):has(> :is(.card, .card-rounded) > :nth-child(8):last-child) > :is(.card, .card-rounded):not(:has(> :nth-child(9))) {
+      grid-row: span 8;
+    }
+
+    .markdown-section :is(.card-list, .card-list-guides, .card-list-courses, .card-list-sections) > :is(.card, .card-rounded):not(:has(> :nth-child(9))) > :last-child {
+      grid-row-end: -1;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
