@@ -28,6 +28,7 @@
 
 **Bugfix:**
 * A page's own title no longer shows up now and then in the sidebar as one of its headings
+* Cards in a list are the same height in each row, even when one has fewer parts (such as no subtitle)
 
 ## [2.2.0] - 11/01/2026
 
